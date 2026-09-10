@@ -1,0 +1,30 @@
+name: Source or language correction
+description: Suggest a precise correction to a reference, grading attribution, Arabic excerpt, or English/Urdu summary.
+title: "[Source correction] "
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Narration link or entry ID
+      description: Paste the shareable link or the stable id from the research data.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Explain the incorrect statement and the replacement. Urdu and English are both welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Supporting primary reference
+      description: Include the collection, hadith number, direct link, and named scholar/edition for a grading change.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Note any differences in numbering, wording, chains, or translations.

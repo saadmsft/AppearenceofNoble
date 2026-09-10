@@ -1,0 +1,10 @@
+web/node_modules/
+web/dist/
+web/bundle.html
+web/.parcel-cache/
+web/test-results/
+web/playwright-report/
+*.tsbuildinfo
+.DS_Store
+.playwright-mcp/
+web/public/THIRD-PARTY-NOTICES.txt

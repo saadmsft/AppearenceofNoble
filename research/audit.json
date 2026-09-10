@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-09-10",
+  "scope": "A selected corpus of appearance-related reports from seven major Sunni collections. Not exhaustive across all traditions, manuscripts, historical biographies, or transmission routes.",
+  "entries": 71,
+  "uniquePrimaryReferences": 67,
+  "uniqueCitedReferences": 98,
+  "citedReferencesChecked": 98,
+  "fullArabicEntries": 71,
+  "primaryGradeLevels": { "sahih": 55, "hasan": 9, "weak": 7 },
+  "arabicSourceManifestSha256": "6ea3b90f07389a1c3f620c72980e22e83c62096b4666ef2cebbeedf2b1e6a05f",
+  "digestDefinition": "SHA-256 of UTF-8 JSON.stringify of unique [primarySourceUrl, arabicFull] pairs, sorted by primarySourceUrl.localeCompare(otherUrl, 'en'). This fingerprints the audited transcription, not its scholarly authenticity.",
+  "method": [
+    "All cited primary and related URLs were retrieved individually and their Arabic, narrator, numbering and displayed grading inspected.",
+    "English and Urdu are original summaries composed from the cited Arabic, not copied modern translations.",
+    "arabicFull preserves the complete primary-page arabic_hadith_full block, including isnad and any compiler or transmitter remarks inside that block.",
+    "Arabic extraction removed markup, decoded HTML entities, removed U+200E/U+200F formatting marks and collapsed whitespace. It did not reconstruct or emend the matn.",
+    "Every short Arabic excerpt occurs in its full report after Unicode NFC normalization. Entries sharing a primary URL preserve identical full Arabic.",
+    "Bukhari and Muslim use their conventional sahih collection classification. Other primary grades retain named displayed assessments. Related references do not inherit a primary grade.",
+    "Reference-check dates record source-page inspection, not independent scholarly authentication."
+  ],
+  "materialCorrections": [
+    "Bukhari 3552 gives a moon comparison without explicit full-moon wording or facial measurements. Muslim 2344b explicitly supplies roundness and abundant beard hair.",
+    "Bukhari 3551 says red hullah; striped pattern and Yemeni manufacture were not asserted from this matn.",
+    "Muslim 2339 preserves Simak's explanation in response to Shu'ba. A long eye opening does not establish wide-set eyes.",
+    "Muslim 2332's displayed English text includes a cold-weather revelation sentence absent from its Arabic matn; it was not included in the summary.",
+    "Bukhari 5877 does include the ring inscription. Uncited correspondence context was removed.",
+    "Muslim 1359a is Amr ibn Huraith's sermon and black-turban account, not a dated conquest report. Muslim 1358a is Jabir ibn Abdullah's separate entry-into-Mecca account.",
+    "Bukhari 3561's initial excerpt came from related Muslim 2330a; it was replaced with the actual primary wording.",
+    "Shama'il 44's Arabic says oil concealed grey hairs; its displayed English reversal was not followed.",
+    "Shama'il 8 identifies Hind as al-Hasan's maternal uncle, not aunt. Its weak grading remains visible.",
+    "Differing named assessments at Tirmidhi 2811, Shama'il 17 and Shama'il 226 were preserved without inventing a different-chain explanation.",
+    "Aisha's laughter report concerns visibility of the back of the mouth, not loudness.",
+    "Abu Juhaifa's brightness account describes shins, not feet. The app's combined legs-and-feet theme does not change that anatomical wording.",
+    "Unsupported consensus, independent-chain, exact-measurement, garment-pattern and chronology assertions were removed from both languages."
+  ],
+  "remainingLimits": [
+    "Entry counts are reading units, not independent chains or distinct historical observations.",
+    "Selected weak reports are included for research, prominently cautioned and excluded from the default established-reports view.",
+    "The famous long Umm Ma'bad description is not included: the inspected source did not provide that full appearance speech within the verified source set.",
+    "Knee and arm evidence in the supplement concerns observed posture, not unreported shape or dimensions.",
+    "This is research-assisted editorial work, not a critical edition, scholarly certification, or fatwa service."
+  ]
+}
