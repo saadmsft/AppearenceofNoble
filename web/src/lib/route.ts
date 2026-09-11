@@ -3,7 +3,7 @@ import type { Language } from './schema.ts'
 import { defaultFilters } from './search.ts'
 import type { Filters } from './search.ts'
 
-export const views = ['collection', 'guide', 'sources', 'saved'] as const
+export const views = ['journey', 'collection', 'guide', 'sources', 'saved'] as const
 export type View = typeof views[number]
 export type Route = Filters & { view: View; language?: Language; entry: string | null }
 
@@ -18,9 +18,10 @@ export function parseRoute(url: URL): Route {
   const topic = params.get('topic')
   const collection = params.get('source')
   const grade = params.get('grade')
+  const hasLibraryFilters = ['q', 'topic', 'source', 'grade'].some((key) => params.has(key))
   const match = /^#narration\/([a-z0-9-]+)$/.exec(url.hash)
   return {
-    view: allowed(view, views) ? view : 'collection',
+    view: allowed(view, views) ? view : hasLibraryFilters ? 'collection' : 'journey',
     language: allowed(language, languages) ? language : undefined,
     topic: allowed(topic, topics) ? topic : 'all',
     collection: allowed(collection, collections) ? collection : 'all',
@@ -33,7 +34,7 @@ export function parseRoute(url: URL): Route {
 export function routeUrl(base: URL, route: Route): URL {
   const url = new URL(base)
   const values = {
-    view: route.view === 'collection' ? '' : route.view,
+    view: route.view,
     lang: route.language ?? '',
     topic: route.topic === 'all' ? '' : route.topic,
     source: route.collection === 'all' ? '' : route.collection,

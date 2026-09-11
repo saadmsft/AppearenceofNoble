@@ -28,6 +28,25 @@ test('unknown route parameters and malformed fragments cannot inject state', () 
   assert.equal(parseRoute(new URL(`https://example.com/?q=${'a'.repeat(500)}`)).query.length, 300)
 })
 
+test('the journey is the landing page while legacy filter links still open the collection', () => {
+  assert.equal(parseRoute(new URL('https://example.com/?lang=ur')).view, 'journey')
+  assert.equal(parseRoute(new URL('https://example.com/?topic=hair')).view, 'collection')
+  assert.equal(parseRoute(new URL('https://example.com/?q=3552')).view, 'collection')
+  assert.equal(parseRoute(new URL('https://example.com/?grade=weak')).view, 'collection')
+  assert.equal(parseRoute(new URL('https://example.com/?view=collection')).view, 'collection')
+})
+
+test('journey narration links preserve their view and thematic reading scope', () => {
+  const original = new URL('https://example.com/AppearenceofNoble/?view=journey&topic=eyes&lang=ur#narration/example-entry')
+  const route = parseRoute(original)
+  assert.equal(route.view, 'journey')
+  assert.equal(route.topic, 'eyes')
+  assert.equal(route.entry, 'example-entry')
+  const next = routeUrl(new URL('https://example.com/AppearenceofNoble/'), route)
+  assert.equal(next.searchParams.get('view'), 'journey')
+  assert.deepEqual(parseRoute(next), route)
+})
+
 test('preferences and bookmarks survive a save/load round trip', () => {
   const values = new Map<string, string>()
   const storage = () => ({ getItem: (key: string) => values.get(key) ?? null, setItem: (key: string, value: string) => { values.set(key, value) } })

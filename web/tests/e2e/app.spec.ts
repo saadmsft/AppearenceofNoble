@@ -3,9 +3,8 @@ import { expect, test } from '@playwright/test'
 test('English reading, Arabic source, keyboard dialog and focus restoration', async ({ page }) => {
   const errors: string[] = []
   page.on('pageerror', (error) => errors.push(error.message))
-  await page.goto('./?lang=en&scoutTheme=light')
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Known through words.')
-  await page.getByRole('button', { name: 'Explore the narrations', exact: true }).click()
+  await page.goto('./?lang=en&view=collection&scoutTheme=light')
+  await expect(page.getByRole('heading', { name: 'Explore the collection', exact: true })).toBeVisible()
   const read = page.getByRole('button', { name: /^Read: / }).first()
   await read.click()
   const dialog = page.getByRole('dialog')
@@ -23,7 +22,7 @@ test('English reading, Arabic source, keyboard dialog and focus restoration', as
 })
 
 test('cross-language search, source filters, cautions and empty-state recovery', async ({ page }) => {
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=collection')
   const search = page.getByRole('searchbox', { name: 'Search the narrations', exact: true })
   await search.fill('۳۵۵۲')
   await expect(page.locator('.narration-card')).not.toHaveCount(0)
@@ -41,11 +40,11 @@ test('cross-language search, source filters, cautions and empty-state recovery',
 })
 
 test('Urdu RTL, locally saved preferences and bilingual reading', async ({ page }) => {
-  await page.goto('./?lang=en&scoutTheme=light')
+  await page.goto('./?lang=en&view=collection&scoutTheme=light')
   await page.getByRole('button', { name: 'اردو', exact: true }).click()
   await expect(page.locator('html')).toHaveAttribute('lang', 'ur')
   await expect(page.locator('html')).toHaveAttribute('dir', 'rtl')
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('الفاظ میں محفوظ')
+  await expect(page.getByRole('heading', { name: 'مجموعے کا مطالعہ', exact: true })).toBeVisible()
   await page.getByRole('button', { name: 'تاریک تھیم اختیار کریں', exact: true }).click()
   await page.getByRole('button', { name: /^محفوظ کریں:/ }).first().click()
   await page.getByRole('link', { name: /^محفوظ \(/ }).click()
@@ -110,7 +109,7 @@ test('unavailable local storage has an honest visible warning', async ({ page })
   await page.addInitScript(() => {
     Object.defineProperty(window, 'localStorage', { get() { throw new DOMException('Blocked', 'SecurityError') } })
   })
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=collection')
   await expect(page.getByRole('alert')).toContainText('cannot save your reading preferences')
   await page.getByRole('button', { name: /^Save: / }).first().click()
   await expect(page.getByRole('alert')).toContainText('cannot save')
@@ -131,7 +130,7 @@ test('no page overflow at small widths, with loaded local fonts and no depiction
 })
 
 test('pagination, topic selection, reader navigation and browser focus stay coherent', async ({ page }) => {
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=collection')
   await expect(page.locator('.narration-card')).toHaveCount(12)
   await page.getByRole('button', { name: 'Load more entries', exact: true }).click()
   await expect(page.locator('.narration-card')).toHaveCount(24)
@@ -182,12 +181,15 @@ test('the offline edition embeds scripts, styles, data and reading fonts', async
   await page.goto('./noble-appearance.html?lang=ur')
   await page.evaluate(() => document.fonts.ready)
   await expect(page.getByRole('heading', { level: 1 })).toContainText('الفاظ میں محفوظ')
-  await expect(page.locator('.narration-card')).toHaveCount(12)
+  await expect(page.locator('.journey-chapter')).toHaveCount(16)
+  await expect(page.locator('.narration-card')).toHaveCount(0)
   expect(await page.evaluate(() => document.fonts.check('16px "Noto Nastaliq Urdu"'))).toBe(true)
   expect(await page.evaluate(() => document.fonts.check('16px "Noto Naskh Arabic"'))).toBe(true)
   expect(requests.every((url) => url.startsWith('data:') || new URL(url).pathname.endsWith('/noble-appearance.html'))).toBe(true)
   expect(errors).toEqual([])
   await page.context().setOffline(true)
+  await page.getByRole('button', { name: 'رنگت: روایات دیکھیے', exact: true }).click()
+  await expect(page.locator('.narration-card').first()).toBeVisible()
   await page.getByRole('button', { name: /^پڑھیے:/ }).first().click()
   await expect(page.getByRole('dialog')).toBeVisible()
   await page.context().setOffline(false)

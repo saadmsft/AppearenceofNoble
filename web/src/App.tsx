@@ -4,6 +4,7 @@ import { AboutFooter } from './components/Footer'
 import { GuidePage, SourcesPage } from './components/AboutPages'
 import { NarrationCard } from './components/NarrationCard'
 import { ManuscriptHero } from './components/ManuscriptHero'
+import { TopicJourney } from './components/TopicJourney'
 import { Reader } from './components/Reader'
 import { Button } from './components/ui/button'
 import { collectionLabels, topicLabels } from './lib/catalog.ts'
@@ -17,24 +18,13 @@ import type { Route, View } from './lib/route.ts'
 import { collections, grades, topics } from './lib/schema.ts'
 import type { Language, Topic } from './lib/schema.ts'
 import { defaultFilters, filterNarrations } from './lib/search.ts'
+import { focusSection, scrollBehavior } from './lib/scroll.ts'
 
 function initialSettings(): ReturnType<typeof loadPreferences> {
   const loaded = loadPreferences(() => window.localStorage)
   const theme = new URL(window.location.href).searchParams.get('scoutTheme')
   if (theme === 'light' || theme === 'dark') return { ...loaded, value: { ...loaded.value, theme } }
   return loaded
-}
-
-function scrollBehavior(): ScrollBehavior {
-  return window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.dataset.motion === 'paused'
-    ? 'instant'
-    : 'smooth'
-}
-
-function scrollToCollection() {
-  const heading = document.getElementById('collection-heading')
-  heading?.scrollIntoView({ behavior: scrollBehavior(), block: 'start' })
-  heading?.focus({ preventScroll: true })
 }
 
 function App() {
@@ -58,7 +48,6 @@ function App() {
   const topicResults = filterNarrations(narrations, { ...route, topic: 'all' }, isSavedView ? savedIds : undefined)
   const selected = narrations.find((row) => row.id === route.entry)
   const selectedIndex = results.findIndex((row) => row.id === route.entry)
-  const featured = narrations.find((row) => row.source.url === 'https://sunnah.com/bukhari:3552')
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
@@ -82,7 +71,7 @@ function App() {
     document.documentElement.dir = language === 'ur' ? 'rtl' : 'ltr'
     document.documentElement.dataset.theme = theme
     document.documentElement.dataset.motion = preferences.motion
-    document.title = `${translate(language, 'name')} | ${translate(language, route.view === 'saved' ? 'saved' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
+    document.title = `${translate(language, 'name')} | ${translate(language, route.view === 'journey' ? 'journey' : route.view === 'saved' ? 'saved' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
   }, [language, theme, route.view, preferences.motion])
 
   useEffect(() => {
@@ -145,14 +134,14 @@ function App() {
     <a className="skip-link" href="#main-content">{t('skip')}</a>
     <header className="site-header">
       <div className="header-inner page-width">
-        <a href={navHref('collection')} className="brand" onClick={(event) => {
-          if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate('collection') }
+        <a href={navHref('journey')} className="brand" onClick={(event) => {
+          if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate('journey') }
         }}>
           <span className="brand-mark" aria-hidden="true"><BookOpen size={22} /></span>
           <span><strong>{t('name')}</strong><small>{t('strapline')}</small></span>
         </a>
         <nav className="primary-nav" aria-label={t('collection')}>
-          {(['collection', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
+          {(['journey', 'collection', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
             aria-current={route.view === view ? 'page' : undefined}
             onClick={(event) => { if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate(view) } }}>
             {t(view)}
@@ -187,15 +176,23 @@ function App() {
     </aside>}
 
     <main id="main-content" tabIndex={-1}>
-      {route.view === 'collection' && <ManuscriptHero language={language} entryCount={narrations.length} topicCount={topics.length}
-        featured={featured} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null} guideHref={navHref('guide')}
-        onExplore={scrollToCollection} onGuide={() => navigate('guide')}
-        onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })}
-        onFeatured={(row, button) => { lastReadButton.current = button; updateRoute({ entry: row.id }) }} />}
+      {route.view === 'journey' && <>
+        <ManuscriptHero language={language} entryCount={narrations.length} topicCount={topics.length}
+          paused={preferences.motion === 'paused'} readerOpen={route.entry !== null} guideHref={navHref('guide')}
+          onExplore={() => focusSection('chapter-complexion')} onGuide={() => navigate('guide')}
+          onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
+        <TopicJourney language={language} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
+          savedIds={savedIds} collectionHref={navHref('collection')} onCollection={() => navigate('collection')}
+          onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} onSave={toggleSaved}
+          onRead={(row, topic, includeCautioned, button) => {
+            lastReadButton.current = button
+            updateRoute({ ...defaultFilters, view: 'journey', topic, grade: includeCautioned ? 'all' : 'established', entry: row.id })
+          }} />
+      </>}
 
       {(route.view === 'collection' || isSavedView) && <section className="library-section page-width">
         <header className="collection-heading">
-          <h2 id="collection-heading" tabIndex={-1}>{t(isSavedView ? 'savedTitle' : 'browseTitle')}<span className="heading-flower" aria-hidden="true" /></h2>
+          <h1 id="collection-heading" tabIndex={-1}>{t(isSavedView ? 'savedTitle' : 'browseTitle')}<span className="heading-flower" aria-hidden="true" /></h1>
           <div><p>{t(isSavedView ? 'savedDescription' : 'browseDescription')}</p>
             <span className="collection-language-note"><span lang="en">English</span><span aria-hidden="true">/</span><span lang="ur">اردو</span></span>
           </div>
@@ -285,7 +282,7 @@ function App() {
       {route.view === 'guide' && <GuidePage language={language} />}
       {route.view === 'sources' && <SourcesPage language={language} onTopic={(topic) => navigate('collection', topic)} />}
     </main>
-    <AboutFooter language={language} onGuide={() => navigate('guide')} onSources={() => navigate('sources')} />
+    <AboutFooter language={language} onJourney={() => navigate('journey')} onGuide={() => navigate('guide')} onSources={() => navigate('sources')} />
     <div className={`reading-status ${notice ? 'visible' : ''}`} role="status" aria-live="polite">
       {notice && <><Check size={17} aria-hidden="true" />{t(notice.key)}</>}
     </div>
@@ -298,7 +295,7 @@ function App() {
       onPreferences={updatePreferences}
       restoreFocus={() => {
         if (lastReadButton.current?.isConnected) lastReadButton.current.focus({ preventScroll: true })
-        else (document.getElementById('collection-heading') ?? document.getElementById('main-content'))?.focus({ preventScroll: true })
+        else (document.getElementById('collection-heading') ?? document.getElementById('journey-heading') ?? document.getElementById('main-content'))?.focus({ preventScroll: true })
       }} />
     <button className="back-top button button-ghost button-icon" type="button" aria-label={t('backTop')} onClick={() => {
       window.scrollTo({ top: 0, behavior: scrollBehavior() })

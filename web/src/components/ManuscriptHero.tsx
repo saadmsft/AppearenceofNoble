@@ -1,6 +1,6 @@
 import { useRef } from 'react'
-import { ArrowDown, ArrowUpRight, BookOpen, Moon, Pause, Play } from 'lucide-react'
-import type { Language, Narration } from '../lib/schema.ts'
+import { ArrowDown, ArrowUpRight, BookOpen, Pause, Play } from 'lucide-react'
+import type { Language } from '../lib/schema.ts'
 import { number, translate } from '../lib/i18n.ts'
 import { useAmbientMotion } from '../hooks/useAmbientMotion'
 import { Button } from './ui/button'
@@ -28,17 +28,15 @@ type HeroProps = {
   language: Language
   entryCount: number
   topicCount: number
-  featured: Narration | undefined
   paused: boolean
   readerOpen: boolean
   guideHref: string
   onExplore: () => void
   onGuide: () => void
   onPause: () => void
-  onFeatured: (row: Narration, button: HTMLButtonElement) => void
 }
 
-export function ManuscriptHero({ language, entryCount, topicCount, featured, paused, readerOpen, guideHref, onExplore, onGuide, onPause, onFeatured }: HeroProps) {
+export function ManuscriptHero({ language, entryCount, topicCount, paused, readerOpen, guideHref, onExplore, onGuide, onPause }: HeroProps) {
   const art = useRef<HTMLDivElement>(null)
   const motion = useAmbientMotion(art, !paused && !readerOpen)
   const t = (key: Parameters<typeof translate>[1]) => translate(language, key)
@@ -50,7 +48,7 @@ export function ManuscriptHero({ language, entryCount, topicCount, featured, pau
           <h1 id="hero-title"><span>{t('heroFirst')}</span>{' '}<em>{t('heroSecond')}</em></h1>
           <p className="hero-description">{t('heroDescription')}</p>
           <div className="hero-actions">
-            <Button onClick={onExplore}>{t('explore')}<span className="hero-button-arrow"><ArrowDown size={18} aria-hidden="true" /></span></Button>
+            <Button onClick={onExplore}>{t('beginJourney')}<span className="hero-button-arrow"><ArrowDown size={18} aria-hidden="true" /></span></Button>
             <a href={guideHref} className="hero-guide-link" onClick={(event) => {
               if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) { event.preventDefault(); onGuide() }
             }}>{t('approach')}<ArrowUpRight size={16} className="directional" aria-hidden="true" /></a>
@@ -82,12 +80,5 @@ export function ManuscriptHero({ language, entryCount, topicCount, featured, pau
         </div>
       </div>
     </section>
-    {featured && <aside className="featured-reflection page-width">
-      <Moon className="reflection-moon" size={34} strokeWidth={1} aria-hidden="true" />
-      <div><p>{t('featuredLine')}</p><span>{t('featuredLabel')}</span></div>
-      <button type="button" className="reflection-source" onClick={(event) => onFeatured(featured, event.currentTarget)}>
-        <span>{t('featuredSource')}</span><ArrowUpRight size={22} className="directional" aria-hidden="true" />
-      </button>
-    </aside>}
   </>
 }

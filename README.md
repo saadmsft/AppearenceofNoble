@@ -6,9 +6,16 @@ reconstructions.**
 
 **Read online:** [English](https://saadmsft.github.io/AppearenceofNoble/?lang=en)
 · [اردو](https://saadmsft.github.io/AppearenceofNoble/?lang=ur)
+· [Search all narrations](https://saadmsft.github.io/AppearenceofNoble/?view=collection&lang=en)
 
 ## What is included
 
+- A continuous thematic journey beginning **Complexion → Eyes**, then the
+  remaining features. Each chapter has distinct abstract ornamental motion,
+  concise bilingual highlights, and source-reference buttons. Narration cards
+  are **not mounted until the reader explicitly expands that chapter**.
+  Chapters expand independently; the full searchable collection remains a
+  separate navigation choice.
 - Sixteen themes: general appearance, complexion, face, eyes, hair, beard, mouth
   and teeth, stature and build, hands, legs and feet, the Seal of Prophethood,
   walking and posture, fragrance and perspiration, voice, smiling, and dress.
@@ -28,6 +35,13 @@ reconstructions.**
   pauses when offscreen, in a hidden tab, or while a narration is open. The
   motion control persists locally; the system's reduced-motion setting always
   takes precedence. Existing bookmarks and preferences are preserved.
+
+Chapter highlights in `web/src/lib/chapters.ts` are original, selective summaries
+of the existing corpus, with retained primary-source IDs. Every highlight must
+point to an established, on-topic report. Chapter panels initially show sahih
+and hasan entries; cautioned reports require a second explicit choice. The
+animations are abstract decorations, not portraits, anatomical reconstructions,
+skin-colour samples, or recordings of the Prophet's ﷺ voice.
 
 The 10 September 2026 audit covers **71 entries, 67 unique primary references,
 and 98 primary/related source URLs**. It includes 55 sahih, 9 hasan, and 7
@@ -117,6 +131,7 @@ SITE_URL=https://saadmsft.github.io/AppearenceofNoble/ pnpm test:e2e
 | `web/src/lib/schema.ts` | Strict content schema and source-link constraints |
 | `web/src/lib/library.ts` | Explicit imports of the published corpus |
 | `web/src/lib/catalog.ts` | Localized theme, collection, and grade labels |
+| `web/src/lib/chapters.ts` | Ordered chapters, bilingual highlights and their established source records |
 | `web/src/lib/i18n.ts` | Complete English/Urdu interface and methodology |
 | `web/src/lib/search.ts` | Cross-script search and intersecting filters |
 | `web/src/lib/route.ts` | Pages-safe query/hash navigation |
@@ -142,6 +157,12 @@ require connectivity. The standard site uses cacheable, separately hosted assets
 All navigation uses query parameters and hash fragments so links work on
 GitHub Pages without an SPA rewrite. Changing the repository name requires
 updating Vite's base, metadata URLs, repository links, and browser-test base URL.
+
+The default route opens the topic journey. `?view=collection` opens the
+searchable library. Earlier links containing search, topic, source or grade
+filters without a view still resolve to the library. Narration links opened
+from a chapter explicitly retain `view=journey` and its topic so reloading does
+not unexpectedly switch the reading context.
 
 ## Correcting or extending the research
 

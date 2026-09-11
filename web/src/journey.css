@@ -1,0 +1,173 @@
+.journey-intro { padding-block: 64px 28px; }
+.journey-intro h2 { font-size: clamp(30px, 3.1vw, 44px); font-weight: 450; line-height: 1.3; letter-spacing: -.03em; margin-bottom: 20px; max-width: 22ch; }
+.journey-intro > div { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.journey-intro p { font-size: 15px; line-height: 1.9; color: var(--cp-text-soft); max-width: 65ch; }
+.journey-intro .text-link { flex-shrink: 0; min-height: 44px; }
+.journey-index { display: flex; gap: 6px; overflow-x: auto; padding-block: 14px; border-block: 1px solid var(--cp-rule); scrollbar-width: thin; scrollbar-color: var(--cp-border-strong) var(--cp-bg); }
+.journey-index button { flex-shrink: 0; min-height: 42px; padding: 8px 14px; border-radius: 4px; font-size: 12px; color: var(--cp-text-soft); transition: color 180ms, background 180ms; }
+.journey-index button:hover { color: var(--cp-accent); background: var(--cp-accent-soft); }
+.journey-note { display: block; color: var(--cp-text-soft); font-size: 11px; line-height: 1.9; padding-block: 18px 32px; }
+.journey-chapter { border-bottom: 1px solid var(--cp-rule); padding-block: 72px; }
+.journey-chapter:nth-of-type(even) { background: var(--cp-bg-elevated); }
+.chapter-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr); grid-template-rows: auto 1fr; align-items: center; gap: 24px 100px; }
+.chapter-title { grid-column: 1; font-size: clamp(40px, 4.6vw, 66px); font-weight: 400; line-height: 1.2; letter-spacing: -.035em; scroll-margin-top: 24px; }
+.chapter-title:focus, #journey-heading:focus { outline: none; }
+.chapter-copy { grid-column: 1; align-self: start; }
+.chapter-highlights-label { color: var(--cp-text-soft); font-size: 12px; font-weight: 500; margin-bottom: 18px; }
+.chapter-highlights { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 24px; }
+.chapter-highlights li { padding-inline-start: 20px; position: relative; }
+.chapter-highlights li::before { content: ""; position: absolute; inset-inline-start: 1px; top: 11px; width: 6px; height: 6px; border: 1px solid var(--cp-accent); transform: rotate(45deg); }
+.chapter-highlights p { font-size: 19px; line-height: 1.75; max-width: 52ch; }
+.highlight-source { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--cp-accent); min-height: 34px; margin-top: 4px; text-align: start; }
+.highlight-source:hover { text-decoration: underline; text-underline-offset: 4px; }
+.highlight-source svg { flex-shrink: 0; }
+.chapter-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px 24px; margin-top: 32px; }
+.chapter-actions .button { min-height: 50px; gap: 14px; }
+.chapter-report-count { border-inline-start: 1px solid currentColor; padding-inline-start: 12px; font-variant-numeric: tabular-nums; }
+.chapter-next { display: inline-flex; align-items: center; gap: 10px; color: var(--cp-text-soft); font-size: 12px; min-height: 44px; text-align: start; }
+.chapter-next:hover { color: var(--cp-accent); }
+.chapter-next svg { flex-shrink: 0; }
+.topic-artwork { grid-column: 2; grid-row: 1 / 3; width: 100%; max-width: 410px; justify-self: center; }
+.topic-art-frame { position: relative; aspect-ratio: 1; background: var(--cp-folio); color: var(--cp-accent); border: 1px solid var(--cp-rule); border-radius: 50% 50% 3px 3px; padding: 16px; }
+.topic-art-frame::before { content: ""; position: absolute; inset: 11px; border: 1px solid var(--cp-rule); border-radius: inherit; pointer-events: none; }
+.topic-art-frame svg { display: block; width: 100%; height: 100%; stroke: currentColor; stroke-width: 1.2; overflow: visible; }
+.journey-chapter:nth-of-type(even) .topic-art-frame { background: var(--cp-hero-bg); color: var(--cp-hero-accent); border-color: var(--cp-hero-line); }
+.journey-chapter:nth-of-type(even) .topic-art-frame::before { border-color: var(--cp-hero-line); }
+.motif-hairline { opacity: .3; stroke-width: .8; }
+.motif-fill { fill: currentColor; }
+.topic-art-caption { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; column-gap: 12px; padding-top: 14px; }
+.topic-art-caption p { font-size: 10px; color: var(--cp-text-soft); }
+.chapter-motion-toggle { display: inline-flex; align-items: center; gap: 6px; color: var(--cp-text-soft); font-size: 10px; min-height: 36px; }
+.chapter-motion-toggle:hover:not(:disabled) { color: var(--cp-accent); }
+.chapter-motion-toggle:disabled { opacity: 1; }
+.topic-motion { transform-origin: 200px 200px; animation-duration: 8s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-play-state: paused; }
+.topic-artwork[data-running="true"] .topic-motion { animation-play-state: running; }
+.motion-radiance { animation-name: chapter-radiance; }
+.motion-breathe { animation-name: chapter-breathe; }
+.motion-pair-left { animation-name: chapter-pair-left; }
+.motion-pair-right { animation-name: chapter-pair-right; }
+.motion-orbit { animation-name: chapter-orbit; animation-duration: 72s; animation-timing-function: linear; }
+.motion-flow { animation-name: chapter-flow; animation-duration: 7s; }
+.motion-ink { animation-name: chapter-ink; animation-duration: 9s; }
+.motion-tiles { animation-name: chapter-tiles; animation-duration: 8s; }
+.motion-balance { animation-name: chapter-balance; animation-duration: 9s; }
+.motion-touch { animation-name: chapter-touch; animation-duration: 8s; }
+.motion-steps { animation-name: chapter-steps; animation-duration: 6s; }
+.motion-travel { animation-name: chapter-travel; stroke-dasharray: .18 .06; animation-duration: 10s; animation-timing-function: linear; }
+.motion-emblem { animation-name: chapter-emblem; animation-duration: 14s; }
+.motion-bloom { animation-name: chapter-bloom; animation-duration: 10s; }
+.motion-voice { animation-name: chapter-voice; animation-duration: 5s; }
+.motion-unfold { animation-name: chapter-unfold; animation-duration: 12s; }
+.motion-weave { animation-name: chapter-weave; animation-duration: 8s; }
+.motion-rosette { animation-name: chapter-rosette; animation-duration: 90s; animation-timing-function: linear; }
+.chapter-reports { padding-top: 48px; }
+.chapter-reports-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; border-top: 1px solid var(--cp-rule); padding-top: 32px; }
+.chapter-reports-heading h3 { font-size: 24px; font-weight: 450; letter-spacing: -.02em; }
+.chapter-reports-heading > span { font-size: 12px; color: var(--cp-text-soft); }
+.chapter-grade-note { display: flex; flex-wrap: wrap; gap: 8px 16px; color: var(--cp-text-soft); font-size: 12px; line-height: 1.9; padding-block: 14px 24px; }
+.chapter-reports .narration-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.chapter-reports .narration-card { background: var(--cp-surface); }
+.chapter-reports-footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 28px; }
+.journey-finish { display: flex; align-items: center; gap: 24px; padding-block: 56px; }
+.journey-finish > svg { color: var(--cp-accent); flex-shrink: 0; }
+.journey-finish > div { flex: 1; }
+.journey-finish h2 { font-size: 27px; font-weight: 450; line-height: 1.4; margin-bottom: 12px; }
+.journey-finish p { font-size: 14px; color: var(--cp-text-soft); max-width: 60ch; }
+
+@keyframes chapter-radiance { 0%, 100% { transform: scale(.88); opacity: .35; } 50% { transform: scale(1.06); opacity: .85; } }
+@keyframes chapter-breathe { 0%, 100% { transform: scale(.92); } 50% { transform: scale(1.08); } }
+@keyframes chapter-pair-left { 0%, 100% { transform: translateX(5px); } 50% { transform: translateX(-9px); } }
+@keyframes chapter-pair-right { 0%, 100% { transform: translateX(-5px); } 50% { transform: translateX(9px); } }
+@keyframes chapter-orbit { to { transform: rotate(360deg); } }
+@keyframes chapter-flow { 0%, 100% { transform: translateY(-8px); opacity: .45; } 50% { transform: translateY(8px); opacity: 1; } }
+@keyframes chapter-ink { 0%, 100% { opacity: .22; } 50% { opacity: .82; } }
+@keyframes chapter-tiles { 0%, 100% { transform: translateX(-8px); opacity: .4; } 50% { transform: translateX(8px); opacity: 1; } }
+@keyframes chapter-balance { 0%, 100% { transform: translateY(6px); } 50% { transform: translateY(-6px); } }
+@keyframes chapter-touch { 0%, 100% { transform: scale(.92); opacity: .35; } 50% { transform: scale(1.03); opacity: .85; } }
+@keyframes chapter-steps { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+@keyframes chapter-travel { to { stroke-dashoffset: -.96; } }
+@keyframes chapter-emblem { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg); } }
+@keyframes chapter-bloom { 0%, 100% { transform: scale(.85) rotate(-5deg); } 50% { transform: scale(1.06) rotate(5deg); } }
+@keyframes chapter-voice { 0%, 100% { transform: scaleY(.5); opacity: .45; } 50% { transform: scaleY(1); opacity: 1; } }
+@keyframes chapter-unfold { 0%, 100% { transform: rotate(-15deg) scale(.84); opacity: .4; } 50% { transform: rotate(15deg) scale(1); opacity: .9; } }
+@keyframes chapter-weave { 0%, 100% { transform: translateX(-4px); opacity: .4; } 50% { transform: translateX(4px); opacity: 1; } }
+@keyframes chapter-rosette { to { transform: rotate(-360deg); } }
+
+[lang="ur"] .journey-intro h2 { font-size: 35px; line-height: 2.2; letter-spacing: 0; }
+[lang="ur"] .journey-intro p, [lang="ur"] .journey-note { line-height: 2.7; }
+[lang="ur"] .journey-index button { line-height: 2.3; }
+[lang="ur"] .chapter-title { font-size: clamp(34px, 4vw, 54px); line-height: 2; letter-spacing: 0; }
+[lang="ur"] .chapter-highlights-label { font-size: 13px; font-weight: 400; }
+[lang="ur"] .chapter-highlights p { font-size: 18px; line-height: 2.7; }
+[lang="ur"] .chapter-highlights li::before { top: 22px; }
+[lang="ur"] .highlight-source { font-size: 11px; line-height: 2.4; }
+[lang="ur"] .topic-art-caption { row-gap: 6px; }
+[lang="ur"] .topic-art-caption p, [lang="ur"] .chapter-motion-toggle { line-height: 2.6; }
+[lang="ur"] .chapter-reports-heading h3 { font-size: 25px; font-weight: 400; letter-spacing: 0; line-height: 2.4; }
+[lang="ur"] .chapter-grade-note { line-height: 2.7; }
+[lang="ur"] .journey-finish h2 { font-size: 27px; line-height: 2.2; font-weight: 400; }
+[lang="ur"] .journey-finish p { line-height: 2.7; }
+
+@media (max-width: 1100px) {
+  .primary-nav { gap: 20px; }
+  .chapter-layout { gap: 20px 56px; }
+  .chapter-reports .narration-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .chapter-title { font-size: 46px; }
+}
+@media (max-width: 880px) {
+  .journey-intro > div { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .chapter-layout { column-gap: 36px; grid-template-columns: minmax(0, 1.1fr) minmax(220px, .9fr); }
+  .chapter-highlights p { font-size: 17px; }
+  .chapter-title { font-size: 40px; }
+  .journey-chapter { padding-block: 56px; }
+  .journey-finish { flex-wrap: wrap; }
+  .journey-finish .button { margin-inline-start: 50px; }
+}
+@media (max-width: 650px) {
+  .primary-nav, [lang="ur"] .primary-nav { gap: 18px; }
+  .journey-intro { padding-block: 38px 22px; }
+  .journey-intro h2 { font-size: 31px; margin-bottom: 16px; }
+  .journey-intro p { font-size: 14px; }
+  .journey-index { padding-block: 10px; }
+  .journey-index button { padding-inline: 12px; font-size: 11px; }
+  .journey-note { padding-block: 16px 20px; font-size: 11px; }
+  .journey-chapter { padding-block: 44px; }
+  .chapter-layout { display: flex; flex-direction: column; gap: 24px; align-items: stretch; }
+  .chapter-title { font-size: 44px; line-height: 1.2; }
+  .topic-artwork { max-width: 300px; align-self: center; }
+  .topic-art-frame { padding: 12px; }
+  .topic-art-caption { padding-top: 10px; }
+  .topic-art-caption p, .chapter-motion-toggle { font-size: 9px; }
+  .chapter-highlights-label { margin-bottom: 16px; }
+  .chapter-highlights { gap: 20px; }
+  .chapter-highlights p { font-size: 17px; line-height: 1.85; }
+  .highlight-source { font-size: 11px; min-height: 36px; }
+  .chapter-actions { margin-top: 24px; gap: 12px 18px; }
+  .chapter-actions .button { font-size: 12px; padding-inline: 16px; gap: 10px; }
+  .chapter-next { font-size: 12px; }
+  .chapter-reports { padding-top: 32px; }
+  .chapter-reports-heading { padding-top: 24px; flex-wrap: wrap; gap: 10px; }
+  .chapter-reports-heading h3 { font-size: 22px; }
+  .chapter-grade-note { font-size: 11px; }
+  .chapter-reports .narration-grid { grid-template-columns: 1fr; }
+  .chapter-reports-footer { flex-wrap: wrap; gap: 16px; }
+  .journey-finish { padding-block: 40px; gap: 16px; align-items: flex-start; }
+  .journey-finish > svg { width: 22px; margin-top: 8px; }
+  .journey-finish h2 { font-size: 24px; }
+  .journey-finish p { font-size: 13px; }
+  .journey-finish .button { margin-inline-start: 38px; }
+  [lang="ur"] .journey-intro h2 { font-size: 27px; }
+  [lang="ur"] .chapter-title { font-size: 36px; }
+  [lang="ur"] .chapter-highlights p { font-size: 17px; line-height: 2.8; }
+  [lang="ur"] .chapter-reports-heading h3 { font-size: 21px; }
+  [lang="ur"] .journey-finish h2 { font-size: 23px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .topic-motion { animation: none; }
+}
+@media print {
+  .journey-index, .topic-artwork, .chapter-actions, .chapter-reports-footer { display: none !important; }
+  .chapter-layout { display: block; }
+  .journey-chapter { padding-block: 24px; break-inside: avoid; }
+  .chapter-title { margin-bottom: 16px; }
+}

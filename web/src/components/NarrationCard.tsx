@@ -1,4 +1,5 @@
 import { ArrowUpRight, Bookmark, Check, CircleCheck, Info } from 'lucide-react'
+import { useId } from 'react'
 import type { Language, Narration, Reference } from '../lib/schema.ts'
 import { collectionLabels, gradeLabels } from '../lib/catalog.ts'
 import { translate } from '../lib/i18n.ts'
@@ -27,14 +28,15 @@ type CardProps = {
 }
 
 export function NarrationCard({ row, language, saved, featured = false, onSave, onRead }: CardProps) {
+  const titleId = useId()
   const t = (key: Parameters<typeof translate>[1], values?: Record<string, string>) => translate(language, key, values)
-  return <article className={`narration-card ${featured ? 'narration-card-featured' : ''}`} aria-labelledby={`title-${row.id}`} data-entry={row.id} data-saved={saved}>
+  return <article className={`narration-card ${featured ? 'narration-card-featured' : ''}`} aria-labelledby={titleId} data-entry={row.id} data-saved={saved}>
     <div className="card-heading">
       <div className="card-meta">
         <span className="source-name"><SourceName source={row.source} language={language} /></span>
         <GradeBadge row={row} language={language} />
       </div>
-      <h3 id={`title-${row.id}`}>{row.title[language]}</h3>
+      <h3 id={titleId}>{row.title[language]}</h3>
       <p className="narrator">{row.narrator[language]}</p>
       {!isEstablished(row) && <p className="card-caution"><Info size={14} aria-hidden="true" />{t('cautionTitle')}</p>}
     </div>

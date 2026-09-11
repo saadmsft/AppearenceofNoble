@@ -174,7 +174,7 @@ input:focus-visible, select:focus-visible { outline-offset: 1px; }
 
 .library-section { padding-block: 68px 76px; }
 .collection-heading { margin-bottom: 30px; }
-.collection-heading h2 { display: flex; align-items: center; gap: 24px; font-size: clamp(32px, 3vw, 44px); font-weight: 450; line-height: 1.3; letter-spacing: -.035em; margin-bottom: 16px; scroll-margin-top: 22px; }
+.collection-heading h1 { display: flex; align-items: center; gap: 24px; font-size: clamp(32px, 3vw, 44px); font-weight: 450; line-height: 1.3; letter-spacing: -.035em; margin-bottom: 16px; scroll-margin-top: 22px; }
 .heading-flower { width: 24px; height: 24px; position: relative; color: var(--cp-accent); opacity: .7; flex-shrink: 0; }
 .heading-flower::before, .heading-flower::after { content: ""; position: absolute; inset: 2px; border: 1px solid currentColor; }
 .heading-flower::after { transform: rotate(45deg); }
@@ -428,7 +428,7 @@ kbd { font-family: var(--cp-font); color: var(--cp-text-soft); font-size: 10px; 
 [lang="ur"] .featured-reflection p { font-size: 21px; line-height: 2.4; letter-spacing: 0; }
 [lang="ur"] .featured-reflection > div > span { font-size: 10px; letter-spacing: 0; }
 [lang="ur"] .reflection-source { font-size: 12px; line-height: 2.4; }
-[lang="ur"] .collection-heading h2 { font-size: 35px; line-height: 2; letter-spacing: 0; font-weight: 400; }
+[lang="ur"] .collection-heading h1 { font-size: 35px; line-height: 2; letter-spacing: 0; font-weight: 400; }
 [lang="ur"] .collection-heading p { line-height: 2.6; }
 [lang="ur"] .search-field input { font-size: 14px; line-height: 2.5; padding-block: 6px; }
 [lang="ur"] .filter-select select { font-family: var(--cp-font-arabic); font-size: 17px; min-height: 36px; }
@@ -611,7 +611,7 @@ kbd { font-family: var(--cp-font); color: var(--cp-text-soft); font-size: 10px; 
   .reflection-source svg { width: 18px; }
   .library-section { padding-block: 38px 48px; }
   .collection-heading { margin-bottom: 24px; }
-  .collection-heading h2 { font-size: 31px; gap: 16px; margin-bottom: 12px; }
+  .collection-heading h1 { font-size: 31px; gap: 16px; margin-bottom: 12px; }
   .heading-flower { width: 19px; height: 19px; }
   .collection-heading p { font-size: 13px; line-height: 1.9; }
   .filter-panel { gap: 14px 4px; padding-block: 14px; }
@@ -701,7 +701,7 @@ kbd { font-family: var(--cp-font); color: var(--cp-text-soft); font-size: 10px; 
   [lang="ur"] .hero-colophon p { font-size: 10px; }
   [lang="ur"] .featured-reflection p { font-size: 18px; line-height: 2.5; }
   [lang="ur"] .reflection-source { font-size: 11px; }
-  [lang="ur"] .collection-heading h2 { font-size: 28px; }
+  [lang="ur"] .collection-heading h1 { font-size: 28px; }
   [lang="ur"] .filter-select select { font-size: 15px; }
   [lang="ur"] .filter-select > span { font-size: 10px; }
   [lang="ur"] .filter-explanation { font-size: 10px; }
