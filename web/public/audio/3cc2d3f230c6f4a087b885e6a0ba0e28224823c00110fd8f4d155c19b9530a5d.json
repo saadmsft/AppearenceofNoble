@@ -1,0 +1,18 @@
+{
+  "entryId": "the-shirt-he-loved-to-wear",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Umm Salama reported that the qamis, or shirt, was the garment most beloved to the Prophet may Allah bless him and grant him peace. Her brief statement records a preference among types of clothing. It does not describe a particular shirt's colour, fabric, length or occasion of use.",
+  "transcriptHash": "2e8012b91584fa2b7b303e580e7ae6861f61848feddd3c3639c21c7d65deb728",
+  "transcriptCharacters": 281,
+  "billableCharacters": 286,
+  "cacheKey": "3cc2d3f230c6f4a087b885e6a0ba0e28224823c00110fd8f4d155c19b9530a5d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/3cc2d3f230c6f4a087b885e6a0ba0e28224823c00110fd8f4d155c19b9530a5d.mp3",
+  "byteLength": 103104,
+  "sha256": "1e14f469b40bb30d18acfe7fa4109bf0c3a18d62f1722dc61960c9de494d3266",
+  "durationSeconds": 17.184
+}

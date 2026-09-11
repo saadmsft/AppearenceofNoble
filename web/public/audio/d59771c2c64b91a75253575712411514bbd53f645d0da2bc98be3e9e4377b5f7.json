@@ -1,0 +1,18 @@
+{
+  "entryId": "character-justice-fairness-between-children",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عامر نے نعمان بن بشیر رضی اللہ عنہما کو بتاتے سنا کہ ان کے والد نے انہیں الگ سے ایک عطیہ دیا تھا۔ جب نبی صلی اللہ علیہ وسلم کو گواہ بنانے کی درخواست ہوئی تو آپ صلی اللہ علیہ وسلم نے پہلے پوچھا کہ کیا باقی اولاد کو بھی ایسا دیا ہے۔ نفی میں جواب ملنے پر آپ صلی اللہ علیہ وسلم نے اللہ سے ڈرنے اور اولاد کے درمیان انصاف کرنے کی تاکید فرمائی۔ ان کے مطابق، والد نے عطیہ واپس لے لیا۔",
+  "transcriptHash": "7b40ed78ebef3a63ef5b1f2a249dd643e956e94b1dd931728d8dc75cc709f849",
+  "transcriptCharacters": 376,
+  "billableCharacters": 376,
+  "cacheKey": "d59771c2c64b91a75253575712411514bbd53f645d0da2bc98be3e9e4377b5f7",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d59771c2c64b91a75253575712411514bbd53f645d0da2bc98be3e9e4377b5f7.mp3",
+  "byteLength": 170064,
+  "sha256": "6ecb722b988ae3f24a27def7b15b73ea284b2eec731e96a23c86c805dbaaef77",
+  "durationSeconds": 28.344
+}

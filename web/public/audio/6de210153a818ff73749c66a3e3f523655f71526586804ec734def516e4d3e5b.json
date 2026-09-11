@@ -1,0 +1,18 @@
+{
+  "entryId": "wavy-hair-between-ears-and-shoulders",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "قتادہ نے نبی کریم صلی اللہ علیہ وسلم کے بالوں کے بارے میں پوچھا تو انس رضی اللہ عنہ نے انہیں لہراتا ہوا بتایا، نہ بالکل سیدھا نہ سخت گھنگریالا، اور لمبائی کانوں اور کندھوں کے درمیان بیان کی۔ اس خاص روایت کے الفاظ میں بالوں کی کیفیت اور لمبائی دونوں ملتی ہیں۔",
+  "transcriptHash": "ec5f715561a10cd4d82f8fdd7e29fb4f2ac6e826a6337a40c5beb417a3138a54",
+  "transcriptCharacters": 258,
+  "billableCharacters": 258,
+  "cacheKey": "6de210153a818ff73749c66a3e3f523655f71526586804ec734def516e4d3e5b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6de210153a818ff73749c66a3e3f523655f71526586804ec734def516e4d3e5b.mp3",
+  "byteLength": 109584,
+  "sha256": "25d89fb3487290a58a2ad31244e4037913c711d6e6a0e5d4eceb993b45b8e670",
+  "durationSeconds": 18.264
+}

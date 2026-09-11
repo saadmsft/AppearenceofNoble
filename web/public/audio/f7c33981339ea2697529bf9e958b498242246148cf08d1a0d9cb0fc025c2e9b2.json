@@ -1,0 +1,18 @@
+{
+  "entryId": "character-generosity-ramadan-giving",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Ibn Abbas describes the Prophet as exceptionally generous, with his giving especially abundant during Ramadan when Jibril met him. He relates their nightly meetings for reviewing the Qur'an and compares the Prophet's generosity in good to a wind sent forth. This is the narrator's description of the Prophet, not a statement of self-praise.",
+  "transcriptHash": "348b1b0acbd50e34419dad9b873a76497c3d4fbeeaf4fcbda3ca78fe181273d4",
+  "transcriptCharacters": 340,
+  "billableCharacters": 355,
+  "cacheKey": "f7c33981339ea2697529bf9e958b498242246148cf08d1a0d9cb0fc025c2e9b2",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/f7c33981339ea2697529bf9e958b498242246148cf08d1a0d9cb0fc025c2e9b2.mp3",
+  "byteLength": 114480,
+  "sha256": "eace5e2959f27638aed4f4a41c0ffef718589edccc8c3473a950529ef65e2a16",
+  "durationSeconds": 19.08
+}

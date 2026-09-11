@@ -1,0 +1,18 @@
+{
+  "entryId": "always-greeted-jarir-smiling",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جریر رضی اللہ عنہ نے کہا کہ اسلام قبول کرنے کے بعد نبی کریم صلی اللہ علیہ وسلم نے انہیں کبھی ملاقات سے نہیں روکا۔ جب بھی آپ صلی اللہ علیہ وسلم نے انہیں دیکھا، مسکرا دیے۔ جریر رضی اللہ عنہ کا یہ بیان ان ملاقاتوں میں اپنے ساتھ ہونے والے استقبال کی یاد ہے۔",
+  "transcriptHash": "c624629284f4ae1d28dce307a457b2a47519a1b4396889e741e95fe2e18438d7",
+  "transcriptCharacters": 253,
+  "billableCharacters": 253,
+  "cacheKey": "331580ab45b4764577ad0ef2c81422924b117f4fbdb0f4818bf672e4db1fdf90",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/331580ab45b4764577ad0ef2c81422924b117f4fbdb0f4818bf672e4db1fdf90.mp3",
+  "byteLength": 116784,
+  "sha256": "c7b5257d827cb6c67c56f305162c30bb3083705165fc09d54282a660d56a96f5",
+  "durationSeconds": 19.464
+}

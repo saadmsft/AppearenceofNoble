@@ -1,0 +1,18 @@
+{
+  "entryId": "feet-lean-heels-jabir-samurah",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir ibn Samurah described the Prophet's may Allah bless him and grant him peace heels as manhus al-'aqibayn. When Shu'ba asked Simak what the term meant, Simak explained that there was little flesh at the heels. The same report includes descriptions of the mouth and eyes.",
+  "transcriptHash": "13d7e1db1d0d005a171808bb1c8e3306040ee4fad5679f6e809c11a38fbea9f8",
+  "transcriptCharacters": 274,
+  "billableCharacters": 289,
+  "cacheKey": "a38e97c65bdf8bf677406ee7656f44da98b669f3e2d42350f3e924666601d816",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a38e97c65bdf8bf677406ee7656f44da98b669f3e2d42350f3e924666601d816.mp3",
+  "byteLength": 101088,
+  "sha256": "c68e27267f773b6c7b2e7d2724624971af36f8bd60245224ebaf4ee0e0aaa761",
+  "durationSeconds": 16.848
+}

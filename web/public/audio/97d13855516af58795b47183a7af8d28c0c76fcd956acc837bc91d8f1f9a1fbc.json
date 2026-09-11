@@ -1,0 +1,18 @@
+{
+  "entryId": "more-beautiful-than-the-moon-weak",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "In this report, Jabir ibn Samurah recalls looking at the Prophet may Allah bless him and grant him peace and the moon on a clear night. The Prophet may Allah bless him and grant him peace was wearing a red hullah, and Jabir found him more beautiful than the moon. The report's grading differs between al-Tirmidhi's comment and the displayed Darussalam assessment.",
+  "transcriptHash": "fe4360c2f03269838348df01863a921f57b0358fd068faa37b10f2ada38729b9",
+  "transcriptCharacters": 363,
+  "billableCharacters": 373,
+  "cacheKey": "97d13855516af58795b47183a7af8d28c0c76fcd956acc837bc91d8f1f9a1fbc",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/97d13855516af58795b47183a7af8d28c0c76fcd956acc837bc91d8f1f9a1fbc.mp3",
+  "byteLength": 122112,
+  "sha256": "c0c52ca7123d90dbc7fbce0035c225ef9b78ea268a243eabeb97bc46b6b82dd1",
+  "durationSeconds": 20.352
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "speech-clear-enough-to-count",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا نے نبی کریم صلی اللہ علیہ وسلم کی گفتگو کو ایسا واضح بتایا کہ گننے والا اس کے الفاظ گن سکے۔ اسی صفحے پر ان کا ایک شخص کے تیزی سے روایات بیان کرنے پر اعتراض بھی ہے؛ انہوں نے کہا کہ آپ صلی اللہ علیہ وسلم اس طرح جلدی جلدی بات نہیں کرتے تھے۔",
+  "transcriptHash": "97d1a6ab0364595571ec2c1a9b8817d6382cce812f4f7578f87c532b14b20ce7",
+  "transcriptCharacters": 257,
+  "billableCharacters": 257,
+  "cacheKey": "516fa544ff94d20985f196933fb055d70156c0338e024fe19817172eb24476ab",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/516fa544ff94d20985f196933fb055d70156c0338e024fe19817172eb24476ab.mp3",
+  "byteLength": 114480,
+  "sha256": "b20f5db600a4ade1df080ad2f58893add95ca809ebbeddacdd139412e1c74f1e",
+  "durationSeconds": 19.08
+}

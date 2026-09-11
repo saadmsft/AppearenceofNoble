@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-modest-invitations",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ بَشَّارٍ، حَدَّثَنَا ابْنُ أَبِي عَدِيٍّ، عَنْ شُعْبَةَ، عَنْ سُلَيْمَانَ، عَنْ أَبِي حَازِمٍ، عَنْ أَبِي هُرَيْرَةَ ـ رضى الله عنه ـ عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ \" لَوْ دُعِيتُ إِلَى ذِرَاعٍ أَوْ كُرَاعٍ لأَجَبْتُ، وَلَوْ أُهْدِيَ إِلَىَّ ذِرَاعٌ أَوْ كُرَاعٌ لَقَبِلْتُ \".",
+  "transcriptHash": "9e2c1478d11c9492e369961aac57093889c41e74a190cdd1308212cd3bc13578",
+  "transcriptCharacters": 312,
+  "billableCharacters": 322,
+  "cacheKey": "e796b4088e129bb6df65237a4deec17e34ebd27a140e5470631aa8e4b04c5fe6",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e796b4088e129bb6df65237a4deec17e34ebd27a140e5470631aa8e4b04c5fe6.mp3",
+  "byteLength": 120240,
+  "sha256": "63b1cf8ac5d8290a2ad1dbfd550641bf42d2eac5c682705884d7bcc04fa626e4",
+  "durationSeconds": 20.04
+}

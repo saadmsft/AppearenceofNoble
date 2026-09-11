@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-modest-invitations",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابو ہریرہ رضی اللہ عنہ روایت کرتے ہیں کہ نبی کریم صلی اللہ علیہ وسلم نے دست یا پائے کی دعوت بھی قبول کرنے اور ایسا ہدیہ ملنے پر اسے لینے کی آمادگی ظاہر فرمائی۔ آپ صلی اللہ علیہ وسلم کے ان الفاظ میں معمولی پیشکش کو حقیر نہ سمجھنے کا پہلو نمایاں ہے؛ قبولیت کو پُرتکلف اہتمام سے مشروط نہیں کیا گیا۔",
+  "transcriptHash": "db89f7af0e95619bdca6ea3b575c62a214e928066f41e971570d262fd57f3a23",
+  "transcriptCharacters": 300,
+  "billableCharacters": 300,
+  "cacheKey": "fd258111b890dc530bb967638629515e9115672e3d1343c0d3647f07ceb083bb",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/fd258111b890dc530bb967638629515e9115672e3d1343c0d3647f07ceb083bb.mp3",
+  "byteLength": 130608,
+  "sha256": "d84d9b59bcd81ccd414c797cd888065e0deb3d0b284597b1e1521ad96f205d97",
+  "durationSeconds": 21.768
+}

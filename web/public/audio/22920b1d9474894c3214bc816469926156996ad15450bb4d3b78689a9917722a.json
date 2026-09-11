@@ -1,0 +1,18 @@
+{
+  "entryId": "face-like-the-moon-not-a-sword",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "براء بن عازب رضی اللہ عنہ سے پوچھا گیا کہ کیا نبی کریم صلی اللہ علیہ وسلم کا چہرہ تلوار جیسا تھا۔ انہوں نے اس تشبیہ کو رد کرتے ہوئے چاند کی مثال دی۔ اس مختصر سوال و جواب میں یہ مزید واضح نہیں کیا گیا کہ پوچھنے والے کے ذہن میں ان دونوں مثالوں کی کون سی خصوصیات تھیں۔",
+  "transcriptHash": "d5fa1de752ada9356b059122b76bba5a739d5632299b8b13d6cbb49d4c5b0e05",
+  "transcriptCharacters": 265,
+  "billableCharacters": 265,
+  "cacheKey": "22920b1d9474894c3214bc816469926156996ad15450bb4d3b78689a9917722a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/22920b1d9474894c3214bc816469926156996ad15450bb4d3b78689a9917722a.mp3",
+  "byteLength": 117360,
+  "sha256": "2087a250b41974dbae08413111337160f90b277417891534acf5391a6045e41c",
+  "durationSeconds": 19.56
+}

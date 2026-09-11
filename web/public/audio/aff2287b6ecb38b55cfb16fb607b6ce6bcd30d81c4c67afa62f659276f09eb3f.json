@@ -1,0 +1,18 @@
+{
+  "entryId": "fourteen-white-hairs-counted-anas",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا إِسْحَاقُ بْنُ مَنْصُورٍ، وَيَحْيَى بْنُ مُوسَى، قَالا: حَدَّثَنَا عَبْدُ الرَّزَّاقِ، عَنْ مَعْمَرٍ، عَنْ ثَابِتٍ، عَنْ أَنَسٍ، قَالَ: مَا عَدَدْتُ فِي رَأْسِ رَسُولِ اللهِ صلى الله عليه وسلم وَلِحْيَتِهِ، إِلا أَرْبَعَ عَشْرَةَ شَعَرَةً بَيْضَاءَ.",
+  "transcriptHash": "918b09031b299ac43f6bec1c254b5e68eacaa79481404358bb7b2ed569a68089",
+  "transcriptCharacters": 260,
+  "billableCharacters": 260,
+  "cacheKey": "aff2287b6ecb38b55cfb16fb607b6ce6bcd30d81c4c67afa62f659276f09eb3f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/aff2287b6ecb38b55cfb16fb607b6ce6bcd30d81c4c67afa62f659276f09eb3f.mp3",
+  "byteLength": 109296,
+  "sha256": "d7463930d59b9f63cb376915b08d7cc722e3eff9398668b6b027907076e45593",
+  "durationSeconds": 18.216
+}

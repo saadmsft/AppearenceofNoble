@@ -1,0 +1,18 @@
+{
+  "entryId": "brightness-of-shins-abu-juhaifa",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Juhaifa recalled the Prophet may Allah bless him and grant him peace coming out at al-Abtah after Bilal had brought out a short spear for prayer. The brightness of the Prophet's may Allah bless him and grant him peace shins remained vivid in his memory, as though he could still see it. The account then describes the noon and afternoon prayers.",
+  "transcriptHash": "08ffa7d833d2d44e3236aecd710a36094362f7ad9cbe3acacd2df9bd3e796479",
+  "transcriptCharacters": 349,
+  "billableCharacters": 354,
+  "cacheKey": "b33c87a44ac1ae658741146851cf5ac86ea5ba1ec4a65ab73d0f38ca4c241cd3",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b33c87a44ac1ae658741146851cf5ac86ea5ba1ec4a65ab73d0f38ca4c241cd3.mp3",
+  "byteLength": 115920,
+  "sha256": "9cf6cb39652e3676f7597591b4d7c594cf420b65353f2a4b63a11d0870fa31ff",
+  "durationSeconds": 19.32
+}

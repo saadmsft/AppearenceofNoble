@@ -1,0 +1,18 @@
+{
+  "entryId": "character-family-community-aisha-neighbour-invitation",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas recounts a Persian neighbour inviting the Prophet may Allah bless him and grant him peace to a meal he had prepared. The Prophet may Allah bless him and grant him peace asked whether Aisha was included and declined when the neighbour said no. When the invitation was renewed a third time and the neighbour agreed to include her, they went together. The episode records consideration for his wife within neighbourly hospitality.",
+  "transcriptHash": "2cf345a4d14f42214b8919a320de785793e1a0fd01177d75e5013cd481c065f5",
+  "transcriptCharacters": 432,
+  "billableCharacters": 432,
+  "cacheKey": "2fe58a7815dbefc9e218abc37cc1e9b0cabfddd46bfe16cb658304d6db78fae8",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/2fe58a7815dbefc9e218abc37cc1e9b0cabfddd46bfe16cb658304d6db78fae8.mp3",
+  "byteLength": 143856,
+  "sha256": "28b35d384ac594e8c0fdc86c335ecfccf0794cd162f17cb475a8d7ee4048b4eb",
+  "durationSeconds": 23.976
+}

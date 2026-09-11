@@ -1,0 +1,18 @@
+{
+  "entryId": "cool-fragrant-hand-jabir-childhood",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر بن سمرہ رضی اللہ عنہ نماز کے بعد نبی کریم صلی اللہ علیہ وسلم کے ساتھ گھر کی طرف گئے۔ راستے میں بچے ملے تو آپ صلی اللہ علیہ وسلم نے ان کے رخساروں پر ہاتھ پھیرا، جابر رضی اللہ عنہ کے رخسار پر بھی۔ انہیں ہاتھ کی ٹھنڈک یا خوشبو محسوس ہوئی، گویا وہ عطار کے خوشبو دان سے نکالا گیا ہو۔",
+  "transcriptHash": "ae827e14a209eb2fa9f26a22b6dcfd9b70221a85461e68e4c5fecf3921b20f75",
+  "transcriptCharacters": 283,
+  "billableCharacters": 283,
+  "cacheKey": "fa5bb1a17c965513d8a38aa1eff906fd43fb6edc9e71085e3ffbe3f051c727c5",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/fa5bb1a17c965513d8a38aa1eff906fd43fb6edc9e71085e3ffbe3f051c727c5.mp3",
+  "byteLength": 127872,
+  "sha256": "7c451bfbe7ba530ebf34d6b07351270a5a90017f447a61bb61e93ab9b8564521",
+  "durationSeconds": 21.312
+}

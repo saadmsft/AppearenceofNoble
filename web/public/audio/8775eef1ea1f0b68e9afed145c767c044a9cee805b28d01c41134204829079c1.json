@@ -1,0 +1,18 @@
+{
+  "entryId": "abu-huraira-white-as-silver-hair",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو ہریرہ رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کی رنگت کو روشن بیان کرتے ہوئے چاندی سے ڈھلی ہوئی چیز کی مثال دی۔ انہوں نے آپ صلی اللہ علیہ وسلم کے بالوں کو ہلکے بل والا یا لہراتا ہوا بھی بتایا۔ اس مختصر روایت میں رنگت کی تشبیہ اور بالوں کی کیفیت ساتھ بیان ہوئی ہیں۔",
+  "transcriptHash": "6f12f9fb9a06d905f4b735e12eaf238b55815b14137bd590e68c510a49e9fd35",
+  "transcriptCharacters": 272,
+  "billableCharacters": 272,
+  "cacheKey": "8775eef1ea1f0b68e9afed145c767c044a9cee805b28d01c41134204829079c1",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/8775eef1ea1f0b68e9afed145c767c044a9cee805b28d01c41134204829079c1.mp3",
+  "byteLength": 121392,
+  "sha256": "ade54ba78b91432f23d5010e9494b77625497883210c4630e75d6391f170526e",
+  "durationSeconds": 20.232
+}

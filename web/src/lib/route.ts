@@ -1,11 +1,11 @@
-import { collections, grades, languages, topics } from './schema.ts'
-import type { Language } from './schema.ts'
+import { characterTopics, collections, grades, languages, shelves, topics } from './schema.ts'
+import type { Language, Shelf } from './schema.ts'
 import { defaultFilters } from './search.ts'
 import type { Filters } from './search.ts'
 
-export const views = ['journey', 'collection', 'guide', 'sources', 'saved'] as const
+export const views = ['home', 'journey', 'collection', 'reading', 'guide', 'sources', 'saved'] as const
 export type View = typeof views[number]
-export type Route = Filters & { view: View; language?: Language; entry: string | null }
+export type Route = Filters & { view: View; shelf: Shelf | 'all'; language?: Language; entry: string | null }
 
 function allowed<T extends string>(value: string | null, values: readonly T[]): value is T {
   return value !== null && values.some((item) => value === item)
@@ -18,10 +18,14 @@ export function parseRoute(url: URL): Route {
   const topic = params.get('topic')
   const collection = params.get('source')
   const grade = params.get('grade')
+  const shelf = params.get('shelf')
   const hasLibraryFilters = ['q', 'topic', 'source', 'grade'].some((key) => params.has(key))
   const match = /^#narration\/([a-z0-9-]+)$/.exec(url.hash)
+  const resolvedView = allowed(view, views) ? view : hasLibraryFilters ? 'collection' : 'home'
+  const inferredShelf = allowed(topic, characterTopics) ? 'character' : resolvedView === 'home' || resolvedView === 'reading' || resolvedView === 'saved' ? 'all' : 'appearance'
   return {
-    view: allowed(view, views) ? view : hasLibraryFilters ? 'collection' : 'journey',
+    view: resolvedView,
+    shelf: allowed(shelf, [...shelves, 'all'] as const) ? shelf : inferredShelf,
     language: allowed(language, languages) ? language : undefined,
     topic: allowed(topic, topics) ? topic : 'all',
     collection: allowed(collection, collections) ? collection : 'all',
@@ -35,6 +39,7 @@ export function routeUrl(base: URL, route: Route): URL {
   const url = new URL(base)
   const values = {
     view: route.view,
+    shelf: route.shelf,
     lang: route.language ?? '',
     topic: route.topic === 'all' ? '' : route.topic,
     source: route.collection === 'all' ? '' : route.collection,

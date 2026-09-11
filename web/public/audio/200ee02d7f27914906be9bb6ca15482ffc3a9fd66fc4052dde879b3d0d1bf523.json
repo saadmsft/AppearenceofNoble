@@ -1,0 +1,18 @@
+{
+  "entryId": "no-one-smiled-more-than-him",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عبداللہ بن حارث بن جزء رضی اللہ عنہ نے کہا کہ انہوں نے کسی کو نبی کریم صلی اللہ علیہ وسلم سے زیادہ مسکراتے نہیں دیکھا۔ یہ ان لوگوں کے بارے میں ایک صحابی کا تقابلی مشاہدہ ہے جنہیں انہوں نے دیکھا تھا۔ اس سے کثرتِ تبسم کا تاثر ملتا ہے، کسی خاص ملاقات کی تفصیل نہیں۔",
+  "transcriptHash": "49247591cc211649b47481673955794d7009dd53f8e759fa147b7370197eddbc",
+  "transcriptCharacters": 262,
+  "billableCharacters": 262,
+  "cacheKey": "200ee02d7f27914906be9bb6ca15482ffc3a9fd66fc4052dde879b3d0d1bf523",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/200ee02d7f27914906be9bb6ca15482ffc3a9fd66fc4052dde879b3d0d1bf523.mp3",
+  "byteLength": 119808,
+  "sha256": "1d766f1046397125c57be1a123cea05b460368ba68d5577092261b7edfeecf38",
+  "durationSeconds": 19.968
+}

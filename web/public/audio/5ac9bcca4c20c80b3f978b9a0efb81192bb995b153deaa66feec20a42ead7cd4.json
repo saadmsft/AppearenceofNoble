@@ -1,0 +1,18 @@
+{
+  "entryId": "abu-tufail-white-handsome-medium-built",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Tufail said that he had seen the Prophet may Allah bless him and grant him peace and that no other person who had seen him remained alive. Asked to describe him, he recalled a fair, handsome man of medium stature. The related wording in Muslim specifically describes his handsome face.",
+  "transcriptHash": "cc5e961befd1f8860d214782226a7259c56e416198cf5077a7ce0e415d74beae",
+  "transcriptCharacters": 289,
+  "billableCharacters": 289,
+  "cacheKey": "5ac9bcca4c20c80b3f978b9a0efb81192bb995b153deaa66feec20a42ead7cd4",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5ac9bcca4c20c80b3f978b9a0efb81192bb995b153deaa66feec20a42ead7cd4.mp3",
+  "byteLength": 103680,
+  "sha256": "c9a09ab6bf38ee575b9789de7e9fc67ff0ca4e254373bd92f0e2c67c6da66098",
+  "durationSeconds": 17.28
+}

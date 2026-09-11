@@ -1,0 +1,18 @@
+{
+  "entryId": "hind-ibn-abi-hala-neck-like-silver",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "A passage in the weakly graded report attributed to Hind ibn Abi Hala compares the Prophet's may Allah bless him and grant him peace neck to the neck of a figure, with the clarity of silver. This preserves the report's comparison without turning it into an exact anatomical description.",
+  "transcriptHash": "ee99b6ceaa18782d46da8f02b364aa024ebc7a5fd0ae9826f7d3d0b16b62ee7d",
+  "transcriptCharacters": 286,
+  "billableCharacters": 296,
+  "cacheKey": "c7da756e1e8821d52df02c68a15c3bbe842580551e78cbd1ab7289cac54cb2cc",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c7da756e1e8821d52df02c68a15c3bbe842580551e78cbd1ab7289cac54cb2cc.mp3",
+  "byteLength": 94464,
+  "sha256": "ca8e325b0758f3d9dbf3c07aee26ecf040516884d7e4280d697c6813c5a872c5",
+  "durationSeconds": 15.744
+}

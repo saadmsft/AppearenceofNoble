@@ -1,0 +1,18 @@
+{
+  "entryId": "greyness-hidden-by-hair-oil",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، قَالَ: أَخْبَرَنَا أَبُو دَاوُدَ، قَالَ: حَدَّثَنَا شُعْبَةُ، عَنْ سِمَاكِ بْنِ حَرْبٍ، قَالَ: سَمِعْتُ جَابِرَ بْنَ سَمُرَةَ، وَقَدْ سُئِلَ عَنْ شَيْبِ رَسُولِ اللهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّم، فَقَالَ: كَانَ إِذَا دَهَنَ رَأْسَهُ لَمْ يُرَ مِنْهُ شَيْبٌ، وَإِذَا لَمْ يَدْهِنْ رُئِيَ مِنْهُ شَيْءٌ.",
+  "transcriptHash": "93f61be53bb35af230e0b51089addd875486cb3ba2eb8cab847101f117718eb4",
+  "transcriptCharacters": 345,
+  "billableCharacters": 345,
+  "cacheKey": "aafb3d41e72d929e25c2228d2210ac6e8a7393814fa10cab3c7cbf5f12c028e8",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/aafb3d41e72d929e25c2228d2210ac6e8a7393814fa10cab3c7cbf5f12c028e8.mp3",
+  "byteLength": 135792,
+  "sha256": "f2b55a16ec01b2fb498ed335f2c0a2a63b8f4d5386c95f70097fabe8a8119b95",
+  "durationSeconds": 22.632
+}

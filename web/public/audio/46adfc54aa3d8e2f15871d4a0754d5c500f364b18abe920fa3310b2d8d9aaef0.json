@@ -1,0 +1,18 @@
+{
+  "entryId": "character-patience-recalling-musa",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حنین سے متعلق تقسیم کے بعد حضرت عبداللہ بن مسعود رضی اللہ عنہ نے ایک شخص کی بات نبی کریم صلی اللہ علیہ وسلم تک پہنچائی جس نے تقسیم کے انصاف اور نیت پر اعتراض کیا تھا۔ آپ صلی اللہ علیہ وسلم نے اس الزام کا جواب دیا، پھر حضرت موسیٰ علیہ السلام کا ذکر فرمایا کہ انہیں اس سے زیادہ اذیت پہنچی تھی اور انہوں نے صبر کیا۔",
+  "transcriptHash": "76eeb8a156ca24790066a3890e5a081f928cdc8c8cb599641a02b8056f24220a",
+  "transcriptCharacters": 312,
+  "billableCharacters": 312,
+  "cacheKey": "46adfc54aa3d8e2f15871d4a0754d5c500f364b18abe920fa3310b2d8d9aaef0",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/46adfc54aa3d8e2f15871d4a0754d5c500f364b18abe920fa3310b2d8d9aaef0.mp3",
+  "byteLength": 143280,
+  "sha256": "58289cede60642e61d4a2638d8a5b1038e5fe64efca362144965388bd6b0eed2",
+  "durationSeconds": 23.88
+}

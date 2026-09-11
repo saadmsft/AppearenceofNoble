@@ -1,0 +1,18 @@
+{
+  "entryId": "moderate-stature-large-head-ali",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "علی رضی اللہ عنہ کے مختصر بیان میں میانہ قد، بھرے ہوئے ہاتھ پاؤں، بڑا سر، مضبوط جوڑ اور دھڑ پر بالوں کی لمبی لکیر کا ذکر ہے۔ اس میں نبی کریم صلی اللہ علیہ وسلم کی آگے کو مائل چال کو ڈھلان سے اترنے سے تشبیہ دی گئی، اور آخر میں علی رضی اللہ عنہ کہتے ہیں کہ انہوں نے آپ صلی اللہ علیہ وسلم جیسا کوئی نہیں دیکھا۔",
+  "transcriptHash": "234cf750f0ac4f5ee44fe427beb64fcbdbe513953c461762e14533631a79554d",
+  "transcriptCharacters": 307,
+  "billableCharacters": 307,
+  "cacheKey": "b946cf0ef091f3e6b1f4f2e8ea21cd76c1ac6704a1d51045cd4946d9b8b4a1cf",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b946cf0ef091f3e6b1f4f2e8ea21cd76c1ac6704a1d51045cd4946d9b8b4a1cf.mp3",
+  "byteLength": 131328,
+  "sha256": "a7b82596b8ef5a91c0911c60eda367622496fe5450946993d61baa0fa9d2f2cc",
+  "durationSeconds": 21.888
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-reclining-legs-crossed-abdullah-zayd",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عباد بن تمیم نے اپنے چچا کا مشاہدہ نقل کیا کہ نبی کریم صلی اللہ علیہ وسلم مسجد میں پیٹھ کے بل لیٹے ہوئے تھے اور ایک ٹانگ دوسری پر رکھی تھی۔ یہ آرام کی ایک حالت کا بیان ہے، چلنے کے انداز یا ٹانگوں کے تناسب کا نہیں۔",
+  "transcriptHash": "242e05140b86f60493b3155c0a0fb00b5f6fe9e2bd5f511a4a9380a00caf10b2",
+  "transcriptCharacters": 213,
+  "billableCharacters": 213,
+  "cacheKey": "868261663bf5eb22f1f1f876e823903e5454abb0a707b3a262b6e9e8e9261934",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/868261663bf5eb22f1f1f876e823903e5454abb0a707b3a262b6e9e8e9261934.mp3",
+  "byteLength": 92448,
+  "sha256": "c7c842995476b405e552337a1b74b568e33fb3dac5eb2c87784dbdc148d92e58",
+  "durationSeconds": 15.408
+}

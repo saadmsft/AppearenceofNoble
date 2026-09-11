@@ -1,0 +1,18 @@
+{
+  "entryId": "a-sound-like-a-mill-from-weeping",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abdullah ibn ash-Shikhkhir saw the Prophet may Allah bless him and grant him peace praying and heard a sound from his chest caused by weeping. He compared it to the rumbling of a mill. The account preserves an audible detail from the prayer that he witnessed.",
+  "transcriptHash": "a48bf761437a1a657bfe2917f4c507a0c5a6c5867ddebbc314bfbc4b38bfd95e",
+  "transcriptCharacters": 259,
+  "billableCharacters": 259,
+  "cacheKey": "af95d21d6ee7967cb9026ef291a296d7c95d7c880a51da0521df7bf72dad5201",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/af95d21d6ee7967cb9026ef291a296d7c95d7c880a51da0521df7bf72dad5201.mp3",
+  "byteLength": 88992,
+  "sha256": "39fa2dd9f1a4d8615dee130d0c1f965b7c1fc8ed1aea1d61459f1b6bc5bd3283",
+  "durationSeconds": 14.832
+}

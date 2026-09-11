@@ -1,0 +1,18 @@
+{
+  "entryId": "grey-hair-location-chin-temples-scalp",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نے بیان کیا کہ نبی کریم صلی اللہ علیہ وسلم بالوں میں خضاب نہیں لگاتے تھے۔ انہوں نے سفیدی کی جگہ نچلے ہونٹ کے نیچے کے بالوں، دونوں کنپٹیوں اور سر کے اِکا دُکا بالوں میں بتائی۔ اسی روایت میں سفید بال اکھاڑنے کی ناپسندیدگی بھی بیان ہوئی ہے۔",
+  "transcriptHash": "b167a4dd2c1b95410e813cdede0d53bfc47a32166bfe35e1aef0a2a9b8842f8a",
+  "transcriptCharacters": 254,
+  "billableCharacters": 254,
+  "cacheKey": "40569fbbd03d1aece22ed7282386bc17f92bc79fd352de618576f88c7c3b7192",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/40569fbbd03d1aece22ed7282386bc17f92bc79fd352de618576f88c7c3b7192.mp3",
+  "byteLength": 111744,
+  "sha256": "469fd17236e855f2cf6aaaacb5b2901d30c479ad7df094cbce9e37da59ff4030",
+  "durationSeconds": 18.624
+}

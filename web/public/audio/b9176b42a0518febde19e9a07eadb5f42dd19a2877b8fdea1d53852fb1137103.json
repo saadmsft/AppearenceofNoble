@@ -1,0 +1,18 @@
+{
+  "entryId": "build-broad-shoulders-bara",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَمُحَمَّدُ بْنُ بَشَّارٍ، قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، قَالَ سَمِعْتُ أَبَا إِسْحَاقَ، قَالَ سَمِعْتُ الْبَرَاءَ، يَقُولُ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم رَجُلاً مَرْبُوعًا بَعِيدَ مَا بَيْنَ الْمَنْكِبَيْنِ عَظِيمَ الْجُمَّةِ إِلَى شَحْمَةِ أُذُنَيْهِ عَلَيْهِ حُلَّةٌ حَمْرَاءُ مَا رَأَيْتُ شَيْئًا قَطُّ أَحْسَنَ مِنْهُ صلى الله عليه وسلم .",
+  "transcriptHash": "9586d5a2dbaf3c1100ba2b192dd12cfbccf60364933eaf74d99264bf0ea29176",
+  "transcriptCharacters": 427,
+  "billableCharacters": 427,
+  "cacheKey": "b9176b42a0518febde19e9a07eadb5f42dd19a2877b8fdea1d53852fb1137103",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b9176b42a0518febde19e9a07eadb5f42dd19a2877b8fdea1d53852fb1137103.mp3",
+  "byteLength": 154368,
+  "sha256": "b20049a1c1f4c906a881acdc5a8513ea4343f5b8da588e923bdff533686467e5",
+  "durationSeconds": 25.728
+}

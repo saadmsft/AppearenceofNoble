@@ -1,0 +1,18 @@
+{
+  "entryId": "build-armpit-whiteness-istisqa-anas",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas described the Prophet may Allah bless him and grant him peace raising his hands in the supplication for rain until the whiteness of his armpits was visible. The physical detail is linked to this raised-arm posture during prayer for rain, rather than offered as a separate portrait.",
+  "transcriptHash": "229ab701ef4092bcfbf934584dbada5a23a967fe4653f541b9c515d96cb0bb00",
+  "transcriptCharacters": 286,
+  "billableCharacters": 286,
+  "cacheKey": "3ee6b88fd28243467a25eec9dfef9a8735989e640d1964813ebb6f21a81e18e8",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/3ee6b88fd28243467a25eec9dfef9a8735989e640d1964813ebb6f21a81e18e8.mp3",
+  "byteLength": 92736,
+  "sha256": "e0dd708596dbe190fa63855a5791f317c0333a76726218279fe43cb8e5425761",
+  "durationSeconds": 15.456
+}

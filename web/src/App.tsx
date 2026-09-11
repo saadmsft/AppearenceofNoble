@@ -5,18 +5,26 @@ import { GuidePage, SourcesPage } from './components/AboutPages'
 import { NarrationCard } from './components/NarrationCard'
 import { ManuscriptHero } from './components/ManuscriptHero'
 import { TopicJourney } from './components/TopicJourney'
+import { ShelfSelector } from './components/ShelfSelector'
+import { ProjectHome } from './components/ProjectHome'
+import { ReadingPage } from './components/ReadingPage'
+import { ReadingIssueMessage, ReadingTools } from './components/ReadingTools'
+import { useReading } from './hooks/useReading'
+import type { BookmarkWriteResult } from './lib/reading.ts'
 import { Reader } from './components/Reader'
+import { AudioPlayer } from './components/AudioPlayer'
 import { Button } from './components/ui/button'
-import { collectionLabels, topicLabels } from './lib/catalog.ts'
+import { collectionLabels, shelfLabels, topicLabels } from './lib/catalog.ts'
+import { chapters, characterChapters } from './lib/chapters.ts'
 import { number, translate } from './lib/i18n.ts'
 import type { MessageKey } from './lib/i18n.ts'
-import { narrations } from './lib/library.ts'
+import { getNarrationShelf, getShelfRows, getShelfTopics, narrations } from './lib/library.ts'
 import { loadPreferences, savePreferences } from './lib/preferences.ts'
 import type { Preferences } from './lib/preferences.ts'
 import { parseRoute, routeUrl } from './lib/route.ts'
 import type { Route, View } from './lib/route.ts'
-import { collections, grades, topics } from './lib/schema.ts'
-import type { Language, Topic } from './lib/schema.ts'
+import { characterTopics, collections, grades } from './lib/schema.ts'
+import type { Language, Narration, Shelf, Topic } from './lib/schema.ts'
 import { defaultFilters, filterNarrations } from './lib/search.ts'
 import { focusSection, scrollBehavior } from './lib/scroll.ts'
 
@@ -35,6 +43,8 @@ function App() {
   const [systemDark, setSystemDark] = useState(() => window.matchMedia('(prefers-color-scheme: dark)').matches)
   const [limit, setLimit] = useState(12)
   const [notice, setNotice] = useState<{ key: MessageKey; version: number } | null>(null)
+  const reading = useReading(narrations)
+  const { openEntry: trackOpenedEntry } = reading
   const searchInput = useRef<HTMLInputElement>(null)
   const lastReadButton = useRef<HTMLButtonElement | null>(null)
   const language: Language = route.language ?? preferences.language
@@ -44,10 +54,25 @@ function App() {
   const savedIds = useMemo(() => new Set(preferences.bookmarks), [preferences.bookmarks])
   const savedCount = narrations.filter((row) => savedIds.has(row.id)).length
   const isSavedView = route.view === 'saved'
-  const results = filterNarrations(narrations, route, isSavedView ? savedIds : undefined)
-  const topicResults = filterNarrations(narrations, { ...route, topic: 'all' }, isSavedView ? savedIds : undefined)
+  const scopedRows = getShelfRows(route.shelf)
+  const visibleTopics = getShelfTopics(route.shelf)
+  const journeyShelf = route.shelf === 'character' ? 'character' : 'appearance'
+  const activeChapters = journeyShelf === 'character' ? characterChapters : chapters
+  const results = filterNarrations(scopedRows, route, isSavedView ? savedIds : undefined)
+  const topicResults = filterNarrations(scopedRows, { ...route, topic: 'all' }, isSavedView ? savedIds : undefined)
   const selected = narrations.find((row) => row.id === route.entry)
-  const selectedIndex = results.findIndex((row) => row.id === route.entry)
+  const selectedId = selected?.id
+  const readIds = useMemo(() => new Set(Object.entries(reading.data.entries).filter(([, value]) => value.read === true).map(([id]) => id)), [reading.data.entries])
+  const lastOpened = narrations.find((row) => row.id === reading.data.lastOpened?.id)
+  const selectedShelf = selected ? getNarrationShelf(selected.id) : undefined
+  const readerResults = selectedShelf && (route.view === 'home' || route.view === 'reading')
+    ? filterNarrations(getShelfRows(selectedShelf), defaultFilters)
+    : results
+  const selectedIndex = readerResults.findIndex((row) => row.id === route.entry)
+
+  useEffect(() => {
+    if (selectedId) trackOpenedEntry(selectedId)
+  }, [selectedId, trackOpenedEntry])
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
@@ -71,8 +96,8 @@ function App() {
     document.documentElement.dir = language === 'ur' ? 'rtl' : 'ltr'
     document.documentElement.dataset.theme = theme
     document.documentElement.dataset.motion = preferences.motion
-    document.title = `${translate(language, 'name')} | ${translate(language, route.view === 'journey' ? 'journey' : route.view === 'saved' ? 'saved' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
-  }, [language, theme, route.view, preferences.motion])
+    document.title = `${translate(language, 'name')} | ${route.view === 'journey' ? shelfLabels[journeyShelf][language] : translate(language, route.view === 'saved' ? 'saved' : route.view === 'reading' ? 'reading' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
+  }, [language, theme, route.view, journeyShelf, preferences.motion])
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -97,13 +122,15 @@ function App() {
     if (replace) window.history.replaceState(null, '', url)
     else window.history.pushState(null, '', url)
     setRoute(next)
-    if (Object.keys(patch).some((key) => ['query', 'topic', 'collection', 'grade', 'view'].includes(key))) setLimit(12)
+    if (Object.keys(patch).some((key) => ['query', 'topic', 'collection', 'grade', 'view', 'shelf'].includes(key))) setLimit(12)
   }
 
   function updatePreferences(patch: Partial<Preferences>) {
     const next = { ...preferences, ...patch }
     setPreferences(next)
-    setStorageIssue(savePreferences(() => window.localStorage, next))
+    const issue = savePreferences(() => window.localStorage, next)
+    setStorageIssue(issue)
+    return issue === null
   }
 
   function toggleSaved(id: string) {
@@ -112,18 +139,39 @@ function App() {
     setNotice((current) => ({ key: alreadySaved ? 'removedStatus' : 'savedStatus', version: (current?.version ?? 0) + 1 }))
   }
 
+  function restoreBookmarks(bookmarks: string[]): BookmarkWriteResult {
+    const next = { ...preferences, bookmarks: [...new Set(bookmarks)] }
+    const issue = savePreferences(() => window.localStorage, next)
+    setStorageIssue(issue)
+    if (issue) return { ok: false }
+    setPreferences(next)
+    return { ok: true }
+  }
+
+  function openPersonalEntry(row: Narration, button: HTMLButtonElement) {
+    const shelf = getNarrationShelf(row.id)
+    if (!shelf) throw new Error(`Cannot open an unknown collection entry: ${row.id}`)
+    lastReadButton.current = button
+    updateRoute({ ...defaultFilters, shelf, entry: row.id })
+  }
+
+  function readingCollectionLabel(id: string, lang: Language) {
+    const shelf = getNarrationShelf(id)
+    return shelf ? shelfLabels[shelf][lang] : translate(lang, 'notFound')
+  }
+
   function setLanguage(next: Language) {
     updatePreferences({ language: next })
     updateRoute({ language: next }, true)
   }
 
-  function navigate(view: View, topic?: Topic) {
-    updateRoute({ ...defaultFilters, view, topic: topic ?? 'all', grade: view === 'saved' || topic ? 'all' : 'established', entry: null })
+  function navigate(view: View, topic?: Topic, shelf: Shelf | 'all' = view === 'journey' ? 'appearance' : 'all') {
+    updateRoute({ ...defaultFilters, view, shelf, topic: topic ?? 'all', grade: view === 'saved' || topic ? 'all' : 'established', entry: null })
     window.scrollTo({ top: 0 })
   }
 
-  function navHref(view: View) {
-    return routeUrl(new URL(window.location.href), { ...route, ...defaultFilters, view, grade: view === 'saved' ? 'all' : 'established', entry: null }).href
+  function navHref(view: View, shelf: Shelf | 'all' = view === 'journey' ? 'appearance' : 'all') {
+    return routeUrl(new URL(window.location.href), { ...route, ...defaultFilters, view, shelf, grade: view === 'saved' ? 'all' : 'established', entry: null }).href
   }
 
   function resetFilters() {
@@ -134,14 +182,14 @@ function App() {
     <a className="skip-link" href="#main-content">{t('skip')}</a>
     <header className="site-header">
       <div className="header-inner page-width">
-        <a href={navHref('journey')} className="brand" onClick={(event) => {
-          if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate('journey') }
+        <a href={navHref('home')} className="brand" onClick={(event) => {
+          if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate('home') }
         }}>
           <span className="brand-mark" aria-hidden="true"><BookOpen size={22} /></span>
           <span><strong>{t('name')}</strong><small>{t('strapline')}</small></span>
         </a>
         <nav className="primary-nav" aria-label={t('collection')}>
-          {(['journey', 'collection', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
+          {(['home', 'collection', 'reading', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
             aria-current={route.view === view ? 'page' : undefined}
             onClick={(event) => { if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate(view) } }}>
             {t(view)}
@@ -176,17 +224,32 @@ function App() {
     </aside>}
 
     <main id="main-content" tabIndex={-1}>
-      {route.view === 'journey' && <>
-        <ManuscriptHero language={language} entryCount={narrations.length} topicCount={topics.length}
-          paused={preferences.motion === 'paused'} readerOpen={route.entry !== null} guideHref={navHref('guide')}
-          onExplore={() => focusSection('chapter-complexion')} onGuide={() => navigate('guide')}
+      {route.view === 'home' && <>
+        {reading.issue && <div className="page-width"><ReadingIssueMessage issue={reading.issue} language={language} /></div>}
+        <ProjectHome language={language} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
+          readIds={readIds} lastOpened={lastOpened} onShelf={(shelf) => navigate('journey', undefined, shelf)} onResume={openPersonalEntry}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
-        <TopicJourney language={language} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
-          savedIds={savedIds} collectionHref={navHref('collection')} onCollection={() => navigate('collection')}
+      </>}
+      {route.view === 'reading' && <ReadingPage language={language} allNarrations={narrations} reading={reading}
+        bookmarks={preferences.bookmarks} onBookmarksChange={restoreBookmarks} onOpen={openPersonalEntry} getCollectionLabel={readingCollectionLabel} />}
+      {route.view === 'journey' && <>
+        <div className="journey-collection-switch page-width">
+          <p>{t('collectionContext')}</p>
+          <ShelfSelector value={journeyShelf} language={language} allowAll={false} onChange={(shelf) => {
+            if (shelf === 'all') throw new Error('A journey requires a single project collection')
+            navigate('journey', undefined, shelf)
+          }} />
+        </div>
+        <ManuscriptHero key={journeyShelf} language={language} shelf={journeyShelf} entryCount={getShelfRows(journeyShelf).length} topicCount={activeChapters.length}
+          paused={preferences.motion === 'paused'} readerOpen={route.entry !== null} guideHref={navHref('guide')}
+          onExplore={() => focusSection(`chapter-${activeChapters[0].topic}`)} onGuide={() => navigate('guide')}
+          onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
+        <TopicJourney key={journeyShelf} language={language} shelf={journeyShelf} chapters={activeChapters} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
+          savedIds={savedIds} readIds={readIds} collectionHref={navHref('collection', journeyShelf)} onCollection={() => navigate('collection', undefined, journeyShelf)}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} onSave={toggleSaved}
           onRead={(row, topic, includeCautioned, button) => {
             lastReadButton.current = button
-            updateRoute({ ...defaultFilters, view: 'journey', topic, grade: includeCautioned ? 'all' : 'established', entry: row.id })
+            updateRoute({ ...defaultFilters, view: 'journey', shelf: journeyShelf, topic, grade: includeCautioned ? 'all' : 'established', entry: row.id })
           }} />
       </>}
 
@@ -197,6 +260,7 @@ function App() {
             <span className="collection-language-note"><span lang="en">English</span><span aria-hidden="true">/</span><span lang="ur">اردو</span></span>
           </div>
         </header>
+        <ShelfSelector value={route.shelf} language={language} onChange={(shelf) => updateRoute({ ...defaultFilters, shelf, grade: isSavedView ? 'all' : 'established' })} />
         <div className="filter-panel">
           <div className="search-field">
             <label htmlFor="narration-search" className="sr-only">{t('search')}</label>
@@ -244,7 +308,7 @@ function App() {
               <button type="button" aria-pressed={route.topic === 'all'} onClick={() => updateRoute({ topic: 'all' })}>
                 <BookOpen size={16} aria-hidden="true" /><span>{t('allTopics')}</span><small>{count(topicResults.length)}</small>
               </button>
-              {topics.map((topic) => <button type="button" key={topic} aria-pressed={route.topic === topic} onClick={() => updateRoute({ topic })}>
+              {visibleTopics.map((topic) => <button type="button" key={topic} aria-pressed={route.topic === topic} onClick={() => updateRoute({ topic })}>
                 <span className="topic-indicator" aria-hidden="true" /><span>{topicLabels[topic][language]}</span><small>{count(topicResults.filter((row) => row.topics.includes(topic)).length)}</small>
               </button>)}
             </nav>
@@ -280,15 +344,19 @@ function App() {
         </div>
       </section>}
       {route.view === 'guide' && <GuidePage language={language} />}
-      {route.view === 'sources' && <SourcesPage language={language} onTopic={(topic) => navigate('collection', topic)} />}
+      {route.view === 'sources' && <SourcesPage language={language} shelf={route.shelf} onShelf={(shelf) => updateRoute({ shelf })}
+        onTopic={(topic) => navigate('collection', topic, characterTopics.some((item) => item === topic) ? 'character' : 'appearance')} />}
     </main>
     <AboutFooter language={language} onJourney={() => navigate('journey')} onGuide={() => navigate('guide')} onSources={() => navigate('sources')} />
     <div className={`reading-status ${notice ? 'visible' : ''}`} role="status" aria-live="polite">
       {notice && <><Check size={17} aria-hidden="true" />{t(notice.key)}</>}
     </div>
     <Reader entry={route.entry} row={selected} language={language} preferences={preferences} saved={selected ? savedIds.has(selected.id) : false}
-      previous={selectedIndex > 0 ? results[selectedIndex - 1] : undefined}
-      next={selectedIndex >= 0 ? results[selectedIndex + 1] : undefined}
+      previous={selectedIndex > 0 ? readerResults[selectedIndex - 1] : undefined}
+      next={selectedIndex >= 0 ? readerResults[selectedIndex + 1] : undefined}
+      collectionLabel={selectedShelf ? shelfLabels[selectedShelf][language] : undefined}
+      audioContent={selected ? <AudioPlayer entryId={selected.id} language={language} /> : undefined}
+      readingContent={selected ? <ReadingTools row={selected} language={language} reading={reading} /> : undefined}
       onSave={() => { if (selected) toggleSaved(selected.id) }}
       onClose={() => updateRoute({ entry: null })}
       onNavigate={(entry) => updateRoute({ entry })}

@@ -1,0 +1,18 @@
+{
+  "entryId": "repeating-words-for-clarity",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نے روایت کیا کہ نبی کریم صلی اللہ علیہ وسلم بات تین بار دہراتے تاکہ اسے سمجھ لیا جائے۔ انہوں نے یہ بھی بیان کیا کہ آپ صلی اللہ علیہ وسلم کسی جماعت کے پاس آتے تو تین مرتبہ سلام فرماتے۔ روایت بات دہرانے کا تعلق براہ راست سمجھانے سے جوڑتی ہے۔",
+  "transcriptHash": "94085ceee1ccc4a645411240260864aada2f1ed72658e2ab75d01cb671481761",
+  "transcriptCharacters": 256,
+  "billableCharacters": 256,
+  "cacheKey": "de1d7032e22ef2cd07693a721613d49c69510e619f042f0ec4cc839fc46104e0",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/de1d7032e22ef2cd07693a721613d49c69510e619f042f0ec4cc839fc46104e0.mp3",
+  "byteLength": 121680,
+  "sha256": "d5261f685b23d2de7390bd7fa243f60197231885cf7d9fe31d5355faf0d18aa3",
+  "durationSeconds": 20.28
+}

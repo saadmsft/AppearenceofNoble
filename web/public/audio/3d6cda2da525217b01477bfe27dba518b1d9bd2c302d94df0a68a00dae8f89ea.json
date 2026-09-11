@@ -1,0 +1,18 @@
+{
+  "entryId": "four-hair-plaits-umm-hani",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Umm Hani reported that the Prophet may Allah bless him and grant him peace came to Mecca with his hair arranged in four plaits. The wording explains ghada'ir as plaits or braids. It records a particular arrangement of the hair rather than describing its natural texture.",
+  "transcriptHash": "0990e121ad16f08af275a4951a2d158867bbec7d19028702be3c91cf525a8d55",
+  "transcriptCharacters": 270,
+  "billableCharacters": 275,
+  "cacheKey": "3d6cda2da525217b01477bfe27dba518b1d9bd2c302d94df0a68a00dae8f89ea",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/3d6cda2da525217b01477bfe27dba518b1d9bd2c302d94df0a68a00dae8f89ea.mp3",
+  "byteLength": 95616,
+  "sha256": "47df2cd86bfc3a5ca2b7df17f92898d717eb1f89f9f1fabaa53a34624bafcd05",
+  "durationSeconds": 15.936
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "character-forgiveness-after-an-armed-threat",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir recalls resting with the Prophet may Allah bless him and grant him peace and his companions during their return from an expedition towards Najd. A Bedouin took the Prophet's sword while he slept and confronted him. The Prophet may Allah bless him and grant him peace later told the companions that he had answered by naming Allah as his protector. Jabir's account concludes that the man was not punished.",
+  "transcriptHash": "fd5ce638fb5df8c78d60434b898ddd0625662ceff7c8e37310173ae404baffb8",
+  "transcriptCharacters": 410,
+  "billableCharacters": 420,
+  "cacheKey": "e8f0ccc65424bfc02327d268a5a817d22fe49d334c02c7489affa4aa234ed7c8",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e8f0ccc65424bfc02327d268a5a817d22fe49d334c02c7489affa4aa234ed7c8.mp3",
+  "byteLength": 139392,
+  "sha256": "de38e097966c454013b53d65075bca2e4792cc2d1db0965b3f403fb37bbaa6b3",
+  "durationSeconds": 23.232
+}

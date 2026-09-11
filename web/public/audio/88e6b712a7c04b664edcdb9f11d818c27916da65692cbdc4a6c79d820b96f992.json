@@ -1,0 +1,18 @@
+{
+  "entryId": "character-forgiveness-no-personal-revenge",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا بیان کرتی ہیں کہ نبی صلی اللہ علیہ وسلم دو راستوں میں آسان راستہ اختیار فرماتے، بشرطیکہ وہ گناہ نہ ہو، اور گناہ کے راستے سے دور رہتے۔ وہ اپنی ذات کے لیے انتقام نہ لینے اور اللہ کی حرمت پامال ہونے پر اقدام کرنے میں فرق بھی واضح کرتی ہیں۔ ان کی روایت ذاتی درگزر کے ساتھ اخلاقی حدود کو بیان کرتی ہے، برائی سے بے پروائی کو نہیں۔",
+  "transcriptHash": "4651a360e4e42d3c3d3177f8385f2ef7f0ffb5d025cb8ff85c7fa282f929bba0",
+  "transcriptCharacters": 344,
+  "billableCharacters": 344,
+  "cacheKey": "88e6b712a7c04b664edcdb9f11d818c27916da65692cbdc4a6c79d820b96f992",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/88e6b712a7c04b664edcdb9f11d818c27916da65692cbdc4a6c79d820b96f992.mp3",
+  "byteLength": 149040,
+  "sha256": "ed8aa36243d55ce976187d14789bed7a47b11111f33f41cbef014f56fdbc2839",
+  "durationSeconds": 24.84
+}

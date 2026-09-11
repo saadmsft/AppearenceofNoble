@@ -1,0 +1,18 @@
+{
+  "entryId": "silver-ring-engraved-with-his-name",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas reported that the Prophet may Allah bless him and grant him peace had a silver ring made and had the words identifying Muhammad as Allah's Messenger engraved on it. The Prophet may Allah bless him and grant him peace told others not to reproduce the same inscription. Both the silver and the engraving are explicit in this report.",
+  "transcriptHash": "0a451b0f84776bc226cb0c0f7a2ad06df3238694ca2e6b5104f689f12d243285",
+  "transcriptCharacters": 335,
+  "billableCharacters": 340,
+  "cacheKey": "ad626f3266626892661083ad0431f8877f3a57fd5b4d432c2fabc9203ff84c68",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ad626f3266626892661083ad0431f8877f3a57fd5b4d432c2fabc9203ff84c68.mp3",
+  "byteLength": 111888,
+  "sha256": "88bca7c6e889593602f6ab9a609806feb2269e0210079a62b834bbfcbd4e59e9",
+  "durationSeconds": 18.648
+}

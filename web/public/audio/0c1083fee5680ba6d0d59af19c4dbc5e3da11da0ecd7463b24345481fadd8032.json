@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-tent-button-saib-yazid",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "سائب رضی اللہ عنہ کی خالہ انہیں بیماری کی حالت میں نبی کریم صلی اللہ علیہ وسلم کے پاس لائیں۔ آپ صلی اللہ علیہ وسلم نے ان کے سر پر ہاتھ پھیرا، دعا فرمائی اور وضو کیا۔ پھر سائب رضی اللہ عنہ نے پیچھے کھڑے ہو کر کندھوں کے درمیان مہر دیکھی اور اسے زر الحجلہ، جسے عموماً خیمے کا بٹن کہا جاتا ہے، سے تشبیہ دی۔",
+  "transcriptHash": "021ce5f04cc240ea46b4d9e8bf9ec663e5b67421f8244defd91ece26f57a48dc",
+  "transcriptCharacters": 302,
+  "billableCharacters": 302,
+  "cacheKey": "0c1083fee5680ba6d0d59af19c4dbc5e3da11da0ecd7463b24345481fadd8032",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/0c1083fee5680ba6d0d59af19c4dbc5e3da11da0ecd7463b24345481fadd8032.mp3",
+  "byteLength": 132768,
+  "sha256": "2fecf746f2e0244b3cdd80628f95aef510d0bb0ce1daee23c47716f44152351e",
+  "durationSeconds": 22.128
+}

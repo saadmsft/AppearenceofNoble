@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-greeting-children",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت انس بن مالک رضی اللہ عنہ کچھ بچوں کے پاس سے گزرے تو انہیں سلام کیا۔ پھر بتایا کہ نبی کریم صلی اللہ علیہ وسلم بھی ایسا کیا کرتے تھے۔ یہ مختصر یاد بچوں کو سلام میں پہل کرنے کی صورت دکھاتی ہے؛ حضرت انس رضی اللہ عنہ نے اپنے عمل کو اسی نبوی طریقے سے جوڑا۔",
+  "transcriptHash": "c0492f7a4ca4571a4f6d748e103504548b05abc5f8c83610555ebbbd425d54e7",
+  "transcriptCharacters": 255,
+  "billableCharacters": 255,
+  "cacheKey": "9aea1ab2dbe474f2e8567504a59f650e136b47be71a93620c515752d03ad2fd3",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/9aea1ab2dbe474f2e8567504a59f650e136b47be71a93620c515752d03ad2fd3.mp3",
+  "byteLength": 119664,
+  "sha256": "b2393fddbd660d212699eb4f472d5b916966529166f8e4f1bb01916c2b41ad6c",
+  "durationSeconds": 19.944
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "palm-softer-than-silk-scent",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نے بتایا کہ انہوں نے کسی ریشم یا دیباج کو نبی کریم صلی اللہ علیہ وسلم کی ہتھیلی سے زیادہ نرم نہیں پایا۔ انہوں نے یہ بھی کہا کہ آپ صلی اللہ علیہ وسلم کی مہک سے زیادہ خوشگوار خوشبو کبھی نہیں سونگھی۔ دونوں اوصاف انس رضی اللہ عنہ کے اپنے حسی موازنے کے طور پر بیان ہوئے ہیں۔",
+  "transcriptHash": "ca11578f0f8d97c78374c74d0fc768cd988e911a022ed07d3c30f4012c42e32d",
+  "transcriptCharacters": 286,
+  "billableCharacters": 286,
+  "cacheKey": "62ccf9167b5a3cd943f757f05c41ab010388fa26207535cbdcf75c6a620451dc",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/62ccf9167b5a3cd943f757f05c41ab010388fa26207535cbdcf75c6a620451dc.mp3",
+  "byteLength": 126432,
+  "sha256": "3dfce88a1377d303eafe247236201a9ef6d686501ec104679ba5dd37dffa3f15",
+  "durationSeconds": 21.072
+}

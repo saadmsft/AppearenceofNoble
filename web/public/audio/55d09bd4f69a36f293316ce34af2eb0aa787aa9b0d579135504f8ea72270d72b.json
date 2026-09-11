@@ -1,0 +1,18 @@
+{
+  "entryId": "face-showed-worry-at-storm-clouds",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha noticed a change in the Prophet's may Allah bless him and grant him peace face when he saw clouds or wind. Asked why he appeared concerned when others hoped for rain, he explained his concern that punishment might be present, recalling people who had mistaken a threatening cloud for one bringing rain.",
+  "transcriptHash": "65375c03efd404e9b07ae5009f8d3ea155ce7cbc8b92aa24c153e0635baed5e5",
+  "transcriptCharacters": 308,
+  "billableCharacters": 313,
+  "cacheKey": "55d09bd4f69a36f293316ce34af2eb0aa787aa9b0d579135504f8ea72270d72b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/55d09bd4f69a36f293316ce34af2eb0aa787aa9b0d579135504f8ea72270d72b.mp3",
+  "byteLength": 100944,
+  "sha256": "9dbdc670a3f4d9fe7dd7ba0c968361cc03f0fdcee59b4a60d34ca0603f1752f6",
+  "durationSeconds": 16.824
+}

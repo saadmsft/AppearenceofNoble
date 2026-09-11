@@ -1,0 +1,18 @@
+{
+  "entryId": "character-mercy-kissing-al-hasan",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Huraira describes the Prophet kissing al-Hasan ibn Ali while al-Aqra' ibn Habis sat nearby. Al-Aqra' remarked that he had ten children and had kissed none of them. The Prophet answered by linking the mercy a person shows with the mercy that person receives, giving this exchange a clear emphasis on tenderness.",
+  "transcriptHash": "fbfb60a4235145832d566b0636e21cfd8360d97f6746a2f64822ac09cddb8853",
+  "transcriptCharacters": 314,
+  "billableCharacters": 324,
+  "cacheKey": "96b3c8900e4f217970e4225efcbc36e4f55e2be5dbd7fdbffd1514ad0fdccf1a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/96b3c8900e4f217970e4225efcbc36e4f55e2be5dbd7fdbffd1514ad0fdccf1a.mp3",
+  "byteLength": 112752,
+  "sha256": "548c010159e7cc702eefe1e7b9c2579617e7fb1f7827cd3fbda9f2920d77721f",
+  "durationSeconds": 18.792
+}

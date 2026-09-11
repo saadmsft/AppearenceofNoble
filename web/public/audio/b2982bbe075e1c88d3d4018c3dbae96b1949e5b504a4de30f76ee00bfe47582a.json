@@ -1,0 +1,18 @@
+{
+  "entryId": "ali-long-description-round-face-eyes",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "The longer description attributed to Ali through Ibrahim ibn Muhammad describes some roundness in the Prophet's may Allah bless him and grant him peace face, a fair complexion with a reddish tinge, very dark eyes and long eyelashes. This transmission is weakly graded, so these details remain attributed descriptions rather than confirmed features on its authority.",
+  "transcriptHash": "f03ca809ba2bbe96ddb7a1d78939cbf30772dab6cdd8615a1d59bae3f408b626",
+  "transcriptCharacters": 365,
+  "billableCharacters": 370,
+  "cacheKey": "b2982bbe075e1c88d3d4018c3dbae96b1949e5b504a4de30f76ee00bfe47582a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b2982bbe075e1c88d3d4018c3dbae96b1949e5b504a4de30f76ee00bfe47582a.mp3",
+  "byteLength": 120384,
+  "sha256": "7e39523450237eb189c7d748ab5af75f1f5d437bdab1e3f93915a7762685b723",
+  "durationSeconds": 20.064
+}

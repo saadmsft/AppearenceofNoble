@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-descending-slope-ali",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا سُفْيَانُ بْنُ وَكِيعٍ، قَالَ: حَدَّثَنَا أَبِي، عَنِ الْمَسْعُودِيِّ، عَنْ عُثْمَانَ بْنِ مُسْلِمِ بْنِ هُرْمُزَ، عَنْ نَافِعِ بْنِ جُبَيْرِ بْنِ مُطْعِمٍ، عَنْ عَلِيِّ بْنِ أَبِي طَالِبٍ، قَالَ: كَانَ النَّبِيُّ صلى الله عليه وسلم إِذَا مَشَى، تَكَفَّأَ تَكَفُّؤًا، كَأَنَّمَا يَنْحَطُّ مِنْ صَبَبٍ.",
+  "transcriptHash": "81dfdbf1e056a34d6aa5e78a6f99459bdfb40deb6a8e2b4945fccf886d6bc1e4",
+  "transcriptCharacters": 312,
+  "billableCharacters": 312,
+  "cacheKey": "6be7085926c56e539eb9dec3ac6a6d71568361508259338f4f81d0c16daae7ec",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6be7085926c56e539eb9dec3ac6a6d71568361508259338f4f81d0c16daae7ec.mp3",
+  "byteLength": 121968,
+  "sha256": "fbb50bf18e7b544a27cdb64af33c64cafd8b79871895ddaa67a739891c9341b2",
+  "durationSeconds": 20.328
+}

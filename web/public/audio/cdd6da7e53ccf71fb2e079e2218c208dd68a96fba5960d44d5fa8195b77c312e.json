@@ -1,0 +1,18 @@
+{
+  "entryId": "hud-and-its-sisters-greyed-me",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Juhaifa relates that people remarked to the Prophet may Allah bless him and grant him peace that they could see he had become grey. His reply attributed his greying to Hud and its sister surahs. This short exchange connects a visible change in his hair with those Quranic chapters.",
+  "transcriptHash": "bbfb755f48993fa7bc6174fe19819bd70f3be234a3c403b9273c1e5393eb3956",
+  "transcriptCharacters": 285,
+  "billableCharacters": 285,
+  "cacheKey": "cdd6da7e53ccf71fb2e079e2218c208dd68a96fba5960d44d5fa8195b77c312e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/cdd6da7e53ccf71fb2e079e2218c208dd68a96fba5960d44d5fa8195b77c312e.mp3",
+  "byteLength": 98928,
+  "sha256": "0ac0a30fd92944d289a0e58eddecd1832a689e3d34c38e0cf59a536d444dec70",
+  "durationSeconds": 16.488
+}

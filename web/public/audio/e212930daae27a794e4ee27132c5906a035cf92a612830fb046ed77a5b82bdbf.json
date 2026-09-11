@@ -1,0 +1,18 @@
+{
+  "entryId": "face-changed-at-forbidden-images",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha recalled the Prophet may Allah bless him and grant him peace entering when there was a curtain with pictures in the house. His face changed, and he took the curtain and tore it. The account then records his warning concerning the punishment of those who made such pictures.",
+  "transcriptHash": "6ca3d7f9a50cd1bef5bd14aa63072305fa72d2f2aa589ad979d6dd36eee5fac5",
+  "transcriptCharacters": 279,
+  "billableCharacters": 279,
+  "cacheKey": "e212930daae27a794e4ee27132c5906a035cf92a612830fb046ed77a5b82bdbf",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e212930daae27a794e4ee27132c5906a035cf92a612830fb046ed77a5b82bdbf.mp3",
+  "byteLength": 93600,
+  "sha256": "261e1c6dba3d8128917e83d6f7ab23bf6ecfdde8f21e9cfdc8acde54ed8002eb",
+  "durationSeconds": 15.6
+}

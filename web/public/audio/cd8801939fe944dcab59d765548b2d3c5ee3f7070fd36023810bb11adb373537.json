@@ -1,0 +1,18 @@
+{
+  "entryId": "perfume-among-beloved-things",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنِي الشَّيْخُ الإِمَامُ أَبُو عَبْدِ الرَّحْمَنِ النَّسَائِيُّ، قَالَ أَخْبَرَنَا الْحُسَيْنُ بْنُ عِيسَى الْقُومَسِيُّ، قَالَ حَدَّثَنَا عَفَّانُ بْنُ مُسْلِمٍ، قَالَ حَدَّثَنَا سَلاَّمٌ أَبُو الْمُنْذِرِ، عَنْ ثَابِتٍ، عَنْ أَنَسٍ، قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" حُبِّبَ إِلَىَّ مِنَ الدُّنْيَا النِّسَاءُ وَالطِّيبُ وَجُعِلَ قُرَّةُ عَيْنِي فِي الصَّلاَةِ \" .",
+  "transcriptHash": "4f299aef14cc0c7da4a8016343a81a5e748ed6127ec33408b76b9991682a12dd",
+  "transcriptCharacters": 387,
+  "billableCharacters": 397,
+  "cacheKey": "cd8801939fe944dcab59d765548b2d3c5ee3f7070fd36023810bb11adb373537",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/cd8801939fe944dcab59d765548b2d3c5ee3f7070fd36023810bb11adb373537.mp3",
+  "byteLength": 132480,
+  "sha256": "bccb323ae47d250553763919d00a836c9363e0c453507751325999e7ecb439b4",
+  "durationSeconds": 22.08
+}

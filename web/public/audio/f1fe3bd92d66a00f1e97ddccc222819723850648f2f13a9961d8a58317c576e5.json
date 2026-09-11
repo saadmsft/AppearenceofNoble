@@ -1,0 +1,18 @@
+{
+  "entryId": "beard-movement-during-recitation",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "خباب رضی اللہ عنہ سے پوچھا گیا کہ کیا نبی کریم صلی اللہ علیہ وسلم ظہر اور عصر میں قراءت کرتے تھے۔ انہوں نے اثبات میں جواب دیا۔ یہ پوچھنے پر کہ انہیں کیسے معلوم ہوتا تھا، انہوں نے بتایا کہ آپ صلی اللہ علیہ وسلم کی داڑھی کی حرکت سے قراءت پہچان لیتے تھے۔ یہ نماز کے دوران دیکھا جانے والا ایک وصف ہے۔",
+  "transcriptHash": "e1297d3be30bdd6082803aa0b5bca8da700f38fb4ecdaf7ac59d7d1076d25194",
+  "transcriptCharacters": 296,
+  "billableCharacters": 296,
+  "cacheKey": "f1fe3bd92d66a00f1e97ddccc222819723850648f2f13a9961d8a58317c576e5",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/f1fe3bd92d66a00f1e97ddccc222819723850648f2f13a9961d8a58317c576e5.mp3",
+  "byteLength": 133920,
+  "sha256": "290d7ad988ccbaaa7c49da234d7ded3f50ce63257a286bbd6ddf9a10454ac45f",
+  "durationSeconds": 22.32
+}

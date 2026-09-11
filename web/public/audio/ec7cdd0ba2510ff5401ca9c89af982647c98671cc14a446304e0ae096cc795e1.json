@@ -1,0 +1,18 @@
+{
+  "entryId": "character-patience-first-shock",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت انس رضی اللہ عنہ بیان کرتے ہیں کہ نبی کریم صلی اللہ علیہ وسلم نے قبر کے پاس روتی ہوئی ایک خاتون کو تقویٰ اور صبر کی نصیحت فرمائی۔ وہ آپ صلی اللہ علیہ وسلم کو پہچان نہ سکیں اور دور جانے کو کہا۔ بعد میں پہچان نہ سکنے کی وضاحت کرنے آئیں تو آپ صلی اللہ علیہ وسلم نے مصیبت کی پہلی چوٹ پر صبر کی اہمیت بیان فرمائی۔",
+  "transcriptHash": "e36af23ccdc70bfe70ab7264ebe10319984e77be6a6b5fc5ce319f03d9cf3b26",
+  "transcriptCharacters": 313,
+  "billableCharacters": 313,
+  "cacheKey": "ec7cdd0ba2510ff5401ca9c89af982647c98671cc14a446304e0ae096cc795e1",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ec7cdd0ba2510ff5401ca9c89af982647c98671cc14a446304e0ae096cc795e1.mp3",
+  "byteLength": 143712,
+  "sha256": "d72e340ca4eec7d5eb86cac0b67cabd1ebb16f8d69f6399c2c7f5a50c235f010",
+  "durationSeconds": 23.952
+}

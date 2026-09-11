@@ -1,0 +1,18 @@
+{
+  "entryId": "character-justice-no-preferential-treatment",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha recounts an attempt to obtain special treatment for a woman from Banu Makhzum through Usama ibn Zayd. The Prophet may Allah bless him and grant him peace rejected that intervention and publicly warned against protecting the powerful while penalizing the vulnerable. His speech included his own family in the same standard, denying kinship or social standing a privileged exemption.",
+  "transcriptHash": "ad6e7c37d49e1ade44a4a5babb28681d48902eba3574d665c44ce3c774c5fe30",
+  "transcriptCharacters": 387,
+  "billableCharacters": 387,
+  "cacheKey": "7dbd55a957e37a7ac259fc56ad51b43240ee911a7c82674de45cf5a70ae5405a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/7dbd55a957e37a7ac259fc56ad51b43240ee911a7c82674de45cf5a70ae5405a.mp3",
+  "byteLength": 134640,
+  "sha256": "ba979cd6c5434ea81394a66c7588db2e631642300a7ad8a986b84e68516abda6",
+  "durationSeconds": 22.44
+}

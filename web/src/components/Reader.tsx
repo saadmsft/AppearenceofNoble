@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import type { ReactNode } from 'react'
 import { ArrowLeft, ArrowRight, Bookmark, Check, Copy, ExternalLink, Info, Languages } from 'lucide-react'
 import type { Language, Narration } from '../lib/schema.ts'
 import type { Preferences } from '../lib/preferences.ts'
@@ -22,6 +23,9 @@ type ReaderProps = {
   onNavigate: (id: string) => void
   onPreferences: (patch: Partial<Preferences>) => void
   restoreFocus: () => void
+  collectionLabel?: string
+  audioContent?: ReactNode
+  readingContent?: ReactNode
 }
 
 export function Reader(props: ReaderProps) {
@@ -34,7 +38,7 @@ export function Reader(props: ReaderProps) {
   </Dialog>
 }
 
-function ReaderBody({ row, language, preferences, saved, previous, next, onSave, onClose, onNavigate, onPreferences }: ReaderProps) {
+function ReaderBody({ row, language, preferences, saved, previous, next, onSave, onClose, onNavigate, onPreferences, collectionLabel, audioContent, readingContent }: ReaderProps) {
   const t = (key: Parameters<typeof translate>[1]) => translate(language, key)
   const [copyState, setCopyState] = useState<'idle' | 'copied' | 'failed'>('idle')
   const heading = useRef<HTMLHeadingElement>(null)
@@ -75,6 +79,7 @@ function ReaderBody({ row, language, preferences, saved, previous, next, onSave,
 
   return <>
     <div className="reader-heading">
+      {collectionLabel && <p className="reader-collection-name">{collectionLabel}</p>}
       <div className="reader-meta">
         <span className="source-name"><SourceName source={row.source} language={language} /></span>
         <GradeBadge row={row} language={language} />
@@ -107,6 +112,7 @@ function ReaderBody({ row, language, preferences, saved, previous, next, onSave,
         <Info size={20} aria-hidden="true" />
         <div><h3>{t('cautionTitle')}</h3><p>{t('cautionDetail')}</p></div>
       </aside>}
+      {audioContent}
       <section className="reader-arabic">
         <h3 className="micro-label">{t('arabicExcerpt')}</h3>
         <p className="arabic" lang="ar" dir="rtl">{row.arabic}</p>
@@ -143,6 +149,7 @@ function ReaderBody({ row, language, preferences, saved, previous, next, onSave,
         </div>}
         <p className="source-date">{t('checked')}: {date(row.checkedAt, language)}</p>
       </section>
+      {readingContent}
       <div className="share-row">
         <Button variant="outline" size="sm" onClick={() => { void copyLink() }}><Copy size={15} aria-hidden="true" />{t('copyLink')}</Button>
         <p role="status">{copyState === 'copied' ? t('copied') : copyState === 'failed' ? t('copyFailed') : ''}</p>

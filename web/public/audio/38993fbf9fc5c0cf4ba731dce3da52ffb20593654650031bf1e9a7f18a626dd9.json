@@ -1,0 +1,18 @@
+{
+  "entryId": "silver-ring-engraved-with-his-name",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُسَدَّدٌ، حَدَّثَنَا حَمَّادٌ، عَنْ عَبْدِ الْعَزِيزِ بْنِ صُهَيْبٍ، عَنْ أَنَسِ بْنِ مَالِكٍ ـ رضى الله عنه ـ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم اتَّخَذَ خَاتَمًا مِنْ فِضَّةٍ، وَنَقَشَ فِيهِ، مُحَمَّدٌ رَسُولُ اللَّهِ. وَقَالَ \" إِنِّي اتَّخَذْتُ خَاتَمًا مِنْ وَرِقٍ، وَنَقَشْتُ فِيهِ، مُحَمَّدٌ رَسُولُ اللَّهِ. فَلاَ يَنْقُشَنَّ أَحَدٌ عَلَى نَقْشِهِ \".",
+  "transcriptHash": "d03eae83abaaece21e85c8d0aaf703339a84573b4a50621ce1535bdf68e38cdb",
+  "transcriptCharacters": 376,
+  "billableCharacters": 386,
+  "cacheKey": "38993fbf9fc5c0cf4ba731dce3da52ffb20593654650031bf1e9a7f18a626dd9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/38993fbf9fc5c0cf4ba731dce3da52ffb20593654650031bf1e9a7f18a626dd9.mp3",
+  "byteLength": 155952,
+  "sha256": "3c6734df4e406834678f3e2642851f78333d4e55c33d6e1b228b847ce9c732a6",
+  "durationSeconds": 25.992
+}

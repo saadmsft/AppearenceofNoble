@@ -1,0 +1,18 @@
+{
+  "entryId": "tears-at-his-infant-sons-passing",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نے وہ وقت یاد کیا جب وہ نبی کریم صلی اللہ علیہ وسلم کے ساتھ تھے اور آپ صلی اللہ علیہ وسلم کے بیٹے ابراہیم کی جان نکل رہی تھی۔ آپ صلی اللہ علیہ وسلم کی آنکھوں سے آنسو بہنے لگے۔ عبدالرحمٰن بن عوف رضی اللہ عنہ کے تعجب پر آپ صلی اللہ علیہ وسلم نے اسے رحمت فرمایا، پھر آنکھوں کے رونے، دل کے غم اور صرف رب کو راضی کرنے والی بات کہنے کا ذکر کیا۔",
+  "transcriptHash": "6c2b2e9eafeb3512032f1bda1d359d53a447c5ea29cb503c5a88d6434477ae08",
+  "transcriptCharacters": 355,
+  "billableCharacters": 355,
+  "cacheKey": "b45b9a620c60f0f7102110a0ec76af05de5d4a6aa0cc4eeeedcfb151d9955053",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b45b9a620c60f0f7102110a0ec76af05de5d4a6aa0cc4eeeedcfb151d9955053.mp3",
+  "byteLength": 159984,
+  "sha256": "f57f9f6ea62b74ef7c260c67c70e69b4e504ee2eda1ddaaaef84ed58e9aadf9e",
+  "durationSeconds": 26.664
+}

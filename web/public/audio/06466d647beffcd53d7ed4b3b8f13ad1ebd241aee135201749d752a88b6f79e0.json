@@ -1,0 +1,18 @@
+{
+  "entryId": "character-mercy-kissing-al-hasan",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا أَبُو الْيَمَانِ، أَخْبَرَنَا شُعَيْبٌ، عَنِ الزُّهْرِيِّ، حَدَّثَنَا أَبُو سَلَمَةَ بْنُ عَبْدِ الرَّحْمَنِ، أَنَّ أَبَا هُرَيْرَةَ ـ رضى الله عنه ـ قَالَ قَبَّلَ رَسُولُ اللَّهِ صلى الله عليه وسلم الْحَسَنَ بْنَ عَلِيٍّ وَعِنْدَهُ الأَقْرَعُ بْنُ حَابِسٍ التَّمِيمِيُّ جَالِسًا. فَقَالَ الأَقْرَعُ إِنَّ لِي عَشَرَةً مِنَ الْوَلَدِ مَا قَبَّلْتُ مِنْهُمْ أَحَدًا. فَنَظَرَ إِلَيْهِ رَسُولُ اللَّهِ صلى الله عليه وسلم ثُمَّ قَالَ \" مَنْ لاَ يَرْحَمُ لاَ يُرْحَمُ \".",
+  "transcriptHash": "cb5bcc9fafa58f532753f128dcc86af800e43c096008bcfb3ebe1e0b06da5671",
+  "transcriptCharacters": 477,
+  "billableCharacters": 487,
+  "cacheKey": "06466d647beffcd53d7ed4b3b8f13ad1ebd241aee135201749d752a88b6f79e0",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/06466d647beffcd53d7ed4b3b8f13ad1ebd241aee135201749d752a88b6f79e0.mp3",
+  "byteLength": 180864,
+  "sha256": "2b186db631cc83051b9f6c1bc00eef1d222b238b0b891be525b53d0d4c29db69",
+  "durationSeconds": 30.144
+}

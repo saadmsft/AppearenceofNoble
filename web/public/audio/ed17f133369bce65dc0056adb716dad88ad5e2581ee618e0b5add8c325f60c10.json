@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-shoulder-pigeon-egg-jabir",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir ibn Samurah recalled seeing the Seal near the Prophet's may Allah bless him and grant him peace shoulder. He compared it to a pigeon's egg and said that it resembled the surrounding body. His description combines a location with a comparison of appearance rather than a numerical measurement.",
+  "transcriptHash": "f8e9a96c7fa695fc2df675e7cfbde560c4a51d5622cc9510dee9ec77c1d18752",
+  "transcriptCharacters": 298,
+  "billableCharacters": 308,
+  "cacheKey": "ed17f133369bce65dc0056adb716dad88ad5e2581ee618e0b5add8c325f60c10",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ed17f133369bce65dc0056adb716dad88ad5e2581ee618e0b5add8c325f60c10.mp3",
+  "byteLength": 98640,
+  "sha256": "1c75a9f98a1b926c84773ed5df499fd1ea2b1dcca75b3b6070f33a888179c574",
+  "durationSeconds": 16.44
+}

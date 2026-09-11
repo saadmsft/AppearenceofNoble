@@ -1,0 +1,18 @@
+{
+  "entryId": "silver-ring-engraved-with-his-name",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نے بیان کیا کہ نبی کریم صلی اللہ علیہ وسلم نے چاندی کی انگوٹھی بنوائی اور اس پر محمد رسول اللہ کے الفاظ نقش کروائے۔ آپ صلی اللہ علیہ وسلم نے دوسروں کو اسی نقش کی نقل سے منع فرمایا۔ اس روایت میں چاندی اور کندہ الفاظ دونوں کی صراحت موجود ہے۔",
+  "transcriptHash": "ca5240a38b7b621578aafc796c0f59da1fd5f8272fe466a45f8eb166f1437fff",
+  "transcriptCharacters": 256,
+  "billableCharacters": 256,
+  "cacheKey": "e18140c08f5a3b6ce13f1fa88276a3ae77573473391ee58139fe4eccd45c5212",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e18140c08f5a3b6ce13f1fa88276a3ae77573473391ee58139fe4eccd45c5212.mp3",
+  "byteLength": 120384,
+  "sha256": "3e225ecfdd25ccecf648213d70d342698e0825463f310bb3ad43b197151871bb",
+  "durationSeconds": 20.064
+}

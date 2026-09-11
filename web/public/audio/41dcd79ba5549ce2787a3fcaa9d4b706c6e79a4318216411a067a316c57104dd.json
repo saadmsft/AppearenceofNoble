@@ -1,0 +1,18 @@
+{
+  "entryId": "character-forgiveness-pardoning-an-insult",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "اسامہ بن زید رضی اللہ عنہما ایک کشیدہ ملاقات بیان کرتے ہیں جب وہ نبی صلی اللہ علیہ وسلم کے ساتھ سعد بن عبادہ رضی اللہ عنہ کی عیادت کو جا رہے تھے۔ عبداللہ بن ابی کے اعتراض پر مجلس میں جھگڑا پھیل گیا، جسے نبی صلی اللہ علیہ وسلم نے ٹھنڈا کیا۔ بعد میں سعد رضی اللہ عنہ نے درگزر کی درخواست کی اور قیادت نہ ملنے کی مایوسی بیان کی۔ روایت صراحت کرتی ہے کہ آپ صلی اللہ علیہ وسلم نے اسے معاف کر دیا۔",
+  "transcriptHash": "9ff5b258be85fdd04b4a78652b272606c37401fa496a5ecce06dcc2de7b30752",
+  "transcriptCharacters": 389,
+  "billableCharacters": 389,
+  "cacheKey": "41dcd79ba5549ce2787a3fcaa9d4b706c6e79a4318216411a067a316c57104dd",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/41dcd79ba5549ce2787a3fcaa9d4b706c6e79a4318216411a067a316c57104dd.mp3",
+  "byteLength": 182304,
+  "sha256": "fd322a785d92ed01b3ae5ca5418ca26bdb383b379da06815a459a0d5e526f37b",
+  "durationSeconds": 30.384
+}

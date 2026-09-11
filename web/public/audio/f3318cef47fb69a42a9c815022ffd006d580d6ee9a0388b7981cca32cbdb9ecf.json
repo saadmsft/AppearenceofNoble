@@ -1,0 +1,18 @@
+{
+  "entryId": "wide-mouth-and-long-eyed-jabir",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَمُحَمَّدُ بْنُ بَشَّارٍ، - وَاللَّفْظُ لاِبْنِ الْمُثَنَّى - قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، عَنْ سِمَاكِ بْنِ حَرْبٍ، قَالَ سَمِعْتُ جَابِرَ بْنَ سَمُرَةَ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم ضَلِيعَ الْفَمِ أَشْكَلَ الْعَيْنِ مَنْهُوسَ الْعَقِبَيْنِ . قَالَ قُلْتُ لِسِمَاكٍ مَا ضَلِيعُ الْفَمِ قَالَ عَظِيمُ الْفَمِ . قَالَ قُلْتُ مَا أَشْكَلُ الْعَيْنِ قَالَ طَوِيلُ شَقِّ الْعَيْنِ . قَالَ قُلْتُ مَا مَنْهُوسُ الْعَقِبِ قَالَ قَلِيلُ لَحْمِ الْعَقِبِ .",
+  "transcriptHash": "6b3c7ce96ae3595c6156c5c876ef8a26fde798ef1e6478e6926d645cf09f4e61",
+  "transcriptCharacters": 542,
+  "billableCharacters": 542,
+  "cacheKey": "f3318cef47fb69a42a9c815022ffd006d580d6ee9a0388b7981cca32cbdb9ecf",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/f3318cef47fb69a42a9c815022ffd006d580d6ee9a0388b7981cca32cbdb9ecf.mp3",
+  "byteLength": 198864,
+  "sha256": "035bda83d56562e7356aaca6034ae07a972364b01592102f72449a7ab82fff99",
+  "durationSeconds": 33.144
+}

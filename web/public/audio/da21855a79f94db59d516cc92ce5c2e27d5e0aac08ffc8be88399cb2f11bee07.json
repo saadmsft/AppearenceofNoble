@@ -1,0 +1,18 @@
+{
+  "entryId": "reddish-hair-relic-kept-by-umm-salama",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عثمان بن عبداللہ بن موہب کو ان کے گھر والوں نے پانی دے کر ام سلمہ رضی اللہ عنہا کے پاس بھیجا۔ ان کے بیان میں چاندی کے ایک برتن کا ذکر ہے جس میں نبی کریم صلی اللہ علیہ وسلم کے بال محفوظ تھے۔ انہوں نے بالوں والے برتن میں جھانک کر سرخی مائل بال دیکھے۔",
+  "transcriptHash": "1423019b2fada98b49b3b1385d966d382c0947c9e7cb064acf973a4d1de227de",
+  "transcriptCharacters": 248,
+  "billableCharacters": 248,
+  "cacheKey": "da21855a79f94db59d516cc92ce5c2e27d5e0aac08ffc8be88399cb2f11bee07",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/da21855a79f94db59d516cc92ce5c2e27d5e0aac08ffc8be88399cb2f11bee07.mp3",
+  "byteLength": 110736,
+  "sha256": "b4f92e969cc453ee736d48aa2985321e19e45b1ad35ccc02a35ff193e445cddf",
+  "durationSeconds": 18.456
+}

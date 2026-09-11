@@ -1,0 +1,242 @@
+[
+  {
+    "id": "character-justice-no-preferential-treatment",
+    "title": {"en": "No privilege above justice", "ur": "انصاف میں کوئی امتیاز نہیں"},
+    "narrator": {"en": "Aisha", "ur": "عائشہ رضی اللہ عنہا"},
+    "topics": ["justice"],
+    "source": {"collection": "bukhari", "reference": "3475", "url": "https://sunnah.com/bukhari:3475"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "أَتَشْفَعُ فِي حَدٍّ مِنْ حُدُودِ اللَّهِ",
+    "arabicFull": "حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، حَدَّثَنَا لَيْثٌ، عَنِ ابْنِ شِهَابٍ، عَنْ عُرْوَةَ، عَنْ عَائِشَةَ ـ رضى الله عنها أَنَّ قُرَيْشًا، أَهَمَّهُمْ شَأْنُ الْمَرْأَةِ الْمَخْزُومِيَّةِ الَّتِي سَرَقَتْ، فَقَالَ وَمَنْ يُكَلِّمُ فِيهَا رَسُولَ اللَّهِ صلى الله عليه وسلم فَقَالُوا وَمَنْ يَجْتَرِئُ عَلَيْهِ إِلاَّ أُسَامَةُ بْنُ زَيْدٍ، حِبُّ رَسُولِ اللَّهِ صلى الله عليه وسلم، فَكَلَّمَهُ أُسَامَةُ، فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" أَتَشْفَعُ فِي حَدٍّ مِنْ حُدُودِ اللَّهِ \". ثُمَّ قَامَ فَاخْتَطَبَ، ثُمَّ قَالَ \" إِنَّمَا أَهْلَكَ الَّذِينَ قَبْلَكُمْ أَنَّهُمْ كَانُوا إِذَا سَرَقَ فِيهِمُ الشَّرِيفُ تَرَكُوهُ، وَإِذَا سَرَقَ فِيهِمُ الضَّعِيفُ أَقَامُوا عَلَيْهِ الْحَدَّ، وَايْمُ اللَّهِ، لَوْ أَنَّ فَاطِمَةَ ابْنَةَ مُحَمَّدٍ سَرَقَتْ لَقَطَعْتُ يَدَهَا \".",
+    "summary": {
+      "en": "Aisha recounts an attempt to obtain special treatment for a woman from Banu Makhzum through Usama ibn Zayd. The Prophet ﷺ rejected that intervention and publicly warned against protecting the powerful while penalizing the vulnerable. His speech included his own family in the same standard, denying kinship or social standing a privileged exemption.",
+      "ur": "عائشہ رضی اللہ عنہا بتاتی ہیں کہ بنو مخزوم کی ایک خاتون کے لیے اسامہ بن زید رضی اللہ عنہ کے ذریعے خصوصی رعایت حاصل کرنے کی کوشش ہوئی۔ نبی ﷺ نے یہ سفارش قبول نہیں کی اور لوگوں کو خبردار کیا کہ بااثر افراد کو بچانا اور کمزوروں کو سزا دینا تباہ کن روش ہے۔ آپ ﷺ نے اپنے گھرانے کو بھی اسی معیار میں شامل کیا، نہ قرابت کو استثنا بنایا نہ سماجی مرتبے کو۔"
+    },
+    "context": {
+      "en": "The occasion is a theft case, not a personal slight. The summary emphasizes the sermon against selective enforcement; the complete Arabic retains the legal particulars. This entry does not supply a contemporary legal ruling or instructions for punishment.",
+      "ur": "یہ واقعہ چوری کے ایک مقدمے کا ہے، کسی ذاتی رنجش کا نہیں۔ خلاصے میں امتیازی برتاؤ کے خلاف خطاب نمایاں ہے؛ مکمل عربی میں قانونی تفصیل محفوظ ہے۔ یہ اندراج موجودہ حالات کے لیے فتویٰ یا سزا نافذ کرنے کی ہدایت نہیں۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-justice-fairness-between-children",
+    "title": {"en": "Fairness between children", "ur": "اولاد کے درمیان انصاف"},
+    "narrator": {"en": "Al-Nu'man ibn Bashir, through Amir", "ur": "نعمان بن بشیر رضی اللہ عنہما، بروایت عامر"},
+    "topics": ["justice"],
+    "source": {"collection": "bukhari", "reference": "2587", "url": "https://sunnah.com/bukhari:2587"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "فَاتَّقُوا اللَّهَ، وَاعْدِلُوا بَيْنَ أَوْلاَدِكُمْ",
+    "arabicFull": "حَدَّثَنَا حَامِدُ بْنُ عُمَرَ، حَدَّثَنَا أَبُو عَوَانَةَ، عَنْ حُصَيْنٍ، عَنْ عَامِرٍ، قَالَ سَمِعْتُ النُّعْمَانَ بْنَ بَشِيرٍ ـ رضى الله عنهما ـ وَهُوَ عَلَى الْمِنْبَرِ يَقُولُ أَعْطَانِي أَبِي عَطِيَّةً، فَقَالَتْ عَمْرَةُ بِنْتُ رَوَاحَةَ لاَ أَرْضَى حَتَّى تُشْهِدَ رَسُولَ اللَّهِ صلى الله عليه وسلم. فَأَتَى رَسُولَ اللَّهِ صلى الله عليه وسلم فَقَالَ إِنِّي أَعْطَيْتُ ابْنِي مِنْ عَمْرَةَ بِنْتِ رَوَاحَةَ عَطِيَّةً، فَأَمَرَتْنِي أَنْ أُشْهِدَكَ يَا رَسُولَ اللَّهِ. قَالَ \" أَعْطَيْتَ سَائِرَ وَلَدِكَ مِثْلَ هَذَا \". قَالَ لاَ. قَالَ \" فَاتَّقُوا اللَّهَ، وَاعْدِلُوا بَيْنَ أَوْلاَدِكُمْ \". قَالَ فَرَجَعَ فَرَدَّ عَطِيَّتَهُ.",
+    "summary": {
+      "en": "Amir heard al-Nu'man ibn Bashir describe a gift his father had singled him out to receive. Asked to witness it, the Prophet ﷺ first asked whether the other children had received something comparable. On hearing that they had not, he urged reverence for Allah and fairness between children. Al-Nu'man says his father then withdrew the gift.",
+      "ur": "عامر نے نعمان بن بشیر رضی اللہ عنہما کو بتاتے سنا کہ ان کے والد نے انہیں الگ سے ایک عطیہ دیا تھا۔ جب نبی ﷺ کو گواہ بنانے کی درخواست ہوئی تو آپ ﷺ نے پہلے پوچھا کہ کیا باقی اولاد کو بھی ایسا دیا ہے۔ نفی میں جواب ملنے پر آپ ﷺ نے اللہ سے ڈرنے اور اولاد کے درمیان انصاف کرنے کی تاکید فرمائی۔ ان کے مطابق، والد نے عطیہ واپس لے لیا۔"
+    },
+    "context": {
+      "en": "Al-Nu'man is recalling his own family experience; Amir is the listener transmitting it. The Prophetic instruction follows a specific question about an unequal gift. The report is not presented here as a complete account of inheritance or every difference in parental spending.",
+      "ur": "نعمان رضی اللہ عنہ اپنے خاندان کا واقعہ بیان کر رہے ہیں اور عامر اسے سن کر روایت کرتے ہیں۔ نبوی ہدایت ایک غیر مساوی عطیے کے سوال پر آئی۔ یہاں اسے وراثت یا والدین کے ہر مختلف خرچ کی مکمل قانونی بحث نہیں بنایا گیا۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-justice-rights-beyond-eloquence",
+    "title": {"en": "A judgment cannot change a right", "ur": "فیصلہ حق کی حقیقت نہیں بدلتا"},
+    "narrator": {"en": "Umm Salama", "ur": "ام سلمہ رضی اللہ عنہا"},
+    "topics": ["justice"],
+    "source": {"collection": "bukhari", "reference": "2680", "url": "https://sunnah.com/bukhari:2680"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "إِنَّكُمْ تَخْتَصِمُونَ إِلَىَّ، وَلَعَلَّ بَعْضَكُمْ أَلْحَنُ بِحُجَّتِهِ مِنْ بَعْضٍ",
+    "arabicFull": "حَدَّثَنَا عَبْدُ اللَّهِ بْنُ مَسْلَمَةَ، عَنْ مَالِكٍ، عَنْ هِشَامِ بْنِ عُرْوَةَ، عَنْ أَبِيهِ، عَنْ زَيْنَبَ، عَنْ أُمِّ سَلَمَةَ ـ رضى الله عنها ـ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ \" إِنَّكُمْ تَخْتَصِمُونَ إِلَىَّ، وَلَعَلَّ بَعْضَكُمْ أَلْحَنُ بِحُجَّتِهِ مِنْ بَعْضٍ، فَمَنْ قَضَيْتُ لَهُ بِحَقِّ أَخِيهِ شَيْئًا بِقَوْلِهِ، فَإِنَّمَا أَقْطَعُ لَهُ قِطْعَةً مِنَ النَّارِ فَلاَ يَأْخُذْهَا \".",
+    "summary": {
+      "en": "Umm Salama transmits the Prophet's ﷺ warning to people bringing disputes before him: a persuasive presentation could secure a decision concerning something that really belonged to another person. He warned the successful claimant not to take that wrongful award. The teaching preserves the distinction between winning an argument and actually possessing the right claimed.",
+      "ur": "ام سلمہ رضی اللہ عنہا نبی ﷺ کی یہ تنبیہ نقل کرتی ہیں کہ مقدمہ پیش کرنے والوں میں کوئی اپنی دلیل زیادہ مؤثر انداز سے بیان کر سکتا ہے، جس سے دوسرے کے حق کے بارے میں اس کے موافق فیصلہ ہو جائے۔ آپ ﷺ نے ایسے شخص کو وہ چیز لینے سے منع فرمایا۔ اس تعلیم میں مقدمہ جیتنے اور حقیقت میں حق دار ہونے کا فرق برقرار رکھا گیا ہے۔"
+    },
+    "context": {
+      "en": "This wording describes a possible outcome of hearing competing claims; it does not identify a particular litigant or establish that a named judgment was mistaken. The warning is Prophetic speech, while the explanation of its ethical distinction is editorial paraphrase.",
+      "ur": "ان الفاظ میں فریقوں کی بات سن کر فیصلے کے ایک ممکنہ نتیجے کا ذکر ہے؛ کسی خاص مدعی یا غلط فیصلے کی نشان دہی نہیں۔ تنبیہ نبوی کلام ہے، جبکہ اس کے اخلاقی فرق کی وضاحت ادارتی خلاصہ ہے۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-forgiveness-no-personal-revenge",
+    "title": {"en": "Not seeking personal revenge", "ur": "اپنی ذات کے لیے انتقام نہیں"},
+    "narrator": {"en": "Aisha", "ur": "عائشہ رضی اللہ عنہا"},
+    "topics": ["forgiveness"],
+    "source": {"collection": "bukhari", "reference": "3560", "url": "https://sunnah.com/bukhari:3560"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "وَمَا انْتَقَمَ رَسُولُ اللَّهِ صلى الله عليه وسلم لِنَفْسِهِ",
+    "arabicFull": "حَدَّثَنَا عَبْدُ اللَّهِ بْنُ يُوسُفَ، أَخْبَرَنَا مَالِكٌ، عَنِ ابْنِ شِهَابٍ، عَنْ عُرْوَةَ بْنِ الزُّبَيْرِ، عَنْ عَائِشَةَ ـ رضى الله عنها ـ أَنَّهَا قَالَتْ مَا خُيِّرَ رَسُولُ اللَّهِ صلى الله عليه وسلم بَيْنَ أَمْرَيْنِ إِلاَّ أَخَذَ أَيْسَرَهُمَا، مَا لَمْ يَكُنْ إِثْمًا، فَإِنْ كَانَ إِثْمًا كَانَ أَبْعَدَ النَّاسِ مِنْهُ، وَمَا انْتَقَمَ رَسُولُ اللَّهِ صلى الله عليه وسلم لِنَفْسِهِ، إِلاَّ أَنْ تُنْتَهَكَ حُرْمَةُ اللَّهِ فَيَنْتَقِمَ لِلَّهِ بِهَا.",
+    "summary": {
+      "en": "Aisha describes the Prophet ﷺ as choosing the easier of two options when it involved no sin, and keeping away from a sinful choice. She also distinguishes his refusal to seek revenge for himself from his response when Allah's sacred limits were violated. Her account joins personal forbearance with moral boundaries, rather than describing indifference to wrongdoing.",
+      "ur": "عائشہ رضی اللہ عنہا بیان کرتی ہیں کہ نبی ﷺ دو راستوں میں آسان راستہ اختیار فرماتے، بشرطیکہ وہ گناہ نہ ہو، اور گناہ کے راستے سے دور رہتے۔ وہ اپنی ذات کے لیے انتقام نہ لینے اور اللہ کی حرمت پامال ہونے پر اقدام کرنے میں فرق بھی واضح کرتی ہیں۔ ان کی روایت ذاتی درگزر کے ساتھ اخلاقی حدود کو بیان کرتی ہے، برائی سے بے پروائی کو نہیں۔"
+    },
+    "context": {
+      "en": "This is Aisha's description of his conduct, not a quotation in which he praises himself. The qualification concerning Allah's limits belongs to the same report and must remain alongside the statement about personal revenge.",
+      "ur": "یہ عائشہ رضی اللہ عنہا کی بیان کردہ سیرت ہے، نبی ﷺ کا اپنی تعریف میں فرمایا ہوا قول نہیں۔ اللہ کی حرمت سے متعلق قید اسی روایت کا حصہ ہے اور ذاتی انتقام نہ لینے کے بیان سے الگ نہیں کی جا سکتی۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-forgiveness-after-an-armed-threat",
+    "title": {"en": "Restraint after a threat", "ur": "دھمکی کے بعد درگزر"},
+    "narrator": {"en": "Jabir ibn Abdullah", "ur": "جابر بن عبداللہ رضی اللہ عنہما"},
+    "topics": ["forgiveness"],
+    "source": {"collection": "bukhari", "reference": "2910", "url": "https://sunnah.com/bukhari:2910"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "وَلَمْ يُعَاقِبْهُ وَجَلَسَ",
+    "arabicFull": "حَدَّثَنَا أَبُو الْيَمَانِ، أَخْبَرَنَا شُعَيْبٌ، عَنِ الزُّهْرِيِّ، قَالَ حَدَّثَنِي سِنَانُ بْنُ أَبِي سِنَانٍ الدُّؤَلِيُّ، وَأَبُو سَلَمَةَ بْنُ عَبْدِ الرَّحْمَنِ أَنَّ جَابِرَ بْنَ عَبْدِ اللَّهِ ـ رضى الله عنهما ـ أَخْبَرَ أَنَّهُ، غَزَا مَعَ رَسُولِ اللَّهِ صلى الله عليه وسلم قِبَلَ نَجْدٍ، فَلَمَّا قَفَلَ رَسُولُ اللَّهِ صلى الله عليه وسلم قَفَلَ مَعَهُ، فَأَدْرَكَتْهُمُ الْقَائِلَةُ فِي وَادٍ كَثِيرِ الْعِضَاهِ، فَنَزَلَ رَسُولُ اللَّهِ صلى الله عليه وسلم وَتَفَرَّقَ النَّاسُ يَسْتَظِلُّونَ بِالشَّجَرِ، فَنَزَلَ رَسُولُ اللَّهِ صلى الله عليه وسلم تَحْتَ سَمُرَةٍ وَعَلَّقَ بِهَا سَيْفَهُ وَنِمْنَا نَوْمَةً، فَإِذَا رَسُولُ اللَّهِ صلى الله عليه وسلم يَدْعُونَا وَإِذَا عِنْدَهُ أَعْرَابِيٌّ فَقَالَ \" إِنَّ هَذَا اخْتَرَطَ عَلَىَّ سَيْفِي وَأَنَا نَائِمٌ، فَاسْتَيْقَظْتُ وَهْوَ فِي يَدِهِ صَلْتًا \". فَقَالَ مَنْ يَمْنَعُكَ مِنِّي فَقُلْتُ \" اللَّهُ \". ثَلاَثًا وَلَمْ يُعَاقِبْهُ وَجَلَسَ.",
+    "summary": {
+      "en": "Jabir recalls resting with the Prophet ﷺ and his companions during their return from an expedition towards Najd. A Bedouin took the Prophet's sword while he slept and confronted him. The Prophet ﷺ later told the companions that he had answered by naming Allah as his protector. Jabir's account concludes that the man was not punished.",
+      "ur": "جابر رضی اللہ عنہ نجد کی جانب ایک مہم سے واپسی پر نبی ﷺ اور صحابہ کے آرام کرنے کا واقعہ بیان کرتے ہیں۔ ایک اعرابی نے آپ ﷺ کے سوتے ہوئے آپ کی تلوار لے کر دھمکی دی۔ نبی ﷺ نے بعد میں صحابہ کو بتایا کہ آپ نے جواب میں اللہ کا نام لیا تھا۔ جابر رضی اللہ عنہ کی روایت کے آخر میں ہے کہ اس شخص کو سزا نہیں دی گئی۔"
+    },
+    "context": {
+      "en": "The short excerpt is the narrator's conclusion, not words spoken by the Prophet ﷺ. This version leaves the man's name and later life unstated. It records restraint in this encounter without setting a universal rule for every threat.",
+      "ur": "مختصر عربی اقتباس راوی کا بیان ہے، نبی ﷺ کے بولے ہوئے الفاظ نہیں۔ اس روایت میں اس شخص کا نام اور بعد کی زندگی مذکور نہیں۔ یہ اسی موقع پر درگزر کا واقعہ ہے، ہر دھمکی کے لیے عمومی حکم نہیں۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-forgiveness-pardoning-an-insult",
+    "title": {"en": "Forgiving after an insult", "ur": "دل آزاری کے بعد معافی"},
+    "narrator": {"en": "Usama ibn Zayd", "ur": "اسامہ بن زید رضی اللہ عنہما"},
+    "topics": ["forgiveness"],
+    "source": {"collection": "bukhari", "reference": "4566", "url": "https://sunnah.com/bukhari:4566"},
+    "relatedSources": [{"collection": "bukhari", "reference": "5663", "url": "https://sunnah.com/bukhari:5663"}],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "فَعَفَا عَنْهُ رَسُولُ اللَّهِ صلى الله عليه وسلم",
+    "arabicFull": "حَدَّثَنَا أَبُو الْيَمَانِ، أَخْبَرَنَا شُعَيْبٌ، عَنِ الزُّهْرِيِّ، قَالَ أَخْبَرَنِي عُرْوَةُ بْنُ الزُّبَيْرِ، أَنَّ أُسَامَةَ بْنَ زَيْدٍ ـ رضى الله عنهما ـ أَخْبَرَهُ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم رَكِبَ عَلَى حِمَارٍ عَلَى قَطِيفَةٍ فَدَكِيَّةٍ، وَأَرْدَفَ أُسَامَةَ بْنَ زَيْدٍ وَرَاءَهُ، يَعُودُ سَعْدَ بْنَ عُبَادَةَ فِي بَنِي الْحَارِثِ بْنِ الْخَزْرَجِ قَبْلَ وَقْعَةِ بَدْرٍ ـ قَالَ ـ حَتَّى مَرَّ بِمَجْلِسٍ فِيهِ عَبْدُ اللَّهِ بْنُ أُبَىٍّ، ابْنُ سَلُولَ، وَذَلِكَ قَبْلَ أَنْ يُسْلِمَ عَبْدُ اللَّهِ بْنُ أُبَىٍّ فَإِذَا فِي الْمَجْلِسِ أَخْلاَطٌ مِنَ الْمُسْلِمِينَ وَالْمُشْرِكِينَ عَبَدَةِ الأَوْثَانِ وَالْيَهُودِ وَالْمُسْلِمِينَ، وَفِي الْمَجْلِسِ عَبْدُ اللَّهِ بْنُ رَوَاحَةَ، فَلَمَّا غَشِيَتِ الْمَجْلِسَ عَجَاجَةُ الدَّابَّةِ خَمَّرَ عَبْدُ اللَّهِ بْنُ أُبَىٍّ أَنْفَهُ بِرِدَائِهِ، ثُمَّ قَالَ لاَ تُغَبِّرُوا عَلَيْنَا. فَسَلَّمَ رَسُولُ اللَّهِ صلى الله عليه وسلم عَلَيْهِمْ ثُمَّ وَقَفَ فَنَزَلَ فَدَعَاهُمْ إِلَى اللَّهِ، وَقَرَأَ عَلَيْهِمُ الْقُرْآنَ، فَقَالَ عَبْدُ اللَّهِ بْنُ أُبَىٍّ ابْنُ سَلُولَ أَيُّهَا الْمَرْءُ، إِنَّهُ لاَ أَحْسَنَ مِمَّا تَقُولُ، إِنْ كَانَ حَقًّا، فَلاَ تُؤْذِينَا بِهِ فِي مَجْلِسِنَا، ارْجِعْ إِلَى رَحْلِكَ، فَمَنْ جَاءَكَ فَاقْصُصْ عَلَيْهِ. فَقَالَ عَبْدُ اللَّهِ بْنُ رَوَاحَةَ بَلَى يَا رَسُولَ اللَّهِ، فَاغْشَنَا بِهِ فِي مَجَالِسِنَا، فَإِنَّا نُحِبُّ ذَلِكَ. فَاسْتَبَّ الْمُسْلِمُونَ وَالْمُشْرِكُونَ وَالْيَهُودُ حَتَّى كَادُوا يَتَثَاوَرُونَ، فَلَمْ يَزَلِ النَّبِيُّ صلى الله عليه وسلم يُخَفِّضُهُمْ حَتَّى سَكَنُوا، ثُمَّ رَكِبَ النَّبِيُّ صلى الله عليه وسلم دَابَّتَهُ فَسَارَ حَتَّى دَخَلَ عَلَى سَعْدِ بْنِ عُبَادَةَ، فَقَالَ لَهُ النَّبِيُّ صلى الله عليه وسلم \" يَا سَعْدُ أَلَمْ تَسْمَعْ مَا قَالَ أَبُو حُبَابٍ \". يُرِيدُ عَبْدَ اللَّهِ بْنَ أُبَىٍّ \" قَالَ كَذَا وَكَذَا \" . قَالَ سَعْدُ بْنُ عُبَادَةَ يَا رَسُولَ اللَّهِ، اعْفُ عَنْهُ وَاصْفَحْ عَنْهُ، فَوَالَّذِي أَنْزَلَ عَلَيْكَ الْكِتَابَ، لَقَدْ جَاءَ اللَّهُ بِالْحَقِّ الَّذِي أَنْزَلَ عَلَيْكَ، لَقَدِ اصْطَلَحَ أَهْلُ هَذِهِ الْبُحَيْرَةِ عَلَى أَنْ يُتَوِّجُوهُ فَيُعَصِّبُونَهُ بِالْعِصَابَةِ، فَلَمَّا أَبَى اللَّهُ ذَلِكَ بِالْحَقِّ الَّذِي أَعْطَاكَ اللَّهُ شَرِقَ بِذَلِكَ، فَذَلِكَ فَعَلَ بِهِ ما رَأَيْتَ. فَعَفَا عَنْهُ رَسُولُ اللَّهِ صلى الله عليه وسلم وَكَانَ النَّبِيُّ صلى الله عليه وسلم وَأَصْحَابُهُ يَعْفُونَ عَنِ الْمُشْرِكِينَ وَأَهْلِ الْكِتَابِ كَمَا أَمَرَهُمُ اللَّهُ، وَيَصْبِرُونَ عَلَى الأَذَى قَالَ اللَّهُ عَزَّ وَجَلَّ {وَلَتَسْمَعُنَّ مِنَ الَّذِينَ أُوتُوا الْكِتَابَ مِنْ قَبْلِكُمْ وَمِنَ الَّذِينَ أَشْرَكُوا أَذًى كَثِيرًا } الآيَةَ، وَقَالَ اللَّهُ {وَدَّ كَثِيرٌ مِنْ أَهْلِ الْكِتَابِ لَوْ يَرُدُّونَكُمْ مِنْ بَعْدِ إِيمَانِكُمْ كُفَّارًا حَسَدًا مِنْ عِنْدِ أَنْفُسِهِمْ} إِلَى آخِرِ الآيَةِ، وَكَانَ النَّبِيُّ صلى الله عليه وسلم يَتَأَوَّلُ الْعَفْوَ مَا أَمَرَهُ اللَّهُ بِهِ، حَتَّى أَذِنَ اللَّهُ فِيهِمْ، فَلَمَّا غَزَا رَسُولُ اللَّهِ صلى الله عليه وسلم بَدْرًا، فَقَتَلَ اللَّهُ بِهِ صَنَادِيدَ كُفَّارِ قُرَيْشٍ قَالَ ابْنُ أُبَىٍّ ابْنُ سَلُولَ، وَمَنْ مَعَهُ مِنَ الْمُشْرِكِينَ، وَعَبَدَةِ الأَوْثَانِ هَذَا أَمْرٌ قَدْ تَوَجَّهَ. فَبَايَعُوا الرَّسُولَ صلى الله عليه وسلم عَلَى الإِسْلاَمِ فَأَسْلَمُوا.",
+    "summary": {
+      "en": "Usama ibn Zayd recounts a tense encounter while accompanying the Prophet ﷺ to visit Sa'd ibn Ubada. After Abdullah ibn Ubay objected to his address, an argument spread through the gathering. The Prophet ﷺ calmed those present. Later, Sa'd asked him to overlook Abdullah's behaviour, explaining the man's frustrated hopes of leadership. The account expressly says the Prophet ﷺ forgave him.",
+      "ur": "اسامہ بن زید رضی اللہ عنہما ایک کشیدہ ملاقات بیان کرتے ہیں جب وہ نبی ﷺ کے ساتھ سعد بن عبادہ رضی اللہ عنہ کی عیادت کو جا رہے تھے۔ عبداللہ بن ابی کے اعتراض پر مجلس میں جھگڑا پھیل گیا، جسے نبی ﷺ نے ٹھنڈا کیا۔ بعد میں سعد رضی اللہ عنہ نے درگزر کی درخواست کی اور قیادت نہ ملنے کی مایوسی بیان کی۔ روایت صراحت کرتی ہے کہ آپ ﷺ نے اسے معاف کر دیا۔"
+    },
+    "context": {
+      "en": "The report places this encounter before Badr. The explanation of Abdullah's motives is Sa'd's speech, not the Prophet's. The Arabic retains the closing transmitted commentary about forgiveness, Quranic passages and later events; these are not presented as one continuous Prophetic quotation.",
+      "ur": "روایت یہ ملاقات بدر سے پہلے کی بتاتی ہے۔ عبداللہ کے محرکات کی وضاحت سعد رضی اللہ عنہ کی بات ہے، نبی ﷺ کا قول نہیں۔ عربی میں معافی، قرآنی اقتباسات اور بعد کے واقعات سے متعلق منقول توضیح بھی محفوظ ہے؛ اسے مسلسل نبوی کلام نہیں بنایا گیا۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-honesty-visible-condition-of-goods",
+    "title": {"en": "Let the buyer see", "ur": "خریدار سے عیب نہ چھپے"},
+    "narrator": {"en": "Abu Huraira", "ur": "ابوہریرہ رضی اللہ عنہ"},
+    "topics": ["honesty"],
+    "source": {"collection": "muslim", "reference": "102", "url": "https://sunnah.com/muslim:102"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih Muslim.", "ur": "صحیح مسلم میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "أَفَلاَ جَعَلْتَهُ فَوْقَ الطَّعَامِ كَىْ يَرَاهُ النَّاسُ",
+    "arabicFull": "وَحَدَّثَنِي يَحْيَى بْنُ أَيُّوبَ، وَقُتَيْبَةُ، وَابْنُ، حُجْرٍ جَمِيعًا عَنْ إِسْمَاعِيلَ بْنِ جَعْفَرٍ، - قَالَ ابْنُ أَيُّوبَ حَدَّثَنَا إِسْمَاعِيلُ، - قَالَ أَخْبَرَنِي الْعَلاَءُ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، . أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم مَرَّ عَلَى صُبْرَةِ طَعَامٍ فَأَدْخَلَ يَدَهُ فِيهَا فَنَالَتْ أَصَابِعُهُ بَلَلاً فَقَالَ \" مَا هَذَا يَا صَاحِبَ الطَّعَامِ \" . قَالَ أَصَابَتْهُ السَّمَاءُ يَا رَسُولَ اللَّهِ . قَالَ \" أَفَلاَ جَعَلْتَهُ فَوْقَ الطَّعَامِ كَىْ يَرَاهُ النَّاسُ مَنْ غَشَّ فَلَيْسَ مِنِّي \" .",
+    "summary": {
+      "en": "Abu Huraira describes the Prophet ﷺ checking a heap of food and finding moisture beneath its surface. Its owner explained that rain had reached it. The Prophet ﷺ asked why the affected food had not been placed where people could see it, then strongly repudiated deception. His response made the goods' visible condition a matter of honesty.",
+      "ur": "ابوہریرہ رضی اللہ عنہ بتاتے ہیں کہ نبی ﷺ نے کھانے کے ایک ڈھیر میں ہاتھ ڈالا تو اندر نمی محسوس ہوئی۔ مالک نے بتایا کہ اس پر بارش پڑی تھی۔ آپ ﷺ نے پوچھا کہ بھیگا ہوا حصہ اوپر کیوں نہیں رکھا تاکہ لوگ اسے دیکھ سکیں، پھر دھوکے کی سخت مذمت فرمائی۔ اس موقع پر سامان کی اصل حالت ظاہر کرنا دیانت کا مسئلہ بنا۔"
+    },
+    "context": {
+      "en": "The owner's explanation and the Prophet's correction are distinct parts of the dialogue. The Arabic says food without naming a particular grain. Its closing condemnation of deception is retained, without turning this entry into a judgment on any person's religious status.",
+      "ur": "مالک کی وضاحت اور نبی ﷺ کی اصلاح مکالمے کے الگ حصے ہیں۔ عربی میں کسی خاص اناج کا نام نہیں، صرف کھانے کا ذکر ہے۔ آخر کی مذمت محفوظ ہے، مگر اس اندراج سے کسی فرد کے ایمان کے بارے میں فیصلہ نہیں کیا گیا۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-honesty-upholding-a-covenant",
+    "title": {"en": "Keeping a difficult promise", "ur": "مشکل وقت میں عہد کی پاس داری"},
+    "narrator": {"en": "Hudhaifa ibn al-Yaman", "ur": "حذیفہ بن یمان رضی اللہ عنہ"},
+    "topics": ["honesty"],
+    "source": {"collection": "muslim", "reference": "1787", "url": "https://sunnah.com/muslim:1787"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih Muslim.", "ur": "صحیح مسلم میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "انْصَرِفَا نَفِي لَهُمْ بِعَهْدِهِمْ وَنَسْتَعِينُ اللَّهَ عَلَيْهِمْ",
+    "arabicFull": "وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا أَبُو أُسَامَةَ، عَنِ الْوَلِيدِ بْنِ جُمَيْعٍ، حَدَّثَنَا أَبُو الطُّفَيْلِ حَدَّثَنَا حُذَيْفَةُ بْنُ الْيَمَانِ، قَالَ مَا مَنَعَنِي أَنْ أَشْهَدَ، بَدْرًا إِلاَّ أَنِّي خَرَجْتُ أَنَا وَأَبِي - حُسَيْلٌ - قَالَ فَأَخَذَنَا كُفَّارُ قُرَيْشٍ قَالُوا إِنَّكُمْ تُرِيدُونَ مُحَمَّدًا فَقُلْنَا مَا نُرِيدُهُ مَا نُرِيدُ إِلاَّ الْمَدِينَةَ . فَأَخَذُوا مِنَّا عَهْدَ اللَّهِ وَمِيثَاقَهُ لَنَنْصَرِفَنَّ إِلَى الْمَدِينَةِ وَلاَ نُقَاتِلُ مَعَهُ فَأَتَيْنَا رَسُولَ اللَّهِ صلى الله عليه وسلم فَأَخْبَرْنَاهُ الْخَبَرَ فَقَالَ \" انْصَرِفَا نَفِي لَهُمْ بِعَهْدِهِمْ وَنَسْتَعِينُ اللَّهَ عَلَيْهِمْ \" .",
+    "summary": {
+      "en": "Hudhaifa explains why he did not take part at Badr. Quraysh had detained him and his father and obtained their promise to return to Medina without fighting alongside Muhammad ﷺ. When they reported this to the Prophet ﷺ, he directed them to honour the undertaking, saying that they would keep the covenant and seek Allah's help.",
+      "ur": "حذیفہ رضی اللہ عنہ بتاتے ہیں کہ وہ بدر میں کیوں شریک نہ ہوئے۔ قریش نے انہیں اور ان کے والد کو روک کر یہ عہد لیا تھا کہ وہ مدینہ واپس جائیں گے اور محمد ﷺ کے ساتھ مل کر نہیں لڑیں گے۔ جب انہوں نے نبی ﷺ کو صورتِ حال بتائی تو آپ ﷺ نے عہد نبھانے کی ہدایت دی اور فرمایا کہ ہم وعدہ پورا کریں گے اور اللہ سے مدد مانگیں گے۔"
+    },
+    "context": {
+      "en": "Hudhaifa supplies the circumstances; the instruction at the end is the Prophet's response. The event concerns these two men and their particular undertaking. It is not expanded here into a general legal ruling about every promise made under detention.",
+      "ur": "حذیفہ رضی اللہ عنہ حالات بیان کرتے ہیں؛ آخر کی ہدایت نبی ﷺ کا جواب ہے۔ واقعہ انہی دو افراد اور ان کے مخصوص عہد سے متعلق ہے۔ اسے حراست میں کیے گئے ہر وعدے کا عمومی قانونی حکم نہیں بنایا گیا۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-honesty-truthfulness-shapes-character",
+    "title": {"en": "Truthfulness shapes character", "ur": "سچائی سے کردار بنتا ہے"},
+    "narrator": {"en": "Abdullah ibn Mas'ud", "ur": "عبداللہ بن مسعود رضی اللہ عنہ"},
+    "topics": ["honesty"],
+    "source": {"collection": "bukhari", "reference": "6094", "url": "https://sunnah.com/bukhari:6094"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "إِنَّ الصِّدْقَ يَهْدِي إِلَى الْبِرِّ، وَإِنَّ الْبِرَّ يَهْدِي إِلَى الْجَنَّةِ",
+    "arabicFull": "حَدَّثَنَا عُثْمَانُ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا جَرِيرٌ، عَنْ مَنْصُورٍ، عَنْ أَبِي وَائِلٍ، عَنْ عَبْدِ اللَّهِ ـ رضى الله عنه ـ عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ \" إِنَّ الصِّدْقَ يَهْدِي إِلَى الْبِرِّ، وَإِنَّ الْبِرَّ يَهْدِي إِلَى الْجَنَّةِ، وَإِنَّ الرَّجُلَ لَيَصْدُقُ حَتَّى يَكُونَ صِدِّيقًا، وَإِنَّ الْكَذِبَ يَهْدِي إِلَى الْفُجُورِ، وَإِنَّ الْفُجُورَ يَهْدِي إِلَى النَّارِ، وَإِنَّ الرَّجُلَ لَيَكْذِبُ، حَتَّى يُكْتَبَ عِنْدَ اللَّهِ كَذَّابًا \".",
+    "summary": {
+      "en": "Abdullah ibn Mas'ud transmits the Prophet's ﷺ teaching that repeated truthfulness forms a truthful person and directs them towards goodness and Paradise. Repeated lying moves in the opposite direction, towards wrongdoing and judgment. The report treats honesty as a sustained practice that shapes a person's character, not merely an isolated choice of accurate words.",
+      "ur": "عبداللہ بن مسعود رضی اللہ عنہ نبی ﷺ کی تعلیم نقل کرتے ہیں کہ مسلسل سچ بولنے سے انسان سچا بنتا ہے اور سچائی اسے نیکی اور جنت کی طرف لے جاتی ہے۔ مسلسل جھوٹ اس کے برعکس بدکرداری اور انجام کی پکڑ کی طرف لے جاتا ہے۔ روایت میں دیانت ایک مستقل عمل ہے جو شخصیت کو بناتا ہے، صرف کسی ایک موقع پر درست الفاظ کہنے کا نام نہیں۔"
+    },
+    "context": {
+      "en": "This is an explicit Prophetic teaching, not a narrated incident of a transaction or a biographical claim about a named opponent. The source gives no specific occasion; the description of habit and character is an editorial summary of its repeated-action wording.",
+      "ur": "یہ واضح نبوی تعلیم ہے، کسی لین دین کا واقعہ یا کسی نام زد مخالف کی سوانحی خبر نہیں۔ ماخذ میں کوئی خاص موقع بیان نہیں ہوا؛ عادت اور کردار کی وضاحت متن میں بار بار عمل کرنے کے بیان کا ادارتی خلاصہ ہے۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-family-community-serving-at-home",
+    "title": {"en": "Serving his family at home", "ur": "گھر میں اہلِ خانہ کی خدمت"},
+    "narrator": {"en": "Aisha, through al-Aswad", "ur": "عائشہ رضی اللہ عنہا، بروایت اسود"},
+    "topics": ["family-community"],
+    "source": {"collection": "bukhari", "reference": "676", "url": "https://sunnah.com/bukhari:676"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "يَكُونُ فِي مِهْنَةِ أَهْلِهِ",
+    "arabicFull": "حَدَّثَنَا آدَمُ، قَالَ حَدَّثَنَا شُعْبَةُ، قَالَ حَدَّثَنَا الْحَكَمُ، عَنْ إِبْرَاهِيمَ، عَنِ الأَسْوَدِ، قَالَ سَأَلْتُ عَائِشَةَ مَا كَانَ النَّبِيُّ صلى الله عليه وسلم يَصْنَعُ فِي بَيْتِهِ قَالَتْ كَانَ يَكُونُ فِي مِهْنَةِ أَهْلِهِ ـ تَعْنِي خِدْمَةَ أَهْلِهِ ـ فَإِذَا حَضَرَتِ الصَّلاَةُ خَرَجَ إِلَى الصَّلاَةِ.",
+    "summary": {
+      "en": "Al-Aswad asked Aisha what the Prophet ﷺ did inside his home. She described him as occupied in serving his family, leaving for prayer when its time arrived. Her answer places practical household service within his ordinary life, alongside worship, rather than portraying concern for family as something expressed only in public advice.",
+      "ur": "اسود نے عائشہ رضی اللہ عنہا سے پوچھا کہ نبی ﷺ اپنے گھر میں کیا کرتے تھے۔ انہوں نے بتایا کہ آپ ﷺ اہلِ خانہ کی خدمت میں مشغول رہتے اور نماز کا وقت آتا تو نماز کے لیے تشریف لے جاتے۔ اس جواب میں گھر والوں کی عملی خدمت عبادت کے ساتھ آپ کی روزمرہ زندگی کا حصہ ہے، صرف لوگوں کو دی جانے والی نصیحت نہیں۔"
+    },
+    "context": {
+      "en": "Aisha answers a question about conduct at home; the Prophet ﷺ is not speaking in this report. The transmitted Arabic includes an explanatory gloss equating the phrase with service to his family. It does not list particular chores.",
+      "ur": "عائشہ رضی اللہ عنہا گھر کے معمول کے سوال کا جواب دیتی ہیں؛ اس روایت میں نبی ﷺ کا براہِ راست قول نہیں۔ منقول عربی میں اہلِ خانہ کی خدمت کی توضیح بھی شامل ہے۔ مخصوص گھریلو کاموں کی فہرست نہیں دی گئی۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-family-community-abu-umayr",
+    "title": {"en": "Attention to Abu Umayr", "ur": "ابوعمیر سے محبت بھری بات"},
+    "narrator": {"en": "Anas ibn Malik", "ur": "انس بن مالک رضی اللہ عنہ"},
+    "topics": ["family-community"],
+    "source": {"collection": "bukhari", "reference": "6203", "url": "https://sunnah.com/bukhari:6203"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih al-Bukhari.", "ur": "صحیح بخاری میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "يَا أَبَا عُمَيْرٍ مَا فَعَلَ النُّغَيْرُ",
+    "arabicFull": "حَدَّثَنَا مُسَدَّدٌ، حَدَّثَنَا عَبْدُ الْوَارِثِ، عَنْ أَبِي التَّيَّاحِ، عَنْ أَنَسٍ، قَالَ كَانَ النَّبِيُّ صلى الله عليه وسلم أَحْسَنَ النَّاسِ خُلُقًا، وَكَانَ لِي أَخٌ يُقَالُ لَهُ أَبُو عُمَيْرٍ ـ قَالَ أَحْسِبُهُ فَطِيمٌ ـ وَكَانَ إِذَا جَاءَ قَالَ \" يَا أَبَا عُمَيْرٍ مَا فَعَلَ النُّغَيْرُ \". نُغَرٌ كَانَ يَلْعَبُ بِهِ، فَرُبَّمَا حَضَرَ الصَّلاَةَ وَهُوَ فِي بَيْتِنَا، فَيَأْمُرُ بِالْبِسَاطِ الَّذِي تَحْتَهُ فَيُكْنَسُ وَيُنْضَحُ، ثُمَّ يَقُومُ وَنَقُومُ خَلْفَهُ فَيُصَلِّي بِنَا.",
+    "summary": {
+      "en": "Anas praises the Prophet's ﷺ character and recalls his affectionate question to Anas's young brother, Abu Umayr, about the small bird with which he played. The same account remembers the Prophet ﷺ leading the household in prayer when prayer time came during a visit. Attention to a child's interests appears within this familiar pattern of visiting and worship.",
+      "ur": "انس رضی اللہ عنہ نبی ﷺ کے حسنِ اخلاق کا ذکر کرتے ہوئے اپنے چھوٹے بھائی ابوعمیر سے آپ کی محبت بھری بات یاد کرتے ہیں: آپ ﷺ اس ننھے پرندے کے بارے میں پوچھتے جس سے وہ کھیلتے تھے۔ اسی روایت میں گھر آنے پر نماز کا وقت ہو جانے اور آپ ﷺ کے اہلِ خانہ کو نماز پڑھانے کا ذکر ہے۔ بچے کی دلچسپی کا خیال اسی مانوس میل جول اور عبادت کا حصہ دکھائی دیتا ہے۔"
+    },
+    "context": {
+      "en": "The report's praise and explanation about the bird are Anas's narration; the short question is Prophetic speech. The transmitted wording expresses uncertainty about the child's weaning. This version does not explicitly say the bird had died, so that circumstance is not added.",
+      "ur": "تعریف اور پرندے کی وضاحت انس رضی اللہ عنہ کا بیان ہے؛ مختصر سوال نبی ﷺ کا کلام ہے۔ منقول الفاظ میں بچے کے دودھ چھوٹنے کے بارے میں تردد ہے۔ اس روایت میں پرندے کے مرنے کا صریح ذکر نہیں، اس لیے وہ تفصیل نہیں بڑھائی گئی۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-family-community-aisha-neighbour-invitation",
+    "title": {"en": "An invitation with Aisha", "ur": "عائشہ کے ساتھ دعوت"},
+    "narrator": {"en": "Anas ibn Malik", "ur": "انس بن مالک رضی اللہ عنہ"},
+    "topics": ["family-community"],
+    "source": {"collection": "muslim", "reference": "2037", "url": "https://sunnah.com/muslim:2037"},
+    "relatedSources": [],
+    "grade": {"level": "sahih", "attribution": {"en": "Sahih by inclusion in Sahih Muslim.", "ur": "صحیح مسلم میں شامل ہونے کی بنا پر صحیح۔"}},
+    "arabic": "فَقَامَا يَتَدَافَعَانِ حَتَّى أَتَيَا مَنْزِلَهُ",
+    "arabicFull": "وَحَدَّثَنِي زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا يَزِيدُ بْنُ هَارُونَ، أَخْبَرَنَا حَمَّادُ بْنُ سَلَمَةَ، عَنْ ثَابِتٍ، عَنْ أَنَسٍ، أَنَّ جَارًا، لِرَسُولِ اللَّهِ صلى الله عليه وسلم فَارِسِيًّا كَانَ طَيِّبَ الْمَرَقِ فَصَنَعَ لِرَسُولِ اللَّهِ صلى الله عليه وسلم ثُمَّ جَاءَ يَدْعُوهُ فَقَالَ \" وَهَذِهِ \" . لِعَائِشَةَ فَقَالَ لاَ . فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" لاَ \" فَعَادَ يَدْعُوهُ فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" وَهَذِهِ \" . قَالَ لاَ . قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" لاَ \" . ثُمَّ عَادَ يَدْعُوهُ فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" وَهَذِهِ \" . قَالَ نَعَمْ . فِي الثَّالِثَةِ . فَقَامَا يَتَدَافَعَانِ حَتَّى أَتَيَا مَنْزِلَهُ .",
+    "summary": {
+      "en": "Anas recounts a Persian neighbour inviting the Prophet ﷺ to a meal he had prepared. The Prophet ﷺ asked whether Aisha was included and declined when the neighbour said no. When the invitation was renewed a third time and the neighbour agreed to include her, they went together. The episode records consideration for his wife within neighbourly hospitality.",
+      "ur": "انس رضی اللہ عنہ بیان کرتے ہیں کہ ایک فارسی پڑوسی نے کھانا تیار کر کے نبی ﷺ کو بلایا۔ آپ ﷺ نے پوچھا کہ کیا عائشہ رضی اللہ عنہا بھی ساتھ ہیں، اور پڑوسی کے انکار پر دعوت قبول نہ کی۔ تیسری بار دعوت دینے پر اس نے انہیں بھی شامل کر لیا تو دونوں ساتھ گئے۔ اس واقعے میں پڑوسی کی مہمانی کے ساتھ اہلیہ کا خیال بھی نمایاں ہے۔"
+    },
+    "context": {
+      "en": "Anas narrates the exchange; the full Arabic identifies whom the Prophet's brief question refers to. The neighbour is described as Persian, but this page does not state his religion or explain his initial refusal. Neither detail is inferred.",
+      "ur": "انس رضی اللہ عنہ مکالمہ بیان کرتے ہیں؛ مکمل عربی واضح کرتی ہے کہ مختصر نبوی سوال میں اشارہ کس کی طرف تھا۔ پڑوسی کو فارسی کہا گیا ہے، مگر اس کا مذہب یا ابتدائی انکار کی وجہ نہیں بتائی گئی۔ ان باتوں کا اندازہ نہیں لگایا گیا۔"
+    },
+    "checkedAt": "2026-09-11"
+  }
+]

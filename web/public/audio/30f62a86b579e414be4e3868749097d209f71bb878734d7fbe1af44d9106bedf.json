@@ -1,0 +1,18 @@
+{
+  "entryId": "character-generosity-flock-between-mountains",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas describes the Prophet's giving in connection with Islam, then recounts a man receiving a flock situated between two mountains. The recipient returned to his people and urged them to embrace Islam, describing Muhammad's giving as that of someone unafraid of poverty. That description belongs to the recipient's response to the gift.",
+  "transcriptHash": "d1b45cc1cf7981af7a50df26e7e15a002c9ab469fb1aa62043bc144198c9625b",
+  "transcriptCharacters": 336,
+  "billableCharacters": 351,
+  "cacheKey": "30f62a86b579e414be4e3868749097d209f71bb878734d7fbe1af44d9106bedf",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/30f62a86b579e414be4e3868749097d209f71bb878734d7fbe1af44d9106bedf.mp3",
+  "byteLength": 117936,
+  "sha256": "c2305b2a5a0a316c2032925635dfc78e9d6e568493dd42dae2763cc682dfba78",
+  "durationSeconds": 19.656
+}

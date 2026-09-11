@@ -1,0 +1,18 @@
+{
+  "entryId": "always-greeted-jarir-smiling",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jarir said that, from the time he accepted Islam, the Prophet may Allah bless him and grant him peace never prevented him from being admitted. Whenever the Prophet may Allah bless him and grant him peace saw him, he smiled. Jarir's account records the welcome that he personally remembered receiving in these encounters.",
+  "transcriptHash": "e3aa89fd531e653b8b537dcfce0f11537b870b0ba77864abbf3ef7c0f52c9a54",
+  "transcriptCharacters": 320,
+  "billableCharacters": 325,
+  "cacheKey": "ae45ad230613f0151fe64a6a9e7c1045a42e1807110a2e87460d5cdeb085855f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ae45ad230613f0151fe64a6a9e7c1045a42e1807110a2e87460d5cdeb085855f.mp3",
+  "byteLength": 112608,
+  "sha256": "db08b94a0be0e817ff861fe51eb6d63f23944d91364ed61c57d33802f474226b",
+  "durationSeconds": 18.768
+}

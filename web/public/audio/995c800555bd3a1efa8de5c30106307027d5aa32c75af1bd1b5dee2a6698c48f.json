@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-squatting-posture-qaila",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَبْدُ بْنُ حُمَيْدٍ، قَالَ: حَدَّثَنَا عَفَّانُ بْنُ مُسْلِمٍ، قَالَ: حَدَّثَنَا عَبْدُ اللهِ بْنُ حَسَّانَ، عَنْ، جَدَّتَيْهِ، عَنْ قَيْلَةَ بِنْتِ مَخْرَمَةَ، أَنَّهَا رَأَتْ رَسُولَ اللهِ صلى الله عليه وسلم فِي الْمَسْجِدِ، وَهُوَ قَاعِدٌ الْقُرْفُصَاءَ، قَالَتْ: فَلَمَّا رَأَيْتُ رَسُولَ اللهِ صلى الله عليه وسلم، الْمُتَخَشِّعَ فِي الْجِلْسَةِ، أُرْعِدْتُ مِنَ الْفَرَقِ.",
+  "transcriptHash": "90451fd6177d2c9dad80b0c21687cd89a48f133e69aeb7a71d034c5b26eaec07",
+  "transcriptCharacters": 389,
+  "billableCharacters": 389,
+  "cacheKey": "995c800555bd3a1efa8de5c30106307027d5aa32c75af1bd1b5dee2a6698c48f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/995c800555bd3a1efa8de5c30106307027d5aa32c75af1bd1b5dee2a6698c48f.mp3",
+  "byteLength": 160848,
+  "sha256": "641713b13c80c7c7ef26f4daf41ff13947763f731d14e4b0396a0c0408b30640",
+  "durationSeconds": 26.808
+}

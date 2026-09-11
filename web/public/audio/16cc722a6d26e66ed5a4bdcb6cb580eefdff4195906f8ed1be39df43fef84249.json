@@ -1,0 +1,18 @@
+{
+  "entryId": "most-handsome-face-best-form-bara",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "براء بن عازب رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کو چہرے اور جسمانی ساخت کے اعتبار سے سب سے خوبصورت بتایا۔ ساتھ ہی فرمایا کہ آپ صلی اللہ علیہ وسلم نہ بہت زیادہ لمبے تھے نہ چھوٹے۔ اس مختصر بیان میں صحابی کا حسن کے بارے میں تاثر اور میانہ قد کی تفصیل دونوں موجود ہیں۔",
+  "transcriptHash": "08736619d75802fabdbeff5e39c6d39cfae2a31d559cfbe925aa69b1c448d7a4",
+  "transcriptCharacters": 273,
+  "billableCharacters": 273,
+  "cacheKey": "16cc722a6d26e66ed5a4bdcb6cb580eefdff4195906f8ed1be39df43fef84249",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/16cc722a6d26e66ed5a4bdcb6cb580eefdff4195906f8ed1be39df43fef84249.mp3",
+  "byteLength": 127440,
+  "sha256": "2abbbaa22ad9769f08b35918c800f31071004f6621ee5a11591c907ab7f53971",
+  "durationSeconds": 21.24
+}

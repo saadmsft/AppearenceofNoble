@@ -1,0 +1,18 @@
+{
+  "entryId": "reddish-hair-relic-kept-by-umm-salama",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مَالِكُ بْنُ إِسْمَاعِيلَ، حَدَّثَنَا إِسْرَائِيلُ، عَنْ عُثْمَانَ بْنِ عَبْدِ اللَّهِ بْنِ مَوْهَبٍ، قَالَ أَرْسَلَنِي أَهْلِي إِلَى أُمِّ سَلَمَةَ بِقَدَحٍ مِنْ مَاءٍ ـ وَقَبَضَ إِسْرَائِيلُ ثَلاَثَ أَصَابِعَ ـ مِنْ فِضَّةٍ فِيهِ شَعَرٌ مِنْ شَعَرِ النَّبِيِّ صلى الله عليه وسلم وَكَانَ إِذَا أَصَابَ الإِنْسَانَ عَيْنٌ أَوْ شَىْءٌ بَعَثَ إِلَيْهَا مِخْضَبَهُ، فَاطَّلَعْتُ فِي الْجُلْجُلِ فَرَأَيْتُ شَعَرَاتٍ حُمْرًا.",
+  "transcriptHash": "fd1aa1a9756388e294e73222e78f7189792698a2cf87c050b58850d53bcbc326",
+  "transcriptCharacters": 432,
+  "billableCharacters": 432,
+  "cacheKey": "6ec267a3324cbc765cef241cbbffa18c5f3083ae0c073b3f6f03b3133fba13c0",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6ec267a3324cbc765cef241cbbffa18c5f3083ae0c073b3f6f03b3133fba13c0.mp3",
+  "byteLength": 149328,
+  "sha256": "3e77b8f8abc2cc61c59cf79499139392deb115b902091fe5ead87c6d2aee6eb7",
+  "durationSeconds": 24.888
+}

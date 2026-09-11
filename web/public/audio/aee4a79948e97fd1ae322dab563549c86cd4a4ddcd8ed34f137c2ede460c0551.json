@@ -1,0 +1,18 @@
+{
+  "entryId": "character-honesty-visible-condition-of-goods",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابوہریرہ رضی اللہ عنہ بتاتے ہیں کہ نبی صلی اللہ علیہ وسلم نے کھانے کے ایک ڈھیر میں ہاتھ ڈالا تو اندر نمی محسوس ہوئی۔ مالک نے بتایا کہ اس پر بارش پڑی تھی۔ آپ صلی اللہ علیہ وسلم نے پوچھا کہ بھیگا ہوا حصہ اوپر کیوں نہیں رکھا تاکہ لوگ اسے دیکھ سکیں، پھر دھوکے کی سخت مذمت فرمائی۔ اس موقع پر سامان کی اصل حالت ظاہر کرنا دیانت کا مسئلہ بنا۔",
+  "transcriptHash": "c7d5ff260ca6fa93a9aa1aa4412deb9c785e62afff1a7346a76a3fd6fb4823a6",
+  "transcriptCharacters": 334,
+  "billableCharacters": 334,
+  "cacheKey": "aee4a79948e97fd1ae322dab563549c86cd4a4ddcd8ed34f137c2ede460c0551",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/aee4a79948e97fd1ae322dab563549c86cd4a4ddcd8ed34f137c2ede460c0551.mp3",
+  "byteLength": 153792,
+  "sha256": "05d78b6d3faa14fa26d4f30791bbf6e98fe86dbfe038499125bedbe66057342c",
+  "durationSeconds": 25.632
+}

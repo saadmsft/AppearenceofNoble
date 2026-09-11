@@ -1,0 +1,18 @@
+{
+  "entryId": "character-mercy-sent-as-mercy",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابو ہریرہ رضی اللہ عنہ بیان کرتے ہیں کہ نبی کریم صلی اللہ علیہ وسلم سے مشرکین کے خلاف بددعا کی درخواست کی گئی۔ آپ صلی اللہ علیہ وسلم نے جواب میں اپنی بعثت کو رحمت سے تعبیر فرمایا، نہ کہ کثرت سے لعنت کرنے سے۔ اس مختصر گفتگو میں آپ صلی اللہ علیہ وسلم نے درخواست کے جواب کو اپنے مقصدِ بعثت سے جوڑا۔",
+  "transcriptHash": "08c765e1e8d61e52c7cc19e87c7e7e546ea0fb121d273785ce8208496067b0e3",
+  "transcriptCharacters": 300,
+  "billableCharacters": 300,
+  "cacheKey": "07aae4972eca6ac01d812e2993ddb7851d9ac83dd28c9ed34bb94f6970893968",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/07aae4972eca6ac01d812e2993ddb7851d9ac83dd28c9ed34bb94f6970893968.mp3",
+  "byteLength": 142128,
+  "sha256": "956162e9ac559f67dd17d6d985bd27f7eabc1453940d42ad79c672f86249a7b8",
+  "durationSeconds": 23.688
+}

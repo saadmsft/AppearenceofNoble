@@ -1,0 +1,18 @@
+{
+  "entryId": "repeating-words-for-clarity",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas reported that the Prophet may Allah bless him and grant him peace would repeat a statement three times so it could be understood from him. He also described him greeting a group three times when he came to them. The account directly connects repetition of speech with understanding.",
+  "transcriptHash": "bcab494f944fafcd71ef5fea53f435354816fad0d6575cf447ae08dcae1a0f82",
+  "transcriptCharacters": 287,
+  "billableCharacters": 287,
+  "cacheKey": "208be8da7be3e13d2ae4df17a1b246c43d149fa7b17890c08a64b872e86c67af",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/208be8da7be3e13d2ae4df17a1b246c43d149fa7b17890c08a64b872e86c67af.mp3",
+  "byteLength": 96336,
+  "sha256": "e0c29193bdc5e7c7f174c5257571da54406f2f8a2bf24d3528f883ec001cb86b",
+  "durationSeconds": 16.056
+}

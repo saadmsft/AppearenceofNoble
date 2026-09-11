@@ -28,12 +28,23 @@ test('unknown route parameters and malformed fragments cannot inject state', () 
   assert.equal(parseRoute(new URL(`https://example.com/?q=${'a'.repeat(500)}`)).query.length, 300)
 })
 
-test('the journey is the landing page while legacy filter links still open the collection', () => {
-  assert.equal(parseRoute(new URL('https://example.com/?lang=ur')).view, 'journey')
+test('the project home is the landing page while legacy links still open Appearance', () => {
+  assert.equal(parseRoute(new URL('https://example.com/?lang=ur')).view, 'home')
+  assert.equal(parseRoute(new URL('https://example.com/?view=journey')).shelf, 'appearance')
   assert.equal(parseRoute(new URL('https://example.com/?topic=hair')).view, 'collection')
   assert.equal(parseRoute(new URL('https://example.com/?q=3552')).view, 'collection')
   assert.equal(parseRoute(new URL('https://example.com/?grade=weak')).view, 'collection')
   assert.equal(parseRoute(new URL('https://example.com/?view=collection')).view, 'collection')
+})
+
+test('collection selection round-trips without changing the hadith-book filter', () => {
+  const route = parseRoute(new URL('https://example.com/?view=collection&shelf=character&source=bukhari&topic=mercy'))
+  assert.equal(route.shelf, 'character')
+  assert.equal(route.collection, 'bukhari')
+  assert.equal(route.topic, 'mercy')
+  assert.deepEqual(parseRoute(routeUrl(new URL('https://example.com/'), route)), route)
+  assert.equal(parseRoute(new URL('https://example.com/?view=journey&topic=mercy')).shelf, 'character')
+  assert.equal(parseRoute(new URL('https://example.com/?view=collection&shelf=bad')).shelf, 'appearance')
 })
 
 test('journey narration links preserve their view and thematic reading scope', () => {
@@ -95,4 +106,9 @@ test('pausing motion is a validated and persistent reading preference', () => {
   assert.equal(loadPreferences(storage).value.motion, 'paused')
   stored = JSON.stringify({ ...defaultPreferences, motion: 'unrecognized' })
   assert.equal(loadPreferences(storage).issue, 'invalid')
+})
+
+test('preference writes report failure when the browser silently discards them', () => {
+  const discarded = () => ({ getItem: () => null, setItem: () => {} })
+  assert.equal(savePreferences(discarded, defaultPreferences), 'unavailable')
 })

@@ -1,0 +1,18 @@
+{
+  "entryId": "most-handsome-face-best-form-bara",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Al-Bara' described the Prophet may Allah bless him and grant him peace as the most beautiful of people in face and physical form. He added that the Prophet may Allah bless him and grant him peace was neither exceptionally tall nor short. The brief account joins the companion's admiration with a description of moderate stature.",
+  "transcriptHash": "e15b998623f9f4bd77e039653dfbc482bd45664c1f44babd45dab353318c394a",
+  "transcriptCharacters": 328,
+  "billableCharacters": 338,
+  "cacheKey": "c5cf580f5bdf2870300f1f55f1249c7b8c0d87aefbb18d1095329541da1241d1",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c5cf580f5bdf2870300f1f55f1249c7b8c0d87aefbb18d1095329541da1241d1.mp3",
+  "byteLength": 109584,
+  "sha256": "958c7b1c920f259c4068fcd5695025a2fcc9e62a27c7c93298d29ded6d588704",
+  "durationSeconds": 18.264
+}

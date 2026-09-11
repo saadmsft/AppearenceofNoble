@@ -1,0 +1,18 @@
+{
+  "entryId": "build-armpit-whiteness-istisqa-anas",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نے بیان کیا کہ نبی کریم صلی اللہ علیہ وسلم بارش کی دعا میں ہاتھ اتنے بلند اٹھاتے کہ بغلوں کی سفیدی نظر آتی۔ جسمانی رنگت کی یہ تفصیل دعائے استسقاء میں بازو اٹھانے کی حالت سے متعلق ہے، کوئی الگ مکمل حلیہ نہیں۔",
+  "transcriptHash": "10fc90abaaeba9f7bb7f15a6343941968089d3bfe915aae832ac039debba98cc",
+  "transcriptCharacters": 224,
+  "billableCharacters": 224,
+  "cacheKey": "06659d00c6c3787870144629cb50b02f5f5129734fcb439ae95ea80f4f12eef0",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/06659d00c6c3787870144629cb50b02f5f5129734fcb439ae95ea80f4f12eef0.mp3",
+  "byteLength": 100944,
+  "sha256": "b07e1fb338429fb02edad3796b4e213a46ff834cae6eba49cc901ced1c1a3261",
+  "durationSeconds": 16.824
+}

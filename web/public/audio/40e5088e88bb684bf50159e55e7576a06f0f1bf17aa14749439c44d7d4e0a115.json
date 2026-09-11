@@ -1,0 +1,18 @@
+{
+  "entryId": "hair-hung-loose-then-parted",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Ibn Abbas said that the People of the Book left their hair unparted, while the polytheists parted theirs. In matters where he had received no command, the Prophet may Allah bless him and grant him peace liked to agree with the People of the Book. He initially let his forelock fall and later parted his hair.",
+  "transcriptHash": "96f9a2f7b2c49de6b3863bf5ea9fc11db8312a6918d1c50f7eaae84200c5fa6c",
+  "transcriptCharacters": 308,
+  "billableCharacters": 308,
+  "cacheKey": "40e5088e88bb684bf50159e55e7576a06f0f1bf17aa14749439c44d7d4e0a115",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/40e5088e88bb684bf50159e55e7576a06f0f1bf17aa14749439c44d7d4e0a115.mp3",
+  "byteLength": 104400,
+  "sha256": "77c3a7bc9faef5c952b5b9ba001cd818a176f23af1403deb9715049df5a77577",
+  "durationSeconds": 17.4
+}

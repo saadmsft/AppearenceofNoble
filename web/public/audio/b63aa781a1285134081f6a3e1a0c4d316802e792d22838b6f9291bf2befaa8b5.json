@@ -1,0 +1,18 @@
+{
+  "entryId": "sweat-gathered-as-fragrance",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ بیان کرتے ہیں کہ نبی کریم صلی اللہ علیہ وسلم نے ان کے گھر آرام فرمایا اور پسینہ آیا۔ ان کی والدہ ام سلیم رضی اللہ عنہا نے پسینہ ایک شیشی میں جمع کیا۔ بیدار ہو کر آپ صلی اللہ علیہ وسلم نے پوچھا تو انہوں نے بتایا کہ اسے اپنی خوشبو میں شامل کرتی ہیں اور اسے عمدہ ترین خوشبوؤں میں شمار کرتی ہیں۔",
+  "transcriptHash": "3e83169d6b9b1bece9630a16874bcdc8132ce2759ca565287b972744977d6193",
+  "transcriptCharacters": 308,
+  "billableCharacters": 308,
+  "cacheKey": "b63aa781a1285134081f6a3e1a0c4d316802e792d22838b6f9291bf2befaa8b5",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b63aa781a1285134081f6a3e1a0c4d316802e792d22838b6f9291bf2befaa8b5.mp3",
+  "byteLength": 139824,
+  "sha256": "594deb058fbc04447620e34c20e599312334bc129fc55e5aa1835e7f132839d9",
+  "durationSeconds": 23.304
+}

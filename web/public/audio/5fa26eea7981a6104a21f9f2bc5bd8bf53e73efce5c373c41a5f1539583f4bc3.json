@@ -1,0 +1,18 @@
+{
+  "entryId": "build-belly-whiteness-trench-bara",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "براء رضی اللہ عنہ نے احزاب کے موقع پر نبی کریم صلی اللہ علیہ وسلم کو مٹی اٹھاتے دیکھا۔ انہوں نے یاد کیا کہ مٹی نے آپ صلی اللہ علیہ وسلم کے پیٹ کی سفیدی کو ڈھانپ دیا تھا۔ روایت میں ان الفاظ کا بھی ذکر ہے جو آپ صلی اللہ علیہ وسلم مٹی اٹھاتے ہوئے پڑھ رہے تھے۔",
+  "transcriptHash": "5eebf21ea2ff7ea4d0928015f720c9ba5b03406c8cee35b0ae7004453655989c",
+  "transcriptCharacters": 256,
+  "billableCharacters": 256,
+  "cacheKey": "5fa26eea7981a6104a21f9f2bc5bd8bf53e73efce5c373c41a5f1539583f4bc3",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5fa26eea7981a6104a21f9f2bc5bd8bf53e73efce5c373c41a5f1539583f4bc3.mp3",
+  "byteLength": 117504,
+  "sha256": "bd73bd5223cfb5239eec537a9d1cf9d7983f638a0b9631795809ecd752df7f07",
+  "durationSeconds": 19.584
+}

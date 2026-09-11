@@ -1,0 +1,18 @@
+{
+  "entryId": "reddish-hair-relic-kept-by-umm-salama",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Uthman ibn Abdullah ibn Mawhab was sent by his family to Umm Salama with water. His account mentions a silver container holding hairs of the Prophet may Allah bless him and grant him peace. Looking into the container that held the hairs, he saw that some of them were red.",
+  "transcriptHash": "9dc75a3ed1dbf086caff47d917aac711db6cbb64feb32e935e97c5056a993dee",
+  "transcriptCharacters": 272,
+  "billableCharacters": 272,
+  "cacheKey": "7aa088c88caa0264e8f87bfc5d417e9d83c44d6807b3a842ed31d2aea77902aa",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/7aa088c88caa0264e8f87bfc5d417e9d83c44d6807b3a842ed31d2aea77902aa.mp3",
+  "byteLength": 95472,
+  "sha256": "182b9ff6feffe485774190dccfdf5e30e04b67b91ea5d2ce36b507de85ca10d2",
+  "durationSeconds": 15.912
+}

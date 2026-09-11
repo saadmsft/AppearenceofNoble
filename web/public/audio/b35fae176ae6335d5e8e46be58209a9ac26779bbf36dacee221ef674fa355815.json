@@ -1,0 +1,18 @@
+{
+  "entryId": "character-justice-no-preferential-treatment",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا بتاتی ہیں کہ بنو مخزوم کی ایک خاتون کے لیے اسامہ بن زید رضی اللہ عنہ کے ذریعے خصوصی رعایت حاصل کرنے کی کوشش ہوئی۔ نبی صلی اللہ علیہ وسلم نے یہ سفارش قبول نہیں کی اور لوگوں کو خبردار کیا کہ بااثر افراد کو بچانا اور کمزوروں کو سزا دینا تباہ کن روش ہے۔ آپ صلی اللہ علیہ وسلم نے اپنے گھرانے کو بھی اسی معیار میں شامل کیا، نہ قرابت کو استثنا بنایا نہ سماجی مرتبے کو۔",
+  "transcriptHash": "a883d9918da3a948ed04c6c12ef9994b076d9c35be89641d4a8abe0d39aa0d2f",
+  "transcriptCharacters": 381,
+  "billableCharacters": 381,
+  "cacheKey": "b35fae176ae6335d5e8e46be58209a9ac26779bbf36dacee221ef674fa355815",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b35fae176ae6335d5e8e46be58209a9ac26779bbf36dacee221ef674fa355815.mp3",
+  "byteLength": 171072,
+  "sha256": "4de020d64b5b28ad320d1c665e48fbf9885de7fd5c04e6271d6d003be73962b6",
+  "durationSeconds": 28.512
+}

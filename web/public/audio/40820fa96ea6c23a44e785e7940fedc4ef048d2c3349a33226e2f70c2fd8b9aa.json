@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-servant-and-messenger",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا الْحُمَيْدِيُّ، حَدَّثَنَا سُفْيَانُ، قَالَ سَمِعْتُ الزُّهْرِيَّ، يَقُولُ أَخْبَرَنِي عُبَيْدُ اللَّهِ بْنُ عَبْدِ اللَّهِ، عَنِ ابْنِ عَبَّاسٍ، سَمِعَ عُمَرَ ـ رضى الله عنه ـ يَقُولُ عَلَى الْمِنْبَرِ سَمِعْتُ النَّبِيَّ صلى الله عليه وسلم يَقُولُ \" لاَ تُطْرُونِي كَمَا أَطْرَتِ النَّصَارَى ابْنَ مَرْيَمَ، فَإِنَّمَا أَنَا عَبْدُهُ، فَقُولُوا عَبْدُ اللَّهِ وَرَسُولُهُ \".",
+  "transcriptHash": "249a48d420691d251e1e22a2371341e13e00eb024b9a66384bea62bad6ae74b0",
+  "transcriptCharacters": 387,
+  "billableCharacters": 397,
+  "cacheKey": "40820fa96ea6c23a44e785e7940fedc4ef048d2c3349a33226e2f70c2fd8b9aa",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/40820fa96ea6c23a44e785e7940fedc4ef048d2c3349a33226e2f70c2fd8b9aa.mp3",
+  "byteLength": 140400,
+  "sha256": "9a42cc24fc8ce91952c30d10f658db4655037872f4fc82f6fb818aa72d57e2a7",
+  "durationSeconds": 23.4
+}

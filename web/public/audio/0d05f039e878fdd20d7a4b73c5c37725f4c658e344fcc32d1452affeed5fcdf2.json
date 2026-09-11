@@ -1,0 +1,18 @@
+{
+  "entryId": "hands-knees-arms-prayer-posture",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Humaid recalled the Prophet may Allah bless him and grant him peace placing his hands firmly on his knees and making his back level when bowing. In prostration he did not lay his forearms flat or draw them tightly in, and his toes faced the qiblah. The account describes observed positions of the body.",
+  "transcriptHash": "b9cd47eac14dd1532c22c953d6e0e14d12b26f8fe1b6bfbca3f759d722717537",
+  "transcriptCharacters": 306,
+  "billableCharacters": 306,
+  "cacheKey": "0d05f039e878fdd20d7a4b73c5c37725f4c658e344fcc32d1452affeed5fcdf2",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/0d05f039e878fdd20d7a4b73c5c37725f4c658e344fcc32d1452affeed5fcdf2.mp3",
+  "byteLength": 107856,
+  "sha256": "dde411d2ae3960e618006a48299cd8414b026f32a434c45c3f0b939e30948ee8",
+  "durationSeconds": 17.976
+}

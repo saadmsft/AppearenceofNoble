@@ -1,0 +1,18 @@
+{
+  "entryId": "perfume-among-beloved-things",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas transmits a saying of the Prophet may Allah bless him and grant him peace that women and perfume had been made dear to him among worldly things, while the comfort of his eyes was placed in prayer. The fragrance-related detail here is his stated love of perfume.",
+  "transcriptHash": "b4db5dd05b8cc2ca5ba34830eb137d30eb1baa3788306b7eb211584ac34dee16",
+  "transcriptCharacters": 266,
+  "billableCharacters": 266,
+  "cacheKey": "d6d25d6a2e5d19087834cca93f071583ecec51c67722488b318833593aebec1d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d6d25d6a2e5d19087834cca93f071583ecec51c67722488b318833593aebec1d.mp3",
+  "byteLength": 88992,
+  "sha256": "3ac9ec8dea0ad15b59e248c2a82b7a8af8b57a367e1be600950cd26e66446c0e",
+  "durationSeconds": 14.832
+}

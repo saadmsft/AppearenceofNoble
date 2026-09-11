@@ -1,0 +1,18 @@
+{
+  "entryId": "face-brightened-like-moonlight",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا يَحْيَى بْنُ بُكَيْرٍ، حَدَّثَنَا اللَّيْثُ، عَنْ عُقَيْلٍ، عَنِ ابْنِ شِهَابٍ، عَنْ عَبْدِ الرَّحْمَنِ بْنِ عَبْدِ اللَّهِ بْنِ كَعْبٍ، أَنَّ عَبْدَ اللَّهِ بْنَ كَعْبٍ، قَالَ سَمِعْتُ كَعْبَ بْنَ مَالِكٍ، يُحَدِّثُ حِينَ تَخَلَّفَ عَنْ تَبُوكَ، قَالَ فَلَمَّا سَلَّمْتُ عَلَى رَسُولِ اللَّهِ صلى الله عليه وسلم وَهْوَ يَبْرُقُ وَجْهُهُ مِنَ السُّرُورِ، وَكَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا سُرَّ اسْتَنَارَ وَجْهُهُ، حَتَّى كَأَنَّهُ قِطْعَةُ قَمَرٍ، وَكُنَّا نَعْرِفُ ذَلِكَ مِنْهُ.",
+  "transcriptHash": "fadc49552e1df31596d3ec13f1e239e76d4fc26f77faf88be8d18634da6fa17a",
+  "transcriptCharacters": 508,
+  "billableCharacters": 508,
+  "cacheKey": "29e9986b32acb2ae17e20d32474184546f940fc4460550e7ac145fd67f68c27b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/29e9986b32acb2ae17e20d32474184546f940fc4460550e7ac145fd67f68c27b.mp3",
+  "byteLength": 191952,
+  "sha256": "870b96c823f4faa8cdb54e9e88b054f0fa5ca23d36f4999bf507d8225d79a497",
+  "durationSeconds": 31.992
+}

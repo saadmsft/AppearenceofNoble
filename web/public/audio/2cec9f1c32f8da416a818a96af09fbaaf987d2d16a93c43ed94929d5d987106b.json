@@ -1,0 +1,18 @@
+{
+  "entryId": "abu-huraira-white-as-silver-hair",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Huraira described the Prophet may Allah bless him and grant him peace as fair, using the comparison of something fashioned from silver. He also described his hair as loosely curled or wavy. The brief report places the complexion comparison and the character of the hair alongside one another.",
+  "transcriptHash": "85f0ea7bc5d5e0846227355cf50b504f317281974061cc0a79b1a918a7277a5a",
+  "transcriptCharacters": 296,
+  "billableCharacters": 296,
+  "cacheKey": "2cec9f1c32f8da416a818a96af09fbaaf987d2d16a93c43ed94929d5d987106b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/2cec9f1c32f8da416a818a96af09fbaaf987d2d16a93c43ed94929d5d987106b.mp3",
+  "byteLength": 105696,
+  "sha256": "1b849a73bb8d03810a2fed889b246638647f708e0046cd619119b03cb2ea3735",
+  "durationSeconds": 17.616
+}

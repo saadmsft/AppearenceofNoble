@@ -1,0 +1,18 @@
+{
+  "entryId": "moderate-height-broad-shoulders-red-cloak",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Al-Bara' remembered the Prophet may Allah bless him and grant him peace as of medium height, broad between the shoulders, with hair reaching his earlobe. He also recalled seeing him in a red hullah, a suit of clothing, and said that he had never seen anything more beautiful.",
+  "transcriptHash": "af2a9148f3e05c5d028a431c7641516200406520146491626fd8df54427df414",
+  "transcriptCharacters": 275,
+  "billableCharacters": 280,
+  "cacheKey": "c19d18c3324753aaf0ceb90525980ff46a9616e4bfefc35798480c7329d29176",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c19d18c3324753aaf0ceb90525980ff46a9616e4bfefc35798480c7329d29176.mp3",
+  "byteLength": 92592,
+  "sha256": "ae92827e26ef244a9945b6a5a2837d582f053438e983613106c70a852268a856",
+  "durationSeconds": 15.432
+}

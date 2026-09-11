@@ -1,0 +1,18 @@
+{
+  "entryId": "character-family-community-serving-at-home",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "اسود نے عائشہ رضی اللہ عنہا سے پوچھا کہ نبی صلی اللہ علیہ وسلم اپنے گھر میں کیا کرتے تھے۔ انہوں نے بتایا کہ آپ صلی اللہ علیہ وسلم اہلِ خانہ کی خدمت میں مشغول رہتے اور نماز کا وقت آتا تو نماز کے لیے تشریف لے جاتے۔ اس جواب میں گھر والوں کی عملی خدمت عبادت کے ساتھ آپ کی روزمرہ زندگی کا حصہ ہے، صرف لوگوں کو دی جانے والی نصیحت نہیں۔",
+  "transcriptHash": "8f219bf70cc1fc1960c063f1e4529a5b7dabfb628897616f6d9174f8cd217f53",
+  "transcriptCharacters": 329,
+  "billableCharacters": 329,
+  "cacheKey": "5fa05da3905233a0718cd6f5793ec4bf3a6547da99eaf62560d9656400393a32",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5fa05da3905233a0718cd6f5793ec4bf3a6547da99eaf62560d9656400393a32.mp3",
+  "byteLength": 145872,
+  "sha256": "ff933c30d0acc7ad840438199326ef85afbfff5d4f40b0a2213c2ad8f1094965",
+  "durationSeconds": 24.312
+}

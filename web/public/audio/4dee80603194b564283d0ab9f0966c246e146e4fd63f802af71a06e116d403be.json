@@ -1,0 +1,18 @@
+{
+  "entryId": "abu-tufail-white-handsome-medium-built",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو طفیل رضی اللہ عنہ نے کہا کہ انہوں نے نبی کریم صلی اللہ علیہ وسلم کو دیکھا تھا اور اس وقت ان کے سوا آپ صلی اللہ علیہ وسلم کو دیکھنے والا کوئی اور شخص زندہ نہیں رہا تھا۔ حلیہ پوچھنے پر انہوں نے روشن رنگت، خوبصورتی اور میانہ قد بیان کیا۔ مسلم کی متعلقہ روایت میں خوبصورت چہرے کا خاص ذکر ہے۔",
+  "transcriptHash": "70f79d8478b6b9d5aa7c37e8f54ae93f45f942a8b1efee4dbc1e518bdc013086",
+  "transcriptCharacters": 291,
+  "billableCharacters": 291,
+  "cacheKey": "4dee80603194b564283d0ab9f0966c246e146e4fd63f802af71a06e116d403be",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/4dee80603194b564283d0ab9f0966c246e146e4fd63f802af71a06e116d403be.mp3",
+  "byteLength": 133344,
+  "sha256": "321c53ad804ce99914a0b16a2c522fe912c84da589d1a16997f5f5a5b38d7d82",
+  "durationSeconds": 22.224
+}

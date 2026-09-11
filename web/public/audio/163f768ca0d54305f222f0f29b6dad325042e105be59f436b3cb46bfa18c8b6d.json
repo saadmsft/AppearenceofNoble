@@ -1,0 +1,18 @@
+{
+  "entryId": "grey-hair-confined-to-the-temples",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Qatada asked Anas whether the Prophet may Allah bless him and grant him peace had dyed his hair. Anas answered no and mentioned only a little greyness at his temples. The answer emphasizes how small the amount was, rather than describing a head of extensively white hair.",
+  "transcriptHash": "dcb667bd26bc95c57444c6ca0428e0759dd04ec88796f967e3d634f34cf79db1",
+  "transcriptCharacters": 271,
+  "billableCharacters": 271,
+  "cacheKey": "163f768ca0d54305f222f0f29b6dad325042e105be59f436b3cb46bfa18c8b6d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/163f768ca0d54305f222f0f29b6dad325042e105be59f436b3cb46bfa18c8b6d.mp3",
+  "byteLength": 97200,
+  "sha256": "38187acdf88b1efdd305d90f41eb4f38669e1d1fe7ba52f631693bae191fa324",
+  "durationSeconds": 16.2
+}

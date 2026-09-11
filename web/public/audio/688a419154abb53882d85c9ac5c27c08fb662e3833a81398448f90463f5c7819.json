@@ -1,0 +1,18 @@
+{
+  "entryId": "gap-between-the-front-teeth-weak",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "This very weakly graded report attributed to Ibn Abbas describes a gap between the Prophet's may Allah bless him and grant him peace front teeth. It adds that, when he spoke, it appeared as though light emerged between them. These details are presented as the content of this report, not as authenticated features.",
+  "transcriptHash": "79830e24819df656293cb9698e6c5e91e356564fa0376a5e2fe80cfa1e11c298",
+  "transcriptCharacters": 314,
+  "billableCharacters": 319,
+  "cacheKey": "688a419154abb53882d85c9ac5c27c08fb662e3833a81398448f90463f5c7819",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/688a419154abb53882d85c9ac5c27c08fb662e3833a81398448f90463f5c7819.mp3",
+  "byteLength": 110448,
+  "sha256": "02fa46ea5d1654231b214a43330dfb0b296b51922bd7b217e02c160f3f39b45c",
+  "durationSeconds": 18.408
+}

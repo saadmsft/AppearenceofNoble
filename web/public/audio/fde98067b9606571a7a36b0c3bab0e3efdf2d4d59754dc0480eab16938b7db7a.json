@@ -1,0 +1,18 @@
+{
+  "entryId": "aisha-parted-his-hair-from-the-crown",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا نے بیان کیا کہ جب وہ نبی کریم صلی اللہ علیہ وسلم کے بالوں میں مانگ نکالتیں تو سر کی چوٹی سے مانگ شروع کرتیں اور اگلے بال دونوں آنکھوں کے درمیان چھوڑ دیتیں۔ ان کا یہ بیان بال سنوارنے کے ایک عملی طریقے کی تفصیل دیتا ہے۔",
+  "transcriptHash": "24dc4ca1efdf2f4f4e7a396631675643fca638cd5c675b5f3e61fba7c247d1a1",
+  "transcriptCharacters": 237,
+  "billableCharacters": 237,
+  "cacheKey": "fde98067b9606571a7a36b0c3bab0e3efdf2d4d59754dc0480eab16938b7db7a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/fde98067b9606571a7a36b0c3bab0e3efdf2d4d59754dc0480eab16938b7db7a.mp3",
+  "byteLength": 99216,
+  "sha256": "7802ae6d1885c6c1ae42ef75aea89f43f410ca72a5fd8c25754f2f3f594af600",
+  "durationSeconds": 16.536
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "distinct-speech-easily-understood",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha described the Prophet's may Allah bless him and grant him peace speech as distinct and clearly separated, so that those hearing him understood it. Her concise observation concerns how his words were delivered to listeners. It does not describe a particular sermon, conversation or occasion.",
+  "transcriptHash": "8fb5fb05fab0870712a18014cab7ed750fc28dcdb90133b0c8a8534c4be1779b",
+  "transcriptCharacters": 296,
+  "billableCharacters": 301,
+  "cacheKey": "d63941ee7414b737392193cab3feded6858f441f8260e07d74da067e567a071d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d63941ee7414b737392193cab3feded6858f441f8260e07d74da067e567a071d.mp3",
+  "byteLength": 104544,
+  "sha256": "3792d86283a307d1331ba72ff43d7843dff8a4fd6ef83dab720585c4a3753ad3",
+  "durationSeconds": 17.424
+}

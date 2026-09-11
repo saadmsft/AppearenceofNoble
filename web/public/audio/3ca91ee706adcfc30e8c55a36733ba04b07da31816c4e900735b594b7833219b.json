@@ -1,0 +1,18 @@
+{
+  "entryId": "hind-ibn-abi-hala-forehead-and-eyebrows",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "اس ضعیف روایت میں ہند بن ابی ہالہ کی طرف روشن رنگت، کشادہ پیشانی اور ایسے محرابی ابروؤں کا بیان منسوب ہے جو آپس میں ملے ہوئے نہ تھے۔ عبارت میں ابروؤں کے درمیان غصے کے وقت ابھرنے والی رگ اور ناک کی اٹھی ہوئی ہڈی کا بھی ذکر ہے۔",
+  "transcriptHash": "16d8adf1ecdbb57c6d2a8b36758fbb25ab5ee0f35bd1ec59c54a49ce78878fb7",
+  "transcriptCharacters": 225,
+  "billableCharacters": 225,
+  "cacheKey": "3ca91ee706adcfc30e8c55a36733ba04b07da31816c4e900735b594b7833219b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/3ca91ee706adcfc30e8c55a36733ba04b07da31816c4e900735b594b7833219b.mp3",
+  "byteLength": 97344,
+  "sha256": "af5e87e8044d6c6cb25dd57feba9460a76371104bc67a51046a3b3ddd859d0bb",
+  "durationSeconds": 16.224
+}

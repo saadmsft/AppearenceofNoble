@@ -1,0 +1,18 @@
+{
+  "entryId": "build-broad-shoulders-bara",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Al-Bara' described the Prophet may Allah bless him and grant him peace as a man of medium stature with a broad span between the shoulders. The same account mentions abundant hair reaching the earlobes and red clothing, ending with Al-Bara's statement that he had never seen anything more beautiful.",
+  "transcriptHash": "e8231475f13d292122e4bfa095c673894fe32c8083ad9c29e5f6f5cf5017b08a",
+  "transcriptCharacters": 298,
+  "billableCharacters": 308,
+  "cacheKey": "6374777f566e8e31e5bb01bc8295ece61c4c5d24929bee6d96a98cec87c120a4",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6374777f566e8e31e5bb01bc8295ece61c4c5d24929bee6d96a98cec87c120a4.mp3",
+  "byteLength": 95184,
+  "sha256": "0b487ff4195382a51a8dea1b5f1d5151bf303fac2b9ebed4414bd0496dec1fda",
+  "durationSeconds": 15.864
+}

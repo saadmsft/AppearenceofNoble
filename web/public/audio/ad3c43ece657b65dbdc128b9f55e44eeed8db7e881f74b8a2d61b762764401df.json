@@ -1,0 +1,18 @@
+{
+  "entryId": "sweat-gathered-as-fragrance",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنِي زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا هَاشِمٌ، - يَعْنِي ابْنَ الْقَاسِمِ - عَنْ سُلَيْمَانَ، عَنْ ثَابِتٍ، عَنْ أَنَسِ بْنِ مَالِكٍ، قَالَ دَخَلَ عَلَيْنَا النَّبِيُّ صلى الله عليه وسلم فَقَالَ عِنْدَنَا فَعَرِقَ وَجَاءَتْ أُمِّي بِقَارُورَةٍ فَجَعَلَتْ تَسْلُتُ الْعَرَقَ فِيهَا فَاسْتَيْقَظَ النَّبِيُّ صلى الله عليه وسلم فَقَالَ \" يَا أُمَّ سُلَيْمٍ مَا هَذَا الَّذِي تَصْنَعِينَ \" . قَالَتْ هَذَا عَرَقُكَ نَجْعَلُهُ فِي طِيبِنَا وَهُوَ مِنْ أَطْيَبِ الطِّيبِ .",
+  "transcriptHash": "e71610dcd91bbd9afbb7d85447fffe1cdbd38521417ffa3a9dca5563645670a6",
+  "transcriptCharacters": 472,
+  "billableCharacters": 482,
+  "cacheKey": "ad3c43ece657b65dbdc128b9f55e44eeed8db7e881f74b8a2d61b762764401df",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ad3c43ece657b65dbdc128b9f55e44eeed8db7e881f74b8a2d61b762764401df.mp3",
+  "byteLength": 169056,
+  "sha256": "9e6049b3a0d7a9fb760abd59c976b4d88f09c6e25580c1349d06126fec79f73f",
+  "durationSeconds": 28.176
+}

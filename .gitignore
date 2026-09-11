@@ -8,3 +8,9 @@ web/playwright-report/
 .DS_Store
 .playwright-mcp/
 web/public/THIRD-PARTY-NOTICES.txt
+.env
+.env.*
+!.env.example
+/*.audio-ledger.json
+/noble-project-personal*.json
+/noble-project-private-backup*.json

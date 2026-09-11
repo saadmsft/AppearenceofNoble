@@ -1,0 +1,18 @@
+{
+  "entryId": "sandals-with-two-straps",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنِي مُحَمَّدٌ، أَخْبَرَنَا عَبْدُ اللَّهِ، أَخْبَرَنَا عِيسَى بْنُ طَهْمَانَ، قَالَ خَرَجَ إِلَيْنَا أَنَسُ بْنُ مَالِكٍ بِنَعْلَيْنِ لَهُمَا قِبَالاَنِ، فَقَالَ ثَابِتٌ الْبُنَانِيُّ هَذِهِ نَعْلُ النَّبِيِّ صلى الله عليه وسلم.",
+  "transcriptHash": "6516265026d8636cb4e346e59d74b21cf7080e1914996a5ec3f758ef3dd72fc9",
+  "transcriptCharacters": 235,
+  "billableCharacters": 235,
+  "cacheKey": "f2007bed3abb70a8d8b552846e3d8bd74f11df96d2b8be364d1fb9a1158d6984",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/f2007bed3abb70a8d8b552846e3d8bd74f11df96d2b8be364d1fb9a1158d6984.mp3",
+  "byteLength": 89856,
+  "sha256": "8c140e5cb961e4e6c9e95e23bb1662fdd1c7f1eee65658ddcd20a95c57293e26",
+  "durationSeconds": 14.976
+}

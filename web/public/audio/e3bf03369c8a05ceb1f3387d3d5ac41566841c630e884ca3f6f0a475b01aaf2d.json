@@ -1,0 +1,18 @@
+{
+  "entryId": "hands-cold-as-ice-abu-juhaifa",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "بطحاء میں نماز کے بعد لوگ نبی کریم صلی اللہ علیہ وسلم کے ہاتھ اپنے چہروں پر پھیرنے لگے۔ ابو جحیفہ رضی اللہ عنہ نے بھی آپ صلی اللہ علیہ وسلم کا ہاتھ اپنے چہرے پر رکھا۔ انہیں وہ برف سے زیادہ ٹھنڈا اور مشک سے زیادہ خوشبودار محسوس ہوا۔",
+  "transcriptHash": "6039d1d49716ff7bac44b536906ce507ac8fa257365bc813a7bf5f401cbcd2d9",
+  "transcriptCharacters": 231,
+  "billableCharacters": 231,
+  "cacheKey": "e3bf03369c8a05ceb1f3387d3d5ac41566841c630e884ca3f6f0a475b01aaf2d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e3bf03369c8a05ceb1f3387d3d5ac41566841c630e884ca3f6f0a475b01aaf2d.mp3",
+  "byteLength": 108288,
+  "sha256": "5418ddfa15357e0b50b19c6079684e00fad627463c39537e98eb04d8ca5b0267",
+  "durationSeconds": 18.048
+}

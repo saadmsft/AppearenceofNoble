@@ -1,0 +1,18 @@
+{
+  "entryId": "no-one-smiled-more-than-him",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abdullah ibn al-Harith ibn Jaz' said that he had never seen anyone smile more than the Prophet may Allah bless him and grant him peace. The statement is a companion's comparison of people he had observed. It gives an impression of frequent smiling without describing a particular encounter.",
+  "transcriptHash": "1f0841fbf1e75843730c7eaed096d22c64f570a2c0dfa5c3aa3721845dba5655",
+  "transcriptCharacters": 290,
+  "billableCharacters": 300,
+  "cacheKey": "8c4a7dc8a9164dcc01fa4f574bf6cb96830defe93eafe64c22ffc4b085da0bec",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/8c4a7dc8a9164dcc01fa4f574bf6cb96830defe93eafe64c22ffc4b085da0bec.mp3",
+  "byteLength": 99792,
+  "sha256": "6fdb1f58051adba96e0a38b4ac7f537eefcdc25f61d25aee72c5c3e96c411c62",
+  "durationSeconds": 16.632
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "wavy-hair-between-ears-and-shoulders",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنِي عَمْرُو بْنُ عَلِيٍّ، حَدَّثَنَا وَهْبُ بْنُ جَرِيرٍ، قَالَ حَدَّثَنِي أَبِي، عَنْ قَتَادَةَ، قَالَ سَأَلْتُ أَنَسَ بْنَ مَالِكٍ ـ رضى الله عنه ـ عَنْ شَعَرِ، رَسُولِ اللَّهِ صلى الله عليه وسلم فَقَالَ كَانَ شَعَرُ رَسُولِ اللَّهِ صلى الله عليه وسلم رَجِلاً، لَيْسَ بِالسَّبِطِ، وَلاَ الْجَعْدِ، بَيْنَ أُذُنَيْهِ وَعَاتِقِهِ.",
+  "transcriptHash": "7e0e050e2b1f47480b2d6a7aa5b00a59fe056d2eab6cfb9da9ca1921719b3896",
+  "transcriptCharacters": 337,
+  "billableCharacters": 337,
+  "cacheKey": "11236173226d67aeb77cba8efa400fe5c083cf7c07218e4983baa5bba2a3c27f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/11236173226d67aeb77cba8efa400fe5c083cf7c07218e4983baa5bba2a3c27f.mp3",
+  "byteLength": 137088,
+  "sha256": "1b6ba0cd3e08963a8b376eccd4735b56093483264989d2a196155debb414487b",
+  "durationSeconds": 22.848
+}

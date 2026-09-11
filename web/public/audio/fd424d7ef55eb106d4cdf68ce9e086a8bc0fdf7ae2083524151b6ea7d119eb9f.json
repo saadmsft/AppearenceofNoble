@@ -1,0 +1,18 @@
+{
+  "entryId": "character-family-community-abu-umayr",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نبی صلی اللہ علیہ وسلم کے حسنِ اخلاق کا ذکر کرتے ہوئے اپنے چھوٹے بھائی ابوعمیر سے آپ کی محبت بھری بات یاد کرتے ہیں: آپ صلی اللہ علیہ وسلم اس ننھے پرندے کے بارے میں پوچھتے جس سے وہ کھیلتے تھے۔ اسی روایت میں گھر آنے پر نماز کا وقت ہو جانے اور آپ صلی اللہ علیہ وسلم کے اہلِ خانہ کو نماز پڑھانے کا ذکر ہے۔ بچے کی دلچسپی کا خیال اسی مانوس میل جول اور عبادت کا حصہ دکھائی دیتا ہے۔",
+  "transcriptHash": "68adaf843f5dc3075fc66a3da4405e88ba8cb6d9a92387c8149b1870c89184bf",
+  "transcriptCharacters": 391,
+  "billableCharacters": 391,
+  "cacheKey": "fd424d7ef55eb106d4cdf68ce9e086a8bc0fdf7ae2083524151b6ea7d119eb9f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/fd424d7ef55eb106d4cdf68ce9e086a8bc0fdf7ae2083524151b6ea7d119eb9f.mp3",
+  "byteLength": 172368,
+  "sha256": "96816d44a797ca8e3e0738f6375e2b65c76890ec97593572918dd5f258e86c98",
+  "durationSeconds": 28.728
+}

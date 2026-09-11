@@ -1,0 +1,18 @@
+{
+  "entryId": "smile-not-loud-laughter",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha said that she had not seen the Prophet may Allah bless him and grant him peace laugh so fully that the back of his mouth became visible; she remembered him smiling instead. Her statement describes what she observed and uses visibility inside the mouth as its point of comparison.",
+  "transcriptHash": "6f9184c64771f83cf35035c84fa716acfbe5844460545605445e93a11aacdb40",
+  "transcriptCharacters": 285,
+  "billableCharacters": 285,
+  "cacheKey": "7be1414cbd527c39b1cc2d300cb3951eab8b9a62f5a223f17107a53d4aebf99f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/7be1414cbd527c39b1cc2d300cb3951eab8b9a62f5a223f17107a53d4aebf99f.mp3",
+  "byteLength": 92880,
+  "sha256": "75447e6ffd682b50fe00481e1a718399d208ef6be864e308c7f4fdbca6086fc7",
+  "durationSeconds": 15.48
+}

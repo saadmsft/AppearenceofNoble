@@ -1,0 +1,18 @@
+{
+  "entryId": "grey-hair-location-chin-temples-scalp",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas reported that the Prophet may Allah bless him and grant him peace did not dye his hair. He located its whiteness in the small tuft below the lower lip, at the two temples, and in a scattering of hairs on the head. The account also records disapproval of plucking white hairs.",
+  "transcriptHash": "47f4b80d5688e56a25af10e363ece59e44c51ee687a552faa4fe84fba9c93111",
+  "transcriptCharacters": 280,
+  "billableCharacters": 280,
+  "cacheKey": "aa74a7df35dbcc6e73516e74979d35ed232ead66e520d404f209a4482ebecb8b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/aa74a7df35dbcc6e73516e74979d35ed232ead66e520d404f209a4482ebecb8b.mp3",
+  "byteLength": 100368,
+  "sha256": "b22013d7caedbdc58f6e271672ad66aedfeafff832d4fdedc19bb840dc9867b6",
+  "durationSeconds": 16.728
+}

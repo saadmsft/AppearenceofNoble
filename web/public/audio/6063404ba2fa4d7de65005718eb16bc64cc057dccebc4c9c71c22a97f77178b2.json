@@ -1,0 +1,18 @@
+{
+  "entryId": "character-family-community-aisha-neighbour-invitation",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ بیان کرتے ہیں کہ ایک فارسی پڑوسی نے کھانا تیار کر کے نبی صلی اللہ علیہ وسلم کو بلایا۔ آپ صلی اللہ علیہ وسلم نے پوچھا کہ کیا عائشہ رضی اللہ عنہا بھی ساتھ ہیں، اور پڑوسی کے انکار پر دعوت قبول نہ کی۔ تیسری بار دعوت دینے پر اس نے انہیں بھی شامل کر لیا تو دونوں ساتھ گئے۔ اس واقعے میں پڑوسی کی مہمانی کے ساتھ اہلیہ کا خیال بھی نمایاں ہے۔",
+  "transcriptHash": "cde3ce163493644f4e3e8dd1d61aeff4be289f9ddc675f18034029d6db542030",
+  "transcriptCharacters": 349,
+  "billableCharacters": 349,
+  "cacheKey": "6063404ba2fa4d7de65005718eb16bc64cc057dccebc4c9c71c22a97f77178b2",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6063404ba2fa4d7de65005718eb16bc64cc057dccebc4c9c71c22a97f77178b2.mp3",
+  "byteLength": 156240,
+  "sha256": "7922d6c6d679f07f219c20c9c371fd364748206dee1444b7f57c4276fbc14d13",
+  "durationSeconds": 26.04
+}

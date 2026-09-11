@@ -1,7 +1,8 @@
 import { useId, useRef } from 'react'
 import { Pause, Play } from 'lucide-react'
 import type { CSSProperties } from 'react'
-import type { Language, Topic } from '../lib/schema.ts'
+import type { AppearanceTopic, CharacterTopic, Language, Topic } from '../lib/schema.ts'
+import { appearanceTopics, characterTopics } from '../lib/schema.ts'
 import { topicLabels } from '../lib/catalog.ts'
 import { translate } from '../lib/i18n.ts'
 import { useAmbientMotion } from '../hooks/useAmbientMotion'
@@ -10,7 +11,20 @@ function phase(index: number): CSSProperties {
   return { animationDelay: `${index * -0.65}s` }
 }
 
-function Motif({ topic, glowId }: { topic: Topic; glowId: string }) {
+const characterMotifs: Record<CharacterTopic, AppearanceTopic> = {
+  mercy: 'fragrance', patience: 'build', humility: 'movement', generosity: 'hands',
+  justice: 'eyes', forgiveness: 'smile', honesty: 'seal', 'family-community': 'beard',
+}
+
+function artworkTopic(topic: Topic): AppearanceTopic {
+  const character = characterTopics.find((item) => item === topic)
+  if (character) return characterMotifs[character]
+  const resolved = appearanceTopics.find((item) => item === topic)
+  if (!resolved) throw new Error(`No artwork defined for topic: ${topic}`)
+  return resolved
+}
+
+function Motif({ topic, glowId }: { topic: AppearanceTopic; glowId: string }) {
   switch (topic) {
     case 'complexion':
       return <>
@@ -159,7 +173,7 @@ export function TopicArtwork({ topic, language, paused, reading, onPause }: {
           <stop offset="0" stopColor="var(--cp-accent)" stopOpacity=".3" />
           <stop offset="1" stopColor="var(--cp-accent)" stopOpacity="0" />
         </radialGradient></defs>
-        <Motif topic={topic} glowId={glowId} />
+        <Motif topic={artworkTopic(topic)} glowId={glowId} />
       </svg>
     </div>
     <div className="topic-art-caption">

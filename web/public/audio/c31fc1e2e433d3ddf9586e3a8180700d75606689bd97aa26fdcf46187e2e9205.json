@@ -1,0 +1,18 @@
+{
+  "entryId": "abu-huraira-white-as-silver-hair",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا أَبُو دَاوُدَ الْمَصَاحِفِيُّ سُلَيْمَانُ بْنُ سَلْمٍ، قَالَ: حَدَّثَنَا النَّضْرُ بْنُ شُمَيْلٍ، عَنْ صَالِحِ بْنِ أَبِي الأَخْضَرِ، عَنِ ابْنِ شِهَابٍ، عَنْ أَبِي سَلَمَةَ، عَنْ أَبِي هُرَيْرَةَ، قَالَ: كَانَ رَسُولُ اللهِ صلى الله عليه وسلم أَبْيَضَ كَأَنَّمَا صِيغَ مِنْ فِضَّةٍ، رَجِلَ الشَّعْرِ.",
+  "transcriptHash": "260e7b84dcf3d04280fc77984dd7ec37f18933f6d860fe0953cdde90eeda0d5e",
+  "transcriptCharacters": 312,
+  "billableCharacters": 312,
+  "cacheKey": "c31fc1e2e433d3ddf9586e3a8180700d75606689bd97aa26fdcf46187e2e9205",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c31fc1e2e433d3ddf9586e3a8180700d75606689bd97aa26fdcf46187e2e9205.mp3",
+  "byteLength": 120384,
+  "sha256": "d139064e11515f17eb17a77a36a7478be5a5e423904edab4f94e4a636f74da6c",
+  "durationSeconds": 20.064
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "moderate-stature-radiant-complexion-anas",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas described the Prophet may Allah bless him and grant him peace as of medium stature, neither tall nor short, with a bright complexion that was neither chalk-white nor dark brown. His hair was neither tightly curled nor straight. The account also says that his head and beard contained fewer than twenty white hairs.",
+  "transcriptHash": "59e284746d6d32d158b30dd6f48b4b31feea144caf190c1ec6bada64f5c9ea16",
+  "transcriptCharacters": 319,
+  "billableCharacters": 319,
+  "cacheKey": "21816ede0f11964309bea6ebb4eea77cd4cff9b98bf6bf76543a1396db77686e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/21816ede0f11964309bea6ebb4eea77cd4cff9b98bf6bf76543a1396db77686e.mp3",
+  "byteLength": 112176,
+  "sha256": "7382ab874498516baa887c106d7b6ee4d8215ce713979ab32c71b11d5acffe4c",
+  "durationSeconds": 18.696
+}

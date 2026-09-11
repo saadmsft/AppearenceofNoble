@@ -1,0 +1,18 @@
+{
+  "entryId": "face-brightened-like-moonlight",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "تبوک سے پیچھے رہ جانے کے اپنے بیان میں کعب بن مالک رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کو سلام کرنے کا ذکر کیا، جب آپ صلی اللہ علیہ وسلم کا چہرہ خوشی سے چمک رہا تھا۔ انہوں نے بتایا کہ آپ صلی اللہ علیہ وسلم خوش ہوتے تو چہرہ چاند کے ٹکڑے کی طرح روشن ہو جاتا، اور وہ اس سے خوشی پہچان لیتے تھے۔",
+  "transcriptHash": "f9a614bc79a66ff392febe68390dafe8f3d2390f4967c965f87bc7c105297dda",
+  "transcriptCharacters": 298,
+  "billableCharacters": 298,
+  "cacheKey": "d37eae49d52e5b276ddc3554468c53d9cbc402ca7ccea8c5c52018687759f50c",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d37eae49d52e5b276ddc3554468c53d9cbc402ca7ccea8c5c52018687759f50c.mp3",
+  "byteLength": 131328,
+  "sha256": "f49472b8a5f5bfcc4e6c011efea76b6e3c228f22ee9fe4099262302095101849",
+  "durationSeconds": 21.888
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-brisk-gait-abu-hurairah",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو ہریرہ رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کے حسن کا ذکر کرتے ہوئے چہرے کی روشنی کو سورج سے تشبیہ دی۔ انہوں نے یہ بھی کہا کہ آپ صلی اللہ علیہ وسلم سے تیز چلنے والا نہیں دیکھا؛ گویا زمین آپ صلی اللہ علیہ وسلم کے لیے سمٹ جاتی، ساتھ والے محنت کرتے اور آپ صلی اللہ علیہ وسلم بے تکلف چلتے رہتے۔",
+  "transcriptHash": "4043cdb03f7e1007af969c87823aebcf53b3375dabea9b51127cf649c3a03f60",
+  "transcriptCharacters": 300,
+  "billableCharacters": 300,
+  "cacheKey": "dda02ce99ddbc0bcc1c924f6c963b9355c1a4d9b95860b190e5619835b50d069",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/dda02ce99ddbc0bcc1c924f6c963b9355c1a4d9b95860b190e5619835b50d069.mp3",
+  "byteLength": 134208,
+  "sha256": "7e0212aeb3d946be3543315b013fe4178468fc125c7ab1a7a45a4caad6104bf4",
+  "durationSeconds": 22.368
+}

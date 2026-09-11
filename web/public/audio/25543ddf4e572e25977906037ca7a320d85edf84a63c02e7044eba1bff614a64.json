@@ -1,0 +1,18 @@
+{
+  "entryId": "smiling-at-a-roughly-pulled-cloak",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas was walking with the Prophet may Allah bless him and grant him peace, who wore a Najrani cloak with a thick border. A Bedouin pulled it hard enough to leave a mark on his shoulder and asked for wealth. The Prophet may Allah bless him and grant him peace turned towards him, smiled, and ordered that he be given something.",
+  "transcriptHash": "7aae8d0872634088e5e979ac3e98e18cd26b898758fd6f27d6cbff66f191c8f2",
+  "transcriptCharacters": 326,
+  "billableCharacters": 326,
+  "cacheKey": "25543ddf4e572e25977906037ca7a320d85edf84a63c02e7044eba1bff614a64",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/25543ddf4e572e25977906037ca7a320d85edf84a63c02e7044eba1bff614a64.mp3",
+  "byteLength": 111600,
+  "sha256": "02488b1903b3a307afa1f2463d9f50e8bfa624e1d7514be23d08dee6b9e5559e",
+  "durationSeconds": 18.6
+}

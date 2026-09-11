@@ -1,0 +1,18 @@
+{
+  "entryId": "beard-movement-during-recitation",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Khabbab was asked whether the Prophet may Allah bless him and grant him peace recited in the noon and afternoon prayers. He answered yes. When asked how they knew, he explained that they recognized the recitation through the movement of the Prophet's may Allah bless him and grant him peace beard, an observable detail during prayer.",
+  "transcriptHash": "07799acf930565e2e8196ccb2cfefa2ce9501cf2ec448051a8dc1110d9d430cf",
+  "transcriptCharacters": 333,
+  "billableCharacters": 338,
+  "cacheKey": "bd7b22f7facd0ca0e9574a97a2576bdabd95b813824582eaec0e2289c39c802f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/bd7b22f7facd0ca0e9574a97a2576bdabd95b813824582eaec0e2289c39c802f.mp3",
+  "byteLength": 112032,
+  "sha256": "fd2ad2ac653674f8ba4f844e942a7cc6478f7c3f23b3a6df89b466e4110a3b7e",
+  "durationSeconds": 18.672
+}

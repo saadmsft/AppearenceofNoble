@@ -1,0 +1,92 @@
+import type { Language } from './schema.ts'
+import type { ReadingIssue } from './reading.ts'
+
+const labels = {
+  title: { en: 'My reading', ur: 'میرا مطالعہ' },
+  tools: { en: 'Personal reading', ur: 'ذاتی مطالعہ' },
+  privacy: {
+    en: 'Notes and progress stay in this browser on this device. They are not encrypted or a guaranteed backup: clearing browser data can erase them, and other people using this browser can read them. They are never added to public research downloads. Only the private backup button downloads your personal data.',
+    ur: 'نوٹس اور مطالعے کی پیش رفت اسی آلے کے اس براؤزر میں رہتے ہیں۔ یہ خفیہ کردہ یا یقینی بیک اپ نہیں ہیں: براؤزر کا ڈیٹا صاف کرنے سے یہ مٹ سکتے ہیں، اور اس براؤزر کے دوسرے صارف انہیں پڑھ سکتے ہیں۔ یہ عوامی تحقیقی ڈاؤن لوڈ میں شامل نہیں ہوتے۔ صرف نجی بیک اپ کا بٹن آپ کا ذاتی ڈیٹا ڈاؤن لوڈ کرتا ہے۔',
+  },
+  noAutoRead: { en: 'Opening an entry does not mark it as read.', ur: 'روایت کھولنے سے اسے خود بخود پڑھا ہوا نشان نہیں لگتا۔' },
+  markRead: { en: 'I have read this entry', ur: 'میں نے یہ روایت پڑھ لی ہے' },
+  read: { en: 'Read', ur: 'پڑھ لیا' },
+  unread: { en: 'Unread', ur: 'ابھی نہیں پڑھا' },
+  notMarked: { en: 'Not marked', ur: 'نشان نہیں لگایا' },
+  note: { en: 'Private note (plain text)', ur: 'نجی نوٹ (سادہ متن)' },
+  noteLimit: { en: 'Up to 10,000 characters per note; 500,000 across all notes. Changes save immediately.', ur: 'ہر نوٹ میں زیادہ سے زیادہ ۱۰،۰۰۰ حروف، اور تمام نوٹس میں ۵۰۰،۰۰۰ حروف۔ تبدیلیاں فوراً محفوظ ہوتی ہیں۔' },
+  saved: { en: 'Saved in this browser', ur: 'اس براؤزر میں محفوظ ہے' },
+  unsaved: { en: 'Not saved. This draft is only in memory; keep this tab open and retry.', ur: 'محفوظ نہیں ہوا۔ یہ مسودہ صرف عارضی یادداشت میں ہے؛ یہ ٹیب کھلا رکھیں اور دوبارہ کوشش کریں۔' },
+  retry: { en: 'Retry saving note', ur: 'نوٹ دوبارہ محفوظ کریں' },
+  reload: { en: 'Reload saved data (keep unsaved drafts)', ur: 'محفوظ ڈیٹا دوبارہ لوڈ کریں (غیر محفوظ مسودے برقرار رہیں گے)' },
+  deleteNote: { en: 'Delete note', ur: 'نوٹ حذف کریں' },
+  deleteTitle: { en: 'Delete this private note?', ur: 'یہ نجی نوٹ حذف کریں؟' },
+  deleteDetail: { en: 'The text below will be removed from this browser. This cannot be undone here. Your read status and bookmarks will not change.', ur: 'نیچے دیا گیا متن اس براؤزر سے حذف ہو جائے گا۔ اسے یہاں واپس نہیں لایا جا سکے گا۔ مطالعے کا نشان اور بُک مارکس تبدیل نہیں ہوں گے۔' },
+  cancel: { en: 'Cancel', ur: 'منسوخ کریں' },
+  close: { en: 'Close', ur: 'بند کریں' },
+  confirmDelete: { en: 'Delete this text', ur: 'یہ متن حذف کریں' },
+  resume: { en: 'Resume last opened entry', ur: 'آخری کھولی گئی روایت سے جاری رکھیں' },
+  noResume: { en: 'Open an entry to keep a place to resume.', ur: 'مطالعہ جاری رکھنے کی جگہ محفوظ کرنے کے لیے کوئی روایت کھولیں۔' },
+  progress: { en: 'Reading progress', ur: 'مطالعے کی پیش رفت' },
+  allEntries: { en: 'All entries', ur: 'تمام روایات' },
+  readOf: { en: 'read of', ur: 'پڑھی گئیں، کل' },
+  notes: { en: 'Private notes', ur: 'نجی نوٹس' },
+  noNotes: { en: 'Your notes will appear here. Add one while reading an entry.', ur: 'آپ کے نوٹس یہاں نظر آئیں گے۔ روایت پڑھتے وقت نوٹ لکھیں۔' },
+  open: { en: 'Open entry', ur: 'روایت کھولیں' },
+  unknown: { en: 'Entry unavailable in this collection; its stored data is preserved.', ur: 'یہ روایت اس مجموعے میں دستیاب نہیں؛ اس کا محفوظ ڈیٹا برقرار ہے۔' },
+  backup: { en: 'Private backup and restore', ur: 'نجی بیک اپ اور بحالی' },
+  download: { en: 'Download private backup', ur: 'نجی بیک اپ ڈاؤن لوڈ کریں' },
+  downloadDetail: { en: 'Includes saved notes, explicit read/unread states, resume position and bookmarks, but no source texts or appearance preferences. Keep this unencrypted file private.', ur: 'اس میں محفوظ نوٹس، پڑھے اور نہ پڑھے ہونے کے نشان، مطالعہ جاری رکھنے کی جگہ اور بُک مارکس شامل ہیں؛ اصل روایات کے متن یا ظاہری ترجیحات نہیں۔ اس غیر خفیہ کردہ فائل کو نجی رکھیں۔' },
+  downloaded: { en: 'Private backup download requested. Confirm the file exists in your downloads.', ur: 'نجی بیک اپ ڈاؤن لوڈ کی درخواست ہو گئی ہے۔ اپنی ڈاؤن لوڈز میں فائل کی موجودگی دیکھ لیں۔' },
+  downloadFailed: { en: 'The private backup download could not start. Allow browser downloads and try again.', ur: 'نجی بیک اپ کا ڈاؤن لوڈ شروع نہیں ہو سکا۔ براؤزر میں ڈاؤن لوڈ کی اجازت دیں اور دوبارہ کوشش کریں۔' },
+  import: { en: 'Restore a private backup', ur: 'نجی بیک اپ بحال کریں' },
+  file: { en: 'Choose a private JSON backup (maximum 4 MiB)', ur: 'نجی JSON بیک اپ منتخب کریں (زیادہ سے زیادہ ۴ میبی بائٹ)' },
+  paste: { en: 'Or paste private backup JSON', ur: 'یا نجی بیک اپ کا JSON یہاں چسپاں کریں' },
+  preview: { en: 'Preview restore', ur: 'بحالی کا پیش منظر' },
+  restoreTitle: { en: 'Review before restoring', ur: 'بحالی سے پہلے جائزہ لیں' },
+  restoreDetail: { en: 'Nothing changes until you confirm. Unknown entry IDs are rejected, not dropped. Cancel clears the selected file and pasted backup.', ur: 'آپ کی تصدیق تک کچھ تبدیل نہیں ہوگا۔ نامعلوم روایتوں کے شناختی کوڈ مسترد ہوتے ہیں، خاموشی سے حذف نہیں ہوتے۔ منسوخ کرنے سے منتخب فائل اور چسپاں کیا گیا بیک اپ صاف ہو جائیں گے۔' },
+  importedCounts: { en: 'In this backup', ur: 'اس بیک اپ میں' },
+  bookmarks: { en: 'Bookmarks', ur: 'بُک مارکس' },
+  merge: { en: 'Merge — keep my existing data', ur: 'ضم کریں — میرا موجودہ ڈیٹا برقرار رکھیں' },
+  mergeDetail: { en: 'Adds missing notes and read states, unions bookmarks, and keeps your existing resume position. Conflicting local notes and read/unread states are kept unchanged; the imported versions are not applied.', ur: 'غیر موجود نوٹس اور مطالعے کے نشان شامل ہوں گے، بُک مارکس یکجا ہوں گے، اور مطالعہ جاری رکھنے کی موجودہ جگہ برقرار رہے گی۔ مختلف مقامی نوٹس اور پڑھے یا نہ پڑھے ہونے کے نشان تبدیل نہیں ہوں گے؛ بیک اپ کی متبادل صورتیں لاگو نہیں ہوں گی۔' },
+  replace: { en: 'Replace — remove my current data first', ur: 'بدل دیں — پہلے میرا موجودہ ڈیٹا ہٹا دیں' },
+  replaceDetail: { en: 'Replaces ALL saved notes, read/unread states, resume position and bookmarks with this backup, including deleting anything absent from it. This cannot be undone here. Download a private backup first if you need your current data.', ur: 'تمام محفوظ نوٹس، پڑھے اور نہ پڑھے ہونے کے نشان، مطالعہ جاری رکھنے کی جگہ اور بُک مارکس اس بیک اپ سے بدل جائیں گے۔ جو چیز اس میں نہیں، وہ حذف ہو جائے گی۔ اسے یہاں واپس نہیں لایا جا سکے گا۔ موجودہ ڈیٹا درکار ہو تو پہلے نجی بیک اپ ڈاؤن لوڈ کریں۔' },
+  conflicts: { en: 'Conflicting notes (merge keeps your text)', ur: 'مختلف نوٹس (ضم کرنے سے آپ کا متن برقرار رہے گا)' },
+  readConflicts: { en: 'Conflicting read/unread states (merge keeps your marks)', ur: 'پڑھے یا نہ پڑھے ہونے کے مختلف نشان (ضم کرنے سے آپ کے نشان برقرار رہیں گے)' },
+  localText: { en: 'Your text', ur: 'آپ کا متن' },
+  backupText: { en: 'Backup text', ur: 'بیک اپ کا متن' },
+  confirmRestore: { en: 'Confirm restore', ur: 'بحالی کی تصدیق کریں' },
+  restored: { en: 'Reading data and bookmarks were saved in this browser.', ur: 'مطالعے کا ڈیٹا اور بُک مارکس اس براؤزر میں محفوظ ہو گئے ہیں۔' },
+  reset: { en: 'Clear restore form', ur: 'بحالی کا فارم صاف کریں' },
+  readingFile: { en: 'Reading selected file…', ur: 'منتخب فائل پڑھی جا رہی ہے…' },
+  fileFailed: { en: 'The file could not be read. Choose it again or paste its JSON.', ur: 'فائل پڑھی نہیں جا سکی۔ اسے دوبارہ منتخب کریں یا اس کا JSON چسپاں کریں۔' },
+} as const
+
+export type ReadingLabel = keyof typeof labels
+export const readingLabel = (language: Language, key: ReadingLabel): string => labels[key][language]
+
+const issues: Record<ReadingIssue['code'], { en: string; ur: string }> = {
+  unavailable: { en: 'Browser storage is unavailable. Nothing is confirmed saved. Enable storage, then reload saved data and retry.', ur: 'براؤزر کا ذخیرہ دستیاب نہیں۔ محفوظ ہونے کی تصدیق نہیں ہوئی۔ ذخیرہ فعال کریں، محفوظ ڈیٹا دوبارہ لوڈ کریں اور کوشش کریں۔' },
+  quota: { en: 'Browser storage is full. This change is not confirmed saved. Free space without deleting your reading data, then retry.', ur: 'براؤزر کا ذخیرہ بھر گیا ہے۔ یہ تبدیلی محفوظ ہونے کی تصدیق نہیں ہوئی۔ اپنے مطالعے کا ڈیٹا حذف کیے بغیر جگہ خالی کریں، پھر کوشش کریں۔' },
+  'invalid-storage': { en: 'Stored reading data is corrupt or unsupported. It has not been overwritten. Restore a valid backup using Replace, or repair storage and reload.', ur: 'محفوظ مطالعے کا ڈیٹا خراب یا غیر معاون ہے۔ اس پر نیا ڈیٹا نہیں لکھا گیا۔ درست بیک اپ سے بدل کر بحال کریں، یا ذخیرہ درست کرکے دوبارہ لوڈ کریں۔' },
+  'invalid-import': { en: 'Invalid private backup. Use this project’s version 1 personal backup with valid IDs, plain-text notes, at most 2,000 entries/bookmarks, 10,000 characters per note and 500,000 note characters total.', ur: 'نجی بیک اپ درست نہیں۔ اس منصوبے کا ورژن ۱ ذاتی بیک اپ استعمال کریں: درست شناختی کوڈ، سادہ متن کے نوٹس، زیادہ سے زیادہ ۲،۰۰۰ روایات یا بُک مارکس، فی نوٹ ۱۰،۰۰۰ اور مجموعی ۵۰۰،۰۰۰ حروف۔' },
+  'file-too-large': { en: 'The backup or stored data exceeds the 4 MiB limit. It was not imported or overwritten.', ur: 'بیک اپ یا محفوظ ڈیٹا ۴ میبی بائٹ کی حد سے بڑا ہے۔ اسے درآمد نہیں کیا گیا اور نہ اس پر نیا ڈیٹا لکھا گیا۔' },
+  'note-too-long': { en: 'This edit exceeds 10,000 characters. It was not accepted; the previous text is kept.', ur: 'یہ تبدیلی ۱۰،۰۰۰ حروف سے زیادہ ہے۔ اسے قبول نہیں کیا گیا؛ پچھلا متن برقرار ہے۔' },
+  'total-too-large': { en: 'The combined data exceeds 2,000 entries/bookmarks or 500,000 note characters. Nothing was changed.', ur: 'مجموعی ڈیٹا ۲،۰۰۰ روایات یا بُک مارکس، یا نوٹس کے ۵۰۰،۰۰۰ حروف سے زیادہ ہے۔ کچھ تبدیل نہیں ہوا۔' },
+  'empty-note': { en: 'Use Delete note and confirm to remove existing text.', ur: 'موجودہ متن ہٹانے کے لیے نوٹ حذف کریں اور تصدیق کریں۔' },
+  'unknown-ids': { en: 'Unknown entry IDs detected. Backups containing these IDs are rejected in full. Already-stored entries are preserved, not silently removed.', ur: 'نامعلوم روایتوں کے شناختی کوڈ ملے ہیں۔ ان کوڈز والے بیک اپ مکمل طور پر مسترد ہوتے ہیں۔ پہلے سے محفوظ روایات برقرار رہتی ہیں، خاموشی سے حذف نہیں ہوتیں۔' },
+  'invalid-id': { en: 'Invalid entry ID. No data was changed.', ur: 'روایت کا شناختی کوڈ درست نہیں۔ کوئی ڈیٹا تبدیل نہیں ہوا۔' },
+  'verify-failed': { en: 'The write could not be verified. Do not assume it is saved. Reload saved data, then retry any remaining draft.', ur: 'لکھے گئے ڈیٹا کی تصدیق نہیں ہو سکی۔ اسے محفوظ تصور نہ کریں۔ محفوظ ڈیٹا دوبارہ لوڈ کریں، پھر باقی مسودے کو محفوظ کرنے کی کوشش کریں۔' },
+  'changed-storage': { en: 'Reading data changed in another tab or process. Your change was not written. Reload saved data, review any unsaved draft, then retry.', ur: 'مطالعے کا ڈیٹا کسی دوسرے ٹیب یا عمل میں بدل گیا ہے۔ آپ کی تبدیلی نہیں لکھی گئی۔ محفوظ ڈیٹا دوبارہ لوڈ کریں، غیر محفوظ مسودے کا جائزہ لیں، پھر کوشش کریں۔' },
+  'stale-preview': { en: 'Data changed since this confirmation was prepared. Cancel and review a fresh preview before trying again.', ur: 'تصدیق تیار ہونے کے بعد ڈیٹا بدل گیا ہے۔ منسوخ کریں اور دوبارہ کوشش سے پہلے نیا پیش منظر دیکھیں۔' },
+  'unsaved-notes': { en: 'There are unsaved note drafts. Save or explicitly delete them before backup or restore. Keep this tab open; drafts are not stored after a reload.', ur: 'نوٹس کے غیر محفوظ مسودے موجود ہیں۔ بیک اپ یا بحالی سے پہلے انہیں محفوظ کریں یا واضح تصدیق کے ساتھ حذف کریں۔ یہ ٹیب کھلا رکھیں؛ دوبارہ لوڈ کے بعد مسودے محفوظ نہیں رہتے۔' },
+  'replace-required': { en: 'Existing storage could not be read safely. Ordinary writes and backup are blocked to avoid data loss. Reload after fixing storage, or explicitly restore a valid backup with Replace.', ur: 'موجودہ ذخیرہ محفوظ طریقے سے نہیں پڑھا جا سکا۔ ڈیٹا ضائع ہونے سے بچانے کے لیے عام تحریر اور بیک اپ بند ہیں۔ ذخیرہ درست کرکے دوبارہ لوڈ کریں، یا درست بیک اپ سے واضح تصدیق کے ساتھ بدل کر بحال کریں۔' },
+  'bookmarks-unconfirmed': { en: 'Partial restore: reading data was saved, but bookmark persistence was not confirmed. Do not assume the bookmark restore completed. Fix bookmark storage, then preview this backup again and retry.', ur: 'جزوی بحالی: مطالعے کا ڈیٹا محفوظ ہو گیا، مگر بُک مارکس محفوظ ہونے کی تصدیق نہیں ہوئی۔ بُک مارکس کی بحالی مکمل تصور نہ کریں۔ ان کا ذخیرہ درست کریں، پھر اسی بیک اپ کا نیا پیش منظر دیکھ کر کوشش کریں۔' },
+  busy: { en: 'A restore is already in progress. Wait for it to finish.', ur: 'بحالی پہلے سے جاری ہے۔ اس کے مکمل ہونے کا انتظار کریں۔' },
+}
+
+export function readingIssueText(language: Language, issue: ReadingIssue): string {
+  const ids = issue.ids
+  const suffix = ids?.length ? ` (${ids.length}): ${ids.slice(0, 20).join(', ')}${ids.length > 20 ? ' …' : ''}` : ''
+  return issues[issue.code][language] + suffix
+}

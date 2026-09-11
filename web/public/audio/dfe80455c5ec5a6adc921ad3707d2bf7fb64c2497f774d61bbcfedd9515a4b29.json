@@ -1,0 +1,18 @@
+{
+  "entryId": "character-generosity-giving-needed-cloth",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Sahl ibn Sa'd recounts a woman bringing cloth she had woven for the Prophet. He accepted it while needing it and wore it as a waist-wrapper. When a man requested it, he agreed, later folded it and sent it to him. Sahl adds that the cloth eventually became that man's burial shroud.",
+  "transcriptHash": "7eaaae7b3c061f6442878682f23de989cdce1ba28c18514dddb3f7730733f465",
+  "transcriptCharacters": 281,
+  "billableCharacters": 291,
+  "cacheKey": "dfe80455c5ec5a6adc921ad3707d2bf7fb64c2497f774d61bbcfedd9515a4b29",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/dfe80455c5ec5a6adc921ad3707d2bf7fb64c2497f774d61bbcfedd9515a4b29.mp3",
+  "byteLength": 107280,
+  "sha256": "0433dce2cd971c72a58bad39b2a6c25f54e26ef1d41b4d0a7432c974b7336ad8",
+  "durationSeconds": 17.88
+}

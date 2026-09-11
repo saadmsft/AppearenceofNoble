@@ -1,0 +1,18 @@
+{
+  "entryId": "sweat-gathered-as-fragrance",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas relates that the Prophet may Allah bless him and grant him peace rested at their home and perspired. His mother, Umm Sulaim, collected the sweat in a bottle. When he awoke and asked what she was doing, she explained that she put it in their perfume and considered it among the finest fragrances.",
+  "transcriptHash": "4595fefd545c21b838f4116053d34d750561666d0ee72634a430590a8001ef24",
+  "transcriptCharacters": 300,
+  "billableCharacters": 300,
+  "cacheKey": "da974c2e179c1bdd639927ae37758bd4607f5f20a007e51fcd2f614583e5e9ee",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/da974c2e179c1bdd639927ae37758bd4607f5f20a007e51fcd2f614583e5e9ee.mp3",
+  "byteLength": 105408,
+  "sha256": "7d230c17fc10f1097a875e61206f78aa9cd96989d52343dce1674995071a50d1",
+  "durationSeconds": 17.568
+}

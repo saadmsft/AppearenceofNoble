@@ -1,7 +1,7 @@
 {
-  "name": "the-noble-appearance",
+  "name": "the-noble-project",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "packageManager": "pnpm@10.33.0",
   "engines": { "node": ">=24" },
@@ -11,7 +11,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "node --test tests/*.test.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "audio:check": "node scripts/audio/cli.ts dry-run --check-coverage"
   },
   "dependencies": {
     "@fontsource/noto-naskh-arabic": "^5.2.5",

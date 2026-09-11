@@ -1,0 +1,18 @@
+{
+  "entryId": "smiling-at-a-roughly-pulled-cloak",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نبی کریم صلی اللہ علیہ وسلم کے ساتھ چل رہے تھے اور آپ صلی اللہ علیہ وسلم موٹے کنارے والی نجرانی چادر پہنے تھے۔ ایک بدوی نے اسے اتنا زور سے کھینچا کہ کندھے پر نشان پڑ گیا، پھر مال مانگا۔ آپ صلی اللہ علیہ وسلم اس کی طرف مڑے، مسکرائے اور اسے کچھ دینے کا حکم فرمایا۔",
+  "transcriptHash": "41cd76cabd7b67bf7a3d365f1234f79cf79805cc2f508279450bbac765ae0408",
+  "transcriptCharacters": 279,
+  "billableCharacters": 279,
+  "cacheKey": "ac76650ab0eddf6fa2025211c54c43caa3100438a1ddf7b1b5e5f9bcbc644116",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ac76650ab0eddf6fa2025211c54c43caa3100438a1ddf7b1b5e5f9bcbc644116.mp3",
+  "byteLength": 129888,
+  "sha256": "34496b9f4830d6c42d076ff662aaac5c7e189bd96def15e8193ee5121aa9787b",
+  "durationSeconds": 21.648
+}

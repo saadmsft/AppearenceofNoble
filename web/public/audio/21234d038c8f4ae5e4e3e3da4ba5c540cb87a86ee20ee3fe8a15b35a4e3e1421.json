@@ -1,0 +1,18 @@
+{
+  "entryId": "character-family-community-serving-at-home",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Al-Aswad asked Aisha what the Prophet may Allah bless him and grant him peace did inside his home. She described him as occupied in serving his family, leaving for prayer when its time arrived. Her answer places practical household service within his ordinary life, alongside worship, rather than portraying concern for family as something expressed only in public advice.",
+  "transcriptHash": "9f9bf72d5afcad054fb553062c52cd01d65fe08f7c254b8e21861f515238ca17",
+  "transcriptCharacters": 372,
+  "billableCharacters": 372,
+  "cacheKey": "21234d038c8f4ae5e4e3e3da4ba5c540cb87a86ee20ee3fe8a15b35a4e3e1421",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/21234d038c8f4ae5e4e3e3da4ba5c540cb87a86ee20ee3fe8a15b35a4e3e1421.mp3",
+  "byteLength": 132048,
+  "sha256": "6e1d9ac6c3509ae5287273ff3feafa0064ef29e359012f8814844a4b4430e02d",
+  "durationSeconds": 22.008
+}

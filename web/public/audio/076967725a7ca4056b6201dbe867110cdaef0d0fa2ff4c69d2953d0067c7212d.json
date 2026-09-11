@@ -1,0 +1,18 @@
+{
+  "entryId": "smiling-at-a-roughly-pulled-cloak",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا يَحْيَى بْنُ بُكَيْرٍ، حَدَّثَنَا مَالِكٌ، عَنْ إِسْحَاقَ بْنِ عَبْدِ اللَّهِ، عَنْ أَنَسِ بْنِ مَالِكٍ ـ رضى الله عنه قَالَ كُنْتُ أَمْشِي مَعَ النَّبِيِّ صلى الله عليه وسلم وَعَلَيْهِ بُرْدٌ نَجْرَانِيٌّ غَلِيظُ الْحَاشِيَةِ، فَأَدْرَكَهُ أَعْرَابِيٌّ فَجَذَبَهُ جَذْبَةً شَدِيدَةً، حَتَّى نَظَرْتُ إِلَى صَفْحَةِ عَاتِقِ النَّبِيِّ صلى الله عليه وسلم قَدْ أَثَّرَتْ بِهِ حَاشِيَةُ الرِّدَاءِ مِنْ شِدَّةِ جَذْبَتِهِ، ثُمَّ قَالَ مُرْ لِي مِنْ مَالِ اللَّهِ الَّذِي عِنْدَكَ. فَالْتَفَتَ إِلَيْهِ، فَضَحِكَ ثُمَّ أَمَرَ لَهُ بِعَطَاءٍ.",
+  "transcriptHash": "30dd8228aac86973885c0d9b15348b981b050323d43771193c1489598fa50dac",
+  "transcriptCharacters": 548,
+  "billableCharacters": 548,
+  "cacheKey": "076967725a7ca4056b6201dbe867110cdaef0d0fa2ff4c69d2953d0067c7212d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/076967725a7ca4056b6201dbe867110cdaef0d0fa2ff4c69d2953d0067c7212d.mp3",
+  "byteLength": 197136,
+  "sha256": "e14589f0d8b34a103d255de43191d6b056ce5348ba8df5819a7b2325017952d3",
+  "durationSeconds": 32.856
+}

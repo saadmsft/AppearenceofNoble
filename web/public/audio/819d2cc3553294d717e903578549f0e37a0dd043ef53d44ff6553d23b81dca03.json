@@ -1,0 +1,18 @@
+{
+  "entryId": "character-mercy-kissing-al-hasan",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابو ہریرہ رضی اللہ عنہ بیان کرتے ہیں کہ نبی کریم صلی اللہ علیہ وسلم نے حضرت حسن بن علی رضی اللہ عنہما کو بوسہ دیا۔ پاس بیٹھے اقرع بن حابس نے کہا کہ ان کے دس بچے ہیں، مگر انہوں نے کسی کو بوسہ نہیں دیا۔ آپ صلی اللہ علیہ وسلم نے جواب میں رحم کرنے اور رحم پانے کا تعلق واضح فرمایا۔",
+  "transcriptHash": "9e26f75238f60dc19074a85cbda967364959538d3ab602151260f936b29ee07d",
+  "transcriptCharacters": 282,
+  "billableCharacters": 282,
+  "cacheKey": "819d2cc3553294d717e903578549f0e37a0dd043ef53d44ff6553d23b81dca03",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/819d2cc3553294d717e903578549f0e37a0dd043ef53d44ff6553d23b81dca03.mp3",
+  "byteLength": 131616,
+  "sha256": "ec3ecbda91732f85240b29fc238cfe0a77dcaa41def9ff83b290acb35500a0c9",
+  "durationSeconds": 21.936
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "morning-gathering-poetry-and-smiles",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر بن سمرہ رضی اللہ عنہ نے بتایا کہ فجر کے بعد نبی کریم صلی اللہ علیہ وسلم سورج نکلنے تک اپنی جگہ بیٹھے رہتے۔ صحابہ زمانۂ جاہلیت کی باتیں کرتے اور اشعار پڑھتے تھے۔ وہ ہنستے اور نبی کریم صلی اللہ علیہ وسلم مسکراتے تھے۔",
+  "transcriptHash": "9d1814bbd23f302055198e5c265e7d921bfaa27814f86972d141a28a4d642cac",
+  "transcriptCharacters": 219,
+  "billableCharacters": 219,
+  "cacheKey": "bd5ab41886dc06b044233e0dd17abd44951716038da9f55d1d2eb5fdcc3b817c",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/bd5ab41886dc06b044233e0dd17abd44951716038da9f55d1d2eb5fdcc3b817c.mp3",
+  "byteLength": 107136,
+  "sha256": "32cb7c94e4037d6b6ce607b86a5007ba3738e5672d40db3032d0bb13bd900d10",
+  "durationSeconds": 17.856
+}

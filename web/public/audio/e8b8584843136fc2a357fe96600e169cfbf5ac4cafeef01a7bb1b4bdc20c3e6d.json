@@ -1,0 +1,18 @@
+{
+  "entryId": "character-mercy-sent-as-mercy",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ عَبَّادٍ، وَابْنُ أَبِي عُمَرَ، قَالاَ حَدَّثَنَا مَرْوَانُ، - يَعْنِيَانِ الْفَزَارِيَّ - عَنْ يَزِيدَ، - وَهُوَ ابْنُ كَيْسَانَ - عَنْ أَبِي حَازِمٍ، عَنْ أَبِي هُرَيْرَةَ، قَالَ قِيلَ يَا رَسُولَ اللَّهِ ادْعُ عَلَى الْمُشْرِكِينَ قَالَ \" إِنِّي لَمْ أُبْعَثْ لَعَّانًا وَإِنَّمَا بُعِثْتُ رَحْمَةً \" .",
+  "transcriptHash": "76ea6c0e995bfb9080f5dd10ce3c1eeab189a77a469c3b7072284a090a74ca13",
+  "transcriptCharacters": 331,
+  "billableCharacters": 341,
+  "cacheKey": "e8b8584843136fc2a357fe96600e169cfbf5ac4cafeef01a7bb1b4bdc20c3e6d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e8b8584843136fc2a357fe96600e169cfbf5ac4cafeef01a7bb1b4bdc20c3e6d.mp3",
+  "byteLength": 120240,
+  "sha256": "a4ca07a0833441cc9497b316f88cda2b011f8d1962e40617692f38cea7e0fde0",
+  "durationSeconds": 20.04
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "hud-and-its-sisters-greyed-me",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو جحیفہ رضی اللہ عنہ روایت کرتے ہیں کہ لوگوں نے نبی کریم صلی اللہ علیہ وسلم سے عرض کیا کہ آپ صلی اللہ علیہ وسلم کے بالوں میں سفیدی نظر آ رہی ہے۔ آپ صلی اللہ علیہ وسلم نے جواب میں اس کا تعلق ہود اور اس جیسی سورتوں سے بیان فرمایا۔ یہ مختصر گفتگو بالوں کی ظاہری تبدیلی کو ان قرآنی سورتوں سے جوڑتی ہے۔",
+  "transcriptHash": "4e9e38fc1712e243ec951a51310dded0153872aa1341cdc3169dbde6c5ab9421",
+  "transcriptCharacters": 299,
+  "billableCharacters": 299,
+  "cacheKey": "6e0715d3dc9bfcd96231ee0ed8b1bb65b30bd67f5053f8663428d610dcb30c37",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6e0715d3dc9bfcd96231ee0ed8b1bb65b30bd67f5053f8663428d610dcb30c37.mp3",
+  "byteLength": 136224,
+  "sha256": "e004e78b7631ebba482ae43025916fb16a67b5d5636bc4ffd4ce45cd4e8eefe8",
+  "durationSeconds": 22.704
+}

@@ -1,4 +1,6 @@
-import { narrations } from './library.ts'
+import { appearanceNarrations, characterNarrations } from './library.ts'
+import { characterTopics } from './schema.ts'
+import { characterHighlights } from './character-highlights.ts'
 import type { Localized, Topic } from './schema.ts'
 import { isEstablished } from './search.ts'
 
@@ -129,11 +131,11 @@ const definitions: ChapterDefinition[] = [
   },
 ]
 
-const byId = new Map(narrations.map((row) => [row.id, row]))
+const byId = new Map(appearanceNarrations.map((row) => [row.id, row]))
 
 export const chapters = definitions.map((chapter) => ({
   ...chapter,
-  reports: narrations.filter((row) => row.topics.includes(chapter.topic)),
+  reports: appearanceNarrations.filter((row) => row.topics.includes(chapter.topic)),
   highlights: chapter.highlights.map((highlight) => {
     const source = byId.get(highlight.sourceId)
     if (!source || !isEstablished(source) || !source.topics.includes(chapter.topic)) {
@@ -144,3 +146,13 @@ export const chapters = definitions.map((chapter) => ({
 }))
 
 export type Chapter = typeof chapters[number]
+
+export const characterChapters: Chapter[] = characterTopics.map((topic) => {
+  const reports = characterNarrations.filter((row) => row.topics.includes(topic))
+  const highlights = reports.filter(isEstablished).slice(0, 3).map((source) => {
+    const text = characterHighlights[source.id]
+    if (!text) throw new Error(`Missing reviewed Character highlight: ${source.id}`)
+    return { text, sourceId: source.id, source }
+  })
+  return { topic, reports, highlights }
+})

@@ -1,0 +1,18 @@
+{
+  "entryId": "beautiful-recitation-voice-bara",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Al-Bara' heard the Prophet may Allah bless him and grant him peace reciting the surah beginning with the fig and the olive during the night prayer, Isha. He said that he had never heard anyone with a more beautiful voice or recitation. The praise is tied to what this companion heard.",
+  "transcriptHash": "d9cd8f561276dd5f3506267b0e220d2ce67eecce92d7f022a0247ed796f127ba",
+  "transcriptCharacters": 284,
+  "billableCharacters": 289,
+  "cacheKey": "c57f913e21a91ec0ab48767ed7f65707d0e2dc17bef1e96d894f67bd27beffce",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c57f913e21a91ec0ab48767ed7f65707d0e2dc17bef1e96d894f67bd27beffce.mp3",
+  "byteLength": 97776,
+  "sha256": "c637f0c0091da3178c2b35ef8eef9a21e97057fd9fb425c839a827e15c3025c4",
+  "durationSeconds": 16.296
+}

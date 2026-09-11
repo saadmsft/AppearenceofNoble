@@ -1,0 +1,18 @@
+{
+  "entryId": "character-generosity-ramadan-giving",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابن عباس رضی اللہ عنہما نبی کریم صلی اللہ علیہ وسلم کی بہت زیادہ سخاوت بیان کرتے ہیں، خصوصاً رمضان میں جب حضرت جبریل علیہ السلام آپ صلی اللہ علیہ وسلم سے ملتے تھے۔ وہ رات رات قرآن کے دور کا ذکر کرتے ہوئے خیر میں آپ صلی اللہ علیہ وسلم کی سخاوت کو چلتی ہوئی ہوا سے بڑھ کر بتاتے ہیں۔ یہ راوی کا بیان ہے، اپنی تعریف کا کوئی نبوی قول نہیں۔",
+  "transcriptHash": "bf91cacbcf4a93db145525d3cf54476ed11585da89210e7d5bf4501277371066",
+  "transcriptCharacters": 339,
+  "billableCharacters": 339,
+  "cacheKey": "b6bf98ea7ef6be137245a6f25d00c12e700db410a8a081731463ffc0663c0452",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b6bf98ea7ef6be137245a6f25d00c12e700db410a8a081731463ffc0663c0452.mp3",
+  "byteLength": 153360,
+  "sha256": "2a8e59bc90c014b0eda279adedc9ee0efaf3fe0f2112b60516fbb72c2bf4ba06",
+  "durationSeconds": 25.56
+}

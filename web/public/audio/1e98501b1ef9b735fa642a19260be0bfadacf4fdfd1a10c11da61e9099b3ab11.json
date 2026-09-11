@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-brisk-gait-abu-hurairah",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، قَالَ: حَدَّثَنَا ابْنُ لَهِيعَةَ، عَنْ أَبِي يُونُسَ، عَنْ أَبِي هُرَيْرَةَ، قَالَ: وَلا رَأَيْتُ شَيْئًا أَحْسَنَ مِنْ رَسُولِ اللهِ صلى الله عليه وسلم كَأَنَّ الشَّمْسَ تَجْرِي فِي وَجْهِهِ، وَمَا رَأَيْتُ أَحَدًا أَسْرَعَ فِي مِشْيَتِهِ مِنْ رَسُولِ اللهِ صلى الله عليه وسلم كَأَنَّمَا الأَرْضُ تُطْوَى لَهُ إِنَّا لَنُجْهِدُ أَنْفُسَنَا وَإِنَّهُ لَغَيْرُ مُكْتَرِثٍ.",
+  "transcriptHash": "458b8b7eacb3e3a433231d04f16ef8dfbae7f33f187c41abfb9239747ddf1381",
+  "transcriptCharacters": 408,
+  "billableCharacters": 408,
+  "cacheKey": "1e98501b1ef9b735fa642a19260be0bfadacf4fdfd1a10c11da61e9099b3ab11",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/1e98501b1ef9b735fa642a19260be0bfadacf4fdfd1a10c11da61e9099b3ab11.mp3",
+  "byteLength": 148896,
+  "sha256": "93c07d43e723f99f4e6d987462102a7cf130bf82a745b3549803beb21f221c04",
+  "durationSeconds": 24.816
+}

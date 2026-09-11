@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-red-fleshy-growth-jabir-tirmidhi",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "This report from Jabir ibn Samurah describes the Seal between the Prophet's may Allah bless him and grant him peace shoulders as a reddish fleshy prominence, comparing it to a pigeon's egg. The account gives these descriptive words without specifying an exact diameter or offering a medical explanation of the mark.",
+  "transcriptHash": "1ffd7620385511545b16a702aebe55dfaaacdad0c77df6d446426b2db5594c0c",
+  "transcriptCharacters": 315,
+  "billableCharacters": 325,
+  "cacheKey": "5eaf6d644c6627a1c28760256897d66414a70ef38f39ac7e97aa68c8077cc2c8",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5eaf6d644c6627a1c28760256897d66414a70ef38f39ac7e97aa68c8077cc2c8.mp3",
+  "byteLength": 102816,
+  "sha256": "da79d745721733eb36e6f757598587cc84c2226d001b3d1bb72471b35e148e31",
+  "durationSeconds": 17.136
+}

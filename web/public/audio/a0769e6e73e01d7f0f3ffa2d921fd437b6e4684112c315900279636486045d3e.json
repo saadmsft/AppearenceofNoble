@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-mole-spots-abdullah-sarjis",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abdullah ibn Sarjis recalled seeing the Prophet may Allah bless him and grant him peace and eating with him. He also described looking behind him at the Seal between the shoulders, near the left shoulder blade. His account mentions a gathered prominence with mole-like marks resembling warts.",
+  "transcriptHash": "810879eb0b4866cf2646c425bfd58f2b854905978d88aa711b40730f27a8e945",
+  "transcriptCharacters": 292,
+  "billableCharacters": 292,
+  "cacheKey": "a0769e6e73e01d7f0f3ffa2d921fd437b6e4684112c315900279636486045d3e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a0769e6e73e01d7f0f3ffa2d921fd437b6e4684112c315900279636486045d3e.mp3",
+  "byteLength": 100512,
+  "sha256": "d92eef2b73ce6bf15f03dbdecbdc8bea4daf893e83b70c8a8ef5d7de3a0142a8",
+  "durationSeconds": 16.752
+}

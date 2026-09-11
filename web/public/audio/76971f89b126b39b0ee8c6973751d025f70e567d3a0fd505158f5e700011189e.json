@@ -1,0 +1,18 @@
+{
+  "entryId": "build-armpit-whiteness-istisqa-anas",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ بَشَّارٍ، حَدَّثَنَا يَحْيَى، وَابْنُ أَبِي عَدِيٍّ، عَنْ سَعِيدٍ، عَنْ قَتَادَةَ، عَنْ أَنَسِ بْنِ مَالِكٍ، قَالَ كَانَ النَّبِيُّ صلى الله عليه وسلم لاَ يَرْفَعُ يَدَيْهِ فِي شَىْءٍ مِنْ دُعَائِهِ إِلاَّ فِي الاِسْتِسْقَاءِ، وَإِنَّهُ يَرْفَعُ حَتَّى يُرَى بَيَاضُ إِبْطَيْهِ.",
+  "transcriptHash": "7435f51fbf3f5bcd56148d3f86a78ac167b81ded42780e8d3e70dcdae2e0ea87",
+  "transcriptCharacters": 304,
+  "billableCharacters": 304,
+  "cacheKey": "76971f89b126b39b0ee8c6973751d025f70e567d3a0fd505158f5e700011189e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/76971f89b126b39b0ee8c6973751d025f70e567d3a0fd505158f5e700011189e.mp3",
+  "byteLength": 113328,
+  "sha256": "f13ccfddd7dc74cfeb07f33491bfbf6c87803358ea1a572c4a9164a75df3dc71",
+  "durationSeconds": 18.888
+}

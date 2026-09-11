@@ -1,0 +1,18 @@
+{
+  "entryId": "hind-ibn-abi-hala-forehead-and-eyebrows",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "In this weakly graded description, Hind ibn Abi Hala is reported to describe a bright complexion, broad forehead and arched eyebrows that did not join. The passage also mentions a vein between the eyebrows becoming prominent with anger, and a raised bridge of the nose.",
+  "transcriptHash": "401ce6efbbce3de66362e1c041cd44fe0d3727147e0e87751795c5554815bdbb",
+  "transcriptCharacters": 269,
+  "billableCharacters": 269,
+  "cacheKey": "5351484946b3e349fb86a6a4c5a674a455180de2dfcfb0259d3accb2d6fc8b53",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5351484946b3e349fb86a6a4c5a674a455180de2dfcfb0259d3accb2d6fc8b53.mp3",
+  "byteLength": 98640,
+  "sha256": "6b4ed63a747a8dfdce3569493b322adde1cae3134f6e982be9752092ad87d842",
+  "durationSeconds": 16.44
+}

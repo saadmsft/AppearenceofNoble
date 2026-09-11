@@ -1,0 +1,18 @@
+{
+  "entryId": "character-justice-fairness-between-children",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا حَامِدُ بْنُ عُمَرَ، حَدَّثَنَا أَبُو عَوَانَةَ، عَنْ حُصَيْنٍ، عَنْ عَامِرٍ، قَالَ سَمِعْتُ النُّعْمَانَ بْنَ بَشِيرٍ ـ رضى الله عنهما ـ وَهُوَ عَلَى الْمِنْبَرِ يَقُولُ أَعْطَانِي أَبِي عَطِيَّةً، فَقَالَتْ عَمْرَةُ بِنْتُ رَوَاحَةَ لاَ أَرْضَى حَتَّى تُشْهِدَ رَسُولَ اللَّهِ صلى الله عليه وسلم. فَأَتَى رَسُولَ اللَّهِ صلى الله عليه وسلم فَقَالَ إِنِّي أَعْطَيْتُ ابْنِي مِنْ عَمْرَةَ بِنْتِ رَوَاحَةَ عَطِيَّةً، فَأَمَرَتْنِي أَنْ أُشْهِدَكَ يَا رَسُولَ اللَّهِ. قَالَ \" أَعْطَيْتَ سَائِرَ وَلَدِكَ مِثْلَ هَذَا \". قَالَ لاَ. قَالَ \" فَاتَّقُوا اللَّهَ، وَاعْدِلُوا بَيْنَ أَوْلاَدِكُمْ \". قَالَ فَرَجَعَ فَرَدَّ عَطِيَّتَهُ.",
+  "transcriptHash": "eed1fbded3fd9d230d2a1b46442df9c5b15a82a54c4aa41fc3638a5b8a4a3844",
+  "transcriptCharacters": 641,
+  "billableCharacters": 661,
+  "cacheKey": "b3a8eb307124faec39ef0bdee7b89dee82bb22b19af3948fa6942f90199313c4",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b3a8eb307124faec39ef0bdee7b89dee82bb22b19af3948fa6942f90199313c4.mp3",
+  "byteLength": 254160,
+  "sha256": "a83514329ced14aa07e9d3e539b629508f4b19417cd7266393d10789bf634e32",
+  "durationSeconds": 42.36
+}

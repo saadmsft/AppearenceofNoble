@@ -1,0 +1,18 @@
+{
+  "entryId": "always-greeted-jarir-smiling",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا إِسْحَاقُ الْوَاسِطِيُّ، حَدَّثَنَا خَالِدٌ، عَنْ بَيَانٍ، عَنْ قَيْسٍ، قَالَ سَمِعْتُهُ يَقُولُ قَالَ جَرِيرُ بْنُ عَبْدِ اللَّهِ ـ رضى الله عنه مَا حَجَبَنِي رَسُولُ اللَّهِ صلى الله عليه وسلم مُنْذُ أَسْلَمْتُ، وَلاَ رَآنِي إِلاَّ ضَحِكَ.",
+  "transcriptHash": "7a77e1695f3bf89e547f3e1cddb0a5dbfb9fe2fe1a1b5779c4b0ac9dd5c4f18d",
+  "transcriptCharacters": 252,
+  "billableCharacters": 252,
+  "cacheKey": "8b26a1baf8f65f21678fb6344988e4639de5deb1bc15e63694161c2973b0ee9b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/8b26a1baf8f65f21678fb6344988e4639de5deb1bc15e63694161c2973b0ee9b.mp3",
+  "byteLength": 102240,
+  "sha256": "1d65cfa5a6db926c5b9b63ad2bc6778b008b80f7d720ce71066ca76f8ad25f11",
+  "durationSeconds": 17.04
+}

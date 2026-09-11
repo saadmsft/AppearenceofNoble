@@ -1,15 +1,19 @@
-# The Noble Appearance · حلیۂ مبارک
+# The Noble Project · دی نوبل پروجیکٹ
 
-A respectful, source-first English and Urdu web library about the reported
-physical appearance of Prophet Muhammad ﷺ. **No depictions, portraits, or
-reconstructions.**
+A respectful, source-first English and Urdu library about the reported
+appearance and character of Prophet Muhammad ﷺ. **No depictions, portraits,
+historical voice reconstructions, or impersonation.**
 
 **Read online:** [English](https://saadmsft.github.io/AppearenceofNoble/?lang=en)
 · [اردو](https://saadmsft.github.io/AppearenceofNoble/?lang=ur)
-· [Search all narrations](https://saadmsft.github.io/AppearenceofNoble/?view=collection&lang=en)
+· [Search all narrations](https://saadmsft.github.io/AppearenceofNoble/?view=collection&shelf=all&lang=en)
 
 ## What is included
 
+- A project home with separate **Appearance** and **Character** collections.
+  Character introduces mercy, patience, humility, generosity, justice,
+  forgiveness, honesty, and family/community. The shared reader and search keep
+  the project collection distinct from the hadith-book source filter.
 - A continuous thematic journey beginning **Complexion → Eyes**, then the
   remaining features. Each chapter has distinct abstract ornamental motion,
   concise bilingual highlights, and source-reference buttons. Narration cards
@@ -35,6 +39,13 @@ reconstructions.**
   pauses when offscreen, in a hidden tab, or while a narration is open. The
   motion control persists locally; the system's reduced-motion setting always
   takes precedence. Existing bookmarks and preferences are preserved.
+- Continue reading, explicit read/unread marks, collection/chapter progress,
+  and private plain-text notes with immediate browser-local saving.
+- Private JSON backup/restore with preview, merge or replace, conflict
+  disclosure, storage-failure handling and deletion confirmation.
+- Saved synthetic MP3 narration in Arabic, English and Urdu for all **95
+  entries**. The 285 language mappings reuse **281 unique MP3 files** where
+  Arabic source text is shared. Playback makes no Azure Speech requests.
 
 Chapter highlights in `web/src/lib/chapters.ts` are original, selective summaries
 of the existing corpus, with retained primary-source IDs. Every highlight must
@@ -43,10 +54,14 @@ and hasan entries; cautioned reports require a second explicit choice. The
 animations are abstract decorations, not portraits, anatomical reconstructions,
 skin-colour samples, or recordings of the Prophet's ﷺ voice.
 
-The 10 September 2026 audit covers **71 entries, 67 unique primary references,
+The Appearance audit of 10 September 2026 covers **71 entries, 67 unique primary references,
 and 98 primary/related source URLs**. It includes 55 sahih, 9 hasan, and 7
 weak-category entries. See the [audit manifest](research/audit.json) for the
 method, corrections, limits, and full-Arabic transcription fingerprint.
+
+The [Character audit](research/character-audit.json) covers **24 entries, 24
+unique primary references and 25 cited URLs**, with three entries per theme.
+All use the conventional sahih classification of Bukhari or Muslim.
 
 There are no accounts, tracking services, advertisements, runtime AI requests,
 or third-party font requests. Bookmarks and preferences use local storage on the
@@ -101,16 +116,17 @@ Open the `/AppearenceofNoble/` path on the URL printed by Vite. The base path is
 intentional: it matches this repository's GitHub Pages address.
 
 ```sh
+pnpm --dir web exec playwright install chromium
 pnpm --dir web lint
 pnpm --dir web test
+pnpm --dir web audio:check
 pnpm --dir web build
-pnpm --dir web exec playwright install chromium
 pnpm --dir web test:e2e
 ```
 
-The dependency-free Node test runner validates data completeness, bilingual
-fields, filtering, search normalization, URL state, and storage failure
-handling. Playwright exercises the production build on desktop and mobile,
+The built-in Node test runner validates data, source fingerprints, filtering,
+URL state, personal storage and audio generation safeguards. Some isolated
+component tests also require Chromium. Playwright exercises the production build on desktop and mobile,
 including Urdu RTL, bookmarks, deep links, empty states, source access, and the
 research download. Production browser tests start their own server on port
 4173; keep that port free.
@@ -158,11 +174,11 @@ All navigation uses query parameters and hash fragments so links work on
 GitHub Pages without an SPA rewrite. Changing the repository name requires
 updating Vite's base, metadata URLs, repository links, and browser-test base URL.
 
-The default route opens the topic journey. `?view=collection` opens the
-searchable library. Earlier links containing search, topic, source or grade
-filters without a view still resolve to the library. Narration links opened
-from a chapter explicitly retain `view=journey` and its topic so reloading does
-not unexpectedly switch the reading context.
+The default route opens the project home. `?view=journey&shelf=appearance`
+and `?view=journey&shelf=character` open the separate journeys.
+`?view=collection&shelf=all` searches both collections. Earlier Appearance
+journey/filter links without a shelf retain their original meaning. Narration
+links retain their view, shelf and topic; private notes never enter share URLs.
 
 ## Correcting or extending the research
 
@@ -178,6 +194,35 @@ source-check date, keep stable entry IDs, and run the content and browser tests.
 When the corpus changes, carry out a new source check and update the audit
 counts and transcription digest. The tests deliberately reject unaudited
 changes to full Arabic or discrepancies between the audit and shipped corpus.
+
+## Release approvals and static audio
+
+Follow [RELEASES.md](RELEASES.md). Each release needs its own written plan and
+explicit user approval; a feature roadmap does not authorize future work.
+
+Release 2.0's approved audio approach is **generate once, play saved MP3s**.
+Azure Speech is used only by an explicitly invoked generation tool. Browser
+playback reads static audio assets; it does not call Azure Speech. Keys and
+tokens must never be committed, embedded in the browser, or printed in logs.
+Paid generation must not run automatically in the deployment workflow.
+The CI audio check is offline and verifies saved assets, transcripts, hashes
+and complete entry/language coverage. See the
+[audio operations guide](web/scripts/audio/README.md) for manual gated
+generation, conservative budgeting and cache/recovery rules.
+
+Stock synthetic voices read the Arabic source reports and the original
+English/Urdu summaries, with exact spoken transcripts and visible synthetic
+labels. English/Urdu audio is not a complete hadith translation. Voice samples
+require user approval before bulk generation, and all requests, including
+retries, count toward the approved synthesis allowance.
+
+Private notes, read/unread state and resume information stay in browser storage.
+They are not encrypted or automatically backed up; personal backup/restore is
+an explicit user action. Private notes must never enter the public research
+download, repository, or speech-generation inputs.
+
+The single-file HTML keeps offline text reading. Hosted MP3 playback still
+needs connectivity unless a reader separately saves the audio file.
 
 ## Acknowledgments
 

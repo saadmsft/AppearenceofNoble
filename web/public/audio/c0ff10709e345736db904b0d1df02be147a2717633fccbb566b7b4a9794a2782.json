@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-squatting-posture-qaila",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "This weakly graded report attributes to Qaila bint Makhramah a sighting of the Prophet may Allah bless him and grant him peace seated in the mosque in the qurfusa' posture, with the body drawn up. She describes his humble manner of sitting and says that the sight made her tremble with awe.",
+  "transcriptHash": "3272b45f6685606dda1381affc69c7c13d2410e81857fe6b1e28f65fe25d4d02",
+  "transcriptCharacters": 290,
+  "billableCharacters": 295,
+  "cacheKey": "c0ff10709e345736db904b0d1df02be147a2717633fccbb566b7b4a9794a2782",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c0ff10709e345736db904b0d1df02be147a2717633fccbb566b7b4a9794a2782.mp3",
+  "byteLength": 91584,
+  "sha256": "5c5cedd7c69550f0a890a6d2205642955ee214317e8b2999f47b28dafbb59826",
+  "durationSeconds": 15.264
+}

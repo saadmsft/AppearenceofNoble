@@ -1,0 +1,18 @@
+{
+  "entryId": "reddened-eyes-rising-voice-in-sermon",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir described the Prophet may Allah bless him and grant him peace preaching with reddened eyes, a raised voice and intense anger, as though warning people of an approaching army. The narration also records his gesture of joining two fingers when speaking about himself and the coming of the Hour.",
+  "transcriptHash": "985bb93f9b0a4cfd26b9806646e3094cae8b0b174b720bf4d036c748ce166f2f",
+  "transcriptCharacters": 298,
+  "billableCharacters": 298,
+  "cacheKey": "a0bc649571653c1f6551aa1a6fd2d9d00ec288840ffc1a761021a4b37c8f5695",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a0bc649571653c1f6551aa1a6fd2d9d00ec288840ffc1a761021a4b37c8f5695.mp3",
+  "byteLength": 96624,
+  "sha256": "da199f162cc5babdccf956b6ebd20a69f0cb82701c5ebcafd74574299f7ba984",
+  "durationSeconds": 16.104
+}

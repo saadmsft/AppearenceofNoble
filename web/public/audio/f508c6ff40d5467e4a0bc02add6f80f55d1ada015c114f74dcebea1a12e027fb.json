@@ -1,0 +1,18 @@
+{
+  "entryId": "smile-not-loud-laughter",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا نے فرمایا کہ انہوں نے نبی کریم صلی اللہ علیہ وسلم کو اتنا کھل کر ہنستے نہیں دیکھا کہ حلق کی جانب منہ کا اندرونی حصہ نظر آئے؛ وہ آپ صلی اللہ علیہ وسلم کو مسکراتے دیکھتی تھیں۔ ان کا بیان ذاتی مشاہدہ ہے اور اس میں منہ کے اندرونی حصے کے نظر آنے کا ذکر ہے۔",
+  "transcriptHash": "b87e3b16d6ba88323ffb7ce4000c276b0dbd2782e17046fea582730dbe7b98de",
+  "transcriptCharacters": 271,
+  "billableCharacters": 271,
+  "cacheKey": "f508c6ff40d5467e4a0bc02add6f80f55d1ada015c114f74dcebea1a12e027fb",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/f508c6ff40d5467e4a0bc02add6f80f55d1ada015c114f74dcebea1a12e027fb.mp3",
+  "byteLength": 117360,
+  "sha256": "e09d82f120f77ad2d138c139d9161c411c25b383a0efe68abc56ecff620eb6c2",
+  "durationSeconds": 19.56
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-reclining-legs-crossed-abdullah-zayd",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَبْدُ اللَّهِ بْنُ مَسْلَمَةَ، عَنْ مَالِكٍ، عَنِ ابْنِ شِهَابٍ، عَنْ عَبَّادِ بْنِ تَمِيمٍ، عَنْ عَمِّهِ، أَنَّهُ رَأَى رَسُولَ اللَّهِ صلى الله عليه وسلم مُسْتَلْقِيًا فِي الْمَسْجِدِ، وَاضِعًا إِحْدَى رِجْلَيْهِ عَلَى الأُخْرَى. وَعَنِ ابْنِ شِهَابٍ عَنْ سَعِيدِ بْنِ الْمُسَيَّبِ قَالَ كَانَ عُمَرُ وَعُثْمَانُ يَفْعَلاَنِ ذَلِكَ.",
+  "transcriptHash": "5957be765c2a590b864b19ab9d6aeb391c7463ea9b9b920706903e96769e3d08",
+  "transcriptCharacters": 346,
+  "billableCharacters": 346,
+  "cacheKey": "b21e3146370185598a310a797b704003e101fe061797975c6e3e797a27ec9576",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b21e3146370185598a310a797b704003e101fe061797975c6e3e797a27ec9576.mp3",
+  "byteLength": 131472,
+  "sha256": "98594d1943442cba55b2723747c7677f7875d39c349290cfe2c947943723017c",
+  "durationSeconds": 21.912
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "character-generosity-flock-between-mountains",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "وَحَدَّثَنَا عَاصِمُ بْنُ النَّضْرِ التَّيْمِيُّ، حَدَّثَنَا خَالِدٌ، - يَعْنِي ابْنَ الْحَارِثِ - حَدَّثَنَا حُمَيْدٌ، عَنْ مُوسَى بْنِ أَنَسٍ، عَنْ أَبِيهِ، قَالَ مَا سُئِلَ رَسُولُ اللَّهِ صلى الله عليه وسلم عَلَى الإِسْلاَمِ شَيْئًا إِلاَّ أَعْطَاهُ - قَالَ - فَجَاءَهُ رَجُلٌ فَأَعْطَاهُ غَنَمًا بَيْنَ جَبَلَيْنِ فَرَجَعَ إِلَى قَوْمِهِ فَقَالَ يَا قَوْمِ أَسْلِمُوا فَإِنَّ مُحَمَّدًا يُعْطِي عَطَاءً لاَ يَخْشَى الْفَاقَةَ .",
+  "transcriptHash": "570a80910364873b3065a4866f788380ad9f74d018e7de8f51a4f7901a9cc841",
+  "transcriptCharacters": 432,
+  "billableCharacters": 432,
+  "cacheKey": "34b3f6bacaed23bfa8cef1eaff93bc58e1961bbb29098ec0e03ee25f0779cb26",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/34b3f6bacaed23bfa8cef1eaff93bc58e1961bbb29098ec0e03ee25f0779cb26.mp3",
+  "byteLength": 153648,
+  "sha256": "07855c34b67a099d5f269186ea62659155aa4de113e746ca9e84ca9c054df43a",
+  "durationSeconds": 25.608
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "perfume-shine-on-head-and-beard",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha reported applying fine perfume to the Prophet may Allah bless him and grant him peace until she could see its glistening trace on his head and beard. This account gives a visible consequence of perfume that had been applied, alongside the corpus's reports of fragrance experienced by other companions.",
+  "transcriptHash": "0367a9efd04563c7dc165ead82ab3dd602687b378e16eba0864ad447014f1edc",
+  "transcriptCharacters": 307,
+  "billableCharacters": 312,
+  "cacheKey": "031d90f78dd21a606f20d8243f2de042965fcb3c554472d0153d48f312636c1a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/031d90f78dd21a606f20d8243f2de042965fcb3c554472d0153d48f312636c1a.mp3",
+  "byteLength": 101232,
+  "sha256": "5ee69d10c1fe874d3d3efbb88349c07e8d5b4a28dc045269cde2710a9dbaaf24",
+  "durationSeconds": 16.872
+}

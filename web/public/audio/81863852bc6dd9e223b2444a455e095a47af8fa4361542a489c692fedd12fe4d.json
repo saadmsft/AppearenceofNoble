@@ -1,0 +1,18 @@
+{
+  "entryId": "distinct-speech-easily-understood",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا نے نبی کریم صلی اللہ علیہ وسلم کا کلام واضح اور الگ الگ بیان ہونے والا بتایا، جسے سننے والے سمجھ لیتے تھے۔ ان کا مختصر مشاہدہ سننے والوں تک الفاظ کی ادائیگی کے بارے میں ہے۔ اس میں کوئی خاص خطبہ، گفتگو یا موقع بیان نہیں ہوا۔",
+  "transcriptHash": "936f31f3a387126aa948840fef12e606203402376fc515eb8d730b601bed69ab",
+  "transcriptCharacters": 243,
+  "billableCharacters": 243,
+  "cacheKey": "81863852bc6dd9e223b2444a455e095a47af8fa4361542a489c692fedd12fe4d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/81863852bc6dd9e223b2444a455e095a47af8fa4361542a489c692fedd12fe4d.mp3",
+  "byteLength": 112320,
+  "sha256": "40540702c5c7c95993578e644e9adfda95a4a5463726e7653e970b568ef534a5",
+  "durationSeconds": 18.72
+}

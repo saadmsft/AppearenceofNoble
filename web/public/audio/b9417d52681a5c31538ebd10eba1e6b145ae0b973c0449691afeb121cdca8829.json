@@ -1,0 +1,18 @@
+{
+  "entryId": "character-mercy-shortening-prayer",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Qatada transmits the Prophet's explanation that he could begin prayer intending to make it lengthy, then hear a child crying and shorten it. He gave the mother's hardship as his reason. The report shows consideration for her circumstances changing the length of prayer he had initially intended.",
+  "transcriptHash": "a92fe45c8c252be844152a812dc03121e5823748e4b6f12f0efb13d114dafb9d",
+  "transcriptCharacters": 299,
+  "billableCharacters": 309,
+  "cacheKey": "b9417d52681a5c31538ebd10eba1e6b145ae0b973c0449691afeb121cdca8829",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b9417d52681a5c31538ebd10eba1e6b145ae0b973c0449691afeb121cdca8829.mp3",
+  "byteLength": 102672,
+  "sha256": "56618d1f3a2fc84ceed3cd28959bbdcc103063837c54b7af914797d6928b4429",
+  "durationSeconds": 17.112
+}

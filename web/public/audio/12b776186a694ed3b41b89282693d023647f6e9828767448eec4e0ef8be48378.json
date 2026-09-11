@@ -1,0 +1,18 @@
+{
+  "entryId": "morning-gathering-poetry-and-smiles",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "أَخْبَرَنَا أَحْمَدُ بْنُ سُلَيْمَانَ، قَالَ حَدَّثَنَا يَحْيَى بْنُ آدَمَ، قَالَ حَدَّثَنَا زُهَيْرٌ، وَذَكَرَ، آخَرَ عَنْ سِمَاكِ بْنِ حَرْبٍ، قَالَ قُلْتُ لِجَابِرِ بْنِ سَمُرَةَ كُنْتَ تُجَالِسُ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ نَعَمْ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم إِذَا صَلَّى الْفَجْرَ جَلَسَ فِي مُصَلاَّهُ حَتَّى تَطْلُعَ الشَّمْسُ فَيَتَحَدَّثُ أَصْحَابُهُ يَذْكُرُونَ حَدِيثَ الْجَاهِلِيَّةِ وَيُنْشِدُونَ الشِّعْرَ وَيَضْحَكُونَ وَيَتَبَسَّمُ صلى الله عليه وسلم .",
+  "transcriptHash": "fe6d0b37b631c89d97c22b13a7229596d8c441713437fb386160962fb9ff5304",
+  "transcriptCharacters": 493,
+  "billableCharacters": 493,
+  "cacheKey": "12b776186a694ed3b41b89282693d023647f6e9828767448eec4e0ef8be48378",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/12b776186a694ed3b41b89282693d023647f6e9828767448eec4e0ef8be48378.mp3",
+  "byteLength": 180000,
+  "sha256": "0ee98ab6e8b7a9354a7771ba24a3f656746a3f4a5348c51e8e0aefbc62f6d820",
+  "durationSeconds": 30
+}

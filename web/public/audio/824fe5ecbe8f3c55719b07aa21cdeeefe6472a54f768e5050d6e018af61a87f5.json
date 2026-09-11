@@ -1,0 +1,18 @@
+{
+  "entryId": "perfume-shine-on-head-and-beard",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا نے بیان کیا کہ وہ نبی کریم صلی اللہ علیہ وسلم کو عمدہ خوشبو لگاتیں، یہاں تک کہ سر اور داڑھی میں اس کی چمک دیکھتی تھیں۔ یہ لگائی ہوئی خوشبو کے ایک ظاہری اثر کا بیان ہے، اور دوسرے صحابہ کے محسوس کیے ہوئے خوشبو کے بیانات سے الگ تفصیل دیتا ہے۔",
+  "transcriptHash": "19a2a50f46e8800cdf0033ac8c354e0349d38056cfb91553b42fcb316a7eaba1",
+  "transcriptCharacters": 259,
+  "billableCharacters": 259,
+  "cacheKey": "824fe5ecbe8f3c55719b07aa21cdeeefe6472a54f768e5050d6e018af61a87f5",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/824fe5ecbe8f3c55719b07aa21cdeeefe6472a54f768e5050d6e018af61a87f5.mp3",
+  "byteLength": 111744,
+  "sha256": "922d3fbc06eee1e3fb28b76534e5cd17a7df239f8a9637dfd5f81480cc78f3e4",
+  "durationSeconds": 18.624
+}

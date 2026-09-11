@@ -1,0 +1,18 @@
+{
+  "entryId": "a-sound-like-a-mill-from-weeping",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عبداللہ بن شخیر رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کو نماز پڑھتے دیکھا اور گریے کی وجہ سے آپ صلی اللہ علیہ وسلم کے سینے سے آواز سنی۔ انہوں نے اسے چکی کی آواز سے تشبیہ دی۔ روایت ان کی دیکھی ہوئی نماز کی ایک سنائی دینے والی کیفیت محفوظ کرتی ہے۔",
+  "transcriptHash": "fe707d69e41adf3382de8572de9e71b55f6564fc168bd4f810d985b30aed1156",
+  "transcriptCharacters": 251,
+  "billableCharacters": 251,
+  "cacheKey": "ffd86731fd0d26e18cb729b153603199777911a0e95877d88b46ad8cd9ef8444",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ffd86731fd0d26e18cb729b153603199777911a0e95877d88b46ad8cd9ef8444.mp3",
+  "byteLength": 117648,
+  "sha256": "b9ff70802837981b74bbccbd0cd336049aedc39013e525ada259631702b13df6",
+  "durationSeconds": 19.608
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "morning-gathering-poetry-and-smiles",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir ibn Samurah said that after the dawn prayer the Prophet may Allah bless him and grant him peace would remain seated in his place until sunrise. His companions talked about the time before Islam and recited poetry. They would laugh, while the Prophet may Allah bless him and grant him peace would smile.",
+  "transcriptHash": "68cb69fc8d5e68b1c313e3826abc2a3fe82cc27bed4317907d8b829e73ca9a93",
+  "transcriptCharacters": 308,
+  "billableCharacters": 308,
+  "cacheKey": "6e2ba861632ef2e47f91da65ba0633e9e886052e0160ca0040c634f92a63f679",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6e2ba861632ef2e47f91da65ba0633e9e886052e0160ca0040c634f92a63f679.mp3",
+  "byteLength": 108432,
+  "sha256": "e2d336c575e4e560941e9d970c424d7ea53f2e64755d74abbc74473f9e1307d8",
+  "durationSeconds": 18.072
+}

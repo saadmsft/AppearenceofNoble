@@ -1,0 +1,18 @@
+{
+  "entryId": "palm-softer-than-silk-scent",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas recalled that no silk or brocade he had touched was softer than the Prophet's may Allah bless him and grant him peace palm. He also said that he had never encountered a fragrance more pleasant than the Prophet's may Allah bless him and grant him peace scent. Both descriptions are expressed through Anas's own sensory comparisons.",
+  "transcriptHash": "14f1ccb6b2e1a4f5fdddac8326db514db4472fcc284eb7df1152dd0536c394fa",
+  "transcriptCharacters": 335,
+  "billableCharacters": 350,
+  "cacheKey": "d1d87d6d881e9d7d7702b01629dd6d0892489dfab6c86bcd79d7165821927415",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d1d87d6d881e9d7d7702b01629dd6d0892489dfab6c86bcd79d7165821927415.mp3",
+  "byteLength": 112032,
+  "sha256": "7c36b9d817a99cb4469403cdc43e9421a06e625abc85cf5a47485d69d857e22a",
+  "durationSeconds": 18.672
+}

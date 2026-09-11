@@ -1,0 +1,18 @@
+{
+  "entryId": "build-broad-shoulders-bara",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "براء رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کو میانہ قد اور کندھوں کے درمیان کشادہ فاصلے والا بتایا۔ اسی روایت میں کانوں کی لو تک بھرپور بالوں اور سرخ لباس کا ذکر ہے۔ آخر میں براء رضی اللہ عنہ کہتے ہیں کہ انہوں نے اس سے زیادہ خوبصورت کوئی چیز نہیں دیکھی۔",
+  "transcriptHash": "1ed66cef4cd1a6bed4b0fc4343f623125c9790705e38a4c0ef77fd2f42e3e9af",
+  "transcriptCharacters": 259,
+  "billableCharacters": 259,
+  "cacheKey": "cdaaf3389d86a1eaa9d5a6fd8b4f81d6eac59094425a6254f0ec35dc30c815cf",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/cdaaf3389d86a1eaa9d5a6fd8b4f81d6eac59094425a6254f0ec35dc30c815cf.mp3",
+  "byteLength": 117216,
+  "sha256": "fdb35f1eb04e991c70025b9a8ff9437ad0d2ec4ff852288689dc3518ef537a46",
+  "durationSeconds": 19.536
+}

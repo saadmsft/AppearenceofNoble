@@ -1,0 +1,18 @@
+{
+  "entryId": "hands-cold-as-ice-abu-juhaifa",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "After prayer at al-Batha', people took the Prophet's may Allah bless him and grant him peace hands and passed them over their faces. Abu Juhaifa placed a hand of the Prophet may Allah bless him and grant him peace on his own face and recalled that it felt cooler than snow and smelled more pleasant than musk.",
+  "transcriptHash": "21e8b317da3181015360e428dd89abaafb10dadbb3d89ce9d10b1ad20475d35a",
+  "transcriptCharacters": 309,
+  "billableCharacters": 319,
+  "cacheKey": "b7db53ded07cfaf39e8810197577f7b467a193d8a560680d5efb087dffe031e5",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b7db53ded07cfaf39e8810197577f7b467a193d8a560680d5efb087dffe031e5.mp3",
+  "byteLength": 100224,
+  "sha256": "ca47b98fef31e0b93a8ffcb72572610e8b3cdc8dad1ce709b0770bf2acc179f4",
+  "durationSeconds": 16.704
+}

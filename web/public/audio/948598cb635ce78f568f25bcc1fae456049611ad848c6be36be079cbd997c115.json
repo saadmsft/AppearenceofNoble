@@ -1,0 +1,18 @@
+{
+  "entryId": "hair-length-between-wafrah-and-jumma",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا نے نبی کریم صلی اللہ علیہ وسلم کے بالوں کو وفرہ اور جمہ کے درمیان بتایا: کانوں کی لو تک کی لمبائی سے زیادہ اور کندھوں تک کی لمبائی سے کم۔ اس مختصر روایت میں بالوں کی نسبتی لمبائی بیان ہوئی ہے، کوئی عددی پیمائش یا ترتیب کی تفصیلی وضاحت نہیں۔",
+  "transcriptHash": "f96d2dc54584379062947fb3fd8ad86600efce6430b68216328370c23c696202",
+  "transcriptCharacters": 260,
+  "billableCharacters": 260,
+  "cacheKey": "948598cb635ce78f568f25bcc1fae456049611ad848c6be36be079cbd997c115",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/948598cb635ce78f568f25bcc1fae456049611ad848c6be36be079cbd997c115.mp3",
+  "byteLength": 113616,
+  "sha256": "c9ff5a38e5a12110167ea33272779c85e14d1d3da7baaf3a759a22c9ff6407b4",
+  "durationSeconds": 18.936
+}

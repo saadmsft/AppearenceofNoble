@@ -1,0 +1,18 @@
+{
+  "entryId": "large-hands-and-feet-anas",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas described the Prophet may Allah bless him and grant him peace as having large hands and feet and a handsome face. He said that he had seen no one like him, either before or afterwards. The size description appears directly in Bukhari's Arabic text, rather than depending on a weak composite portrait.",
+  "transcriptHash": "8a8da4c74f3342dc7619c15995a51779f7fca231a1db1101db11f3724786e6ac",
+  "transcriptCharacters": 305,
+  "billableCharacters": 310,
+  "cacheKey": "6b75787d40d4e2e7ecf19932a823a9f68c873fc90fce86816fd2216c3837bf3a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6b75787d40d4e2e7ecf19932a823a9f68c873fc90fce86816fd2216c3837bf3a.mp3",
+  "byteLength": 109584,
+  "sha256": "7574ce13e213215d6760391d0f66ae589b1d32770e71873e985638888313c04c",
+  "durationSeconds": 18.264
+}

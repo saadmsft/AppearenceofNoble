@@ -1,0 +1,18 @@
+{
+  "entryId": "character-forgiveness-after-an-armed-threat",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر رضی اللہ عنہ نجد کی جانب ایک مہم سے واپسی پر نبی صلی اللہ علیہ وسلم اور صحابہ کے آرام کرنے کا واقعہ بیان کرتے ہیں۔ ایک اعرابی نے آپ صلی اللہ علیہ وسلم کے سوتے ہوئے آپ کی تلوار لے کر دھمکی دی۔ نبی صلی اللہ علیہ وسلم نے بعد میں صحابہ کو بتایا کہ آپ نے جواب میں اللہ کا نام لیا تھا۔ جابر رضی اللہ عنہ کی روایت کے آخر میں ہے کہ اس شخص کو سزا نہیں دی گئی۔",
+  "transcriptHash": "8bdb4a03edd8d08209e928a782376e3974c0534a83e090731a2632616bbbcb8e",
+  "transcriptCharacters": 355,
+  "billableCharacters": 355,
+  "cacheKey": "2893ec972ee42cf8e2b691cf52a375540a5a9269a987071f986cf5d80bd7d7da",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/2893ec972ee42cf8e2b691cf52a375540a5a9269a987071f986cf5d80bd7d7da.mp3",
+  "byteLength": 164304,
+  "sha256": "90b8d8e5001b3be6d274ca8f5397f129adec49f426295db974bfaef45807ae77",
+  "durationSeconds": 27.384
+}

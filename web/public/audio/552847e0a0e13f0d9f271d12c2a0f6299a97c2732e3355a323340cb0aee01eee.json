@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-descending-slope-ali",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Ali described the Prophet may Allah bless him and grant him peace inclining forward as he walked, comparing his movement to someone descending a slope. The brief narration concentrates on the manner of his gait; it does not identify a particular journey or describe the terrain where Ali observed him.",
+  "transcriptHash": "2e6bc9670d2239475cd5c9ae146ef3e5720837a4e4e01005629d6b3c217ff96f",
+  "transcriptCharacters": 301,
+  "billableCharacters": 301,
+  "cacheKey": "552847e0a0e13f0d9f271d12c2a0f6299a97c2732e3355a323340cb0aee01eee",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/552847e0a0e13f0d9f271d12c2a0f6299a97c2732e3355a323340cb0aee01eee.mp3",
+  "byteLength": 100224,
+  "sha256": "67de4338160b2b0ec3b15717c49c4bc1c9f120a0429e98a57afa899da8c5b2ef",
+  "durationSeconds": 16.704
+}

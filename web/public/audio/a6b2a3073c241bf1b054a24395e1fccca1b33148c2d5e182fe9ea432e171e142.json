@@ -1,0 +1,18 @@
+{
+  "entryId": "character-generosity-flock-between-mountains",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت انس رضی اللہ عنہ اسلام کے تعلق سے نبی کریم صلی اللہ علیہ وسلم کے عطا فرمانے کا ذکر کرتے ہیں، پھر ایک شخص کو دو پہاڑوں کے درمیان موجود ریوڑ دینے کا واقعہ سناتے ہیں۔ اس شخص نے اپنی قوم میں واپس جا کر اسلام قبول کرنے کی ترغیب دی اور آپ صلی اللہ علیہ وسلم کے عطیے کو محتاجی کے اندیشے سے بالاتر قرار دیا۔ یہ اس شخص کا تاثر تھا۔",
+  "transcriptHash": "6f73fa3f0975eb1ec806dd1fe19f0678cd44ddee2efbf47df3eef088171dbbb0",
+  "transcriptCharacters": 327,
+  "billableCharacters": 327,
+  "cacheKey": "a6b2a3073c241bf1b054a24395e1fccca1b33148c2d5e182fe9ea432e171e142",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a6b2a3073c241bf1b054a24395e1fccca1b33148c2d5e182fe9ea432e171e142.mp3",
+  "byteLength": 148896,
+  "sha256": "de3827707d72fcee7deacdfbd9da090d6bd89b8b7dc60b69bdc646717cbc58e0",
+  "durationSeconds": 24.816
+}

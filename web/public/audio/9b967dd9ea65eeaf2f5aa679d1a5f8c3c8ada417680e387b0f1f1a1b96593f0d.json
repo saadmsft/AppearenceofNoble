@@ -1,0 +1,18 @@
+{
+  "entryId": "character-honesty-truthfulness-shapes-character",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عبداللہ بن مسعود رضی اللہ عنہ نبی صلی اللہ علیہ وسلم کی تعلیم نقل کرتے ہیں کہ مسلسل سچ بولنے سے انسان سچا بنتا ہے اور سچائی اسے نیکی اور جنت کی طرف لے جاتی ہے۔ مسلسل جھوٹ اس کے برعکس بدکرداری اور انجام کی پکڑ کی طرف لے جاتا ہے۔ روایت میں دیانت ایک مستقل عمل ہے جو شخصیت کو بناتا ہے، صرف کسی ایک موقع پر درست الفاظ کہنے کا نام نہیں۔",
+  "transcriptHash": "7883d04aa83a93ae8ef5507b5f8edab992997595fefe9de0b401f3eeb3ddc0dc",
+  "transcriptCharacters": 331,
+  "billableCharacters": 331,
+  "cacheKey": "9b967dd9ea65eeaf2f5aa679d1a5f8c3c8ada417680e387b0f1f1a1b96593f0d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/9b967dd9ea65eeaf2f5aa679d1a5f8c3c8ada417680e387b0f1f1a1b96593f0d.mp3",
+  "byteLength": 152064,
+  "sha256": "e4cfcffc2bbae73b4b831bfab48b18634e4f2c0530e89f603f1593704ae45932",
+  "durationSeconds": 25.344
+}

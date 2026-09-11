@@ -1,0 +1,18 @@
+{
+  "entryId": "a-sound-like-a-mill-from-weeping",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ مُحَمَّدِ بْنِ سَلاَّمٍ، حَدَّثَنَا يَزِيدُ، - يَعْنِي ابْنَ هَارُونَ - أَخْبَرَنَا حَمَّادٌ، - يَعْنِي ابْنَ سَلَمَةَ - عَنْ ثَابِتٍ، عَنْ مُطَرِّفٍ، عَنْ أَبِيهِ، قَالَ رَأَيْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم يُصَلِّي وَفِي صَدْرِهِ أَزِيزٌ كَأَزِيزِ الرَّحَى مِنَ الْبُكَاءِ صلى الله عليه وسلم .",
+  "transcriptHash": "d8aac94e8d9ae215557e2e2652b2dfa437d89721b927a74ce8df5cfb0b61c25d",
+  "transcriptCharacters": 337,
+  "billableCharacters": 337,
+  "cacheKey": "50ac514cf07934291fe40812e0c0945adac977a6f97f126a8214853f0f115650",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/50ac514cf07934291fe40812e0c0945adac977a6f97f126a8214853f0f115650.mp3",
+  "byteLength": 129312,
+  "sha256": "25efa7ee9ff4bb6f1bb2bae2858adba0e8840dfd7a100efe566b9b798ad83f15",
+  "durationSeconds": 21.552
+}

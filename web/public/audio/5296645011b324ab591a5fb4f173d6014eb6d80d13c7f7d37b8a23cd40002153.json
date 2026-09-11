@@ -1,0 +1,18 @@
+{
+  "entryId": "greyness-hidden-by-hair-oil",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Asked about the Prophet's may Allah bless him and grant him peace grey hair, Jabir ibn Samurah said that he could not see it when the head was oiled, but that some became visible when it was not. The report describes the effect of oil on the appearance of existing grey hairs.",
+  "transcriptHash": "78f84da15d167e043064ca0ff7c2260318439877c326481ca88797b66b333fcb",
+  "transcriptCharacters": 276,
+  "billableCharacters": 281,
+  "cacheKey": "5296645011b324ab591a5fb4f173d6014eb6d80d13c7f7d37b8a23cd40002153",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5296645011b324ab591a5fb4f173d6014eb6d80d13c7f7d37b8a23cd40002153.mp3",
+  "byteLength": 90720,
+  "sha256": "df280d9a75be13733a6ba72e826c2a51c243ade200b1a0414b99814021109737",
+  "durationSeconds": 15.12
+}

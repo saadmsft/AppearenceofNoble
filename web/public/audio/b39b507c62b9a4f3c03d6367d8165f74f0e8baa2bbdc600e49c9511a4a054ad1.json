@@ -1,0 +1,18 @@
+{
+  "entryId": "face-changed-at-forbidden-images",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا نے بیان کیا کہ نبی کریم صلی اللہ علیہ وسلم گھر میں تشریف لائے جبکہ تصویروں والا پردہ موجود تھا۔ آپ صلی اللہ علیہ وسلم کے چہرے کی کیفیت بدل گئی، پھر آپ صلی اللہ علیہ وسلم نے پردہ پکڑ کر پھاڑ دیا۔ اس کے بعد روایت میں ایسی تصویریں بنانے والوں کے عذاب کی تنبیہ بیان ہوئی ہے۔",
+  "transcriptHash": "95ef760f082551f52c07418bb7f7edccdabd9ad4d2a627ff7f018378af20bebe",
+  "transcriptCharacters": 290,
+  "billableCharacters": 290,
+  "cacheKey": "b39b507c62b9a4f3c03d6367d8165f74f0e8baa2bbdc600e49c9511a4a054ad1",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b39b507c62b9a4f3c03d6367d8165f74f0e8baa2bbdc600e49c9511a4a054ad1.mp3",
+  "byteLength": 131904,
+  "sha256": "145e02e86c3fcb41e145d0379b029c6c0b1f3fbbf59fc81de3b6521925f0d819",
+  "durationSeconds": 21.984
+}

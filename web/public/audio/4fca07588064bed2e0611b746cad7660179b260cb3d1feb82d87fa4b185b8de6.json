@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-descending-slope-ali",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "علی رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کی چال میں آگے کی طرف میلان کا ذکر کیا اور اسے ڈھلان سے اترنے والے کی حرکت سے تشبیہ دی۔ یہ مختصر روایت چلنے کا انداز بیان کرتی ہے؛ کسی خاص سفر یا مشاہدے کی جگہ کی زمین کا ذکر نہیں کرتی۔",
+  "transcriptHash": "91731ea2a68ed90ee369b5f98e11598a0632b98c4f295451247aa11ca0b5894d",
+  "transcriptCharacters": 233,
+  "billableCharacters": 233,
+  "cacheKey": "4fca07588064bed2e0611b746cad7660179b260cb3d1feb82d87fa4b185b8de6",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/4fca07588064bed2e0611b746cad7660179b260cb3d1feb82d87fa4b185b8de6.mp3",
+  "byteLength": 104976,
+  "sha256": "7877b1ebe54af84cf91bc4e0ab6aab3a90f836604cab273d60246f3862bfa1ff",
+  "durationSeconds": 17.496
+}

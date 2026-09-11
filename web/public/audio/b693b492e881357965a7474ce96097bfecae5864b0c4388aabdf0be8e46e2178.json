@@ -1,0 +1,18 @@
+{
+  "entryId": "large-hands-and-feet-anas",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا أَبُو النُّعْمَانِ، حَدَّثَنَا جَرِيرُ بْنُ حَازِمٍ، عَنْ قَتَادَةَ، عَنْ أَنَسٍ ـ رضى الله عنه ـ قَالَ كَانَ النَّبِيُّ صلى الله عليه وسلم ضَخْمَ الْيَدَيْنِ وَالْقَدَمَيْنِ حَسَنَ الْوَجْهِ، لَمْ أَرَ بَعْدَهُ وَلاَ قَبْلَهُ مِثْلَهُ، وَكَانَ بَسِطَ الْكَفَّيْنِ.",
+  "transcriptHash": "709f9583cb2481643b3ae387a65bdd988447145dc481f7f673e5a86009d56396",
+  "transcriptCharacters": 276,
+  "billableCharacters": 276,
+  "cacheKey": "b693b492e881357965a7474ce96097bfecae5864b0c4388aabdf0be8e46e2178",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b693b492e881357965a7474ce96097bfecae5864b0c4388aabdf0be8e46e2178.mp3",
+  "byteLength": 104400,
+  "sha256": "b251715115a2f90daa49b2f16329c67026f8a3512ceaf99ef62be6094bb11cc2",
+  "durationSeconds": 17.4
+}

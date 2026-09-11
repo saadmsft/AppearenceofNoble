@@ -1,0 +1,18 @@
+{
+  "entryId": "teeth-visible-when-laughing",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "رمضان کے روزے کی خلاف ورزی کے کفارے کے لیے آنے والے ایک شخص کو تقسیم کرنے کے لیے کھجوریں دی گئیں۔ اس نے کہا کہ آس پاس اس کے گھرانے سے زیادہ محتاج کوئی نہیں۔ نبی کریم صلی اللہ علیہ وسلم ہنسے یہاں تک کہ دانت ظاہر ہوئے، پھر اس کے گھر والوں کو وہ کھجوریں دینے کی اجازت دی۔ ابو ہریرہ رضی اللہ عنہ نے یہ ظاہری کیفیت نقل کی۔",
+  "transcriptHash": "4f6552013216bd4180744cf0cc59447cc14ecd22dbfc00c303060304614d283a",
+  "transcriptCharacters": 317,
+  "billableCharacters": 317,
+  "cacheKey": "ffe81bde9e357db0fc72b4909ded5847fa3cc863f60a77791ed6632804739a4d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ffe81bde9e357db0fc72b4909ded5847fa3cc863f60a77791ed6632804739a4d.mp3",
+  "byteLength": 144288,
+  "sha256": "d2b8c56b9dc78b668771ae891b62e3eee488be9ea47909d672d394aa65bfda3a",
+  "durationSeconds": 24.048
+}

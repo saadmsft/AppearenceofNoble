@@ -1,0 +1,18 @@
+{
+  "entryId": "moderate-height-broad-shoulders-red-cloak",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا حَفْصُ بْنُ عُمَرَ، حَدَّثَنَا شُعْبَةُ، عَنْ أَبِي إِسْحَاقَ، عَنِ الْبَرَاءِ بْنِ عَازِبٍ ـ رضى الله عنهما ـ قَالَ كَانَ النَّبِيُّ صلى الله عليه وسلم مَرْبُوعًا، بَعِيدَ مَا بَيْنَ الْمَنْكِبَيْنِ، لَهُ شَعَرٌ يَبْلُغُ شَحْمَةَ أُذُنِهِ، رَأَيْتُهُ فِي حُلَّةٍ حَمْرَاءَ، لَمْ أَرَ شَيْئًا قَطُّ أَحْسَنَ مِنْهُ . قَالَ يُوسُفُ بْنُ أَبِي إِسْحَاقَ عَنْ أَبِيهِ إِلَى مَنْكِبَيْهِ.",
+  "transcriptHash": "5af4373d4f800b84a8f37f6516fc16ff46bf32a255dcd275d05862645fe1676a",
+  "transcriptCharacters": 395,
+  "billableCharacters": 395,
+  "cacheKey": "e82cca994273534afd398449c869ed91b7063eb6d3401d8a47f93b2c549db50a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e82cca994273534afd398449c869ed91b7063eb6d3401d8a47f93b2c549db50a.mp3",
+  "byteLength": 151776,
+  "sha256": "9dc28e9bfd990f52e6a42f3f8d832f4f8feacf3d6e49415f2028653ecf145372",
+  "durationSeconds": 25.296
+}

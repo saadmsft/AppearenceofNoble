@@ -1,0 +1,18 @@
+{
+  "entryId": "grey-hair-confined-to-the-temples",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا أَبُو نُعَيْمٍ، حَدَّثَنَا هَمَّامٌ، عَنْ قَتَادَةَ، قَالَ سَأَلْتُ أَنَسًا هَلْ خَضَبَ النَّبِيُّ صلى الله عليه وسلم قَالَ لاَ، إِنَّمَا كَانَ شَىْءٌ فِي صُدْغَيْهِ.",
+  "transcriptHash": "605acf237bfd732fc52f7f735d661c6b10040d815444dd0825659398b3de398b",
+  "transcriptCharacters": 177,
+  "billableCharacters": 177,
+  "cacheKey": "39cf0c8f3dfde91fb1e3e62454d1a089c2e3e2625eed7bd50916effbababc943",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/39cf0c8f3dfde91fb1e3e62454d1a089c2e3e2625eed7bd50916effbababc943.mp3",
+  "byteLength": 70560,
+  "sha256": "7a0896ee9af688c63fffc9a71ffbc033a16d8ba1621f02977b5ab9e8f2818848",
+  "durationSeconds": 11.76
+}

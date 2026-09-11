@@ -1,0 +1,18 @@
+{
+  "entryId": "character-justice-fairness-between-children",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Amir heard al-Nu'man ibn Bashir describe a gift his father had singled him out to receive. Asked to witness it, the Prophet may Allah bless him and grant him peace first asked whether the other children had received something comparable. On hearing that they had not, he urged reverence for Allah and fairness between children. Al-Nu'man says his father then withdrew the gift.",
+  "transcriptHash": "fab31ca8f903fe5fa002ea60406fa35573e10535431adcf8d97ab4330411e9bd",
+  "transcriptCharacters": 377,
+  "billableCharacters": 387,
+  "cacheKey": "c975f12a049ce758bfc3813514fa56321d25e76fd34a8b15ee3c4c64ea3a2047",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c975f12a049ce758bfc3813514fa56321d25e76fd34a8b15ee3c4c64ea3a2047.mp3",
+  "byteLength": 134784,
+  "sha256": "f1398cbada08476614fa355500aeaca4989b5c42dbaa6f97b75eef0e9a195684",
+  "durationSeconds": 22.464
+}

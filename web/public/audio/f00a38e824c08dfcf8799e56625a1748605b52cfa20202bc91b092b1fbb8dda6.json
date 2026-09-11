@@ -1,0 +1,18 @@
+{
+  "entryId": "character-patience-first-shock",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas describes the Prophet advising a woman weeping beside a grave to be mindful of Allah and patient. Not recognising him, she told him to leave her. When she later came to explain that she had not known who he was, his recorded answer returned to patience at the first impact of loss.",
+  "transcriptHash": "c58a988523860dc5abb758c49424dab9a83dbeaa4684d7faae990cb4ece6b7b1",
+  "transcriptCharacters": 286,
+  "billableCharacters": 286,
+  "cacheKey": "f00a38e824c08dfcf8799e56625a1748605b52cfa20202bc91b092b1fbb8dda6",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/f00a38e824c08dfcf8799e56625a1748605b52cfa20202bc91b092b1fbb8dda6.mp3",
+  "byteLength": 102816,
+  "sha256": "c33dc8c2a4f068ce579bcf8efd265d0e75e92b886d632393e02398e43ec15446",
+  "durationSeconds": 17.136
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "character-honesty-upholding-a-covenant",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حذیفہ رضی اللہ عنہ بتاتے ہیں کہ وہ بدر میں کیوں شریک نہ ہوئے۔ قریش نے انہیں اور ان کے والد کو روک کر یہ عہد لیا تھا کہ وہ مدینہ واپس جائیں گے اور محمد صلی اللہ علیہ وسلم کے ساتھ مل کر نہیں لڑیں گے۔ جب انہوں نے نبی صلی اللہ علیہ وسلم کو صورتِ حال بتائی تو آپ صلی اللہ علیہ وسلم نے عہد نبھانے کی ہدایت دی اور فرمایا کہ ہم وعدہ پورا کریں گے اور اللہ سے مدد مانگیں گے۔",
+  "transcriptHash": "1c9380c018c54c7671880210f05ae8a884d29da648d5913260798206c85872f7",
+  "transcriptCharacters": 364,
+  "billableCharacters": 364,
+  "cacheKey": "aed6cb45bcc20c85f0698e25a06170944711a9bfe6b12b9550e8132a8289e3f7",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/aed6cb45bcc20c85f0698e25a06170944711a9bfe6b12b9550e8132a8289e3f7.mp3",
+  "byteLength": 152928,
+  "sha256": "831c849be66640d9c5fafaa7f3545d767a2798490755cf36a52e8cfd52dfdca5",
+  "durationSeconds": 25.488
+}

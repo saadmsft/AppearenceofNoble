@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-raised-skin-abu-said-khudri",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Nadra asked Abu Sa'id al-Khudri about the Prophet's may Allah bless him and grant him peace Seal of Prophethood. Abu Sa'id described it simply as a raised piece of flesh on his back. This wording does not compare it to an egg or give a particular colour.",
+  "transcriptHash": "7535160d310062c46e5126985de1409aa721033d1695d50b0e3c0c4b74542732",
+  "transcriptCharacters": 258,
+  "billableCharacters": 273,
+  "cacheKey": "8196b324ff692d5a527e5ada9bc72844f124622f76e6fd259aa49ffa600f0b28",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/8196b324ff692d5a527e5ada9bc72844f124622f76e6fd259aa49ffa600f0b28.mp3",
+  "byteLength": 98784,
+  "sha256": "e41499cf43f7d9712f38419a00d5c46f093cb51bb76cad3b3963efca63bd79c8",
+  "durationSeconds": 16.464
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "repeating-words-for-clarity",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَبْدَةُ بْنُ عَبْدِ اللَّهِ، حَدَّثَنَا عَبْدُ الصَّمَدِ، قَالَ حَدَّثَنَا عَبْدُ اللَّهِ بْنُ الْمُثَنَّى، قَالَ حَدَّثَنَا ثُمَامَةُ بْنُ عَبْدِ اللَّهِ، عَنْ أَنَسٍ، عَنِ النَّبِيِّ صلى الله عليه وسلم أَنَّهُ كَانَ إِذَا تَكَلَّمَ بِكَلِمَةٍ أَعَادَهَا ثَلاَثًا حَتَّى تُفْهَمَ عَنْهُ، وَإِذَا أَتَى عَلَى قَوْمٍ فَسَلَّمَ عَلَيْهِمْ سَلَّمَ عَلَيْهِمْ ثَلاَثًا.",
+  "transcriptHash": "e7e3fcc6cd7e3d9fc5f7a59401848202c2ebff06a82f4a357124f8fa317ded3b",
+  "transcriptCharacters": 377,
+  "billableCharacters": 377,
+  "cacheKey": "c99737123dc6bff594bd8b359253d054fd989f769d24dfc7fd14ff3c0303af14",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c99737123dc6bff594bd8b359253d054fd989f769d24dfc7fd14ff3c0303af14.mp3",
+  "byteLength": 133200,
+  "sha256": "322a7a0a171ada5cef040ff1879db90b9db43a20fc01ebc248fcdcb16d5a240a",
+  "durationSeconds": 22.2
+}

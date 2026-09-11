@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-reclining-legs-crossed-abdullah-zayd",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abbad ibn Tamim transmitted his uncle's observation of the Prophet may Allah bless him and grant him peace lying on his back in the mosque with one leg placed over the other. This is a description of a resting posture, not of walking or of the proportions of his legs.",
+  "transcriptHash": "9f21755134e8e0e26f9887fb1ff37cf66c251fd475523e1f85da90c92228788c",
+  "transcriptCharacters": 268,
+  "billableCharacters": 273,
+  "cacheKey": "d6b3e83ebdbb135e42013fca459d1371ec96f0561d8514e1d95ca4a175202e6d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d6b3e83ebdbb135e42013fca459d1371ec96f0561d8514e1d95ca4a175202e6d.mp3",
+  "byteLength": 85968,
+  "sha256": "927bdeb793e7d769cb72f53d239de7604904af04f1442662117b7462d1cc2c5d",
+  "durationSeconds": 14.328
+}

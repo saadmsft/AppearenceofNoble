@@ -1,0 +1,18 @@
+{
+  "entryId": "smile-not-loud-laughter",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا يَحْيَى بْنُ سُلَيْمَانَ، قَالَ حَدَّثَنِي ابْنُ وَهْبٍ، أَخْبَرَنَا عَمْرٌو، أَنَّ أَبَا النَّضْرِ، حَدَّثَهُ عَنْ سُلَيْمَانَ بْنِ يَسَارٍ، عَنْ عَائِشَةَ ـ رضى الله عنها ـ قَالَتْ مَا رَأَيْتُ النَّبِيَّ صلى الله عليه وسلم مُسْتَجْمِعًا قَطُّ ضَاحِكًا حَتَّى أَرَى مِنْهُ لَهَوَاتِهِ، إِنَّمَا كَانَ يَتَبَسَّمُ.",
+  "transcriptHash": "f4466771ee3329f1243f8c68d3aef4642fb5b9a04b598c89ed5883420670b736",
+  "transcriptCharacters": 326,
+  "billableCharacters": 326,
+  "cacheKey": "c062c1c38a1c3b22ff160a0f35b3a639f853f430dc169d453ecdf420ec8863ad",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c062c1c38a1c3b22ff160a0f35b3a639f853f430dc169d453ecdf420ec8863ad.mp3",
+  "byteLength": 124560,
+  "sha256": "aca636507ae7fa471c4872c00a0a79c5a7c97f5c3f9dbba5437d7943cea9c16f",
+  "durationSeconds": 20.76
+}

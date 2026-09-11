@@ -1,0 +1,18 @@
+{
+  "entryId": "black-turban-at-conquest-of-mecca",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا يَحْيَى بْنُ يَحْيَى، وَإِسْحَاقُ بْنُ إِبْرَاهِيمَ، قَالاَ أَخْبَرَنَا وَكِيعٌ، عَنْ مُسَاوِرٍ، الْوَرَّاقِ عَنْ جَعْفَرِ بْنِ عَمْرِو بْنِ حُرَيْثٍ، عَنْ أَبِيهِ، أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم خَطَبَ النَّاسَ وَعَلَيْهِ عِمَامَةٌ سَوْدَاءُ .",
+  "transcriptHash": "fd6d79831d5db7fa09343ef256787ef02540c2879ef84c4de11b97227e6a8500",
+  "transcriptCharacters": 265,
+  "billableCharacters": 265,
+  "cacheKey": "83901455809bb3c26c7ebb5887b000cc681ae5be964852b9d043a48bf82d789f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/83901455809bb3c26c7ebb5887b000cc681ae5be964852b9d043a48bf82d789f.mp3",
+  "byteLength": 103536,
+  "sha256": "2014d8adc25418dbf53d9719f44188072ecc4ec751fd8facc36a6d34c345e2d8",
+  "durationSeconds": 17.256
+}

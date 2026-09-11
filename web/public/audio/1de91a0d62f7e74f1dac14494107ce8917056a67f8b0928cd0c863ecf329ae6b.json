@@ -1,0 +1,18 @@
+{
+  "entryId": "no-one-smiled-more-than-him",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا قُتَيْبَةُ، حَدَّثَنَا ابْنُ لَهِيعَةَ، عَنْ عُبَيْدِ اللَّهِ بْنِ الْمُغِيرَةِ، عَنْ عَبْدِ اللَّهِ بْنِ الْحَارِثِ بْنِ جَزْءٍ، قَالَ مَا رَأَيْتُ أَحَدًا أَكْثَرَ تَبَسُّمًا مِنْ رَسُولِ اللَّهِ صلى الله عليه وسلم . قَالَ أَبُو عِيسَى هَذَا حَدِيثٌ حَسَنٌ غَرِيبٌ .",
+  "transcriptHash": "5bd78dc328380cca2508be6fedada33b948a14d67e0050dfce0b0e581aa26bb0",
+  "transcriptCharacters": 279,
+  "billableCharacters": 279,
+  "cacheKey": "1de91a0d62f7e74f1dac14494107ce8917056a67f8b0928cd0c863ecf329ae6b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/1de91a0d62f7e74f1dac14494107ce8917056a67f8b0928cd0c863ecf329ae6b.mp3",
+  "byteLength": 104544,
+  "sha256": "357eda3334b5294d623cc6f686b887dc4945e133a6a9011df024e2c0a9b05418",
+  "durationSeconds": 17.424
+}

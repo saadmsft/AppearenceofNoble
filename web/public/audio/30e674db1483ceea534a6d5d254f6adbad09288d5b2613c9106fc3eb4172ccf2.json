@@ -1,0 +1,18 @@
+{
+  "entryId": "four-hair-plaits-umm-hani",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ام ہانی رضی اللہ عنہا نے بیان کیا کہ نبی کریم صلی اللہ علیہ وسلم مکہ تشریف لائے تو آپ صلی اللہ علیہ وسلم کے بالوں کی چار چوٹیاں تھیں۔ عبارت میں غدائر کی وضاحت عقائص، یعنی گندھی ہوئی چوٹیوں، سے کی گئی ہے۔ یہ بالوں کی ایک خاص ترتیب ہے، ان کی فطری ساخت کا بیان نہیں۔",
+  "transcriptHash": "d77c9effd0a45f478a2d31f12aa7ff91ed0ad3e5d09bb66a9f1adf2a56573ddf",
+  "transcriptCharacters": 263,
+  "billableCharacters": 263,
+  "cacheKey": "30e674db1483ceea534a6d5d254f6adbad09288d5b2613c9106fc3eb4172ccf2",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/30e674db1483ceea534a6d5d254f6adbad09288d5b2613c9106fc3eb4172ccf2.mp3",
+  "byteLength": 117792,
+  "sha256": "cb45f23c5a8b2a6389b921d894da0d6ba0f4fa4072caaec1e3ef548b1933ad02",
+  "durationSeconds": 19.632
+}

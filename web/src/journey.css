@@ -27,6 +27,7 @@
 .chapter-next { display: inline-flex; align-items: center; gap: 10px; color: var(--cp-text-soft); font-size: 12px; min-height: 44px; text-align: start; }
 .chapter-next:hover { color: var(--cp-accent); }
 .chapter-next svg { flex-shrink: 0; }
+.chapter-reading-progress { font-size: 11px; color: var(--cp-text-soft); margin-top: 12px; }
 .topic-artwork { grid-column: 2; grid-row: 1 / 3; width: 100%; max-width: 410px; justify-self: center; }
 .topic-art-frame { position: relative; aspect-ratio: 1; background: var(--cp-folio); color: var(--cp-accent); border: 1px solid var(--cp-rule); border-radius: 50% 50% 3px 3px; padding: 16px; }
 .topic-art-frame::before { content: ""; position: absolute; inset: 11px; border: 1px solid var(--cp-rule); border-radius: inherit; pointer-events: none; }

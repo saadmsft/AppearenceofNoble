@@ -178,7 +178,7 @@ test('the offline edition embeds scripts, styles, data and reading fonts', async
   const requests: string[] = []
   page.on('pageerror', (error) => errors.push(error.message))
   page.on('request', (request) => requests.push(request.url()))
-  await page.goto('./noble-appearance.html?lang=ur')
+  await page.goto('./noble-appearance.html?lang=ur&view=journey&shelf=appearance')
   await page.evaluate(() => document.fonts.ready)
   await expect(page.getByRole('heading', { level: 1 })).toContainText('الفاظ میں محفوظ')
   await expect(page.locator('.journey-chapter')).toHaveCount(16)

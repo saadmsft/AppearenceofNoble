@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test'
 
 test('ornamental motion pauses on demand, persists and leaves the calligraphy still', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' })
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=journey&shelf=appearance')
   const art = page.locator('.manuscript-art')
   await art.scrollIntoViewIfNeeded()
   await expect(art).toHaveAttribute('data-running', 'true')
@@ -22,7 +22,7 @@ test('ornamental motion pauses on demand, persists and leaves the calligraphy st
 
 test('offscreen, hidden-tab and reader states stop ambient animation', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' })
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=journey&shelf=appearance')
   const art = page.locator('.manuscript-art')
   await art.scrollIntoViewIfNeeded()
   await expect(art).toHaveAttribute('data-running', 'true')
@@ -49,7 +49,7 @@ test('offscreen, hidden-tab and reader states stop ambient animation', async ({ 
 
 test('reduced motion applies on load and when the system preference changes', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' })
-  await page.goto('./?lang=ur')
+  await page.goto('./?lang=ur&view=journey&shelf=appearance')
   const art = page.locator('.manuscript-art')
   await art.scrollIntoViewIfNeeded()
   await expect(art).toHaveAttribute('data-running', 'false')

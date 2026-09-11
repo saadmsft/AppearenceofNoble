@@ -1,0 +1,18 @@
+{
+  "entryId": "hud-and-its-sisters-greyed-me",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا سُفْيَانُ بْنُ وَكِيعٍ، قَالَ: حَدَّثَنَا مُحَمَّدُ بْنُ بِشْرٍ، عَنْ عَلِيِّ بْنِ صَالِحٍ، عَنْ أَبِي إِسْحَاقَ، عَنْ أَبِي جُحَيْفَةَ، قَالَ: قَالُوا: يَا رَسُولَ اللهِ، نَرَاكَ قَدْ شِبْتَ، قَالَ: قَدْ شَيَّبَتْنِي هُودٌ وَأَخَوَاتُهَا.",
+  "transcriptHash": "71303daf53622bc0166f21b9994e59ed74ce5c369e63eb8262b54c97c4cd6e54",
+  "transcriptCharacters": 250,
+  "billableCharacters": 250,
+  "cacheKey": "cbe858b4fab9e172c69549005483308496fcc3c3a8d19e07daba93eb069878cf",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/cbe858b4fab9e172c69549005483308496fcc3c3a8d19e07daba93eb069878cf.mp3",
+  "byteLength": 106128,
+  "sha256": "e90a2804d38ab22e594d642a23ec54f18339d849f06bae19386e39899853f446",
+  "durationSeconds": 17.688
+}

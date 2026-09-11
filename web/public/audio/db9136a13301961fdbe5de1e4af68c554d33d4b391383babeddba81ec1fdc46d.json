@@ -1,0 +1,18 @@
+{
+  "entryId": "cool-fragrant-hand-jabir-childhood",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir ibn Samurah accompanied the Prophet may Allah bless him and grant him peace after prayer as he went towards his family. The Prophet may Allah bless him and grant him peace met children and touched their cheeks, including Jabir's. Jabir remembered the hand's coolness or fragrance, comparing it to a hand just taken from a perfumer's container.",
+  "transcriptHash": "bda308c35b36d414b5626add264c0b20f0b2a497e34ec49559576d984200a86c",
+  "transcriptCharacters": 349,
+  "billableCharacters": 364,
+  "cacheKey": "db9136a13301961fdbe5de1e4af68c554d33d4b391383babeddba81ec1fdc46d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/db9136a13301961fdbe5de1e4af68c554d33d4b391383babeddba81ec1fdc46d.mp3",
+  "byteLength": 122400,
+  "sha256": "c33d2342c01915e8066f578c2b4d1ec18588268d88feb7820f4b0c67edb941d4",
+  "durationSeconds": 20.4
+}

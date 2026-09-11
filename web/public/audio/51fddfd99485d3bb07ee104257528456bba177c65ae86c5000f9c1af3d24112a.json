@@ -1,0 +1,18 @@
+{
+  "entryId": "character-family-community-aisha-neighbour-invitation",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "وَحَدَّثَنِي زُهَيْرُ بْنُ حَرْبٍ، حَدَّثَنَا يَزِيدُ بْنُ هَارُونَ، أَخْبَرَنَا حَمَّادُ بْنُ سَلَمَةَ، عَنْ ثَابِتٍ، عَنْ أَنَسٍ، أَنَّ جَارًا، لِرَسُولِ اللَّهِ صلى الله عليه وسلم فَارِسِيًّا كَانَ طَيِّبَ الْمَرَقِ فَصَنَعَ لِرَسُولِ اللَّهِ صلى الله عليه وسلم ثُمَّ جَاءَ يَدْعُوهُ فَقَالَ \" وَهَذِهِ \" . لِعَائِشَةَ فَقَالَ لاَ . فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" لاَ \" فَعَادَ يَدْعُوهُ فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" وَهَذِهِ \" . قَالَ لاَ . قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" لاَ \" . ثُمَّ عَادَ يَدْعُوهُ فَقَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم \" وَهَذِهِ \" . قَالَ نَعَمْ . فِي الثَّالِثَةِ . فَقَامَا يَتَدَافَعَانِ حَتَّى أَتَيَا مَنْزِلَهُ .",
+  "transcriptHash": "17c9a56d1f95f1a202fbb0cf1da0b300d1db0c14e1bbf79baefea1304e42667f",
+  "transcriptCharacters": 691,
+  "billableCharacters": 741,
+  "cacheKey": "51fddfd99485d3bb07ee104257528456bba177c65ae86c5000f9c1af3d24112a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/51fddfd99485d3bb07ee104257528456bba177c65ae86c5000f9c1af3d24112a.mp3",
+  "byteLength": 309312,
+  "sha256": "263c4c92c0c5187b023ebafeef0e9b4f283f255bcfa0a2d901ee745ff058b3dc",
+  "durationSeconds": 51.552
+}

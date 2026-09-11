@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-tent-button-saib-yazid",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "وَحَدَّثَنَا قُتَيْبَةُ بْنُ سَعِيدٍ، وَمُحَمَّدُ بْنُ عَبَّادٍ، قَالاَ حَدَّثَنَا حَاتِمٌ، - وَهُوَ ابْنُ إِسْمَاعِيلَ - عَنِ الْجَعْدِ بْنِ عَبْدِ الرَّحْمَنِ، قَالَ سَمِعْتُ السَّائِبَ بْنَ يَزِيدَ، يَقُولُ ذَهَبَتْ بِي خَالَتِي إِلَى رَسُولِ اللَّهِ صلى الله عليه وسلم فَقَالَتْ يَا رَسُولَ اللَّهِ إِنَّ ابْنَ أُخْتِي وَجِعٌ . فَمَسَحَ رَأْسِي وَدَعَا لِي بِالْبَرَكَةِ ثُمَّ تَوَضَّأَ فَشَرِبْتُ مِنْ وَضُوئِهِ ثُمَّ قُمْتُ خَلْفَ ظَهْرِهِ فَنَظَرْتُ إِلَى خَاتِمِهِ بَيْنَ كَتِفَيْهِ مِثْلَ زِرِّ الْحَجَلَةِ .",
+  "transcriptHash": "027c092b1f98e9449fd575c15512d7ba33d224df39cdce3a76aee86eca252e0c",
+  "transcriptCharacters": 517,
+  "billableCharacters": 517,
+  "cacheKey": "29b2705bbef63ade536e3095eb13ec34b8ebac1cc31a12ca564159fc45ac64fb",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/29b2705bbef63ade536e3095eb13ec34b8ebac1cc31a12ca564159fc45ac64fb.mp3",
+  "byteLength": 184176,
+  "sha256": "cdcce916295b7ef07fbeebb4f0da5e65bf543c94f28c393dd1f1fbcafba08322",
+  "durationSeconds": 30.696
+}

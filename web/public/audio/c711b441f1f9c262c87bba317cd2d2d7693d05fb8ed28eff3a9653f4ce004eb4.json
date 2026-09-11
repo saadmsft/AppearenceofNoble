@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-modest-invitations",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Huraira reports the Prophet expressing readiness to answer an invitation even for a foreleg or trotter, and to receive either as a gift. The smallness of what was offered did not make it beneath his stated willingness to accept. His words describe hospitality and gifts without requiring an elaborate offering.",
+  "transcriptHash": "3a26e64d05681723994b5b0f7f7da8b44607067cfc1e585f83cd37e890e4313a",
+  "transcriptCharacters": 314,
+  "billableCharacters": 314,
+  "cacheKey": "c711b441f1f9c262c87bba317cd2d2d7693d05fb8ed28eff3a9653f4ce004eb4",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c711b441f1f9c262c87bba317cd2d2d7693d05fb8ed28eff3a9653f4ce004eb4.mp3",
+  "byteLength": 110592,
+  "sha256": "5fd9ffca6bf00ca06757ab39c7bfe4de1e4cc85b98dc8a35c16f7d50875f73b9",
+  "durationSeconds": 18.432
+}

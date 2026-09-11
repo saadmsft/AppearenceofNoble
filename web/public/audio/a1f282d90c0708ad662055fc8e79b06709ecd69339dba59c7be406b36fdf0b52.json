@@ -1,0 +1,18 @@
+{
+  "entryId": "more-beautiful-than-the-moon-weak",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا هَنَّادٌ، حَدَّثَنَا عَبْثَرُ بْنُ الْقَاسِمِ، عَنِ الأَشْعَثِ، وَهُوَ ابْنُ سَوَّارٍ عَنْ أَبِي إِسْحَاقَ، عَنْ جَابِرِ بْنِ سَمُرَةَ، قَالَ رَأَيْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم فِي لَيْلَةٍ إِضْحِيَانٍ فَجَعَلْتُ أَنْظُرُ إِلَى رَسُولِ اللَّهِ صلى الله عليه وسلم وَإِلَى الْقَمَرِ وَعَلَيْهِ حُلَّةٌ حَمْرَاءُ فَإِذَا هُوَ عِنْدِي أَحْسَنُ مِنَ الْقَمَرِ . قَالَ أَبُو عِيسَى هَذَا حَدِيثٌ حَسَنٌ غَرِيبٌ لاَ نَعْرِفُهُ إِلاَّ مِنْ حَدِيثِ الأَشْعَثِ .",
+  "transcriptHash": "0a69c222361f44d1f8077acecc3a8c68ec6d7a5a0b715ba3459afa030ddcc39e",
+  "transcriptCharacters": 472,
+  "billableCharacters": 472,
+  "cacheKey": "a1f282d90c0708ad662055fc8e79b06709ecd69339dba59c7be406b36fdf0b52",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a1f282d90c0708ad662055fc8e79b06709ecd69339dba59c7be406b36fdf0b52.mp3",
+  "byteLength": 170496,
+  "sha256": "114de7853fb89bdaee5737b63f05ef7a9cbd40a05fcfad3c2c55eeb28a0bd287",
+  "durationSeconds": 28.416
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "fourteen-white-hairs-counted-anas",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas said that he counted only fourteen white hairs on the Prophet's may Allah bless him and grant him peace head and beard. This is a specific count attributed to Anas. The related report from Ibn Umar gives an approximate figure of twenty rather than repeating the same number.",
+  "transcriptHash": "431740673dcdda8d6a6f9e1e328909769acb8998d1cb14b090072decc89badcb",
+  "transcriptCharacters": 279,
+  "billableCharacters": 284,
+  "cacheKey": "1df96b735f952599fa221f5302b9286642b50a7d91825c570375d132e2923806",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/1df96b735f952599fa221f5302b9286642b50a7d91825c570375d132e2923806.mp3",
+  "byteLength": 96480,
+  "sha256": "e53b0c85bc49d3ca8653ad51518e9059595245820951aee870b20fd5414dd0d5",
+  "durationSeconds": 16.08
+}

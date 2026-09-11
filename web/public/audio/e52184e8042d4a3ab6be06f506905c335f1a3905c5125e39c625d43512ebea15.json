@@ -1,0 +1,18 @@
+{
+  "entryId": "character-patience-recalling-musa",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "After the distribution associated with Hunain, Abdullah ibn Mas'ud relayed a man's accusation that the allocations were unjust and not intended for Allah. The Prophet challenged that accusation, then recalled how Musa had endured greater hurt with patience. His response explicitly brought an earlier prophet's endurance into a personally hurtful exchange.",
+  "transcriptHash": "0b104ef19269970f04045b45ba95c2415f4aba933122add58fd0542920df8ee3",
+  "transcriptCharacters": 356,
+  "billableCharacters": 371,
+  "cacheKey": "e52184e8042d4a3ab6be06f506905c335f1a3905c5125e39c625d43512ebea15",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e52184e8042d4a3ab6be06f506905c335f1a3905c5125e39c625d43512ebea15.mp3",
+  "byteLength": 126144,
+  "sha256": "4c391eac22629d57614a97740014d08bd779b88814b4306a456cf4114c090b47",
+  "durationSeconds": 21.024
+}

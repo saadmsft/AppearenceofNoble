@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-raised-skin-abu-said-khudri",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو نضرہ نے ابو سعید خدری رضی اللہ عنہ سے نبی کریم صلی اللہ علیہ وسلم کی مہرِ نبوت کے بارے میں پوچھا۔ انہوں نے سادہ لفظوں میں بتایا کہ آپ صلی اللہ علیہ وسلم کی پشت پر گوشت کا ایک ابھرا ہوا حصہ تھا۔ ان الفاظ میں انڈے سے تشبیہ یا کسی خاص رنگ کا ذکر نہیں۔",
+  "transcriptHash": "dcc55234285d28e8bb37b1814db7112da0baafff04faad8583dae05708b0e390",
+  "transcriptCharacters": 252,
+  "billableCharacters": 252,
+  "cacheKey": "e809ef24b5b1e81d6eaf1c187f7d4092c5d39b6f11aa4b1929e05d55533a305c",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e809ef24b5b1e81d6eaf1c187f7d4092c5d39b6f11aa4b1929e05d55533a305c.mp3",
+  "byteLength": 114768,
+  "sha256": "da60165d9ec30d51962c6f1c24578f19b6d50679d466b8c23c864230a5788559",
+  "durationSeconds": 19.128
+}

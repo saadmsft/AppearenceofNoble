@@ -54,6 +54,7 @@ if (/<script\b[^>]*src=|<link\b[^>]*rel="(?:stylesheet|modulepreload)"/.test(htm
 }
 const notices = readFileSync(resolve(dist, 'THIRD-PARTY-NOTICES.txt'), 'utf8').replace(/--/g, '- -')
 html = html.replace('</body>', `<!--\n${notices}\n-->\n</body>`)
-const output = resolve(dist, 'noble-appearance.html')
+const output = resolve(dist, 'noble-project.html')
 writeFileSync(output, html)
-console.log(`Created self-contained noble-appearance.html (${Math.round(Buffer.byteLength(html) / 1024)} KiB), with embedded fonts and license notices.`)
+writeFileSync(resolve(dist, 'noble-appearance.html'), html)
+console.log(`Created self-contained noble-project.html (${Math.round(Buffer.byteLength(html) / 1024)} KiB) and its legacy noble-appearance.html alias, with embedded fonts and license notices.`)

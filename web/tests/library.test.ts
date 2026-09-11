@@ -3,7 +3,7 @@ import { test } from 'node:test'
 import { readdirSync, readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { corpusSchema, topics } from '../src/lib/schema.ts'
-import { narrations } from '../src/lib/library.ts'
+import { appearanceNarrations, characterNarrations, getNarrationShelf, getShelfRows, narrations } from '../src/lib/library.ts'
 import { defaultFilters, filterNarrations, isEstablished, normalizeSearch } from '../src/lib/search.ts'
 import { translate, translations } from '../src/lib/i18n.ts'
 
@@ -98,13 +98,40 @@ test('malformed records and duplicate ids fail closed', () => {
 
 test('the shipped full Arabic matches the recorded source audit fingerprint', () => {
   const audit = JSON.parse(readFileSync(new URL('../../research/audit.json', import.meta.url), 'utf8'))
-  const bySource = new Map(narrations.map((row) => [row.source.url, row.arabicFull]))
+  const bySource = new Map(appearanceNarrations.map((row) => [row.source.url, row.arabicFull]))
   const manifest = [...bySource].sort(([a], [b]) => a.localeCompare(b, 'en'))
   assert.equal(createHash('sha256').update(JSON.stringify(manifest)).digest('hex'), audit.arabicSourceManifestSha256)
-  assert.equal(narrations.length, audit.entries)
+  assert.equal(appearanceNarrations.length, audit.entries)
   assert.equal(bySource.size, audit.uniquePrimaryReferences)
-  assert.equal(new Set(narrations.flatMap((row) => [row.source, ...row.relatedSources].map((source) => source.url))).size, audit.uniqueCitedReferences)
+  assert.equal(new Set(appearanceNarrations.flatMap((row) => [row.source, ...row.relatedSources].map((source) => source.url))).size, audit.uniqueCitedReferences)
   for (const [grade, expected] of Object.entries(audit.primaryGradeLevels)) {
-    assert.equal(narrations.filter((row) => row.grade.level === grade).length, expected)
+    assert.equal(appearanceNarrations.filter((row) => row.grade.level === grade).length, expected)
+  }
+})
+
+test('Appearance and Character remain distinct collections with stable entry identities', () => {
+  assert.equal(appearanceNarrations.length, 71)
+  assert.ok(characterNarrations.length >= 24 && characterNarrations.length <= 32)
+  assert.ok(new Set(characterNarrations.map((row) => row.source.url)).size >= 24)
+  assert.ok(characterNarrations.every(isEstablished))
+  assert.deepEqual(getShelfRows('appearance'), appearanceNarrations)
+  assert.deepEqual(getShelfRows('character'), characterNarrations)
+  assert.deepEqual(getShelfRows('all'), narrations)
+  for (const row of appearanceNarrations) assert.equal(getNarrationShelf(row.id), 'appearance')
+  for (const row of characterNarrations) assert.equal(getNarrationShelf(row.id), 'character')
+  assert.equal(getNarrationShelf('unknown-entry'), undefined)
+})
+
+test('the Character corpus matches its own published source audit', () => {
+  const audit = JSON.parse(readFileSync(new URL('../../research/character-audit.json', import.meta.url), 'utf8'))
+  const manifest = [...new Map(characterNarrations.map((row) => [row.source.url, row.arabicFull]))]
+    .sort(([a], [b]) => a.localeCompare(b, 'en'))
+  assert.equal(createHash('sha256').update(JSON.stringify(manifest)).digest('hex'), audit.arabicSourceManifestSha256)
+  assert.equal(characterNarrations.length, audit.entries)
+  assert.equal(manifest.length, audit.uniquePrimaryReferences)
+  assert.deepEqual(new Set(characterNarrations.map((row) => row.source.url)), new Set(audit.primaryReferences))
+  assert.equal(new Set(characterNarrations.flatMap((row) => [row.source, ...row.relatedSources].map((source) => source.url))).size, audit.uniqueCitedReferences)
+  for (const [topic, expected] of Object.entries(audit.topicCounts)) {
+    assert.equal(characterNarrations.filter((row) => row.topics.some((value) => value === topic)).length, expected)
   }
 })

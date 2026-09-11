@@ -1,0 +1,18 @@
+{
+  "entryId": "moderate-stature-radiant-complexion-anas",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس بن مالک رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کا قد میانہ بتایا، نہ لمبا نہ چھوٹا، اور رنگت روشن بیان کی، نہ بالکل پھیکی سفید نہ گہری سانولی۔ آپ صلی اللہ علیہ وسلم کے بال نہ سخت گھنگریالے تھے نہ بالکل سیدھے۔ روایت میں سر اور داڑھی کے سفید بال بیس سے کم ہونے کا بھی ذکر ہے۔",
+  "transcriptHash": "b4f749bf63f692718c597c8892b48acd59f51d7551c9683e72e62c51da7c6344",
+  "transcriptCharacters": 282,
+  "billableCharacters": 282,
+  "cacheKey": "8e520cd03d1c179591c4c08a92373c5489acb5f24402a44b5bf6bc3de3467a8b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/8e520cd03d1c179591c4c08a92373c5489acb5f24402a44b5bf6bc3de3467a8b.mp3",
+  "byteLength": 128304,
+  "sha256": "bc584397960bd3563982a85b3696cdee6ec589b26713235aeddb41f87f14871f",
+  "durationSeconds": 21.384
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-tent-button-saib-yazid",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "As-Sa'ib's aunt brought him to the Prophet may Allah bless him and grant him peace because he was unwell. After the Prophet may Allah bless him and grant him peace touched his head, prayed for him and performed ablution, As-Sa'ib stood behind him. He saw the Seal between the shoulders and compared it to zirr al-hajalah, commonly rendered a tent button.",
+  "transcriptHash": "c6a06744f04d84c77bdfe771e76c75d2c071380563b64e2cf2c5716dffbab999",
+  "transcriptCharacters": 354,
+  "billableCharacters": 369,
+  "cacheKey": "3cede97afc90a21d3859d40fd65718e1d5afa34acf5f1da0d82062d83f3b4644",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/3cede97afc90a21d3859d40fd65718e1d5afa34acf5f1da0d82062d83f3b4644.mp3",
+  "byteLength": 115776,
+  "sha256": "34242abaf152e032a38a6573953f6e6013c05ab71abcfe66f16b12392f1ea9a3",
+  "durationSeconds": 19.296
+}

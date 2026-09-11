@@ -1,0 +1,18 @@
+{
+  "entryId": "character-patience-severe-fever",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت عبداللہ بن مسعود رضی اللہ عنہ نے شدید بخار کے دوران نبی کریم صلی اللہ علیہ وسلم کی عیادت کی۔ آپ صلی اللہ علیہ وسلم نے تکلیف کی شدت بیان فرمائی اور دوہرے اجر کے متعلق ان کی بات کی تصدیق کی۔ پھر بتایا کہ مسلمان کو پہنچنے والی تکلیف، حتیٰ کہ کانٹا چبھنا بھی، اللہ کی طرف سے گناہ مٹنے کا سبب بنتا ہے۔",
+  "transcriptHash": "5b476a802174bb3e7912e4108f91ad17be5dc7ec05d25ab7718c0836a96eea19",
+  "transcriptCharacters": 301,
+  "billableCharacters": 301,
+  "cacheKey": "461c5b812ab4d4cc3a13e01adc7d3cde9a34ae2ae2902e05d66df761388851b9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/461c5b812ab4d4cc3a13e01adc7d3cde9a34ae2ae2902e05d66df761388851b9.mp3",
+  "byteLength": 137520,
+  "sha256": "8d6d5ab3f9ee94fe7c9ca0e6e070cb4d9f6b4b441d1a6ddeac02b6a4422641bf",
+  "durationSeconds": 22.92
+}

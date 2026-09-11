@@ -1,0 +1,18 @@
+{
+  "entryId": "sandals-with-two-straps",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عیسیٰ بن طہمان نے یاد کیا کہ انس رضی اللہ عنہ دو تسموں والی نعلین لے کر آئے۔ ثابت بنانی نے انہیں نبی کریم صلی اللہ علیہ وسلم کی نعلین بتایا۔ یہ حاضرین کو دکھائی جانے والی ایک چیز کا بیان ہے، آپ صلی اللہ علیہ وسلم کو اسے پہنے ہوئے دیکھنے کا واقعہ نہیں۔",
+  "transcriptHash": "0ad1953370e16ffa46efaa6d9a8bea314026a3be2e135e99a2ae451cafd22d74",
+  "transcriptCharacters": 251,
+  "billableCharacters": 251,
+  "cacheKey": "bc559a9f83377b0d94c6e9b1dc6eb52cf396202944d7a8940a4f3772ddaa31f9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/bc559a9f83377b0d94c6e9b1dc6eb52cf396202944d7a8940a4f3772ddaa31f9.mp3",
+  "byteLength": 115056,
+  "sha256": "bf95d2d84150afe6278c22711d7a40a7d82b70a85b29979368a6dc9c9f17ad5d",
+  "durationSeconds": 19.176
+}

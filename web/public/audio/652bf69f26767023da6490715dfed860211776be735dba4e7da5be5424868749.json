@@ -1,0 +1,18 @@
+{
+  "entryId": "character-generosity-ramadan-giving",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَبْدَانُ، قَالَ أَخْبَرَنَا عَبْدُ اللَّهِ، قَالَ أَخْبَرَنَا يُونُسُ، عَنِ الزُّهْرِيِّ، ح وَحَدَّثَنَا بِشْرُ بْنُ مُحَمَّدٍ، قَالَ أَخْبَرَنَا عَبْدُ اللَّهِ، قَالَ أَخْبَرَنَا يُونُسُ، وَمَعْمَرٌ، عَنِ الزُّهْرِيِّ، نَحْوَهُ قَالَ أَخْبَرَنِي عُبَيْدُ اللَّهِ بْنُ عَبْدِ اللَّهِ، عَنِ ابْنِ عَبَّاسٍ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم أَجْوَدَ النَّاسِ، وَكَانَ أَجْوَدُ مَا يَكُونُ فِي رَمَضَانَ حِينَ يَلْقَاهُ جِبْرِيلُ، وَكَانَ يَلْقَاهُ فِي كُلِّ لَيْلَةٍ مِنْ رَمَضَانَ فَيُدَارِسُهُ الْقُرْآنَ، فَلَرَسُولُ اللَّهِ صلى الله عليه وسلم أَجْوَدُ بِالْخَيْرِ مِنَ الرِّيحِ الْمُرْسَلَةِ.",
+  "transcriptHash": "e696f6ed28b48c5c7b8cc4ad3fde2fa60b2e53ffaa6f59d72faeb605a32ddfff",
+  "transcriptCharacters": 620,
+  "billableCharacters": 620,
+  "cacheKey": "652bf69f26767023da6490715dfed860211776be735dba4e7da5be5424868749",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/652bf69f26767023da6490715dfed860211776be735dba4e7da5be5424868749.mp3",
+  "byteLength": 234288,
+  "sha256": "f7cfa2114b90ef1f55bacbd3fd235381788851b9c4bda0822f8dbb38d2c4efcc",
+  "durationSeconds": 39.048
+}

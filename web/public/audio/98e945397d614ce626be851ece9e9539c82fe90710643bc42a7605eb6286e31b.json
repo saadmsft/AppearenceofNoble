@@ -1,0 +1,18 @@
+{
+  "entryId": "face-changed-at-forbidden-images",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا يَسَرَةُ بْنُ صَفْوَانَ، حَدَّثَنَا إِبْرَاهِيمُ، عَنِ الزُّهْرِيِّ، عَنِ الْقَاسِمِ، عَنْ عَائِشَةَ ـ رضى الله عنها ـ قَالَتْ دَخَلَ عَلَىَّ النَّبِيُّ صلى الله عليه وسلم وَفِي الْبَيْتِ قِرَامٌ فِيهِ صُوَرٌ، فَتَلَوَّنَ وَجْهُهُ، ثُمَّ تَنَاوَلَ السِّتْرَ فَهَتَكَهُ، وَقَالَتْ قَالَ النَّبِيُّ صلى الله عليه وسلم \" مِنْ أَشَدِّ النَّاسِ عَذَابًا يَوْمَ الْقِيَامَةِ الَّذِينَ يُصَوِّرُونَ هَذِهِ الصُّوَرَ \".",
+  "transcriptHash": "c3ed2db269ea75a9237f2457575449d70c14e51fc9470308ed733e45097d6dfb",
+  "transcriptCharacters": 422,
+  "billableCharacters": 432,
+  "cacheKey": "98e945397d614ce626be851ece9e9539c82fe90710643bc42a7605eb6286e31b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/98e945397d614ce626be851ece9e9539c82fe90710643bc42a7605eb6286e31b.mp3",
+  "byteLength": 157680,
+  "sha256": "a24f40f67cdce2b7351bff4a2da010760e12ab5691496632cc19603e0de26960",
+  "durationSeconds": 26.28
+}

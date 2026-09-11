@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-squatting-posture-qaila",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "اس ضعیف روایت میں قیلہ بنت مخرمہ رضی اللہ عنہا کی طرف یہ مشاہدہ منسوب ہے کہ نبی کریم صلی اللہ علیہ وسلم مسجد میں قرفصاء، یعنی بدن کو سمیٹ کر بیٹھنے کی حالت میں تھے۔ وہ آپ صلی اللہ علیہ وسلم کی عاجزانہ نشست کا ذکر کرتی ہیں اور کہتی ہیں کہ یہ دیکھ کر رعب سے کانپ اٹھیں۔",
+  "transcriptHash": "4dc781114527d55ad3820c64a4ae0cfd67efb1c0fc8bc2502d9e03a968b89d7f",
+  "transcriptCharacters": 267,
+  "billableCharacters": 267,
+  "cacheKey": "aefc47c96c01e755e418e4374afe04414c244362c15b1da5398d1f43bbbef232",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/aefc47c96c01e755e418e4374afe04414c244362c15b1da5398d1f43bbbef232.mp3",
+  "byteLength": 118800,
+  "sha256": "fa20a0032775f5cd7bdc4e471c1d9e67c8b564ee5ae4bf212ae0e0949f8e8023",
+  "durationSeconds": 19.8
+}

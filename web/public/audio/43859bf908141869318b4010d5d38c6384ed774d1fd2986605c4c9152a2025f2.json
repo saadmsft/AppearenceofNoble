@@ -1,0 +1,18 @@
+{
+  "entryId": "beautiful-recitation-voice-bara",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "براء رضی اللہ عنہ نے عشاء کی نماز میں نبی کریم صلی اللہ علیہ وسلم کو والتین والزیتون سے شروع ہونے والی سورت پڑھتے سنا۔ انہوں نے کہا کہ انہوں نے کسی کی آواز یا قراءت اس سے زیادہ خوبصورت نہیں سنی۔ یہ تعریف اس صحابی کے اپنے سنے ہوئے مشاہدے سے متعلق ہے۔",
+  "transcriptHash": "f86743a8408a80420d622e6bdaf0a908eff21715bdf631e39d98e16b0a69625f",
+  "transcriptCharacters": 249,
+  "billableCharacters": 249,
+  "cacheKey": "43859bf908141869318b4010d5d38c6384ed774d1fd2986605c4c9152a2025f2",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/43859bf908141869318b4010d5d38c6384ed774d1fd2986605c4c9152a2025f2.mp3",
+  "byteLength": 113040,
+  "sha256": "3b1bf0e46cebd99da45f8e5cd8334ee4c7007d173a0f876715923042b032b8a8",
+  "durationSeconds": 18.84
+}

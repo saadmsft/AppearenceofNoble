@@ -1,0 +1,18 @@
+{
+  "entryId": "character-justice-rights-beyond-eloquence",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ام سلمہ رضی اللہ عنہا نبی صلی اللہ علیہ وسلم کی یہ تنبیہ نقل کرتی ہیں کہ مقدمہ پیش کرنے والوں میں کوئی اپنی دلیل زیادہ مؤثر انداز سے بیان کر سکتا ہے، جس سے دوسرے کے حق کے بارے میں اس کے موافق فیصلہ ہو جائے۔ آپ صلی اللہ علیہ وسلم نے ایسے شخص کو وہ چیز لینے سے منع فرمایا۔ اس تعلیم میں مقدمہ جیتنے اور حقیقت میں حق دار ہونے کا فرق برقرار رکھا گیا ہے۔",
+  "transcriptHash": "8f8254ca5e623f2636e0b1ad0a48a6548ba725ef69dfed335eebecf4c2ad84d5",
+  "transcriptCharacters": 348,
+  "billableCharacters": 348,
+  "cacheKey": "38989f05590e83b22b6d26edf6f19778d5437ec82c3114323bfd6e91fbfa9a89",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/38989f05590e83b22b6d26edf6f19778d5437ec82c3114323bfd6e91fbfa9a89.mp3",
+  "byteLength": 153216,
+  "sha256": "c9c92484bc866f226194a68819112568ca102d1939fb9e2977f97380c00e6aec",
+  "durationSeconds": 25.536
+}

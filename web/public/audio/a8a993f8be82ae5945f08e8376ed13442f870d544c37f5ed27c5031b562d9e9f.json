@@ -1,0 +1,18 @@
+{
+  "entryId": "character-mercy-shortening-prayer",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابو قتادہ رضی اللہ عنہ کی روایت میں نبی کریم صلی اللہ علیہ وسلم اپنی نماز کا ذکر فرماتے ہیں کہ کبھی اسے طویل کرنے کا ارادہ ہوتا، مگر بچے کے رونے کی آواز سن کر مختصر کر دیتے۔ آپ صلی اللہ علیہ وسلم نے اس کی وجہ بچے کی ماں کو مشقت سے بچانا بتائی۔ یوں عبادت کے دوران بھی اس کی حالت کا لحاظ سامنے آتا ہے۔",
+  "transcriptHash": "00b91a7a873a0ed1e62fcaaa293cd70ccabe56124ee8720685a0dca4e344015b",
+  "transcriptCharacters": 304,
+  "billableCharacters": 304,
+  "cacheKey": "a8a993f8be82ae5945f08e8376ed13442f870d544c37f5ed27c5031b562d9e9f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a8a993f8be82ae5945f08e8376ed13442f870d544c37f5ed27c5031b562d9e9f.mp3",
+  "byteLength": 140400,
+  "sha256": "b96bc5732d16f8565b227f63fd71816009fd8f18422e17d743c7d9233948d870",
+  "durationSeconds": 23.4
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "tears-at-his-infant-sons-passing",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas recalled being with the Prophet may Allah bless him and grant him peace when his son Ibrahim was dying. The Prophet's may Allah bless him and grant him peace eyes shed tears. When Abd al-Rahman ibn Awf expressed surprise, he called this mercy, then spoke of tearful eyes and a grieving heart while saying only what pleased his Lord.",
+  "transcriptHash": "e84b1c7c3a8af2f696b21c552f1c2ee08620c0234e255876b6f6d89cb4c84669",
+  "transcriptCharacters": 337,
+  "billableCharacters": 342,
+  "cacheKey": "74a41db8678aab8eb46982ce42211d2703558a4ce52c57a1fa6905d73884812a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/74a41db8678aab8eb46982ce42211d2703558a4ce52c57a1fa6905d73884812a.mp3",
+  "byteLength": 115920,
+  "sha256": "185e81b062bb7699da1d689039128abf4da93a6a054510bb6a3b68a1fbea2866",
+  "durationSeconds": 19.32
+}

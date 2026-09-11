@@ -1,0 +1,18 @@
+{
+  "entryId": "character-honesty-visible-condition-of-goods",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Huraira describes the Prophet may Allah bless him and grant him peace checking a heap of food and finding moisture beneath its surface. Its owner explained that rain had reached it. The Prophet may Allah bless him and grant him peace asked why the affected food had not been placed where people could see it, then strongly repudiated deception. His response made the goods' visible condition a matter of honesty.",
+  "transcriptHash": "b225e42950fcdcce925d81920a78db5ea5bc9d6b5a9d734d07ef0a048827b29a",
+  "transcriptCharacters": 416,
+  "billableCharacters": 421,
+  "cacheKey": "6f8944b411303cf264bb9f74588f9a8e9ffaf26a8f12987d209161c0b0998045",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6f8944b411303cf264bb9f74588f9a8e9ffaf26a8f12987d209161c0b0998045.mp3",
+  "byteLength": 142416,
+  "sha256": "70c5d216607de4f3e26829486105787581ea722856e97e26ed2c235174c94794",
+  "durationSeconds": 23.736
+}

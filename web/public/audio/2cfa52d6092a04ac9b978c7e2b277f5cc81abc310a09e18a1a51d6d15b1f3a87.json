@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-red-fleshy-growth-jabir-tirmidhi",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا سَعِيدُ بْنُ يَعْقُوبَ الطَّالْقَانِيُّ، حَدَّثَنَا أَيُّوبُ بْنُ جَابِرٍ، عَنْ سِمَاكِ بْنِ حَرْبٍ، عَنْ جَابِرِ بْنِ سَمُرَةَ، قَالَ كَانَ خَاتَمُ رَسُولِ اللَّهِ صلى الله عليه وسلم - يَعْنِي الَّذِي بَيْنَ كَتِفَيْهِ غُدَّةً حَمْرَاءَ مِثْلَ بَيْضَةِ الْحَمَامَةِ . قَالَ أَبُو عِيسَى هَذَا حَدِيثٌ حَسَنٌ صَحِيحٌ .",
+  "transcriptHash": "8db80118d7699c61bed4f6c5c9057d7e8fe234f708faba38980fc930d9db48e4",
+  "transcriptCharacters": 329,
+  "billableCharacters": 329,
+  "cacheKey": "2cfa52d6092a04ac9b978c7e2b277f5cc81abc310a09e18a1a51d6d15b1f3a87",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/2cfa52d6092a04ac9b978c7e2b277f5cc81abc310a09e18a1a51d6d15b1f3a87.mp3",
+  "byteLength": 123984,
+  "sha256": "aa9bb22e45ced62c699dead07ea97f04638c88672be77d2ac8382d48cff757c0",
+  "durationSeconds": 20.664
+}

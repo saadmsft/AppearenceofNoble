@@ -1,0 +1,18 @@
+{
+  "entryId": "more-beautiful-than-the-moon-weak",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "اس روایت میں جابر بن سمرہ رضی اللہ عنہ ایک روشن رات میں نبی کریم صلی اللہ علیہ وسلم اور چاند کو دیکھنے کا ذکر کرتے ہیں۔ آپ صلی اللہ علیہ وسلم سرخ حُلّہ پہنے ہوئے تھے، اور جابر رضی اللہ عنہ کو آپ صلی اللہ علیہ وسلم چاند سے زیادہ خوبصورت لگے۔ امام ترمذی کے تبصرے اور دارالسلام کی درج شدہ تحقیق میں روایت کے درجے کا فرق ہے۔",
+  "transcriptHash": "89ca397fa1a49e149e02f248c92bd3483131191b15e4dd8717c154874bcbe1a2",
+  "transcriptCharacters": 320,
+  "billableCharacters": 320,
+  "cacheKey": "064b88bfcfd040987bc953d131488bfa0e514a7a96b8aa46a0379bbc620db80e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/064b88bfcfd040987bc953d131488bfa0e514a7a96b8aa46a0379bbc620db80e.mp3",
+  "byteLength": 145728,
+  "sha256": "bac377116f5f80a3794bdca6be2b40b48b0f8dd19de75c0abf80ac310970a5c1",
+  "durationSeconds": 24.288
+}

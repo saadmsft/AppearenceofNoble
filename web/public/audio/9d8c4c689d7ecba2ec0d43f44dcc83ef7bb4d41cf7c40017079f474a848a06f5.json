@@ -1,0 +1,18 @@
+{
+  "entryId": "character-forgiveness-no-personal-revenge",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha describes the Prophet may Allah bless him and grant him peace as choosing the easier of two options when it involved no sin, and keeping away from a sinful choice. She also distinguishes his refusal to seek revenge for himself from his response when Allah's sacred limits were violated. Her account joins personal forbearance with moral boundaries, rather than describing indifference to wrongdoing.",
+  "transcriptHash": "8ad9365e841ffd479529a0569d5cceb453db3d9e52a5d87d41500b59e6aad5d8",
+  "transcriptCharacters": 405,
+  "billableCharacters": 410,
+  "cacheKey": "9d8c4c689d7ecba2ec0d43f44dcc83ef7bb4d41cf7c40017079f474a848a06f5",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/9d8c4c689d7ecba2ec0d43f44dcc83ef7bb4d41cf7c40017079f474a848a06f5.mp3",
+  "byteLength": 138672,
+  "sha256": "d01945dfa48c3f9248f10b6c0b5563682ed9c6105b7967738fcd4e6e4ff6f2df",
+  "durationSeconds": 23.112
+}

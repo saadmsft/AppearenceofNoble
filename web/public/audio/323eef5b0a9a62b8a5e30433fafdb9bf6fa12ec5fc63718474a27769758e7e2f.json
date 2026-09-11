@@ -1,0 +1,18 @@
+{
+  "entryId": "large-hands-and-feet-anas",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کے ہاتھ اور پاؤں بڑے اور چہرہ خوبصورت بتایا۔ انہوں نے کہا کہ آپ صلی اللہ علیہ وسلم جیسا نہ پہلے دیکھا نہ بعد میں۔ ہاتھ پاؤں کے حجم کا یہ وصف بخاری کے عربی متن میں براہ راست موجود ہے، کسی ضعیف جامع حلیے پر منحصر نہیں۔",
+  "transcriptHash": "daa0eb11902a2234e9d8844ec101347642ab896779d65056f427535fa465b278",
+  "transcriptCharacters": 264,
+  "billableCharacters": 264,
+  "cacheKey": "323eef5b0a9a62b8a5e30433fafdb9bf6fa12ec5fc63718474a27769758e7e2f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/323eef5b0a9a62b8a5e30433fafdb9bf6fa12ec5fc63718474a27769758e7e2f.mp3",
+  "byteLength": 121536,
+  "sha256": "b2f7755fd0e27131806cef6d5b1b3e23c414a7790e74e89effaa2387f012211b",
+  "durationSeconds": 20.256
+}

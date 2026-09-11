@@ -1,0 +1,18 @@
+{
+  "entryId": "hind-ibn-abi-hala-beard-and-mouth",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ہند سے منسوب ضعیف بیان کے اس حصے میں گھنی داڑھی، ہموار رخسار، بڑے منہ اور دانتوں کے درمیان فاصلوں کا ذکر ہے۔ ان سب تفصیلات کو یکجا ثابت شدہ نہیں سمجھنا چاہیے؛ کسی مضبوط روایت میں ملتا جلتا ایک وصف ہونا یہاں کی تمام اضافی باتوں کو صحیح نہیں بنا دیتا۔",
+  "transcriptHash": "fa0fd770877acde8439678b441e8dee6e26e9c0ee9d9cb3a9551e4d539c736aa",
+  "transcriptCharacters": 249,
+  "billableCharacters": 249,
+  "cacheKey": "99f887cc5fd00b8468f82b24a98aff885b0a99ed1dc17b98bb3ed34091697faa",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/99f887cc5fd00b8468f82b24a98aff885b0a99ed1dc17b98bb3ed34091697faa.mp3",
+  "byteLength": 106128,
+  "sha256": "9a375af901719205fe95b4049a1bb1016d47d36b881d62a2d271505724fac20a",
+  "durationSeconds": 17.688
+}

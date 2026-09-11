@@ -1,0 +1,18 @@
+{
+  "entryId": "sandals-with-two-straps",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Isa ibn Tahman recalled Anas bringing out a pair of sandals described as having two straps. Thabit al-Bunani identified them as the Prophet's may Allah bless him and grant him peace sandals. The report concerns an object shown to those present, rather than a sighting of the Prophet may Allah bless him and grant him peace wearing it.",
+  "transcriptHash": "1b0d9b20181789ff44b780adba157a060db0e5043a80230f09804ad1890691dc",
+  "transcriptCharacters": 334,
+  "billableCharacters": 339,
+  "cacheKey": "4b6b640674b2eed9ad2aeaf8631c5616b062b7ff3e4896045cb3e925a584fd15",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/4b6b640674b2eed9ad2aeaf8631c5616b062b7ff3e4896045cb3e925a584fd15.mp3",
+  "byteLength": 117936,
+  "sha256": "a27d727a0cf7dcae560f23fb594fce972c28b817b954d92486721b6b6cbe69e7",
+  "durationSeconds": 19.656
+}

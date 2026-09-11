@@ -1,0 +1,18 @@
+{
+  "entryId": "character-honesty-truthfulness-shapes-character",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abdullah ibn Mas'ud transmits the Prophet's may Allah bless him and grant him peace teaching that repeated truthfulness forms a truthful person and directs them towards goodness and Paradise. Repeated lying moves in the opposite direction, towards wrongdoing and judgment. The report treats honesty as a sustained practice that shapes a person's character, not merely an isolated choice of accurate words.",
+  "transcriptHash": "4f274746dd793938d7efa8b50808e6aebf055c4e81065ff7e3a52baf8c42f236",
+  "transcriptCharacters": 405,
+  "billableCharacters": 420,
+  "cacheKey": "45bddb1c3f38484f55c4ed43908d383c04c8467e27823171fb61b8a52e5b8981",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/45bddb1c3f38484f55c4ed43908d383c04c8467e27823171fb61b8a52e5b8981.mp3",
+  "byteLength": 140544,
+  "sha256": "e5cffad299cf80cb2383c94de9e7960a24dcf6e0c0ba4b6ef92dae8fcbbd72b5",
+  "durationSeconds": 23.424
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "hands-knees-arms-prayer-posture",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو حمید رضی اللہ عنہ نے یاد کیا کہ نبی کریم صلی اللہ علیہ وسلم رکوع میں ہاتھ گھٹنوں پر جما کر پشت ہموار رکھتے تھے۔ سجدے میں بازو نہ زمین پر بچھاتے نہ بدن سے سمیٹتے، اور پاؤں کی انگلیاں قبلے کی طرف ہوتیں۔ روایت جسم کے دیکھے ہوئے انداز بیان کرتی ہے۔",
+  "transcriptHash": "2332ca09fa079fbdc390665961ceb175a238fb9c28f09fb01529d7860a713643",
+  "transcriptCharacters": 248,
+  "billableCharacters": 248,
+  "cacheKey": "00bbfabbde237a03a12026b51ab54077adbc98a63b5f0b9a406f14610632a7ca",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/00bbfabbde237a03a12026b51ab54077adbc98a63b5f0b9a406f14610632a7ca.mp3",
+  "byteLength": 111888,
+  "sha256": "52bd8c29975a6337673a2b08a440a026425bb0cb52a15f429643b41726c723d1",
+  "durationSeconds": 18.648
+}

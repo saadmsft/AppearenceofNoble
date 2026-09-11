@@ -1,0 +1,18 @@
+{
+  "entryId": "fourteen-white-hairs-counted-anas",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نے بتایا کہ انہوں نے نبی کریم صلی اللہ علیہ وسلم کے سر اور داڑھی میں صرف چودہ سفید بال گنے۔ یہ انس رضی اللہ عنہ سے منقول ایک خاص گنتی ہے۔ متعلقہ روایت میں ابن عمر رضی اللہ عنہما نے یہی عدد دہرانے کے بجائے تقریباً بیس کا عدد بیان کیا ہے۔",
+  "transcriptHash": "2d91f2532269017f729e880cc348e7ee18a43c35d200234283f68cac2237ce62",
+  "transcriptCharacters": 253,
+  "billableCharacters": 253,
+  "cacheKey": "0b6f38165eb070ecd6fb390ed66cc555d135678c2bd1afdc5f32dd351579b8fc",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/0b6f38165eb070ecd6fb390ed66cc555d135678c2bd1afdc5f32dd351579b8fc.mp3",
+  "byteLength": 118800,
+  "sha256": "d4fab8c9456475715a4b6777f6b2f48c60926ff85f515f07f86ae628454afc7b",
+  "durationSeconds": 19.8
+}

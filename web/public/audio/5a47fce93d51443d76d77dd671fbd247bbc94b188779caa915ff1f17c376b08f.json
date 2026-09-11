@@ -1,0 +1,18 @@
+{
+  "entryId": "feet-lean-heels-jabir-samurah",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر بن سمرہ رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کی ایڑیوں کے لیے منہوس العقبین کے الفاظ بیان کیے۔ شعبہ نے سماک سے اس کا مطلب پوچھا تو انہوں نے ایڑیوں پر کم گوشت ہونے کی وضاحت کی۔ اسی روایت میں منہ اور آنکھوں کا بھی ذکر ہے۔",
+  "transcriptHash": "96cdf3e202e91eb13bb9afef265f4aa42d08e91a2c094ee3561c076518abedb2",
+  "transcriptCharacters": 231,
+  "billableCharacters": 231,
+  "cacheKey": "5a47fce93d51443d76d77dd671fbd247bbc94b188779caa915ff1f17c376b08f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5a47fce93d51443d76d77dd671fbd247bbc94b188779caa915ff1f17c376b08f.mp3",
+  "byteLength": 106848,
+  "sha256": "9b4523b58aaa4e513703e07a8c9a5cf6023e8b3d0c491fda4527ac01718650ff",
+  "durationSeconds": 17.808
+}

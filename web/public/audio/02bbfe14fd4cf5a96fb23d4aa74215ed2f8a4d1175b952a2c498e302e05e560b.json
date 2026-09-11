@@ -1,0 +1,18 @@
+{
+  "entryId": "aisha-parted-his-hair-from-the-crown",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha described how she arranged the Prophet's may Allah bless him and grant him peace hair when she wanted to part it. She began the parting at the crown of his head and let the forelock fall between his eyes. Her account gives a practical detail of grooming.",
+  "transcriptHash": "6885ef9ca73663428b293f847e8e84ee18fc3d25310fa3ee7c6964dade1e3b4f",
+  "transcriptCharacters": 260,
+  "billableCharacters": 265,
+  "cacheKey": "02bbfe14fd4cf5a96fb23d4aa74215ed2f8a4d1175b952a2c498e302e05e560b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/02bbfe14fd4cf5a96fb23d4aa74215ed2f8a4d1175b952a2c498e302e05e560b.mp3",
+  "byteLength": 89568,
+  "sha256": "2f4060f005d09415e70ac062b1ac43525bd27eb1dbb91dd3a238129d377ace6f",
+  "durationSeconds": 14.928
+}

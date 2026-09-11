@@ -1,0 +1,18 @@
+{
+  "entryId": "abu-tufail-white-handsome-medium-built",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عُبَيْدُ اللَّهِ بْنُ عُمَرَ الْقَوَارِيرِيُّ، حَدَّثَنَا عَبْدُ الأَعْلَى بْنُ عَبْدِ الأَعْلَى، عَنِ الْجُرَيْرِيِّ، عَنْ أَبِي الطُّفَيْلِ، قَالَ رَأَيْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم وَمَا عَلَى وَجْهِ الأَرْضِ رَجُلٌ رَآهُ غَيْرِي . قَالَ فَقُلْتُ لَهُ فَكَيْفَ رَأَيْتَهُ قَالَ كَانَ أَبْيَضَ مَلِيحًا مُقَصَّدًا .",
+  "transcriptHash": "785331b5a8ed46cedbf1c7f7f3dfa0c2df61f02c101a92854495070a171765a2",
+  "transcriptCharacters": 337,
+  "billableCharacters": 337,
+  "cacheKey": "6a5bed9c8e27d5ac75ce0a53cd7f2f0dccbf64197d5f8835d8785aa8f0f740c7",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6a5bed9c8e27d5ac75ce0a53cd7f2f0dccbf64197d5f8835d8785aa8f0f740c7.mp3",
+  "byteLength": 124416,
+  "sha256": "e1b64abb81858a1b3b7aee0e583b39c03ae36b03670601fdde0368f1c2deda18",
+  "durationSeconds": 20.736
+}

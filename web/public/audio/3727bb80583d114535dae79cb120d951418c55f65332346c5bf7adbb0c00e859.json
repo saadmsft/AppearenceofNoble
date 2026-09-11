@@ -1,0 +1,18 @@
+{
+  "entryId": "the-shirt-he-loved-to-wear",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا إِبْرَاهِيمُ بْنُ مُوسَى، حَدَّثَنَا الْفَضْلُ بْنُ مُوسَى، عَنْ عَبْدِ الْمُؤْمِنِ بْنِ خَالِدٍ الْحَنَفِيِّ، عَنْ عَبْدِ اللَّهِ بْنِ بُرَيْدَةَ، عَنْ أُمِّ سَلَمَةَ، قَالَتْ كَانَ أَحَبَّ الثِّيَابِ إِلَى رَسُولِ اللَّهِ صلى الله عليه وسلم الْقَمِيصُ .",
+  "transcriptHash": "63680c346edff2dbfefb91fcf8e3483462757ca55b658906baa44a9b0e0139a6",
+  "transcriptCharacters": 266,
+  "billableCharacters": 266,
+  "cacheKey": "3727bb80583d114535dae79cb120d951418c55f65332346c5bf7adbb0c00e859",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/3727bb80583d114535dae79cb120d951418c55f65332346c5bf7adbb0c00e859.mp3",
+  "byteLength": 93888,
+  "sha256": "93b0788eb27919e45132600889047f0831dcbd82d32ca3e69334659c181cd4c9",
+  "durationSeconds": 15.648
+}

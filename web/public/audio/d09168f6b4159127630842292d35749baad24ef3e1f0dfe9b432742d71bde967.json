@@ -1,0 +1,18 @@
+{
+  "entryId": "full-beard-and-rounded-face-jabir",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر بن سمرہ رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کی داڑھی میں بالوں کی کثرت صراحت سے بیان کی۔ انہوں نے سر کے اگلے حصے اور داڑھی میں سفیدی کا بھی ذکر کیا۔ چہرے کو تلوار سے تشبیہ دینے کی نفی کرتے ہوئے سورج اور چاند کی مثال دی اور چہرے کی گولائی بیان کی۔",
+  "transcriptHash": "a6976ecb0d2f09b154d41e2958ce55c9e44070251b4f7686ea28eaa7b55bfea8",
+  "transcriptCharacters": 259,
+  "billableCharacters": 259,
+  "cacheKey": "d09168f6b4159127630842292d35749baad24ef3e1f0dfe9b432742d71bde967",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d09168f6b4159127630842292d35749baad24ef3e1f0dfe9b432742d71bde967.mp3",
+  "byteLength": 115920,
+  "sha256": "e1195093e88e5df5f6bacfeedaf6787b2ae0caad3098d9d3a8eb6aa10eea2245",
+  "durationSeconds": 19.32
+}

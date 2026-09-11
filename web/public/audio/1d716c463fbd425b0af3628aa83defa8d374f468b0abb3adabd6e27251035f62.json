@@ -1,0 +1,18 @@
+{
+  "entryId": "wavy-hair-between-ears-and-shoulders",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "When Qatada asked about the Prophet's may Allah bless him and grant him peace hair, Anas described it as wavy, neither straight nor tightly curled, and reaching between the ears and shoulders. The answer provides both the hair's character and its length as described in this particular wording.",
+  "transcriptHash": "85581f4949feb82257ebb16139adf900c7df092e23565e1109b7bbe1d9a5250b",
+  "transcriptCharacters": 294,
+  "billableCharacters": 304,
+  "cacheKey": "1d716c463fbd425b0af3628aa83defa8d374f468b0abb3adabd6e27251035f62",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/1d716c463fbd425b0af3628aa83defa8d374f468b0abb3adabd6e27251035f62.mp3",
+  "byteLength": 96624,
+  "sha256": "2584f0a4530d30d7016eea07a3209b92ab5f2b142c7c8422545b160ea2b1b582",
+  "durationSeconds": 16.104
+}

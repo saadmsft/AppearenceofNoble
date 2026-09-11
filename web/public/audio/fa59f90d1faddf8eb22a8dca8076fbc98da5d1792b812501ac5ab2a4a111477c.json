@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-red-fleshy-growth-jabir-tirmidhi",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر بن سمرہ رضی اللہ عنہ کی اس روایت میں نبی کریم صلی اللہ علیہ وسلم کے کندھوں کے درمیان مہر کو سرخی مائل گوشت کا ابھار بتایا گیا اور کبوتر کے انڈے سے تشبیہ دی گئی ہے۔ روایت یہ اوصاف بیان کرتی ہے، مگر قطعی قطر یا کوئی طبی تشریح نہیں دیتی۔",
+  "transcriptHash": "6e9fde9f82cc436874a39ca5ef8ba0c802cbe7ecc2474f55bd27aadbda5588b8",
+  "transcriptCharacters": 239,
+  "billableCharacters": 239,
+  "cacheKey": "fa59f90d1faddf8eb22a8dca8076fbc98da5d1792b812501ac5ab2a4a111477c",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/fa59f90d1faddf8eb22a8dca8076fbc98da5d1792b812501ac5ab2a4a111477c.mp3",
+  "byteLength": 102096,
+  "sha256": "c79804d8ccc890d92c3f43ccda5c8edf48c4cb3bd4fc38938778440637839150",
+  "durationSeconds": 17.016
+}

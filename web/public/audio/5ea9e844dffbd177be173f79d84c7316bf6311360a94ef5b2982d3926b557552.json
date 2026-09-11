@@ -1,0 +1,18 @@
+{
+  "entryId": "beautiful-recitation-voice-bara",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا خَلاَّدُ بْنُ يَحْيَى، قَالَ حَدَّثَنَا مِسْعَرٌ، قَالَ حَدَّثَنَا عَدِيُّ بْنُ ثَابِتٍ، سَمِعَ الْبَرَاءَ، رضى الله عنه قَالَ سَمِعْتُ النَّبِيَّ صلى الله عليه وسلم يَقْرَأُ {وَالتِّينِ وَالزَّيْتُونِ} فِي الْعِشَاءِ، وَمَا سَمِعْتُ أَحَدًا أَحْسَنَ صَوْتًا مِنْهُ أَوْ قِرَاءَةً.",
+  "transcriptHash": "64f0f66fb1f50701e0a88d90c2fc53b75d41f9fb0b1180ab6d15ca384ce54474",
+  "transcriptCharacters": 292,
+  "billableCharacters": 292,
+  "cacheKey": "5ea9e844dffbd177be173f79d84c7316bf6311360a94ef5b2982d3926b557552",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5ea9e844dffbd177be173f79d84c7316bf6311360a94ef5b2982d3926b557552.mp3",
+  "byteLength": 114048,
+  "sha256": "ea83d83314f07f13fd26ea101cbe6a71656fdce849ec5b469f97bec33cbc0784",
+  "durationSeconds": 19.008
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "hair-length-between-wafrah-and-jumma",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا ابْنُ نُفَيْلٍ، حَدَّثَنَا عَبْدُ الرَّحْمَنِ بْنُ أَبِي الزِّنَادِ، عَنْ هِشَامِ بْنِ عُرْوَةَ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، قَالَتْ كَانَ شَعْرُ رَسُولِ اللَّهِ صلى الله عليه وسلم فَوْقَ الْوَفْرَةِ وَدُونَ الْجُمَّةِ .",
+  "transcriptHash": "796a70d7ee7fa657675cb5aaec01fdea503fc577923eb26ad4e07242548b891d",
+  "transcriptCharacters": 233,
+  "billableCharacters": 233,
+  "cacheKey": "49f05f61797b5afa3627a607e980e28a40cb9fd7149e0b965a2174669d98458a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/49f05f61797b5afa3627a607e980e28a40cb9fd7149e0b965a2174669d98458a.mp3",
+  "byteLength": 85248,
+  "sha256": "549b856039289ceba0180ce0c1b69eb0afb55a0cec7998fe398a71a03629c323",
+  "durationSeconds": 14.208
+}

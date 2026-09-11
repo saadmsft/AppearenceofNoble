@@ -1,0 +1,18 @@
+{
+  "entryId": "face-showed-worry-at-storm-clouds",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا نے بادل یا ہوا دیکھنے پر نبی کریم صلی اللہ علیہ وسلم کے چہرے کی کیفیت میں تبدیلی محسوس کی۔ انہوں نے پوچھا کہ دوسروں کی بارش کی امید کے مقابلے میں آپ صلی اللہ علیہ وسلم کو فکر کیوں ہوتی ہے۔ آپ صلی اللہ علیہ وسلم نے عذاب کا اندیشہ بیان فرمایا اور ان لوگوں کا ذکر کیا جنہوں نے عذاب والے بادل کو بارش کا بادل سمجھا تھا۔",
+  "transcriptHash": "f2b1ba47e430e11cd6bdf7731a09baba2fe78de1a61706df445589a9e6a0690a",
+  "transcriptCharacters": 335,
+  "billableCharacters": 335,
+  "cacheKey": "2f29b5c4d6f3f346bb025dc0f9c477114df29745e022129b372ef48cc3d4d9b3",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/2f29b5c4d6f3f346bb025dc0f9c477114df29745e022129b372ef48cc3d4d9b3.mp3",
+  "byteLength": 146592,
+  "sha256": "4b16107de299502a3fd297166a0740a2440eb74c31abbcb0811c746064e12b58",
+  "durationSeconds": 24.432
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "cool-fragrant-hand-jabir-childhood",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَمْرُو بْنُ حَمَّادِ بْنِ طَلْحَةَ الْقَنَّادُ، حَدَّثَنَا أَسْبَاطٌ، - وَهُوَ ابْنُ نَصْرٍ الْهَمْدَانِيُّ - عَنْ سِمَاكٍ، عَنْ جَابِرِ بْنِ سَمُرَةَ، قَالَ صَلَّيْتُ مَعَ رَسُولِ اللَّهِ صلى الله عليه وسلم صَلاَةَ الأُولَى ثُمَّ خَرَجَ إِلَى أَهْلِهِ وَخَرَجْتُ مَعَهُ فَاسْتَقْبَلَهُ وِلْدَانٌ فَجَعَلَ يَمْسَحُ خَدَّىْ أَحَدِهِمْ وَاحِدًا وَاحِدًا - قَالَ - وَأَمَّا أَنَا فَمَسَحَ خَدِّي - قَالَ - فَوَجَدْتُ لِيَدِهِ بَرْدًا أَوْ رِيحًا كَأَنَّمَا أَخْرَجَهَا مِنْ جُؤْنَةِ عَطَّارٍ .",
+  "transcriptHash": "b2286592bc8b2f54ec16074a2e47457fc1a188a032cc9508561425c13a90b402",
+  "transcriptCharacters": 502,
+  "billableCharacters": 502,
+  "cacheKey": "f8fed998f6f7bb2da994de1f7925c1dbd2708576840552dac2056bc25eb4312d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/f8fed998f6f7bb2da994de1f7925c1dbd2708576840552dac2056bc25eb4312d.mp3",
+  "byteLength": 185904,
+  "sha256": "9d2cefab9aa370893974fa5e774c3c187a2f8f0728214f44dee5d641d8da1d6e",
+  "durationSeconds": 30.984
+}

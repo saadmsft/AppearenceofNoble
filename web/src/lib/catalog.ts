@@ -1,4 +1,9 @@
-import type { Collection, Grade, Localized, Topic } from './schema.ts'
+import type { Collection, Grade, Localized, Shelf, Topic } from './schema.ts'
+
+export const shelfLabels: Record<Shelf, Localized> = {
+  appearance: { en: 'The Noble Appearance', ur: 'حلیۂ مبارک' },
+  character: { en: 'The Noble Character', ur: 'اخلاقِ نبوی ﷺ' },
+}
 
 export const topicLabels: Record<Topic, Localized> = {
   overview: { en: 'Overall appearance', ur: 'مجموعی حلیہ' },
@@ -17,6 +22,14 @@ export const topicLabels: Record<Topic, Localized> = {
   voice: { en: 'Voice & speech', ur: 'آواز اور گفتگو' },
   smile: { en: 'Smile & laughter', ur: 'مسکراہٹ' },
   dress: { en: 'Dress & adornment', ur: 'لباس اور زیبائش' },
+  mercy: { en: 'Mercy', ur: 'رحمت و شفقت' },
+  patience: { en: 'Patience', ur: 'صبر' },
+  humility: { en: 'Humility', ur: 'تواضع' },
+  generosity: { en: 'Generosity', ur: 'سخاوت' },
+  justice: { en: 'Justice', ur: 'عدل و انصاف' },
+  forgiveness: { en: 'Forgiveness', ur: 'عفو و درگزر' },
+  honesty: { en: 'Honesty', ur: 'صدق و امانت' },
+  'family-community': { en: 'Family & community', ur: 'خاندان اور معاشرہ' },
 }
 
 export const collectionLabels: Record<Collection, Localized> = {
@@ -54,4 +67,12 @@ export const topicAliases: Record<Topic, string> = {
   voice: 'voice speech recitation speaking awaz awaaz tilawat bolna آواز تلاوت گفتگو کلام',
   smile: 'smile laughter laugh joy muskurahat hansi tabassum مسکراہٹ تبسم ہنسی',
   dress: 'clothes turban garment cloak sandals ring لباس عمامہ قمیص چادر انگوٹھی نعلین',
+  mercy: 'mercy compassion kindness rahmat shafqat رحم رحمت شفقت مہربانی',
+  patience: 'patience endurance restraint sabr صبر تحمل برداشت',
+  humility: 'humility modesty service tawazu تواضع انکساری خدمت',
+  generosity: 'generosity giving charity sakhawat سخاوت انفاق عطا صدقہ',
+  justice: 'justice fairness equality insaf adl انصاف عدل برابری',
+  forgiveness: 'forgiveness pardon reconciliation maafi معافی عفو درگزر',
+  honesty: 'honesty truth trust integrity sach amanat سچ صدق امانت دیانت',
+  'family-community': 'family children neighbours neighbors community household khandan خاندان گھر بچے پڑوسی معاشرہ',
 }

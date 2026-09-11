@@ -1,0 +1,18 @@
+{
+  "entryId": "hind-ibn-abi-hala-neck-like-silver",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ہند بن ابی ہالہ سے منسوب ضعیف روایت کے ایک حصے میں نبی کریم صلی اللہ علیہ وسلم کی گردن کو ایک مجسمے کی گردن سے، چاندی کی صفائی کے ساتھ، تشبیہ دی گئی ہے۔ یہاں روایت کی مثال محفوظ رکھی گئی ہے، اسے جسمانی ساخت کی قطعی تفصیل نہیں بنایا گیا۔",
+  "transcriptHash": "c1cf03ea5215c84bb962d3af27a827336942b59e8e4118c2897f150474f8dae5",
+  "transcriptCharacters": 236,
+  "billableCharacters": 236,
+  "cacheKey": "a7e76172fcaa0b935576930b005acb08ff041cae4100455267fc9e466540b53e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a7e76172fcaa0b935576930b005acb08ff041cae4100455267fc9e466540b53e.mp3",
+  "byteLength": 107568,
+  "sha256": "6f5f791a883d3eab3d036ec9bdf7b5a9018fb3f5c3a79c60849644f5287023f6",
+  "durationSeconds": 17.928
+}

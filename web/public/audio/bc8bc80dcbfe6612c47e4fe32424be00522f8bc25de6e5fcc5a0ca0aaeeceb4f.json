@@ -1,0 +1,18 @@
+{
+  "entryId": "teeth-visible-when-laughing",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "A man seeking a remedy for breaking his Ramadan fast was given dates to distribute. When he said that no household nearby was poorer than his own, the Prophet may Allah bless him and grant him peace laughed until his teeth became visible and allowed the man's household to receive them. Abu Huraira preserved this visible detail.",
+  "transcriptHash": "ffe35383c928c290da11b9af8bed915cf17e7298b403979f08c37453d1b7f74c",
+  "transcriptCharacters": 329,
+  "billableCharacters": 334,
+  "cacheKey": "bc8bc80dcbfe6612c47e4fe32424be00522f8bc25de6e5fcc5a0ca0aaeeceb4f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/bc8bc80dcbfe6612c47e4fe32424be00522f8bc25de6e5fcc5a0ca0aaeeceb4f.mp3",
+  "byteLength": 115488,
+  "sha256": "379b1c6b01dcfd9260c59659b3844d17049b6520871aee90de30bb7cab3eb4e0",
+  "durationSeconds": 19.248
+}

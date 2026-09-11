@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-hair-cluster-abu-zaid-akhtab",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو زید رضی اللہ عنہ بیان کرتے ہیں کہ نبی کریم صلی اللہ علیہ وسلم نے انہیں قریب آ کر اپنی پشت پر ہاتھ پھیرنے کو فرمایا۔ ایسا کرتے ہوئے ان کی انگلیاں مہر پر پڑیں۔ روایت کے آخر میں مہر کے بارے میں سوال اور جمع ہوئے بالوں کی وضاحت آتی ہے۔",
+  "transcriptHash": "2ce4e57960884410fd97591feac1399fe225aa4fe2c40968fc549ee789445b28",
+  "transcriptCharacters": 235,
+  "billableCharacters": 235,
+  "cacheKey": "06419c0d687e84c56119d9590c053ffb63e929ee8bcff8aae6c99ff8bb4e2659",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/06419c0d687e84c56119d9590c053ffb63e929ee8bcff8aae6c99ff8bb4e2659.mp3",
+  "byteLength": 106272,
+  "sha256": "020d536b4f9c45bbc5b5edd8bf059c770486f0e389f23faab2bdf8afaf2833ce",
+  "durationSeconds": 17.712
+}

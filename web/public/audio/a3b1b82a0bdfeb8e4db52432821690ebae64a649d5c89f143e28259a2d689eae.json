@@ -1,0 +1,18 @@
+{
+  "entryId": "aisha-parted-his-hair-from-the-crown",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا يَحْيَى بْنُ خَلَفٍ، حَدَّثَنَا عَبْدُ الأَعْلَى، عَنْ مُحَمَّدٍ، - يَعْنِي ابْنَ إِسْحَاقَ - قَالَ حَدَّثَنِي مُحَمَّدُ بْنُ جَعْفَرِ بْنِ الزُّبَيْرِ، عَنْ عُرْوَةَ، عَنْ عَائِشَةَ، رضى الله عنها قَالَتْ كُنْتُ إِذَا أَرَدْتُ أَنْ أَفْرِقَ رَأْسَ رَسُولِ اللَّهِ صلى الله عليه وسلم صَدَعْتُ الْفَرْقَ مِنْ يَافُوخِهِ وَأُرْسِلُ نَاصِيَتَهُ بَيْنَ عَيْنَيْهِ .",
+  "transcriptHash": "bd688e0dc6f4c749a43e9169859d553552e4183b5a10a0576c3a70b6fc3f3afa",
+  "transcriptCharacters": 372,
+  "billableCharacters": 372,
+  "cacheKey": "a3b1b82a0bdfeb8e4db52432821690ebae64a649d5c89f143e28259a2d689eae",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a3b1b82a0bdfeb8e4db52432821690ebae64a649d5c89f143e28259a2d689eae.mp3",
+  "byteLength": 129744,
+  "sha256": "a3720cb8e396334d255cb70b881ffacd9b901504526164cdc6a8ff51b4728981",
+  "durationSeconds": 21.624
+}

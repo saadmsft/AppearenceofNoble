@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-greeting-children",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَلِيُّ بْنُ الْجَعْدِ، أَخْبَرَنَا شُعْبَةُ، عَنْ سَيَّارٍ، عَنْ ثَابِتٍ الْبُنَانِيِّ، عَنْ أَنَسِ بْنِ مَالِكٍ ـ رضى الله عنه أَنَّهُ مَرَّ عَلَى صِبْيَانٍ فَسَلَّمَ عَلَيْهِمْ وَقَالَ كَانَ النَّبِيُّ صلى الله عليه وسلم يَفْعَلُهُ.",
+  "transcriptHash": "fab0629c00a221656925e277dc356c84dccfb58f19e51de96d9c19ec97003831",
+  "transcriptCharacters": 246,
+  "billableCharacters": 246,
+  "cacheKey": "149daa1d878aa39458786a28688e46377f520de379823a60b975aade28dac5bc",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/149daa1d878aa39458786a28688e46377f520de379823a60b975aade28dac5bc.mp3",
+  "byteLength": 92736,
+  "sha256": "324c03a0d2d7f6dfa7763fdda971ba5f25f356c16f61dbcdc0ca5e78156e9409",
+  "durationSeconds": 15.456
+}

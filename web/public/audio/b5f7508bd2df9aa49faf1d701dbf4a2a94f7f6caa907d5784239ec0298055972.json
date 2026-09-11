@@ -1,0 +1,18 @@
+{
+  "entryId": "character-mercy-sent-as-mercy",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Huraira reports that the Prophet was asked to pray against the polytheists. In response, he described his mission in terms of mercy rather than habitual cursing. His answer declined the request as presented and placed the character of his calling at the centre of this brief exchange.",
+  "transcriptHash": "2d832bd999dcba9d69a4fe84889f5a31b01a9c178b5cab90b6356b1125dd8151",
+  "transcriptCharacters": 288,
+  "billableCharacters": 288,
+  "cacheKey": "b5f7508bd2df9aa49faf1d701dbf4a2a94f7f6caa907d5784239ec0298055972",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b5f7508bd2df9aa49faf1d701dbf4a2a94f7f6caa907d5784239ec0298055972.mp3",
+  "byteLength": 104112,
+  "sha256": "6a1c5ed82d61cbc15e8721f66f39163d8f94be7f43d45ab8d7147d23d232abaf",
+  "durationSeconds": 17.352
+}

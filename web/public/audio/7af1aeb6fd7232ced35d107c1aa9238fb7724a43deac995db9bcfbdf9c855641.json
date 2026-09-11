@@ -1,0 +1,18 @@
+{
+  "entryId": "grey-hair-location-chin-temples-scalp",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا نَصْرُ بْنُ عَلِيٍّ الْجَهْضَمِيُّ، حَدَّثَنَا أَبِي، حَدَّثَنَا الْمُثَنَّى بْنُ سَعِيدٍ، عَنْ قَتَادَةَ، عَنْ أَنَسِ بْنِ مَالِكٍ، قَالَ يُكْرَهُ أَنْ يَنْتِفَ الرَّجُلُ، الشَّعْرَةَ الْبَيْضَاءَ مِنْ رَأْسِهِ وَلِحْيَتِهِ - قَالَ - وَلَمْ يَخْتَضِبْ رَسُولُ اللَّهِ صلى الله عليه وسلم إِنَّمَا كَانَ الْبَيَاضُ فِي عَنْفَقَتِهِ وَفِي الصُّدْغَيْنِ وَفِي الرَّأْسِ نَبْذٌ .",
+  "transcriptHash": "969e1479b7d2e85150039efb53c9a65dabacf7cd98970672f1b9eb2a9cd50cdb",
+  "transcriptCharacters": 386,
+  "billableCharacters": 386,
+  "cacheKey": "7af1aeb6fd7232ced35d107c1aa9238fb7724a43deac995db9bcfbdf9c855641",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/7af1aeb6fd7232ced35d107c1aa9238fb7724a43deac995db9bcfbdf9c855641.mp3",
+  "byteLength": 135648,
+  "sha256": "be4732a0e4023e40168a84ad5abe1273488e35c207f7ef1a0c8cbb081094983a",
+  "durationSeconds": 22.608
+}

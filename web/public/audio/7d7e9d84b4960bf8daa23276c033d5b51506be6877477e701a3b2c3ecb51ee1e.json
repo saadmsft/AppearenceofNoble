@@ -1,0 +1,18 @@
+{
+  "entryId": "character-forgiveness-no-personal-revenge",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَبْدُ اللَّهِ بْنُ يُوسُفَ، أَخْبَرَنَا مَالِكٌ، عَنِ ابْنِ شِهَابٍ، عَنْ عُرْوَةَ بْنِ الزُّبَيْرِ، عَنْ عَائِشَةَ ـ رضى الله عنها ـ أَنَّهَا قَالَتْ مَا خُيِّرَ رَسُولُ اللَّهِ صلى الله عليه وسلم بَيْنَ أَمْرَيْنِ إِلاَّ أَخَذَ أَيْسَرَهُمَا، مَا لَمْ يَكُنْ إِثْمًا، فَإِنْ كَانَ إِثْمًا كَانَ أَبْعَدَ النَّاسِ مِنْهُ، وَمَا انْتَقَمَ رَسُولُ اللَّهِ صلى الله عليه وسلم لِنَفْسِهِ، إِلاَّ أَنْ تُنْتَهَكَ حُرْمَةُ اللَّهِ فَيَنْتَقِمَ لِلَّهِ بِهَا.",
+  "transcriptHash": "5ccf21296c334cf2203c88354ee02774fd1c6803c0f437a0c04282d194e026e0",
+  "transcriptCharacters": 465,
+  "billableCharacters": 465,
+  "cacheKey": "7d7e9d84b4960bf8daa23276c033d5b51506be6877477e701a3b2c3ecb51ee1e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/7d7e9d84b4960bf8daa23276c033d5b51506be6877477e701a3b2c3ecb51ee1e.mp3",
+  "byteLength": 169776,
+  "sha256": "891c53ab520f6010d1c90d59cfa01aa5c9117b228a9e9ff3dc1d9949943c2241",
+  "durationSeconds": 28.296
+}

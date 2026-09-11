@@ -1,0 +1,18 @@
+{
+  "entryId": "ali-long-description-round-face-eyes",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابراہیم بن محمد کے واسطے سے علی رضی اللہ عنہ کی طرف منسوب طویل روایت میں نبی کریم صلی اللہ علیہ وسلم کے چہرے کی کچھ گولائی، سرخی مائل روشن رنگت، بہت سیاہ آنکھیں اور لمبی پلکیں بیان ہوئی ہیں۔ اس روایت کی سند ضعیف درج ہے، اس لیے اس کی بنیاد پر یہ اوصاف قطعی ثابت نہیں کہے گئے۔",
+  "transcriptHash": "20732a9041b4c797e443854d3e49584f273f04e4825157512684f8778d58460a",
+  "transcriptCharacters": 274,
+  "billableCharacters": 274,
+  "cacheKey": "30f5e997515b1987dbbbea08118fb009a6755e911b0f155c696b7adba3cf0049",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/30f5e997515b1987dbbbea08118fb009a6755e911b0f155c696b7adba3cf0049.mp3",
+  "byteLength": 119952,
+  "sha256": "662f4e8ea803b8237abed2c4796bcf0c03957b60024982cb7c18f69186e8eec9",
+  "durationSeconds": 19.992
+}

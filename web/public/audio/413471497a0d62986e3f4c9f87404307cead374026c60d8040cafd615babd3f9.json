@@ -1,0 +1,18 @@
+{
+  "entryId": "character-patience-severe-fever",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abdullah ibn Mas'ud visited the Prophet during a severe fever. The Prophet acknowledged the intensity of his suffering and confirmed Abdullah's question about a doubled reward. He then explained that a Muslim's affliction, even a thorn prick, can be a means by which Allah removes sins, comparing this with a tree shedding leaves.",
+  "transcriptHash": "3a6c32f866009d3a67a92d306b6394f8e75b3691e4a0d0e1fb7cb0ab8a30fdbe",
+  "transcriptCharacters": 330,
+  "billableCharacters": 345,
+  "cacheKey": "413471497a0d62986e3f4c9f87404307cead374026c60d8040cafd615babd3f9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/413471497a0d62986e3f4c9f87404307cead374026c60d8040cafd615babd3f9.mp3",
+  "byteLength": 118656,
+  "sha256": "10d98726644dcd87f2962028246ca3eff32b1d2e0a4a19211a790c87326f0b2d",
+  "durationSeconds": 19.776
+}

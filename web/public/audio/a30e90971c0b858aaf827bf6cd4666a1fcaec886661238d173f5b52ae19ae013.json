@@ -1,0 +1,18 @@
+{
+  "entryId": "character-honesty-visible-condition-of-goods",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "وَحَدَّثَنِي يَحْيَى بْنُ أَيُّوبَ، وَقُتَيْبَةُ، وَابْنُ، حُجْرٍ جَمِيعًا عَنْ إِسْمَاعِيلَ بْنِ جَعْفَرٍ، - قَالَ ابْنُ أَيُّوبَ حَدَّثَنَا إِسْمَاعِيلُ، - قَالَ أَخْبَرَنِي الْعَلاَءُ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، . أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم مَرَّ عَلَى صُبْرَةِ طَعَامٍ فَأَدْخَلَ يَدَهُ فِيهَا فَنَالَتْ أَصَابِعُهُ بَلَلاً فَقَالَ \" مَا هَذَا يَا صَاحِبَ الطَّعَامِ \" . قَالَ أَصَابَتْهُ السَّمَاءُ يَا رَسُولَ اللَّهِ . قَالَ \" أَفَلاَ جَعَلْتَهُ فَوْقَ الطَّعَامِ كَىْ يَرَاهُ النَّاسُ مَنْ غَشَّ فَلَيْسَ مِنِّي \" .",
+  "transcriptHash": "82f4cbabee75e3e693067c7fab27ce317a21fd99ab8c1ba45b9581068d46a704",
+  "transcriptCharacters": 547,
+  "billableCharacters": 567,
+  "cacheKey": "a30e90971c0b858aaf827bf6cd4666a1fcaec886661238d173f5b52ae19ae013",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a30e90971c0b858aaf827bf6cd4666a1fcaec886661238d173f5b52ae19ae013.mp3",
+  "byteLength": 205200,
+  "sha256": "3acc6171662aca72ed8f99797aeac9c1638d5eece233ed2c529ab0494f25051b",
+  "durationSeconds": 34.2
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-shoulder-pigeon-egg-jabir",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر بن سمرہ رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کے کندھے کے قریب مہر دیکھنے کا ذکر کیا۔ انہوں نے اسے کبوتر کے انڈے سے تشبیہ دی اور بتایا کہ وہ آپ صلی اللہ علیہ وسلم کے جسم سے مشابہ تھی۔ اس بیان میں جگہ اور ظاہری مثال ملتی ہے، کوئی عددی پیمائش نہیں۔",
+  "transcriptHash": "795a4c9d675d7e5b49b5719d040604656c90500fc2ca38b7c85820441a3b2e98",
+  "transcriptCharacters": 257,
+  "billableCharacters": 257,
+  "cacheKey": "bbeaa5edc539fcf43fd0f7d5ee8444ff9d0959d8a0b472d8af492c5c89370164",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/bbeaa5edc539fcf43fd0f7d5ee8444ff9d0959d8a0b472d8af492c5c89370164.mp3",
+  "byteLength": 118224,
+  "sha256": "bb8680a76fe5901501ac9678a719ab5b15a073e22bf38e7518e8527084f2f395",
+  "durationSeconds": 19.704
+}

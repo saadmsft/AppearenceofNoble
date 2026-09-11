@@ -1,0 +1,18 @@
+{
+  "entryId": "character-forgiveness-pardoning-an-insult",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Usama ibn Zayd recounts a tense encounter while accompanying the Prophet may Allah bless him and grant him peace to visit Sa'd ibn Ubada. After Abdullah ibn Ubay objected to his address, an argument spread through the gathering. The Prophet may Allah bless him and grant him peace calmed those present. Later, Sa'd asked him to overlook Abdullah's behaviour, explaining the man's frustrated hopes of leadership. The account expressly says the Prophet may Allah bless him and grant him peace forgave him.",
+  "transcriptHash": "30726ed93194e66ae98deb6d329325a5b631a97fcb5b5ec48ec0df77659d1fe9",
+  "transcriptCharacters": 503,
+  "billableCharacters": 523,
+  "cacheKey": "0ab35f70976585431ee7fdb18f1de4c66e36f96a5b9d39d849a2a648ccefd3e1",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/0ab35f70976585431ee7fdb18f1de4c66e36f96a5b9d39d849a2a648ccefd3e1.mp3",
+  "byteLength": 176688,
+  "sha256": "ceb1de66f7d32ccb041ed586044cb362a7e8baec46cd9e0959618b29d1e18721",
+  "durationSeconds": 29.448
+}

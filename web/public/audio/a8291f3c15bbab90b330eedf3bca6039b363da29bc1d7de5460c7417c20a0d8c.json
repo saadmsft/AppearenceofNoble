@@ -1,0 +1,18 @@
+{
+  "entryId": "beard-movement-during-recitation",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُوسَى، قَالَ حَدَّثَنَا عَبْدُ الْوَاحِدِ، قَالَ حَدَّثَنَا الأَعْمَشُ، عَنْ عُمَارَةَ بْنِ عُمَيْرٍ، عَنْ أَبِي مَعْمَرٍ، قَالَ قُلْنَا لِخَبَّابٍ أَكَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم يَقْرَأُ فِي الظُّهْرِ وَالْعَصْرِ قَالَ نَعَمْ. قُلْنَا بِمَ كُنْتُمْ تَعْرِفُونَ ذَاكَ قَالَ بِاضْطِرَابِ لِحْيَتِهِ.",
+  "transcriptHash": "2945b28b5a6fdd18c806d7c1f6c440b6884dc8aa5f8a60bb1c193eec9c4cc698",
+  "transcriptCharacters": 322,
+  "billableCharacters": 322,
+  "cacheKey": "a8291f3c15bbab90b330eedf3bca6039b363da29bc1d7de5460c7417c20a0d8c",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a8291f3c15bbab90b330eedf3bca6039b363da29bc1d7de5460c7417c20a0d8c.mp3",
+  "byteLength": 120384,
+  "sha256": "176253c22d1d7f23502741a7a900e05aa9e480b4f17fcab99516eec96027ff7b",
+  "durationSeconds": 20.064
+}

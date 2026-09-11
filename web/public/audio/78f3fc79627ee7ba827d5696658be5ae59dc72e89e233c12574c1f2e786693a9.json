@@ -1,0 +1,18 @@
+{
+  "entryId": "black-turban-at-conquest-of-mecca",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عمرو بن حریث رضی اللہ عنہ نے بیان کیا کہ نبی کریم صلی اللہ علیہ وسلم نے سیاہ عمامہ پہن کر لوگوں سے خطاب فرمایا۔ ابو داؤد کی متعلقہ روایت میں عمرو رضی اللہ عنہ آپ صلی اللہ علیہ وسلم کو منبر پر بیان کرتے ہیں، جبکہ عمامے کے دونوں سرے کندھوں کے درمیان لٹک رہے تھے۔ یہ اضافی تفصیل اسی متعلقہ روایت کے الفاظ میں ہے۔",
+  "transcriptHash": "d12facae69d16355782c608b62ffa8854376c5aa02e480da9040356636a855e1",
+  "transcriptCharacters": 309,
+  "billableCharacters": 309,
+  "cacheKey": "78f3fc79627ee7ba827d5696658be5ae59dc72e89e233c12574c1f2e786693a9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/78f3fc79627ee7ba827d5696658be5ae59dc72e89e233c12574c1f2e786693a9.mp3",
+  "byteLength": 141696,
+  "sha256": "3e31d24e5c28b6f4d547aba79caa5e2ecdb690d7f7b6853fb97df9a46fb6d179",
+  "durationSeconds": 23.616
+}

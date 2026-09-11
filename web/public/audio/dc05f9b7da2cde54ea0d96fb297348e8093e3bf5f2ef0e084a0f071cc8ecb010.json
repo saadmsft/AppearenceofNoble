@@ -1,0 +1,18 @@
+{
+  "entryId": "character-honesty-truthfulness-shapes-character",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عُثْمَانُ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا جَرِيرٌ، عَنْ مَنْصُورٍ، عَنْ أَبِي وَائِلٍ، عَنْ عَبْدِ اللَّهِ ـ رضى الله عنه ـ عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ \" إِنَّ الصِّدْقَ يَهْدِي إِلَى الْبِرِّ، وَإِنَّ الْبِرَّ يَهْدِي إِلَى الْجَنَّةِ، وَإِنَّ الرَّجُلَ لَيَصْدُقُ حَتَّى يَكُونَ صِدِّيقًا، وَإِنَّ الْكَذِبَ يَهْدِي إِلَى الْفُجُورِ، وَإِنَّ الْفُجُورَ يَهْدِي إِلَى النَّارِ، وَإِنَّ الرَّجُلَ لَيَكْذِبُ، حَتَّى يُكْتَبَ عِنْدَ اللَّهِ كَذَّابًا \".",
+  "transcriptHash": "0d5f2930c130e9053f06685649403030e8e07275f68bf95b70718f3b4dea4501",
+  "transcriptCharacters": 476,
+  "billableCharacters": 486,
+  "cacheKey": "dc05f9b7da2cde54ea0d96fb297348e8093e3bf5f2ef0e084a0f071cc8ecb010",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/dc05f9b7da2cde54ea0d96fb297348e8093e3bf5f2ef0e084a0f071cc8ecb010.mp3",
+  "byteLength": 171360,
+  "sha256": "1f292744a134312d2d9a126e1046bda6c9a744d869721cd9bb97f225f23c7ee7",
+  "durationSeconds": 28.56
+}

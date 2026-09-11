@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-servant-and-messenger",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت عمر رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کا فرمان نقل کیا کہ آپ صلی اللہ علیہ وسلم کی تعریف میں غلو نہ کیا جائے، جیسے نصاریٰ نے ابن مریم کے بارے میں کیا۔ آپ صلی اللہ علیہ وسلم نے اپنے لیے اللہ کا بندہ اور اس کا رسول کہنے کی ہدایت فرمائی۔ روایت میں آپ صلی اللہ علیہ وسلم کی اپنی بیان کردہ شناخت اور مدح کی حد سامنے آتی ہے۔",
+  "transcriptHash": "33639d5141dfd81f57620d67e3d4f0a5274da35dc79af2651b84a45f2be522b7",
+  "transcriptCharacters": 333,
+  "billableCharacters": 333,
+  "cacheKey": "e8639f2844ea174e83d9e2c0f3c744341d85dad5d4e6103a2f86e59f6fe2bcc9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e8639f2844ea174e83d9e2c0f3c744341d85dad5d4e6103a2f86e59f6fe2bcc9.mp3",
+  "byteLength": 147024,
+  "sha256": "af95667f97002c5c2c860627c1246a1fb9acdc69c157732c9275f26d04268ccb",
+  "durationSeconds": 24.504
+}

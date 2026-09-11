@@ -1,0 +1,18 @@
+{
+  "entryId": "character-generosity-giving-needed-cloth",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت سہل بن سعد رضی اللہ عنہ بیان کرتے ہیں کہ ایک خاتون اپنی بُنی ہوئی چادر نبی کریم صلی اللہ علیہ وسلم کے لیے لائیں۔ آپ صلی اللہ علیہ وسلم کو اس کی ضرورت تھی اور آپ نے اسے تہبند بنایا۔ ایک شخص نے مانگا تو آپ صلی اللہ علیہ وسلم نے دینے کی حامی بھر لی، پھر اسے تہہ کر کے بھجوا دیا۔ سہل رضی اللہ عنہ کے مطابق بعد میں وہ اسی شخص کا کفن بنی۔",
+  "transcriptHash": "5a67d10795b031f21fa58ee3d4b8db88b85489265b36894d4d62f0dccad76071",
+  "transcriptCharacters": 337,
+  "billableCharacters": 337,
+  "cacheKey": "254dcc6bbfb8a3b7ddea7386b896b59b26f7ec0eb26db0dd778cdd620741bfe8",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/254dcc6bbfb8a3b7ddea7386b896b59b26f7ec0eb26db0dd778cdd620741bfe8.mp3",
+  "byteLength": 157824,
+  "sha256": "fde8039d3920799c6afe9f1bb04dc329129953105d8ec4393b8789bdc8e8d4a5",
+  "durationSeconds": 26.304
+}

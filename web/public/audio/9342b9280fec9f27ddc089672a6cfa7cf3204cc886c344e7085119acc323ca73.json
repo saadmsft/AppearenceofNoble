@@ -1,0 +1,18 @@
+{
+  "entryId": "speech-clear-enough-to-count",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha described the Prophet's may Allah bless him and grant him peace speech as clear enough for a listener to count its words. The same page records her objection to someone rapidly narrating reports beside her room: she said that the Prophet may Allah bless him and grant him peace had not delivered his words in that hurried manner.",
+  "transcriptHash": "71c92b47bf9371bce4763f52c1783c5e5b22a668bb17dcf9da5d2328392b5054",
+  "transcriptCharacters": 335,
+  "billableCharacters": 340,
+  "cacheKey": "9342b9280fec9f27ddc089672a6cfa7cf3204cc886c344e7085119acc323ca73",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/9342b9280fec9f27ddc089672a6cfa7cf3204cc886c344e7085119acc323ca73.mp3",
+  "byteLength": 104976,
+  "sha256": "634f46712fec593907015690ec06e1869f5419be39bbfed805c2f113c28a685b",
+  "durationSeconds": 17.496
+}

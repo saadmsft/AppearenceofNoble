@@ -1,0 +1,18 @@
+{
+  "entryId": "character-family-community-serving-at-home",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا آدَمُ، قَالَ حَدَّثَنَا شُعْبَةُ، قَالَ حَدَّثَنَا الْحَكَمُ، عَنْ إِبْرَاهِيمَ، عَنِ الأَسْوَدِ، قَالَ سَأَلْتُ عَائِشَةَ مَا كَانَ النَّبِيُّ صلى الله عليه وسلم يَصْنَعُ فِي بَيْتِهِ قَالَتْ كَانَ يَكُونُ فِي مِهْنَةِ أَهْلِهِ ـ تَعْنِي خِدْمَةَ أَهْلِهِ ـ فَإِذَا حَضَرَتِ الصَّلاَةُ خَرَجَ إِلَى الصَّلاَةِ.",
+  "transcriptHash": "78083d18c6f8ee526b4168371613a742f0d6960018fe51630b1a54f0b1ee86ca",
+  "transcriptCharacters": 322,
+  "billableCharacters": 322,
+  "cacheKey": "349f89ad80a3cd416c12f16b0075a2535e16d0ee998f09a0567811260ae68636",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/349f89ad80a3cd416c12f16b0075a2535e16d0ee998f09a0567811260ae68636.mp3",
+  "byteLength": 119088,
+  "sha256": "f50874a0ac4cc68bf7f9f24c45647a51669615c23338a7db6375a0c47b9e7f4b",
+  "durationSeconds": 19.848
+}

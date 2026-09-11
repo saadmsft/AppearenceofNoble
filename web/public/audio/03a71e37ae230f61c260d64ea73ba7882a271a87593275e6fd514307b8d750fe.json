@@ -1,0 +1,18 @@
+{
+  "entryId": "palm-softer-than-silk-scent",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا سُلَيْمَانُ بْنُ حَرْبٍ، حَدَّثَنَا حَمَّادٌ، عَنْ ثَابِتٍ، عَنْ أَنَسٍ ـ رضى الله عنه ـ قَالَ مَا مَسِسْتُ حَرِيرًا وَلاَ دِيبَاجًا أَلْيَنَ مِنْ كَفِّ النَّبِيِّ صلى الله عليه وسلم، وَلاَ شَمِمْتُ رِيحًا قَطُّ أَوْ عَرْفًا قَطُّ أَطْيَبَ مِنْ رِيحِ أَوْ عَرْفِ النَّبِيِّ صلى الله عليه وسلم.",
+  "transcriptHash": "24efcfe2adddaf1cacb5edd1a67cefdd61cdd4ac8fe684c6aee47d2a450a6f34",
+  "transcriptCharacters": 304,
+  "billableCharacters": 304,
+  "cacheKey": "03a71e37ae230f61c260d64ea73ba7882a271a87593275e6fd514307b8d750fe",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/03a71e37ae230f61c260d64ea73ba7882a271a87593275e6fd514307b8d750fe.mp3",
+  "byteLength": 114768,
+  "sha256": "599e515f6a9d18f546ab23616c8c2327f5593ea5a64e6ceb40643b8ca57c1f3f",
+  "durationSeconds": 19.128
+}

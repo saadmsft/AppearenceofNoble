@@ -1,0 +1,18 @@
+{
+  "entryId": "hair-hung-loose-then-parted",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابن عباس رضی اللہ عنہما نے بتایا کہ اہلِ کتاب بال بغیر مانگ کے چھوڑتے اور مشرکین مانگ نکالتے تھے۔ جن معاملات میں کوئی حکم نہ آیا ہوتا، ان میں نبی کریم صلی اللہ علیہ وسلم اہلِ کتاب کی موافقت پسند فرماتے۔ آپ صلی اللہ علیہ وسلم نے پہلے اگلے بال کھلے چھوڑے، پھر بعد میں مانگ نکالی۔",
+  "transcriptHash": "e7969e6dc2d10db065061f622c25a2d3d914e72a788825737ab411b555200c51",
+  "transcriptCharacters": 277,
+  "billableCharacters": 277,
+  "cacheKey": "713560ecf59a0ac1bf89a37222abb95f1c4e0fb451f9cb35478e7160eadd24fb",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/713560ecf59a0ac1bf89a37222abb95f1c4e0fb451f9cb35478e7160eadd24fb.mp3",
+  "byteLength": 126720,
+  "sha256": "35b92b9ef1b2c4f9b6d1e56b3c650ee494078eae1578580da985a89ab81da621",
+  "durationSeconds": 21.12
+}

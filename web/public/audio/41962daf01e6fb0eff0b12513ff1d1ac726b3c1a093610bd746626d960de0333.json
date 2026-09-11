@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-raised-skin-abu-said-khudri",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ بَشَّارٍ، قَالَ: حَدَّثَنَا بِشْرُ بْنُ الْوَضَّاحِ، قَالَ: حَدَّثَنَا أَبُو عَقِيلٍ الدَّوْرَقِيُّ، عَنْ أَبِي نَضْرَةَ الْعَوَقِيِّ، قَالَ: سَأَلْتُ أَبَا سَعِيدٍ الْخُدْرِيَّ، عَنْ خَاتَمِ رَسُولِ اللهِ صلى الله عليه وسلم يَعْنِي خَاتَمَ النُّبُوَّةِ، فَقَالَ: كَانَ فِي ظَهْرِهِ بَضْعَةٌ نَاشِزَةٌ.",
+  "transcriptHash": "ee9ab81ce8c00c127d814d764bf370436ff970bb3c0e11fe4487427bc2f3a769",
+  "transcriptCharacters": 328,
+  "billableCharacters": 328,
+  "cacheKey": "41962daf01e6fb0eff0b12513ff1d1ac726b3c1a093610bd746626d960de0333",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/41962daf01e6fb0eff0b12513ff1d1ac726b3c1a093610bd746626d960de0333.mp3",
+  "byteLength": 132192,
+  "sha256": "ea0e1a4e3804b09da04f8465ac60d2d64cf067f38b736617c729c2f52cd864be",
+  "durationSeconds": 22.032
+}

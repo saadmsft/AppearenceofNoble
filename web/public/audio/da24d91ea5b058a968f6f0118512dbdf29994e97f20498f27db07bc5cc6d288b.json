@@ -1,0 +1,18 @@
+{
+  "entryId": "reddened-eyes-rising-voice-in-sermon",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر رضی اللہ عنہ نے خطبے کے وقت نبی کریم صلی اللہ علیہ وسلم کی سرخ آنکھوں، بلند آواز اور شدید غضب کا ذکر کیا، جیسے آپ صلی اللہ علیہ وسلم کسی لشکر کی آمد سے خبردار کر رہے ہوں۔ روایت میں قیامت کے قریب ہونے کا ذکر کرتے ہوئے دو انگلیاں ملانے کا اشارہ بھی محفوظ ہے۔",
+  "transcriptHash": "6d78ab45ba51290c6e97e7b41493e43afc9a77d1873bd331f609020ec6ab61d3",
+  "transcriptCharacters": 261,
+  "billableCharacters": 261,
+  "cacheKey": "da24d91ea5b058a968f6f0118512dbdf29994e97f20498f27db07bc5cc6d288b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/da24d91ea5b058a968f6f0118512dbdf29994e97f20498f27db07bc5cc6d288b.mp3",
+  "byteLength": 119808,
+  "sha256": "554a12f384e2e67fe3dd9afa86d4432c97e2166efc810c23aeaf464a10e55886",
+  "durationSeconds": 19.968
+}

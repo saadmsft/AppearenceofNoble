@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test'
 
-test('the landing journey shows all themes and highlights, but no hadith cards until clicked', async ({ page }) => {
-  await page.goto('./?lang=en')
+test('the Appearance journey shows all themes and highlights, but no hadith cards until clicked', async ({ page }) => {
+  await page.goto('./?lang=en&view=journey&shelf=appearance')
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Known through words.')
   await expect(page.locator('.journey-chapter')).toHaveCount(16)
   await expect(page.locator('.narration-card')).toHaveCount(0)
@@ -19,7 +19,7 @@ test('the landing journey shows all themes and highlights, but no hadith cards u
 })
 
 test('a highlight reference opens its own evidence only on activation', async ({ page }) => {
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=journey&shelf=appearance')
   const citation = page.locator('.journey-chapter[data-topic="complexion"] .highlight-source').first()
   await citation.click()
   const dialog = page.getByRole('dialog')
@@ -31,7 +31,7 @@ test('a highlight reference opens its own evidence only on activation', async ({
 })
 
 test('chapters expand independently and shared narrations have unique accessible heading IDs', async ({ page }) => {
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=journey&shelf=appearance')
   await page.getByRole('button', { name: 'View narrations about Hands & touch', exact: true }).click()
   await page.getByRole('button', { name: 'View narrations about Fragrance & perspiration', exact: true }).click()
   await expect(page.locator('[data-entry="palm-softer-than-silk-scent"]')).toHaveCount(2)
@@ -45,7 +45,7 @@ test('chapters expand independently and shared narrations have unique accessible
 })
 
 test('cautioned reports stay opt-in and remain cautioned in the thematic reader', async ({ page }) => {
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=journey&shelf=appearance')
   const eyes = page.locator('.journey-chapter[data-topic="eyes"]')
   await eyes.getByRole('button', { name: 'View narrations about Eyes', exact: true }).click()
   await expect(eyes.locator('.grade-caution')).toHaveCount(0)
@@ -65,7 +65,7 @@ test('cautioned reports stay opt-in and remain cautioned in the thematic reader'
 })
 
 test('Urdu chapter navigation and language switching preserve explicit disclosure', async ({ page }) => {
-  await page.goto('./?lang=ur')
+  await page.goto('./?lang=ur&view=journey&shelf=appearance')
   await page.getByRole('button', { name: 'رنگت سے آغاز کریں', exact: true }).click()
   const complexion = page.locator('.journey-chapter[data-topic="complexion"]')
   await complexion.getByRole('button', { name: 'اگلا موضوع: آنکھیں', exact: true }).click()
@@ -79,7 +79,7 @@ test('Urdu chapter navigation and language switching preserve explicit disclosur
 
 test('chapter motion stops when reading, offscreen, paused or system-reduced', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' })
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=journey&shelf=appearance')
   const complexion = page.locator('.journey-chapter[data-topic="complexion"]')
   const art = complexion.locator('.topic-artwork')
   await art.scrollIntoViewIfNeeded()
@@ -100,12 +100,12 @@ test('chapter motion stops when reading, offscreen, paused or system-reduced', a
 })
 
 test('the full searchable collection remains one explicit navigation away', async ({ page }) => {
-  await page.goto('./?lang=en')
+  await page.goto('./?lang=en&view=journey&shelf=appearance')
   await page.getByRole('link', { name: 'Collection', exact: true }).click()
   await expect(page.getByRole('searchbox', { name: 'Search the narrations', exact: true })).toBeVisible()
   await expect(page.locator('.narration-card')).toHaveCount(12)
   expect(new URL(page.url()).searchParams.get('view')).toBe('collection')
-  await page.getByRole('link', { name: 'Journey', exact: true }).click()
+  await page.getByRole('button', { name: 'Journey', exact: true }).click()
   await expect(page.locator('.narration-card')).toHaveCount(0)
   await expect(page.locator('.journey-chapter')).toHaveCount(16)
 })

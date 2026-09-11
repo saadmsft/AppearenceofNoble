@@ -1,15 +1,23 @@
 import { z } from 'zod'
 
-export const topics = [
+export const appearanceTopics = [
   'overview', 'complexion', 'face', 'eyes', 'hair', 'beard', 'mouth', 'build',
   'hands', 'feet', 'seal', 'movement', 'fragrance', 'voice', 'smile', 'dress',
 ] as const
+export const characterTopics = [
+  'mercy', 'patience', 'humility', 'generosity', 'justice', 'forgiveness', 'honesty', 'family-community',
+] as const
+export const topics = [...appearanceTopics, ...characterTopics] as const
+export const shelves = ['appearance', 'character'] as const
 export const collections = ['bukhari', 'muslim', 'tirmidhi', 'shamail', 'abudawud', 'ibnmajah', 'nasai'] as const
 export const grades = ['sahih', 'hasan', 'weak', 'disputed', 'ungraded'] as const
 export const languages = ['en', 'ur'] as const
 
 export type Language = typeof languages[number]
 export type Topic = typeof topics[number]
+export type AppearanceTopic = typeof appearanceTopics[number]
+export type CharacterTopic = typeof characterTopics[number]
+export type Shelf = typeof shelves[number]
 export type Collection = typeof collections[number]
 export type Grade = typeof grades[number]
 export type Localized = { en: string; ur: string }

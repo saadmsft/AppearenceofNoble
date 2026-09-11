@@ -1,0 +1,18 @@
+{
+  "entryId": "hair-length-between-wafrah-and-jumma",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha placed the Prophet's may Allah bless him and grant him peace hair between wafrah and jummah: longer than the earlobe-length category and short of the shoulder-length category. Her brief account uses relative terms for hair length rather than a numerical measurement or a detailed account of its arrangement.",
+  "transcriptHash": "4b72d51e6721301be4bca593c87cbc09b107ca312399277fc459f3931ae4e22c",
+  "transcriptCharacters": 313,
+  "billableCharacters": 318,
+  "cacheKey": "cb828a5c295f9b046f68bcc5395730a1886ca7b85b1b021297ab62c02110cca4",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/cb828a5c295f9b046f68bcc5395730a1886ca7b85b1b021297ab62c02110cca4.mp3",
+  "byteLength": 96768,
+  "sha256": "7a4e842047477025913ddcc1127229594629095bee891bdba0f0b762b351ffe2",
+  "durationSeconds": 16.128
+}

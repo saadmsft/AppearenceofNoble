@@ -1,0 +1,18 @@
+{
+  "entryId": "gap-between-the-front-teeth-weak",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابن عباس رضی اللہ عنہما سے منسوب اس انتہائی ضعیف روایت میں نبی کریم صلی اللہ علیہ وسلم کے اگلے دانتوں کے درمیان فاصلے کا ذکر ہے۔ اس میں یہ بھی ہے کہ گفتگو کے وقت یوں محسوس ہوتا جیسے ان کے درمیان سے نور نکل رہا ہو۔ یہ اس روایت کا بیان ہے، ثابت شدہ اوصاف کا دعویٰ نہیں۔",
+  "transcriptHash": "48ff758812384d0dc7c82a0cb322af65efcf019992ee9a943492ea25c4a5651c",
+  "transcriptCharacters": 267,
+  "billableCharacters": 267,
+  "cacheKey": "2d3a77a240085a0822d9bda4cba913e189f163a01e30fb561f0332b0f6354f11",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/2d3a77a240085a0822d9bda4cba913e189f163a01e30fb561f0332b0f6354f11.mp3",
+  "byteLength": 120528,
+  "sha256": "693cd3c7b0c0a61064213311b839285307568929507a66456ed37dc4223ab69a",
+  "durationSeconds": 20.088
+}

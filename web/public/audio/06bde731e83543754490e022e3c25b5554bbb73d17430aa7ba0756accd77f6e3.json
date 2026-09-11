@@ -1,0 +1,18 @@
+{
+  "entryId": "build-belly-whiteness-trench-bara",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Al-Bara' saw the Prophet may Allah bless him and grant him peace carrying earth during the events of al-Ahzab. He recalled that the earth had covered the whiteness of the Prophet's may Allah bless him and grant him peace abdomen. The account continues with the words he was reciting while carrying the earth.",
+  "transcriptHash": "f33bae3ba64415aa47fb27c81abc15f33f73c5989e95057c188e547189228172",
+  "transcriptCharacters": 308,
+  "billableCharacters": 318,
+  "cacheKey": "06bde731e83543754490e022e3c25b5554bbb73d17430aa7ba0756accd77f6e3",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/06bde731e83543754490e022e3c25b5554bbb73d17430aa7ba0756accd77f6e3.mp3",
+  "byteLength": 99936,
+  "sha256": "a8a083e0d0c19409b2182a107b93de86e2980bcb5689b9e2782a587ee6dbb781",
+  "durationSeconds": 16.656
+}

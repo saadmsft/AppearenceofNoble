@@ -1,0 +1,18 @@
+{
+  "entryId": "wide-mouth-and-long-eyed-jabir",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir ibn Samurah described the Prophet's may Allah bless him and grant him peace mouth, eyes and heels with three Arabic terms. When Shu'ba asked about them, Simak explained them as a large mouth, a long opening of the eye, and little flesh at the heels. These explanations are preserved with the report.",
+  "transcriptHash": "d07e6885930c8f893cc8fd287f308ceb8ceaa7e6db119bdfd75fd14baeb79841",
+  "transcriptCharacters": 305,
+  "billableCharacters": 315,
+  "cacheKey": "292c403405bb121591bcd2865b9b8a132da648c3e5cba3bbeb5c2d56c52a81d0",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/292c403405bb121591bcd2865b9b8a132da648c3e5cba3bbeb5c2d56c52a81d0.mp3",
+  "byteLength": 114768,
+  "sha256": "022eb4812326eb55dc20cc673430a2692f47d172218b37baeaa02d204ac07011",
+  "durationSeconds": 19.128
+}

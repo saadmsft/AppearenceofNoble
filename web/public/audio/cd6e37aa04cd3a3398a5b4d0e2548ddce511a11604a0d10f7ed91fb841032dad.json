@@ -1,0 +1,18 @@
+{
+  "entryId": "character-patience-first-shock",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا آدَمُ، حَدَّثَنَا شُعْبَةُ، حَدَّثَنَا ثَابِتٌ، عَنْ أَنَسِ بْنِ مَالِكٍ ـ رضى الله عنه ـ قَالَ مَرَّ النَّبِيُّ صلى الله عليه وسلم بِامْرَأَةٍ تَبْكِي عِنْدَ قَبْرٍ فَقَالَ \" اتَّقِي اللَّهَ وَاصْبِرِي \". قَالَتْ إِلَيْكَ عَنِّي، فَإِنَّكَ لَمْ تُصَبْ بِمُصِيبَتِي، وَلَمْ تَعْرِفْهُ. فَقِيلَ لَهَا إِنَّهُ النَّبِيُّ صلى الله عليه وسلم. فَأَتَتْ باب النَّبِيِّ صلى الله عليه وسلم فَلَمْ تَجِدْ عِنْدَهُ بَوَّابِينَ فَقَالَتْ لَمْ أَعْرِفْكَ. فَقَالَ \" إِنَّمَا الصَّبْرُ عِنْدَ الصَّدْمَةِ الأُولَى \".",
+  "transcriptHash": "27ac5aea25503b0e9ffa11ed810a53263d8bee1b10ecba238de547c46cafcad5",
+  "transcriptCharacters": 514,
+  "billableCharacters": 534,
+  "cacheKey": "cd6e37aa04cd3a3398a5b4d0e2548ddce511a11604a0d10f7ed91fb841032dad",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/cd6e37aa04cd3a3398a5b4d0e2548ddce511a11604a0d10f7ed91fb841032dad.mp3",
+  "byteLength": 206352,
+  "sha256": "02b9dc36bab278382803f3b5348d103015d1474b4e52e434519df4076bbe0880",
+  "durationSeconds": 34.392
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "greyness-hidden-by-hair-oil",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "نبی کریم صلی اللہ علیہ وسلم کے سفید بالوں کے بارے میں پوچھے جانے پر جابر بن سمرہ رضی اللہ عنہ نے بتایا کہ سر پر تیل لگا ہوتا تو سفیدی نظر نہ آتی، اور تیل نہ ہوتا تو کچھ سفید بال دکھائی دیتے۔ روایت موجود سفید بالوں کے نظر آنے پر تیل کے اثر کو بیان کرتی ہے۔",
+  "transcriptHash": "8962bb8f1ba1f22dace22c6f38025b3fabe4bd976e223fd79ed64e4ba5d68d3e",
+  "transcriptCharacters": 255,
+  "billableCharacters": 255,
+  "cacheKey": "36975f5daa8a9bd88c603f12e4a3fbbe2d987672a8533751233738a6b74f22da",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/36975f5daa8a9bd88c603f12e4a3fbbe2d987672a8533751233738a6b74f22da.mp3",
+  "byteLength": 111888,
+  "sha256": "5847df254cd24ebd7f19f78c55b05c090393dc531ac9239d1acc9570fad7af2a",
+  "durationSeconds": 18.648
+}

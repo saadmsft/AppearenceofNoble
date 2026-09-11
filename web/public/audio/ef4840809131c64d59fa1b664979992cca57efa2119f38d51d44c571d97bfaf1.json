@@ -1,0 +1,18 @@
+{
+  "entryId": "moderate-height-broad-shoulders-red-cloak",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "براء بن عازب رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کا قد میانہ، کندھوں کے درمیان فاصلہ کشادہ اور بال کان کی لو تک بیان کیے۔ انہوں نے آپ صلی اللہ علیہ وسلم کو سرخ حُلّہ، یعنی ایک جوڑا لباس، پہنے دیکھا اور کہا کہ انہوں نے اس سے زیادہ خوبصورت کوئی چیز نہیں دیکھی۔",
+  "transcriptHash": "334f8a67a5972cf06f1b1c55f1587c557ccedb2f813d1eeffaf85e9ab52f5e7a",
+  "transcriptCharacters": 266,
+  "billableCharacters": 266,
+  "cacheKey": "ef4840809131c64d59fa1b664979992cca57efa2119f38d51d44c571d97bfaf1",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ef4840809131c64d59fa1b664979992cca57efa2119f38d51d44c571d97bfaf1.mp3",
+  "byteLength": 116064,
+  "sha256": "ed4e3852c6822f0105eefad487e84b04dedaa6b3cd3865536121ab3f0cf8d2b7",
+  "durationSeconds": 19.344
+}

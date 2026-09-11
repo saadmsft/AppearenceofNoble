@@ -1,0 +1,18 @@
+{
+  "entryId": "patched-cloak-worn-at-his-passing",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Burda visited Aisha, who showed a coarse lower garment of the kind made in Yemen and a cloak described as mulabbada. She swore that the Prophet may Allah bless him and grant him peace had died in those two garments. Her statement identifies the clothing that she brought out.",
+  "transcriptHash": "1c1d3a600f52adbbaae9b2bc8565ed658dc193f9c804e88bc05d8a01c53aee9d",
+  "transcriptCharacters": 279,
+  "billableCharacters": 279,
+  "cacheKey": "78725abfee6a2ffa1128eed29ba36b495312992445c6b5d9eaa04936ff446701",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/78725abfee6a2ffa1128eed29ba36b495312992445c6b5d9eaa04936ff446701.mp3",
+  "byteLength": 96912,
+  "sha256": "8b86956f32d07468ef3d1549d52d265294f0908e9bb2ad22fb0e79afe6dca214",
+  "durationSeconds": 16.152
+}

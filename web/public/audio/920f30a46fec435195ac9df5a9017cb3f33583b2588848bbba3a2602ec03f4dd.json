@@ -1,0 +1,18 @@
+{
+  "entryId": "hind-ibn-abi-hala-beard-and-mouth",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "This section of Hind's weakly graded description mentions a thick beard, smooth cheeks, a large mouth and gaps between the teeth. It should not be treated as one authenticated package: a similar detail in a stronger report does not authenticate all the additional features here.",
+  "transcriptHash": "4dfd9b5c758837818bd86d0a7e499da536782af77bae0587b57a6477d4f67039",
+  "transcriptCharacters": 278,
+  "billableCharacters": 283,
+  "cacheKey": "920f30a46fec435195ac9df5a9017cb3f33583b2588848bbba3a2602ec03f4dd",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/920f30a46fec435195ac9df5a9017cb3f33583b2588848bbba3a2602ec03f4dd.mp3",
+  "byteLength": 97056,
+  "sha256": "54fdc821889e723db4792a3ee3fb4e03f52585414b75c1a0a904274db62d14e5",
+  "durationSeconds": 16.176
+}

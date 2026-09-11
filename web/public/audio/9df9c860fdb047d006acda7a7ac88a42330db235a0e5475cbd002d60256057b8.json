@@ -1,0 +1,18 @@
+{
+  "entryId": "character-justice-rights-beyond-eloquence",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عَبْدُ اللَّهِ بْنُ مَسْلَمَةَ، عَنْ مَالِكٍ، عَنْ هِشَامِ بْنِ عُرْوَةَ، عَنْ أَبِيهِ، عَنْ زَيْنَبَ، عَنْ أُمِّ سَلَمَةَ ـ رضى الله عنها ـ أَنَّ رَسُولَ اللَّهِ صلى الله عليه وسلم قَالَ \" إِنَّكُمْ تَخْتَصِمُونَ إِلَىَّ، وَلَعَلَّ بَعْضَكُمْ أَلْحَنُ بِحُجَّتِهِ مِنْ بَعْضٍ، فَمَنْ قَضَيْتُ لَهُ بِحَقِّ أَخِيهِ شَيْئًا بِقَوْلِهِ، فَإِنَّمَا أَقْطَعُ لَهُ قِطْعَةً مِنَ النَّارِ فَلاَ يَأْخُذْهَا \".",
+  "transcriptHash": "5081d8a460b05827fca5eb5b1f5f707113819ac7fd956448c397d4429ff34949",
+  "transcriptCharacters": 414,
+  "billableCharacters": 424,
+  "cacheKey": "9df9c860fdb047d006acda7a7ac88a42330db235a0e5475cbd002d60256057b8",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/9df9c860fdb047d006acda7a7ac88a42330db235a0e5475cbd002d60256057b8.mp3",
+  "byteLength": 152928,
+  "sha256": "0de570980ce13c2668039af5bcddbd6abd0e5ac2766e2903e8fabf4819d55222",
+  "durationSeconds": 25.488
+}

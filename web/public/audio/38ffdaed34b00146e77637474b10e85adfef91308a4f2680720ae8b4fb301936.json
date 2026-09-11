@@ -1,0 +1,18 @@
+{
+  "entryId": "wide-mouth-and-long-eyed-jabir",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر بن سمرہ رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کے منہ، آنکھوں اور ایڑیوں کے لیے تین عربی الفاظ بیان کیے۔ شعبہ کے پوچھنے پر سماک نے ان کا مطلب بڑا منہ، آنکھ کا لمبا شگاف اور ایڑیوں پر کم گوشت بتایا۔ یہ وضاحتیں روایت کے ساتھ محفوظ ہیں۔",
+  "transcriptHash": "363bf8850d79fa97db7f4253e320c34228a33602eb11f15631edff0dae43069d",
+  "transcriptCharacters": 243,
+  "billableCharacters": 243,
+  "cacheKey": "38ffdaed34b00146e77637474b10e85adfef91308a4f2680720ae8b4fb301936",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/38ffdaed34b00146e77637474b10e85adfef91308a4f2680720ae8b4fb301936.mp3",
+  "byteLength": 113328,
+  "sha256": "d86b31fb4d47aba759224f4aa52a395232153eef4e813a313e3b0d6d0a3d601a",
+  "durationSeconds": 18.888
+}

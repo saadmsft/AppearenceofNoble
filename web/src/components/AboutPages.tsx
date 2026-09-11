@@ -2,12 +2,13 @@ import { useState } from 'react'
 import { ArrowUpRight, BookOpen, Download, ExternalLink, ShieldCheck } from 'lucide-react'
 import { collectionLabels, gradeLabels, topicLabels } from '../lib/catalog.ts'
 import { date, number, translate } from '../lib/i18n.ts'
-import { lastChecked, narrations, primarySourceCount } from '../lib/library.ts'
-import { collections, grades, topics } from '../lib/schema.ts'
-import type { Language } from '../lib/schema.ts'
+import { getShelfRows, getShelfTopics } from '../lib/library.ts'
+import { collections, grades } from '../lib/schema.ts'
+import type { Language, Shelf, Topic } from '../lib/schema.ts'
 import { isEstablished } from '../lib/search.ts'
 import { Button } from './ui/button'
 import { SourceName } from './NarrationCard'
+import { ShelfSelector } from './ShelfSelector'
 
 export const repositoryUrl = 'https://github.com/saadmsft/AppearenceofNoble'
 const correctionUrl = `${repositoryUrl}/issues/new?template=source-correction.yml`
@@ -43,9 +44,13 @@ export function GuidePage({ language }: { language: Language }) {
   </div>
 }
 
-export function SourcesPage({ language, onTopic }: { language: Language; onTopic: (topic: typeof topics[number]) => void }) {
+export function SourcesPage({ language, shelf, onShelf, onTopic }: { language: Language; shelf: Shelf | 'all'; onShelf: (shelf: Shelf | 'all') => void; onTopic: (topic: Topic) => void }) {
   const t = (key: Parameters<typeof translate>[1], values?: Record<string, string>) => translate(language, key, values)
   const [downloadError, setDownloadError] = useState(false)
+  const narrations = getShelfRows(shelf)
+  const topics = getShelfTopics(shelf)
+  const primarySourceCount = new Set(narrations.map((row) => row.source.url)).size
+  const lastChecked = narrations.map((row) => row.checkedAt).sort().at(-1)!
   const references = [...new Map(narrations.flatMap((row) => [row.source, ...row.relatedSources]).map((source) => [source.url, source])).values()]
   const count = (value: number) => number(value, language)
 
@@ -53,8 +58,9 @@ export function SourcesPage({ language, onTopic }: { language: Language; onTopic
     let objectUrl: string | undefined
     try {
       const data = {
-        title: 'The Noble Appearance',
-        version: 1,
+        title: 'The Noble Project',
+        version: 2,
+        shelf,
         lastChecked,
         scope: 'Selected reports from seven major Sunni collections. Not exhaustive across traditions or chains.',
         translationNotice: 'English and Urdu are original editorial summaries, not verbatim translations. arabic is an excerpt; arabicFull preserves the full primary report, including the chain and in-report compiler/transmitter remarks.',
@@ -64,7 +70,7 @@ export function SourcesPage({ language, onTopic }: { language: Language; onTopic
       objectUrl = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' }))
       const anchor = document.createElement('a')
       anchor.href = objectUrl
-      anchor.download = 'noble-appearance-research.json'
+      anchor.download = shelf === 'appearance' ? 'noble-appearance-research.json' : `noble-${shelf === 'all' ? 'project' : 'character'}-research.json`
       anchor.click()
       setDownloadError(false)
     } catch (error) {
@@ -79,14 +85,15 @@ export function SourcesPage({ language, onTopic }: { language: Language; onTopic
   }
 
   return <div className="about-page page-width">
-    <header className="page-intro"><h1>{t('sourcesTitle')}</h1><p>{t('sourcesIntro')}</p></header>
+    <header className="page-intro"><h1>{t('sourcesTitle')}</h1><p>{t('projectSourcesIntro')}</p></header>
+    <ShelfSelector value={shelf} language={language} onChange={onShelf} />
     <div className="research-stats">
       <div><strong>{count(narrations.length)}</strong><span>{t('entries')}</span></div>
       <div><strong>{count(primarySourceCount)}</strong><span>{t('references')}</span></div>
       <div><strong>{date(lastChecked, language)}</strong><span>{t('checked')}</span></div>
     </div>
     <div className="scope-grid">
-      <section><h2>{t('scopeTitle')}</h2><p>{t('scopeDetail')}</p></section>
+      <section><h2>{t('scopeTitle')}</h2><p>{t(shelf === 'appearance' ? 'scopeDetail' : 'projectScopeDetail')}</p></section>
       <section><h2>{t('limitsTitle')}</h2><p>{t('limitsDetail')}</p></section>
       <section><h2>{t('datesTitle')}</h2><p>{t('datesDetail')}</p></section>
     </div>
@@ -121,7 +128,7 @@ export function SourcesPage({ language, onTopic }: { language: Language; onTopic
     </div><Button onClick={downloadResearch}><Download size={16} aria-hidden="true" />JSON</Button>
       {downloadError && <p role="alert">{t('downloadFailed')} <a href={`${repositoryUrl}/tree/main/content`}>{t('repository')}</a></p>}
       <div className="offline-download">
-        <a className="button button-outline" href="./noble-appearance.html" download="noble-appearance.html"><Download size={16} aria-hidden="true" />{t('offlineDownload')}</a>
+        <a className="button button-outline" href="./noble-project.html" download="noble-project.html"><Download size={16} aria-hidden="true" />{t('offlineDownload')}</a>
         <p>{t('offlineDetail')}</p>
       </div>
     </section>

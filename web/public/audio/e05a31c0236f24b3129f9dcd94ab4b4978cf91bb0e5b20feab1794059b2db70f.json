@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-servant-and-messenger",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Umar recalled hearing the Prophet warn against exaggerated praise, referring to the praise Christians had given to the son of Mary. The Prophet directed his listeners instead to describe him as Allah's servant and messenger. The report preserves the terms he chose for himself while setting a limit on personal exaltation.",
+  "transcriptHash": "23d6a7d2a1f86ebcf63081d5bbe23ae217bfc320a01b997f71f05f25662e9f65",
+  "transcriptCharacters": 322,
+  "billableCharacters": 327,
+  "cacheKey": "e05a31c0236f24b3129f9dcd94ab4b4978cf91bb0e5b20feab1794059b2db70f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e05a31c0236f24b3129f9dcd94ab4b4978cf91bb0e5b20feab1794059b2db70f.mp3",
+  "byteLength": 109440,
+  "sha256": "cd1a7d89048367ecd8b9b2013e1e8a6e6aa8184e7df34868dc586df4248a70c5",
+  "durationSeconds": 18.24
+}

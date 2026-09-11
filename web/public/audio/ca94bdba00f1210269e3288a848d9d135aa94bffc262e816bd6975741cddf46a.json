@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-hair-cluster-abu-zaid-akhtab",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ بَشَّارٍ، قَالَ: حَدَّثَنَا أَبُو عَاصِمٍ، قَالَ: حَدَّثَنَا عَزْرَةُ بْنُ ثَابِتٍ، قَالَ: حَدَّثَنِي عِلْبَاءُ بْنُ أَحْمَرَ الْيَشْكُرِيُّ، قَالَ: حَدَّثَنِي أَبُو زَيْدٍ عَمْرُو بْنُ أَخْطَبَ الأَنْصَارِيُّ، قَالَ: قَالَ لِي رَسُولُ اللهِ صلى الله عليه وسلم: يَا أَبَا زَيْدٍ، ادْنُ مِنِّي فَامْسَحْ ظَهْرِي، فَمَسَحْتُ ظَهْرَهُ، فَوَقَعَتْ أَصَابِعِي عَلَى الْخَاتَمِ قُلْتُ: وَمَا الْخَاتَمُ؟ قَالَ: شَعَرَاتٌ مُجْتَمِعَاتٌ.",
+  "transcriptHash": "0b7a55aa75914e0de864026a34cd3df867a0c354c245b442621bbcef67a180ab",
+  "transcriptCharacters": 455,
+  "billableCharacters": 455,
+  "cacheKey": "ca94bdba00f1210269e3288a848d9d135aa94bffc262e816bd6975741cddf46a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ca94bdba00f1210269e3288a848d9d135aa94bffc262e816bd6975741cddf46a.mp3",
+  "byteLength": 190224,
+  "sha256": "12eb60ae1a270515d6f5c22163dcf0793d46db29e28f996c17060fd1c892ca1f",
+  "durationSeconds": 31.704
+}

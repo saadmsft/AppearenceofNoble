@@ -1,0 +1,18 @@
+{
+  "entryId": "face-like-the-moon-not-a-sword",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Asked whether the Prophet's may Allah bless him and grant him peace face was like a sword, Al-Bara' rejected that comparison and chose the moon instead. The report preserves this short exchange without giving a further explanation of which features of the two images the questioner had in mind.",
+  "transcriptHash": "5a0d416ec6ccefca363ec33798d4c4a2510744b83a9951b7628cb4edd4174918",
+  "transcriptCharacters": 294,
+  "billableCharacters": 304,
+  "cacheKey": "756637c664744c9711bcbcf87c79126bc2837218dbc0ec928bb4302da1f12a10",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/756637c664744c9711bcbcf87c79126bc2837218dbc0ec928bb4302da1f12a10.mp3",
+  "byteLength": 93600,
+  "sha256": "c8b14a315166b0e85a1890f5085b02c33265fbf6ca8ef683767af7c663e11cd2",
+  "durationSeconds": 15.6
+}

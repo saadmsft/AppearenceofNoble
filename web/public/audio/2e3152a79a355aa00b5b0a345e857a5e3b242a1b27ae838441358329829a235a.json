@@ -1,0 +1,18 @@
+{
+  "entryId": "distinct-speech-easily-understood",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا عُثْمَانُ، وَأَبُو بَكْرٍ ابْنَا أَبِي شَيْبَةَ قَالاَ حَدَّثَنَا وَكِيعٌ، عَنْ سُفْيَانَ، عَنْ أُسَامَةَ، عَنِ الزُّهْرِيِّ، عَنْ عُرْوَةَ، عَنْ عَائِشَةَ، رَحِمَهَا اللَّهُ قَالَتْ كَانَ كَلاَمُ رَسُولِ اللَّهِ صلى الله عليه وسلم كَلاَمًا فَصْلاً يَفْهَمُهُ كُلُّ مَنْ سَمِعَهُ .",
+  "transcriptHash": "a214df9abae31853c5685b4e2383d163867191f49590f3b281a6ced2168344c5",
+  "transcriptCharacters": 292,
+  "billableCharacters": 292,
+  "cacheKey": "2e3152a79a355aa00b5b0a345e857a5e3b242a1b27ae838441358329829a235a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/2e3152a79a355aa00b5b0a345e857a5e3b242a1b27ae838441358329829a235a.mp3",
+  "byteLength": 112752,
+  "sha256": "6991cdd3f20c0890dcf16aeb20db6dd2278a7bb511ac63b89f1ac71d62844811",
+  "durationSeconds": 18.792
+}

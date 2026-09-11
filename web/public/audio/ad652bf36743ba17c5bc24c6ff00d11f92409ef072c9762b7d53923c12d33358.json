@@ -1,0 +1,18 @@
+{
+  "entryId": "face-brightened-like-moonlight",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "In his account of remaining behind from Tabuk, Ka'b ibn Malik remembered greeting the Prophet may Allah bless him and grant him peace while his face shone with happiness. He added that the Prophet's may Allah bless him and grant him peace face brightened when pleased, like a piece of the moon, and that they recognized his happiness this way.",
+  "transcriptHash": "94a9db04c01b12b32162e2b97f94a649d13e6d48e420f27bcbe37e3002f5a59c",
+  "transcriptCharacters": 343,
+  "billableCharacters": 353,
+  "cacheKey": "ad652bf36743ba17c5bc24c6ff00d11f92409ef072c9762b7d53923c12d33358",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ad652bf36743ba17c5bc24c6ff00d11f92409ef072c9762b7d53923c12d33358.mp3",
+  "byteLength": 109872,
+  "sha256": "767a4def632ad479f8452e5f85423be06237775862f690a1c58fb0a561b5731b",
+  "durationSeconds": 18.312
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "face-like-the-moon-not-a-sword",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا أَبُو نُعَيْمٍ، حَدَّثَنَا زُهَيْرٌ، عَنْ أَبِي إِسْحَاقَ، قَالَ سُئِلَ الْبَرَاءُ أَكَانَ وَجْهُ النَّبِيِّ صلى الله عليه وسلم مِثْلَ السَّيْفِ قَالَ لاَ بَلْ مِثْلَ الْقَمَرِ.",
+  "transcriptHash": "b09a87bf1f6b7f12229c6eb1c8b4d602f65ee935a908528e145efa83d481a312",
+  "transcriptCharacters": 188,
+  "billableCharacters": 188,
+  "cacheKey": "591cdfc1c1b550bcb4f329c4ba51038a66fabbf4560ce3d9fcf2083d29552a3a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/591cdfc1c1b550bcb4f329c4ba51038a66fabbf4560ce3d9fcf2083d29552a3a.mp3",
+  "byteLength": 70560,
+  "sha256": "6836c42f30a7a28783622190ecf6f4a71f9c0360f4ee5b11ed4488aa40490c7b",
+  "durationSeconds": 11.76
+}

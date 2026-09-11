@@ -5,6 +5,7 @@ import '@fontsource/noto-naskh-arabic/arabic-600.css'
 import '@fontsource/noto-nastaliq-urdu/arabic-400.css'
 import './index.css'
 import './journey.css'
+import './project.css'
 import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(

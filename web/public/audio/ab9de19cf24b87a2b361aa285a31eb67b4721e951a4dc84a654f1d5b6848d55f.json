@@ -1,0 +1,18 @@
+{
+  "entryId": "character-justice-rights-beyond-eloquence",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Umm Salama transmits the Prophet's may Allah bless him and grant him peace warning to people bringing disputes before him: a persuasive presentation could secure a decision concerning something that really belonged to another person. He warned the successful claimant not to take that wrongful award. The teaching preserves the distinction between winning an argument and actually possessing the right claimed.",
+  "transcriptHash": "7f411c112b00638b1732ddabd6825e6e54410d67e1edfb444952da3481c33bed",
+  "transcriptCharacters": 410,
+  "billableCharacters": 415,
+  "cacheKey": "ab9de19cf24b87a2b361aa285a31eb67b4721e951a4dc84a654f1d5b6848d55f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ab9de19cf24b87a2b361aa285a31eb67b4721e951a4dc84a654f1d5b6848d55f.mp3",
+  "byteLength": 130464,
+  "sha256": "5d56cc04cc2f734ea6ca9aa1ee63db712f2285ae39b12b37fcc3f8e70b9ef212",
+  "durationSeconds": 21.744
+}

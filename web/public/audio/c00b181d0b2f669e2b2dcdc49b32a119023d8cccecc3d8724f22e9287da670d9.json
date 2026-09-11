@@ -1,0 +1,18 @@
+{
+  "entryId": "the-shirt-he-loved-to-wear",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ام سلمہ رضی اللہ عنہا نے بیان کیا کہ نبی کریم صلی اللہ علیہ وسلم کو لباسوں میں قمیص سب سے زیادہ پسند تھی۔ ان کا یہ مختصر بیان لباس کی ایک قسم کی پسند کے بارے میں ہے۔ اس میں کسی خاص قمیص کا رنگ، کپڑا، لمبائی یا پہننے کا موقع نہیں بتایا گیا۔",
+  "transcriptHash": "bed5bf1f858a972ee53ac1585baded6a003eeefd7e83f7543a88a3985414f93b",
+  "transcriptCharacters": 239,
+  "billableCharacters": 239,
+  "cacheKey": "c00b181d0b2f669e2b2dcdc49b32a119023d8cccecc3d8724f22e9287da670d9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c00b181d0b2f669e2b2dcdc49b32a119023d8cccecc3d8724f22e9287da670d9.mp3",
+  "byteLength": 109584,
+  "sha256": "6637a41f319aa1aa094aeead14ef7451d75148f30706e4f99a4e4e6ea7a5c381",
+  "durationSeconds": 18.264
+}

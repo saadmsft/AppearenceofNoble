@@ -1,0 +1,18 @@
+{
+  "entryId": "perfume-among-beloved-things",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ نبی کریم صلی اللہ علیہ وسلم کا یہ ارشاد نقل کرتے ہیں کہ دنیا کی چیزوں میں عورتیں اور خوشبو آپ صلی اللہ علیہ وسلم کو محبوب بنائی گئیں، اور آنکھوں کی ٹھنڈک نماز میں رکھی گئی۔ یہاں خوشبو سے متعلق خاص نکتہ آپ صلی اللہ علیہ وسلم کی خوشبو سے بیان کردہ محبت ہے۔",
+  "transcriptHash": "06399d77ebd300dede0249f46426671e767276873aa13769f17e98abc318c8b3",
+  "transcriptCharacters": 271,
+  "billableCharacters": 271,
+  "cacheKey": "72ac7985790bced878524b44060a982aa4f0001cd370a092d40cecd9f2acec60",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/72ac7985790bced878524b44060a982aa4f0001cd370a092d40cecd9f2acec60.mp3",
+  "byteLength": 124272,
+  "sha256": "35f71f2344a7a212d7009a0d569ca4fd1936eabaeacb5d75642d7feff07e8a6a",
+  "durationSeconds": 20.712
+}

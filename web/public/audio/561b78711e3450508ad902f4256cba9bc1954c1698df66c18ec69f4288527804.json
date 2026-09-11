@@ -1,0 +1,18 @@
+{
+  "entryId": "grey-hair-confined-to-the-temples",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "قتادہ نے انس رضی اللہ عنہ سے پوچھا کہ کیا نبی کریم صلی اللہ علیہ وسلم نے بالوں میں خضاب لگایا تھا۔ انہوں نے نفی میں جواب دیا اور کنپٹیوں میں تھوڑی سی سفیدی کا ذکر کیا۔ اس جواب میں سفیدی کی کم مقدار نمایاں ہے، نہ کہ پورے سر پر پھیلے سفید بالوں کی تصویر۔",
+  "transcriptHash": "ddbb953c6fad2a35ffecfaa994e5e930727eaa1694a52df81bb5748286e4c904",
+  "transcriptCharacters": 252,
+  "billableCharacters": 252,
+  "cacheKey": "561b78711e3450508ad902f4256cba9bc1954c1698df66c18ec69f4288527804",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/561b78711e3450508ad902f4256cba9bc1954c1698df66c18ec69f4288527804.mp3",
+  "byteLength": 114336,
+  "sha256": "902a0fc3dd8fb80cb70a2e36352a2d425a663aa170c9b5441b70410343efa4e2",
+  "durationSeconds": 19.056
+}

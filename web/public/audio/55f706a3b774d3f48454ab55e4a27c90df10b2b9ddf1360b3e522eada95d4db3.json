@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-mole-spots-abdullah-sarjis",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عبداللہ بن سرجس رضی اللہ عنہ نے نبی کریم صلی اللہ علیہ وسلم کو دیکھنے اور آپ صلی اللہ علیہ وسلم کے ساتھ کھانا کھانے کا ذکر کیا۔ انہوں نے پیچھے جا کر کندھوں کے درمیان، بائیں کندھے کی ہڈی کے قریب، مہر دیکھنے کی تفصیل بھی بیان کی۔ ان کے بیان میں ایک جمع سے ابھار پر مسّوں جیسے تِل نما نشانات کا ذکر ہے۔",
+  "transcriptHash": "093c7b623a2df2e985a38e7921a1bab835468f45a5e08cfb7470f1824e12776d",
+  "transcriptCharacters": 299,
+  "billableCharacters": 299,
+  "cacheKey": "55f706a3b774d3f48454ab55e4a27c90df10b2b9ddf1360b3e522eada95d4db3",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/55f706a3b774d3f48454ab55e4a27c90df10b2b9ddf1360b3e522eada95d4db3.mp3",
+  "byteLength": 131328,
+  "sha256": "8ffd957097647864387353c4a185e881557eedbf8c410207e9178f0e7b90d66d",
+  "durationSeconds": 21.888
+}

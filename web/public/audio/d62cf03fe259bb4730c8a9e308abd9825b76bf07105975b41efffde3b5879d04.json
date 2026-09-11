@@ -1,0 +1,18 @@
+{
+  "entryId": "moderate-stature-large-head-ali",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Ali's short description gives moderate stature, thickset hands and feet, a large head and substantial joints, with a long line of hair along the torso. It also compares the Prophet's may Allah bless him and grant him peace forward-inclining walk to descending a slope and ends with Ali saying he had seen no one like him.",
+  "transcriptHash": "87d5874c3db725aa558dbdbd8d428cfeb977fc30b7bbe86981e16cf35f10dc41",
+  "transcriptCharacters": 321,
+  "billableCharacters": 331,
+  "cacheKey": "d62cf03fe259bb4730c8a9e308abd9825b76bf07105975b41efffde3b5879d04",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d62cf03fe259bb4730c8a9e308abd9825b76bf07105975b41efffde3b5879d04.mp3",
+  "byteLength": 109008,
+  "sha256": "f7998e42553c20bdf75e078122c21e69d3d6e4755265eea982c659fb20058e76",
+  "durationSeconds": 18.168
+}

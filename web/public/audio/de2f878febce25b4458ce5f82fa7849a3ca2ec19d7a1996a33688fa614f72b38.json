@@ -1,0 +1,18 @@
+{
+  "entryId": "movement-brisk-gait-abu-hurairah",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Huraira described the Prophet's may Allah bless him and grant him peace beauty and compared the brightness of his face to the sun. He also said that he had seen no one walk faster: it seemed as though the earth folded up for him, while those accompanying him exerted themselves and he appeared untroubled.",
+  "transcriptHash": "2487a1e35e07787abd44a2345bab4a220e740022eea144466bac6eefeb354935",
+  "transcriptCharacters": 309,
+  "billableCharacters": 314,
+  "cacheKey": "de2f878febce25b4458ce5f82fa7849a3ca2ec19d7a1996a33688fa614f72b38",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/de2f878febce25b4458ce5f82fa7849a3ca2ec19d7a1996a33688fa614f72b38.mp3",
+  "byteLength": 99792,
+  "sha256": "95a0580d4f9fa0f91999b29a6077b7a16b178dc5fdbcc2c47b146ce8fccd8d10",
+  "durationSeconds": 16.632
+}

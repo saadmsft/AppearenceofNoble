@@ -1,0 +1,18 @@
+{
+  "entryId": "patched-cloak-worn-at-his-passing",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو بردہ عائشہ رضی اللہ عنہا کے پاس گئے تو انہوں نے یمن میں بننے والی قسم کا ایک موٹا تہبند اور ملبدہ کہلانے والی چادر دکھائی۔ انہوں نے قسم کھا کر بتایا کہ نبی کریم صلی اللہ علیہ وسلم کا وصال انہی دو کپڑوں میں ہوا تھا۔ ان کا بیان انہی پیش کیے گئے کپڑوں کی شناخت کرتا ہے۔",
+  "transcriptHash": "ba505e34f00a209291c31c18ce2be3cd092170274a6ef412be6bad523ccfb5df",
+  "transcriptCharacters": 270,
+  "billableCharacters": 270,
+  "cacheKey": "02247f610013a3d97e000d40683454620a6593da2bb082887afb674a3fdbcaae",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/02247f610013a3d97e000d40683454620a6593da2bb082887afb674a3fdbcaae.mp3",
+  "byteLength": 118512,
+  "sha256": "ea13c5af196836e186b8144ca18f325ba257cfcb631b409dfb5569cd4574f0c2",
+  "durationSeconds": 19.752
+}

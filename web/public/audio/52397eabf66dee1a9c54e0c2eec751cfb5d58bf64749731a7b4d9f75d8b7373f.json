@@ -1,0 +1,18 @@
+{
+  "entryId": "four-hair-plaits-umm-hani",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا النُّفَيْلِيُّ، حَدَّثَنَا سُفْيَانُ، عَنِ ابْنِ أَبِي نَجِيحٍ، عَنْ مُجَاهِدٍ، قَالَ قَالَتْ أُمُّ هَانِئٍ قَدِمَ النَّبِيُّ صلى الله عليه وسلم إِلَى مَكَّةَ وَلَهُ أَرْبَعُ غَدَائِرَ تَعْنِي عَقَائِصَ .",
+  "transcriptHash": "cf34ea9a2097c8421cb24ec351524ea03545c8590412a3ae015a7262c6095814",
+  "transcriptCharacters": 215,
+  "billableCharacters": 215,
+  "cacheKey": "52397eabf66dee1a9c54e0c2eec751cfb5d58bf64749731a7b4d9f75d8b7373f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/52397eabf66dee1a9c54e0c2eec751cfb5d58bf64749731a7b4d9f75d8b7373f.mp3",
+  "byteLength": 84096,
+  "sha256": "29033d192a0f1bc73f1a96f250c7696f989b9d2186f195d750a2e653354c2ce1",
+  "durationSeconds": 14.016
+}

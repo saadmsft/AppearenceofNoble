@@ -1,0 +1,18 @@
+{
+  "entryId": "black-turban-at-conquest-of-mecca",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Amr ibn Huraith reported that the Prophet may Allah bless him and grant him peace addressed people wearing a black turban. Abu Dawud's related account from Amr describes him on the pulpit with the turban's two ends hanging between his shoulders. Those added details belong to the related wording.",
+  "transcriptHash": "00b5eec23c2460d263924265664da3d9589db689eabf79033efcbb65bf01328c",
+  "transcriptCharacters": 296,
+  "billableCharacters": 306,
+  "cacheKey": "d81b866e92c974d078e8bf1a8b9b893df50080ee0110319be35f5e3613676c88",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d81b866e92c974d078e8bf1a8b9b893df50080ee0110319be35f5e3613676c88.mp3",
+  "byteLength": 103824,
+  "sha256": "83b99b86644bceec12465cfa6a3c336eb950a98b39a4c0438bf9e9ea516fddf0",
+  "durationSeconds": 17.304
+}

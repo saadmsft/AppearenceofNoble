@@ -1,0 +1,434 @@
+[
+  {
+    "id": "character-mercy-kissing-al-hasan",
+    "title": {
+      "en": "Affection for al-Hasan",
+      "ur": "حضرت حسن رضی اللہ عنہ سے شفقت"
+    },
+    "narrator": {
+      "en": "Abu Huraira",
+      "ur": "حضرت ابو ہریرہ رضی اللہ عنہ"
+    },
+    "topics": ["mercy"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "5997",
+      "url": "https://sunnah.com/bukhari:5997"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "مَنْ لاَ يَرْحَمُ لاَ يُرْحَمُ",
+    "arabicFull": "حَدَّثَنَا أَبُو الْيَمَانِ، أَخْبَرَنَا شُعَيْبٌ، عَنِ الزُّهْرِيِّ، حَدَّثَنَا أَبُو سَلَمَةَ بْنُ عَبْدِ الرَّحْمَنِ، أَنَّ أَبَا هُرَيْرَةَ ـ رضى الله عنه ـ قَالَ قَبَّلَ رَسُولُ اللَّهِ صلى الله عليه وسلم الْحَسَنَ بْنَ عَلِيٍّ وَعِنْدَهُ الأَقْرَعُ بْنُ حَابِسٍ التَّمِيمِيُّ جَالِسًا. فَقَالَ الأَقْرَعُ إِنَّ لِي عَشَرَةً مِنَ الْوَلَدِ مَا قَبَّلْتُ مِنْهُمْ أَحَدًا. فَنَظَرَ إِلَيْهِ رَسُولُ اللَّهِ صلى الله عليه وسلم ثُمَّ قَالَ \" مَنْ لاَ يَرْحَمُ لاَ يُرْحَمُ \".",
+    "summary": {
+      "en": "Abu Huraira describes the Prophet kissing al-Hasan ibn Ali while al-Aqra' ibn Habis sat nearby. Al-Aqra' remarked that he had ten children and had kissed none of them. The Prophet answered by linking the mercy a person shows with the mercy that person receives, giving this exchange a clear emphasis on tenderness.",
+      "ur": "حضرت ابو ہریرہ رضی اللہ عنہ بیان کرتے ہیں کہ نبی کریم ﷺ نے حضرت حسن بن علی رضی اللہ عنہما کو بوسہ دیا۔ پاس بیٹھے اقرع بن حابس نے کہا کہ ان کے دس بچے ہیں، مگر انہوں نے کسی کو بوسہ نہیں دیا۔ آپ ﷺ نے جواب میں رحم کرنے اور رحم پانے کا تعلق واضح فرمایا۔"
+    },
+    "context": {
+      "en": "The occasion is a specific exchange about kissing children, not an abstract description of emotion. The concluding statement is the Prophet's reply; al-Aqra's account of his own conduct is separately reported.",
+      "ur": "یہ گفتگو بچوں کو بوسہ دینے کے ایک خاص موقع کی ہے۔ آخر میں رحم سے متعلق بات نبی کریم ﷺ کا جواب ہے، جبکہ اپنے بچوں کے ساتھ برتاؤ کا ذکر اقرع بن حابس نے خود کیا۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-mercy-shortening-prayer",
+    "title": {
+      "en": "Hearing a child cry",
+      "ur": "بچے کے رونے پر نماز میں تخفیف"
+    },
+    "narrator": {
+      "en": "Abu Qatada, through his son Abdullah",
+      "ur": "حضرت ابو قتادہ رضی اللہ عنہ، اپنے بیٹے عبداللہ کی روایت سے"
+    },
+    "topics": ["mercy"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "707",
+      "url": "https://sunnah.com/bukhari:707"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "فَأَتَجَوَّزُ فِي صَلاَتِي كَرَاهِيَةَ أَنْ أَشُقَّ عَلَى أُمِّهِ",
+    "arabicFull": "حَدَّثَنَا إِبْرَاهِيمُ بْنُ مُوسَى، قَالَ أَخْبَرَنَا الْوَلِيدُ، قَالَ حَدَّثَنَا الأَوْزَاعِيُّ، عَنْ يَحْيَى بْنِ أَبِي كَثِيرٍ، عَنْ عَبْدِ اللَّهِ بْنِ أَبِي قَتَادَةَ، عَنْ أَبِيهِ أَبِي قَتَادَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ \" إِنِّي لأَقُومُ فِي الصَّلاَةِ أُرِيدُ أَنْ أُطَوِّلَ فِيهَا، فَأَسْمَعُ بُكَاءَ الصَّبِيِّ، فَأَتَجَوَّزُ فِي صَلاَتِي كَرَاهِيَةَ أَنْ أَشُقَّ عَلَى أُمِّهِ \" . تَابَعَهُ بِشْرُ بْنُ بَكْرٍ وَابْنُ الْمُبَارَكِ وَبَقِيَّةُ عَنِ الأَوْزَاعِيِّ.",
+    "summary": {
+      "en": "Abu Qatada transmits the Prophet's explanation that he could begin prayer intending to make it lengthy, then hear a child crying and shorten it. He gave the mother's hardship as his reason. The report shows consideration for her circumstances changing the length of prayer he had initially intended.",
+      "ur": "حضرت ابو قتادہ رضی اللہ عنہ کی روایت میں نبی کریم ﷺ اپنی نماز کا ذکر فرماتے ہیں کہ کبھی اسے طویل کرنے کا ارادہ ہوتا، مگر بچے کے رونے کی آواز سن کر مختصر کر دیتے۔ آپ ﷺ نے اس کی وجہ بچے کی ماں کو مشقت سے بچانا بتائی۔ یوں عبادت کے دوران بھی اس کی حالت کا لحاظ سامنے آتا ہے۔"
+    },
+    "context": {
+      "en": "Abdullah narrates from his father Abu Qatada, who reports the Prophet's words. The full Arabic also preserves al-Bukhari's closing transmission note; that note is not part of the Prophet's speech.",
+      "ur": "عبداللہ اپنے والد حضرت ابو قتادہ رضی اللہ عنہ سے نبی کریم ﷺ کے الفاظ نقل کرتے ہیں۔ مکمل عربی میں آخر کا متابعت سے متعلق نوٹ بھی محفوظ ہے؛ وہ نبی کریم ﷺ کا فرمان نہیں۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-mercy-sent-as-mercy",
+    "title": {
+      "en": "Sent as mercy",
+      "ur": "رحمت بنا کر بھیجا گیا"
+    },
+    "narrator": {
+      "en": "Abu Huraira",
+      "ur": "حضرت ابو ہریرہ رضی اللہ عنہ"
+    },
+    "topics": ["mercy"],
+    "source": {
+      "collection": "muslim",
+      "reference": "2599",
+      "url": "https://sunnah.com/muslim:2599"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih Muslim; not a new independent grading.",
+        "ur": "صحیح مسلم کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "لَمْ أُبْعَثْ لَعَّانًا وَإِنَّمَا بُعِثْتُ رَحْمَةً",
+    "arabicFull": "حَدَّثَنَا مُحَمَّدُ بْنُ عَبَّادٍ، وَابْنُ أَبِي عُمَرَ، قَالاَ حَدَّثَنَا مَرْوَانُ، - يَعْنِيَانِ الْفَزَارِيَّ - عَنْ يَزِيدَ، - وَهُوَ ابْنُ كَيْسَانَ - عَنْ أَبِي حَازِمٍ، عَنْ أَبِي هُرَيْرَةَ، قَالَ قِيلَ يَا رَسُولَ اللَّهِ ادْعُ عَلَى الْمُشْرِكِينَ قَالَ \" إِنِّي لَمْ أُبْعَثْ لَعَّانًا وَإِنَّمَا بُعِثْتُ رَحْمَةً \" .",
+    "summary": {
+      "en": "Abu Huraira reports that the Prophet was asked to pray against the polytheists. In response, he described his mission in terms of mercy rather than habitual cursing. His answer declined the request as presented and placed the character of his calling at the centre of this brief exchange.",
+      "ur": "حضرت ابو ہریرہ رضی اللہ عنہ بیان کرتے ہیں کہ نبی کریم ﷺ سے مشرکین کے خلاف بددعا کی درخواست کی گئی۔ آپ ﷺ نے جواب میں اپنی بعثت کو رحمت سے تعبیر فرمایا، نہ کہ کثرت سے لعنت کرنے سے۔ اس مختصر گفتگو میں آپ ﷺ نے درخواست کے جواب کو اپنے مقصدِ بعثت سے جوڑا۔"
+    },
+    "context": {
+      "en": "The requester, place and date are not identified. This reply should not be expanded into a claim about every supplication in every circumstance; the report records this particular request and response.",
+      "ur": "روایت میں درخواست کرنے والے کا نام، مقام اور تاریخ نہیں بتائے گئے۔ یہاں اسی درخواست اور جواب کا بیان ہے؛ اسے ہر موقع کی ہر دعا کے بارے میں غیر محدود دعویٰ نہیں بنایا گیا۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-patience-severe-fever",
+    "title": {
+      "en": "Speaking of reward during illness",
+      "ur": "بیماری میں اجر کا بیان"
+    },
+    "narrator": {
+      "en": "Abdullah ibn Mas'ud",
+      "ur": "حضرت عبداللہ بن مسعود رضی اللہ عنہ"
+    },
+    "topics": ["patience"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "5648",
+      "url": "https://sunnah.com/bukhari:5648"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "أَجَلْ إِنِّي أُوعَكُ كَمَا يُوعَكُ رَجُلاَنِ مِنْكُمْ",
+    "arabicFull": "حَدَّثَنَا عَبْدَانُ، عَنْ أَبِي حَمْزَةَ، عَنِ الأَعْمَشِ، عَنْ إِبْرَاهِيمَ التَّيْمِيِّ، عَنِ الْحَارِثِ بْنِ سُوَيْدٍ، عَنْ عَبْدِ اللَّهِ، قَالَ دَخَلْتُ عَلَى رَسُولِ اللَّهِ صلى الله عليه وسلم وَهْوَ يُوعَكُ فَقُلْتُ يَا رَسُولَ اللَّهِ إِنَّكَ تُوعَكُ وَعْكًا شَدِيدًا. قَالَ \" أَجَلْ إِنِّي أُوعَكُ كَمَا يُوعَكُ رَجُلاَنِ مِنْكُمْ \". قُلْتُ ذَلِكَ أَنَّ لَكَ أَجْرَيْنِ قَالَ \" أَجَلْ ذَلِكَ كَذَلِكَ، مَا مِنْ مُسْلِمٍ يُصِيبُهُ أَذًى شَوْكَةٌ فَمَا فَوْقَهَا، إِلاَّ كَفَّرَ اللَّهُ بِهَا سَيِّئَاتِهِ، كَمَا تَحُطُّ الشَّجَرَةُ وَرَقَهَا \".",
+    "summary": {
+      "en": "Abdullah ibn Mas'ud visited the Prophet during a severe fever. The Prophet acknowledged the intensity of his suffering and confirmed Abdullah's question about a doubled reward. He then explained that a Muslim's affliction, even a thorn prick, can be a means by which Allah removes sins, comparing this with a tree shedding leaves.",
+      "ur": "حضرت عبداللہ بن مسعود رضی اللہ عنہ نے شدید بخار کے دوران نبی کریم ﷺ کی عیادت کی۔ آپ ﷺ نے تکلیف کی شدت بیان فرمائی اور دوہرے اجر کے متعلق ان کی بات کی تصدیق کی۔ پھر بتایا کہ مسلمان کو پہنچنے والی تکلیف، حتیٰ کہ کانٹا چبھنا بھی، اللہ کی طرف سے گناہ مٹنے کا سبب بنتا ہے۔"
+    },
+    "context": {
+      "en": "The report records his acknowledgement of suffering and explanation of reward. It does not identify the illness, date the visit, or suggest that patience requires a person to feel no pain.",
+      "ur": "یہ روایت تکلیف کے اظہار اور اجر کی وضاحت کو جمع کرتی ہے۔ بیماری کی تشخیص اور عیادت کی تاریخ یہاں نہیں دی گئی، نہ صبر کو درد محسوس نہ کرنے کے معنی میں پیش کیا گیا ہے۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-patience-first-shock",
+    "title": {
+      "en": "Patience at the first shock",
+      "ur": "پہلی چوٹ پر صبر"
+    },
+    "narrator": {
+      "en": "Anas ibn Malik",
+      "ur": "حضرت انس بن مالک رضی اللہ عنہ"
+    },
+    "topics": ["patience"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "1283",
+      "url": "https://sunnah.com/bukhari:1283"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "إِنَّمَا الصَّبْرُ عِنْدَ الصَّدْمَةِ الأُولَى",
+    "arabicFull": "حَدَّثَنَا آدَمُ، حَدَّثَنَا شُعْبَةُ، حَدَّثَنَا ثَابِتٌ، عَنْ أَنَسِ بْنِ مَالِكٍ ـ رضى الله عنه ـ قَالَ مَرَّ النَّبِيُّ صلى الله عليه وسلم بِامْرَأَةٍ تَبْكِي عِنْدَ قَبْرٍ فَقَالَ \" اتَّقِي اللَّهَ وَاصْبِرِي \". قَالَتْ إِلَيْكَ عَنِّي، فَإِنَّكَ لَمْ تُصَبْ بِمُصِيبَتِي، وَلَمْ تَعْرِفْهُ. فَقِيلَ لَهَا إِنَّهُ النَّبِيُّ صلى الله عليه وسلم. فَأَتَتْ باب النَّبِيِّ صلى الله عليه وسلم فَلَمْ تَجِدْ عِنْدَهُ بَوَّابِينَ فَقَالَتْ لَمْ أَعْرِفْكَ. فَقَالَ \" إِنَّمَا الصَّبْرُ عِنْدَ الصَّدْمَةِ الأُولَى \".",
+    "summary": {
+      "en": "Anas describes the Prophet advising a woman weeping beside a grave to be mindful of Allah and patient. Not recognising him, she told him to leave her. When she later came to explain that she had not known who he was, his recorded answer returned to patience at the first impact of loss.",
+      "ur": "حضرت انس رضی اللہ عنہ بیان کرتے ہیں کہ نبی کریم ﷺ نے قبر کے پاس روتی ہوئی ایک خاتون کو تقویٰ اور صبر کی نصیحت فرمائی۔ وہ آپ ﷺ کو پہچان نہ سکیں اور دور جانے کو کہا۔ بعد میں پہچان نہ سکنے کی وضاحت کرنے آئیں تو آپ ﷺ نے مصیبت کی پہلی چوٹ پر صبر کی اہمیت بیان فرمائی۔"
+    },
+    "context": {
+      "en": "The woman and the deceased are unnamed in this version. Her later visit and the absence of doorkeepers belong to Anas's narrative; the closing teaching about patience is attributed to the Prophet.",
+      "ur": "اس روایت میں خاتون اور میت کے نام نہیں آئے۔ بعد کی ملاقات اور دربان نہ ہونے کا ذکر حضرت انس رضی اللہ عنہ کے بیان میں ہے، جبکہ صبر سے متعلق آخری بات نبی کریم ﷺ کا فرمان ہے۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-patience-recalling-musa",
+    "title": {
+      "en": "Remembering Musa's endurance",
+      "ur": "حضرت موسیٰ علیہ السلام کے صبر کا ذکر"
+    },
+    "narrator": {
+      "en": "Abdullah ibn Mas'ud",
+      "ur": "حضرت عبداللہ بن مسعود رضی اللہ عنہ"
+    },
+    "topics": ["patience"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "3150",
+      "url": "https://sunnah.com/bukhari:3150"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "رَحِمَ اللَّهُ مُوسَى قَدْ أُوذِيَ بِأَكْثَرَ مِنْ هَذَا فَصَبَرَ",
+    "arabicFull": "حَدَّثَنَا عُثْمَانُ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا جَرِيرٌ، عَنْ مَنْصُورٍ، عَنْ أَبِي وَائِلٍ، عَنْ عَبْدِ اللَّهِ ـ رضى الله عنه ـ قَالَ لَمَّا كَانَ يَوْمُ حُنَيْنٍ آثَرَ النَّبِيُّ صلى الله عليه وسلم أُنَاسًا فِي الْقِسْمَةِ، فَأَعْطَى الأَقْرَعَ بْنَ حَابِسٍ مِائَةً مِنَ الإِبِلِ، وَأَعْطَى عُيَيْنَةَ مِثْلَ ذَلِكَ، وَأَعْطَى أُنَاسًا مِنْ أَشْرَافِ الْعَرَبِ، فَآثَرَهُمْ يَوْمَئِذٍ فِي الْقِسْمَةِ. قَالَ رَجُلٌ وَاللَّهِ إِنَّ هَذِهِ الْقِسْمَةَ مَا عُدِلَ فِيهَا، وَمَا أُرِيدَ بِهَا وَجْهُ اللَّهِ. فَقُلْتُ وَاللَّهِ لأُخْبِرَنَّ النَّبِيَّ صلى الله عليه وسلم. فَأَتَيْتُهُ فَأَخْبَرْتُهُ فَقَالَ \" فَمَنْ يَعْدِلُ إِذَا لَمْ يَعْدِلِ اللَّهُ وَرَسُولُهُ رَحِمَ اللَّهُ مُوسَى قَدْ أُوذِيَ بِأَكْثَرَ مِنْ هَذَا فَصَبَرَ \".",
+    "summary": {
+      "en": "After the distribution associated with Hunain, Abdullah ibn Mas'ud relayed a man's accusation that the allocations were unjust and not intended for Allah. The Prophet challenged that accusation, then recalled how Musa had endured greater hurt with patience. His response explicitly brought an earlier prophet's endurance into a personally hurtful exchange.",
+      "ur": "حنین سے متعلق تقسیم کے بعد حضرت عبداللہ بن مسعود رضی اللہ عنہ نے ایک شخص کی بات نبی کریم ﷺ تک پہنچائی جس نے تقسیم کے انصاف اور نیت پر اعتراض کیا تھا۔ آپ ﷺ نے اس الزام کا جواب دیا، پھر حضرت موسیٰ علیہ السلام کا ذکر فرمایا کہ انہیں اس سے زیادہ اذیت پہنچی تھی اور انہوں نے صبر کیا۔"
+    },
+    "context": {
+      "en": "The Arabic names Hunain and several recipients but leaves the critic unnamed. The final clause describes Musa's patience within the Prophet's reply; it is not a separate incident involving Musa witnessed by Abdullah.",
+      "ur": "عربی متن میں حنین اور بعض عطیات پانے والوں کے نام ہیں، مگر اعتراض کرنے والا نامعلوم ہے۔ آخری بات آپ ﷺ کے جواب میں حضرت موسیٰ علیہ السلام کے صبر کا ذکر ہے، عبداللہ رضی اللہ عنہ کا دیکھا ہوا کوئی الگ واقعہ نہیں۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-humility-greeting-children",
+    "title": {
+      "en": "Greeting children",
+      "ur": "بچوں کو سلام کرنا"
+    },
+    "narrator": {
+      "en": "Anas ibn Malik",
+      "ur": "حضرت انس بن مالک رضی اللہ عنہ"
+    },
+    "topics": ["humility"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "6247",
+      "url": "https://sunnah.com/bukhari:6247"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "كَانَ النَّبِيُّ صلى الله عليه وسلم يَفْعَلُهُ",
+    "arabicFull": "حَدَّثَنَا عَلِيُّ بْنُ الْجَعْدِ، أَخْبَرَنَا شُعْبَةُ، عَنْ سَيَّارٍ، عَنْ ثَابِتٍ الْبُنَانِيِّ، عَنْ أَنَسِ بْنِ مَالِكٍ ـ رضى الله عنه أَنَّهُ مَرَّ عَلَى صِبْيَانٍ فَسَلَّمَ عَلَيْهِمْ وَقَالَ كَانَ النَّبِيُّ صلى الله عليه وسلم يَفْعَلُهُ.",
+    "summary": {
+      "en": "Anas ibn Malik passed some children and greeted them. He explained his action by saying that the Prophet used to do the same. His recollection preserves a simple expression of approachability towards children, with Anas himself following the practice he attributed to the Prophet.",
+      "ur": "حضرت انس بن مالک رضی اللہ عنہ کچھ بچوں کے پاس سے گزرے تو انہیں سلام کیا۔ پھر بتایا کہ نبی کریم ﷺ بھی ایسا کیا کرتے تھے۔ یہ مختصر یاد بچوں کو سلام میں پہل کرنے کی صورت دکھاتی ہے؛ حضرت انس رضی اللہ عنہ نے اپنے عمل کو اسی نبوی طریقے سے جوڑا۔"
+    },
+    "context": {
+      "en": "The person passing the children in the narrated scene is Anas. His explanation attributes the practice to the Prophet; the report does not quote a command or specify the children's ages.",
+      "ur": "بیان کردہ منظر میں بچوں کے پاس سے گزرنے والے حضرت انس رضی اللہ عنہ ہیں۔ وہ اس عمل کی نسبت نبی کریم ﷺ کی طرف کرتے ہیں؛ روایت میں کسی حکم کے الفاظ یا بچوں کی عمریں نہیں دی گئیں۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-humility-modest-invitations",
+    "title": {
+      "en": "Welcoming a modest invitation",
+      "ur": "سادہ دعوت کی قدر"
+    },
+    "narrator": {
+      "en": "Abu Huraira",
+      "ur": "حضرت ابو ہریرہ رضی اللہ عنہ"
+    },
+    "topics": ["humility"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "2568",
+      "url": "https://sunnah.com/bukhari:2568"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "لَوْ دُعِيتُ إِلَى ذِرَاعٍ أَوْ كُرَاعٍ لأَجَبْتُ",
+    "arabicFull": "حَدَّثَنَا مُحَمَّدُ بْنُ بَشَّارٍ، حَدَّثَنَا ابْنُ أَبِي عَدِيٍّ، عَنْ شُعْبَةَ، عَنْ سُلَيْمَانَ، عَنْ أَبِي حَازِمٍ، عَنْ أَبِي هُرَيْرَةَ ـ رضى الله عنه ـ عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ \" لَوْ دُعِيتُ إِلَى ذِرَاعٍ أَوْ كُرَاعٍ لأَجَبْتُ، وَلَوْ أُهْدِيَ إِلَىَّ ذِرَاعٌ أَوْ كُرَاعٌ لَقَبِلْتُ \".",
+    "summary": {
+      "en": "Abu Huraira reports the Prophet expressing readiness to answer an invitation even for a foreleg or trotter, and to receive either as a gift. The smallness of what was offered did not make it beneath his stated willingness to accept. His words describe hospitality and gifts without requiring an elaborate offering.",
+      "ur": "حضرت ابو ہریرہ رضی اللہ عنہ روایت کرتے ہیں کہ نبی کریم ﷺ نے دست یا پائے کی دعوت بھی قبول کرنے اور ایسا ہدیہ ملنے پر اسے لینے کی آمادگی ظاہر فرمائی۔ آپ ﷺ کے ان الفاظ میں معمولی پیشکش کو حقیر نہ سمجھنے کا پہلو نمایاں ہے؛ قبولیت کو پُرتکلف اہتمام سے مشروط نہیں کیا گیا۔"
+    },
+    "context": {
+      "en": "This is a conditional statement of willingness, not a narrated visit to a named host. The same two examples occur in both clauses of the Arabic; no meal size or setting is supplied.",
+      "ur": "یہ آمادگی ظاہر کرنے والا مشروط بیان ہے، کسی نامزد میزبان کے ہاں جانے کا واقعہ نہیں۔ عربی کی دونوں شقوں میں دست اور پائے کی مثال ہے؛ کھانے کی مقدار یا مجلس کا احوال نہیں بتایا گیا۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-humility-servant-and-messenger",
+    "title": {
+      "en": "Allah's servant and messenger",
+      "ur": "اللہ کے بندے اور رسول"
+    },
+    "narrator": {
+      "en": "Umar ibn al-Khattab, through Ibn Abbas",
+      "ur": "حضرت عمر بن خطاب رضی اللہ عنہ، حضرت ابن عباس رضی اللہ عنہما کی روایت سے"
+    },
+    "topics": ["humility"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "3445",
+      "url": "https://sunnah.com/bukhari:3445"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "فَإِنَّمَا أَنَا عَبْدُهُ، فَقُولُوا عَبْدُ اللَّهِ وَرَسُولُهُ",
+    "arabicFull": "حَدَّثَنَا الْحُمَيْدِيُّ، حَدَّثَنَا سُفْيَانُ، قَالَ سَمِعْتُ الزُّهْرِيَّ، يَقُولُ أَخْبَرَنِي عُبَيْدُ اللَّهِ بْنُ عَبْدِ اللَّهِ، عَنِ ابْنِ عَبَّاسٍ، سَمِعَ عُمَرَ ـ رضى الله عنه ـ يَقُولُ عَلَى الْمِنْبَرِ سَمِعْتُ النَّبِيَّ صلى الله عليه وسلم يَقُولُ \" لاَ تُطْرُونِي كَمَا أَطْرَتِ النَّصَارَى ابْنَ مَرْيَمَ، فَإِنَّمَا أَنَا عَبْدُهُ، فَقُولُوا عَبْدُ اللَّهِ وَرَسُولُهُ \".",
+    "summary": {
+      "en": "Umar recalled hearing the Prophet warn against exaggerated praise, referring to the praise Christians had given to the son of Mary. The Prophet directed his listeners instead to describe him as Allah's servant and messenger. The report preserves the terms he chose for himself while setting a limit on personal exaltation.",
+      "ur": "حضرت عمر رضی اللہ عنہ نے نبی کریم ﷺ کا فرمان نقل کیا کہ آپ ﷺ کی تعریف میں غلو نہ کیا جائے، جیسے نصاریٰ نے ابن مریم کے بارے میں کیا۔ آپ ﷺ نے اپنے لیے اللہ کا بندہ اور اس کا رسول کہنے کی ہدایت فرمائی۔ روایت میں آپ ﷺ کی اپنی بیان کردہ شناخت اور مدح کی حد سامنے آتی ہے۔"
+    },
+    "context": {
+      "en": "Ibn Abbas heard Umar narrate this while on the pulpit. That pulpit setting belongs to Umar's narration; this version does not locate or date the Prophet's original statement.",
+      "ur": "حضرت ابن عباس رضی اللہ عنہما نے حضرت عمر رضی اللہ عنہ کو منبر پر یہ روایت بیان کرتے سنا۔ منبر کا ذکر حضرت عمر کے بیان کے موقع سے متعلق ہے؛ اصل فرمان کا مقام اور تاریخ یہاں متعین نہیں۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-generosity-ramadan-giving",
+    "title": {
+      "en": "Generosity in Ramadan",
+      "ur": "رمضان میں سخاوت"
+    },
+    "narrator": {
+      "en": "Abdullah ibn Abbas",
+      "ur": "حضرت عبداللہ بن عباس رضی اللہ عنہما"
+    },
+    "topics": ["generosity"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "6",
+      "url": "https://sunnah.com/bukhari:6"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "وَكَانَ أَجْوَدُ مَا يَكُونُ فِي رَمَضَانَ حِينَ يَلْقَاهُ جِبْرِيلُ",
+    "arabicFull": "حَدَّثَنَا عَبْدَانُ، قَالَ أَخْبَرَنَا عَبْدُ اللَّهِ، قَالَ أَخْبَرَنَا يُونُسُ، عَنِ الزُّهْرِيِّ، ح وَحَدَّثَنَا بِشْرُ بْنُ مُحَمَّدٍ، قَالَ أَخْبَرَنَا عَبْدُ اللَّهِ، قَالَ أَخْبَرَنَا يُونُسُ، وَمَعْمَرٌ، عَنِ الزُّهْرِيِّ، نَحْوَهُ قَالَ أَخْبَرَنِي عُبَيْدُ اللَّهِ بْنُ عَبْدِ اللَّهِ، عَنِ ابْنِ عَبَّاسٍ، قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم أَجْوَدَ النَّاسِ، وَكَانَ أَجْوَدُ مَا يَكُونُ فِي رَمَضَانَ حِينَ يَلْقَاهُ جِبْرِيلُ، وَكَانَ يَلْقَاهُ فِي كُلِّ لَيْلَةٍ مِنْ رَمَضَانَ فَيُدَارِسُهُ الْقُرْآنَ، فَلَرَسُولُ اللَّهِ صلى الله عليه وسلم أَجْوَدُ بِالْخَيْرِ مِنَ الرِّيحِ الْمُرْسَلَةِ.",
+    "summary": {
+      "en": "Ibn Abbas describes the Prophet as exceptionally generous, with his giving especially abundant during Ramadan when Jibril met him. He relates their nightly meetings for reviewing the Qur'an and compares the Prophet's generosity in good to a wind sent forth. This is the narrator's description of the Prophet, not a statement of self-praise.",
+      "ur": "حضرت ابن عباس رضی اللہ عنہما نبی کریم ﷺ کی بہت زیادہ سخاوت بیان کرتے ہیں، خصوصاً رمضان میں جب حضرت جبریل علیہ السلام آپ ﷺ سے ملتے تھے۔ وہ رات رات قرآن کے دور کا ذکر کرتے ہوئے خیر میں آپ ﷺ کی سخاوت کو چلتی ہوئی ہوا سے بڑھ کر بتاتے ہیں۔ یہ راوی کا بیان ہے، اپنی تعریف کا کوئی نبوی قول نہیں۔"
+    },
+    "context": {
+      "en": "The report links the Ramadan description with nightly Qur'an study but names no recipients or amounts. Its full Arabic contains both opening transmission routes and the wording that marks their correspondence.",
+      "ur": "رمضان کی سخاوت کے ساتھ راتوں میں قرآن کے دور کا ذکر ہے، مگر کسی وصول کرنے والے یا عطیے کی مقدار کا نام نہیں۔ مکمل عربی میں ابتدا کے دونوں سندی طریقے اور ان کی مماثلت کا لفظ بھی محفوظ ہے۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-generosity-giving-needed-cloth",
+    "title": {
+      "en": "Giving a cloth he needed",
+      "ur": "اپنی ضرورت کی چادر دے دینا"
+    },
+    "narrator": {
+      "en": "Sahl ibn Sa'd, through Abu Hazim",
+      "ur": "حضرت سہل بن سعد رضی اللہ عنہ، ابو حازم کی روایت سے"
+    },
+    "topics": ["generosity"],
+    "source": {
+      "collection": "bukhari",
+      "reference": "2093",
+      "url": "https://sunnah.com/bukhari:2093"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih al-Bukhari; not a new independent grading.",
+        "ur": "صحیح بخاری کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "ثُمَّ رَجَعَ فَطَوَاهَا، ثُمَّ أَرْسَلَ بِهَا إِلَيْهِ",
+    "arabicFull": "حَدَّثَنَا يَحْيَى بْنُ بُكَيْرٍ، حَدَّثَنَا يَعْقُوبُ بْنُ عَبْدِ الرَّحْمَنِ، عَنْ أَبِي حَازِمٍ، قَالَ سَمِعْتُ سَهْلَ بْنَ سَعْدٍ ـ رضى الله عنه ـ قَالَ جَاءَتِ امْرَأَةٌ بِبُرْدَةٍ ـ قَالَ أَتَدْرُونَ مَا الْبُرْدَةُ فَقِيلَ لَهُ نَعَمْ، هِيَ الشَّمْلَةُ، مَنْسُوجٌ فِي حَاشِيَتِهَا ـ قَالَتْ يَا رَسُولَ اللَّهِ، إِنِّي نَسَجْتُ هَذِهِ بِيَدِي أَكْسُوكَهَا. فَأَخَذَهَا النَّبِيُّ صلى الله عليه وسلم مُحْتَاجًا إِلَيْهَا. فَخَرَجَ إِلَيْنَا وَإِنَّهَا إِزَارُهُ. فَقَالَ رَجُلٌ مِنَ الْقَوْمِ يَا رَسُولَ اللَّهِ، اكْسُنِيهَا، فَقَالَ \" نَعَمْ \". فَجَلَسَ النَّبِيُّ صلى الله عليه وسلم فِي الْمَجْلِسِ، ثُمَّ رَجَعَ فَطَوَاهَا، ثُمَّ أَرْسَلَ بِهَا إِلَيْهِ. فَقَالَ لَهُ الْقَوْمُ مَا أَحْسَنْتَ، سَأَلْتَهَا إِيَّاهُ، لَقَدْ عَلِمْتَ أَنَّهُ لاَ يَرُدُّ سَائِلاً. فَقَالَ الرَّجُلُ وَاللَّهِ مَا سَأَلْتُهُ إِلاَّ لِتَكُونَ كَفَنِي يَوْمَ أَمُوتُ . قَالَ سَهْلٌ فَكَانَتْ كَفَنَهُ.",
+    "summary": {
+      "en": "Sahl ibn Sa'd recounts a woman bringing cloth she had woven for the Prophet. He accepted it while needing it and wore it as a waist-wrapper. When a man requested it, he agreed, later folded it and sent it to him. Sahl adds that the cloth eventually became that man's burial shroud.",
+      "ur": "حضرت سہل بن سعد رضی اللہ عنہ بیان کرتے ہیں کہ ایک خاتون اپنی بُنی ہوئی چادر نبی کریم ﷺ کے لیے لائیں۔ آپ ﷺ کو اس کی ضرورت تھی اور آپ نے اسے تہبند بنایا۔ ایک شخص نے مانگا تو آپ ﷺ نے دینے کی حامی بھر لی، پھر اسے تہہ کر کے بھجوا دیا۔ سہل رضی اللہ عنہ کے مطابق بعد میں وہ اسی شخص کا کفن بنی۔"
+    },
+    "context": {
+      "en": "The explanation of the cloth and its eventual use as a shroud are narrative material. Those present, not the Prophet, rebuked the requester; his wish for a shroud was his own stated reason.",
+      "ur": "چادر کی وضاحت اور بعد میں کفن بننے کی بات راوی کے بیان میں ہے۔ مانگنے والے کو حاضرین نے ملامت کی، نبی کریم ﷺ نے نہیں۔ کفن بنانے کی خواہش اس شخص نے اپنی وجہ کے طور پر بتائی۔"
+    },
+    "checkedAt": "2026-09-11"
+  },
+  {
+    "id": "character-generosity-flock-between-mountains",
+    "title": {
+      "en": "A flock between two mountains",
+      "ur": "دو پہاڑوں کے درمیان ریوڑ"
+    },
+    "narrator": {
+      "en": "Anas ibn Malik, through his son Musa",
+      "ur": "حضرت انس بن مالک رضی اللہ عنہ، اپنے بیٹے موسیٰ کی روایت سے"
+    },
+    "topics": ["generosity"],
+    "source": {
+      "collection": "muslim",
+      "reference": "2312a",
+      "url": "https://sunnah.com/muslim:2312a"
+    },
+    "relatedSources": [],
+    "grade": {
+      "level": "sahih",
+      "attribution": {
+        "en": "Conventional sahih classification of Sahih Muslim; not a new independent grading.",
+        "ur": "صحیح مسلم کی معروف صحیح حیثیت کی بنا پر؛ یہ نئی مستقل تحقیق پر مبنی درجہ بندی نہیں۔"
+      }
+    },
+    "arabic": "فَجَاءَهُ رَجُلٌ فَأَعْطَاهُ غَنَمًا بَيْنَ جَبَلَيْنِ",
+    "arabicFull": "وَحَدَّثَنَا عَاصِمُ بْنُ النَّضْرِ التَّيْمِيُّ، حَدَّثَنَا خَالِدٌ، - يَعْنِي ابْنَ الْحَارِثِ - حَدَّثَنَا حُمَيْدٌ، عَنْ مُوسَى بْنِ أَنَسٍ، عَنْ أَبِيهِ، قَالَ مَا سُئِلَ رَسُولُ اللَّهِ صلى الله عليه وسلم عَلَى الإِسْلاَمِ شَيْئًا إِلاَّ أَعْطَاهُ - قَالَ - فَجَاءَهُ رَجُلٌ فَأَعْطَاهُ غَنَمًا بَيْنَ جَبَلَيْنِ فَرَجَعَ إِلَى قَوْمِهِ فَقَالَ يَا قَوْمِ أَسْلِمُوا فَإِنَّ مُحَمَّدًا يُعْطِي عَطَاءً لاَ يَخْشَى الْفَاقَةَ .",
+    "summary": {
+      "en": "Anas describes the Prophet's giving in connection with Islam, then recounts a man receiving a flock situated between two mountains. The recipient returned to his people and urged them to embrace Islam, describing Muhammad's giving as that of someone unafraid of poverty. That description belongs to the recipient's response to the gift.",
+      "ur": "حضرت انس رضی اللہ عنہ اسلام کے تعلق سے نبی کریم ﷺ کے عطا فرمانے کا ذکر کرتے ہیں، پھر ایک شخص کو دو پہاڑوں کے درمیان موجود ریوڑ دینے کا واقعہ سناتے ہیں۔ اس شخص نے اپنی قوم میں واپس جا کر اسلام قبول کرنے کی ترغیب دی اور آپ ﷺ کے عطیے کو محتاجی کے اندیشے سے بالاتر قرار دیا۔ یہ اس شخص کا تاثر تھا۔"
+    },
+    "context": {
+      "en": "Musa narrates from his father Anas. Neither the recipient nor the mountains are named, and no flock count is given. The closing words are the recipient's speech, not the Prophet's own declaration.",
+      "ur": "موسیٰ اپنے والد حضرت انس رضی اللہ عنہ سے روایت کرتے ہیں۔ نہ لینے والے کا نام ہے، نہ پہاڑوں کے نام اور نہ ریوڑ کی تعداد۔ آخری الفاظ عطیہ پانے والے کے ہیں، نبی کریم ﷺ کا اپنا بیان نہیں۔"
+    },
+    "checkedAt": "2026-09-11"
+  }
+]

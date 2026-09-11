@@ -1,0 +1,18 @@
+{
+  "entryId": "brightness-of-shins-abu-juhaifa",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو جحیفہ رضی اللہ عنہ نے ابطح میں نبی کریم صلی اللہ علیہ وسلم کے باہر تشریف لانے کا واقعہ بیان کیا، جب بلال رضی اللہ عنہ نماز کے لیے چھوٹا نیزہ لا چکے تھے۔ آپ صلی اللہ علیہ وسلم کی پنڈلیوں کی چمک ان کی یاد میں ایسی تازہ تھی گویا اب بھی دیکھ رہے ہوں۔ آگے ظہر اور عصر کی نمازوں کا ذکر ہے۔",
+  "transcriptHash": "89c265029106adcbf6a40dc402917d610724777fbc1f061168b63579d467eadd",
+  "transcriptCharacters": 287,
+  "billableCharacters": 287,
+  "cacheKey": "a48e64141b2022770d27628422c11f513bf64ea0aa58188dfe58036a7d4c4220",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a48e64141b2022770d27628422c11f513bf64ea0aa58188dfe58036a7d4c4220.mp3",
+  "byteLength": 127728,
+  "sha256": "cf3cf0c6e2d99e7857a8a323b1e7bed4f87d15df893e55f8b416581fb876a178",
+  "durationSeconds": 21.288
+}

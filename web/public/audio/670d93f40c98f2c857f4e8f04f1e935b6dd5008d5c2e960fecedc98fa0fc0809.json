@@ -1,0 +1,18 @@
+{
+  "entryId": "seal-hair-cluster-abu-zaid-akhtab",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Zaid relates that the Prophet may Allah bless him and grant him peace asked him to come closer and pass his hand over his back. As he did so, his fingers touched the Seal. The report closes with a question about the Seal and a description of hairs gathered together.",
+  "transcriptHash": "b5abc4a4a5f2426158ff6f7051533ca13cd7aca4a189e16e283b75546c7e4a04",
+  "transcriptCharacters": 270,
+  "billableCharacters": 270,
+  "cacheKey": "670d93f40c98f2c857f4e8f04f1e935b6dd5008d5c2e960fecedc98fa0fc0809",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/670d93f40c98f2c857f4e8f04f1e935b6dd5008d5c2e960fecedc98fa0fc0809.mp3",
+  "byteLength": 95040,
+  "sha256": "85150343f46e63add837aebe6d67e8f31135d906adff4b0df03e4ff8f79ed8d4",
+  "durationSeconds": 15.84
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "full-beard-and-rounded-face-jabir",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir ibn Samurah explicitly described the Prophet may Allah bless him and grant him peace as having abundant beard hair. He also mentioned greyness at the front of the head and in the beard. Rejecting a comparison of the face to a sword, he compared it to the sun and moon and described it as rounded.",
+  "transcriptHash": "4e1e0dc3181f6e1beac65597ecf1a0f9a855347ba7aa801e416930f5ee89ba18",
+  "transcriptCharacters": 302,
+  "billableCharacters": 302,
+  "cacheKey": "f300be8f84548ad3107a8c36814dbcd9272336842b5fb4dbe3ca500d2b81e47f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/f300be8f84548ad3107a8c36814dbcd9272336842b5fb4dbe3ca500d2b81e47f.mp3",
+  "byteLength": 103968,
+  "sha256": "7ff0d63ecb56d12daa03a827caf3353802525ed1ff918276c6d2e1bb85ac4621",
+  "durationSeconds": 17.328
+}

@@ -40,8 +40,10 @@ export function loadPreferences(storage: StorageProvider): { value: Preferences;
 
 export function savePreferences(storage: StorageProvider, value: Preferences): StorageIssue {
   try {
-    storage().setItem(preferenceKey, JSON.stringify(preferencesSchema.parse(value)))
-    return null
+    const target = storage()
+    const serialized = JSON.stringify(preferencesSchema.parse(value))
+    target.setItem(preferenceKey, serialized)
+    return target.getItem(preferenceKey) === serialized ? null : 'unavailable'
   } catch (error) {
     if (!(error instanceof DOMException)) throw error
     return 'unavailable'

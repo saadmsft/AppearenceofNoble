@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { ArrowDown, ArrowUpRight, BookOpen, Pause, Play } from 'lucide-react'
-import type { Language } from '../lib/schema.ts'
+import type { Language, Shelf } from '../lib/schema.ts'
 import { number, translate } from '../lib/i18n.ts'
 import { useAmbientMotion } from '../hooks/useAmbientMotion'
 import { Button } from './ui/button'
@@ -26,6 +26,7 @@ export function Rosette({ className = '' }: { className?: string }) {
 
 type HeroProps = {
   language: Language
+  shelf: Shelf
   entryCount: number
   topicCount: number
   paused: boolean
@@ -36,7 +37,7 @@ type HeroProps = {
   onPause: () => void
 }
 
-export function ManuscriptHero({ language, entryCount, topicCount, paused, readerOpen, guideHref, onExplore, onGuide, onPause }: HeroProps) {
+export function ManuscriptHero({ language, shelf, entryCount, topicCount, paused, readerOpen, guideHref, onExplore, onGuide, onPause }: HeroProps) {
   const art = useRef<HTMLDivElement>(null)
   const motion = useAmbientMotion(art, !paused && !readerOpen)
   const t = (key: Parameters<typeof translate>[1]) => translate(language, key)
@@ -45,10 +46,10 @@ export function ManuscriptHero({ language, entryCount, topicCount, paused, reade
     <section className="hero-shell" aria-labelledby="hero-title">
       <div className="hero page-width">
         <div className="hero-copy">
-          <h1 id="hero-title"><span>{t('heroFirst')}</span>{' '}<em>{t('heroSecond')}</em></h1>
-          <p className="hero-description">{t('heroDescription')}</p>
+          <h1 id="hero-title"><span>{t(shelf === 'character' ? 'characterHeroFirst' : 'heroFirst')}</span>{' '}<em>{t(shelf === 'character' ? 'characterHeroSecond' : 'heroSecond')}</em></h1>
+          <p className="hero-description">{t(shelf === 'character' ? 'characterHeroDescription' : 'heroDescription')}</p>
           <div className="hero-actions">
-            <Button onClick={onExplore}>{t('beginJourney')}<span className="hero-button-arrow"><ArrowDown size={18} aria-hidden="true" /></span></Button>
+            <Button onClick={onExplore}>{t(shelf === 'character' ? 'beginCharacter' : 'beginJourney')}<span className="hero-button-arrow"><ArrowDown size={18} aria-hidden="true" /></span></Button>
             <a href={guideHref} className="hero-guide-link" onClick={(event) => {
               if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) { event.preventDefault(); onGuide() }
             }}>{t('approach')}<ArrowUpRight size={16} className="directional" aria-hidden="true" /></a>
@@ -61,7 +62,7 @@ export function ManuscriptHero({ language, entryCount, topicCount, paused, reade
             <path pathLength="1" d="M64 656V310C64 165 187 105 300 44C413 105 536 165 536 310V656" />
             <path d="M28 656H572M48 620H86M514 620H552" />
           </svg>
-          <div className="art-caption" lang="ar" dir="rtl">الشَّمَائِلُ الْمُحَمَّدِيَّةُ</div>
+          <div className="art-caption" lang="ar" dir="rtl">{shelf === 'character' ? 'أَخْلَاقُ النَّبِيِّ' : 'الشَّمَائِلُ الْمُحَمَّدِيَّةُ'}</div>
           <div className="rosette-stage">
             <Rosette />
             <div className="name-calligraphy" lang="ar" dir="rtl">

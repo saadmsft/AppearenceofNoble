@@ -1,0 +1,18 @@
+{
+  "entryId": "perfume-shine-on-head-and-beard",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا إِسْحَاقُ بْنُ نَصْرٍ، حَدَّثَنَا يَحْيَى بْنُ آدَمَ، حَدَّثَنَا إِسْرَائِيلُ، عَنْ أَبِي إِسْحَاقَ، عَنْ عَبْدِ الرَّحْمَنِ بْنِ الأَسْوَدِ، عَنْ أَبِيهِ، عَنْ عَائِشَةَ، قَالَتْ كُنْتُ أُطَيِّبُ النَّبِيَّ صلى الله عليه وسلم بِأَطْيَبِ مَا يَجِدُ، حَتَّى أَجِدَ وَبِيصَ الطِّيبِ فِي رَأْسِهِ وَلِحْيَتِهِ.",
+  "transcriptHash": "e4a992c214e7ef7e9d2ad8b9ddc56233e58f90b4d91dd8592125de3d817d15ce",
+  "transcriptCharacters": 318,
+  "billableCharacters": 318,
+  "cacheKey": "c2eed2db2b33462b4a7937dba95fb6d77730d284bda0866c577b10dab562f42d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c2eed2db2b33462b4a7937dba95fb6d77730d284bda0866c577b10dab562f42d.mp3",
+  "byteLength": 119952,
+  "sha256": "f453f938939bb08aa983e288aa99e8a53e06c0f3c763901648eff939e8053ceb",
+  "durationSeconds": 19.992
+}

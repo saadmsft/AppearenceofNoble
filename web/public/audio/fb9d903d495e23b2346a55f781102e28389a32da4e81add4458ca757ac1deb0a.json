@@ -1,0 +1,18 @@
+{
+  "entryId": "character-humility-greeting-children",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas ibn Malik passed some children and greeted them. He explained his action by saying that the Prophet used to do the same. His recollection preserves a simple expression of approachability towards children, with Anas himself following the practice he attributed to the Prophet.",
+  "transcriptHash": "5f1cdb04eb87d909a4e6415d737d4af9aa57df608fbca6d331c57d28f6b326a3",
+  "transcriptCharacters": 280,
+  "billableCharacters": 280,
+  "cacheKey": "fb9d903d495e23b2346a55f781102e28389a32da4e81add4458ca757ac1deb0a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/fb9d903d495e23b2346a55f781102e28389a32da4e81add4458ca757ac1deb0a.mp3",
+  "byteLength": 96912,
+  "sha256": "f0f11436c352f31f335953b04edb9ce44260c9205e8033ba3d93aa45e345e18c",
+  "durationSeconds": 16.152
+}
