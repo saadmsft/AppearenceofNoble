@@ -240,11 +240,11 @@ function App() {
             navigate('journey', undefined, shelf)
           }} />
         </div>
-        <ManuscriptHero key={journeyShelf} language={language} shelf={journeyShelf} entryCount={getShelfRows(journeyShelf).length} topicCount={activeChapters.length}
+        <ManuscriptHero key={`hero-${journeyShelf}`} language={language} shelf={journeyShelf} entryCount={getShelfRows(journeyShelf).length} topicCount={activeChapters.length}
           paused={preferences.motion === 'paused'} readerOpen={route.entry !== null} guideHref={navHref('guide')}
           onExplore={() => focusSection(`chapter-${activeChapters[0].topic}`)} onGuide={() => navigate('guide')}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
-        <TopicJourney key={journeyShelf} language={language} shelf={journeyShelf} chapters={activeChapters} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
+        <TopicJourney key={`chapters-${journeyShelf}`} language={language} shelf={journeyShelf} chapters={activeChapters} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
           savedIds={savedIds} readIds={readIds} collectionHref={navHref('collection', journeyShelf)} onCollection={() => navigate('collection', undefined, journeyShelf)}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} onSave={toggleSaved}
           onRead={(row, topic, includeCautioned, button) => {

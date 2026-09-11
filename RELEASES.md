@@ -35,4 +35,16 @@ request-budget ledger must be checked before release. Missing access or
 insufficient allowance is a blocker to surface, not permission to substitute
 fake audio, switch providers or exceed the cap.
 
-No later release has been approved.
+## Release 2.0.1: Collection-switching hotfix
+
+Approved by the user on 12 September 2026.
+
+The journey hero and chapter list had duplicate sibling React keys, causing
+old animated headers to accumulate when switching between Appearance and
+Character. Give the siblings distinct collection-specific keys and cover
+repeated switching, browser history, English/Urdu and personal-data preservation.
+
+No redesign, source changes, MP3 regeneration, storage migration or Azure
+operations are authorized by this hotfix.
+
+No release after 2.0.1 has been approved.
