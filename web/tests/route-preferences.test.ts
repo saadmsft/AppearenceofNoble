@@ -56,3 +56,24 @@ test('stored bookmark ids are deduplicated and arbitrary object values are rejec
   const malicious = () => ({ getItem: () => '{"language":"en","theme":"dark","bookmarks":[{}],"textSize":"normal","bilingual":false}', setItem: () => {} })
   assert.equal(loadPreferences(malicious).issue, 'invalid')
 })
+
+test('existing reading preferences acquire motion defaults without losing bookmarks', () => {
+  const oldPreferences = { language: 'ur', theme: 'dark', bookmarks: ['a-report'], textSize: 'large', bilingual: true }
+  const storage = () => ({ getItem: () => JSON.stringify(oldPreferences), setItem: () => {} })
+  const loaded = loadPreferences(storage)
+  assert.equal(loaded.issue, null)
+  assert.equal(loaded.value.motion, 'auto')
+  assert.equal(loaded.value.language, 'ur')
+  assert.deepEqual(loaded.value.bookmarks, ['a-report'])
+  assert.equal(loaded.value.textSize, 'large')
+  assert.equal(loaded.value.bilingual, true)
+})
+
+test('pausing motion is a validated and persistent reading preference', () => {
+  let stored = ''
+  const storage = () => ({ getItem: () => stored, setItem: (_key: string, value: string) => { stored = value } })
+  assert.equal(savePreferences(storage, { ...defaultPreferences, motion: 'paused' }), null)
+  assert.equal(loadPreferences(storage).value.motion, 'paused')
+  stored = JSON.stringify({ ...defaultPreferences, motion: 'unrecognized' })
+  assert.equal(loadPreferences(storage).issue, 'invalid')
+})

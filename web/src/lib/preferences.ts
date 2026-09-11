@@ -7,12 +7,13 @@ export const preferencesSchema = z.object({
   bookmarks: z.array(z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)).max(2000),
   textSize: z.enum(['normal', 'large', 'larger']),
   bilingual: z.boolean(),
+  motion: z.enum(['auto', 'paused']).default('auto'),
 }).strict()
 export type Preferences = z.infer<typeof preferencesSchema>
 export type StorageIssue = 'unavailable' | 'invalid' | null
 export type StorageProvider = () => Pick<Storage, 'getItem' | 'setItem'>
 export const defaultPreferences: Preferences = {
-  language: 'en', theme: 'system', bookmarks: [], textSize: 'normal', bilingual: false,
+  language: 'en', theme: 'system', bookmarks: [], textSize: 'normal', bilingual: false, motion: 'auto',
 }
 
 export function loadPreferences(storage: StorageProvider): { value: Preferences; issue: StorageIssue } {

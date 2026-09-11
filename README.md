@@ -23,6 +23,11 @@ reconstructions.**
   keyboard access, reduced-motion support, and a downloadable bilingual JSON
   corpus. Sources & Method also offers a self-contained offline HTML edition
   with embedded code, data, fonts, and third-party license notices.
+- An illuminated manuscript opening: rose-ink framing, ornamental line drawing,
+  and slowly rotating geometry around stationary calligraphy. Ambient motion
+  pauses when offscreen, in a hidden tab, or while a narration is open. The
+  motion control persists locally; the system's reduced-motion setting always
+  takes precedence. Existing bookmarks and preferences are preserved.
 
 The 10 September 2026 audit covers **71 entries, 67 unique primary references,
 and 98 primary/related source URLs**. It includes 55 sahih, 9 hasan, and 7

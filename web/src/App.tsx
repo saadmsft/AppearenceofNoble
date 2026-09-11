@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowDown, ArrowUp, ArrowUpRight, Bookmark, BookOpen, Check, ChevronRight, CircleDot, Info, Moon, Search, ShieldCheck, Sun, X } from 'lucide-react'
+import { ArrowDown, ArrowUp, Bookmark, BookOpen, Check, ChevronRight, Info, Moon, Search, ShieldCheck, Sun, X } from 'lucide-react'
 import { AboutFooter } from './components/Footer'
 import { GuidePage, SourcesPage } from './components/AboutPages'
 import { NarrationCard } from './components/NarrationCard'
+import { ManuscriptHero } from './components/ManuscriptHero'
 import { Reader } from './components/Reader'
 import { Button } from './components/ui/button'
 import { collectionLabels, topicLabels } from './lib/catalog.ts'
@@ -24,9 +25,15 @@ function initialSettings(): ReturnType<typeof loadPreferences> {
   return loaded
 }
 
+function scrollBehavior(): ScrollBehavior {
+  return window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.dataset.motion === 'paused'
+    ? 'instant'
+    : 'smooth'
+}
+
 function scrollToCollection() {
   const heading = document.getElementById('collection-heading')
-  heading?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' })
+  heading?.scrollIntoView({ behavior: scrollBehavior(), block: 'start' })
   heading?.focus({ preventScroll: true })
 }
 
@@ -74,8 +81,9 @@ function App() {
     document.documentElement.lang = language
     document.documentElement.dir = language === 'ur' ? 'rtl' : 'ltr'
     document.documentElement.dataset.theme = theme
+    document.documentElement.dataset.motion = preferences.motion
     document.title = `${translate(language, 'name')} | ${translate(language, route.view === 'saved' ? 'saved' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
-  }, [language, theme, route.view])
+  }, [language, theme, route.view, preferences.motion])
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -179,45 +187,18 @@ function App() {
     </aside>}
 
     <main id="main-content" tabIndex={-1}>
-      {route.view === 'collection' && <section className="hero page-width">
-        <div className="hero-copy">
-          <p className="eyebrow"><span className="tiny-ornament" aria-hidden="true" />{t('heroEyebrow')}</p>
-          <h1>{t('heroFirst')}<br /><em>{t('heroSecond')}</em></h1>
-          <p className="hero-description">{t('heroDescription')}</p>
-          <div className="hero-actions">
-            <Button onClick={scrollToCollection}>{t('explore')}<ArrowDown size={17} aria-hidden="true" /></Button>
-            <a href={navHref('guide')} className="text-link" onClick={(event) => { event.preventDefault(); navigate('guide') }}>{t('approach')}<ArrowUpRight size={16} className="directional" aria-hidden="true" /></a>
-          </div>
-          <div className="hero-stats">
-            <div><strong>{count(narrations.length)}</strong><span>{t('entries')}</span></div>
-            <div><strong>{count(topics.length)}</strong><span>{t('themes')}</span></div>
-            <div><strong>{count(2)}</strong><span>{t('languages')}</span></div>
-          </div>
-        </div>
-        <div className="hero-art">
-          <div className="ornament" aria-hidden="true">
-            <div className="ornament-ring ring-one" /><div className="ornament-ring ring-two" />
-            <div className="ornament-ring ring-three" /><div className="ornament-ring ring-four" />
-            <span className="ornament-dot dot-one" /><span className="ornament-dot dot-two" />
-            <span className="ornament-dot dot-three" /><span className="ornament-dot dot-four" />
-            <div className="name-calligraphy" lang="ar" dir="rtl"><span>مُحَمَّدٌ</span><small>صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ</small></div>
-          </div>
-          <div className="featured-reflection">
-            <p className="micro-label">{t('featuredLabel')}</p>
-            <p>{t('featuredLine')}</p>
-            {featured && <button type="button" className="text-link" onClick={(event) => {
-              lastReadButton.current = event.currentTarget
-              updateRoute({ entry: featured.id })
-            }}>{t('featuredSource')}<ArrowUpRight size={14} className="directional" aria-hidden="true" /></button>}
-          </div>
-        </div>
-      </section>}
+      {route.view === 'collection' && <ManuscriptHero language={language} entryCount={narrations.length} topicCount={topics.length}
+        featured={featured} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null} guideHref={navHref('guide')}
+        onExplore={scrollToCollection} onGuide={() => navigate('guide')}
+        onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })}
+        onFeatured={(row, button) => { lastReadButton.current = button; updateRoute({ entry: row.id }) }} />}
 
       {(route.view === 'collection' || isSavedView) && <section className="library-section page-width">
         <header className="collection-heading">
-          <p className="eyebrow">{t(isSavedView ? 'saved' : 'browseEyebrow')}</p>
-          <h2 id="collection-heading" tabIndex={-1}>{t(isSavedView ? 'savedTitle' : 'browseTitle')}</h2>
-          <p>{t(isSavedView ? 'savedDescription' : 'browseDescription')}</p>
+          <h2 id="collection-heading" tabIndex={-1}>{t(isSavedView ? 'savedTitle' : 'browseTitle')}<span className="heading-flower" aria-hidden="true" /></h2>
+          <div><p>{t(isSavedView ? 'savedDescription' : 'browseDescription')}</p>
+            <span className="collection-language-note"><span lang="en">English</span><span aria-hidden="true">/</span><span lang="ur">اردو</span></span>
+          </div>
         </header>
         <div className="filter-panel">
           <div className="search-field">
@@ -267,7 +248,7 @@ function App() {
                 <BookOpen size={16} aria-hidden="true" /><span>{t('allTopics')}</span><small>{count(topicResults.length)}</small>
               </button>
               {topics.map((topic) => <button type="button" key={topic} aria-pressed={route.topic === topic} onClick={() => updateRoute({ topic })}>
-                <CircleDot size={14} aria-hidden="true" /><span>{topicLabels[topic][language]}</span><small>{count(topicResults.filter((row) => row.topics.includes(topic)).length)}</small>
+                <span className="topic-indicator" aria-hidden="true" /><span>{topicLabels[topic][language]}</span><small>{count(topicResults.filter((row) => row.topics.includes(topic)).length)}</small>
               </button>)}
             </nav>
             <div className="sidebar-note"><span className="tiny-ornament" aria-hidden="true" /><h3>{t('noImages')}</h3><p>{t('noImagesDetail')}</p></div>
@@ -287,7 +268,8 @@ function App() {
                 {t(isSavedView && !savedCount ? 'explore' : 'reset')}
               </Button>
             </div> : <>
-              <div className="narration-grid">{results.slice(0, limit).map((row) => <NarrationCard key={row.id} row={row} language={language}
+              <div className="narration-grid">{results.slice(0, limit).map((row, index) => <NarrationCard key={row.id} row={row} language={language}
+                featured={index === 0 && !isSavedView && route.topic === 'all' && !route.query && route.collection === 'all' && route.grade === 'established'}
                 saved={savedIds.has(row.id)} onSave={() => toggleSaved(row.id)}
                 onRead={(button) => { lastReadButton.current = button; updateRoute({ entry: row.id }) }} />)}</div>
               <div className="pagination">
@@ -319,7 +301,7 @@ function App() {
         else (document.getElementById('collection-heading') ?? document.getElementById('main-content'))?.focus({ preventScroll: true })
       }} />
     <button className="back-top button button-ghost button-icon" type="button" aria-label={t('backTop')} onClick={() => {
-      window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' })
+      window.scrollTo({ top: 0, behavior: scrollBehavior() })
       document.getElementById('main-content')?.focus({ preventScroll: true })
     }}><ArrowUp size={17} aria-hidden="true" /></button>
   </div>

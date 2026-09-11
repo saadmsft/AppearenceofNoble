@@ -75,7 +75,6 @@ function ReaderBody({ row, language, preferences, saved, previous, next, onSave,
 
   return <>
     <div className="reader-heading">
-      <p className="eyebrow">{t('reader')}</p>
       <div className="reader-meta">
         <span className="source-name"><SourceName source={row.source} language={language} /></span>
         <GradeBadge row={row} language={language} />

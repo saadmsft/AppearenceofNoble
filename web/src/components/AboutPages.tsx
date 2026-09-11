@@ -31,9 +31,8 @@ export function GuidePage({ language }: { language: Language }) {
   ] as const
   const gradeDescriptions = { sahih: 'gradeSahih', hasan: 'gradeHasan', weak: 'gradeWeak', disputed: 'gradeDisputed', ungraded: 'gradeUngraded' } as const
   return <div className="about-page page-width">
-    <header className="page-intro"><p className="eyebrow">{t('guideEyebrow')}</p><h1>{t('guideTitle')}</h1><p>{t('guideIntro')}</p></header>
-    <div className="guide-steps">{sections.map(([title, body], index) => <section key={title} className="guide-step">
-      <span className="step-number" aria-hidden="true">{number(index + 1, language).padStart(language === 'en' ? 2 : 1, '0')}</span>
+    <header className="page-intro"><h1>{t('guideTitle')}</h1><p>{t('guideIntro')}</p></header>
+    <div className="guide-steps">{sections.map(([title, body]) => <section key={title} className="guide-step">
       <div><h2>{t(title)}</h2><p>{t(body)}</p></div>
     </section>)}</div>
     <section className="grade-guide"><h2>{t('gradeKey')}</h2><div>{grades.map((grade) => <article key={grade}>
@@ -80,7 +79,7 @@ export function SourcesPage({ language, onTopic }: { language: Language; onTopic
   }
 
   return <div className="about-page page-width">
-    <header className="page-intro"><p className="eyebrow">{t('sourcesEyebrow')}</p><h1>{t('sourcesTitle')}</h1><p>{t('sourcesIntro')}</p></header>
+    <header className="page-intro"><h1>{t('sourcesTitle')}</h1><p>{t('sourcesIntro')}</p></header>
     <div className="research-stats">
       <div><strong>{count(narrations.length)}</strong><span>{t('entries')}</span></div>
       <div><strong>{count(primarySourceCount)}</strong><span>{t('references')}</span></div>
