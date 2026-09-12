@@ -155,7 +155,9 @@ test('shared player keeps one StrictMode media element, accessible reader contro
         })
       },
     }],
-    server: { host: '127.0.0.1', port: 0, hmr: false },
+    // Other agents edit schema, engine and the manifest in this same worktree.
+    // Disable the watcher itself, not just the HMR transport, during playback.
+    server: { host: '127.0.0.1', port: 0, hmr: false, watch: null },
   })
   await server.listen()
   const address = server.httpServer?.address()
@@ -163,6 +165,8 @@ test('shared player keeps one StrictMode media element, accessible reader contro
   const origin = `http://127.0.0.1:${address.port}`
   let browser
   try {
+    assert.equal(server.config.server.hmr, false, 'the isolated player fixture must not hot-reload')
+    assert.equal(server.config.server.watch, null, 'parallel schema/engine/manifest edits must not be watched')
     browser = await chromium.launch(listeningNativeLaunchOptions())
     const page = await browser.newPage({ viewport: { width: 390, height: 844 } })
     await page.coverage.startJSCoverage({ resetOnNavigation: false })
@@ -383,6 +387,7 @@ test('shared player keeps one StrictMode media element, accessible reader contro
     assert.equal(await native.evaluate(() => Reflect.get(window, 'listening').playing), false)
     assert.equal(await native.locator('audio').count(), 1)
     assert.deepEqual(external, [])
+    assert.deepEqual(server.watcher.getWatched(), {}, 'no shared repository files are watched after native playback')
   } finally {
     await browser?.close()
     await server.close()
