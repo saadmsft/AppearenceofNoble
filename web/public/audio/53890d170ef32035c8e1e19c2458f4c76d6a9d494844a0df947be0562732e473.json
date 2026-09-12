@@ -1,0 +1,18 @@
+{
+  "entryId": "life-first-revelation-hira",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت عائشہ رضی اللہ عنہا کے بیان کا آغاز سچے خوابوں اور غارِ حرا میں عبادت سے ہوتا ہے۔ وہیں فرشتہ پڑھنے کا حکم لے کر آیا۔ نبی کریم صلی اللہ علیہ وسلم گھبرائے ہوئے واپس آئے، اوڑھانے کو کہا اور حضرت خدیجہ رضی اللہ عنہا کو واقعہ سنایا۔ انہوں نے رشتہ داروں، مہمانوں اور مشکل میں پڑے لوگوں کے ساتھ آپ صلی اللہ علیہ وسلم کے حسنِ سلوک کو یاد کر کے تسلی دی، پھر ورقہ کے پاس لے گئیں۔ ورقہ نے اس واقعے کا تعلق حضرت موسیٰ علیہ السلام پر آنے والی وحی سے بتایا اور مخالفت کی خبر دی۔",
+  "transcriptHash": "5755955f3ffe426458703ae54736aa71cf180482e32242231c5a192481f82f3b",
+  "transcriptCharacters": 469,
+  "billableCharacters": 469,
+  "cacheKey": "53890d170ef32035c8e1e19c2458f4c76d6a9d494844a0df947be0562732e473",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/53890d170ef32035c8e1e19c2458f4c76d6a9d494844a0df947be0562732e473.mp3",
+  "byteLength": 213552,
+  "sha256": "540bf4718d52a19c4b9a3a1fbcfd36f6b5bb05ad5e9d467122a70714215ea4d6",
+  "durationSeconds": 35.592
+}

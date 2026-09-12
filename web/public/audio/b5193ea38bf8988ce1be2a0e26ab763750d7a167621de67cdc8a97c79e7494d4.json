@@ -1,0 +1,18 @@
+{
+  "entryId": "life-makkah-reciting-surah-al-fath",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عبداللہ بن مغفل رضی اللہ عنہ یاد کرتے ہیں کہ فتح مکہ کے دن انہوں نے نبی صلی اللہ علیہ وسلم کو اپنی اونٹنی پر سوار دیکھا، آپ صلی اللہ علیہ وسلم آواز میں ترجیع کے ساتھ سورۃ الفتح پڑھ رہے تھے۔ یہ روایت تلاوت کے ایک مشاہدے کو محفوظ کرتی ہے، شہر میں داخلے کا پورا واقعہ نہیں بیان کرتی۔",
+  "transcriptHash": "6edbeaa3daf0d9b5980d03e536aa6d9aa985017ee72684374391b1e5992af9ff",
+  "transcriptCharacters": 280,
+  "billableCharacters": 280,
+  "cacheKey": "b5193ea38bf8988ce1be2a0e26ab763750d7a167621de67cdc8a97c79e7494d4",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/b5193ea38bf8988ce1be2a0e26ab763750d7a167621de67cdc8a97c79e7494d4.mp3",
+  "byteLength": 123840,
+  "sha256": "5b71f02ce7a03bf7cc86f9d737081a1ec06ac8f99a2c797684fe6445f2c6307e",
+  "durationSeconds": 20.64
+}

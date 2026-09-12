@@ -1,0 +1,18 @@
+{
+  "entryId": "life-final-days-aisha-care-and-passing",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عائشہ رضی اللہ عنہا یاد کرتی ہیں کہ نبی صلی اللہ علیہ وسلم نے ان کے گھر میں وفات پائی جبکہ وہ آپ صلی اللہ علیہ وسلم کو سہارا دیے ہوئے تھیں۔ آپ صلی اللہ علیہ وسلم کی رضامندی سے انہوں نے عبدالرحمن کی لائی ہوئی مسواک لی اور نرم کی۔ وہ بیان کرتی ہیں کہ آپ صلی اللہ علیہ وسلم پانی سے چہرہ پونچھ رہے تھے، موت کی سختی کا ذکر فرمایا، اور رفیقِ اعلیٰ کے الفاظ کہتے رہے، یہاں تک کہ وفات ہوئی اور ہاتھ ڈھلک گیا۔",
+  "transcriptHash": "df5fc104e2c95965b32896313b40267ed573cdcb10b56e267ee404322e375d16",
+  "transcriptCharacters": 400,
+  "billableCharacters": 400,
+  "cacheKey": "39db1be33581b999689c6a26ed87c6ba36990326af8db320a8ffadc62340466d",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/39db1be33581b999689c6a26ed87c6ba36990326af8db320a8ffadc62340466d.mp3",
+  "byteLength": 173520,
+  "sha256": "7fe02778c7d20443c28c362df19f529895ca901d8e8e40aa38bb0a70d626db7a",
+  "durationSeconds": 28.92
+}

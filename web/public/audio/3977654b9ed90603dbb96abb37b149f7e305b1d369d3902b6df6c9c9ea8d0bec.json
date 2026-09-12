@@ -1,0 +1,18 @@
+{
+  "entryId": "life-sharing-work-and-dates",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Huraira relates the Ansar's proposal to divide their date palms. The Prophet did not accept that proposal. The brief exchange then turns to an arrangement involving the work of tending the palms and sharing their fruit, followed by an expression of acceptance. It offers a glimpse of practical cooperation rather than a transfer of the trees themselves.",
+  "transcriptHash": "5398332b287dbee26eb420f64b2b5340da14a72f7c989003cd4a819497682e11",
+  "transcriptCharacters": 357,
+  "billableCharacters": 362,
+  "cacheKey": "3977654b9ed90603dbb96abb37b149f7e305b1d369d3902b6df6c9c9ea8d0bec",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/3977654b9ed90603dbb96abb37b149f7e305b1d369d3902b6df6c9c9ea8d0bec.mp3",
+  "byteLength": 129312,
+  "sha256": "57303f60a1306291cafef1b5dcf805cab01c474af5bfef00e9f234a8591bea61",
+  "durationSeconds": 21.552
+}

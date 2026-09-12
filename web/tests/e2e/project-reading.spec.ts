@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test'
+import { narrations } from '../../src/lib/library.ts'
 
 test('integrated notes, explicit reading marks and resume survive navigation and reload', async ({ page }) => {
   await page.goto('./?lang=en&view=collection&shelf=appearance')
@@ -18,7 +19,10 @@ test('integrated notes, explicit reading marks and resume survive navigation and
   await page.getByRole('link', { name: 'My reading', exact: true }).click()
   await expect(page.locator('.reading-notes-list')).toContainText(text)
   await expect(page.locator('.reading-notes-list em')).toHaveCount(0)
-  expect(await page.locator('progress').evaluateAll((elements) => elements.reduce((sum, element) => sum + element.value, 0))).toBe(1)
+  expect(await page.evaluate(() => {
+    const data = JSON.parse(localStorage.getItem('noble-project.reading.v1')!)
+    return Object.values<{ read?: boolean }>(data.entries).filter((entry) => entry.read === true).length
+  })).toBe(1)
   await page.reload()
   await expect(page.locator('.reading-notes-list')).toContainText(text)
   await page.locator('.reading-notes-list').getByRole('button', { name: 'Open entry', exact: true }).click()
@@ -73,22 +77,26 @@ test('private backup restores bookmarks without changing theme and never appears
   expect(content).not.toContain(privateText)
   const data = JSON.parse(content)
   expect(data.reading).toBeUndefined()
-  expect(data.entries.length).toBe(95)
+  expect(data.entries.length).toBe(narrations.length)
 })
 
-test('real static MP3 playback never contacts a speech service and stops on reader close', async ({ page }) => {
+test('real static MP3 playback shares one engine, survives reader close and pauses on collection switch', async ({ page }) => {
   const requests: string[] = []
   page.on('request', (request) => requests.push(request.url()))
   await page.goto('./?lang=en&view=journey&shelf=appearance#narration/most-handsome-face-best-form-bara')
   const dialog = page.getByRole('dialog').filter({ has: page.locator('.reader-body') })
-  const audio = dialog.locator('audio')
+  const audio = page.locator('audio')
   await expect(audio).toHaveCount(1)
-  await audio.evaluate(async (element) => { element.muted = true; await element.play() })
-  await expect.poll(() => audio.evaluate((element) => element.currentTime)).toBeGreaterThan(0)
-  const handle = await audio.elementHandle()
+  await expect(dialog.locator('audio')).toHaveCount(0)
+  await audio.evaluate((element) => { element.muted = true })
+  await dialog.getByRole('button', { name: 'Play this entry', exact: true }).click()
+  await expect.poll(() => audio.evaluate((element) => element.currentTime)).toBeGreaterThan(0.2)
   await page.keyboard.press('Escape')
   await expect(dialog).not.toBeVisible()
-  expect(await handle?.evaluate((element) => element.paused && !element.getAttribute('src'))).toBe(true)
+  await expect(audio).toHaveCount(1)
+  expect(await audio.evaluate((element) => element.paused)).toBe(false)
+  await page.getByRole('button', { name: 'The Noble Character', exact: true }).click()
+  await expect.poll(() => audio.evaluate((element) => element.paused)).toBe(true)
   expect(requests.some((url) => /\.mp3(?:$|\?)/.test(url))).toBe(true)
   expect(requests.some((url) => /speech\.microsoft\.com|cognitiveservices\.azure\.com/i.test(url))).toBe(false)
 })

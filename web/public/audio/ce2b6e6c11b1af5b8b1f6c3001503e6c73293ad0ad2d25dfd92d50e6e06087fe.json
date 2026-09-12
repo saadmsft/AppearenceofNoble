@@ -1,0 +1,18 @@
+{
+  "entryId": "life-abu-bakr-in-the-cave",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا مُحَمَّدُ بْنُ سِنَانٍ، حَدَّثَنَا هَمَّامٌ، عَنْ ثَابِتٍ، عَنْ أَنَسٍ، عَنْ أَبِي بَكْرٍ ـ رضى الله عنه ـ قَالَ قُلْتُ لِلنَّبِيِّ صلى الله عليه وسلم وَأَنَا فِي الْغَارِ لَوْ أَنَّ أَحَدَهُمْ نَظَرَ تَحْتَ قَدَمَيْهِ لأَبْصَرَنَا. فَقَالَ \" مَا ظَنُّكَ يَا أَبَا بَكْرٍ بِاثْنَيْنِ اللَّهُ ثَالِثُهُمَا \".",
+  "transcriptHash": "5b5440ada70325e829a4d8ac4f622fe89b18207f1d4a57e5a530b0063e680437",
+  "transcriptCharacters": 318,
+  "billableCharacters": 328,
+  "cacheKey": "ce2b6e6c11b1af5b8b1f6c3001503e6c73293ad0ad2d25dfd92d50e6e06087fe",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ce2b6e6c11b1af5b8b1f6c3001503e6c73293ad0ad2d25dfd92d50e6e06087fe.mp3",
+  "byteLength": 124272,
+  "sha256": "96251c228a81ca79d63fce749f1062d52b066069c8e9b05352a0131a62e4f1f1",
+  "durationSeconds": 20.712
+}

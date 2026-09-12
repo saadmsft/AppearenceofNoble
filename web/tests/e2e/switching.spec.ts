@@ -37,7 +37,7 @@ for (const language of ['en', 'ur'] as const) {
     }
 
     await expectShelf('appearance')
-    await page.locator('.journey-chapter').first().locator('.chapter-actions .button').click()
+    await page.locator('.journey-chapter').first().locator('.chapter-actions .button[aria-expanded]').click()
     await expect(page.locator('.narration-card').first()).toBeVisible()
 
     for (const shelf of ['character', 'appearance', 'character', 'appearance'] as const) {

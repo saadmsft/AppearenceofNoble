@@ -9,6 +9,8 @@ import { isEstablished } from '../lib/search.ts'
 import { Button } from './ui/button'
 import { SourceName } from './NarrationCard'
 import { ShelfSelector } from './ShelfSelector'
+import { getNarrationTopics, lifeMilestones } from '../lib/life.ts'
+import { LifeContext } from './LifeContext'
 
 export const repositoryUrl = 'https://github.com/saadmsft/AppearenceofNoble'
 const correctionUrl = `${repositoryUrl}/issues/new?template=source-correction.yml`
@@ -28,7 +30,7 @@ export function GuidePage({ language }: { language: Language }) {
   const t = (key: Parameters<typeof translate>[1]) => translate(language, key)
   const sections = [
     ['guideOneTitle', 'guideOne'], ['guideTwoTitle', 'guideTwo'], ['guideThreeTitle', 'guideThree'],
-    ['guideFourTitle', 'guideFour'], ['guideFiveTitle', 'guideFive'],
+    ['guideFourTitle', 'guideFour'], ['guideFiveTitle', 'guideFive'], ['guideSixTitle', 'guideSix'],
   ] as const
   const gradeDescriptions = { sahih: 'gradeSahih', hasan: 'gradeHasan', weak: 'gradeWeak', disputed: 'gradeDisputed', ungraded: 'gradeUngraded' } as const
   return <div className="about-page page-width">
@@ -59,18 +61,22 @@ export function SourcesPage({ language, shelf, onShelf, onTopic }: { language: L
     try {
       const data = {
         title: 'The Noble Project',
-        version: 2,
+        version: shelf === 'life' || shelf === 'all' ? 3 : 2,
         shelf,
         lastChecked,
         scope: 'Selected reports from seven major Sunni collections. Not exhaustive across traditions or chains.',
         translationNotice: 'English and Urdu are original editorial summaries, not verbatim translations. arabic is an excerpt; arabicFull preserves the full primary report, including the chain and in-report compiler/transmitter remarks.',
         gradingNotice: 'The grade applies to the primary source, not automatically to related transmissions.',
         entries: narrations,
+        ...(shelf === 'life' || shelf === 'all' ? {
+          chronologyNotice: 'Historical dates and locations have separate evidence and uncertainty. Narration grading does not authenticate added chronology. The locator is schematic.',
+          lifeMilestones,
+        } : {}),
       }
       objectUrl = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json;charset=utf-8' }))
       const anchor = document.createElement('a')
       anchor.href = objectUrl
-      anchor.download = shelf === 'appearance' ? 'noble-appearance-research.json' : `noble-${shelf === 'all' ? 'project' : 'character'}-research.json`
+      anchor.download = `noble-${shelf === 'all' ? 'project' : shelf}-research.json`
       anchor.click()
       setDownloadError(false)
     } catch (error) {
@@ -99,13 +105,20 @@ export function SourcesPage({ language, shelf, onShelf, onTopic }: { language: L
     </div>
     <section className="coverage-section"><h2>{t('coverageTitle')}</h2><p>{t('coverageDetail')}</p>
       <div className="coverage-grid">{topics.map((topic) => {
-        const rows = narrations.filter((row) => row.topics.includes(topic))
+        const rows = narrations.filter((row) => getNarrationTopics(row).includes(topic))
         return <button type="button" key={topic} onClick={() => onTopic(topic)}>
           <span>{topicLabels[topic][language]}</span><strong>{count(rows.length)}</strong>
           <small>{gradeLabels.sahih[language]} / {gradeLabels.hasan[language]}: {count(rows.filter(isEstablished).length)}</small>
         </button>
       })}</div>
     </section>
+    {(shelf === 'life' || shelf === 'all') && <section className="life-chronology-index">
+      <h2>{t('lifeChronologySources')}</h2><p>{t('lifeDateBoundary')}</p>
+      {lifeMilestones.map((milestone) => <details key={milestone.topic}>
+        <summary>{topicLabels[milestone.topic][language]}</summary>
+        <LifeContext topic={milestone.topic} language={language} />
+      </details>)}
+    </section>}
     <section className="source-index">
       <h2>{t('sourceIndex')}</h2><p>{t('sourceIndexDetail')}</p>
       {collections.map((collection) => {

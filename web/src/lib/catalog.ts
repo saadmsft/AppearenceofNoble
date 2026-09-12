@@ -1,8 +1,48 @@
 import type { Collection, Grade, Localized, Shelf, Topic } from './schema.ts'
+import type { MessageKey } from './i18n.ts'
 
 export const shelfLabels: Record<Shelf, Localized> = {
   appearance: { en: 'The Noble Appearance', ur: 'حلیۂ مبارک' },
   character: { en: 'The Noble Character', ur: 'اخلاقِ نبوی ﷺ' },
+  life: { en: 'The Noble Life', ur: 'سیرتِ نبوی ﷺ' },
+}
+
+type ShelfPresentation = {
+  introduction: MessageKey
+  storyTitle: MessageKey
+  storyIntroduction: MessageKey
+  storyAction: MessageKey
+  journeyTitle: MessageKey
+  heroFirst: MessageKey
+  heroSecond: MessageKey
+  heroDescription: MessageKey
+  begin: MessageKey
+  calligraphy: string
+  shortCalligraphy: string
+}
+
+export const shelfPresentation: Record<Shelf, ShelfPresentation> = {
+  appearance: {
+    introduction: 'appearanceIntroduction', storyTitle: 'storyAppearanceTitle',
+    storyIntroduction: 'storyIntroduction', storyAction: 'enterAppearanceStory',
+    journeyTitle: 'journeyTitle', heroFirst: 'heroFirst', heroSecond: 'heroSecond',
+    heroDescription: 'heroDescription', begin: 'beginJourney',
+    calligraphy: 'الشَّمَائِلُ الْمُحَمَّدِيَّةُ', shortCalligraphy: 'الشَّمَائِل',
+  },
+  character: {
+    introduction: 'characterIntroduction', storyTitle: 'storyCharacterTitle',
+    storyIntroduction: 'storyIntroduction', storyAction: 'enterCharacterStory',
+    journeyTitle: 'characterJourneyTitle', heroFirst: 'characterHeroFirst', heroSecond: 'characterHeroSecond',
+    heroDescription: 'characterHeroDescription', begin: 'beginCharacter',
+    calligraphy: 'أَخْلَاقُ النَّبِيِّ', shortCalligraphy: 'الأَخْلَاق',
+  },
+  life: {
+    introduction: 'lifeIntroduction', storyTitle: 'storyLifeTitle',
+    storyIntroduction: 'storyLifeIntroduction', storyAction: 'enterLifeStory',
+    journeyTitle: 'lifeJourneyTitle', heroFirst: 'lifeHeroFirst', heroSecond: 'lifeHeroSecond',
+    heroDescription: 'lifeIntroduction', begin: 'beginLife',
+    calligraphy: 'السِّيرَةُ النَّبَوِيَّةُ', shortCalligraphy: 'السِّيرَة',
+  },
 }
 
 export const topicLabels: Record<Topic, Localized> = {
@@ -30,6 +70,18 @@ export const topicLabels: Record<Topic, Localized> = {
   forgiveness: { en: 'Forgiveness', ur: 'عفو و درگزر' },
   honesty: { en: 'Honesty', ur: 'صدق و امانت' },
   'family-community': { en: 'Family & community', ur: 'خاندان اور معاشرہ' },
+  'life-early-years': { en: 'Early life & work', ur: 'ابتدائی زندگی اور کام' },
+  'life-revelation': { en: 'The first revelation', ur: 'پہلی وحی' },
+  'life-makkan-years': { en: 'The Makkan years', ur: 'مکی دور' },
+  'life-taif': { en: "The journey to Ta'if", ur: 'سفرِ طائف' },
+  'life-hijrah': { en: 'The Hijrah', ur: 'ہجرت' },
+  'life-madinah': { en: 'The Madinan community', ur: 'مدنی معاشرہ' },
+  'life-badr': { en: 'Badr', ur: 'بدر' },
+  'life-uhud': { en: 'Uhud', ur: 'اُحد' },
+  'life-hudaybiyyah': { en: 'Al-Hudaybiyyah', ur: 'حدیبیہ' },
+  'life-makkah-return': { en: 'The return to Makkah', ur: 'مکہ واپسی' },
+  'life-farewell': { en: 'The Farewell Pilgrimage', ur: 'حجۃ الوداع' },
+  'life-final-days': { en: 'The final days', ur: 'آخری ایام' },
 }
 
 export const collectionLabels: Record<Collection, Localized> = {
@@ -75,4 +127,16 @@ export const topicAliases: Record<Topic, string> = {
   forgiveness: 'forgiveness pardon reconciliation maafi معافی عفو درگزر',
   honesty: 'honesty truth trust integrity sach amanat سچ صدق امانت دیانت',
   'family-community': 'family children neighbours neighbors community household khandan خاندان گھر بچے پڑوسی معاشرہ',
+  'life-early-years': 'life seerah sirah seerat early work shepherd makkah mecca مکہ سیرت ابتدائی زندگی چرواہا',
+  'life-revelation': 'life seerah revelation hira wahi wahy پہلی وحی حرا',
+  'life-makkan-years': 'life seerah makkah mecca makkan years makkai dawat مکی دور مکہ دعوت',
+  'life-taif': 'life seerah taif ta if journey safar طائف سفر',
+  'life-hijrah': 'life seerah hijrah hijra hijrat migration cave ہجرت غار',
+  'life-madinah': 'life seerah madinah medina community mosque madani معاشرہ مدینہ مسجد',
+  'life-badr': 'life seerah badr بدر',
+  'life-uhud': 'life seerah uhud ohud احد اُحد',
+  'life-hudaybiyyah': 'life seerah hudaybiyyah hudaybiyah hudaibiya treaty sulah صلح حدیبیہ',
+  'life-makkah-return': 'life seerah makkah mecca return conquest fath fatah فتح مکہ واپسی',
+  'life-farewell': 'life seerah farewell pilgrimage hajj wada wida mina حج الوداع منیٰ',
+  'life-final-days': 'life seerah final days death passing akhri ayyam wafat آخری ایام وفات',
 }

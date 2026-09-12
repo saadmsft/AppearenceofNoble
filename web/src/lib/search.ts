@@ -1,5 +1,9 @@
 import { collectionLabels, topicAliases, topicLabels } from './catalog.ts'
+import { isEstablished } from './schema.ts'
+import { getNarrationMilestones, getNarrationTopics } from './life.ts'
 import type { Collection, Grade, Narration, Topic } from './schema.ts'
+
+export { isEstablished }
 
 export type GradeFilter = 'established' | 'all' | Grade
 export type Filters = {
@@ -24,10 +28,6 @@ export function normalizeSearch(text: string): string {
     .trim()
 }
 
-export function isEstablished(row: Narration): boolean {
-  return row.grade.level === 'sahih' || row.grade.level === 'hasan'
-}
-
 export function searchText(row: Narration): string {
   return normalizeSearch([
     row.title.en, row.title.ur, row.narrator.en, row.narrator.ur,
@@ -35,7 +35,11 @@ export function searchText(row: Narration): string {
     ...[row.source, ...row.relatedSources].flatMap((source) => [
       source.reference, collectionLabels[source.collection].en, collectionLabels[source.collection].ur,
     ]),
-    ...row.topics.flatMap((topic) => [topicLabels[topic].en, topicLabels[topic].ur, topicAliases[topic]]),
+    ...getNarrationTopics(row).flatMap((topic) => [topicLabels[topic].en, topicLabels[topic].ur, topicAliases[topic]]),
+    ...getNarrationMilestones(row.id).flatMap((milestone) => [
+      milestone.title.en, milestone.title.ur, milestone.era.en, milestone.era.ur,
+      milestone.dateLabel.en, milestone.dateLabel.ur,
+    ]),
   ].join(' '))
 }
 
@@ -45,7 +49,7 @@ export function filterNarrations(rows: Narration[], filters: Filters, saved?: Re
   const terms = normalizeSearch(filters.query).split(' ').filter(Boolean)
   return rows.filter((row) => {
     if (saved && !saved.has(row.id)) return false
-    if (filters.topic !== 'all' && !row.topics.includes(filters.topic)) return false
+    if (filters.topic !== 'all' && !getNarrationTopics(row).includes(filters.topic)) return false
     if (filters.collection !== 'all' && row.source.collection !== filters.collection) return false
     if (filters.grade === 'established' && !isEstablished(row)) return false
     if (filters.grade !== 'all' && filters.grade !== 'established' && row.grade.level !== filters.grade) return false

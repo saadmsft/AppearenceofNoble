@@ -6,6 +6,7 @@ import { corpusSchema, topics } from '../src/lib/schema.ts'
 import { appearanceNarrations, characterNarrations, getNarrationShelf, getShelfRows, narrations } from '../src/lib/library.ts'
 import { defaultFilters, filterNarrations, isEstablished, normalizeSearch } from '../src/lib/search.ts'
 import { translate, translations } from '../src/lib/i18n.ts'
+import { getNarrationTopics } from '../src/lib/life.ts'
 
 test('every research file is included in the shipped library', () => {
   const folder = new URL('../../content/', import.meta.url)
@@ -18,7 +19,7 @@ test('every research file is included in the shipped library', () => {
 })
 
 test('all themes have source-linked material in both languages', () => {
-  for (const topic of topics) assert.ok(narrations.some((row) => row.topics.includes(topic)), topic)
+  for (const topic of topics) assert.ok(narrations.some((row) => getNarrationTopics(row).includes(topic)), topic)
   for (const row of narrations) {
     for (const field of ['title', 'narrator', 'summary', 'context'] as const) {
       assert.ok(row[field].en.trim().length > 3, `${row.id}: ${field}.en`)

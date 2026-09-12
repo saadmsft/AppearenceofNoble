@@ -1,0 +1,18 @@
+{
+  "entryId": "life-makkah-reciting-surah-al-fath",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abdullah ibn Mughaffal remembers seeing the Prophet may Allah bless him and grant him peace riding his she-camel on the day of the conquest of Makkah and reciting Surah al-Fath with modulation in his voice. The report preserves a remembered act of recitation, rather than an account of the whole entry into the city.",
+  "transcriptHash": "a45d9a81fe28f714c77e8fbd74cfbab60b2be3cc9069b49f5a5be4bf0f9e2f41",
+  "transcriptCharacters": 316,
+  "billableCharacters": 316,
+  "cacheKey": "71f193e34a4bafb45e26e80aee3a1093a094a5603e5f4fe526fc1f6a474ce2ad",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/71f193e34a4bafb45e26e80aee3a1093a094a5603e5f4fe526fc1f6a474ce2ad.mp3",
+  "byteLength": 102384,
+  "sha256": "482b129abff74f5b5b4cf49a6e9e4a31578c207af53fc547b93dd5e959fc6487",
+  "durationSeconds": 17.064
+}

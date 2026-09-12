@@ -1,4 +1,4 @@
-import { characterTopics, collections, grades, languages, shelves, topics } from './schema.ts'
+import { collections, getTopicShelf, grades, languages, shelves, topics } from './schema.ts'
 import type { Language, Shelf } from './schema.ts'
 import { defaultFilters } from './search.ts'
 import type { Filters } from './search.ts'
@@ -23,7 +23,8 @@ export function parseRoute(url: URL): Route {
   const hasLibraryFilters = ['q', 'topic', 'source', 'grade'].some((key) => params.has(key))
   const match = /^#narration\/([a-z0-9-]+)$/.exec(url.hash)
   const resolvedView = allowed(view, views) ? view : hasLibraryFilters ? 'collection' : 'home'
-  const inferredShelf = allowed(topic, characterTopics) ? 'character' : resolvedView === 'home' || resolvedView === 'reading' || resolvedView === 'saved' ? 'all' : 'appearance'
+  const topicShelf = allowed(topic, topics) ? getTopicShelf(topic) : undefined
+  const inferredShelf = topicShelf && topicShelf !== 'appearance' ? topicShelf : resolvedView === 'home' || resolvedView === 'reading' || resolvedView === 'saved' ? 'all' : 'appearance'
   return {
     view: resolvedView,
     shelf: allowed(shelf, [...shelves, 'all'] as const) ? shelf : inferredShelf,

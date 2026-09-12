@@ -1,0 +1,18 @@
+{
+  "entryId": "life-sharing-work-and-dates",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابو ہریرہ رضی اللہ عنہ انصار کی طرف سے کھجور کے درخت تقسیم کرنے کی پیش کش نقل کرتے ہیں۔ نبی کریم صلی اللہ علیہ وسلم نے اس تجویز کو قبول نہیں فرمایا۔ پھر گفتگو درختوں کی دیکھ بھال اور پھل میں شرکت کے انتظام کی طرف آتی ہے، جس کے بعد قبولیت کا اظہار ہوتا ہے۔ یوں درختوں کی ملکیت منتقل کرنے کے بجائے عملی تعاون کی ایک صورت سامنے آتی ہے۔",
+  "transcriptHash": "9d6eb5052fb5b84ec9b6c5378786c1489dfdd5784e4d76d3ad06ad66cc548957",
+  "transcriptCharacters": 337,
+  "billableCharacters": 337,
+  "cacheKey": "fb7270d205a66232828ba1b5d69a8edd2aed37b24948fb7587be65c4d9b41bf7",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/fb7270d205a66232828ba1b5d69a8edd2aed37b24948fb7587be65c4d9b41bf7.mp3",
+  "byteLength": 156096,
+  "sha256": "705f87791b69fd328aaef52c2589022e3b21f0cfbe0268c860817ca176e4d124",
+  "durationSeconds": 26.016
+}

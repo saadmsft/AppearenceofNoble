@@ -1,14 +1,14 @@
 import { useCallback, useEffect, useState, useSyncExternalStore } from 'react'
 import type { Narration } from '../lib/schema.ts'
 import { createReadingStore } from '../lib/reading.ts'
-import type { ApplyImportOptions, ImportPreview, ReadingSnapshot, ReadingStore } from '../lib/reading.ts'
+import type { ApplyImportOptions, ImportPreview, ReadingListeningBridge, ReadingSnapshot, ReadingStore } from '../lib/reading.ts'
 
 export type ReadingController = ReadingSnapshot & Pick<ReadingStore,
   'openEntry' | 'setRead' | 'setNote' | 'deleteNote' | 'prepareImport' | 'applyImport' | 'exportBackup' | 'reload'>
 
 /** Mount once above route/reader switches so failed drafts survive in-app navigation. */
-export function useReading(knownEntries: readonly Narration[]): ReadingController {
-  const [store] = useState(() => createReadingStore(() => window.localStorage, new Set(knownEntries.map((entry) => entry.id))))
+export function useReading(knownEntries: readonly Narration[], listening?: ReadingListeningBridge): ReadingController {
+  const [store] = useState(() => createReadingStore(() => window.localStorage, new Set(knownEntries.map((entry) => entry.id)), listening))
   const snapshot = useSyncExternalStore(store.subscribe, store.getSnapshot, store.getSnapshot)
   const ids = JSON.stringify(knownEntries.map((entry) => entry.id).sort())
 

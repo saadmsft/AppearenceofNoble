@@ -1,0 +1,18 @@
+{
+  "entryId": "life-building-madinah-mosque",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas recalls the Prophet's arrival, a fourteen-night stay among Banu Amr ibn Awf, and the move to Abu Ayyub's courtyard. When a mosque was to be built, Banu al-Najjar declined to seek payment from anyone but Allah for their enclosure. Anas describes the site's preparation and the companions moving stones while the Prophet was with them, praying for the Ansar and the emigrants.",
+  "transcriptHash": "02930486dee117fd589bbb362876d0b1ce0f917d16165afa7d905775caed5898",
+  "transcriptCharacters": 379,
+  "billableCharacters": 394,
+  "cacheKey": "c9bf0a402afe13aea9354c050a2225b06730ad9d6c66ff2c2fc7c5d01b97cdd2",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c9bf0a402afe13aea9354c050a2225b06730ad9d6c66ff2c2fc7c5d01b97cdd2.mp3",
+  "byteLength": 135792,
+  "sha256": "126a2ad27dff86397319489560152a43f711efc1e41c93169e667f5251c67d37",
+  "durationSeconds": 22.632
+}

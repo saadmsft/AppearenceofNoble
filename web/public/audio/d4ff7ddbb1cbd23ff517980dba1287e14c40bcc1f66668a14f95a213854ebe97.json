@@ -1,0 +1,18 @@
+{
+  "entryId": "life-abu-bakr-defends-at-kaaba",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "عروہ نے نبی کریم صلی اللہ علیہ وسلم پر ہونے والے شدید ظلم کے بارے میں پوچھا تو حضرت عبداللہ بن عمرو رضی اللہ عنہما نے حِجرِ کعبہ میں نماز کے دوران کا واقعہ بیان کیا۔ عقبہ بن ابی معیط نے آپ صلی اللہ علیہ وسلم کے گلے میں کپڑا ڈال کر حملہ کیا۔ حضرت ابو بکر رضی اللہ عنہ آگے بڑھے، حملہ آور کو ہٹایا اور اللہ کو اپنا رب کہنے پر کسی شخص کو قتل کرنے کی کوشش پر اعتراض کیا۔",
+  "transcriptHash": "addeb9aae6547e9ca81ef5068177093c758f7e986ccc2908a9d54027690002a4",
+  "transcriptCharacters": 365,
+  "billableCharacters": 365,
+  "cacheKey": "d4ff7ddbb1cbd23ff517980dba1287e14c40bcc1f66668a14f95a213854ebe97",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d4ff7ddbb1cbd23ff517980dba1287e14c40bcc1f66668a14f95a213854ebe97.mp3",
+  "byteLength": 164736,
+  "sha256": "6bd3ce0a1dbf76bb45d9e1e4e4a8cbd0948012a258e9239706092813062b973f",
+  "durationSeconds": 27.456
+}

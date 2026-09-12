@@ -1,0 +1,18 @@
+{
+  "entryId": "life-final-days-curtain-and-prayer",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas recalls a Monday dawn prayer led by Abu Bakr. The Prophet may Allah bless him and grant him peace lifted the curtain of Aisha's room, looked at the worshippers in their rows, and smiled. Abu Bakr began to step back, thinking he would come out to pray. The Prophet may Allah bless him and grant him peace instead signalled for them to finish their prayer, then withdrew into the room and lowered the curtain.",
+  "transcriptHash": "37c8710f9578ada9fd259f7e7d0f06cfad169373a71c69d8b2345c44cba736ff",
+  "transcriptCharacters": 412,
+  "billableCharacters": 417,
+  "cacheKey": "236346035c6cc9cd520bfe29f672c3ddd65ba589c274d43c740792a5e1d53e70",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/236346035c6cc9cd520bfe29f672c3ddd65ba589c274d43c740792a5e1d53e70.mp3",
+  "byteLength": 142560,
+  "sha256": "7d321a9645f150dcf8e27fa4e27340852844d7a67f0c6b71871ff37306b3d01e",
+  "durationSeconds": 23.76
+}

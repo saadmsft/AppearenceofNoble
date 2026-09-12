@@ -6,6 +6,8 @@ import { appearanceTopics, characterTopics } from '../lib/schema.ts'
 import { topicLabels } from '../lib/catalog.ts'
 import { translate } from '../lib/i18n.ts'
 import { useAmbientMotion } from '../hooks/useAmbientMotion'
+import { getLifeMilestone } from '../lib/life.ts'
+import { LifeLocatorGraphic } from './LifeContext'
 
 function phase(index: number): CSSProperties {
   return { animationDelay: `${index * -0.65}s` }
@@ -154,7 +156,9 @@ function Motif({ topic, glowId }: { topic: AppearanceTopic; glowId: string }) {
   }
 }
 
-export function TopicMotif({ topic, glowId }: { topic: Topic; glowId: string }) {
+export function TopicMotif({ topic, glowId, language = 'en' }: { topic: Topic; glowId: string; language?: Language }) {
+  const milestone = getLifeMilestone(topic)
+  if (milestone) return <LifeLocatorGraphic milestone={milestone} language={language} />
   return <Motif topic={artworkTopic(topic)} glowId={glowId} />
 }
 
@@ -177,11 +181,11 @@ export function TopicArtwork({ topic, language, paused, reading, onPause }: {
           <stop offset="0" stopColor="var(--cp-accent)" stopOpacity=".3" />
           <stop offset="1" stopColor="var(--cp-accent)" stopOpacity="0" />
         </radialGradient></defs>
-        <TopicMotif topic={topic} glowId={glowId} />
+        <TopicMotif topic={topic} glowId={glowId} language={language} />
       </svg>
     </div>
     <div className="topic-art-caption">
-      <p>{translate(language, topic === 'voice' ? 'voiceOrnamentNotice' : 'ornamentNotice')}</p>
+      <p>{translate(language, getLifeMilestone(topic) ? 'lifeLocatorNotice' : topic === 'voice' ? 'voiceOrnamentNotice' : 'ornamentNotice')}</p>
       <button type="button" className="chapter-motion-toggle" disabled={motion.reduced} aria-pressed={paused || motion.reduced}
         aria-label={`${controlLabel} — ${topicLabels[topic][language]}`} onClick={onPause}>
         {paused || motion.reduced ? <Play size={12} aria-hidden="true" /> : <Pause size={12} aria-hidden="true" />}

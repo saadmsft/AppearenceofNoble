@@ -7,8 +7,13 @@ export const appearanceTopics = [
 export const characterTopics = [
   'mercy', 'patience', 'humility', 'generosity', 'justice', 'forgiveness', 'honesty', 'family-community',
 ] as const
-export const topics = [...appearanceTopics, ...characterTopics] as const
-export const shelves = ['appearance', 'character'] as const
+export const lifeTopics = [
+  'life-early-years', 'life-revelation', 'life-makkan-years', 'life-taif',
+  'life-hijrah', 'life-madinah', 'life-badr', 'life-uhud',
+  'life-hudaybiyyah', 'life-makkah-return', 'life-farewell', 'life-final-days',
+] as const
+export const topics = [...appearanceTopics, ...characterTopics, ...lifeTopics] as const
+export const shelves = ['appearance', 'character', 'life'] as const
 export const collections = ['bukhari', 'muslim', 'tirmidhi', 'shamail', 'abudawud', 'ibnmajah', 'nasai'] as const
 export const grades = ['sahih', 'hasan', 'weak', 'disputed', 'ungraded'] as const
 export const languages = ['en', 'ur'] as const
@@ -17,12 +22,25 @@ export type Language = typeof languages[number]
 export type Topic = typeof topics[number]
 export type AppearanceTopic = typeof appearanceTopics[number]
 export type CharacterTopic = typeof characterTopics[number]
+export type LifeTopic = typeof lifeTopics[number]
 export type Shelf = typeof shelves[number]
 export type Collection = typeof collections[number]
 export type Grade = typeof grades[number]
 export type Localized = { en: string; ur: string }
 
-const localizedSchema = z.object({
+export const topicsByShelf: Record<Shelf, readonly Topic[]> = {
+  appearance: appearanceTopics,
+  character: characterTopics,
+  life: lifeTopics,
+}
+
+export function getTopicShelf(topic: Topic): Shelf {
+  const shelf = shelves.find((value) => topicsByShelf[value].includes(topic))
+  if (!shelf) throw new Error(`Unknown project topic: ${topic}`)
+  return shelf
+}
+
+export const localizedSchema = z.object({
   en: z.string().trim().min(1),
   ur: z.string().trim().min(1).regex(/[\u0600-\u06ff]/),
 }).strict()
@@ -78,3 +96,7 @@ export const corpusSchema = z.array(narrationSchema).min(1).superRefine((rows, c
 
 export type Narration = z.infer<typeof narrationSchema>
 export type Reference = z.infer<typeof referenceSchema>
+
+export function isEstablished(row: Pick<Narration, 'grade'>): boolean {
+  return row.grade.level === 'sahih' || row.grade.level === 'hasan'
+}

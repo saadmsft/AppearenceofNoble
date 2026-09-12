@@ -1,9 +1,10 @@
 import { useRef } from 'react'
 import { ArrowRight, ArrowUpRight, BookOpen, Pause, Play } from 'lucide-react'
-import { shelfLabels, topicLabels } from '../lib/catalog.ts'
+import { shelfLabels, shelfPresentation, topicLabels } from '../lib/catalog.ts'
 import { number, translate } from '../lib/i18n.ts'
 import { getShelfRows, getShelfTopics } from '../lib/library.ts'
 import type { Language, Narration, Shelf } from '../lib/schema.ts'
+import { shelves } from '../lib/schema.ts'
 import { useAmbientMotion } from '../hooks/useAmbientMotion'
 import { Rosette } from './ManuscriptHero'
 import { Button } from './ui/button'
@@ -42,20 +43,20 @@ export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened,
       </div>
     </section>
     <section className="project-collections" aria-label={t('projectCollections')}>
-      {(['appearance', 'character'] as const).map((shelf) => {
+      {shelves.map((shelf) => {
         const rows = getShelfRows(shelf)
         const shelfTopics = getShelfTopics(shelf)
         const read = rows.filter((row) => readIds.has(row.id)).length
         return <article className={`project-collection collection-${shelf}`} key={shelf}>
           <h2>{shelfLabels[shelf][language]}</h2>
-          <p>{t(shelf === 'appearance' ? 'appearanceIntroduction' : 'characterIntroduction')}</p>
+          <p>{t(shelfPresentation[shelf].introduction)}</p>
           <div className="collection-topic-preview">{shelfTopics.slice(0, 4).map((topic) => <span key={topic}>{topicLabels[topic][language]}</span>)}</div>
           <div className="collection-details">
-            <span>{number(rows.length, language)} {t('entries')} <span aria-hidden="true">/</span> {number(shelfTopics.length, language)} {t('themes')}</span>
+            <span>{number(rows.length, language)} {t('entries')} <span aria-hidden="true">/</span> {number(shelfTopics.length, language)} {t(shelf === 'life' ? 'milestones' : 'themes')}</span>
             {read > 0 && <span>{t('markedRead', { read: number(read, language), total: number(rows.length, language) })}</span>}
           </div>
-          <Button variant={shelf === 'appearance' ? 'outline' : 'default'} onClick={() => onShelf(shelf)}>
-            {t(shelf === 'appearance' ? 'enterAppearanceStory' : 'enterCharacterStory')}<ArrowRight size={17} className="directional" aria-hidden="true" />
+          <Button variant={shelf === 'life' ? 'default' : 'outline'} onClick={() => onShelf(shelf)}>
+            {t(shelfPresentation[shelf].storyAction)}<ArrowRight size={17} className="directional" aria-hidden="true" />
           </Button>
         </article>
       })}

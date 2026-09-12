@@ -1,0 +1,18 @@
+{
+  "entryId": "life-hudaybiyyah-writing-the-agreement",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "براء رضی اللہ عنہ بیان کرتے ہیں کہ حدیبیہ میں علی رضی اللہ عنہ معاہدہ لکھ رہے تھے۔ دوسرے فریق نے دستاویز میں محمد صلی اللہ علیہ وسلم کے ساتھ رسول اللہ لکھنے پر اعتراض کیا۔ علی رضی اللہ عنہ نے اسے مٹانے سے انکار کیا تو نبی صلی اللہ علیہ وسلم نے خود مٹا دیا۔ بیان کردہ شرائط میں آپ صلی اللہ علیہ وسلم اور صحابہ کے لیے تین دن کا داخلہ اور ہتھیاروں کو غلافوں میں رکھنا شامل تھا۔",
+  "transcriptHash": "b812743ad4ed028923f3c473b44dbbce55d9c200421d2060736966400bb14341",
+  "transcriptCharacters": 374,
+  "billableCharacters": 374,
+  "cacheKey": "5afa17d16a0a7846a5fc28656e5f07629396b34ecfac6194a7d1ec51ccd06f30",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/5afa17d16a0a7846a5fc28656e5f07629396b34ecfac6194a7d1ec51ccd06f30.mp3",
+  "byteLength": 174672,
+  "sha256": "6a1432ff72fdfcb2301ab0c75999b9b6025585a6a0ab97b5bdf2ccb3616c328f",
+  "durationSeconds": 29.112
+}

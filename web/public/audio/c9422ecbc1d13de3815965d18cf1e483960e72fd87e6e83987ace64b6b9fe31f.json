@@ -1,0 +1,18 @@
+{
+  "entryId": "life-shepherding-for-makkah",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا أَحْمَدُ بْنُ مُحَمَّدٍ الْمَكِّيُّ، حَدَّثَنَا عَمْرُو بْنُ يَحْيَى، عَنْ جَدِّهِ، عَنْ أَبِي هُرَيْرَةَ ـ رضى الله عنه ـ عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ \" مَا بَعَثَ اللَّهُ نَبِيًّا إِلاَّ رَعَى الْغَنَمَ \". فَقَالَ أَصْحَابُهُ وَأَنْتَ فَقَالَ \" نَعَمْ كُنْتُ أَرْعَاهَا عَلَى قَرَارِيطَ لأَهْلِ مَكَّةَ \".",
+  "transcriptHash": "e13c5489350cfe1faed65eb9c991c38cd20e3ade79a6bf857309b8cfcef9d008",
+  "transcriptCharacters": 330,
+  "billableCharacters": 350,
+  "cacheKey": "c9422ecbc1d13de3815965d18cf1e483960e72fd87e6e83987ace64b6b9fe31f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c9422ecbc1d13de3815965d18cf1e483960e72fd87e6e83987ace64b6b9fe31f.mp3",
+  "byteLength": 127152,
+  "sha256": "d3b367f5194c0e4e4952368cb28a19a16a64f0d6337c0ad8616ae246014c60c1",
+  "durationSeconds": 21.192
+}

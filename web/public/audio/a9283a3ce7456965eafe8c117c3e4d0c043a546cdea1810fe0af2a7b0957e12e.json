@@ -1,0 +1,18 @@
+{
+  "entryId": "life-taif-hope-for-descendants",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت عائشہ رضی اللہ عنہا نے پوچھا کہ کیا نبی کریم صلی اللہ علیہ وسلم پر اُحد سے بھی زیادہ سخت دن آیا تھا۔ آپ صلی اللہ علیہ وسلم نے ابن عبد یالیل کی طرف سے اپنی بات قبول نہ ہونے اور غم کی حالت میں روانگی کا ذکر فرمایا۔ پھر حضرت جبریل علیہ السلام اور پہاڑوں کے فرشتے کی آمد بیان کی۔ تباہی کی پیش کش قبول کرنے کے بجائے آپ صلی اللہ علیہ وسلم نے امید ظاہر فرمائی کہ ان لوگوں کی نسل سے صرف اللہ کی عبادت کرنے والے پیدا ہوں گے۔",
+  "transcriptHash": "b948f09ddfc4cef7d60575d658c33b8523532d77ca88ac3ccc68bc2c7fd08680",
+  "transcriptCharacters": 420,
+  "billableCharacters": 420,
+  "cacheKey": "a9283a3ce7456965eafe8c117c3e4d0c043a546cdea1810fe0af2a7b0957e12e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/a9283a3ce7456965eafe8c117c3e4d0c043a546cdea1810fe0af2a7b0957e12e.mp3",
+  "byteLength": 190800,
+  "sha256": "84aa09e6fe44093dc07de82bc97acc650fd00e48e33858c4539c633d5b4fedea",
+  "durationSeconds": 31.8
+}

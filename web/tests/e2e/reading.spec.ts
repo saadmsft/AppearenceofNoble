@@ -178,7 +178,7 @@ test('restore previews conflicts, cancel resets file and text, and merge preserv
   await page.getByLabel('Or paste private backup JSON').fill(incoming.value)
   await page.getByRole('button', { name: 'Preview restore', exact: true }).click()
   await preview.getByRole('button', { name: 'Confirm restore', exact: true }).click()
-  await expect(page.getByText('Reading data and bookmarks were saved in this browser.', { exact: true })).toBeVisible()
+  await expect(page.getByText('The selected private backup was restored in this browser.', { exact: true })).toBeVisible()
   await page.getByRole('button', { name: 'Read first', exact: true }).click()
   const reader = page.getByRole('dialog', { name: 'Harness reader' })
   await expect(reader.getByRole('textbox')).toHaveValue('Local text stays')

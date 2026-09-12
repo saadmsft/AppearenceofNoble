@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react'
-import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, ChevronDown, ChevronUp } from 'lucide-react'
+import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, ChevronDown, ChevronUp, Headphones } from 'lucide-react'
 import type { Language, Narration, Shelf, Topic } from '../lib/schema.ts'
 import type { Chapter } from '../lib/chapters.ts'
-import { topicLabels } from '../lib/catalog.ts'
+import { shelfPresentation, topicLabels } from '../lib/catalog.ts'
 import { number, translate } from '../lib/i18n.ts'
 import { isEstablished } from '../lib/search.ts'
 import { focusSection } from '../lib/scroll.ts'
@@ -10,6 +10,7 @@ import { SourceName } from './NarrationCard'
 import { TopicReports } from './TopicReports'
 import { TopicArtwork } from './TopicArtwork'
 import { Button } from './ui/button'
+import { LifeContext } from './LifeContext'
 
 type JourneyProps = {
   language: Language
@@ -24,6 +25,7 @@ type JourneyProps = {
   onPause: () => void
   onSave: (id: string) => void
   onRead: (row: Narration, topic: Topic, includeCautioned: boolean, button: HTMLButtonElement) => void
+  onListen?: (chapter: Chapter, includeCautioned: boolean) => void
 }
 
 export function TopicJourney(props: JourneyProps) {
@@ -31,7 +33,7 @@ export function TopicJourney(props: JourneyProps) {
   const { chapters } = props
   return <div className="topic-journey">
     <header className="journey-intro page-width">
-      <h2 id="journey-heading" tabIndex={-1}>{t(props.shelf === 'character' ? 'characterJourneyTitle' : 'journeyTitle')}</h2>
+      <h2 id="journey-heading" tabIndex={-1}>{t(shelfPresentation[props.shelf].journeyTitle)}</h2>
       <div><p>{t('journeyDescription')}</p>
         <a className="text-link" href={props.collectionHref} onClick={(event) => {
           if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) { event.preventDefault(); props.onCollection() }
@@ -53,8 +55,9 @@ export function TopicJourney(props: JourneyProps) {
   </div>
 }
 
-function JourneyChapter({ chapter, next, language, paused, readerOpen, savedIds, readIds, onPause, onSave, onRead }: JourneyProps & { chapter: Chapter; next?: Chapter }) {
+function JourneyChapter({ chapter, next, language, paused, readerOpen, savedIds, readIds, onPause, onSave, onRead, onListen }: JourneyProps & { chapter: Chapter; next?: Chapter }) {
   const [expanded, setExpanded] = useState(false)
+  const [contextExpanded, setContextExpanded] = useState(false)
   const [includeCautioned, setIncludeCautioned] = useState(false)
   const toggle = useRef<HTMLButtonElement>(null)
   const t = (key: Parameters<typeof translate>[1], values?: Record<string, string>) => translate(language, key, values)
@@ -71,8 +74,9 @@ function JourneyChapter({ chapter, next, language, paused, readerOpen, savedIds,
   return <section className="journey-chapter" data-topic={chapter.topic} data-expanded={expanded} aria-labelledby={`chapter-${chapter.topic}`}>
     <div className="chapter-layout page-width">
       <h2 className="chapter-title" id={`chapter-${chapter.topic}`} tabIndex={-1}>{topicLabel}</h2>
-      <TopicArtwork topic={chapter.topic} language={language} paused={paused} reading={readerOpen || expanded} onPause={onPause} />
+      <TopicArtwork topic={chapter.topic} language={language} paused={paused} reading={readerOpen || expanded || contextExpanded} onPause={onPause} />
       <div className="chapter-copy">
+        <LifeContext topic={chapter.topic} language={language} onDisclosure={setContextExpanded} />
         <h3 className="chapter-highlights-label">{t('keyHighlights')}</h3>
         <ul className="chapter-highlights">
           {chapter.highlights.map((highlight, index) => <li key={`${highlight.sourceId}-${index}`}>
@@ -84,6 +88,8 @@ function JourneyChapter({ chapter, next, language, paused, readerOpen, savedIds,
           </li>)}
         </ul>
         <div className="chapter-actions">
+          {onListen && <Button variant="outline" onClick={() => onListen(chapter, includeCautioned)}
+            aria-label={t('playNamedChapter', { topic: topicLabel })}><Headphones size={17} aria-hidden="true" />{t('playChapter')}</Button>}
           <Button ref={toggle} onClick={() => expanded ? hideNarrations() : setExpanded(true)} aria-expanded={expanded} aria-controls={panelId}
             aria-label={t(expanded ? 'hideTopicNarrations' : 'showTopicNarrations', { topic: topicLabel })}>
             {t(expanded ? 'hideNarrations' : 'showNarrations')} <span className="chapter-report-count">{number(reports.length, language)}</span>
@@ -93,6 +99,7 @@ function JourneyChapter({ chapter, next, language, paused, readerOpen, savedIds,
             {t('nextTheme', { topic: topicLabels[next.topic][language] })}<ArrowDown size={14} aria-hidden="true" />
           </button>}
         </div>
+        {includeCautioned && !expanded && <p className="story-caution-notice">{t('chapterAllGradesNotice')}</p>}
         {readCount > 0 && <p className="chapter-reading-progress">{t('markedRead', { read: number(readCount, language), total: number(reports.length, language) })}</p>}
       </div>
     </div>

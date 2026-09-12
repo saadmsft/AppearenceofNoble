@@ -18,18 +18,21 @@ export type ReadingPageProps = {
   onOpen: (row: Narration, button: HTMLButtonElement) => void
   /** Receives a narration ID, not a source-book ID. No parent shelf type is required. */
   getCollectionLabel?: (id: string, language: Language) => string
+  getCollectionLabels?: (id: string, language: Language) => string[]
 }
 
-export function ReadingPage({ language, allNarrations, reading, bookmarks, onBookmarksChange, onOpen, getCollectionLabel }: ReadingPageProps) {
+export function ReadingPage({ language, allNarrations, reading, bookmarks, onBookmarksChange, onOpen, getCollectionLabel, getCollectionLabels }: ReadingPageProps) {
   const t = (key: Parameters<typeof readingLabel>[1]) => readingLabel(language, key)
   const id = useId()
   const rows = new Map(allNarrations.map((row) => [row.id, row]))
   const last = reading.data.lastOpened ? rows.get(reading.data.lastOpened.id) : undefined
   const groups = new Map<string, { total: number; read: number }>()
   for (const row of rows.values()) {
-    const label = getCollectionLabel?.(row.id, language) ?? t('allEntries')
-    const count = groups.get(label) ?? { total: 0, read: 0 }
-    groups.set(label, { total: count.total + 1, read: count.read + (getReadingEntry(reading.data, row.id).read === true ? 1 : 0) })
+    const labels = getCollectionLabels?.(row.id, language) ?? [getCollectionLabel?.(row.id, language) ?? t('allEntries')]
+    for (const label of new Set(labels)) {
+      const count = groups.get(label) ?? { total: 0, read: 0 }
+      groups.set(label, { total: count.total + 1, read: count.read + (getReadingEntry(reading.data, row.id).read === true ? 1 : 0) })
+    }
   }
   const noteIds = [...new Set([...Object.keys(reading.data.entries), ...Object.keys(reading.drafts)])]
     .filter((entryId) => getNoteText(reading, entryId).length > 0)
@@ -115,6 +118,7 @@ export function ReadingPage({ language, allNarrations, reading, bookmarks, onBoo
     </section>
     <section className="reading-panel" aria-labelledby={`${id}-progress`}>
       <h2 id={`${id}-progress`}>{t('progress')}</h2>
+      {getCollectionLabels && <p className="reading-help">{t('sharedProgress')}</p>}
       <ul className="reading-progress-list">{[...groups].map(([label, counts]) => <li key={label}>
         <h3>{label}</h3>
         <p><bdi>{counts.read.toLocaleString(language)}</bdi> {t('readOf')} <bdi>{counts.total.toLocaleString(language)}</bdi></p>
@@ -144,7 +148,10 @@ export function ReadingPage({ language, allNarrations, reading, bookmarks, onBoo
         setNotice(null)
         setFormIssue(null)
         const result = reading.prepareImport(text, bookmarks)
-        if (result.ok) { setMode(reading.writable ? 'merge' : 'replace'); setPreview(result.value) }
+        if (result.ok) {
+          setMode(reading.writable && (!result.value.listening || result.value.listening.merge) ? 'merge' : 'replace')
+          setPreview(result.value)
+        }
         else setFormIssue(result.issue)
       }}>
         <h3>{t('import')}</h3>
@@ -188,10 +195,15 @@ export function ReadingPage({ language, allNarrations, reading, bookmarks, onBoo
             <div><dt>{t('unread')}</dt><dd>{preview.counts.unread.toLocaleString(language)}</dd></div>
             <div><dt>{t('notes')}</dt><dd>{preview.counts.notes.toLocaleString(language)}</dd></div>
             <div><dt>{t('bookmarks')}</dt><dd>{preview.counts.bookmarks.toLocaleString(language)}</dd></div>
+            {preview.listening && <div><dt>{t('listeningPositions')}</dt><dd>{preview.listening.positions.toLocaleString(language)}</dd></div>}
           </dl>
+          {preview.listening
+            ? <p className="reading-help">{t('listeningRestore')}</p>
+            : <p className="reading-help">{t('legacyListeningUntouched')}</p>}
+          {preview.listening && !preview.listening.merge && <p className="reading-issue">{t('listeningMergeUnavailable')}</p>}
           <fieldset className="reading-import-options">
             <legend>{t('confirmRestore')}</legend>
-            <label><input type="radio" name={`${id}-mode`} value="merge" checked={mode === 'merge'} disabled={!reading.writable}
+            <label><input type="radio" name={`${id}-mode`} value="merge" checked={mode === 'merge'} disabled={!reading.writable || Boolean(preview.listening && !preview.listening.merge)}
               onChange={() => setMode('merge')} /> <strong>{t('merge')}</strong><span>{t('mergeDetail')}</span></label>
             <label><input type="radio" name={`${id}-mode`} value="replace" checked={mode === 'replace'}
               onChange={() => setMode('replace')} /> <strong>{t('replace')}</strong><span>{t('replaceDetail')}</span></label>

@@ -1,0 +1,166 @@
+{
+  "checkedAt": "2026-09-12",
+  "scope": "Release 2.2 later Life milestones: Badr, Uhud, al-Hudaybiyyah, the conquest return to Makkah, the Farewell Pilgrimage, and the final days. Seven new narrations plus one unchanged canonical Character narration. Introductory selected Sunni-source Seerah, not an exhaustive biography, independent hadith grading, or historical certification.",
+  "entries": 7,
+  "counts": {
+    "newEntries": 7,
+    "reusedCanonicalEntries": 1,
+    "milestones": 6,
+    "highlights": 13,
+    "uniqueNewPrimaryReferences": 7,
+    "uniqueMilestonePrimaryReferences": 8,
+    "fullArabicNewEntries": 7,
+    "newArabicCodePoints": 6194,
+    "longestNewArabicCodePoints": 1586,
+    "newEntriesOver4500ArabicCodePoints": 0
+  },
+  "primaryGradeLevels": { "sahih": 7 },
+  "primaryCollections": { "bukhari": 6, "muslim": 1 },
+  "newTopicCounts": {
+    "life-badr": 0,
+    "life-uhud": 1,
+    "life-hudaybiyyah": 1,
+    "life-makkah-return": 2,
+    "life-farewell": 1,
+    "life-final-days": 2
+  },
+  "milestoneReferenceCounts": {
+    "life-badr": 1,
+    "life-uhud": 1,
+    "life-hudaybiyyah": 1,
+    "life-makkah-return": 2,
+    "life-farewell": 1,
+    "life-final-days": 2
+  },
+  "arabicSourceManifestSha256": "8ebf34d540d2810e9509ff37811f229397bbb5ec993ea7e28595392c7905d728",
+  "digestDefinition": "SHA-256 of UTF-8 JSON.stringify of unique [primarySourceUrl, arabicFull] pairs for the seven NEW entries in content/life-madinan.json, sorted by primarySourceUrl.localeCompare(otherUrl, 'en'). A transcription fingerprint, not an authenticity judgement. Every pair was checked against the independent source-block captures below.",
+  "milestoneArabicSourceManifestSha256": "16c84f82de8b57cc59f4c813f1d14339f0cd17382693f9d19f3eb228fd1ff230",
+  "milestoneDigestDefinition": "The same procedure over the eight distinct canonical primary references used by the six milestones, including the unchanged Muslim 1787 Character entry.",
+  "primaryReferences": [
+    "https://sunnah.com/bukhari:2698",
+    "https://sunnah.com/bukhari:4064",
+    "https://sunnah.com/bukhari:4281",
+    "https://sunnah.com/bukhari:4406",
+    "https://sunnah.com/bukhari:4448",
+    "https://sunnah.com/bukhari:4449",
+    "https://sunnah.com/muslim:1358a"
+  ],
+  "relatedReferences": [],
+  "reusedCanonicalEntries": [
+    {
+      "id": "character-honesty-upholding-a-covenant",
+      "url": "https://sunnah.com/muslim:1787",
+      "topic": "life-badr",
+      "notes": "Freshly retrieved and read. The normalized complete Arabic matched the existing canonical entry exactly; its text, topics, checkedAt, identity and source fingerprint were not edited."
+    }
+  ],
+  "method": [
+    "Retrieved and read complete individual primary reports with web_fetch, including the Arabic source nodes and their surrounding reference/chapter information. Search snippets were not used as primary evidence. Direct curl requests returned HTTP 403; web_fetch retrieval succeeded.",
+    "Private captures preserve the complete .arabic_hadith_full node for each selected primary URL. Five were mechanically extracted from saved raw web_fetch response portions; three short nodes were copied from the live raw response. The response portions contain complete reports, not necessarily the entire page HTML.",
+    "HTMLParser removed markup and decoded entities. Directional formatting marks U+061C, U+200E/U+200F, U+202A-U+202E and U+2066-U+2069 were removed, and whitespace was collapsed. Source wording, punctuation, isnad and in-block transmitter remarks were retained.",
+    "sourceBlockSha256 hashes the saved UTF-8 complete Arabic HTML node with its final newline. arabicSha256 hashes the normalized text extracted from that source node. Neither is merely a hash of the newly authored narration JSON.",
+    "Every new arabicFull was compared byte-for-byte with normalized captured evidence. Every short arabic excerpt was found in arabicFull after NFC normalization. New primary URLs and IDs were checked against the 95-entry legacy corpus.",
+    "English and Urdu summaries and highlights are original selective editorial writing. Full modern translations and any response portions containing them remain only in private temporary captures, outside the repository.",
+    "Grading uses the conventional sahih status of the primary Bukhari or Muslim collection; no independent grading, cross-tradition consensus or authentication of editorial chronology is implied."
+  ],
+  "captures": [
+    {
+      "url": "https://sunnah.com/bukhari:2698",
+      "arabicSha256": "a6d07f1ffbad7586f5e2c40a5d747ace3ce45508f9c647376f679fa151f595b0",
+      "characters": 755,
+      "sourceBlockSha256": "899d4f0f654b9eb1b574d510c49d08d535bc2496bee74f6dcf19e6d64851a95d",
+      "sourceBlockFile": "bukhari-2698.block.html",
+      "notes": "Complete report, including the closing explanation of the weapon cases. It is a bounded treaty report, not every clause or a full Hudaybiyyah narrative."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:4064",
+      "arabicSha256": "4df67884464b03f385bf36c5102ae48e5b1716699d8cb0c75f0ecdeefb7450a9",
+      "characters": 1082,
+      "sourceBlockSha256": "0ac4f49055c503c4cf013080857df13d539c6486ff24c1711f14cb2739d434a9",
+      "sourceBlockFile": "bukhari-4064.block.html",
+      "notes": "Complete Anas report of Abu Talha's protection and Aisha and Umm Sulaim's water-carrying; historical battlefield details are not modern instructions."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:4281",
+      "arabicSha256": "3da9ff090cb6393b4bcc7aadbab0cb44f835667f866210d91e33310820429177",
+      "characters": 338,
+      "sourceBlockSha256": "13f1c2017afb8bb6fca6a671c0daefe1d1f7ba3ece7fa2c73ce603abf9b6da43",
+      "sourceBlockFile": "bukhari-4281.block.html",
+      "notes": "Complete short conquest-day recitation report, including the closing recollection. No simulated Prophetic voice or exact route is inferred."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:4406",
+      "arabicSha256": "a069b6fe1e9f0804a4b3df2b569ffe636c47bca49f8a0717defb23fc756fa1d8",
+      "characters": 1586,
+      "sourceBlockSha256": "f2f941b2900619877fdc29f0724d992c4720df8346f59f4696f4791a4c7191f4",
+      "sourceBlockFile": "bukhari-4406.block.html",
+      "notes": "Complete report in Bukhari's Farewell Pilgrimage chapter. Preserves Muhammad's uncertainty about the honour wording and his later comment; not a composite Farewell Sermon. No need to introduce the lengthy Muslim 1218a report."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:4448",
+      "arabicSha256": "758be00d31cb98b0b40f6be951154e591f6348dda05e455c18cc667cf32bf1b7",
+      "characters": 853,
+      "sourceBlockSha256": "a9090b626e4b36e26688ccdfc67f82295cdc2228445d056043ad70bfdd4d1279",
+      "sourceBlockFile": "bukhari-4448.block.html",
+      "notes": "Complete Monday dawn-prayer report in the illness-and-death chapter. No numeric date or universal last-smile claim is added."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:4449",
+      "arabicSha256": "f323cd20625aa7d59aa7c4c4b63a63b0a7b32161233decdeea7172ddae210847",
+      "characters": 1087,
+      "sourceBlockSha256": "f0254d807cf43b62f12a96a0c7c2c6b51292f85f6d4fa62c1235f84049bbd3c7",
+      "sourceBlockFile": "bukhari-4449.block.html",
+      "notes": "Complete Aisha report, including Umar's uncertainty about the water vessel. Her recollection remains distinct from the Prophet's words."
+    },
+    {
+      "url": "https://sunnah.com/muslim:1358a",
+      "arabicSha256": "d4d7583a57740bc4f6fca847e44c4818b8bd805a9a1474a9f5b6a6d41d2656da",
+      "characters": 493,
+      "sourceBlockSha256": "b40853fb5b1727bf0bb38741a06972a5a0e7155a9fca02b1932eb2bc2d1497bf",
+      "sourceBlockFile": "muslim-1358a.block.html",
+      "notes": "Complete Jabir report. Conquest-day wording is specifically attributed to Qutayba, and the final chain-variant note is preserved. This URL was previously only a related citation, not a canonical primary narration."
+    },
+    {
+      "url": "https://sunnah.com/muslim:1787",
+      "arabicSha256": "0d2c482b6351b119e3d7acb56506ece8cf20e15c7527fe1248da5facc0c77539",
+      "characters": 661,
+      "sourceBlockSha256": "662ea8fd0d0e7f735280e0bb362145edd1bf8f62fb00b57a58f98a42a19081c3",
+      "sourceBlockFile": "muslim-1787.block.html",
+      "reused": true,
+      "notes": "Fresh source-node normalization equals the unchanged Character narration. Used for Badr rather than duplicating or padding the new corpus."
+    }
+  ],
+  "chronologyEvidence": [
+    {
+      "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+      "retrieval": "Complete returned article read through web_fetch on 2026-09-12; selected exact chronology clauses retained in a private evidence note, not a full HTML capture.",
+      "captureFile": "chronology-capture.md",
+      "captureSha256": "19250e21e42f99434d13766d85ee4c3c2115a141e1e460cbb062f0c8985b331c",
+      "supports": "Broad CE years for Badr 624, Uhud 625, Hudaybiyyah 628, conquest of Makkah 630, Farewell Pilgrimage 632, and death in Madinah 632. Also distinguishes the 628 agreement from the permitted 629 visit.",
+      "limits": "This article presents the biography according to Islamic tradition. Only the stated broad years and geographic/event distinctions are used. No exact day, new AH conversion, scholarly consensus, or authentication of all other claims in the article is asserted."
+    }
+  ],
+  "selectionNotes": [
+    {
+      "url": "https://sunnah.com/muslim:1359a",
+      "notes": "Retrieved and read for comparison, but not reused as conquest evidence. Its Arabic describes an address in a black turban without dating it to the conquest; the misleading legacy ID black-turban-at-conquest-of-mecca remains untouched."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:2699",
+      "notes": "Retrieved and read as a candidate. Selected 2698 instead for a shorter report explicitly naming Hudaybiyyah and avoiding the need to narrate the later visit and custody episode here."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:1739",
+      "notes": "Retrieved and read as a Farewell candidate. Selected 4406 instead; the two narrations were not merged."
+    }
+  ],
+  "reviewLimits": [
+    "One research/editorial pass with a subsequent source-comparison and mechanical validation pass; no independent second-researcher certification, manuscript collation or comprehensive isnad investigation.",
+    "Historical dates are sourced separately from the narrated reports and are labelled approximate throughout. No exact Gregorian conversion, precise death date, duration of illness or claim of unanimous agreement.",
+    "The geographic locator is explicitly schematic. No coordinates, exact routes, battlefield positions, room plans or reconstructed sermon sites are supplied.",
+    "All 95 legacy rows were verified byte-for-byte against their existing content files in HEAD. No legacy source, audit, ID, MP3 or audio manifest was edited by this research task.",
+    "The new Arabic strings are all below 4500 Unicode code points. Actual synthesized durations and complete audio-asset checks remain the parent release workflow's responsibility; no speech generation or paid service calls were performed."
+  ],
+  "longAudioCandidates": [],
+  "sourceAvailabilityBlockers": []
+}

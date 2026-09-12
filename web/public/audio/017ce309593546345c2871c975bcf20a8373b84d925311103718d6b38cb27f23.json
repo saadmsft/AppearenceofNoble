@@ -1,0 +1,18 @@
+{
+  "entryId": "life-uhud-shielding-and-carrying-water",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Anas recalls a difficult moment at Uhud when people fell back from the Prophet may Allah bless him and grant him peace and Abu Talha sheltered him with a shield. He also remembers Aisha and Umm Sulaim carrying water skins, giving people water, and returning to fill them again. His account records both protection of the Prophet may Allah bless him and grant him peace and the repeated work of bringing water.",
+  "transcriptHash": "8212b08dd59c0e65f09f8652320a0902a2285fe180b07169e7d520802e3cd716",
+  "transcriptCharacters": 409,
+  "billableCharacters": 409,
+  "cacheKey": "017ce309593546345c2871c975bcf20a8373b84d925311103718d6b38cb27f23",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/017ce309593546345c2871c975bcf20a8373b84d925311103718d6b38cb27f23.mp3",
+  "byteLength": 139392,
+  "sha256": "e8aed47562cdacfaedb3ad00362fc9fae7b4b1a543a6fc4383dbc35dbd11ca3e",
+  "durationSeconds": 23.232
+}

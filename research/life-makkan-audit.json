@@ -1,0 +1,264 @@
+{
+  "checkedAt": "2026-09-12",
+  "scope": "Release 2.2 first six Life milestones: earlier Makkan work, first revelation, the Makkan years, Taif, Hijrah and building the Madinan community. A selected introductory Sunni-source trail, not an exhaustive Seerah, critical edition or claim of agreement among all historians.",
+  "entries": 9,
+  "uniquePrimaryReferences": 9,
+  "uniqueCitedReferences": 13,
+  "fullArabicEntries": 9,
+  "counts": {
+    "newNarrations": 9,
+    "milestones": 6,
+    "reusedCanonicalIds": 0,
+    "primaryReferences": 9,
+    "retainedRelatedReferences": 0,
+    "additionalChronologyHadithReferences": 1,
+    "additionalHistoricalOrCommentaryReferences": 3,
+    "reviewedButNotRetainedHadithLeads": 2
+  },
+  "primaryGradeLevels": {
+    "sahih": 9
+  },
+  "primaryCollections": {
+    "bukhari": 9
+  },
+  "topicCounts": {
+    "life-early-years": 1,
+    "life-revelation": 1,
+    "life-makkan-years": 2,
+    "life-taif": 1,
+    "life-hijrah": 2,
+    "life-madinah": 2
+  },
+  "arabicSourceManifestSha256": "49b301fb4658883ff876a44ad5898be3e9910834ac4599f88526d21d5c5d4869",
+  "digestDefinition": "SHA-256 of UTF-8 JSON.stringify of unique [primarySourceUrl, arabicFull] pairs for the nine new narration records, sorted by primarySourceUrl.localeCompare(otherUrl, 'en'). Chronology-only sources are excluded. This fingerprints transcription, not authenticity, chronology or a generated summary.",
+  "method": [
+    "One research and editorial pass retrieved and read every retained individual hadith's entire .arabic_hadith_full block and the cited historical/commentary pages. No second independent scholarly review is claimed.",
+    "Successful primary retrievals used raw web_fetch responses from individual sunnah.com pages, paginated to include the complete Arabic block and individual reference. Local curl returned HTTP 403; it is not claimed as the successful capture method.",
+    "Arabic-only HTML blocks were saved separately under the assigned session artifact directory before assembly of narration records. No modern translation is published or included in the saved Arabic blocks.",
+    "The blocks retain isnad, report text, punctuation, Quran quotations and every in-block transmission note. HTMLParser decodes entities, concatenates text nodes without inserting new spaces at inline tags, removes directional marks and collapses whitespace. Source spelling and punctuation are not corrected.",
+    "The saved HTML artifact bytes and the independently extracted normalized full Arabic have separate SHA-256 fingerprints. Artifact hashes include the final file newline. They are not HTTP-response-body hashes and are not hashes of editorial summaries.",
+    "Original English and Urdu selective summaries were written with distinct speaker attribution and checked against the Arabic. They are not copied modern full translations.",
+    "All new primary grades use the conventional sahih classification of Sahih al-Bukhari, not a newly invented independent grading or consensus.",
+    "Chronology, age reports, historical interpretation and schematic place labels are separately cited in milestone metadata. Source grades do not authenticate editorial dates or map placement.",
+    "All nine primary URLs were compared against the existing content catalog. None duplicates a legacy primary URL; no existing canonical entry, source fingerprint or audio asset was changed by this research work."
+  ],
+  "primaryReferences": [
+    "https://sunnah.com/bukhari:2262",
+    "https://sunnah.com/bukhari:3",
+    "https://sunnah.com/bukhari:4770",
+    "https://sunnah.com/bukhari:3856",
+    "https://sunnah.com/bukhari:3231",
+    "https://sunnah.com/bukhari:3653",
+    "https://sunnah.com/bukhari:3925",
+    "https://sunnah.com/bukhari:428",
+    "https://sunnah.com/bukhari:3782"
+  ],
+  "relatedReferences": [],
+  "reusedCanonicalIds": [],
+  "additionalChronologyReferences": [
+    "https://sunnah.com/bukhari:3851",
+    "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+    "https://www.britannica.com/event/Hijrah-Islam",
+    "https://hadeethenc.com/en/browse/hadith/6406"
+  ],
+  "chronologyReview": [
+    {
+      "url": "https://sunnah.com/bukhari:2262",
+      "note": "Only retrospective work for the people of Makkah is established. No birth year, childhood age, shepherding year or firm timing relative to first revelation is assigned."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3851",
+      "note": "Ibn Abbas reports age forty at revelation and thirteen years before migration, then ten in Madinah. Metadata attributes these numbers to this report, not every transmitted chronology. The capture preserves the source's joined word sequence فَمَكَثَثَلاَثَ rather than silently correcting it."
+    },
+    {
+      "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+      "note": "Used only for broad historical sequencing of Taif after losses dated about 619 and before the 622 migration. No exact date of the journey is extracted. Other details in the article are not promoted into primary hadith wording."
+    },
+    {
+      "url": "https://hadeethenc.com/en/browse/hadith/6406",
+      "note": "The explanation associates Aisha's hardship question and the rejection by Ibn Abd Yalil with Taif and labels the account Makkan. This supports the contextual milestone label. Commentary additions such as stoning and later fulfillment are not imported into the selected report's summary, full Arabic or highlights."
+    },
+    {
+      "url": "https://www.britannica.com/event/Hijrah-Islam",
+      "note": "Used for 622 CE as the migration year, Makkah and Madinah as departure/destination, and the Ansar's community context. The calendar epoch is not confused with the actual arrival day."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:428",
+      "note": "The fourteen nights and post-arrival construction sequence are reported by Anas. They are not used to calculate an exact construction date, and the separate date-sharing exchange is not claimed to have occurred simultaneously."
+    }
+  ],
+  "reviewedButNotRetained": [
+    {
+      "url": "https://sunnah.com/bukhari:3935",
+      "note": "Retrieved and read as an exploratory lead. It concerns the change in prescribed prayer after migration, not an arrival welcome. Not retained or counted as a new narration."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3780",
+      "note": "Retrieved and read as an exploratory brotherhood lead, including the closing transmitter doubt. The shorter, nonparallel practical-cooperation report at 3782 was selected instead; no text from 3780 is merged into it."
+    }
+  ],
+  "readingBoundaries": [
+    {
+      "url": "https://sunnah.com/bukhari:3",
+      "note": "Aisha transmits rather than claims eyewitness presence at Hira. Khadija's reassurance, Waraqa's interpretation, the devotional gloss and the closing pause in revelation remain distinct."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:4770",
+      "note": "The proposed cavalry warning is hypothetical, not an actual army added to the scene. The gathered audience's acknowledgment is not expanded to a universal biography claim."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3856",
+      "note": "The main chain identifies Abdullah ibn Amr; closing transmission routes include the name Amr ibn al-As. Those variants remain in full Arabic rather than being harmonized or misidentified as Prophetic speech."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3231",
+      "note": "The Arabic names al-Aqabah and Qarn al-Thaalib but not Taif. Commentary supplies the contextual association. No detailed itinerary, exact mountain placement, stoning scene or additional dialogue is invented."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3653",
+      "note": "The cave is unnamed in this short report. The summary does not add a cave name, spiders, birds, route, number of nights or travel date."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3925",
+      "note": "Arrival order and joy are al-Bara's recollection, not a complete migrant manifest. No welcome song is supplied."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:428",
+      "note": "The entire site-preparation account is retained, including graves, ruins and palms. The selective summary does not issue a modern ruling or omit those particulars from full Arabic."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3782",
+      "note": "The summary preserves the compact pronoun-based exchange without assigning every phrase to a named speaker. Fraternity context is al-Bukhari's chapter framing, not an extra sentence in the Arabic block."
+    }
+  ],
+  "captures": [
+    {
+      "url": "https://sunnah.com/bukhari:2262",
+      "role": "primary",
+      "sourceId": "life-shepherding-for-makkah",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "e13c5489350cfe1faed65eb9c991c38cd20e3ade79a6bf857309b8cfcef9d008",
+      "codePointLength": 330,
+      "captureArtifact": "life-research/makkan/bukhari-2262.arabic.html",
+      "captureArtifactSha256": "6998d7a38ebe9333967add50e31cd46251c5bf27bc51ed8b069e3acf78094d70",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "The earlier work is recalled in a later conversation. The report supplies neither a childhood age nor a birth date, and it does not establish a detailed employment history. Qirats are retained as the source's payment term without conversion to a modern wage."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3",
+      "role": "primary",
+      "sourceId": "life-first-revelation-hira",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "f6502f8b6eaf958772b0aeb5105aa0a912e2bfe45989df597435cb2f92a68977",
+      "codePointLength": 2633,
+      "captureArtifact": "life-research/makkan/bukhari-3.arabic.html",
+      "captureArtifactSha256": "f073d706e15efd1304768af2631ec16ce51babdd1974690cc7b852af45adddbd",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "Aisha transmits the account; she is not described as a witness in the cave. Khadija's reassurance and Waraqa's explanation are their own reported words, not Prophetic speech. The complete Arabic includes the explanation of devotional retreat and the closing notice of Waraqa's death and the pause in revelation. No calendar date appears in this report."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3231",
+      "role": "primary",
+      "sourceId": "life-taif-hope-for-descendants",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "1cfb2779277596f141ff653ccf882ac671fc1f1c01e4eb38caabcea408337847",
+      "codePointLength": 1227,
+      "captureArtifact": "life-research/makkan/bukhari-3231.arabic.html",
+      "captureArtifactSha256": "216c2bf28ca37edf38bcea25a1c1239d20b9d7c642cdd7856c18cb4d181d9dea",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "The Prophet recalls an earlier experience in response to Aisha; she is not reporting that she accompanied him. The Arabic names the day of al-Aqabah and Qarn al-Thaalib but gives no calendar date and does not itself name Taif. The milestone's Taif association is separately sourced commentary, not an addition to the report. No stoning scene or additional dialogue is supplied here."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3653",
+      "role": "primary",
+      "sourceId": "life-abu-bakr-in-the-cave",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "5b5440ada70325e829a4d8ac4f622fe89b18207f1d4a57e5a530b0063e680437",
+      "codePointLength": 318,
+      "captureArtifact": "life-research/makkan/bukhari-3653.arabic.html",
+      "captureArtifactSha256": "e1796113ab3c394ad241c25363704f35ae60bd6248e033ef938736bcaba3996e",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "Abu Bakr's concern and the Prophet's reply are separate parts of an eyewitness recollection. This individual report calls the location a cave without giving its name, a travel date, a route or a duration. None of those details is added to its Arabic or summary."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3782",
+      "role": "primary",
+      "sourceId": "life-sharing-work-and-dates",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "62a8317ad88580174c3ae0e3e9cfbad2af74f3b7229c3f7920ea1e9022a612d3",
+      "codePointLength": 363,
+      "captureArtifact": "life-research/makkan/bukhari-3782.arabic.html",
+      "captureArtifactSha256": "9dd2c62224c9b5e2bd61dd364cb117e477ada976fb790f485b909a6e4387e791",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "Al-Bukhari places this report in the chapter on fraternity between the emigrants and the Ansar. The compact Arabic uses pronouns in the exchange; the summary does not assign every intervening phrase to a named speaker. Neither a date nor a universal rule requiring division of property is stated."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3851",
+      "role": "chronology-only",
+      "sourceId": null,
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "bc016d8bcc9134f7241bd5d26da36e23516cb6f38f63cb62a8557d35537c8905",
+      "codePointLength": 371,
+      "captureArtifact": "life-research/makkan/bukhari-3851.arabic.html",
+      "captureArtifactSha256": "9c2407f6e8fba437032f506fdbfa946a5755335b5e5ba452e0cf76c359580336",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "Ibn Abbas age/period evidence only; no new narration or audio entry created. Source joining of فَمَكَثَثَلاَثَ is preserved unchanged."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3856",
+      "role": "primary",
+      "sourceId": "life-abu-bakr-defends-at-kaaba",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "5c302210ab39e5742e45c964bad57d085f1fd59c68e9ddf0bc1944d587cc8314",
+      "codePointLength": 976,
+      "captureArtifact": "life-research/makkan/bukhari-3856.arabic.html",
+      "captureArtifactSha256": "faa5d6590cb0114750f9d6d8955204fff5e452286b26d7334298915619b40e9c",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "The main chain names Abdullah ibn Amr as Urwa's informant. Al-Bukhari's closing transmission notes include other routes and a naming variation involving Amr ibn al-As; all are preserved, not silently harmonized. Abu Bakr's intervention is not presented as a quotation spoken by the Prophet. No exact date is supplied."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:3925",
+      "role": "primary",
+      "sourceId": "life-arrival-in-madinah-bara",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "c96adfe1320a4d1d80c65726ba83d18290e1f51ecbd29ddd9ae0dba1929ff43f",
+      "codePointLength": 733,
+      "captureArtifact": "life-research/makkan/bukhari-3925.arabic.html",
+      "captureArtifactSha256": "5182441e5c0781e9d6fab3eccd810fd11f89ec91629ac9c26bec0fa45539f28a",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "The order of arrivals and the comparison of the city's joy are al-Bara's recollection. The report is not a complete migrant register or an exact arrival timetable. It records no welcome song, so none is supplied."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:428",
+      "role": "primary",
+      "sourceId": "life-building-madinah-mosque",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "034defcc2ab69400e26f3d9fd4ef5d8b1088c8d8aa5006d51b07db266399ddbf",
+      "codePointLength": 1396,
+      "captureArtifact": "life-research/makkan/bukhari-428.arabic.html",
+      "captureArtifactSha256": "0db015e38af04eff5562065ca1a0bb699e4dad08122fe59ad5e927f3e323fd90",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "The fourteen nights belong to this report's initial stay, not a calculated date for every construction task. Its full Arabic includes the removal of graves, leveling of ruins and cutting of palms; the selective summary is not a legal ruling about other sites. Anas's account and the Prophet's concluding prayer remain distinct."
+    },
+    {
+      "url": "https://sunnah.com/bukhari:4770",
+      "role": "primary",
+      "sourceId": "life-call-at-safa",
+      "checkedAt": "2026-09-12",
+      "arabicFullSha256": "3d759cf1a67c59359aa09b99f9943a63ac6fce5e32a7a341fddeb72d5e9d40ad",
+      "codePointLength": 943,
+      "captureArtifact": "life-research/makkan/bukhari-4770.arabic.html",
+      "captureArtifactSha256": "665f6e4b797721202f576c7a9af9c832d480f0f74b7b91abc156c2ed30a250c2",
+      "evidence": "Complete Arabic-only HTML block saved from the raw individual-page web_fetch response; final reference number checked on the same page. This is not a hash of the editorial summary.",
+      "notes": "The cavalry is a hypothetical example within the address, not an army reported to be approaching. The audience's acknowledgment, the Prophet's warning and Abu Lahab's response remain distinct. The report does not date this gathering to a numbered year of the mission."
+    }
+  ],
+  "audioReview": {
+    "measure": "Unicode code points in each complete normalized primary arabicFull, including diacritics and isnad.",
+    "softPreferenceCodePoints": 4500,
+    "longPrimaryReferences": [],
+    "note": "No Arabic report is truncated to meet a speech limit. These text-length checks do not claim a generated clip duration. No speech, Azure operation, audio manifest edit or private ledger inspection was performed.",
+    "maxPrimaryCodePointLength": 2633,
+    "totalPrimaryCodePoints": 8919
+  }
+}

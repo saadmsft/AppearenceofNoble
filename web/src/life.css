@@ -1,0 +1,80 @@
+.life-timeline { display: flex; overflow-x: auto; overscroll-behavior-x: contain; padding-block: 20px; margin-block: 8px 0; scrollbar-color: var(--cp-border-strong) var(--cp-bg); }
+.life-timeline button { display: flex; align-items: flex-start; gap: 12px; flex: 0 0 190px; padding: 16px 20px; text-align: start; border-block: 1px solid var(--cp-rule); border-inline-end: 1px solid var(--cp-rule); color: var(--cp-text-soft); }
+.life-timeline button:first-child { border-inline-start: 1px solid var(--cp-rule); }
+.life-timeline button:hover { background: var(--cp-accent-soft); color: var(--cp-accent); }
+.life-timeline button[aria-current="step"] { background: var(--cp-accent); border-color: var(--cp-accent); color: var(--cp-accent-fg); }
+.life-timeline-number { font-size: 12px; padding-top: 4px; font-variant-numeric: tabular-nums; }
+.life-timeline strong { display: block; font-size: 13px; font-weight: 500; line-height: 1.6; }
+.life-timeline small { display: block; margin-top: 8px; font-size: 11px; line-height: 1.7; }
+.life-context { border-block: 1px solid var(--cp-rule); margin-top: 24px; padding-block: 16px; }
+.life-context-summary { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.life-context-summary strong { display: block; font-size: 16px; font-weight: 500; line-height: 1.8; }
+.life-context-summary p > span { display: block; font-size: 11px; color: var(--cp-text-soft); line-height: 1.9; }
+.life-place-line { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--cp-text-soft); }
+.life-place-line > svg { flex-shrink: 0; }
+.life-context-evidence { margin-top: 12px; font-size: 13px; line-height: 1.9; }
+.life-context-evidence summary { padding-block: 8px; min-height: 44px; cursor: pointer; color: var(--cp-accent); }
+.life-context-evidence > p { margin-block: 12px; max-width: 70ch; }
+.life-date-boundary { color: var(--cp-text-soft); }
+.life-context-evidence ul { list-style: none; padding: 0; margin-top: 20px; }
+.life-context-evidence li { padding-block: 14px; border-top: 1px solid var(--cp-rule); }
+.life-context-evidence a { display: inline-flex; align-items: center; gap: 8px; color: var(--cp-accent); }
+.life-context-evidence li p { font-size: 12px; margin-top: 6px; color: var(--cp-text-soft); }
+.life-stage-context { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; padding-top: 14px; font-size: 12px; line-height: 1.8; color: var(--cp-hero-text); }
+.life-stage-context > span:last-child { display: flex; align-items: center; gap: 5px; color: var(--cp-hero-muted); }
+.life-locator-grid { stroke-dasharray: 2 8; opacity: .2; }
+.life-compass { stroke-width: 1; }
+.life-compass text, .life-place-label { fill: currentColor; stroke: none; font-size: 15px; font-family: inherit; }
+.life-compass text { font-size: 12px; }
+.life-place-point { opacity: .55; }
+.life-place-active .life-place-point { opacity: 1; }
+.life-place-active .life-place-label { font-weight: 600; }
+.life-place-active .life-place-point { fill: currentColor; }
+.life-place-ring { transform-box: fill-box; transform-origin: center; opacity: .6; }
+.story-experience[data-shelf="life"] .story-visual { perspective: none; }
+.story-experience[data-shelf="life"] .story-orbital-frame { opacity: .3; }
+.story-experience[data-shelf="life"] .story-ink-path { transform: none; }
+.story-experience[data-shelf="life"] .story-motif-incoming { animation-name: life-ink-arrive; }
+.story-experience[data-shelf="life"] .story-motif-outgoing { animation-name: life-ink-leave; }
+.story-experience[data-shelf="life"] .story-ornament-note { font-size: 10px; line-height: 1.8; }
+.story-chapter .life-context { margin-inline-start: 40px; }
+.story-listen-action { margin-top: 24px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--cp-accent); font-size: 13px; }
+.story-chapter > .story-listen-action { margin-inline-start: 40px; }
+.story-playing-source { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 18px; font-size: 12px; color: var(--cp-accent); }
+.story-follow-note { margin-top: 18px; color: var(--cp-text-soft); font-size: 13px; line-height: 1.8; }
+.story-caution-notice { color: var(--cp-text-soft); font-size: 12px; margin-top: 14px; line-height: 1.9; }
+.life-chronology-index { margin-block: 40px; }
+.life-chronology-index > p { color: var(--cp-text-soft); margin-block: 16px 24px; line-height: 1.9; max-width: 70ch; }
+.life-chronology-index > details { border-top: 1px solid var(--cp-rule); padding-block: 12px; }
+.life-chronology-index > details > summary { min-height: 44px; cursor: pointer; line-height: 1.9; }
+.life-chronology-index .life-context { border: 0; margin-top: 0; }
+@keyframes life-ink-arrive { from { opacity: .25; filter: blur(2px); } to { opacity: 1; filter: blur(0); } }
+@keyframes life-ink-leave { from { opacity: 1; } to { opacity: 0; } }
+[lang="ur"] .life-timeline strong { font-size: 15px; line-height: 2.4; font-weight: 400; }
+[lang="ur"] .life-timeline small { line-height: 2.6; }
+[lang="ur"] .life-timeline-number { font-family: var(--cp-font-arabic); font-size: 18px; }
+[lang="ur"] .life-context-summary strong { line-height: 2.6; font-weight: 400; }
+[lang="ur"] .life-context-summary p > span, [lang="ur"] .life-context-evidence, [lang="ur"] .life-stage-context, [lang="ur"] .story-follow-note, [lang="ur"] .story-caution-notice { line-height: 2.5; }
+[lang="ur"] .life-place-label, [lang="ur"] .life-compass text { font-family: var(--cp-font-arabic); font-size: 19px; }
+@media(max-width:760px) {
+  .life-timeline { padding-block: 12px; }
+  .life-timeline button { flex-basis: 168px; padding: 12px 16px; }
+  .life-stage-context { font-size: 10px; gap: 4px 10px; padding-top: 6px; }
+  .story-chapter .life-context, .story-chapter > .story-listen-action { margin-inline-start: 0; }
+  .story-experience[data-shelf="life"] .story-ornament-note { font-size: 9px; }
+  .story-experience[data-shelf="life"] .life-place:not(.life-place-active) .life-place-label { display: none; }
+  .story-experience[data-shelf="life"] .life-place-active .life-place-label { font-size: 20px; }
+  .life-context-summary { gap: 10px; }
+  [lang="ur"] .story-experience[data-shelf="life"] .life-place-active .life-place-label { font-size: 23px; }
+}
+@media(max-height:720px) and (max-width:760px) {
+  .story-experience[data-shelf="life"] .story-visual { height: 70px; }
+  .story-experience[data-shelf="life"] .life-place-label, .story-experience[data-shelf="life"] .life-compass text { display: none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .story-experience[data-shelf="life"] .story-motif-layer { animation: none; filter: none; }
+}
+@media print {
+  .life-timeline, .story-listen-action { display: none; }
+  .life-context { break-inside: avoid; }
+}

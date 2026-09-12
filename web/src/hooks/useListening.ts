@@ -1,0 +1,44 @@
+import { useEffect, useState, useSyncExternalStore } from 'react'
+import staticManifest from '../data/audio-manifest.json'
+import { createListeningEngine, listeningKey } from '../lib/listening.ts'
+import type { ListeningController, ListeningStorage } from '../lib/listening.ts'
+import type { Narration, Shelf } from '../lib/schema.ts'
+import type { AudioLanguage } from '../lib/audio.ts'
+
+export type { ListeningController } from '../lib/listening.ts'
+export type UseListeningOptions = { manifest?: unknown; storage?: ListeningStorage; initialLanguage?: AudioLanguage }
+
+/** Mount once at the App root. Options are initial dependencies, not reactive preferences.
+ * Construction never creates media; ListeningPlayer supplies the sole stable audio ref.
+ */
+export function useListening(
+  rows: readonly Narration[], currentShelf: Shelf | 'all', options: UseListeningOptions = {},
+): ListeningController {
+  const [engine] = useState(() => createListeningEngine({
+    rows, manifest: options.manifest ?? staticManifest,
+    storage: options.storage ?? (() => window.localStorage),
+    pageHref: typeof window === 'undefined' ? undefined : window.location.href,
+    initialLanguage: options.initialLanguage,
+  }))
+  const snapshot = useSyncExternalStore(engine.subscribe, engine.getSnapshot, engine.getSnapshot)
+  useEffect(() => { engine.setRows(rows) }, [engine, rows])
+  useEffect(() => { engine.setShelf(currentShelf) }, [engine, currentShelf])
+  useEffect(() => {
+    const pagehide = () => engine.pause()
+    const visibility = () => { if (document.visibilityState === 'hidden') engine.checkpoint() }
+    const storage = (event: StorageEvent) => {
+      if (event.key === listeningKey || event.key === null) engine.checkStorage()
+    }
+    window.addEventListener('pagehide', pagehide)
+    document.addEventListener('visibilitychange', visibility)
+    window.addEventListener('storage', storage)
+    return () => {
+      window.removeEventListener('pagehide', pagehide)
+      document.removeEventListener('visibilitychange', visibility)
+      window.removeEventListener('storage', storage)
+      engine.pause()
+    }
+  }, [engine])
+  // Engine functions are allocated once, so refs and parent effects do not churn on timeupdate.
+  return { ...snapshot, ...engine }
+}

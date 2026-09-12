@@ -1,0 +1,18 @@
+{
+  "entryId": "life-farewell-sacred-lives-and-property",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "ابو بکرہ رضی اللہ عنہ ایک خطاب نقل کرتے ہیں جس میں ذوالحجہ اور قربانی کے دن کی نشان دہی ہوئی۔ سال کے حرمت والے مہینوں کا ذکر کرنے کے بعد نبی صلی اللہ علیہ وسلم نے لوگوں کی جان اور مال کی حرمت واضح فرمائی، ایک دوسرے کے خلاف ہو جانے سے خبردار کیا، اور حاضرین سے پیغام غیر حاضر لوگوں تک پہنچانے کو کہا۔ اس عبارت میں عزت و آبرو کا ذکر بھی تھا یا نہیں، ایک راوی نے اس بارے میں عدم یقین ظاہر کیا ہے۔",
+  "transcriptHash": "9203ee5621f4567f99534a504b5685ac24d56e3f5bbc8cabfb7ba11997ca1271",
+  "transcriptCharacters": 393,
+  "billableCharacters": 393,
+  "cacheKey": "7b219f521924d8017c9c9b7bd5844f0f91259865652c32852457f2eaf234b76e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/7b219f521924d8017c9c9b7bd5844f0f91259865652c32852457f2eaf234b76e.mp3",
+  "byteLength": 169776,
+  "sha256": "2d02e0e752bd51a0bdd0206153816f3c3c04ba7ea96c078be6b631078d867296",
+  "durationSeconds": 28.296
+}

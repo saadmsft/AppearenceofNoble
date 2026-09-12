@@ -1,0 +1,18 @@
+{
+  "entryId": "life-farewell-sacred-lives-and-property",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Bakra recounts an address that identifies Dhu al-Hijjah and the day of sacrifice. After speaking about the year's sacred months, the Prophet may Allah bless him and grant him peace emphasized the inviolability of people's lives and property, warned against turning on one another, and asked those present to carry the message to those absent. A transmitter expresses uncertainty about whether honour was also named in this wording.",
+  "transcriptHash": "ea84b90a5027b6f6cb02b8d6da9698d94172ee2bc9ae7bbafb2d6a124b3a5457",
+  "transcriptCharacters": 435,
+  "billableCharacters": 445,
+  "cacheKey": "557f50e2799d8f1a1dc99e26e574697cf7de18796cc2941b30835250cf2fcd93",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/557f50e2799d8f1a1dc99e26e574697cf7de18796cc2941b30835250cf2fcd93.mp3",
+  "byteLength": 145584,
+  "sha256": "d78cfc1a8c32e8a3bc6d03ba90d89623e63167796897131ab0d1b94da4c4e28b",
+  "durationSeconds": 24.264
+}

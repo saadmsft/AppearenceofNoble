@@ -1,23 +1,30 @@
 # The Noble Project · دی نوبل پروجیکٹ
 
 A respectful, source-first English and Urdu library about the reported
-appearance and character of Prophet Muhammad ﷺ. **No depictions, portraits,
+appearance, character and life of Prophet Muhammad ﷺ. **No depictions, portraits,
 historical voice reconstructions, or impersonation.**
 
 **Read online:** [English](https://saadmsft.github.io/AppearenceofNoble/?lang=en)
 · [اردو](https://saadmsft.github.io/AppearenceofNoble/?lang=ur)
 · [Search all narrations](https://saadmsft.github.io/AppearenceofNoble/?view=collection&shelf=all&lang=en)
+· [The Noble Life](https://saadmsft.github.io/AppearenceofNoble/?view=story&shelf=life&lang=en)
 
 ## What is included
 
 - **Story Edition** is the primary collection entry: scroll-paced passages and
-  one evolving ornamental stage for each Appearance or Character trail. Chapter
+  one evolving ornamental stage for each Appearance, Character or Life trail. Chapter
   jumps and previous/next controls use native scrolling, with evidence opened
   only on request. Reading view retains the conventional chapter layout.
-- A project home with separate **Appearance** and **Character** collections.
+- A project home with **Appearance**, **Character** and **Life** collections.
   Character introduces mercy, patience, humility, generosity, justice,
   forgiveness, honesty, and family/community. The shared reader and search keep
   the project collection distinct from the hadith-book source filter.
+- **The Noble Life** follows twelve selected milestones: early life/work,
+  first revelation, the Makkan years, Ta'if, Hijrah, the Madinan community,
+  Badr, Uhud, al-Hudaybiyyah, the return to Makkah, the Farewell Pilgrimage and
+  final days. Chronology and place notes have separate evidence and visible
+  qualifications. The ornamental place locator is schematic, not an exact
+  historical travel route.
 - A continuous thematic journey beginning **Complexion → Eyes**, then the
   remaining features. Each chapter has distinct abstract ornamental motion,
   concise bilingual highlights, and source-reference buttons. Narration cards
@@ -46,10 +53,22 @@ historical voice reconstructions, or impersonation.**
 - Continue reading, explicit read/unread marks, collection/chapter progress,
   and private plain-text notes with immediate browser-local saving.
 - Private JSON backup/restore with preview, merge or replace, conflict
-  disclosure, storage-failure handling and deletion confirmation.
-- Saved synthetic MP3 narration in Arabic, English and Urdu for all **95
-  entries**. The 285 language mappings reuse **281 unique MP3 files** where
-  Arabic source text is shared. Playback makes no Azure Speech requests.
+  disclosure, storage-failure handling and deletion confirmation. Version-2
+  backups include listening state; older version-1 backups remain importable.
+- Saved synthetic MP3 narration for all **111 entries** in Arabic, English and
+  Urdu: **333 language mappings and 329 unique MP3s**. The original 95 entries
+  and their 281 MP3s are preserved. The 48 new Life recordings use the same
+  approved voices and generate-once approach. Playback makes no Azure Speech
+  requests.
+- **Story Listening** queues a chapter's reports in one coordinated player:
+  play/pause, previous/next, seeking, language, speed and the current source.
+  It continues across reader close and same-collection views. A collection
+  switch pauses it; nothing starts automatically on page load.
+- Language/asset-aware **listening resume** and optional **Follow the story**.
+  Following is off by default, matches narrations rather than individual
+  words, and suspends for manual exploration. Listening never marks an entry
+  read. Reports without a corresponding story beat retain honest chapter
+  context rather than highlighting unrelated words.
 
 Chapter highlights in `web/src/lib/chapters.ts` are original, selective summaries
 of the existing corpus, with retained primary-source IDs. Every highlight must
@@ -67,10 +86,19 @@ The [Character audit](research/character-audit.json) covers **24 entries, 24
 unique primary references and 25 cited URLs**, with three entries per theme.
 All use the conventional sahih classification of Bukhari or Muslim.
 
+Life adds **16 new narrations**, plus one unchanged Character narration
+cross-listed for Badr, across **12 milestones**. Its source transcriptions have separate
+[Makkan](research/life-makkan-audit.json) and
+[Madinan](research/life-madinan-audit.json) evidence manifests. Milestones in
+`web/src/data/life-*.json` reference canonical narration IDs; an existing report
+can appear in Life without duplicating its note or read mark. Source discovery
+and progress counts include these cross-listed records consistently.
+
 There are no accounts, tracking services, advertisements, runtime AI requests,
 or third-party font requests. Bookmarks and preferences use local storage on the
-reader's device. External source links open Sunnah.com; project links open
-GitHub. Normal GitHub Pages hosting logs are outside this application's control.
+reader's device. Narration links open Sunnah.com; historical-context citations
+may open their separately identified source sites. Project links open GitHub.
+Normal GitHub Pages hosting logs are outside this application's control.
 
 ## Research boundaries
 
@@ -96,6 +124,14 @@ collection, not a new independent chain-by-chain judgement. Other assessments
 are attributed to the grading displayed by the linked source. Different
 assessments are preserved in the notes where relevant. Numbering follows the
 linked edition and can differ elsewhere.
+
+Life is an introductory selected-source trail, not an exhaustive Seerah or a
+reconstruction of every event. A narration's grading badge does not authenticate
+an editorial date, place or all surrounding historical claims. Chronology has
+its own cited basis, approximate/period/source-reported labels and limitations.
+Unreported dialogue, motives, precise dates and detailed travel routes are not
+invented. The timeline's order and schematic locator do not claim equal time
+intervals or geographic distances.
 
 The `arabic` field is an excerpt. **`arabicFull` preserves the complete Arabic
 report from the primary page**, including its isnad and any compiler or
@@ -152,6 +188,9 @@ SITE_URL=https://saadmsft.github.io/AppearenceofNoble/ pnpm test:e2e
 | `web/src/lib/library.ts` | Explicit imports of the published corpus |
 | `web/src/lib/catalog.ts` | Localized theme, collection, and grade labels |
 | `web/src/lib/chapters.ts` | Ordered chapters, bilingual highlights and their established source records |
+| `web/src/lib/life-schema.ts`, `life.ts` | Separate chronology validation, milestone references and cross-listing |
+| `web/src/data/life-*.json` | Reviewed bilingual Life milestones and chronology/place evidence |
+| `web/src/lib/listening.ts`, `web/src/hooks/useListening.ts` | Shared media lifecycle, queue and versioned local resume state |
 | `web/src/lib/i18n.ts` | Complete English/Urdu interface and methodology |
 | `web/src/lib/search.ts` | Cross-script search and intersecting filters |
 | `web/src/lib/route.ts` | Pages-safe query/hash navigation |
@@ -179,20 +218,35 @@ GitHub Pages without an SPA rewrite. Changing the repository name requires
 updating Vite's base, metadata URLs, repository links, and browser-test base URL.
 
 The default route opens the project home. `?view=story&shelf=appearance`
-and `?view=story&shelf=character` open the Story Edition trails. A `topic` and
+and `?view=story&shelf=character` open the existing Story Edition trails.
+`?view=story&shelf=life` opens the Life trail; the same shelf also supports
+`view=journey` and `view=collection`. A `topic` and
 zero-based `beat` preserve explicit passage navigation. The older
 `?view=journey&shelf=appearance` and `?view=journey&shelf=character` URLs retain
 the conventional reading journeys.
-`?view=collection&shelf=all` searches both collections. Earlier Appearance
+`?view=collection&shelf=all` searches all collections. Earlier Appearance
 journey/filter links without a shelf retain their original meaning. Narration
 links retain their view, shelf and topic; private notes never enter share URLs.
 
-Story Edition reuses the reviewed highlights and existing audio. It is thematic
-storytelling, not a reenacted historical timeline, and adds no dialogue, dates,
-physical depictions or new narration claims. Scrolling changes the visual
+Appearance and Character retain their thematic Story trails. Life uses a
+separately reviewed chronological sequence, not historical reenactments.
+All three use reviewed, source-backed highlights; there are no invented
+dialogues or physical depictions. Scrolling changes the visual
 position only, not explicit read marks. Motion pauses offscreen or behind the
 reader, and existing pause/reduced-motion preferences apply. Audio is never
 generated or automatically played by scrolling.
+
+A chapter starts playing only after a deliberate action. Reader and compact
+controls share one audio engine. Switching audio language pauses playback and
+uses that language's own saved position rather than aligning unlike transcripts.
+Queues stop at the end and never silently skip a failed asset or synthesize a
+replacement. Follow mode moves at narration boundaries when a matching passage
+exists; it does not provide word-level synchronization or steal keyboard focus.
+
+Resume saves current media time on pause, seek, track changes and lifecycle
+events, with bounded periodic checkpoints. A normally paused position is
+restored after media metadata loads. Browser/process crashes may lose time
+since the last checkpoint; uninterrupted background playback is platform-dependent.
 
 ## Correcting or extending the research
 
@@ -230,10 +284,19 @@ labels. English/Urdu audio is not a complete hadith translation. Voice samples
 require user approval before bulk generation, and all requests, including
 retries, count toward the approved synthesis allowance.
 
+Release 2.2 has a separately approved **US$10 before-tax maximum** for new Life
+audio using the existing resource and stock voice profile. Its private ledger
+is separate from the immutable Release 2.0 ledger. New release approval is not
+permission to reset a failed run, regenerate cached files or exceed a cap.
+
 Private notes, read/unread state and resume information stay in browser storage.
 They are not encrypted or automatically backed up; personal backup/restore is
 an explicit user action. Private notes must never enter the public research
-download, repository, or speech-generation inputs.
+download, repository, or speech-generation inputs. Listening data uses its own
+`noble-project.listening.v1` key; existing preferences and reading keys retain
+their formats. Personal backup version 2 includes listening state while version
+1 imports leave unrelated listening data alone. Imported audio identities are
+validated against the published catalog, not treated as arbitrary media URLs.
 
 The single-file HTML keeps offline text reading. Hosted MP3 playback still
 needs connectivity unless a reader separately saves the audio file.

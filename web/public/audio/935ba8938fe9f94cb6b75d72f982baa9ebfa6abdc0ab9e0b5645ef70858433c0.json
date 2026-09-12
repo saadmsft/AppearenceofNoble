@@ -1,0 +1,18 @@
+{
+  "entryId": "life-arrival-in-madinah-bara",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت براء رضی اللہ عنہ یاد کرتے ہیں کہ نبی کریم صلی اللہ علیہ وسلم سے پہلے مصعب بن عمیر اور ابن ام مکتوم رضی اللہ عنہما آئے اور لوگوں کو قرآن پڑھاتے تھے۔ پھر دوسرے صحابہ پہنچے۔ نبی کریم صلی اللہ علیہ وسلم کی مدینہ آمد پر لوگوں کی غیر معمولی خوشی انہیں یاد رہی۔ وہ بتاتے ہیں کہ اس آمد سے پہلے خود سورۂ اعلیٰ اور مفصل کی دوسری سورتیں پڑھ چکے تھے۔",
+  "transcriptHash": "c386151724df545db08081c0a6de89c2ae1ef3c9d2ebed15bf2f7bafb87359a8",
+  "transcriptCharacters": 344,
+  "billableCharacters": 344,
+  "cacheKey": "935ba8938fe9f94cb6b75d72f982baa9ebfa6abdc0ab9e0b5645ef70858433c0",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/935ba8938fe9f94cb6b75d72f982baa9ebfa6abdc0ab9e0b5645ef70858433c0.mp3",
+  "byteLength": 160128,
+  "sha256": "bfd1c36bb03d2b93ce46be538af26a47888e203c7a3d0e436344943aac09e081",
+  "durationSeconds": 26.688
+}

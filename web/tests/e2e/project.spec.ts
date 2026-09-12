@@ -1,9 +1,9 @@
 import { expect, test } from '@playwright/test'
 
-test('the project home opens both collections without revealing narration cards', async ({ page }) => {
+test('the project home retains Appearance and Character beside Life without revealing narration cards', async ({ page }) => {
   await page.goto('./?lang=en')
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Closer through words. Deeper through understanding.')
-  await expect(page.locator('.project-collection')).toHaveCount(2)
+  await expect(page.locator('.project-collection')).toHaveCount(3)
   await expect(page.locator('.narration-card')).toHaveCount(0)
   await page.getByRole('button', { name: 'Enter the Character story', exact: true }).click()
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Character, in remembered encounters.')
@@ -21,7 +21,7 @@ test('project collection and hadith-book filters are independent', async ({ page
   await page.goto('./?lang=en&view=collection&shelf=all')
   await page.getByRole('button', { name: 'The Noble Character', exact: true }).click()
   await expect(page.locator('.narration-card').first()).toHaveAttribute('data-entry', /^character-/)
-  await page.getByRole('combobox', { name: 'Collection', exact: true }).selectOption('bukhari')
+  await page.getByRole('combobox', { name: 'Source book', exact: true }).selectOption('bukhari')
   for (const source of await page.locator('.narration-card .source-name').allTextContents()) expect(source).toContain('Sahih al-Bukhari')
   expect(new URL(page.url()).searchParams.get('shelf')).toBe('character')
   expect(new URL(page.url()).searchParams.get('source')).toBe('bukhari')

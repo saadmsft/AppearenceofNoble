@@ -1,0 +1,18 @@
+{
+  "entryId": "life-shepherding-for-makkah",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Huraira reports a conversation about prophets tending sheep. When the companions asked whether the Prophet himself had done this work, he recalled tending sheep for the people of Makkah for qirats. This brief recollection gives a concrete glimpse of his earlier work without specifying his age or the year.",
+  "transcriptHash": "ca9f7b5b77391c90e095a82772523b2fed6fa679fc3347b743a197ad61c1a9b0",
+  "transcriptCharacters": 310,
+  "billableCharacters": 310,
+  "cacheKey": "71ff73e857316c1327580011b0d87c6c07fb4daf4590d1c944841257440fcac2",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/71ff73e857316c1327580011b0d87c6c07fb4daf4590d1c944841257440fcac2.mp3",
+  "byteLength": 108576,
+  "sha256": "b6f9f7367db4910a3e2153c7535f709f04cad269d6624c15a935cda6942677f1",
+  "durationSeconds": 18.096
+}

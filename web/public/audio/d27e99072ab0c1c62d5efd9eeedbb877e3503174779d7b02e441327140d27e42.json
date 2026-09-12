@@ -1,0 +1,18 @@
+{
+  "entryId": "life-first-revelation-hira",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha's account begins with truthful dreams and periods of worship in the cave of Hira. There the angel brought the command to recite. Returning shaken, the Prophet sought covering and told Khadija what had happened. She reassured him by recalling his care for relatives, guests and people in difficulty, then took him to Waraqa. Waraqa connected the encounter with the revelation given to Musa and warned of opposition.",
+  "transcriptHash": "53daa4058edb041dc1ff2e196bcbcbc27cca898276ed7aa124572b5edf7bd80d",
+  "transcriptCharacters": 420,
+  "billableCharacters": 425,
+  "cacheKey": "d27e99072ab0c1c62d5efd9eeedbb877e3503174779d7b02e441327140d27e42",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/d27e99072ab0c1c62d5efd9eeedbb877e3503174779d7b02e441327140d27e42.mp3",
+  "byteLength": 153360,
+  "sha256": "54d94a5e7388ffbbb1dda5bc64135e00345155ad85d3b9c03ce82858633b1d30",
+  "durationSeconds": 25.56
+}

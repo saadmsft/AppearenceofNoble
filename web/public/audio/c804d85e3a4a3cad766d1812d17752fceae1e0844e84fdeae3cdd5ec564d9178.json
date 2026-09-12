@@ -1,0 +1,18 @@
+{
+  "entryId": "life-sharing-work-and-dates",
+  "language": "ar",
+  "voice": "ar-SA-HamedNeural",
+  "kind": "full-report",
+  "synthetic": true,
+  "transcript": "حَدَّثَنَا الصَّلْتُ بْنُ مُحَمَّدٍ أَبُو هَمَّامٍ، قَالَ سَمِعْتُ الْمُغِيرَةَ بْنَ عَبْدِ الرَّحْمَنِ، حَدَّثَنَا أَبُو الزِّنَادِ، عَنِ الأَعْرَجِ، عَنْ أَبِي هُرَيْرَةَ ـ رضى الله عنه ـ قَالَ قَالَتِ الأَنْصَارُ اقْسِمْ بَيْنَنَا وَبَيْنَهُمُ النَّخْلَ. قَالَ \" لاَ \". قَالَ يَكْفُونَا الْمَئُونَةَ وَتُشْرِكُونَا فِي التَّمْرِ. قَالُوا سَمِعْنَا وَأَطَعْنَا.",
+  "transcriptHash": "62a8317ad88580174c3ae0e3e9cfbad2af74f3b7229c3f7920ea1e9022a612d3",
+  "transcriptCharacters": 363,
+  "billableCharacters": 373,
+  "cacheKey": "c804d85e3a4a3cad766d1812d17752fceae1e0844e84fdeae3cdd5ec564d9178",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c804d85e3a4a3cad766d1812d17752fceae1e0844e84fdeae3cdd5ec564d9178.mp3",
+  "byteLength": 142272,
+  "sha256": "62d3ffae61bd2b36dd9239f5570109e7d6c00234e9db3d13647e53e8ac033d14",
+  "durationSeconds": 23.712
+}

@@ -1,0 +1,18 @@
+{
+  "entryId": "life-arrival-in-madinah-bara",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Al-Bara recalls that Musab ibn Umayr and Ibn Umm Maktum arrived before the Prophet and taught people the Quran. Other companions followed. He remembers the people's exceptional joy when the Prophet arrived in Madinah, and says that he himself had already learned Surat al-Ala among other short surahs before that arrival.",
+  "transcriptHash": "57959edf2166b9a1bb1253a9a5d3496998abead9502cdccb3123f6ca0c927a46",
+  "transcriptCharacters": 321,
+  "billableCharacters": 326,
+  "cacheKey": "83036f0ed7762c7f1b373531539cf402be9de163f152e3bbf036c64def6d0c94",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/83036f0ed7762c7f1b373531539cf402be9de163f152e3bbf036c64def6d0c94.mp3",
+  "byteLength": 111888,
+  "sha256": "6b0d25143447cd653d9eb076f85e5b39392529fbdd67d696f8c563620a30305a",
+  "durationSeconds": 18.648
+}

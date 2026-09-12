@@ -32,6 +32,14 @@ export function storySceneIndex(scenes: readonly StoryScene[], topic: Topic | 'a
   return candidates[Math.max(0, Math.min(candidates.length - 1, requested))].index
 }
 
+export function storyTargetForNarration(chapters: readonly Chapter[], topic: Topic | 'all', entryId: string) {
+  const contains = (chapter: Chapter) => chapter.reports.some((row) => row.id === entryId)
+  const chapter = chapters.find((item) => item.topic === topic && contains(item)) ?? chapters.find(contains)
+  if (!chapter) return null
+  const beat = chapter.highlights.findIndex((highlight) => highlight.sourceId === entryId)
+  return { topic: chapter.topic, beat: Math.max(0, beat), matched: beat >= 0 }
+}
+
 export function storyPosition(starts: readonly number[], end: number, anchor: number) {
   if (!starts.length) return { index: 0, local: 0, progress: 0 }
   let index = 0

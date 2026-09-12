@@ -1,0 +1,18 @@
+{
+  "entryId": "life-call-at-safa",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابن عباس رضی اللہ عنہما بیان کرتے ہیں کہ قریبی رشتہ داروں کو خبردار کرنے کا حکم آنے پر نبی کریم صلی اللہ علیہ وسلم نے صفا سے قریش کے خاندانوں کو جمع کیا۔ آپ صلی اللہ علیہ وسلم نے پوچھا کہ اگر وہ آنے والے سواروں سے خبردار کریں تو کیا لوگ یقین کریں گے۔ لوگوں نے آپ صلی اللہ علیہ وسلم کی سچائی کی گواہی دی، پھر آپ صلی اللہ علیہ وسلم نے عذاب سے خبردار فرمایا۔ روایت میں ابو لہب کا مخالفانہ جواب اور اس کے بارے میں نازل ہونے والی آیات بھی مذکور ہیں۔",
+  "transcriptHash": "2b6f364def360392c5d11850d7e65996c4c320eba5e870f2e0da2692c519bab4",
+  "transcriptCharacters": 449,
+  "billableCharacters": 449,
+  "cacheKey": "dc6321d0463d2dba6b71f3e30f377cb818c1861db4944b4bf728d754a9fa20ec",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/dc6321d0463d2dba6b71f3e30f377cb818c1861db4944b4bf728d754a9fa20ec.mp3",
+  "byteLength": 202608,
+  "sha256": "c376c14d0d1d6ef1b0f78dbf74261758ddc8cb9f4f34909f62b0ebce1524f4f8",
+  "durationSeconds": 33.768
+}

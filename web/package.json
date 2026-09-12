@@ -1,10 +1,12 @@
 {
   "name": "the-noble-project",
   "private": true,
-  "version": "2.1.0",
+  "version": "2.2.0",
   "type": "module",
   "packageManager": "pnpm@10.33.0",
-  "engines": { "node": ">=24" },
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && node scripts/licenses.mjs && vite build && node scripts/inline-artifact.mjs",

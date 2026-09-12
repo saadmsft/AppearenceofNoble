@@ -34,3 +34,76 @@
 .audio-about .audio-scope { font-size: 13px; font-weight: 400; }
 .audio-transcript [lang="ar"] { font-family: var(--cp-font-arabic); font-size: 1.3rem; line-height: 2; }
 .audio-player[lang="ur"], .audio-transcript [lang="ur"] { font-family: var(--cp-font-urdu); line-height: 2.3; }
+
+/* The shared dock extends the manuscript controls; its audio node never moves. */
+.audio-player[hidden] { display: none; }
+.audio-player button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--cp-border);
+  border-radius: 4px;
+  background: var(--cp-bg-elevated);
+  color: var(--cp-text);
+  font: inherit;
+  cursor: pointer;
+}
+.audio-player button:hover:not(:disabled) { border-color: var(--cp-accent); color: var(--cp-accent); }
+.audio-player button:disabled { color: var(--cp-text-soft); cursor: not-allowed; }
+.audio-player :is(button, input, select, a, summary):focus-visible {
+  outline: 2px solid var(--cp-accent);
+  outline-offset: 3px;
+}
+.audio-player summary, .audio-player .audio-download { min-height: 44px; align-content: center; }
+.listening-player {
+  position: fixed;
+  z-index: 40;
+  inset-inline: 16px;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  width: min(760px, calc(100% - 32px));
+  max-height: min(65dvh, 640px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin-inline: auto;
+  padding: 12px 16px;
+  border-top: 2px solid var(--cp-accent);
+}
+.listening-controls { display: grid; gap: 8px; min-width: 0; }
+.listening-controls p { margin: 0; }
+.listening-heading { display: flex; gap: 12px; align-items: start; justify-content: space-between; }
+.listening-source { min-width: 0; overflow-wrap: anywhere; }
+.listening-chapter { color: var(--cp-text-soft); font-size: 0.8125rem; }
+.listening-current, .audio-player .listening-source-button { color: var(--cp-accent); font-weight: 600; }
+.audio-player .listening-source-button { padding: 4px 0; border: 0; background: none; text-align: start; }
+.audio-player .listening-dismiss { flex-shrink: 0; font-size: 1.5rem; line-height: 1; }
+.listening-transport { display: flex; align-items: center; justify-content: center; gap: 8px; }
+.listening-transport button { flex: 1; }
+.audio-player .listening-play { border-color: var(--cp-accent); font-weight: 600; }
+.listening-timeline { display: flex; gap: 8px; align-items: center; font-variant-numeric: tabular-nums; font-size: 0.8125rem; }
+.listening-timeline input { flex: 1; min-width: 0; height: 44px; accent-color: var(--cp-accent); cursor: pointer; }
+.listening-options { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: end; }
+.listening-options :is(.audio-language, .audio-rate) { display: grid; gap: 4px; font-size: 0.8125rem; }
+.listening-follow { display: flex; align-items: center; gap: 8px; min-height: 44px; font-size: 0.8125rem; }
+.listening-follow input { width: 20px; height: 20px; accent-color: var(--cp-accent); flex-shrink: 0; }
+.listening-controls .audio-transcript, .listening-controls .audio-about { padding-top: 0; }
+.listening-controls .audio-transcript p { margin-block-start: 12px; }
+.listening-controls .audio-download { font-size: 0.8125rem; }
+.listening-resources { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: start; border-top: 1px solid var(--cp-border); }
+.listening-resources > * { flex: 1; min-width: 0; }
+.listening-resources details { border: 0; }
+.listening-resources summary { font-size: 0.8125rem; }
+.listening-resources details[open] { flex-basis: 100%; order: 1; }
+.audio-caution { color: var(--cp-danger); font-size: 0.875rem; }
+.listening-entry-action { display: grid; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--cp-border); }
+@media (max-width: 540px) {
+  .listening-player {
+    inset-inline: 8px;
+    width: calc(100% - 16px);
+    bottom: max(8px, env(safe-area-inset-bottom));
+    padding: 8px 12px;
+    max-height: 56dvh;
+  }
+  .listening-transport button { font-size: 0.8125rem; padding-inline: 6px; }
+  .listening-options .audio-language { flex: 1; min-width: 0; }
+  .listening-options .audio-language select { width: 100%; }
+}

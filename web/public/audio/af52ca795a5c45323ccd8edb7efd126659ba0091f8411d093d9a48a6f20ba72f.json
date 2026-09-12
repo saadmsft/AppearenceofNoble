@@ -1,0 +1,18 @@
+{
+  "entryId": "life-final-days-curtain-and-prayer",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ پیر کی ایک نمازِ فجر یاد کرتے ہیں جس کی امامت ابو بکر رضی اللہ عنہ کر رہے تھے۔ نبی صلی اللہ علیہ وسلم نے عائشہ رضی اللہ عنہا کے حجرے کا پردہ اٹھایا، صفوں میں کھڑے نمازیوں کو دیکھا اور مسکرائے۔ ابو بکر رضی اللہ عنہ یہ سمجھ کر پیچھے ہٹنے لگے کہ آپ صلی اللہ علیہ وسلم نماز کے لیے تشریف لائیں گے۔ آپ صلی اللہ علیہ وسلم نے انہیں نماز پوری کرنے کا اشارہ کیا، پھر حجرے میں واپس ہو کر پردہ گرا دیا۔",
+  "transcriptHash": "ff7ae58c2dc1798fd99d82205c6409e55270c603627e4634ee4b00a66c011128",
+  "transcriptCharacters": 407,
+  "billableCharacters": 407,
+  "cacheKey": "af52ca795a5c45323ccd8edb7efd126659ba0091f8411d093d9a48a6f20ba72f",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/af52ca795a5c45323ccd8edb7efd126659ba0091f8411d093d9a48a6f20ba72f.mp3",
+  "byteLength": 186624,
+  "sha256": "d54931c826eaff96d205dacdfe050d960ce1d3add2e78e5fad27ece36bef6b0c",
+  "durationSeconds": 31.104
+}

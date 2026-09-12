@@ -1,0 +1,18 @@
+{
+  "entryId": "life-abu-bakr-defends-at-kaaba",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Asked by Urwa about a severe attack on the Prophet, Abdullah ibn Amr recalled an incident while the Prophet was praying in the Hijr of the Kaaba. Uqba ibn Abi Muayt attacked him with a garment around his neck. Abu Bakr intervened, pushed the attacker away and challenged the attempt to kill someone for declaring Allah his Lord.",
+  "transcriptHash": "b8cd525859c1c9117f5ceffbc20a46828b4a2a78d7347d8781340518a16f648d",
+  "transcriptCharacters": 328,
+  "billableCharacters": 328,
+  "cacheKey": "6f9f7de22ed43680401eac9e77d9fc150287df9ebed2599785a1debd2a790d6a",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/6f9f7de22ed43680401eac9e77d9fc150287df9ebed2599785a1debd2a790d6a.mp3",
+  "byteLength": 116208,
+  "sha256": "ce9039220ed16cf28e4c5a6ef136c83a6908d1d862756dbff2fd82b2bf0982e4",
+  "durationSeconds": 19.368
+}

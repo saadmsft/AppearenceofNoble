@@ -1,0 +1,250 @@
+[
+  {
+    "topic": "life-badr",
+    "title": { "en": "Badr: keeping a covenant", "ur": "بدر: عہد کی پاس داری" },
+    "era": { "en": "Madinan period", "ur": "مدنی دور" },
+    "dateLabel": { "en": "Around 624 CE", "ur": "تقریباً 624 عیسوی" },
+    "datePrecision": "approximate",
+    "dateNote": {
+      "en": "The broad year comes from Britannica's account of the traditional biography. Hudhaifa's report names Badr but gives no calendar date. The year is historical framing, not part of the hadith's grading.",
+      "ur": "عمومی سال بریٹانیکا کے روایتی سیرت کے بیان سے لیا گیا ہے۔ حذیفہ رضی اللہ عنہ کی روایت بدر کا نام لیتی ہے، مگر تقویمی تاریخ نہیں دیتی۔ سال تاریخی تعارف ہے، حدیث کی درجہ بندی کا حصہ نہیں۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+        "title": { "en": "Britannica: biography according to the Islamic tradition", "ur": "بریٹانیکا: اسلامی روایت کے مطابق سیرت" },
+        "supports": { "en": "Places the encounter at Badr in 624 CE; used only for the broad year.", "ur": "بدر کے مقابلے کو 624 عیسوی میں رکھتا ہے؛ یہاں صرف عمومی سال کے لیے استعمال ہوا ہے۔" }
+      },
+      {
+        "url": "https://sunnah.com/muslim:1787",
+        "title": { "en": "Sahih Muslim 1787: Hudhaifa's covenant", "ur": "صحیح مسلم 1787: حذیفہ رضی اللہ عنہ کا عہد" },
+        "supports": { "en": "Hudhaifa explicitly connects his absence from Badr with the undertaking to return to Madinah without joining the fighting.", "ur": "حذیفہ رضی اللہ عنہ بدر میں اپنی عدم شرکت کو اس عہد سے جوڑتے ہیں کہ وہ لڑائی میں شامل ہوئے بغیر مدینہ لوٹیں گے۔" }
+      }
+    ],
+    "places": ["badr", "madinah"],
+    "placeNote": {
+      "en": "Badr identifies the episode; Madinah is the destination named in the undertaking. The report does not locate the detention or meeting precisely. The locator is schematic, not a reconstructed route.",
+      "ur": "بدر واقعے کی پہچان ہے؛ مدینہ وہ منزل ہے جس کا عہد میں ذکر ہے۔ روایت حراست یا ملاقات کی درست جگہ نہیں بتاتی۔ مقام نما محض خاکہ ہے، ازسرنو متعین کردہ راستہ نہیں۔"
+    },
+    "narrationIds": ["character-honesty-upholding-a-covenant"],
+    "highlights": [
+      {
+        "sourceId": "character-honesty-upholding-a-covenant",
+        "text": { "en": "Hudhaifa explains his absence from Badr through a promise made by him and his father.", "ur": "حذیفہ رضی اللہ عنہ بدر میں اپنی عدم شرکت کی وجہ اپنے اور اپنے والد کے کیے ہوئے عہد کو بتاتے ہیں۔" }
+      },
+      {
+        "sourceId": "character-honesty-upholding-a-covenant",
+        "text": { "en": "The Prophet ﷺ directed them to honour the undertaking, saying that they would seek Allah's help.", "ur": "نبی ﷺ نے انہیں عہد پورا کرنے کی ہدایت دی اور اللہ سے مدد مانگنے کا ذکر فرمایا۔" }
+      }
+    ]
+  },
+  {
+    "topic": "life-uhud",
+    "title": { "en": "Uhud: protection and service", "ur": "احد: حفاظت اور خدمت" },
+    "era": { "en": "Madinan period", "ur": "مدنی دور" },
+    "dateLabel": { "en": "Around 625 CE", "ur": "تقریباً 625 عیسوی" },
+    "datePrecision": "approximate",
+    "dateNote": {
+      "en": "Britannica places Uhud in 625 CE. Anas identifies the day of Uhud but gives no numeric year. No exact Gregorian day or conversion from an AH date is claimed.",
+      "ur": "بریٹانیکا احد کو 625 عیسوی میں رکھتا ہے۔ انس رضی اللہ عنہ احد کے دن کی پہچان کراتے ہیں، مگر عددی سال نہیں دیتے۔ کسی درست عیسوی دن یا ہجری تاریخ کی تبدیلی کا دعویٰ نہیں کیا گیا۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+        "title": { "en": "Britannica: biography according to the Islamic tradition", "ur": "بریٹانیکا: اسلامی روایت کے مطابق سیرت" },
+        "supports": { "en": "Identifies the Battle of Uhud with 625 CE; used for broad chronology only.", "ur": "غزوۂ احد کے لیے 625 عیسوی کا سال بیان کرتا ہے؛ صرف عمومی زمانی ترتیب کے لیے استعمال ہوا ہے۔" }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:4064",
+        "title": { "en": "Sahih al-Bukhari 4064: Anas at Uhud", "ur": "صحیح بخاری 4064: احد کے بارے میں انس رضی اللہ عنہ کا بیان" },
+        "supports": { "en": "Explicitly places Abu Talha's protection and the women's water-carrying on the day of Uhud.", "ur": "ابو طلحہ رضی اللہ عنہ کی حفاظت اور خواتین کے پانی پہنچانے کو صراحت سے احد کے دن کا واقعہ بتاتا ہے۔" }
+      }
+    ],
+    "places": ["uhud"],
+    "placeNote": {
+      "en": "Uhud is the report's named setting. The locator does not identify anyone's exact position, a battlefield boundary, or a route.",
+      "ur": "احد روایت میں مذکور مقام ہے۔ مقام نما کسی شخص کی درست جگہ، میدانِ جنگ کی حد یا راستے کی نشان دہی نہیں کرتا۔"
+    },
+    "narrationIds": ["life-uhud-shielding-and-carrying-water"],
+    "highlights": [
+      {
+        "sourceId": "life-uhud-shielding-and-carrying-water",
+        "text": { "en": "Anas recalls Abu Talha shielding the Prophet ﷺ at Uhud.", "ur": "انس رضی اللہ عنہ احد میں ابو طلحہ رضی اللہ عنہ کا نبی ﷺ کو ڈھال کی آڑ دینا یاد کرتے ہیں۔" }
+      },
+      {
+        "sourceId": "life-uhud-shielding-and-carrying-water",
+        "text": { "en": "Aisha and Umm Sulaim repeatedly brought water for the people.", "ur": "عائشہ اور ام سلیم رضی اللہ عنہما بار بار لوگوں کے لیے پانی لاتیں۔" }
+      }
+    ]
+  },
+  {
+    "topic": "life-hudaybiyyah",
+    "title": { "en": "Al-Hudaybiyyah: an agreement", "ur": "حدیبیہ: ایک معاہدہ" },
+    "era": { "en": "Madinan period", "ur": "مدنی دور" },
+    "dateLabel": { "en": "Around 628 CE", "ur": "تقریباً 628 عیسوی" },
+    "datePrecision": "approximate",
+    "dateNote": {
+      "en": "The historical overview places the negotiation in 628 CE and the permitted pilgrimage in the following year. This distinction is not compressed into a single day. The hadith itself supplies no calendar year.",
+      "ur": "تاریخی جائزہ مذاکرات کو 628 عیسوی میں اور اجازت کے تحت ہونے والے سفرِ زیارت کو اگلے سال میں رکھتا ہے۔ ان دونوں کو ایک ہی دن کا واقعہ نہیں بنایا گیا۔ حدیث خود تقویمی سال نہیں دیتی۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+        "title": { "en": "Britannica: biography according to the Islamic tradition", "ur": "بریٹانیکا: اسلامی روایت کے مطابق سیرت" },
+        "supports": { "en": "Places the halt and agreement at al-Hudaybiyyah in 628 CE and the permitted visit to Makkah in 629.", "ur": "حدیبیہ میں قیام اور معاہدے کو 628 عیسوی میں، اور مکہ کے اجازت یافتہ دورے کو 629 میں رکھتا ہے۔" }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:2698",
+        "title": { "en": "Sahih al-Bukhari 2698: writing the agreement", "ur": "صحیح بخاری 2698: معاہدے کی تحریر" },
+        "supports": { "en": "Names al-Hudaybiyyah and records the writing dispute and the agreed three-day entry, without a year.", "ur": "حدیبیہ کا نام لیتا ہے اور تحریر پر اختلاف اور طے شدہ تین دن کے داخلے کا ذکر کرتا ہے، سال نہیں بتاتا۔" }
+      }
+    ],
+    "places": ["hudaybiyyah", "makkah"],
+    "placeNote": {
+      "en": "Al-Hudaybiyyah marks the agreement's setting, and Makkah the destination of the permitted visit. These schematic labels are not exact meeting coordinates or a travel route.",
+      "ur": "حدیبیہ معاہدے کے مقام اور مکہ اجازت یافتہ دورے کی منزل کو ظاہر کرتا ہے۔ یہ خاکے کے نام ہیں، ملاقات کے درست مختصات یا سفر کا راستہ نہیں۔"
+    },
+    "narrationIds": ["life-hudaybiyyah-writing-the-agreement"],
+    "highlights": [
+      {
+        "sourceId": "life-hudaybiyyah-writing-the-agreement",
+        "text": { "en": "Ali wrote the agreement; the Prophet ﷺ himself removed the disputed designation.", "ur": "علی رضی اللہ عنہ نے معاہدہ لکھا؛ جس لقب پر اختلاف ہوا اسے نبی ﷺ نے خود مٹا دیا۔" }
+      },
+      {
+        "sourceId": "life-hudaybiyyah-writing-the-agreement",
+        "text": { "en": "The recorded terms allowed a three-day visit, with weapons kept in their cases.", "ur": "بیان کردہ شرائط میں تین دن کا دورہ اور ہتھیاروں کو غلافوں میں رکھنا شامل تھا۔" }
+      }
+    ]
+  },
+  {
+    "topic": "life-makkah-return",
+    "title": { "en": "The return to Makkah", "ur": "مکہ واپسی" },
+    "era": { "en": "Madinan period", "ur": "مدنی دور" },
+    "dateLabel": { "en": "Around 630 CE", "ur": "تقریباً 630 عیسوی" },
+    "datePrecision": "approximate",
+    "dateNote": {
+      "en": "This milestone concerns the conquest entry, not the earlier visit permitted by the treaty. Britannica supplies the broad year 630 CE. The primary reports identify the conquest occasion without an exact calendar date.",
+      "ur": "یہ مرحلہ فتح کے موقع پر داخلے سے متعلق ہے، معاہدے کے تحت ہونے والے پہلے دورے سے نہیں۔ بریٹانیکا عمومی سال 630 عیسوی فراہم کرتا ہے۔ بنیادی روایتیں فتح کے موقع کی پہچان دیتی ہیں، درست تقویمی تاریخ نہیں۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+        "title": { "en": "Britannica: biography according to the Islamic tradition", "ur": "بریٹانیکا: اسلامی روایت کے مطابق سیرت" },
+        "supports": { "en": "Places the conquest of Makkah in 630 CE, after the treaty and the subsequent pilgrimage visit.", "ur": "معاہدے اور اس کے بعد کے سفرِ زیارت کے بعد فتح مکہ کو 630 عیسوی میں رکھتا ہے۔" }
+      },
+      {
+        "url": "https://sunnah.com/muslim:1358a",
+        "title": { "en": "Sahih Muslim 1358a: Jabir's entry report", "ur": "صحیح مسلم 1358a: داخلے کا جابر رضی اللہ عنہ کا بیان" },
+        "supports": { "en": "Qutayba's transmitted wording explicitly identifies the day of the conquest of Makkah; no numeric year is stated.", "ur": "قتیبہ کے منقول الفاظ صراحت سے فتح مکہ کے دن کی پہچان دیتے ہیں؛ عددی سال بیان نہیں ہوا۔" }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:4281",
+        "title": { "en": "Sahih al-Bukhari 4281: recitation at the conquest", "ur": "صحیح بخاری 4281: فتح کے موقع پر تلاوت" },
+        "supports": { "en": "Explicitly places the witnessed recitation of Surah al-Fath on the conquest day.", "ur": "سورۃ الفتح کی مشاہدہ کردہ تلاوت کو صراحت سے فتح کے دن کا واقعہ بتاتا ہے۔" }
+      }
+    ],
+    "places": ["makkah"],
+    "placeNote": {
+      "en": "Makkah is named in both reports. Neither supplies an exact route or the precise spot of the observations; the locator does not attempt either.",
+      "ur": "دونوں روایتوں میں مکہ کا نام ہے۔ کوئی روایت درست راستہ یا مشاہدے کی خاص جگہ نہیں بتاتی؛ مقام نما بھی یہ دعویٰ نہیں کرتا۔"
+    },
+    "narrationIds": ["life-makkah-entry-jabir-black-turban", "life-makkah-reciting-surah-al-fath"],
+    "highlights": [
+      {
+        "sourceId": "life-makkah-entry-jabir-black-turban",
+        "text": { "en": "Jabir's report describes entry into Makkah in a black turban; Qutayba's wording names the conquest day.", "ur": "جابر رضی اللہ عنہ کی روایت مکہ میں سیاہ عمامے کے ساتھ داخلہ بیان کرتی ہے؛ قتیبہ کے الفاظ فتح کے دن کا نام لیتے ہیں۔" }
+      },
+      {
+        "sourceId": "life-makkah-reciting-surah-al-fath",
+        "text": { "en": "Ibn Mughaffal saw the Prophet ﷺ reciting Surah al-Fath on his mount that day.", "ur": "ابن مغفل رضی اللہ عنہ نے اس دن نبی ﷺ کو سواری پر سورۃ الفتح پڑھتے دیکھا۔" }
+      }
+    ]
+  },
+  {
+    "topic": "life-farewell",
+    "title": { "en": "The Farewell Pilgrimage", "ur": "حجۃ الوداع" },
+    "era": { "en": "Late Madinan period", "ur": "مدنی دور کا آخری حصہ" },
+    "dateLabel": { "en": "Around 632 CE", "ur": "تقریباً 632 عیسوی" },
+    "datePrecision": "approximate",
+    "dateNote": {
+      "en": "Britannica dates the Farewell Pilgrimage to 632 CE. Bukhari's chapter identifies this setting, while the report names Dhu al-Hijjah and the day of sacrifice. No exact Gregorian conversion is supplied.",
+      "ur": "بریٹانیکا حجۃ الوداع کو 632 عیسوی میں رکھتا ہے۔ بخاری کے باب سے اس موقع کی پہچان ہوتی ہے، جبکہ روایت ذوالحجہ اور قربانی کے دن کا نام لیتی ہے۔ عیسوی تقویم میں کسی درست دن کی تبدیلی نہیں دی گئی۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+        "title": { "en": "Britannica: biography according to the Islamic tradition", "ur": "بریٹانیکا: اسلامی روایت کے مطابق سیرت" },
+        "supports": { "en": "Places the Prophet's Farewell Pilgrimage to Makkah in 632 CE.", "ur": "نبی ﷺ کے حجۃ الوداع کے لیے مکہ کے سفر کو 632 عیسوی میں رکھتا ہے۔" }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:4406",
+        "title": { "en": "Sahih al-Bukhari 4406: Farewell Pilgrimage chapter", "ur": "صحیح بخاری 4406: حجۃ الوداع کا باب" },
+        "supports": { "en": "The chapter names the Farewell Pilgrimage; the report identifies the month and sacrifice day but does not give the year.", "ur": "باب حجۃ الوداع کا نام لیتا ہے؛ روایت مہینے اور قربانی کے دن کی پہچان دیتی ہے، سال نہیں بتاتی۔" }
+      }
+    ],
+    "places": ["makkah"],
+    "placeNote": {
+      "en": "Makkah labels the broad pilgrimage setting. The report refers to the sacred town; this schematic locator does not pinpoint a sermon site or reconstruct movements among the pilgrimage sites.",
+      "ur": "مکہ سفرِ حج کے عمومی مقام کو ظاہر کرتا ہے۔ روایت حرمت والے شہر کا حوالہ دیتی ہے؛ یہ خاکہ خطاب کی درست جگہ یا حج کے مقامات کے درمیان نقل و حرکت متعین نہیں کرتا۔"
+    },
+    "narrationIds": ["life-farewell-sacred-lives-and-property"],
+    "highlights": [
+      {
+        "sourceId": "life-farewell-sacred-lives-and-property",
+        "text": { "en": "The address emphasized the sanctity of lives and property.", "ur": "خطاب میں جان و مال کی حرمت پر زور دیا گیا۔" }
+      },
+      {
+        "sourceId": "life-farewell-sacred-lives-and-property",
+        "text": { "en": "Those present were asked to carry the message to those absent.", "ur": "حاضر لوگوں سے کہا گیا کہ پیغام غیر حاضر لوگوں تک پہنچائیں۔" }
+      }
+    ]
+  },
+  {
+    "topic": "life-final-days",
+    "title": { "en": "The final days", "ur": "آخری ایام" },
+    "era": { "en": "Late Madinan period", "ur": "مدنی دور کا آخری حصہ" },
+    "dateLabel": { "en": "Around 632 CE", "ur": "تقریباً 632 عیسوی" },
+    "datePrecision": "approximate",
+    "dateNote": {
+      "en": "Britannica places the Prophet's death in Madinah in 632 CE. Anas's selected report names a Monday prayer, and Aisha describes his passing; neither gives a complete calendar date. No exact day of the month or duration of illness is asserted.",
+      "ur": "بریٹانیکا مدینہ میں نبی ﷺ کی وفات کو 632 عیسوی میں رکھتا ہے۔ انس رضی اللہ عنہ کی منتخب روایت پیر کی نماز کا نام لیتی ہے اور عائشہ رضی اللہ عنہا وفات بیان کرتی ہیں؛ کوئی بھی مکمل تقویمی تاریخ نہیں دیتی۔ مہینے کے کسی درست دن یا بیماری کی مدت کا دعویٰ نہیں کیا گیا۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+        "title": { "en": "Britannica: biography according to the Islamic tradition", "ur": "بریٹانیکا: اسلامی روایت کے مطابق سیرت" },
+        "supports": { "en": "Dates the Prophet's death in Madinah to June 632; this milestone uses only the broad year.", "ur": "مدینہ میں نبی ﷺ کی وفات جون 632 میں بتاتا ہے؛ یہ مرحلہ صرف عمومی سال استعمال کرتا ہے۔" }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:4448",
+        "title": { "en": "Sahih al-Bukhari 4448: the curtain and the prayer", "ur": "صحیح بخاری 4448: پردہ اور نماز" },
+        "supports": { "en": "Records a Monday dawn prayer in the chapter on the Prophet's illness and death; it does not state a numeric date.", "ur": "نبی ﷺ کی بیماری اور وفات کے باب میں پیر کی نمازِ فجر بیان کرتا ہے؛ عددی تاریخ نہیں دیتا۔" }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:4449",
+        "title": { "en": "Sahih al-Bukhari 4449: Aisha's recollection", "ur": "صحیح بخاری 4449: عائشہ رضی اللہ عنہا کی یادداشت" },
+        "supports": { "en": "Aisha describes the Prophet's passing in her home, without naming a calendar day.", "ur": "عائشہ رضی اللہ عنہا اپنے گھر میں نبی ﷺ کی وفات بیان کرتی ہیں، کسی تقویمی دن کا نام نہیں لیتیں۔" }
+      }
+    ],
+    "places": ["madinah"],
+    "placeNote": {
+      "en": "Madinah is the broad location supplied by the historical reference; the reports mention Aisha's room and home. The locator is not a room plan, precise building location, or reconstruction of the final hours.",
+      "ur": "تاریخی حوالہ مدینہ کو عمومی مقام بتاتا ہے؛ روایتوں میں عائشہ رضی اللہ عنہا کے حجرے اور گھر کا ذکر ہے۔ مقام نما کمرے کا نقشہ، عمارت کی درست جگہ یا آخری گھنٹوں کی باز تشکیل نہیں۔"
+    },
+    "narrationIds": ["life-final-days-curtain-and-prayer", "life-final-days-aisha-care-and-passing"],
+    "highlights": [
+      {
+        "sourceId": "life-final-days-curtain-and-prayer",
+        "text": { "en": "He ﷺ looked at the congregation, smiled, and signalled for them to complete their prayer.", "ur": "آپ ﷺ نے نمازیوں کو دیکھا، مسکرائے اور نماز پوری کرنے کا اشارہ فرمایا۔" }
+      },
+      {
+        "sourceId": "life-final-days-aisha-care-and-passing",
+        "text": { "en": "Aisha remembers supporting him and softening a siwak for him near the end of his life.", "ur": "عائشہ رضی اللہ عنہا آخری وقت میں آپ ﷺ کو سہارا دینا اور مسواک نرم کرنا یاد کرتی ہیں۔" }
+      },
+      {
+        "sourceId": "life-final-days-aisha-care-and-passing",
+        "text": { "en": "Her account preserves his words about the highest companionship before his passing.", "ur": "ان کا بیان وفات سے پہلے آپ ﷺ کے رفیقِ اعلیٰ کے الفاظ محفوظ کرتا ہے۔" }
+      }
+    ]
+  }
+]

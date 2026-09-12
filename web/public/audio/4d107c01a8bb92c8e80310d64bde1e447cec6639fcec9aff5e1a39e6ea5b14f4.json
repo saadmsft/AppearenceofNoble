@@ -1,0 +1,18 @@
+{
+  "entryId": "life-shepherding-for-makkah",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابو ہریرہ رضی اللہ عنہ انبیاء کے بکریاں چرانے سے متعلق ایک گفتگو نقل کرتے ہیں۔ صحابہ نے پوچھا کہ کیا نبی کریم صلی اللہ علیہ وسلم نے بھی یہ کام کیا تھا۔ آپ صلی اللہ علیہ وسلم نے اہلِ مکہ کی بکریاں چند قیراط کے عوض چرانے کا ذکر فرمایا۔ اس مختصر یاد میں پہلے کے کام کی ایک جھلک ملتی ہے، مگر عمر یا سال بیان نہیں ہوا۔",
+  "transcriptHash": "57d93508b7f9aa14135bbd47fd6a1cc82c496a1a44b341a779530bd420770ca7",
+  "transcriptCharacters": 318,
+  "billableCharacters": 318,
+  "cacheKey": "4d107c01a8bb92c8e80310d64bde1e447cec6639fcec9aff5e1a39e6ea5b14f4",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/4d107c01a8bb92c8e80310d64bde1e447cec6639fcec9aff5e1a39e6ea5b14f4.mp3",
+  "byteLength": 148608,
+  "sha256": "db58f5f1795fb54db9892667d749ef61fd14bead3680953ba227fc4eb0da3cff",
+  "durationSeconds": 24.768
+}

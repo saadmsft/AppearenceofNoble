@@ -1,0 +1,18 @@
+{
+  "entryId": "life-call-at-safa",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Ibn Abbas relates that, following the command to warn his close relatives, the Prophet called the clans of Quraysh together at Safa. He asked whether they would believe a warning from him about approaching cavalry. They acknowledged his truthfulness, and he warned them of punishment. The report also records Abu Lahab's hostile response and the revelation concerning him.",
+  "transcriptHash": "e16231b4c9c75ea104b5c8b2f79572cb7a550abe774f43ac3eb4a39cae6210dc",
+  "transcriptCharacters": 372,
+  "billableCharacters": 377,
+  "cacheKey": "273aa800a27edc6f7c34bd8566df14414bd10b9d7076b8f0b3715be3ce6b5fd7",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/273aa800a27edc6f7c34bd8566df14414bd10b9d7076b8f0b3715be3ce6b5fd7.mp3",
+  "byteLength": 130752,
+  "sha256": "00e2b6aff1713dec8efb41dade7539d777a885cc2b5b5ad2a371a684fdbf479b",
+  "durationSeconds": 21.792
+}

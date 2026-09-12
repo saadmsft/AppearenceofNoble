@@ -1,0 +1,18 @@
+{
+  "entryId": "life-makkah-entry-jabir-black-turban",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Jabir reports the Prophet may Allah bless him and grant him peace entering Makkah wearing a black turban and not in the state of ihram. The wording transmitted by Qutayba explicitly identifies this as the day of the conquest of Makkah. Muslim preserves that wording difference and a further note about Qutayba's chain of transmission.",
+  "transcriptHash": "6d5950918dd4e5a93dd776b1bb761a97dd9e1c2165e2b4c38937b6f4ad368c7e",
+  "transcriptCharacters": 334,
+  "billableCharacters": 339,
+  "cacheKey": "269df85da63092de414e00dc5a70d3de989858536e4ebbf315a414cf2423b680",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/269df85da63092de414e00dc5a70d3de989858536e4ebbf315a414cf2423b680.mp3",
+  "byteLength": 113040,
+  "sha256": "67512271200d0358f2a7f71ed7f7bf93bbf9c1bd298e2796870348df0f3c0cae",
+  "durationSeconds": 18.84
+}

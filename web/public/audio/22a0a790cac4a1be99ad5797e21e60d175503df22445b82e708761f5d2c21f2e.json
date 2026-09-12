@@ -1,0 +1,18 @@
+{
+  "entryId": "life-makkah-entry-jabir-black-turban",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "جابر رضی اللہ عنہ بیان کرتے ہیں کہ نبی صلی اللہ علیہ وسلم سیاہ عمامہ پہنے ہوئے، احرام کی حالت کے بغیر مکہ میں داخل ہوئے۔ قتیبہ کی نقل کردہ عبارت اس داخلے کو صراحت کے ساتھ فتح مکہ کے دن کا واقعہ بتاتی ہے۔ امام مسلم نے الفاظ کا یہ فرق اور قتیبہ کی سند سے متعلق ایک مزید وضاحت بھی محفوظ کی ہے۔",
+  "transcriptHash": "2245559b39f7e947ac75f03258375c2d671b2a9df8d3faed80d2faaf2b9a5c00",
+  "transcriptCharacters": 290,
+  "billableCharacters": 290,
+  "cacheKey": "22a0a790cac4a1be99ad5797e21e60d175503df22445b82e708761f5d2c21f2e",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/22a0a790cac4a1be99ad5797e21e60d175503df22445b82e708761f5d2c21f2e.mp3",
+  "byteLength": 134640,
+  "sha256": "35e09a586a62dbc5fa551cf35520fb4861f4acc16e4b6b7893eaf2eb514c0616",
+  "durationSeconds": 22.44
+}

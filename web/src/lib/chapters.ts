@@ -1,7 +1,8 @@
-import { appearanceNarrations, characterNarrations } from './library.ts'
+import { appearanceNarrations, characterNarrations, narrations } from './library.ts'
+import { lifeMilestones } from './life.ts'
 import { characterTopics } from './schema.ts'
 import { characterHighlights } from './character-highlights.ts'
-import type { Localized, Topic } from './schema.ts'
+import type { Localized, Shelf, Topic } from './schema.ts'
 import { isEstablished } from './search.ts'
 
 type Highlight = { text: Localized; sourceId: string }
@@ -156,3 +157,24 @@ export const characterChapters: Chapter[] = characterTopics.map((topic) => {
   })
   return { topic, reports, highlights }
 })
+
+const allById = new Map(narrations.map((row) => [row.id, row]))
+export const lifeChapters: Chapter[] = lifeMilestones.map((milestone) => {
+  const reports = milestone.narrationIds.map((id) => {
+    const row = allById.get(id)
+    if (!row) throw new Error(`Missing Life chapter source: ${id}`)
+    return row
+  })
+  const highlights = milestone.highlights.map((highlight) => {
+    const source = allById.get(highlight.sourceId)
+    if (!source || !isEstablished(source)) throw new Error(`Invalid Life highlight: ${highlight.sourceId}`)
+    return { ...highlight, source }
+  })
+  return { topic: milestone.topic, reports, highlights }
+})
+
+export const chaptersByShelf: Record<Shelf, Chapter[]> = {
+  appearance: chapters,
+  character: characterChapters,
+  life: lifeChapters,
+}

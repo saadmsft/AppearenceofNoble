@@ -1,11 +1,13 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
-import { chapters, characterChapters } from '../src/lib/chapters.ts'
-import { buildStoryScenes, storyPosition, storySceneIndex } from '../src/lib/story.ts'
+import { chapters, chaptersByShelf } from '../src/lib/chapters.ts'
+import { shelves } from '../src/lib/schema.ts'
+import { buildStoryScenes, storyPosition, storySceneIndex, storyTargetForNarration } from '../src/lib/story.ts'
 import { parseRoute, routeUrl } from '../src/lib/route.ts'
 
 test('story scenes retain the reviewed text and exact source of every chapter highlight', () => {
-  for (const [shelf, collection] of [['appearance', chapters], ['character', characterChapters]] as const) {
+  for (const shelf of shelves) {
+    const collection = chaptersByShelf[shelf]
     const scenes = buildStoryScenes(collection, shelf)
     assert.equal(scenes.length, collection.reduce((sum, chapter) => sum + chapter.highlights.length, 0))
     assert.equal(new Set(scenes.map((scene) => scene.id)).size, scenes.length)
@@ -28,6 +30,27 @@ test('story navigation is bounded and respects the existing thematic order', () 
   assert.equal(storySceneIndex(scenes, 'complexion', Number.NaN), 0)
   assert.equal(scenes[storySceneIndex(scenes, 'complexion', 99)].beatIndex, 1)
   assert.throws(() => buildStoryScenes([], 'appearance'), /requires chapters/)
+})
+
+test('narration following identifies a real passage or explicitly falls back to its chapter', () => {
+  const chapter = chapters[0]
+  const sourceId = chapter.highlights[0].sourceId
+  assert.deepEqual(storyTargetForNarration(chapters, chapter.topic, sourceId),
+    { topic: chapter.topic, beat: 0, matched: true })
+  const withoutHighlight = chapter.reports.find((row) => !chapter.highlights.some((highlight) => highlight.sourceId === row.id))
+  assert.ok(withoutHighlight, 'Exercise a report that has no highlighted story beat')
+  assert.deepEqual(storyTargetForNarration(chapters, chapter.topic, withoutHighlight.id),
+    { topic: chapter.topic, beat: 0, matched: false })
+  assert.equal(storyTargetForNarration(chapters, 'all', 'unknown-entry'), null)
+  for (const shelf of shelves) {
+    for (const item of chaptersByShelf[shelf]) {
+      for (const highlight of item.highlights) {
+        const target = storyTargetForNarration(chaptersByShelf[shelf], item.topic, highlight.sourceId)
+        assert.equal(target?.topic, item.topic)
+        assert.equal(target?.matched, true)
+      }
+    }
+  }
 })
 
 test('scroll progression handles bounds, reverse travel and degenerate geometry', () => {

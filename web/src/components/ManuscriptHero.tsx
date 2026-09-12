@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { ArrowDown, ArrowUpRight, BookOpen, Pause, Play } from 'lucide-react'
 import type { Language, Shelf } from '../lib/schema.ts'
 import { number, translate } from '../lib/i18n.ts'
+import { shelfPresentation } from '../lib/catalog.ts'
 import { useAmbientMotion } from '../hooks/useAmbientMotion'
 import { Button } from './ui/button'
 
@@ -41,15 +42,16 @@ export function ManuscriptHero({ language, shelf, entryCount, topicCount, paused
   const art = useRef<HTMLDivElement>(null)
   const motion = useAmbientMotion(art, !paused && !readerOpen)
   const t = (key: Parameters<typeof translate>[1]) => translate(language, key)
+  const presentation = shelfPresentation[shelf]
 
   return <>
     <section className="hero-shell" aria-labelledby="hero-title">
       <div className="hero page-width">
         <div className="hero-copy">
-          <h1 id="hero-title"><span>{t(shelf === 'character' ? 'characterHeroFirst' : 'heroFirst')}</span>{' '}<em>{t(shelf === 'character' ? 'characterHeroSecond' : 'heroSecond')}</em></h1>
-          <p className="hero-description">{t(shelf === 'character' ? 'characterHeroDescription' : 'heroDescription')}</p>
+          <h1 id="hero-title"><span>{t(presentation.heroFirst)}</span>{' '}<em>{t(presentation.heroSecond)}</em></h1>
+          <p className="hero-description">{t(presentation.heroDescription)}</p>
           <div className="hero-actions">
-            <Button onClick={onExplore}>{t(shelf === 'character' ? 'beginCharacter' : 'beginJourney')}<span className="hero-button-arrow"><ArrowDown size={18} aria-hidden="true" /></span></Button>
+            <Button onClick={onExplore}>{t(presentation.begin)}<span className="hero-button-arrow"><ArrowDown size={18} aria-hidden="true" /></span></Button>
             <a href={guideHref} className="hero-guide-link" onClick={(event) => {
               if (!event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) { event.preventDefault(); onGuide() }
             }}>{t('approach')}<ArrowUpRight size={16} className="directional" aria-hidden="true" /></a>
@@ -62,7 +64,7 @@ export function ManuscriptHero({ language, shelf, entryCount, topicCount, paused
             <path pathLength="1" d="M64 656V310C64 165 187 105 300 44C413 105 536 165 536 310V656" />
             <path d="M28 656H572M48 620H86M514 620H552" />
           </svg>
-          <div className="art-caption" lang="ar" dir="rtl">{shelf === 'character' ? 'أَخْلَاقُ النَّبِيِّ' : 'الشَّمَائِلُ الْمُحَمَّدِيَّةُ'}</div>
+          <div className="art-caption" lang="ar" dir="rtl">{presentation.calligraphy}</div>
           <div className="rosette-stage">
             <Rosette />
             <div className="name-calligraphy" lang="ar" dir="rtl">
@@ -72,7 +74,7 @@ export function ManuscriptHero({ language, shelf, entryCount, topicCount, paused
           </div>
         </div>
         <div className="hero-colophon">
-          <p><strong>{number(entryCount, language)}</strong> {t('entries')}<span aria-hidden="true">/</span><strong>{number(topicCount, language)}</strong> {t('themes')}</p>
+          <p><strong>{number(entryCount, language)}</strong> {t('entries')}<span aria-hidden="true">/</span><strong>{number(topicCount, language)}</strong> {t(shelf === 'life' ? 'milestones' : 'themes')}</p>
           <button type="button" className="motion-toggle" aria-pressed={paused || motion.reduced} disabled={motion.reduced}
             onClick={onPause} aria-label={t(motion.reduced ? 'reducedMotion' : paused ? 'resumeMotion' : 'pauseMotion')}>
             {paused || motion.reduced ? <Play size={12} aria-hidden="true" /> : <Pause size={12} aria-hidden="true" />}

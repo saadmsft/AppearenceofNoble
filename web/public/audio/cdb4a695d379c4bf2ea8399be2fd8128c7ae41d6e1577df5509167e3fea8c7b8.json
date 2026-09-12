@@ -1,0 +1,18 @@
+{
+  "entryId": "life-abu-bakr-in-the-cave",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Abu Bakr recalls being with the Prophet in a cave and fearing that a person looking down would see them. The Prophet answered by directing his attention to Allah's presence with the two of them. The report preserves this short exchange rather than a description of the whole journey.",
+  "transcriptHash": "07637880e09cb0db97eb27890581613f1e8ae08a57a7f45cbf785f544f179112",
+  "transcriptCharacters": 283,
+  "billableCharacters": 288,
+  "cacheKey": "cdb4a695d379c4bf2ea8399be2fd8128c7ae41d6e1577df5509167e3fea8c7b8",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/cdb4a695d379c4bf2ea8399be2fd8128c7ae41d6e1577df5509167e3fea8c7b8.mp3",
+  "byteLength": 92592,
+  "sha256": "632700742d2ebf507df2ed1852a813e8f420b75890fad701b4ad73b114aff1b0",
+  "durationSeconds": 15.432
+}

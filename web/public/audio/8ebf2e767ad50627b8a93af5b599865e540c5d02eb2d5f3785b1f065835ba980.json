@@ -1,0 +1,18 @@
+{
+  "entryId": "life-taif-hope-for-descendants",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha asked whether the Prophet had faced a day harder than Uhud. He recalled the rejection of his appeal to Ibn Abd Yalil and departing in distress. His account then describes Jibril and the angel of the mountains. Rather than accept the offered destruction, he expressed hope that descendants of those people would worship Allah alone.",
+  "transcriptHash": "25ddd27bb61faaf8810625dd14229e658cddf367dde6565e23aecdd7c0314871",
+  "transcriptCharacters": 337,
+  "billableCharacters": 337,
+  "cacheKey": "8ebf2e767ad50627b8a93af5b599865e540c5d02eb2d5f3785b1f065835ba980",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/8ebf2e767ad50627b8a93af5b599865e540c5d02eb2d5f3785b1f065835ba980.mp3",
+  "byteLength": 118800,
+  "sha256": "6f9c273f5de63319d6526331e27545bc56f9f32c3962976eda56fe1c1ccabc29",
+  "durationSeconds": 19.8
+}

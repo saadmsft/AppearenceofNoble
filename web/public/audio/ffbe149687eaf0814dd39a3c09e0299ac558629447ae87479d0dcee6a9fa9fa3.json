@@ -1,0 +1,18 @@
+{
+  "entryId": "life-building-madinah-mosque",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت انس رضی اللہ عنہ نبی کریم صلی اللہ علیہ وسلم کی آمد، بنو عمرو بن عوف کے ہاں چودہ راتوں کے قیام اور حضرت ابو ایوب رضی اللہ عنہ کے صحن تک پہنچنے کا ذکر کرتے ہیں۔ مسجد کی تعمیر کے لیے بنو نجار نے اپنے احاطے کا اجر صرف اللہ سے چاہا۔ انس رضی اللہ عنہ جگہ کی تیاری اور صحابہ کے پتھر منتقل کرنے کا بیان کرتے ہیں۔ نبی کریم صلی اللہ علیہ وسلم ان کے ساتھ تھے اور انصار و مہاجرین کے لیے دعا فرما رہے تھے۔",
+  "transcriptHash": "17c7fb7cb195f638df09c39f4a3639c6f7b6cb4ad7ec70233f8b34394947d59c",
+  "transcriptCharacters": 398,
+  "billableCharacters": 398,
+  "cacheKey": "ffbe149687eaf0814dd39a3c09e0299ac558629447ae87479d0dcee6a9fa9fa3",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/ffbe149687eaf0814dd39a3c09e0299ac558629447ae87479d0dcee6a9fa9fa3.mp3",
+  "byteLength": 179424,
+  "sha256": "d2955058320733c01ff0b386618c66c7e84e544f1afc3dbb2e1416ea64804206",
+  "durationSeconds": 29.904
+}

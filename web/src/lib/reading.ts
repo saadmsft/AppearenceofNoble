@@ -1,4 +1,6 @@
 import { z } from 'zod'
+import { listeningDataSchema } from './listening.ts'
+import type { ListeningData, ListeningEngine, ListeningRestorePreview } from './listening.ts'
 
 export const readingKey = 'noble-project.reading.v1'
 export const readingLimits = {
@@ -21,13 +23,17 @@ const readingSchema = z.object({
 }).strict().refine((data) => Object.keys(data.entries).length <= readingLimits.entries)
   .refine((data) => Object.values(data.entries).reduce((sum, entry) => sum + (entry.note?.length ?? 0), 0) <= readingLimits.totalNoteLength)
 const bookmarksSchema = z.array(idSchema).max(readingLimits.entries)
-const backupSchema = z.object({
+const backupV1Schema = z.object({
   format: z.literal('noble-project.personal-backup'),
   version: z.literal(1),
   exportedAt: z.iso.datetime(),
   reading: readingSchema,
   bookmarks: bookmarksSchema,
 }).strict()
+const backupSchema = z.discriminatedUnion('version', [
+  backupV1Schema,
+  backupV1Schema.extend({ version: z.literal(2), listening: listeningDataSchema }).strict(),
+])
 
 export type ReadingEntry = Readonly<z.infer<typeof entrySchema>>
 export type ReadingData = {
@@ -35,15 +41,18 @@ export type ReadingData = {
   readonly entries: Readonly<Record<string, ReadingEntry>>
   readonly lastOpened: Readonly<{ id: string; at: string }> | null
 }
-export type ReadingBackup = Omit<z.infer<typeof backupSchema>, 'reading' | 'bookmarks'> & {
+export type ReadingBackup = Omit<z.infer<typeof backupV1Schema>, 'reading' | 'bookmarks' | 'version'> & {
   readonly reading: ReadingData
   readonly bookmarks: readonly string[]
-}
+} & ({ readonly version: 1 } | { readonly version: 2; readonly listening: ListeningData })
+export type ReadingListeningBridge = Pick<ListeningEngine,
+  'pause' | 'validateData' | 'checkpointAndExport' | 'prepareRestore' | 'checkRestore' | 'applyRestore'>
 export type ReadingIssueCode =
   | 'unavailable' | 'quota' | 'invalid-storage' | 'invalid-import' | 'file-too-large'
   | 'note-too-long' | 'total-too-large' | 'empty-note' | 'unknown-ids' | 'invalid-id'
   | 'verify-failed' | 'changed-storage' | 'stale-preview' | 'unsaved-notes'
   | 'replace-required' | 'bookmarks-unconfirmed' | 'busy'
+  | 'listening-invalid' | 'listening-unavailable' | 'listening-unconfirmed'
 export type ReadingIssue = { readonly code: ReadingIssueCode; readonly ids?: readonly string[] }
 export type ReadingResult<T = undefined> = { ok: true; value: T } | { ok: false; issue: ReadingIssue }
 export type ReadingStorage = () => Pick<Storage, 'getItem' | 'setItem'>
@@ -59,6 +68,11 @@ export type ImportPreview = {
   readonly readConflicts: readonly string[]
   readonly baseline: string
   readonly bookmarks: readonly string[]
+  readonly listening?: {
+    readonly merge: ListeningRestorePreview | null
+    readonly replace: ListeningRestorePreview
+    readonly positions: number
+  }
 }
 export type ReadingSnapshot = {
   readonly data: ReadingData
@@ -147,10 +161,11 @@ export function readingCounts(data: ReadingData, bookmarks: readonly string[] = 
   }
 }
 
-export function createReadingBackup(data: ReadingData, bookmarks: readonly string[], now = new Date().toISOString()): ReadingResult<string> {
+export function createReadingBackup(data: ReadingData, bookmarks: readonly string[], now = new Date().toISOString(), listening?: ListeningData): ReadingResult<string> {
   const parsed = backupSchema.safeParse({
-    format: 'noble-project.personal-backup', version: 1, exportedAt: now,
+    format: 'noble-project.personal-backup', version: listening ? 2 : 1, exportedAt: now,
     reading: data, bookmarks: [...new Set(bookmarks)],
+    ...(listening ? { listening } : {}),
   })
   if (!parsed.success) return fail('invalid-import')
   const text = JSON.stringify(parsed.data, null, 2)
@@ -159,6 +174,7 @@ export function createReadingBackup(data: ReadingData, bookmarks: readonly strin
 
 export function prepareReadingImport(
   text: string, current: ReadingData, bookmarks: readonly string[], knownIds: ReadonlySet<string>,
+  validateListening?: ReadingListeningBridge['validateData'],
 ): ReadingResult<ImportPreview> {
   const decoded = decode(text, 'invalid-import')
   if (!decoded.ok) return decoded
@@ -166,6 +182,10 @@ export function prepareReadingImport(
   if (!parsed.success || !bookmarksSchema.safeParse(bookmarks).success) return fail('invalid-import')
   const unknown = unknownIds(parsed.data.reading, parsed.data.bookmarks, knownIds)
   if (unknown.length) return fail('unknown-ids', unknown)
+  if (parsed.data.version === 2) {
+    if (!validateListening) return fail('listening-unavailable')
+    if (!validateListening(parsed.data.listening).ok) return fail('listening-invalid')
+  }
   const backup: ReadingBackup = { ...parsed.data, bookmarks: [...new Set(parsed.data.bookmarks)] }
   const conflicts: string[] = []
   const readConflicts: string[] = []
@@ -203,7 +223,7 @@ export type ApplyImportOptions = {
   onBookmarksChange: OnBookmarksChange
 }
 
-export function createReadingStore(storage: ReadingStorage, initialKnownIds: ReadonlySet<string>) {
+export function createReadingStore(storage: ReadingStorage, initialKnownIds: ReadonlySet<string>, listening?: ReadingListeningBridge) {
   let knownIds = initialKnownIds
   let loaded = loadReading(storage)
   let raw = loaded.raw
@@ -311,10 +331,22 @@ export function createReadingStore(storage: ReadingStorage, initialKnownIds: Rea
     },
     prepareImport: (text: string, bookmarks: readonly string[]): ReadingResult<ImportPreview> => {
       if (Object.keys(snapshot.drafts).length) return report({ code: 'unsaved-notes' })
-      const result = prepareReadingImport(text, snapshot.data, bookmarks, knownIds)
+      const result = prepareReadingImport(text, snapshot.data, bookmarks, knownIds, listening?.validateData)
       if (!result.ok) return report(result.issue)
-      previews.add(result.value)
-      return result
+      let preview = result.value
+      if (preview.backup.version === 2) {
+        if (!listening) return report({ code: 'listening-unavailable' })
+        listening.pause()
+        const replacement = listening.prepareRestore(preview.backup.listening, 'replace')
+        if (!replacement.ok) return report({ code: 'listening-unavailable' })
+        const merged = listening.prepareRestore(preview.backup.listening, 'merge')
+        preview = { ...preview, listening: {
+          replace: replacement.value, merge: merged.ok ? merged.value : null,
+          positions: preview.backup.listening.positions.length,
+        } }
+      }
+      previews.add(preview)
+      return success(preview)
     },
     applyImport: (preview: ImportPreview, options: ApplyImportOptions): ReadingResult => {
       if (importing) return report({ code: 'busy' })
@@ -327,6 +359,12 @@ export function createReadingStore(storage: ReadingStorage, initialKnownIds: Rea
       if (unknown.length) return report({ code: 'unknown-ids', ids: unknown })
       const plan = planReadingImport(snapshot.data, options.bookmarks, preview.backup, options.mode)
       if (!plan.ok) return report(plan.issue)
+      const listeningPlan = preview.listening?.[options.mode]
+      if (preview.backup.version === 2) {
+        if (!listening || !listeningPlan) return report({ code: 'listening-unavailable' })
+        const checked = listening.checkRestore(listeningPlan, { confirmed: true, expectedBaseline: listeningPlan.baseline })
+        if (!checked.ok) return report({ code: checked.issue.code === 'stale-preview' || checked.issue.code === 'changed-storage' ? 'stale-preview' : 'listening-unavailable' })
+      }
       const written = write(plan.value.data, {}, options.mode === 'replace')
       if (!written.ok) return written
       previews.delete(preview)
@@ -336,6 +374,11 @@ export function createReadingStore(storage: ReadingStorage, initialKnownIds: Rea
       try {
         const bookmarksResult = options.onBookmarksChange(plan.value.bookmarks)
         if (bookmarksResult?.ok !== true) return report({ code: 'bookmarks-unconfirmed' })
+        if (listening && listeningPlan) {
+          emit({ importIssue: { code: 'listening-unconfirmed' } })
+          const restored = listening.applyRestore(listeningPlan, { confirmed: true, expectedBaseline: listeningPlan.baseline })
+          if (!restored.ok) return report({ code: 'listening-unconfirmed' })
+        }
         emit({ importIssue: null, issue: remainingIssue(snapshot.data, snapshot.drafts) })
         return success(undefined)
       } catch (error) {
@@ -348,7 +391,11 @@ export function createReadingStore(storage: ReadingStorage, initialKnownIds: Rea
     exportBackup: (bookmarks: readonly string[]): ReadingResult<string> => {
       if (Object.keys(snapshot.drafts).length) return report({ code: 'unsaved-notes' })
       if (!snapshot.writable) return report({ code: 'replace-required' })
-      const result = createReadingBackup(snapshot.data, bookmarks)
+      const audio = listening?.checkpointAndExport()
+      if (audio && (!audio.ok || audio.value.storageIssue || !audio.value.writable)) {
+        return report({ code: 'listening-unavailable' })
+      }
+      const result = createReadingBackup(snapshot.data, bookmarks, new Date().toISOString(), audio?.ok ? audio.value.data : undefined)
       return result.ok ? result : report(result.issue)
     },
   }

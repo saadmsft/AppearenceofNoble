@@ -1,0 +1,18 @@
+{
+  "entryId": "life-hudaybiyyah-writing-the-agreement",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Al-Bara describes Ali writing the agreement at al-Hudaybiyyah. The other party objected to the designation of Muhammad may Allah bless him and grant him peace as Allah's Messenger in the document. When Ali would not erase it, the Prophet may Allah bless him and grant him peace erased it himself. The recorded terms included a three-day entry for him and his companions, with weapons kept in their cases.",
+  "transcriptHash": "7c0180427e75fc5abbe3850fabc6fb6298ae7f95c219b5ecedd83cf390772c93",
+  "transcriptCharacters": 404,
+  "billableCharacters": 409,
+  "cacheKey": "33d98c6fe00d83d8fd78b3e1de45d528b6b03f6cbf1a536274367b0860c980f9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/33d98c6fe00d83d8fd78b3e1de45d528b6b03f6cbf1a536274367b0860c980f9.mp3",
+  "byteLength": 141696,
+  "sha256": "03c6af64331340b6fc3cda5b07273c3a00a3eac82d17bfb51c869f99ae13b73b",
+  "durationSeconds": 23.616
+}

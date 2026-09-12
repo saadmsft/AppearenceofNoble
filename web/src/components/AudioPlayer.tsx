@@ -4,6 +4,8 @@ import {
   audioLanguages, audioManifestSchema, resetAudio, resolveAudioAsset, tracksForEntry,
 } from '../lib/audio.ts'
 import type { AudioLanguage, AudioTrack } from '../lib/audio.ts'
+import type { ListeningContext, ListeningController } from '../lib/listening.ts'
+import { EntryListeningPlayer } from './ListeningPlayer.tsx'
 import '../audio.css'
 
 const manifest = audioManifestSchema.safeParse(staticManifest)
@@ -43,9 +45,12 @@ export type AudioPlayerProps = {
   entryId: string
   language: 'en' | 'ur'
   tracks?: readonly AudioTrack[]
+  listening?: ListeningController
+  context?: ListeningContext
 }
 
 export function AudioPlayer(props: AudioPlayerProps) {
+  if (props.listening) return <EntryListeningPlayer key={props.entryId} {...props} listening={props.listening} />
   return <EntryAudioPlayer key={`${props.entryId}:${props.language}`} {...props} />
 }
 

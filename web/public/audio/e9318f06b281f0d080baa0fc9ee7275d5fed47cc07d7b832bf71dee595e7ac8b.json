@@ -1,0 +1,18 @@
+{
+  "entryId": "life-uhud-shielding-and-carrying-water",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "انس رضی اللہ عنہ احد کا ایک کٹھن وقت بیان کرتے ہیں جب لوگ نبی صلی اللہ علیہ وسلم سے پیچھے ہٹے اور ابو طلحہ رضی اللہ عنہ نے آپ صلی اللہ علیہ وسلم کو اپنی ڈھال کی آڑ دی۔ وہ عائشہ اور ام سلیم رضی اللہ عنہما کو بھی یاد کرتے ہیں جو پانی کی مشکیں لاتیں، لوگوں کو پلاتیں اور دوبارہ بھرنے کے لیے لوٹ جاتیں۔ اس بیان میں نبی صلی اللہ علیہ وسلم کی حفاظت اور بار بار پانی پہنچانے کی خدمت دونوں محفوظ ہیں۔",
+  "transcriptHash": "551de2c17f95e243fae43d89b54b1c3f6ca52bb8d679bd1b87fd7dc299061d65",
+  "transcriptCharacters": 392,
+  "billableCharacters": 392,
+  "cacheKey": "e9318f06b281f0d080baa0fc9ee7275d5fed47cc07d7b832bf71dee595e7ac8b",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/e9318f06b281f0d080baa0fc9ee7275d5fed47cc07d7b832bf71dee595e7ac8b.mp3",
+  "byteLength": 175968,
+  "sha256": "4b3f14cf890f5e14b7c5af48616fb5f2d5cf51a8662bdbb6d401d74cf330df0f",
+  "durationSeconds": 29.328
+}

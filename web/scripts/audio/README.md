@@ -1,15 +1,17 @@
-# Release 2.0 static audio
+# Static audio generation and playback
 
 Generate once -> save MP3 -> play static. Nothing here provisions Azure, reads
 keys from Azure, or generates in CI. The browser imports only the static manifest.
-The initial manifest is intentionally empty; an unavailable player is expected.
+The published manifest contains the saved audio. Missing coverage is a release
+failure, not permission to generate on demand.
 
 ## Manual gates and commands
 
 Run from the repository root with Node 24. No additional dependencies are needed.
 Do not run the paid commands until the parent has authorized the actual Speech
 resource, confirmed these stock voices are available, and checked its current
-S1 rate and quotas. This implementation has not generated real audio.
+S1 rate and quotas. Release 2.0 generated the original 281 cached MP3s; later
+content requires its own approved scope and synthesis allowance.
 
 First inspect the exact current content and cost, entirely offline:
 
@@ -67,9 +69,19 @@ Resume with the same command and **same ledger**, omitting `--init-ledger`.
 Completed clips are verified and not regenerated. Never delete, replace, edit,
 or switch ledgers to reset spending/attempts. Preserve a backup outside the repo.
 
+A genuinely new release can have a new ledger only after explicit approval of
+its new scope and allowance. Release 2.2 has that separate approval for new Life
+source audio, using the previously approved stock voices and pacing. Preserve
+the Release 2.0 ledger unchanged, reuse its existing cached assets, and use a
+separately named private Release 2.2 ledger for every new attempt and resumption.
+Do not use a new release ledger to retry failed old work or bypass attempt caps.
+Reusing an unchanged, already approved voice profile does not authorize a new
+voice, rendering style, cloud resource or additional spending.
+
 ## Billing, failures and cache
 
-The fixed cap is **US$10 before tax**, shared across samples, retries and bulk.
+The fixed per-approved-release cap is **US$10 before tax**, shared across that
+release's samples, retries, corrections and bulk.
 The configured meter is S1 Neural TextToSpeechCharacters, Global billing label,
 $15/1M characters. Costs use integer microdollars (15 per billable character).
 Every attempt is durably reserved before its HTTP request; no automatic refunds,
@@ -98,9 +110,10 @@ bodies, credentials, causes or stacks are printed.
 
 The SHA-256 cache identity covers exact transcript, stock voice, MP3 format and
 versioned rendering profile. All `content/*.json` arrays are discovered,
-including the new character collections. Only `id`, `arabicFull` and original
+including Character and Life source records. Only `id`, `arabicFull` and original
 `summary.en/ur` feed the planner; private/editorial notes are not narration.
-Arabic retains the entire isnad, report and compiler remarks. Repeated Arabic
+Historical milestone metadata lives outside `content/` and is not implicitly
+spoken as if it were a hadith. Arabic retains the entire isnad, report and compiler remarks. Repeated Arabic
 reports share one MP3 while every entry/language still has its own mapping.
 
 Each clip is written atomically to `web/public/audio/<cacheKey>.mp3`, followed by
@@ -129,10 +142,19 @@ import { AudioPlayer } from './components/AudioPlayer'
 
 `language` is the UI language (`'en' | 'ur'`). An optional `tracks` prop accepts
 validated `AudioTrack[]` for explicit integration/fixtures; omitted means the
-bundled manifest. The component imports its own `audio.css`. The existing Reader
-can receive this element through `audioContent`. Mount only for an open/current
-reader and unmount it on close/navigation. Entry/UI-language keys and track
-keys stop and unload the old audio; no autoplay or synthetic voice fallback.
+bundled manifest. The component imports its own `audio.css`. The Reader receives it through
+`audioContent`. The standalone component above remains useful for isolated
+fixtures; in the application, pass the shared listening controller and mount
+the compact player/media engine once above route and reader switches. Reader
+controls and chapter queues must never create competing streams.
+
+A deliberately started queue survives reader close and same-collection view
+changes. Switching collections pauses it. Language changes pause and use a
+language/asset-specific cursor, not percentage-based alignment between different
+transcripts. Reload restores an offer to resume, not autoplay. Optional Story
+following is narration-level and starts off; no word-alignment data is present.
+Missing files, playback errors and failed persistence remain explicit. No
+fallback voice or automatic synthesis is permitted.
 
 The version-1 schema in `src/lib/audio.ts` includes each track's entry ID,
 language, stock voice, full-report/summary kind, synthetic flag, exact transcript,
@@ -151,9 +173,9 @@ library in the single-file offline HTML. Deploy `web/public/audio/` with the
 site's static build after full coverage passes. HTML text remains offline;
 audio explicitly needs internet unless the individual MP3 is saved. Cross-origin
 browser rules can turn Download into Open; users can save the opened file.
-English/Urdu notices, Arabic/English/Urdu selection, native controls, rate choices
-and plain-text transcripts are included. Native media control wording follows
-the OS; the surrounding accessible labels follow the selected UI language.
+English/Urdu notices, Arabic/English/Urdu selection, accessible player controls,
+rate choices and plain-text transcripts are included. Standalone native media
+control wording follows the OS; app controls follow the selected UI language.
 
 Offline tests:
 
@@ -172,7 +194,7 @@ test launches its own isolated local Chromium, blocks external requests and mock
 media methods; it does not use a shared browser or claim real playback quality.
 Actual resource availability, live output quality/pronunciation, user approval,
 full production coverage and deployed/offline-download listening remain parent
-gates. App/Reader wiring and publication are deliberately outside these files.
+gates. The generation tool never publishes the application itself.
 
 Official references used for the REST/SSML/MP3 and billing implementation:
 [REST text to speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/rest-text-to-speech),

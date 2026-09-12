@@ -1,0 +1,300 @@
+[
+  {
+    "topic": "life-early-years",
+    "title": {"en": "Early Makkah", "ur": "مکہ کی ابتدائی زندگی"},
+    "era": {"en": "Earlier Makkan life and work", "ur": "مکہ میں پہلے کی زندگی اور کام"},
+    "dateLabel": {"en": "Age and year not stated", "ur": "عمر اور سال مذکور نہیں"},
+    "datePrecision": "period",
+    "dateNote": {
+      "en": "This selection begins with a recollection of earlier work, not a dated account of birth or childhood. The report does not say how old he was while shepherding or identify its year; its placement here is thematic, not a precise chronology.",
+      "ur": "اس انتخاب کا آغاز پہلے کے کام کی یاد سے ہے، پیدائش یا بچپن کے تاریخ وار بیان سے نہیں۔ روایت بکریاں چرانے کے وقت عمر یا سال نہیں بتاتی؛ یہاں اس کی جگہ موضوع کے لحاظ سے ہے، متعین تاریخ کے لحاظ سے نہیں۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://sunnah.com/bukhari:2262",
+        "title": {"en": "Sahih al-Bukhari 2262: an earlier occupation", "ur": "صحیح بخاری ۲۲۶۲: پہلے کے کام کا ذکر"},
+        "supports": {
+          "en": "The Prophet recalls tending sheep for the people of Makkah. The past-tense recollection supports earlier work only, not a birth year, childhood age or a date relative to the first revelation.",
+          "ur": "نبی کریم ﷺ اہلِ مکہ کی بکریاں چرانے کا ذکر ماضی کے طور پر فرماتے ہیں۔ اس سے پہلے کا کام ثابت ہوتا ہے، تاریخِ پیدائش، بچپن کی عمر یا پہلی وحی کے مقابل اس کام کی تاریخ نہیں۔"
+        }
+      }
+    ],
+    "places": ["makkah"],
+    "placeNote": {
+      "en": "The report names the people of Makkah but not a particular pasture. The locator labels the city, not an identified shepherding site.",
+      "ur": "روایت اہلِ مکہ کا نام لیتی ہے، کسی خاص چراگاہ کا نہیں۔ خاکے میں شہر کا نام ہے، بکریاں چرانے کی متعین جگہ نہیں۔"
+    },
+    "narrationIds": ["life-shepherding-for-makkah"],
+    "highlights": [
+      {
+        "sourceId": "life-shepherding-for-makkah",
+        "text": {"en": "He recalled tending sheep for the people of Makkah.", "ur": "آپ ﷺ نے اہلِ مکہ کی بکریاں چرانے کا ذکر فرمایا۔"}
+      }
+    ]
+  },
+  {
+    "topic": "life-revelation",
+    "title": {"en": "First revelation", "ur": "پہلی وحی"},
+    "era": {"en": "The beginning of revelation", "ur": "وحی کا آغاز"},
+    "dateLabel": {"en": "Age forty, as reported", "ur": "روایت کے مطابق چالیس برس کی عمر"},
+    "datePrecision": "reported",
+    "dateNote": {
+      "en": "Ibn Abbas's separate report gives the age of forty at the beginning of revelation. Aisha's Hira account does not state an age or calendar date. No exact day, month or CE conversion is inferred, and this selected report is not a claim that every chronology agrees.",
+      "ur": "حضرت ابن عباس رضی اللہ عنہما کی الگ روایت آغازِ وحی کے وقت چالیس برس کی عمر بتاتی ہے۔ حضرت عائشہ رضی اللہ عنہا کے بیانِ حرا میں عمر یا تقویمی تاریخ نہیں۔ یہاں دن، مہینہ یا عیسوی سال اخذ نہیں کیا گیا، نہ اس منتخب روایت کو تمام تاریخی اقوال کا اتفاق کہا گیا ہے۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://sunnah.com/bukhari:3851",
+        "title": {"en": "Sahih al-Bukhari 3851: Ibn Abbas on age and periods", "ur": "صحیح بخاری ۳۸۵۱: عمر اور ادوار کا بیان"},
+        "supports": {
+          "en": "Ibn Abbas reports that revelation came when the Prophet was forty, followed by thirteen years before the migration and ten in Madinah. Only the reported starting age is used for this milestone's label.",
+          "ur": "حضرت ابن عباس رضی اللہ عنہما آغازِ وحی پر چالیس برس کی عمر، اس کے بعد ہجرت سے پہلے تیرہ برس اور مدینہ میں دس برس بیان کرتے ہیں۔ اس مرحلے کے عنوانِ تاریخ میں صرف آغاز کی منقول عمر استعمال ہوئی ہے۔"
+        }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:3",
+        "title": {"en": "Sahih al-Bukhari 3: Aisha's account of Hira", "ur": "صحیح بخاری ۳: حضرت عائشہ رضی اللہ عنہا کا بیانِ حرا"},
+        "supports": {
+          "en": "Places truthful dreams and devotional retreat before the encounter in Hira, then the return to Khadija and visit to Waraqa; it does not supply a calendar date.",
+          "ur": "حرا کے واقعے سے پہلے سچے خواب اور عبادت، پھر حضرت خدیجہ رضی اللہ عنہا کے پاس واپسی اور ورقہ کے پاس جانے کی ترتیب بیان کرتی ہے؛ تقویمی تاریخ نہیں دیتی۔"
+        }
+      }
+    ],
+    "places": ["makkah", "hira"],
+    "placeNote": {
+      "en": "Hira is explicitly named in the report. Makkah provides the broader setting; these schematic labels do not plot the cave's dimensions or a path to the household.",
+      "ur": "حرا کا نام روایت میں صراحت سے ہے۔ مکہ وسیع تر پس منظر ہے؛ یہ علامتی نام غار کی پیمائش یا گھر تک راستہ نہیں دکھاتے۔"
+    },
+    "narrationIds": ["life-first-revelation-hira"],
+    "highlights": [
+      {
+        "sourceId": "life-first-revelation-hira",
+        "text": {"en": "Aisha's account places the encounter with the angel in the cave of Hira.", "ur": "حضرت عائشہ رضی اللہ عنہا کے بیان میں فرشتے سے ملاقات غارِ حرا میں ہوئی۔"}
+      },
+      {
+        "sourceId": "life-first-revelation-hira",
+        "text": {"en": "Khadija reassured him by recalling his care for others.", "ur": "حضرت خدیجہ رضی اللہ عنہا نے دوسروں کے ساتھ آپ ﷺ کا حسنِ سلوک یاد کر کے تسلی دی۔"}
+      },
+      {
+        "sourceId": "life-first-revelation-hira",
+        "text": {"en": "She took him to Waraqa, who connected the encounter with Musa's revelation.", "ur": "وہ آپ ﷺ کو ورقہ کے پاس لے گئیں، جنہوں نے واقعے کا تعلق حضرت موسیٰ علیہ السلام کی وحی سے بتایا۔"}
+      }
+    ]
+  },
+  {
+    "topic": "life-makkan-years",
+    "title": {"en": "The Makkan years", "ur": "مکی دور"},
+    "era": {"en": "The mission before the Hijrah", "ur": "ہجرت سے پہلے کا دورِ نبوت"},
+    "dateLabel": {"en": "Thirteen years before migration, as reported", "ur": "روایت کے مطابق ہجرت سے پہلے تیرہ برس"},
+    "datePrecision": "reported",
+    "dateNote": {
+      "en": "The thirteen-year span follows Ibn Abbas's report, not a calculated date for each episode. Neither the gathering at Safa nor the attack at the Kaaba is assigned an exact year here. The two are separate reports, not one continuous scene.",
+      "ur": "تیرہ برس کی مدت حضرت ابن عباس رضی اللہ عنہما کی روایت سے ہے، ہر واقعے کی حساب سے نکالی گئی تاریخ نہیں۔ صفا کے اجتماع اور کعبہ کے پاس حملے کو یہاں کوئی متعین سال نہیں دیا گیا۔ یہ الگ روایتیں ہیں، ایک مسلسل منظر نہیں۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://sunnah.com/bukhari:3851",
+        "title": {"en": "Sahih al-Bukhari 3851: before and after migration", "ur": "صحیح بخاری ۳۸۵۱: ہجرت سے پہلے اور بعد"},
+        "supports": {
+          "en": "Reports thirteen years after revelation began and before the command to migrate to Madinah. This supports the broad period only, not a year for either selected episode.",
+          "ur": "آغازِ وحی کے بعد مدینہ کی طرف ہجرت کے حکم سے پہلے تیرہ برس بیان کرتی ہے۔ اس سے وسیع دور کی تائید ہوتی ہے، منتخب واقعات میں سے کسی کا سال متعین نہیں ہوتا۔"
+        }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:4770",
+        "title": {"en": "Sahih al-Bukhari 4770: the call at Safa", "ur": "صحیح بخاری ۴۷۷۰: صفا پر دعوت"},
+        "supports": {
+          "en": "Connects the gathering to the revelation commanding warning of near relatives. It does not state a numbered year of the mission.",
+          "ur": "اجتماع کو قریبی رشتہ داروں کو خبردار کرنے والی آیت کے نزول سے جوڑتی ہے۔ بعثت کے کسی متعین سال کا ذکر نہیں۔"
+        }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:3856",
+        "title": {"en": "Sahih al-Bukhari 3856: an attack while praying", "ur": "صحیح بخاری ۳۸۵۶: نماز کے دوران حملہ"},
+        "supports": {
+          "en": "The report locates the attack at the Hijr of the Kaaba; al-Bukhari includes it under hardship in Makkah. No precise date or interval after the Safa address is supplied.",
+          "ur": "روایت حملے کی جگہ حِجرِ کعبہ بتاتی ہے اور امام بخاری اسے مکہ میں پیش آنے والی تکلیف کے باب میں لاتے ہیں۔ متعین تاریخ یا خطابِ صفا کے بعد کا وقفہ بیان نہیں ہوا۔"
+        }
+      }
+    ],
+    "places": ["makkah"],
+    "placeNote": {
+      "en": "Safa and the Hijr of the Kaaba are the distinct settings named by the two reports. The city-level locator does not reconstruct either scene.",
+      "ur": "صفا اور حِجرِ کعبہ دونوں روایتوں کے الگ مذکورہ مقامات ہیں۔ شہر کی سطح کا علامتی خاکہ ان میں سے کسی منظر کی ازسرِنو تصویر نہیں بناتا۔"
+    },
+    "narrationIds": ["life-call-at-safa", "life-abu-bakr-defends-at-kaaba"],
+    "highlights": [
+      {
+        "sourceId": "life-call-at-safa",
+        "text": {"en": "At Safa, he called the clans of Quraysh together to warn them.", "ur": "صفا پر آپ ﷺ نے قریش کے خاندانوں کو جمع کر کے خبردار فرمایا۔"}
+      },
+      {
+        "sourceId": "life-call-at-safa",
+        "text": {"en": "The people gathered there acknowledged his truthfulness.", "ur": "وہاں جمع لوگوں نے آپ ﷺ کی سچائی کی گواہی دی۔"}
+      },
+      {
+        "sourceId": "life-abu-bakr-defends-at-kaaba",
+        "text": {"en": "In a separate recollection, Abu Bakr intervened when he was attacked during prayer.", "ur": "ایک الگ یاد میں نماز کے دوران آپ ﷺ پر حملہ ہوا تو حضرت ابو بکر رضی اللہ عنہ نے مداخلت کی۔"}
+      }
+    ]
+  },
+  {
+    "topic": "life-taif",
+    "title": {"en": "The journey to Taif", "ur": "سفرِ طائف"},
+    "era": {"en": "The later Makkan period", "ur": "مکی دور کا آخری حصہ"},
+    "dateLabel": {"en": "Before the Hijrah; exact year not assigned", "ur": "ہجرت سے پہلے؛ سال متعین نہیں"},
+    "datePrecision": "period",
+    "dateNote": {
+      "en": "Britannica's traditional biography places the unsuccessful approach to Taif after the deaths it dates to about 619 and before the migration of 622. This is a broad historical placement, not a date given by the hadith. No exact year, month or day is assigned to the journey.",
+      "ur": "بریٹانیکا کی روایتی سوانح طائف میں بات قبول نہ ہونے کو ان وفاتوں کے بعد رکھتی ہے جن کا زمانہ تقریباً ۶۱۹ء بتایا گیا ہے، اور ۶۲۲ء کی ہجرت سے پہلے۔ یہ وسیع تاریخی ترتیب ہے، حدیث میں دی گئی تاریخ نہیں۔ سفر کا متعین سال، مہینہ یا دن مقرر نہیں کیا گیا۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://www.britannica.com/biography/Muhammad/Biography-according-to-the-Islamic-tradition",
+        "title": {"en": "Britannica: biography according to the Islamic tradition", "ur": "بریٹانیکا: اسلامی روایت کے مطابق سوانح"},
+        "supports": {
+          "en": "Its narrative puts the approach to Taif between the loss of protection following Abu Talib's death, dated about 619, and the migration to Madinah in 622. It is used for this ordering only, not an exact date of the journey.",
+          "ur": "اس کی ترتیب میں طائف کی طرف رجوع، ابو طالب کی تقریباً ۶۱۹ء میں وفات کے بعد حمایت ختم ہونے اور ۶۲۲ء میں مدینہ ہجرت کے درمیان ہے۔ یہاں صرف اسی ترتیب کے لیے حوالہ ہے، سفر کی متعین تاریخ کے لیے نہیں۔"
+        }
+      },
+      {
+        "url": "https://hadeethenc.com/en/browse/hadith/6406",
+        "title": {"en": "Hadith Encyclopedia: explanation of Aisha's question about hardship", "ur": "حدیث انسائیکلوپیڈیا: حضرت عائشہ رضی اللہ عنہا کے سوال کی شرح"},
+        "supports": {
+          "en": "The explanation identifies the recalled rejection by Ibn Abd Yalil with the journey to Taif and categorizes it in the Makkan period. This is commentary connecting the report to the milestone, not a calendar date or additional primary wording.",
+          "ur": "شرح ابن عبد یالیل کی طرف سے انکار کی یاد کو سفرِ طائف سے جوڑتی اور مکی دور میں رکھتی ہے۔ یہ روایت کو مرحلے سے جوڑنے والی شرح ہے، تقویمی تاریخ یا اصل روایت کے مزید الفاظ نہیں۔"
+        }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:3231",
+        "title": {"en": "Sahih al-Bukhari 3231: the Prophet's recollection", "ur": "صحیح بخاری ۳۲۳۱: نبی کریم ﷺ کی یاد"},
+        "supports": {
+          "en": "Aisha asks about a hardship compared with Uhud and the Prophet recalls the day of al-Aqabah. This establishes a retrospective account; it does not itself date the earlier event or name Taif.",
+          "ur": "حضرت عائشہ رضی اللہ عنہا اُحد کے مقابل سختی کا پوچھتی ہیں اور نبی کریم ﷺ یومِ عقبہ یاد فرماتے ہیں۔ اس سے بعد میں پہلے واقعے کو یاد کرنا واضح ہے؛ خود اس واقعے کی تاریخ یا طائف کا نام نہیں ملتا۔"
+        }
+      }
+    ],
+    "places": ["taif"],
+    "placeNote": {
+      "en": "Taif is the contextual label supplied by the cited explanation. The Arabic report names al-Aqabah and Qarn al-Thaalib; the schematic locator does not equate every named place or the two mountains with one point, and draws no itinerary.",
+      "ur": "طائف کا نام حوالہ دی گئی شرح سے پس منظر کے طور پر ہے۔ عربی روایت عقبہ اور قرن الثعالب کا ذکر کرتی ہے؛ علامتی خاکہ ہر مقام یا دونوں پہاڑوں کو ایک نقطہ نہیں بناتا اور سفر کا راستہ نہیں کھینچتا۔"
+    },
+    "narrationIds": ["life-taif-hope-for-descendants"],
+    "highlights": [
+      {
+        "sourceId": "life-taif-hope-for-descendants",
+        "text": {"en": "Asked about hardship, he recalled an appeal that was rejected.", "ur": "سختی کے بارے میں پوچھا گیا تو آپ ﷺ نے اپنی بات قبول نہ ہونے کا واقعہ یاد فرمایا۔"}
+      },
+      {
+        "sourceId": "life-taif-hope-for-descendants",
+        "text": {"en": "Rather than accept destruction, he hoped for descendants who would worship Allah alone.", "ur": "تباہی کی پیش کش کے بجائے آپ ﷺ نے ایسی نسل کی امید رکھی جو صرف اللہ کی عبادت کرے۔"}
+      }
+    ]
+  },
+  {
+    "topic": "life-hijrah",
+    "title": {"en": "The Hijrah", "ur": "ہجرت"},
+    "era": {"en": "From Makkah to Madinah", "ur": "مکہ سے مدینہ"},
+    "dateLabel": {"en": "622 CE", "ur": "۶۲۲ء"},
+    "datePrecision": "reported",
+    "dateNote": {
+      "en": "The year comes from the historical reference, not from a date stated in either selected report. The beginning of the Hijri calendar year is not presented as the day of arrival. No exact departure day, arrival day or full route is reconstructed.",
+      "ur": "سال تاریخی حوالے سے ہے، منتخب روایتوں میں بیان کردہ تاریخ سے نہیں۔ ہجری تقویم کے سال کا آغاز، آمد کا دن نہیں کہا گیا۔ روانگی یا آمد کا متعین دن اور پورا راستہ ازسرِنو تشکیل نہیں دیا گیا۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://www.britannica.com/event/Hijrah-Islam",
+        "title": {"en": "Britannica: Hijrah", "ur": "بریٹانیکا: ہجرت"},
+        "supports": {
+          "en": "Dates Muhammad's migration from Makkah to Yathrib, also called Madinah, to 622 CE. Its discussion distinguishes the migration from the later establishment of the calendar era.",
+          "ur": "محمد ﷺ کی مکہ سے یثرب، یعنی مدینہ، ہجرت کا سال ۶۲۲ء بتاتا ہے۔ اس کی تقویمی بحث ہجرت اور بعد میں ہجری سن کے قیام کو الگ کرتی ہے۔"
+        }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:3925",
+        "title": {"en": "Sahih al-Bukhari 3925: al-Bara on the arrivals", "ur": "صحیح بخاری ۳۹۲۵: حضرت براء رضی اللہ عنہ کا بیانِ آمد"},
+        "supports": {
+          "en": "Al-Bara places Musab ibn Umayr, Ibn Umm Maktum and other companions before the Prophet's arrival in Madinah. It supports that sequence, not a calendar date or a complete passenger list.",
+          "ur": "حضرت براء رضی اللہ عنہ مصعب بن عمیر، ابن ام مکتوم اور دوسرے صحابہ کی آمد کو نبی کریم ﷺ کی مدینہ آمد سے پہلے رکھتے ہیں۔ اس سے ترتیب کی تائید ہے، تقویمی تاریخ یا تمام مسافروں کی فہرست کی نہیں۔"
+        }
+      }
+    ],
+    "places": ["makkah", "madinah"],
+    "placeNote": {
+      "en": "The city labels mark the historically cited departure and destination, not a measured path. Abu Bakr's short cave report does not name the cave; no cave coordinates or intermediate stops are plotted.",
+      "ur": "شہروں کے نام تاریخی حوالے کے مطابق روانگی اور منزل بتاتے ہیں، ناپا ہوا راستہ نہیں۔ حضرت ابو بکر رضی اللہ عنہ کی مختصر روایت غار کا نام نہیں بتاتی؛ غار کے جغرافیائی نقاط یا درمیانی پڑاؤ نہیں دکھائے گئے۔"
+    },
+    "narrationIds": ["life-abu-bakr-in-the-cave", "life-arrival-in-madinah-bara"],
+    "highlights": [
+      {
+        "sourceId": "life-abu-bakr-in-the-cave",
+        "text": {"en": "In the cave, Abu Bakr voiced his fear of being seen; the Prophet reassured him.", "ur": "غار میں حضرت ابو بکر رضی اللہ عنہ نے دیکھ لیے جانے کا اندیشہ ظاہر کیا؛ نبی کریم ﷺ نے تسلی دی۔"}
+      },
+      {
+        "sourceId": "life-arrival-in-madinah-bara",
+        "text": {"en": "Before his arrival, Musab and Ibn Umm Maktum were already teaching the Quran.", "ur": "آپ ﷺ کی آمد سے پہلے مصعب اور ابن ام مکتوم رضی اللہ عنہما قرآن پڑھا رہے تھے۔"}
+      },
+      {
+        "sourceId": "life-arrival-in-madinah-bara",
+        "text": {"en": "Al-Bara remembered Madinah's extraordinary joy at his arrival.", "ur": "حضرت براء رضی اللہ عنہ کو آپ ﷺ کی آمد پر اہلِ مدینہ کی غیر معمولی خوشی یاد رہی۔"}
+      }
+    ]
+  },
+  {
+    "topic": "life-madinah",
+    "title": {"en": "A community in Madinah", "ur": "مدینہ میں معاشرت"},
+    "era": {"en": "Settlement after the Hijrah", "ur": "ہجرت کے بعد آباد ہونا"},
+    "dateLabel": {"en": "From 622 CE; early Madinan life", "ur": "۶۲۲ء سے؛ مدنی زندگی کا آغاز"},
+    "datePrecision": "period",
+    "dateNote": {
+      "en": "622 is the historically cited migration year, not a separately established year for every arrangement shown here. Anas explicitly places the mosque account after arrival and a fourteen-night stay; the date-sharing report has no exact date. The sources are grouped thematically, not treated as simultaneous.",
+      "ur": "۶۲۲ء تاریخی حوالے میں ہجرت کا سال ہے، یہاں دکھائے گئے ہر انتظام کا الگ ثابت شدہ سال نہیں۔ حضرت انس رضی اللہ عنہ مسجد کا بیان آمد اور چودہ راتوں کے قیام کے بعد رکھتے ہیں؛ کھجور میں شرکت کی روایت میں متعین تاریخ نہیں۔ روایتیں موضوع کے لحاظ سے جمع ہیں، ایک ہی وقت کے واقعات نہیں کہی گئیں۔"
+    },
+    "chronologySources": [
+      {
+        "url": "https://sunnah.com/bukhari:428",
+        "title": {"en": "Sahih al-Bukhari 428: arrival and mosque building", "ur": "صحیح بخاری ۴۲۸: آمد اور مسجد کی تعمیر"},
+        "supports": {
+          "en": "Anas describes arrival in Madinah, fourteen nights among Banu Amr ibn Awf, movement to Abu Ayyub's courtyard and mosque construction. This supports the post-arrival sequence without supplying a CE date for construction.",
+          "ur": "حضرت انس رضی اللہ عنہ مدینہ آمد، بنو عمرو بن عوف میں چودہ راتیں، حضرت ابو ایوب رضی اللہ عنہ کے صحن تک آمد اور مسجد کی تعمیر بیان کرتے ہیں۔ اس سے آمد کے بعد کی ترتیب معلوم ہوتی ہے، تعمیر کی عیسوی تاریخ نہیں۔"
+        }
+      },
+      {
+        "url": "https://www.britannica.com/event/Hijrah-Islam",
+        "title": {"en": "Britannica: Hijrah and the community in Madinah", "ur": "بریٹانیکا: ہجرت اور مدینہ کی جماعت"},
+        "supports": {
+          "en": "Provides 622 CE as the migration year and describes the Ansar as Madinan helpers of the emigrants. The date supplies the period's opening anchor, not an exact date for the palm-sharing exchange.",
+          "ur": "ہجرت کا سال ۶۲۲ء دیتا اور انصار کو مدینہ میں مہاجرین کے مددگار بتاتا ہے۔ یہ سال دور کے آغاز کی نشاندہی ہے، کھجور کی شرکت والی گفتگو کی متعین تاریخ نہیں۔"
+        }
+      },
+      {
+        "url": "https://sunnah.com/bukhari:3782",
+        "title": {"en": "Sahih al-Bukhari 3782: work and the date harvest", "ur": "صحیح بخاری ۳۷۸۲: محنت اور کھجور کی پیداوار"},
+        "supports": {
+          "en": "A report in al-Bukhari's fraternity chapter records the Ansar's proposal and the accepted arrangement of work and shared fruit. It supports the community theme, but does not establish a year or its timing relative to construction.",
+          "ur": "بخاری کے بابِ مواخات کی روایت انصار کی پیش کش اور محنت و پھل میں شرکت کے قبول شدہ انتظام کو بیان کرتی ہے۔ اس سے معاشرت کے موضوع کی تائید ہوتی ہے، مگر سال یا تعمیر کے مقابل اس کا وقت ثابت نہیں ہوتا۔"
+        }
+      }
+    ],
+    "places": ["madinah"],
+    "placeNote": {
+      "en": "Anas names Banu Amr ibn Awf, Abu Ayyub's courtyard and Banu al-Najjar's enclosure. The date-sharing report gives no orchard location. The locator stays at city level rather than inventing a street plan.",
+      "ur": "حضرت انس رضی اللہ عنہ بنو عمرو بن عوف، حضرت ابو ایوب رضی اللہ عنہ کے صحن اور بنو نجار کے احاطے کا ذکر کرتے ہیں۔ کھجور میں شرکت کی روایت باغ کا مقام نہیں بتاتی۔ خاکہ شہر کی سطح تک محدود ہے، فرضی گلیوں کا نقشہ نہیں بناتا۔"
+    },
+    "narrationIds": ["life-building-madinah-mosque", "life-sharing-work-and-dates"],
+    "highlights": [
+      {
+        "sourceId": "life-building-madinah-mosque",
+        "text": {"en": "Anas remembered the companions moving stones as the mosque took shape.", "ur": "حضرت انس رضی اللہ عنہ کو مسجد کی تعمیر میں صحابہ کا پتھر منتقل کرنا یاد تھا۔"}
+      },
+      {
+        "sourceId": "life-building-madinah-mosque",
+        "text": {"en": "The Prophet was with them, praying for the Ansar and the emigrants.", "ur": "نبی کریم ﷺ ان کے ساتھ تھے اور انصار و مہاجرین کے لیے دعا فرما رہے تھے۔"}
+      },
+      {
+        "sourceId": "life-sharing-work-and-dates",
+        "text": {"en": "A proposal to divide the palms gave way to sharing work and fruit.", "ur": "کھجور کے درخت تقسیم کرنے کی تجویز کے بجائے محنت اور پھل میں شرکت طے ہوئی۔"}
+      }
+    ]
+  }
+]

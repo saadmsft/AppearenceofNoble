@@ -1,0 +1,18 @@
+{
+  "entryId": "life-final-days-aisha-care-and-passing",
+  "language": "en",
+  "voice": "en-GB-RyanNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "Aisha remembers the Prophet may Allah bless him and grant him peace passing away in her home while she supported him. With his assent, she took a siwak brought by Abd al-Rahman and softened it for him. She describes him wiping his face with water, acknowledging the hardship of dying, and speaking of the highest companionship until he passed away and his hand dropped.",
+  "transcriptHash": "df5fbc0dd8271ac440b5b6859ff9495f4d0dc2e50e634c82a057ea781b3929cb",
+  "transcriptCharacters": 369,
+  "billableCharacters": 369,
+  "cacheKey": "c560d651f8a3ef987e5d3cecae87b8b6792bd8ed012639c66c2d7bf4f9b112b1",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c560d651f8a3ef987e5d3cecae87b8b6792bd8ed012639c66c2d7bf4f9b112b1.mp3",
+  "byteLength": 126576,
+  "sha256": "d261bb91304227cb3b8498502d115d03382a460d35016b9cf9187a9d768ec3da",
+  "durationSeconds": 21.096
+}

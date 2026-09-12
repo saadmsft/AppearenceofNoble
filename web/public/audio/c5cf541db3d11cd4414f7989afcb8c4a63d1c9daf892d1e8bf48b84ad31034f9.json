@@ -1,0 +1,18 @@
+{
+  "entryId": "life-abu-bakr-in-the-cave",
+  "language": "ur",
+  "voice": "ur-PK-AsadNeural",
+  "kind": "editorial-summary",
+  "synthetic": true,
+  "transcript": "حضرت ابو بکر رضی اللہ عنہ غار میں نبی کریم صلی اللہ علیہ وسلم کے ساتھ ہونے کا ذکر کرتے ہیں۔ انہیں اندیشہ تھا کہ کوئی اپنے قدموں کے نیچے دیکھے تو دونوں کو دیکھ لے گا۔ آپ صلی اللہ علیہ وسلم نے جواب میں ان کی توجہ اللہ کی معیت کی طرف دلائی۔ اس روایت میں یہی مختصر گفتگو محفوظ ہے، پورے سفر کی تفصیل نہیں۔",
+  "transcriptHash": "4020129d5be816c4d682f0b80660c54101443c6e3114515501e9c7042f720f8e",
+  "transcriptCharacters": 300,
+  "billableCharacters": 300,
+  "cacheKey": "c5cf541db3d11cd4414f7989afcb8c4a63d1c9daf892d1e8bf48b84ad31034f9",
+  "format": "audio-24khz-48kbitrate-mono-mp3",
+  "renderingProfile": "stock-neural-speak-voice-only-v1",
+  "asset": "audio/c5cf541db3d11cd4414f7989afcb8c4a63d1c9daf892d1e8bf48b84ad31034f9.mp3",
+  "byteLength": 138384,
+  "sha256": "f6626ae9f609ee675eae744b54681aa38696606f28b29666d5821c5cfec30d28",
+  "durationSeconds": 23.064
+}
