@@ -18,6 +18,7 @@ import { ListeningPlayer } from './components/ListeningPlayer'
 import { useListening } from './hooks/useListening'
 import type { ListeningSnapshot } from './lib/listening.ts'
 import { Button } from './components/ui/button'
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from './components/ui/dialog'
 import { collectionLabels, shelfLabels, topicLabels } from './lib/catalog.ts'
 import { chaptersByShelf } from './lib/chapters.ts'
 import type { Chapter } from './lib/chapters.ts'
@@ -50,6 +51,7 @@ function App() {
   const [systemDark, setSystemDark] = useState(() => window.matchMedia('(prefers-color-scheme: dark)').matches)
   const [limit, setLimit] = useState(12)
   const [notice, setNotice] = useState<{ key: MessageKey; version: number } | null>(null)
+  const [dedicationOpen, setDedicationOpen] = useState(true)
   const [storyNavigation, setStoryNavigation] = useState({ revision: 0, focus: true })
   const language: Language = route.language ?? preferences.language
   const listening = useListening(narrations, route.shelf, { initialLanguage: language })
@@ -480,7 +482,24 @@ function App() {
     <div className={`reading-status ${notice ? 'visible' : ''}`} role="status" aria-live="polite">
       {notice && <><Check size={17} aria-hidden="true" />{t(notice.key)}</>}
     </div>
-    <Reader entry={route.entry} row={selected} language={language} preferences={preferences} saved={selected ? savedIds.has(selected.id) : false}
+    <Dialog open={dedicationOpen} onOpenChange={setDedicationOpen}>
+      <DialogContent className="dedication-dialog" closeLabel={t('dedicationClose')} lang={language} dir={language === 'ur' ? 'rtl' : 'ltr'}
+        onCloseAutoFocus={(event) => {
+          event.preventDefault()
+          if (route.entry === null) document.getElementById('main-content')?.focus({ preventScroll: true })
+        }}>
+        <DialogTitle>{t('dedicationTitle')}</DialogTitle>
+        <DialogDescription asChild>
+          <div className="dedication-message">
+            <p>{t('dedicationAcknowledgment')}</p>
+            <p>{t('dedicationParents')}</p>
+            <p className="dedication-names" lang="en" dir="ltr">Farkhanda Abid<br />Abid Mahmood Abid</p>
+          </div>
+        </DialogDescription>
+        <Button onClick={() => setDedicationOpen(false)}>{t('dedicationContinue')}</Button>
+      </DialogContent>
+    </Dialog>
+    {!dedicationOpen && <Reader entry={route.entry} row={selected} language={language} preferences={preferences} saved={selected ? savedIds.has(selected.id) : false}
       previous={selectedIndex > 0 ? readerResults[selectedIndex - 1] : undefined}
       next={selectedIndex >= 0 ? readerResults[selectedIndex + 1] : undefined}
       collectionLabel={readerShelf ? shelfLabels[readerShelf][language] : undefined}
@@ -495,7 +514,7 @@ function App() {
       restoreFocus={() => {
         if (lastReadButton.current?.isConnected) lastReadButton.current.focus({ preventScroll: true })
         else (document.getElementById('collection-heading') ?? document.getElementById('story-heading') ?? document.getElementById('journey-heading') ?? document.getElementById('main-content'))?.focus({ preventScroll: true })
-      }} />
+      }} />}
     <button className="back-top button button-ghost button-icon" type="button" aria-label={t('backTop')} onClick={() => {
       window.scrollTo({ top: 0, behavior: scrollBehavior() })
       document.getElementById('main-content')?.focus({ preventScroll: true })

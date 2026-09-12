@@ -289,6 +289,11 @@ kbd { font-family: var(--cp-font); color: var(--cp-text-soft); font-size: 10px; 
 .dialog-content[dir="rtl"] { --cp-reader-x: 50%; border-radius: 24px 4px 4px 4px; }
 .dialog-content[data-state="open"] { animation: folio-open 280ms var(--cp-ease); }
 .dialog-content[data-state="closed"] { animation: disappear 140ms ease-in; }
+.dedication-dialog { width: min(560px, calc(100% - 48px)); padding: 60px 24px 32px; text-align: center; }
+.dedication-dialog h2 { font-size: 32px; font-weight: 450; }
+.dedication-message { margin-block: 24px; line-height: 1.9; }
+.dedication-message p + p { margin-block-start: 16px; }
+.dedication-names { font-size: 24px; color: var(--cp-accent); }
 .reader-close { position: absolute; z-index: 2; inset-block-start: 12px; inset-inline-end: 12px; background: var(--cp-bg-elevated); }
 .reader-heading { padding: 42px 48px 28px; }
 .reader-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-block: 0 24px; padding-inline-end: 28px; }

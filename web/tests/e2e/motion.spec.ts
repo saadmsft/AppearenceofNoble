@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures'
 
 test('ornamental motion pauses on demand, persists and leaves the calligraphy still', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' })

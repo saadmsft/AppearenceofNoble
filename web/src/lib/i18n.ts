@@ -2,6 +2,11 @@ import type { Language } from './schema.ts'
 
 const en = {
   name: 'The Noble Project',
+  dedicationTitle: 'Dedication',
+  dedicationAcknowledgment: 'All praise belongs to Allah, and peace and blessings be upon Prophet Muhammad (PBUH).',
+  dedicationParents: 'After Allah and His Prophet (PBUH), I dedicate this project with love and gratitude to my parents:',
+  dedicationContinue: 'Continue to the project',
+  dedicationClose: 'Close dedication',
   strapline: "A source-first reading companion",
   home: 'Home',
   story: 'Story Edition',
@@ -242,6 +247,11 @@ const en = {
 
 const ur: Record<keyof typeof en, string> = {
   name: 'دی نوبل پروجیکٹ',
+  dedicationTitle: 'انتساب',
+  dedicationAcknowledgment: 'تمام تعریفیں اللہ کے لیے ہیں، اور حضرت محمد ﷺ پر درود و سلام ہو۔',
+  dedicationParents: 'اللہ اور اس کے نبی ﷺ کے بعد، میں یہ منصوبہ محبت اور شکرگزاری کے ساتھ اپنے والدین کے نام کرتا ہوں:',
+  dedicationContinue: 'منصوبے کا مطالعہ کریں',
+  dedicationClose: 'انتساب بند کریں',
   strapline: 'شمائل و اخلاقِ نبوی کا مطالعہ',
   home: 'صفحۂ اول',
   story: 'بیانیہ سفر',
