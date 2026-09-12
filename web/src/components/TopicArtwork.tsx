@@ -154,6 +154,10 @@ function Motif({ topic, glowId }: { topic: AppearanceTopic; glowId: string }) {
   }
 }
 
+export function TopicMotif({ topic, glowId }: { topic: Topic; glowId: string }) {
+  return <Motif topic={artworkTopic(topic)} glowId={glowId} />
+}
+
 export function TopicArtwork({ topic, language, paused, reading, onPause }: {
   topic: Topic
   language: Language
@@ -173,7 +177,7 @@ export function TopicArtwork({ topic, language, paused, reading, onPause }: {
           <stop offset="0" stopColor="var(--cp-accent)" stopOpacity=".3" />
           <stop offset="1" stopColor="var(--cp-accent)" stopOpacity="0" />
         </radialGradient></defs>
-        <Motif topic={artworkTopic(topic)} glowId={glowId} />
+        <TopicMotif topic={topic} glowId={glowId} />
       </svg>
     </div>
     <div className="topic-art-caption">

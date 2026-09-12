@@ -55,7 +55,7 @@ export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened,
             {read > 0 && <span>{t('markedRead', { read: number(read, language), total: number(rows.length, language) })}</span>}
           </div>
           <Button variant={shelf === 'appearance' ? 'outline' : 'default'} onClick={() => onShelf(shelf)}>
-            {t(shelf === 'appearance' ? 'openAppearance' : 'openCharacter')}<ArrowRight size={17} className="directional" aria-hidden="true" />
+            {t(shelf === 'appearance' ? 'enterAppearanceStory' : 'enterCharacterStory')}<ArrowRight size={17} className="directional" aria-hidden="true" />
           </Button>
         </article>
       })}

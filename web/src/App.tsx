@@ -5,6 +5,7 @@ import { GuidePage, SourcesPage } from './components/AboutPages'
 import { NarrationCard } from './components/NarrationCard'
 import { ManuscriptHero } from './components/ManuscriptHero'
 import { TopicJourney } from './components/TopicJourney'
+import { StoryExperience } from './components/StoryExperience'
 import { ShelfSelector } from './components/ShelfSelector'
 import { ProjectHome } from './components/ProjectHome'
 import { ReadingPage } from './components/ReadingPage'
@@ -96,7 +97,7 @@ function App() {
     document.documentElement.dir = language === 'ur' ? 'rtl' : 'ltr'
     document.documentElement.dataset.theme = theme
     document.documentElement.dataset.motion = preferences.motion
-    document.title = `${translate(language, 'name')} | ${route.view === 'journey' ? shelfLabels[journeyShelf][language] : translate(language, route.view === 'saved' ? 'saved' : route.view === 'reading' ? 'reading' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
+    document.title = `${translate(language, 'name')} | ${route.view === 'journey' || route.view === 'story' ? shelfLabels[journeyShelf][language] : translate(language, route.view === 'saved' ? 'saved' : route.view === 'reading' ? 'reading' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
   }, [language, theme, route.view, journeyShelf, preferences.motion])
 
   useEffect(() => {
@@ -152,7 +153,7 @@ function App() {
     const shelf = getNarrationShelf(row.id)
     if (!shelf) throw new Error(`Cannot open an unknown collection entry: ${row.id}`)
     lastReadButton.current = button
-    updateRoute({ ...defaultFilters, shelf, entry: row.id })
+    updateRoute({ ...defaultFilters, shelf, storyBeat: 0, entry: row.id })
   }
 
   function readingCollectionLabel(id: string, lang: Language) {
@@ -165,13 +166,13 @@ function App() {
     updateRoute({ language: next }, true)
   }
 
-  function navigate(view: View, topic?: Topic, shelf: Shelf | 'all' = view === 'journey' ? 'appearance' : 'all') {
-    updateRoute({ ...defaultFilters, view, shelf, topic: topic ?? 'all', grade: view === 'saved' || topic ? 'all' : 'established', entry: null })
+  function navigate(view: View, topic?: Topic, shelf: Shelf | 'all' = view === 'journey' || view === 'story' ? 'appearance' : 'all') {
+    updateRoute({ ...defaultFilters, view, shelf, topic: topic ?? 'all', storyBeat: 0, grade: view === 'saved' || (view === 'collection' && topic) ? 'all' : 'established', entry: null })
     window.scrollTo({ top: 0 })
   }
 
-  function navHref(view: View, shelf: Shelf | 'all' = view === 'journey' ? 'appearance' : 'all') {
-    return routeUrl(new URL(window.location.href), { ...route, ...defaultFilters, view, shelf, grade: view === 'saved' ? 'all' : 'established', entry: null }).href
+  function navHref(view: View, shelf: Shelf | 'all' = view === 'journey' || view === 'story' ? 'appearance' : 'all') {
+    return routeUrl(new URL(window.location.href), { ...route, ...defaultFilters, view, shelf, storyBeat: 0, grade: view === 'saved' ? 'all' : 'established', entry: null }).href
   }
 
   function resetFilters() {
@@ -227,19 +228,39 @@ function App() {
       {route.view === 'home' && <>
         {reading.issue && <div className="page-width"><ReadingIssueMessage issue={reading.issue} language={language} /></div>}
         <ProjectHome language={language} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
-          readIds={readIds} lastOpened={lastOpened} onShelf={(shelf) => navigate('journey', undefined, shelf)} onResume={openPersonalEntry}
+          readIds={readIds} lastOpened={lastOpened} onShelf={(shelf) => navigate('story', undefined, shelf)} onResume={openPersonalEntry}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
       </>}
       {route.view === 'reading' && <ReadingPage language={language} allNarrations={narrations} reading={reading}
         bookmarks={preferences.bookmarks} onBookmarksChange={restoreBookmarks} onOpen={openPersonalEntry} getCollectionLabel={readingCollectionLabel} />}
-      {route.view === 'journey' && <>
+      {(route.view === 'journey' || route.view === 'story') &&
         <div className="journey-collection-switch page-width">
           <p>{t('collectionContext')}</p>
           <ShelfSelector value={journeyShelf} language={language} allowAll={false} onChange={(shelf) => {
             if (shelf === 'all') throw new Error('A journey requires a single project collection')
-            navigate('journey', undefined, shelf)
+            navigate(route.view, undefined, shelf)
           }} />
+          {route.view === 'journey' && <button type="button" className="story-mode-link" onClick={() => navigate('story', route.topic === 'all' ? undefined : route.topic, journeyShelf)}>
+            {t('storyView')}<BookOpen size={15} aria-hidden="true" />
+          </button>}
         </div>
+      }
+      {route.view === 'story' && <StoryExperience key={`story-${journeyShelf}`} shelf={journeyShelf} language={language}
+        chapters={activeChapters} requestedTopic={route.topic} requestedBeat={route.storyBeat}
+        paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
+        savedIds={savedIds} readIds={readIds} onSave={toggleSaved}
+        onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })}
+        onNavigate={(topic, storyBeat) => updateRoute({ topic, storyBeat })}
+        onReadingView={(topic) => {
+          navigate('journey', topic, journeyShelf)
+          requestAnimationFrame(() => focusSection(`chapter-${topic}`))
+        }}
+        onCollection={() => navigate('collection', undefined, journeyShelf)}
+        onRead={(row, topic, storyBeat, includeCautioned, button) => {
+          lastReadButton.current = button
+          updateRoute({ ...defaultFilters, view: 'story', shelf: journeyShelf, topic, storyBeat, grade: includeCautioned ? 'all' : 'established', entry: row.id })
+        }} />}
+      {route.view === 'journey' && <>
         <ManuscriptHero key={`hero-${journeyShelf}`} language={language} shelf={journeyShelf} entryCount={getShelfRows(journeyShelf).length} topicCount={activeChapters.length}
           paused={preferences.motion === 'paused'} readerOpen={route.entry !== null} guideHref={navHref('guide')}
           onExplore={() => focusSection(`chapter-${activeChapters[0].topic}`)} onGuide={() => navigate('guide')}
@@ -363,7 +384,7 @@ function App() {
       onPreferences={updatePreferences}
       restoreFocus={() => {
         if (lastReadButton.current?.isConnected) lastReadButton.current.focus({ preventScroll: true })
-        else (document.getElementById('collection-heading') ?? document.getElementById('journey-heading') ?? document.getElementById('main-content'))?.focus({ preventScroll: true })
+        else (document.getElementById('collection-heading') ?? document.getElementById('story-heading') ?? document.getElementById('journey-heading') ?? document.getElementById('main-content'))?.focus({ preventScroll: true })
       }} />
     <button className="back-top button button-ghost button-icon" type="button" aria-label={t('backTop')} onClick={() => {
       window.scrollTo({ top: 0, behavior: scrollBehavior() })

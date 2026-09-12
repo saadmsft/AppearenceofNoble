@@ -47,4 +47,19 @@ repeated switching, browser history, English/Urdu and personal-data preservation
 No redesign, source changes, MP3 regeneration, storage migration or Azure
 operations are authorized by this hotfix.
 
-No release after 2.0.1 has been approved.
+## Release 2.1: Story Edition
+
+Approved by the user on 12 September 2026 as the **main collection experience**.
+
+- Add source-backed, scroll-paced story trails for Appearance and Character.
+- Use one persistent, evolving ornamental stage, short reading beats and
+  explicit chapter/passage navigation instead of a sequence of animated cards.
+- Keep classic journeys as Reading view and retain the full library, reader,
+  saved MP3s, notes, bookmarks and old links.
+- Keep evidence behind deliberate actions. No invented scenes, chronology,
+  dialogue, depictions or new source claims.
+- Respect native scrolling, keyboard access, reduced motion and the pause
+  preference; stop decorative work when hidden, offscreen or behind the reader.
+- No audio regeneration, Azure operations or additional paid services.
+
+No release after 2.1 has been approved.

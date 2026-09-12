@@ -10,6 +10,10 @@ historical voice reconstructions, or impersonation.**
 
 ## What is included
 
+- **Story Edition** is the primary collection entry: scroll-paced passages and
+  one evolving ornamental stage for each Appearance or Character trail. Chapter
+  jumps and previous/next controls use native scrolling, with evidence opened
+  only on request. Reading view retains the conventional chapter layout.
 - A project home with separate **Appearance** and **Character** collections.
   Character introduces mercy, patience, humility, generosity, justice,
   forgiveness, honesty, and family/community. The shared reader and search keep
@@ -174,11 +178,21 @@ All navigation uses query parameters and hash fragments so links work on
 GitHub Pages without an SPA rewrite. Changing the repository name requires
 updating Vite's base, metadata URLs, repository links, and browser-test base URL.
 
-The default route opens the project home. `?view=journey&shelf=appearance`
-and `?view=journey&shelf=character` open the separate journeys.
+The default route opens the project home. `?view=story&shelf=appearance`
+and `?view=story&shelf=character` open the Story Edition trails. A `topic` and
+zero-based `beat` preserve explicit passage navigation. The older
+`?view=journey&shelf=appearance` and `?view=journey&shelf=character` URLs retain
+the conventional reading journeys.
 `?view=collection&shelf=all` searches both collections. Earlier Appearance
 journey/filter links without a shelf retain their original meaning. Narration
 links retain their view, shelf and topic; private notes never enter share URLs.
+
+Story Edition reuses the reviewed highlights and existing audio. It is thematic
+storytelling, not a reenacted historical timeline, and adds no dialogue, dates,
+physical depictions or new narration claims. Scrolling changes the visual
+position only, not explicit read marks. Motion pauses offscreen or behind the
+reader, and existing pause/reduced-motion preferences apply. Audio is never
+generated or automatically played by scrolling.
 
 ## Correcting or extending the research
 

@@ -6,7 +6,8 @@ import { topicLabels } from '../lib/catalog.ts'
 import { number, translate } from '../lib/i18n.ts'
 import { isEstablished } from '../lib/search.ts'
 import { focusSection } from '../lib/scroll.ts'
-import { NarrationCard, SourceName } from './NarrationCard'
+import { SourceName } from './NarrationCard'
+import { TopicReports } from './TopicReports'
 import { TopicArtwork } from './TopicArtwork'
 import { Button } from './ui/button'
 
@@ -59,7 +60,6 @@ function JourneyChapter({ chapter, next, language, paused, readerOpen, savedIds,
   const t = (key: Parameters<typeof translate>[1], values?: Record<string, string>) => translate(language, key, values)
   const reports = includeCautioned ? chapter.reports : chapter.reports.filter(isEstablished)
   const readCount = reports.filter((row) => readIds.has(row.id)).length
-  const cautionedCount = chapter.reports.filter((row) => !isEstablished(row)).length
   const panelId = `narrations-${chapter.topic}`
   const topicLabel = topicLabels[chapter.topic][language]
 
@@ -98,20 +98,8 @@ function JourneyChapter({ chapter, next, language, paused, readerOpen, savedIds,
     </div>
     <div id={panelId} className="chapter-reports page-width" role="region" aria-label={t('topicNarrations', { topic: topicLabel })} hidden={!expanded}>
       {expanded && <>
-        <div className="chapter-reports-heading">
-          <h3>{t('topicNarrations', { topic: topicLabel })}</h3>
-          <span>{t('results', { count: number(reports.length, language) })}</span>
-        </div>
-        <p className="chapter-grade-note">
-          {t(includeCautioned ? 'chapterAllGradesNotice' : 'cautionHidden')}
-          {cautionedCount > 0 && <button className="inline-link" type="button" aria-pressed={includeCautioned} onClick={() => setIncludeCautioned((value) => !value)}>
-            {t(includeCautioned ? 'hideCautioned' : 'includeCautioned')}
-          </button>}
-        </p>
-        <div className="narration-grid">
-          {reports.map((row) => <NarrationCard key={row.id} row={row} language={language} saved={savedIds.has(row.id)}
-            onSave={() => onSave(row.id)} onRead={(button) => onRead(row, chapter.topic, includeCautioned, button)} />)}
-        </div>
+        <TopicReports chapter={chapter} language={language} includeCautioned={includeCautioned}
+          onToggleCautioned={() => setIncludeCautioned((value) => !value)} savedIds={savedIds} onSave={onSave} onRead={onRead} />
         <div className="chapter-reports-footer">
           <Button variant="outline" onClick={hideNarrations}>{t('hideNarrations')}<ChevronUp size={16} aria-hidden="true" /></Button>
           {next && <button type="button" className="text-link" onClick={() => focusSection(`chapter-${next.topic}`)}>
