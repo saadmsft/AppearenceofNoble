@@ -265,3 +265,36 @@ canonical entries, 333 audio mappings and 329 unique MP3s. All 48 new MP3s
 completed within a conservative generation reservation of **US$0.40725 before
 tax**. Existing source files, 285 audio mappings, 281 MP3s and the Release 2.0
 ledger remain unchanged. No segmentation or additional resources were needed.
+
+## Release 2.2.1: Dedication and gratitude
+
+Approved by the user: wording, once-per-tab-session behavior and publication.
+
+- Add a gentle English/Urdu welcome popup in the existing manuscript style,
+  with a short fade that respects reduced motion. Show it once per browser-tab
+  session, not on every navigation or reload after dismissal.
+- Put dedication to Allah first, then love and reverence for Prophet Muhammad
+  (S.A.W.W.), followed by thanks for the continuing support of the user's mother,
+  Farkhanda Abid, and father, Abid Mahmood. This is a personal dedication, not a
+  narration or religious quotation.
+- Provide an immediate close button, Escape dismissal, an Enter the project
+  action, and a permanent Dedication link in the footer. Direct narration links
+  must remain uninterrupted; the welcome must not compete with the reader.
+- Preserve language selection, RTL, keyboard focus, themes, motion preferences,
+  reading data, all source records and existing audio. Do not start playback.
+  Use only a separate session-scoped dismissal flag, with graceful and visible
+  handling if remembering dismissal is unavailable.
+- No Azure calls, audio regeneration, new dependencies or additional agents.
+  Check the new popup lifecycle and existing reader/navigation behavior, then
+  publish the approved small release through the existing Pages workflow.
+
+Proposed English wording:
+
+> For the pleasure of Allah, and in love and reverence for Prophet Muhammad
+> (S.A.W.W.).
+>
+> With heartfelt gratitude to my mother, Farkhanda Abid, and my father,
+> Abid Mahmood, who continue to support me in this project.
+
+The Urdu edition will carry the same dedication and present-tense gratitude,
+using the names shown to the user for approval. No memorial language is used.

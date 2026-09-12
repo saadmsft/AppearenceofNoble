@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { shelfLabels } from '../../src/lib/catalog.ts'
 import { translate } from '../../src/lib/i18n.ts'
 import type { Shelf } from '../../src/lib/schema.ts'

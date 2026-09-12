@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { narrations } from '../../src/lib/library.ts'
 
 test('integrated notes, explicit reading marks and resume survive navigation and reload', async ({ page }) => {

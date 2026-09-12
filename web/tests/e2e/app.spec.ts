@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 
 test('English reading, Arabic source, keyboard dialog and focus restoration', async ({ page }) => {
   const errors: string[] = []

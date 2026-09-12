@@ -1,6 +1,8 @@
 import { useEffect, useEffectEvent, useMemo, useRef, useState } from 'react'
 import { ArrowDown, ArrowUp, Bookmark, BookOpen, Check, ChevronRight, Info, Moon, Search, ShieldCheck, Sun, X } from 'lucide-react'
 import { AboutFooter } from './components/Footer'
+import { Dedication } from './components/Dedication'
+import { dismissDedication, loadDedication } from './lib/dedication.ts'
 import { GuidePage, SourcesPage } from './components/AboutPages'
 import { NarrationCard } from './components/NarrationCard'
 import { ManuscriptHero } from './components/ManuscriptHero'
@@ -47,6 +49,11 @@ function App() {
   const [preferences, setPreferences] = useState<Preferences>(initial.value)
   const [storageIssue, setStorageIssue] = useState(initial.issue)
   const [route, setRoute] = useState(() => parseRoute(new URL(window.location.href)))
+  const [welcome] = useState(() => loadDedication(() => window.sessionStorage))
+  const [dedicationRequested, setDedicationRequested] = useState(() => !welcome.dismissed && route.entry === null)
+  const [dedicationIssue, setDedicationIssue] = useState(welcome.issue)
+  const dedicationOpen = dedicationRequested && route.entry === null
+  const overlayOpen = route.entry !== null || dedicationOpen
   const [systemDark, setSystemDark] = useState(() => window.matchMedia('(prefers-color-scheme: dark)').matches)
   const [limit, setLimit] = useState(12)
   const [notice, setNotice] = useState<{ key: MessageKey; version: number } | null>(null)
@@ -58,10 +65,11 @@ function App() {
   const { openEntry: trackOpenedEntry } = reading
   const searchInput = useRef<HTMLInputElement>(null)
   const lastReadButton = useRef<HTMLButtonElement | null>(null)
+  const dedicationTrigger = useRef<HTMLButtonElement | null>(null)
   const app = useRef<HTMLDivElement>(null)
   const lastFollowed = useRef<string | null>(null)
   const readerOpen = useRef(route.entry !== null)
-  readerOpen.current = route.entry !== null
+  readerOpen.current = overlayOpen
   const theme = preferences.theme === 'system' ? (systemDark ? 'dark' : 'light') : preferences.theme
   const t = (key: MessageKey, values?: Record<string, string | number>) => translate(language, key, values)
   const count = (value: number) => number(value, language)
@@ -115,7 +123,7 @@ function App() {
   const followPlayback = useEffectEvent((snapshot: ListeningSnapshot) => {
     const queue = snapshot.queue
     const entryId = snapshot.currentNarration?.id
-    if (!snapshot.follow || snapshot.followSuspended || !snapshot.playing || route.entry || !queue || !entryId) {
+    if (!snapshot.follow || snapshot.followSuspended || !snapshot.playing || overlayOpen || !queue || !entryId) {
       lastFollowed.current = null
       return
     }
@@ -256,6 +264,11 @@ function App() {
     updateRoute({ topic, storyBeat })
   }
 
+  function closeDedication() {
+    setDedicationRequested(false)
+    setDedicationIssue(dismissDedication(() => window.sessionStorage))
+  }
+
   function readingCollectionLabel(id: string, lang: Language) {
     const shelf = getNarrationShelf(id)
     return shelf ? shelfLabels[shelf][lang] : translate(lang, 'notFound')
@@ -329,7 +342,7 @@ function App() {
     <main id="main-content" tabIndex={-1}>
       {route.view === 'home' && <>
         {reading.issue && <div className="page-width"><ReadingIssueMessage issue={reading.issue} language={language} /></div>}
-        <ProjectHome language={language} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
+        <ProjectHome language={language} paused={preferences.motion === 'paused'} readerOpen={overlayOpen}
           readIds={readIds} lastOpened={lastOpened} onShelf={(shelf) => navigate('story', undefined, shelf)} onResume={openPersonalEntry}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
       </>}
@@ -353,7 +366,7 @@ function App() {
         navigationRevision={storyNavigation.revision} focusNavigation={storyNavigation.focus}
         onListen={playChapter} playingEntryId={listening.playing ? listeningId : undefined}
         followingSourceOnly={following && followingTarget?.matched === false}
-        paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
+        paused={preferences.motion === 'paused'} readerOpen={overlayOpen}
         savedIds={savedIds} readIds={readIds} onSave={toggleSaved}
         onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })}
         onNavigate={navigateStory}
@@ -368,10 +381,10 @@ function App() {
         }} />}
       {route.view === 'journey' && <>
         <ManuscriptHero key={`hero-${journeyShelf}`} language={language} shelf={journeyShelf} entryCount={getShelfRows(journeyShelf).length} topicCount={activeChapters.length}
-          paused={preferences.motion === 'paused'} readerOpen={route.entry !== null} guideHref={navHref('guide')}
+          paused={preferences.motion === 'paused'} readerOpen={overlayOpen} guideHref={navHref('guide')}
           onExplore={() => focusSection(`chapter-${activeChapters[0].topic}`)} onGuide={() => navigate('guide')}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
-        <TopicJourney key={`chapters-${journeyShelf}`} language={language} shelf={journeyShelf} chapters={activeChapters} paused={preferences.motion === 'paused'} readerOpen={route.entry !== null}
+        <TopicJourney key={`chapters-${journeyShelf}`} language={language} shelf={journeyShelf} chapters={activeChapters} paused={preferences.motion === 'paused'} readerOpen={overlayOpen}
           onListen={playChapter}
           savedIds={savedIds} readIds={readIds} collectionHref={navHref('collection', journeyShelf)} onCollection={() => navigate('collection', undefined, journeyShelf)}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} onSave={toggleSaved}
@@ -475,8 +488,19 @@ function App() {
       {route.view === 'sources' && <SourcesPage language={language} shelf={route.shelf} onShelf={(shelf) => updateRoute({ shelf })}
         onTopic={(topic) => navigate('collection', topic, getTopicShelf(topic))} />}
     </main>
-    <AboutFooter language={language} onJourney={() => navigate('journey')} onGuide={() => navigate('guide')} onSources={() => navigate('sources')} />
-    <ListeningPlayer listening={listening} language={language} readerOpen={route.entry !== null} onOpenSource={openListeningSource} />
+    <AboutFooter language={language} onJourney={() => navigate('journey')} onGuide={() => navigate('guide')} onSources={() => navigate('sources')}
+      dedicationIssue={dedicationIssue} onDedication={(button) => {
+        dedicationTrigger.current = button
+        listening.pause()
+        suspendFollow()
+        setDedicationRequested(true)
+      }} />
+    <ListeningPlayer listening={listening} language={language} readerOpen={overlayOpen} onOpenSource={openListeningSource} />
+    <Dedication open={dedicationOpen} language={language} storageIssue={dedicationIssue} onClose={closeDedication}
+      onLanguage={setLanguage} restoreFocus={() => {
+        if (dedicationTrigger.current?.isConnected) dedicationTrigger.current.focus({ preventScroll: true })
+        else document.getElementById('main-content')?.focus({ preventScroll: true })
+      }} />
     <div className={`reading-status ${notice ? 'visible' : ''}`} role="status" aria-live="polite">
       {notice && <><Check size={17} aria-hidden="true" />{t(notice.key)}</>}
     </div>

@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 
 test('the Appearance journey shows all themes and highlights, but no hadith cards until clicked', async ({ page }) => {
   await page.goto('./?lang=en&view=journey&shelf=appearance')

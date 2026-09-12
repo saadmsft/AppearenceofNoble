@@ -11,6 +11,11 @@ historical voice reconstructions, or impersonation.**
 
 ## What is included
 
+- A gentle English/Urdu **Dedication & gratitude** welcome, honoring Allah and
+  Prophet Muhammad (S.A.W.W.) first, followed by thanks to Farkhanda Abid and
+  Abid Mahmood for their continuing support. It appears once per browser-tab
+  session, leaves direct narration links uninterrupted, and can be reopened
+  from the footer. It is personal dedication, not research or a hadith quote.
 - **Story Edition** is the primary collection entry: scroll-paced passages and
   one evolving ornamental stage for each Appearance, Character or Life trail. Chapter
   jumps and previous/next controls use native scrolling, with evidence opened

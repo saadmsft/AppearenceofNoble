@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { lifeMilestones } from '../../src/lib/life.ts'
 import { getShelfRows } from '../../src/lib/library.ts'
 

@@ -1,4 +1,4 @@
-import { expect, test } from '@playwright/test'
+import { expect, test } from './fixtures.ts'
 import { createServer } from 'vite'
 import type { ViteDevServer } from 'vite'
 import { fileURLToPath } from 'node:url'

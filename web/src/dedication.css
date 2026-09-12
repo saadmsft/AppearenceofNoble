@@ -1,0 +1,30 @@
+.dialog-content.dedication-dialog { width: min(580px, calc(100% - 32px)); max-height: calc(100dvh - 32px); padding: 28px 40px 36px; border-radius: 6px 24px 6px 6px; }
+.dedication-dialog[dir="rtl"] { border-radius: 24px 6px 6px 6px; }
+.dedication-language { width: max-content; margin: 0; margin-inline-end: 48px; }
+.dedication-language button { min-width: 44px; min-height: 44px; }
+.dedication-ornament { display: block; margin: 28px auto 24px; color: var(--cp-accent); }
+.dedication-title { margin: 0 0 24px; text-align: center; font-size: clamp(25px, 4vw, 32px); font-weight: 450; line-height: 1.4; color: var(--cp-text); }
+.dedication-copy { text-align: center; }
+.dedication-first { font-size: 21px; line-height: 1.8; color: var(--cp-accent); }
+.dedication-parents { border-top: 1px solid var(--cp-rule); margin-top: 24px; padding-top: 24px; font-size: 16px; line-height: 1.95; color: var(--cp-text-soft); }
+.dedication-parents strong { color: var(--cp-text); font-weight: 600; }
+.dedication-enter { width: 100%; margin-top: 28px; }
+.dedication-storage-note { margin-top: 16px; font-size: 12px; line-height: 1.8; color: var(--cp-text-soft); max-width: 65ch; }
+.dedication-dialog[lang="ur"] .dedication-title { font-size: 27px; line-height: 2.2; font-weight: 400; }
+.dedication-dialog[lang="ur"] .dedication-first { font-size: 20px; line-height: 2.6; }
+.dedication-dialog[lang="ur"] .dedication-parents { font-size: 16px; line-height: 2.7; }
+.dedication-dialog[lang="ur"] .dedication-parents strong { font-weight: 400; }
+.dialog-content.dedication-dialog[data-state="open"] { animation: dedication-arrive 220ms var(--cp-ease); }
+@keyframes dedication-arrive { from { opacity: 0; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+[data-motion="paused"] .dedication-dialog,
+[data-motion="paused"] .dialog-overlay:has(+ .dedication-dialog) { animation: none !important; }
+@media(prefers-reduced-motion: reduce) {
+  .dialog-content.dedication-dialog[data-state],
+  .dialog-overlay:has(+ .dedication-dialog) { animation: none; }
+}
+@media(max-width:600px) {
+  .dialog-content.dedication-dialog { padding: 20px 24px 26px; }
+  .dedication-title { font-size: 26px; }
+  .dedication-first { font-size: 19px; }
+  .dedication-ornament { margin-block: 22px 20px; }
+}
