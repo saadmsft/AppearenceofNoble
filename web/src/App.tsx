@@ -9,6 +9,8 @@ import { StoryExperience } from './components/StoryExperience'
 import { ShelfSelector } from './components/ShelfSelector'
 import { ProjectHome } from './components/ProjectHome'
 import { ReadingPage } from './components/ReadingPage'
+import { Dedication } from './components/Dedication'
+import { hasSeenDedication, markDedicationSeen } from './lib/dedication.ts'
 import { ReadingIssueMessage, ReadingTools } from './components/ReadingTools'
 import { useReading } from './hooks/useReading'
 import type { BookmarkWriteResult } from './lib/reading.ts'
@@ -51,6 +53,7 @@ function App() {
   const [limit, setLimit] = useState(12)
   const [notice, setNotice] = useState<{ key: MessageKey; version: number } | null>(null)
   const [storyNavigation, setStoryNavigation] = useState({ revision: 0, focus: true })
+  const [dedicationOpen, setDedicationOpen] = useState(() => route.entry === null && !hasSeenDedication())
   const language: Language = route.language ?? preferences.language
   const listening = useListening(narrations, route.shelf, { initialLanguage: language })
   const { suspendFollow, subscribe: subscribeListening, getSnapshot: getListeningSnapshot } = listening
@@ -476,6 +479,7 @@ function App() {
         onTopic={(topic) => navigate('collection', topic, getTopicShelf(topic))} />}
     </main>
     <AboutFooter language={language} onJourney={() => navigate('journey')} onGuide={() => navigate('guide')} onSources={() => navigate('sources')} />
+    <Dedication open={dedicationOpen} language={language} onClose={() => { markDedicationSeen(); setDedicationOpen(false) }} />
     <ListeningPlayer listening={listening} language={language} readerOpen={route.entry !== null} onOpenSource={openListeningSource} />
     <div className={`reading-status ${notice ? 'visible' : ''}`} role="status" aria-live="polite">
       {notice && <><Check size={17} aria-hidden="true" />{t(notice.key)}</>}

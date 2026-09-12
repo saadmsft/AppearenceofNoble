@@ -749,3 +749,16 @@ html[data-motion="paused"] *, html[data-motion="paused"] *::before, html[data-mo
   .dialog-content, .dialog-content[dir="rtl"] { position: static; transform: none; width: 100%; max-height: none; overflow: visible; border: 0; box-shadow: none; }
   .card-summary, .card-excerpt .arabic { display: block; overflow: visible; }
 }
+
+.dedication-content { width: min(560px, calc(100% - 48px)); }
+.dedication-body { padding: 48px 44px 40px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.dedication-ornament { display: block; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--cp-rule); background: radial-gradient(circle at center, var(--cp-accent-soft, var(--cp-folio)) 0%, transparent 70%); }
+.dedication-title { font-weight: 450; font-size: 28px; line-height: 1.3; letter-spacing: -.02em; margin: 0; }
+.dedication-intro { font-size: 15px; line-height: 1.75; color: var(--cp-text); max-width: 46ch; margin: 0; }
+.dedication-parents { font-size: 15px; line-height: 1.75; color: var(--cp-text-soft); max-width: 46ch; margin: 0; font-style: italic; }
+.dedication-continue { margin-block-start: 10px; }
+@media (max-width: 640px) {
+  .dedication-body { padding: 40px 24px 32px; }
+  .dedication-title { font-size: 24px; }
+}
+

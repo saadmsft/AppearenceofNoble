@@ -238,6 +238,11 @@ const en = {
   allData: 'All entries are included in the download, including cautioned reports.',
   sourceHost: 'Full reports hosted by Sunnah.com',
   acknowledgments: 'Source access: Sunnah.com. Arabic and Urdu reading fonts: Noto Naskh Arabic and Noto Nastaliq Urdu (SIL Open Font License). The site does not reproduce third-party modern translations.',
+  dedicationTitle: 'A dedication',
+  dedicationIntro: 'This project is offered, first and foremost, in gratitude to Allah, and with love and reverence for His Messenger, Prophet Muhammad ﷺ.',
+  dedicationParents: 'It is also lovingly dedicated to my parents, Farkhanda Abid and Abid Mahmood Abid, whose prayers, patience, and example made this work possible.',
+  dedicationContinue: 'Enter the project',
+  dedicationClose: 'Close dedication',
 }
 
 const ur: Record<keyof typeof en, string> = {
@@ -478,6 +483,11 @@ const ur: Record<keyof typeof en, string> = {
   allData: 'ڈاؤن لوڈ میں تمام اندراجات، بشمول احتیاط طلب روایات، شامل ہیں۔',
   sourceHost: 'مکمل روایات سنہ ڈاٹ کام پر دستیاب ہیں',
   acknowledgments: 'مآخذ تک رسائی: سنہ ڈاٹ کام۔ عربی اور اردو کے خطوط: نوٹو نسخ عربی اور نوٹو نستعلیق اردو، SIL اوپن فونٹ لائسنس کے تحت۔ اس ویب سائٹ میں دوسروں کے جدید تراجم نقل نہیں کیے گئے۔',
+  dedicationTitle: 'انتساب',
+  dedicationIntro: 'یہ منصوبہ سب سے پہلے اللہ تعالیٰ کے شکر کے ساتھ، اور اُس کے رسول نبی کریم محمد ﷺ سے محبت و ادب کے ساتھ پیش کیا جاتا ہے۔',
+  dedicationParents: 'اور محبت کے ساتھ یہ کام میرے والدین، فرخندہ عابد اور عابد محمود عابد، کے نام معنون ہے، جن کی دعائیں، صبر اور مثال نے اسے ممکن بنایا۔',
+  dedicationContinue: 'منصوبے میں داخل ہوں',
+  dedicationClose: 'انتساب بند کریں',
 }
 
 export const translations = { en, ur }

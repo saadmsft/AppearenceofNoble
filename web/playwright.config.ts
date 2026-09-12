@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test'
 
+const baseURL = process.env.SITE_URL ?? 'http://127.0.0.1:4173/AppearenceofNoble/'
+
 export default defineConfig({
   testDir: './tests/e2e',
   fullyParallel: false,
@@ -8,9 +10,16 @@ export default defineConfig({
   workers: 1,
   reporter: 'list',
   use: {
-    baseURL: process.env.SITE_URL ?? 'http://127.0.0.1:4173/AppearenceofNoble/',
+    baseURL,
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
+    storageState: {
+      cookies: [],
+      origins: [{
+        origin: new URL(baseURL).origin,
+        localStorage: [{ name: 'noble-appearance.dedication.seen.v1', value: 'true' }],
+      }],
+    },
   },
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'], viewport: { width: 1440, height: 1000 } } },
