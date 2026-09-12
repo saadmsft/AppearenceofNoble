@@ -228,8 +228,8 @@ function StoryStage({ stageRef, active, outgoing, language, chapterCount, chapte
         <Button variant="ghost" size="icon" onClick={onPrevious} disabled={previousDisabled} aria-label={t('storyPrevious')}><ArrowLeft size={17} className="directional" aria-hidden="true" /></Button>
         <Button variant="ghost" size="icon" onClick={onNext} disabled={nextDisabled} aria-label={t('storyNext')}><ArrowRight size={17} className="directional" aria-hidden="true" /></Button>
       </div>
-      <LifeStageContext topic={active.chapter.topic} language={language} />
     </div>
+    <LifeStageContext topic={active.chapter.topic} language={language} />
     <div className="story-visual" aria-hidden="true">
       <div className="story-orbital-frame frame-back" />
       <div className="story-orbital-frame frame-front" />
