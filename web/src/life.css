@@ -34,8 +34,6 @@
 .story-experience[data-shelf="life"] .story-visual { perspective: none; }
 .story-experience[data-shelf="life"] .story-orbital-frame { opacity: .3; }
 .story-experience[data-shelf="life"] .story-ink-path { transform: none; }
-.story-experience[data-shelf="life"] .story-motif-incoming { animation-name: life-ink-arrive; }
-.story-experience[data-shelf="life"] .story-motif-outgoing { animation-name: life-ink-leave; }
 .story-experience[data-shelf="life"] .story-ornament-note { font-size: 10px; line-height: 1.8; }
 .story-chapter .life-context { margin-inline-start: 40px; }
 .story-listen-action { margin-top: 24px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--cp-accent); font-size: 13px; }
@@ -48,8 +46,6 @@
 .life-chronology-index > details { border-top: 1px solid var(--cp-rule); padding-block: 12px; }
 .life-chronology-index > details > summary { min-height: 44px; cursor: pointer; line-height: 1.9; }
 .life-chronology-index .life-context { border: 0; margin-top: 0; }
-@keyframes life-ink-arrive { from { opacity: .25; filter: blur(2px); } to { opacity: 1; filter: blur(0); } }
-@keyframes life-ink-leave { from { opacity: 1; } to { opacity: 0; } }
 [lang="ur"] .life-timeline strong { font-size: 15px; line-height: 2.4; font-weight: 400; }
 [lang="ur"] .life-timeline small { line-height: 2.6; }
 [lang="ur"] .life-timeline-number { font-family: var(--cp-font-arabic); font-size: 18px; }

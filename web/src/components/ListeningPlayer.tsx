@@ -19,6 +19,7 @@ const listeningLabels = {
     online: 'Saved MP3s need a connection unless downloaded. Background playback depends on your browser and device.',
     checkpoint: 'Paused positions are saved on this device. An abrupt browser closure can lose the latest checkpoint.',
     reload: 'Reload saved listening state', aliases: 'Also represents', of: 'of', unknownDuration: 'Duration loads with MP3',
+    storyScope: 'Synthetic editorial story', storyEn: 'English · narrated story', storyUr: 'Urdu · narrated story', storySource: 'Open story and sources',
   },
   ur: {
     title: 'باب کی سماعت', synthetic: 'مصنوعی آواز میں روایت', previous: 'پچھلی روایت', next: 'اگلی روایت',
@@ -33,6 +34,7 @@ const listeningLabels = {
     online: 'محفوظ MP3 کے لیے کنکشن درکار ہے، جب تک اسے ڈاؤن لوڈ نہ کیا ہو۔ پس منظر میں سماعت براؤزر اور آلے پر منحصر ہے۔',
     checkpoint: 'روکی ہوئی آڈیو کا مقام اسی آلے پر محفوظ ہوتا ہے۔ براؤزر اچانک بند ہونے پر تازہ ترین مقام ضائع ہو سکتا ہے۔',
     reload: 'محفوظ سماعت کی حالت دوبارہ لوڈ کریں', aliases: 'یہ ماخذ بھی شامل ہیں', of: 'از', unknownDuration: 'دورانیہ MP3 کے ساتھ لوڈ ہوگا',
+    storyScope: 'مصنوعی آواز میں ادارتی بیانیہ', storyEn: 'انگریزی · بیانیہ', storyUr: 'اردو · بیانیہ', storySource: 'بیانیہ اور مآخذ کھولیں',
   },
 } as const
 
@@ -138,11 +140,12 @@ export function EntryListeningPlayer({ entryId, language, listening, context }: 
 }
 
 /** Shared controls only: safe inside an inert-backed dialog, with no second audio element. */
-export function ListeningControls({ listening, language, onOpenSource }: {
-  listening: ListeningController; language: Language; onOpenSource?: (id: string) => void
+export function ListeningControls({ listening, language, onOpenSource, allowFollow = true }: {
+  listening: ListeningController; language: Language; onOpenSource?: (id: string) => void; allowFollow?: boolean
 }) {
   const t = listeningLabels[language]
-  const row = listening.currentNarration
+  const row = listening.currentEntry
+  const story = listening.currentStory !== null
   const track = listening.currentTrack
   const src = track ? resolveAudioAsset(track.asset, typeof window === 'undefined' ? undefined : window.location.href) : null
   const aliases = listening.items[listening.position]?.entryIds.filter((id) => id !== row?.id) ?? []
@@ -154,10 +157,10 @@ export function ListeningControls({ listening, language, onOpenSource }: {
         <div className="listening-source">
           <p className="listening-chapter">{listening.queue.title[language]} · {listening.position + 1} {t.of} {listening.items.length}</p>
           {row && (onOpenSource
-            ? <button type="button" className="listening-source-button" aria-label={`${t.source}: ${row.title[language]}`}
+            ? <button type="button" className="listening-source-button" aria-label={`${story ? t.storySource : t.source}: ${row.title[language]}`}
               onClick={() => onOpenSource(row.id)}>{row.title[language]}</button>
             : <p className="listening-current">{row.title[language]}</p>)}
-          <p className="audio-notice">{t.scope} · {t[listening.language]}</p>
+          <p className="audio-notice">{story ? t.storyScope : t.scope} · {story ? (listening.language === 'ur' ? t.storyUr : t.storyEn) : t[listening.language]}</p>
         </div>
         <button type="button" onClick={listening.dismiss} aria-label={t.dismiss} className="listening-dismiss">×</button>
       </div>
@@ -183,17 +186,17 @@ export function ListeningControls({ listening, language, onOpenSource }: {
           <select value={listening.language} onChange={(event) => {
             const next = audioLanguages.find((value) => value === event.target.value)
             if (next) listening.setLanguage(next)
-          }}>{audioLanguages.map((value) => <option key={value} value={value}>{t[value]}</option>)}</select>
+          }}>{audioLanguages.filter((value) => !story || value !== 'ar').map((value) => <option key={value} value={value}>{story ? (value === 'ur' ? t.storyUr : t.storyEn) : t[value]}</option>)}</select>
         </label>
         <label className="audio-rate"><span>{t.rate}</span>
           <select value={listening.rate} onChange={(event) => listening.setRate(Number(event.target.value))}>
             {listeningRates.map((rate) => <option key={rate} value={rate}>{rate}×</option>)}
           </select>
         </label>
-        <label className="listening-follow"><input type="checkbox" checked={listening.follow}
-          onChange={(event) => listening.setFollow(event.target.checked)} />{t.follow}</label>
+        {allowFollow && <label className="listening-follow"><input type="checkbox" checked={listening.follow}
+          onChange={(event) => listening.setFollow(event.target.checked)} />{t.follow}</label>}
       </div>
-      {listening.follow && listening.followSuspended && <p className="audio-notice">{t.suspended}{' '}
+      {allowFollow && listening.follow && listening.followSuspended && <p className="audio-notice">{t.suspended}{' '}
         <button type="button" onClick={() => listening.setFollow(true)}>{t.restoreFollow}</button>
       </p>}
       {(listening.loading || listening.ended) && <p role="status" className="audio-notice">{listening.loading ? t.loading : t.ended}</p>}
@@ -202,7 +205,7 @@ export function ListeningControls({ listening, language, onOpenSource }: {
         {track && <details className="audio-transcript">
           <summary>{t.transcript}</summary>
           {aliases.length > 0 && <div className="audio-notice">{t.aliases}: {aliases.map((id) => (
-            <span key={id}> {listening.getNarration(id)?.title[language]} </span>
+            <span key={id}> {listening.getEntry(id)?.title[language]} </span>
           ))}</div>}
           <p lang={track.language} dir={track.language === 'en' ? 'ltr' : 'rtl'}>{track.transcript}</p>
         </details>}

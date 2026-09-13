@@ -4,15 +4,17 @@ import { dedicationLabels } from '../lib/dedication.ts'
 import type { DedicationStorageIssue } from '../lib/dedication.ts'
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from './ui/dialog'
 import { Button } from './ui/button'
+import { InkSeal } from './InkSeal'
 import '../dedication.css'
 
-export function Dedication({ open, language, storageIssue, onClose, onLanguage, restoreFocus }: {
+export function Dedication({ open, language, storageIssue, onClose, onLanguage, restoreFocus, paused }: {
   open: boolean
   language: Language
   storageIssue: DedicationStorageIssue
   onClose: () => void
   onLanguage: (language: Language) => void
   restoreFocus: () => void
+  paused: boolean
 }) {
   const enter = useRef<HTMLButtonElement>(null)
   const t = dedicationLabels[language]
@@ -24,7 +26,7 @@ export function Dedication({ open, language, storageIssue, onClose, onLanguage, 
         <button type="button" lang="en" dir="ltr" aria-label="English" aria-pressed={language === 'en'} onClick={() => onLanguage('en')}>EN</button>
         <button type="button" lang="ur" dir="rtl" aria-label="اردو" aria-pressed={language === 'ur'} onClick={() => onLanguage('ur')}>اردو</button>
       </div>
-      <span className="heading-flower dedication-ornament" aria-hidden="true" />
+      <InkSeal paused={paused} />
       <DialogTitle className="dedication-title">{t.title}</DialogTitle>
       <DialogDescription asChild>
         <div className="dedication-copy">

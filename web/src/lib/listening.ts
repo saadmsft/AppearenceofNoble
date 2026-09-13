@@ -1,6 +1,8 @@
 import { z } from 'zod'
 import { audioLanguages, audioManifestSchema, resetAudio, resolveAudioAsset } from './audio.ts'
-import type { AudioLanguage, AudioTrack } from './audio.ts'
+import type { AudioLanguage } from './audio.ts'
+import { isStoryEpisode, storyAudioManifestSchema } from './story-audio.ts'
+import type { ListeningEntry, PlayableAudioTrack, StoryEpisode } from './story-audio.ts'
 import { isEstablished, shelves, topics, topicsByShelf } from './schema.ts'
 import type { Localized, Narration, Shelf, Topic } from './schema.ts'
 
@@ -54,11 +56,11 @@ export type ListeningData = {
   readonly positions: readonly ListeningCursor[]; readonly queue: ListeningQueue | null
 }
 export type ListeningItem = {
-  readonly entryId: string; readonly entryIds: readonly string[]; readonly track: AudioTrack | null
+  readonly entryId: string; readonly entryIds: readonly string[]; readonly track: PlayableAudioTrack | null
 }
 export type ListeningCatalog = {
-  readonly rows: ReadonlyMap<string, Narration>
-  readonly tracks: ReadonlyMap<string, AudioTrack>
+  readonly rows: ReadonlyMap<string, ListeningEntry>
+  readonly tracks: ReadonlyMap<string, PlayableAudioTrack>
   readonly issue: ListeningIssue | null
 }
 export type ListeningStorage = () => Pick<Storage, 'getItem' | 'setItem'>
@@ -68,12 +70,22 @@ function cursorId(cursor: Pick<ListeningCursor, 'entryId' | 'language'>) {
   return mappingId(cursor.entryId, cursor.language)
 }
 
-export function createListeningCatalog(rows: readonly Narration[], manifest: unknown): ListeningCatalog {
+export function createListeningCatalog(rows: readonly ListeningEntry[], manifest: unknown, storyManifest: unknown = { version: 1, tracks: [] }): ListeningCatalog {
   const parsed = audioManifestSchema.safeParse(manifest)
+  const stories = storyAudioManifestSchema.safeParse(storyManifest)
+  const tracks: PlayableAudioTrack[] = [
+    ...(parsed.success ? parsed.data.tracks : []),
+    ...(stories.success ? stories.data.tracks : []),
+  ]
+  const mappings = new Map(tracks.map((track) => [mappingId(track.entryId, track.language), track]))
+  const byId = new Map(rows.map((row) => [row.id, row]))
+  const invalidKind = tracks.some((track) => {
+    const entry = byId.get(track.entryId)
+    return entry && isStoryEpisode(entry) !== (track.kind === 'guided-story')
+  })
   return {
-    rows: new Map(rows.map((row) => [row.id, row])),
-    tracks: new Map(parsed.success ? parsed.data.tracks.map((track) => [mappingId(track.entryId, track.language), track]) : []),
-    issue: parsed.success ? null : { code: 'invalid-metadata' },
+    rows: byId, tracks: mappings,
+    issue: parsed.success && stories.success && mappings.size === tracks.length && !invalidKind ? null : { code: 'invalid-metadata' },
   }
 }
 
@@ -91,10 +103,17 @@ export function buildListeningQueue(
   if (!parsed.success || !audioLanguages.includes(language)) return fail('invalid-data')
   if (catalog.issue) return { ok: false, issue: catalog.issue }
   if (parsed.data.entryIds.some((entryId) => !catalog.rows.has(entryId))) return fail('unknown-identity')
-  const entryIds = [...new Set(parsed.data.entryIds)].filter((entryId) =>
-    parsed.data.includeCautioned || isEstablished(catalog.rows.get(entryId)!))
+  const storyQueue = isStoryEpisode(catalog.rows.get(parsed.data.entryIds[0])!)
+  if (parsed.data.entryIds.some((entryId) => {
+    const entry = catalog.rows.get(entryId)!
+    return isStoryEpisode(entry) !== storyQueue || (isStoryEpisode(entry) && entry.shelf !== parsed.data.shelf)
+  }) || (storyQueue && language === 'ar')) return fail('invalid-data')
+  const entryIds = [...new Set(parsed.data.entryIds)].filter((entryId) => {
+    const entry = catalog.rows.get(entryId)!
+    return parsed.data.includeCautioned || isStoryEpisode(entry) || isEstablished(entry)
+  })
   if (!entryIds.length) return fail('empty-queue')
-  const items: { entryId: string; entryIds: string[]; track: AudioTrack | null }[] = []
+  const items: { entryId: string; entryIds: string[]; track: PlayableAudioTrack | null }[] = []
   const seen = new Map<string, number>()
   for (const entryId of entryIds) {
     const track = catalog.tracks.get(mappingId(entryId, language)) ?? null
@@ -204,7 +223,8 @@ export type ListeningMedia = Pick<HTMLAudioElement,
 export type ListeningSnapshot = {
   readonly data: ListeningData; readonly queue: ListeningQueue | null
   readonly items: readonly ListeningItem[]; readonly position: number
-  readonly currentNarration: Narration | null; readonly currentTrack: AudioTrack | null
+  readonly currentNarration: Narration | null; readonly currentStory: StoryEpisode | null
+  readonly currentEntry: ListeningEntry | null; readonly currentTrack: PlayableAudioTrack | null
   readonly language: AudioLanguage; readonly rate: number
   readonly currentTime: number; readonly duration: number
   readonly playing: boolean; readonly loading: boolean; readonly ended: boolean
@@ -228,7 +248,7 @@ export type ListeningRestorePreview = {
 }
 export type ListeningApplyRestoreOptions = { confirmed: boolean; expectedBaseline: string }
 export type ListeningEngineOptions = {
-  rows: readonly Narration[]; manifest: unknown; storage: ListeningStorage; pageHref?: string; now?: () => number
+  rows: readonly ListeningEntry[]; manifest: unknown; storyManifest?: unknown; storage: ListeningStorage; pageHref?: string; now?: () => number
   initialLanguage?: AudioLanguage
 }
 
@@ -236,7 +256,7 @@ export type ListeningEngineOptions = {
  * Media is exclusively supplied by a stable root ref; no detached Audio objects.
  */
 export function createListeningEngine(options: ListeningEngineOptions) {
-  let catalog = createListeningCatalog(options.rows, options.manifest)
+  let catalog = createListeningCatalog(options.rows, options.manifest, options.storyManifest)
   const loaded = loadListening(options.storage, catalog)
   let raw = loaded.raw
   let data = loaded.raw === null && options.initialLanguage
@@ -253,7 +273,7 @@ export function createListeningEngine(options: ListeningEngineOptions) {
     mode: ListeningRestoreMode; baseline: string; raw: string | null; serialized: string
   }>()
   let snapshot: ListeningSnapshot = {
-    data, queue: data.queue, items: [], position: -1, currentNarration: null, currentTrack: null,
+    data, queue: data.queue, items: [], position: -1, currentNarration: null, currentStory: null, currentEntry: null, currentTrack: null,
     language: data.language, rate: data.rate, currentTime: 0, duration: 0,
     playing: false, loading: false, ended: false, error: null, storageIssue: loaded.issue,
     writable: loaded.issue === null, follow: false, followSuspended: false,
@@ -267,8 +287,11 @@ export function createListeningEngine(options: ListeningEngineOptions) {
     const items = result?.ok ? result.value.items : []
     const position = items.findIndex((item) => item.entryIds.includes(data.queue!.currentEntryId))
     const currentTrack = items[position]?.track ?? null
+    const currentEntry = data.queue ? catalog.rows.get(data.queue.currentEntryId) ?? null : null
     emit({
-      items, position, currentTrack, currentNarration: data.queue ? catalog.rows.get(data.queue.currentEntryId) ?? null : null,
+      items, position, currentTrack, currentEntry,
+      currentNarration: currentEntry && !isStoryEpisode(currentEntry) ? currentEntry : null,
+      currentStory: currentEntry && isStoryEpisode(currentEntry) ? currentEntry : null,
       currentTime: 0, duration: 0, ended: false,
       error: result && !result.ok ? result.issue : data.queue && !currentTrack ? { code: 'missing-track' } : null,
     })
@@ -446,11 +469,15 @@ export function createListeningEngine(options: ListeningEngineOptions) {
     removeEvents = () => cleanup.forEach((remove) => remove())
     selectMedia()
   }
-  function startQueue(input: ListeningQueueInput, language: AudioLanguage): ListeningResult<undefined> {
+  function startQueue(input: ListeningQueueInput, language: AudioLanguage, startAt?: string): ListeningResult<undefined> {
     const next = buildListeningQueue(catalog, input, language)
     stop()
     if (!next.ok) { emit({ error: next.issue }); return next }
-    data = { ...data, language, queue: next.value.queue }
+    if (startAt && !next.value.queue.entryIds.includes(startAt)) {
+      emit({ error: { code: 'unknown-identity' } })
+      return fail('unknown-identity')
+    }
+    data = { ...data, language, queue: { ...next.value.queue, currentEntryId: startAt ?? next.value.queue.currentEntryId } }
     project()
     selectMedia()
     persist()
@@ -460,7 +487,7 @@ export function createListeningEngine(options: ListeningEngineOptions) {
   function startEntry(entryId: string, language: AudioLanguage, context?: ListeningContext): ListeningResult<undefined> {
     const row = catalog.rows.get(entryId)
     if (!row) { stop(); emit({ error: { code: 'unknown-identity' } }); return fail('unknown-identity') }
-    const shelf = shelves.find((value) => row.topics.some((topic) => topicsByShelf[value].includes(topic)))!
+    const shelf = isStoryEpisode(row) ? row.shelf : shelves.find((value) => row.topics.some((topic) => topicsByShelf[value].includes(topic)))!
     return startQueue({
       shelf, topic: 'all', title: row.title, ...context, entryIds: [entryId],
     }, language)
@@ -588,7 +615,11 @@ export function createListeningEngine(options: ListeningEngineOptions) {
   project()
   return {
     getSnapshot: () => snapshot,
-    getNarration: (entryId: string) => catalog.rows.get(entryId) ?? null,
+    getEntry: (entryId: string) => catalog.rows.get(entryId) ?? null,
+    getNarration: (entryId: string) => {
+      const entry = catalog.rows.get(entryId)
+      return entry && !isStoryEpisode(entry) ? entry : null
+    },
     subscribe: (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener) } },
     bindAudio, startQueue, startEntry, play, resume: play, pause: () => stop(),
     previous: () => move(snapshot.position - 1), next: () => move(snapshot.position + 1),
@@ -607,9 +638,9 @@ export function createListeningEngine(options: ListeningEngineOptions) {
     validateData: (input: unknown) => validateListeningData(input, catalog),
     exportData: () => validateListeningData(data, catalog),
     serialize: () => serializeListeningData(data, catalog),
-    setRows: (rows: readonly Narration[]) => {
+    setRows: (rows: readonly ListeningEntry[]) => {
       if (rows.length === catalog.rows.size && rows.every((row) => catalog.rows.get(row.id) === row)) return
-      catalog = createListeningCatalog(rows, options.manifest)
+      catalog = createListeningCatalog(rows, options.manifest, options.storyManifest)
       const valid = validateListeningData(data, catalog)
       if (!valid.ok) { stop(false); emit({ storageIssue: valid.issue, writable: false, error: valid.issue }) }
       else {

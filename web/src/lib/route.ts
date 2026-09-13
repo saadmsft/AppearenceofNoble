@@ -3,7 +3,7 @@ import type { Language, Shelf } from './schema.ts'
 import { defaultFilters } from './search.ts'
 import type { Filters } from './search.ts'
 
-export const views = ['home', 'story', 'journey', 'collection', 'reading', 'guide', 'sources', 'saved'] as const
+export const views = ['home', 'story', 'journey', 'collection', 'listen', 'reading', 'guide', 'sources', 'saved'] as const
 export type View = typeof views[number]
 export type Route = Filters & { view: View; shelf: Shelf | 'all'; language?: Language; entry: string | null; storyBeat: number }
 

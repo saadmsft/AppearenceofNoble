@@ -166,7 +166,8 @@ export function mergeManifest(existing: AudioManifest, completed: AudioTrack[]):
   })
 }
 
-export function validateMp3(bytes: Uint8Array): number {
+export function validateMp3(bytes: Uint8Array, bitrate: 48 | 128 = 48): number {
+  if (bitrate !== 48 && bitrate !== 128) throw new AudioToolError('unsupported-mp3-bitrate')
   if (bytes.length < 288 || bytes.length > 4_000_000) throw new AudioToolError('invalid-mp3-length')
   let offset = 0
   if (Buffer.from(bytes.subarray(0, 3)).toString('ascii') === 'ID3') {
@@ -183,12 +184,12 @@ export function validateMp3(bytes: Uint8Array): number {
       offset += 128
       break
     }
-    // MPEG-2 Layer III, 48 kbit/s, 24 kHz, mono; each frame contains 576 samples.
+    // MPEG-2 Layer III, 24 kHz, mono; keep legacy 48 kbit/s validation as the default.
     if (offset + 4 > bytes.length || bytes[offset] !== 0xFF || (bytes[offset + 1] & 0xFE) !== 0xF2
-      || (bytes[offset + 2] & 0xFC) !== 0x64 || (bytes[offset + 3] & 0xC0) !== 0xC0) {
+      || (bytes[offset + 2] & 0xFC) !== (bitrate === 48 ? 0x64 : 0xC4) || (bytes[offset + 3] & 0xC0) !== 0xC0) {
       throw new AudioToolError('invalid-mp3-frame')
     }
-    offset += 144 + ((bytes[offset + 2] >> 1) & 1)
+    offset += bitrate * 3 + ((bytes[offset + 2] >> 1) & 1)
     frames++
   }
   const duration = frames * 576 / 24_000

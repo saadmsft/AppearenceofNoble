@@ -11,6 +11,16 @@ historical voice reconstructions, or impersonation.**
 
 ## What is included
 
+- **Narrated stories / listen-only mode** adds six connected editorial trails:
+  Appearance, Character and Life in English and Urdu. Their 36 chapter scripts
+  have **72 saved recordings** using the approved Cedar voice on Azure OpenAI
+  `gpt-realtime-2.1`. These are explicitly editorial stories, not new hadith
+  records or full translations. Transcripts and supporting sources stay
+  available, with one shared audio engine, continuous playback and local resume.
+- **Illuminated motion** adds an ornamental chapter aperture, fine-pointer
+  depth/light on decorative frames, a one-shot home/dedication ink flourish
+  and small control feedback. Text, calligraphy, controls and geographic labels
+  remain stationary; reduced-motion, pause and visibility gates remain intact.
 - A gentle English/Urdu **Dedication & gratitude** welcome, honoring Allah and
   Prophet Muhammad (S.A.W.W.) first, followed by thanks to Farkhanda Abid and
   Abid Mahmood for their continuing support. It appears once per browser-tab
@@ -196,6 +206,8 @@ SITE_URL=https://saadmsft.github.io/AppearenceofNoble/ pnpm test:e2e
 | `web/src/lib/life-schema.ts`, `life.ts` | Separate chronology validation, milestone references and cross-listing |
 | `web/src/data/life-*.json` | Reviewed bilingual Life milestones and chronology/place evidence |
 | `web/src/lib/listening.ts`, `web/src/hooks/useListening.ts` | Shared media lifecycle, queue and versioned local resume state |
+| `web/src/data/story-scripts.json`, `web/src/lib/stories.ts` | Original bilingual story chapters and their canonical evidence |
+| `web/src/data/story-audio-manifest.json`, `web/src/lib/story-audio.ts` | Separate verified editorial-story audio catalog |
 | `web/src/lib/i18n.ts` | Complete English/Urdu interface and methodology |
 | `web/src/lib/search.ts` | Cross-script search and intersecting filters |
 | `web/src/lib/route.ts` | Pages-safe query/hash navigation |
@@ -232,6 +244,13 @@ the conventional reading journeys.
 `?view=collection&shelf=all` searches all collections. Earlier Appearance
 journey/filter links without a shelf retain their original meaning. Narration
 links retain their view, shelf and topic; private notes never enter share URLs.
+
+`?view=listen&shelf=appearance`, `?view=listen&shelf=character` and
+`?view=listen&shelf=life` open the narrated-story listening view. The optional
+topic selects a starting chapter without autoplay. Story playback does not
+mark source reports read or turn editorial chapters into bookmark/note records.
+Version-2 personal backups can retain story listening positions through the
+validated playback catalog, while older backups remain importable.
 
 Appearance and Character retain their thematic Story trails. Life uses a
 separately reviewed chronological sequence, not historical reenactments.
@@ -293,6 +312,15 @@ Release 2.2 has a separately approved **US$10 before-tax maximum** for new Life
 audio using the existing resource and stock voice profile. Its private ledger
 is separate from the immutable Release 2.0 ledger. New release approval is not
 permission to reset a failed run, regenerate cached files or exceed a cap.
+
+Release 2.3 has a separate **US$20 before-tax Azure-only maximum** for the new
+story recordings and corrections. All 72 final tracks are complete, with
+US$15.761408 conservatively reserved across 74 attempts. Reservations are not
+the final invoice. New output transcripts were matched to the source-checked
+scripts before publication, and native provider results were retained before
+MP3 encoding. Original report recordings and all earlier ledgers are unchanged.
+There are no browser model requests; a future retirement of the preview model
+does not stop playback of already saved files.
 
 Private notes, read/unread state and resume information stay in browser storage.
 They are not encrypted or automatically backed up; personal backup/restore is

@@ -1,15 +1,16 @@
 import { useRef } from 'react'
-import { ArrowRight, ArrowUpRight, BookOpen, Pause, Play } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, BookOpen, Headphones, Pause, Play } from 'lucide-react'
 import { shelfLabels, shelfPresentation, topicLabels } from '../lib/catalog.ts'
 import { number, translate } from '../lib/i18n.ts'
 import { getShelfRows, getShelfTopics } from '../lib/library.ts'
 import type { Language, Narration, Shelf } from '../lib/schema.ts'
 import { shelves } from '../lib/schema.ts'
 import { useAmbientMotion } from '../hooks/useAmbientMotion'
+import { useInkEntrance } from '../hooks/useOrnamentMotion'
 import { Rosette } from './ManuscriptHero'
 import { Button } from './ui/button'
 
-export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened, onPause, onShelf, onResume }: {
+export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened, onPause, onShelf, onResume, onListen }: {
   language: Language
   paused: boolean
   readerOpen: boolean
@@ -17,10 +18,12 @@ export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened,
   lastOpened?: Narration
   onPause: () => void
   onShelf: (shelf: Shelf) => void
+  onListen: (shelf: Shelf) => void
   onResume: (row: Narration, button: HTMLButtonElement) => void
 }) {
   const art = useRef<HTMLDivElement>(null)
   const motion = useAmbientMotion(art, !paused && !readerOpen)
+  useInkEntrance(art, motion.running)
   const t = (key: Parameters<typeof translate>[1], values?: Record<string, string>) => translate(language, key, values)
   return <div className="project-home page-width">
     <section className="project-welcome">
@@ -58,6 +61,9 @@ export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened,
           <Button variant={shelf === 'life' ? 'default' : 'outline'} onClick={() => onShelf(shelf)}>
             {t(shelfPresentation[shelf].storyAction)}<ArrowRight size={17} className="directional" aria-hidden="true" />
           </Button>
+          <button type="button" className="collection-listen-link" onClick={() => onListen(shelf)}>
+            <Headphones size={15} aria-hidden="true" />{t('listenToStory')}
+          </button>
         </article>
       })}
     </section>

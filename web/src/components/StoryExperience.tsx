@@ -11,6 +11,7 @@ import { number, translate } from '../lib/i18n.ts'
 import { isEstablished } from '../lib/search.ts'
 import { scrollBehavior } from '../lib/scroll.ts'
 import { useAmbientMotion } from '../hooks/useAmbientMotion'
+import { useOrnamentPointer } from '../hooks/useOrnamentMotion'
 import { useStoryPosition } from '../hooks/useStoryPosition'
 import { TopicMotif } from './TopicArtwork'
 import { TopicReports } from './TopicReports'
@@ -18,6 +19,7 @@ import { SourceName } from './NarrationCard'
 import { Button } from './ui/button'
 import { LifeContext, LifeStageContext, LifeTimeline } from './LifeContext'
 import '../story.css'
+import '../illuminated-motion.css'
 
 export type StoryExperienceProps = {
   shelf: Shelf
@@ -40,6 +42,7 @@ export type StoryExperienceProps = {
   followingSourceOnly?: boolean
   navigationRevision?: number
   focusNavigation?: boolean
+  onNarratedStory?: (topic: Topic) => void
 }
 
 export function StoryExperience(props: StoryExperienceProps) {
@@ -80,7 +83,7 @@ export function StoryExperience(props: StoryExperienceProps) {
     const transition = presentation.transition
     const timer = window.setTimeout(() => {
       setPresentation((current) => current.transition === transition ? { ...current, outgoing: null } : current)
-    }, 600)
+    }, 800)
     return () => window.clearTimeout(timer)
   }, [presentation.outgoing, presentation.transition])
 
@@ -152,6 +155,9 @@ export function StoryExperience(props: StoryExperienceProps) {
         <div className="story-start-actions">
           <Button onClick={() => go(0)}>{t('storyBegin')}<ArrowDown size={17} aria-hidden="true" /></Button>
           <button type="button" className="text-link" onClick={() => props.onReadingView(active.chapter.topic)}>{t('storyReadingView')}<BookOpen size={16} aria-hidden="true" /></button>
+          {props.onNarratedStory && <button type="button" className="text-link" onClick={() => props.onNarratedStory?.(active.chapter.topic)}>
+            <Headphones size={16} aria-hidden="true" />{t('listenToStory')}
+          </button>}
         </div>
         {props.followingSourceOnly && <p className="story-follow-note" role="status">{t('followSourceOnly')}</p>}
       </div>
@@ -210,6 +216,7 @@ function StoryStage({ stageRef, active, outgoing, language, chapterCount, chapte
   onListen?: () => void
 }) {
   const id = useId()
+  useOrnamentPointer(stageRef, running)
   const t = (key: Parameters<typeof translate>[1], values?: Record<string, string>) => translate(language, key, values)
   const life = getLifeMilestone(active.chapter.topic)
   const inkPath = life ? 'M28 52V348' : 'M24 350C120 420 390 344 370 182S46 20 34 172 302 354 320 220 114 44 94 156 242 300 254 204'
@@ -231,8 +238,14 @@ function StoryStage({ stageRef, active, outgoing, language, chapterCount, chapte
     </div>
     <LifeStageContext topic={active.chapter.topic} language={language} />
     <div className="story-visual" aria-hidden="true">
-      <div className="story-orbital-frame frame-back" />
-      <div className="story-orbital-frame frame-front" />
+      <div className="story-depth-frame">
+        <div className="story-orbital-frame frame-back" />
+        <div className="story-orbital-frame frame-front" />
+        <div className="story-depth-light" />
+      </div>
+      {outgoing && running && <svg key={active.chapter.topic} className="story-aperture" viewBox="0 0 400 400" fill="none">
+        <path pathLength="1" d="M200 28 372 200 200 372 28 200ZM78 78H322V322H78Z" />
+      </svg>}
       <svg className="story-ink-path" viewBox="0 0 400 400" fill="none">
         <path className="story-path-track" d={inkPath} />
         <path className="story-path-progress" pathLength="1" d={inkPath} />

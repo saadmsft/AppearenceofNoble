@@ -298,3 +298,185 @@ Proposed English wording:
 
 The Urdu edition will carry the same dedication and present-tense gratitude,
 using the names shown to the user for approval. No memorial language is used.
+
+## Release 2.3: Illuminated motion and narrated stories
+
+Status: approved for implementation and publication, with a fresh US$20
+before-tax Azure-only bulk allowance. The user also selected newly written continuous
+story narration for all three collections, with natural Urdu and correct
+pronunciation of the salutation as an explicit requirement. The earlier
+animation-only scope is superseded by this proposal.
+
+- Focal moment: a manuscript-inspired ornamental aperture opens into each new
+  Story chapter. Use a bounded 500-800 ms sequence inside the existing shared
+  stage, rather than adding page-wide transitions or retaining duplicate
+  headers. Keep the current source and passage immediately readable.
+- Depth: on fine-pointer desktop devices, let decorative frame layers respond
+  gently to pointer position, with a restrained rose-toned light treatment.
+  Controls, text, calligraphy and geographic labels stay stationary. Touch
+  devices use the simpler non-pointer presentation; no device permissions.
+- Welcome: add a short, one-shot ink-drawing flourish to the home ornament and
+  dedication medallion. Do not delay reading or dismissal, split Urdu letters,
+  animate sacred names or alter the approved dedication wording and order.
+- Feedback: give chapter/source controls brief ink-edge hover/focus feedback
+  and clear pressed states without moving their hit targets or obscuring focus.
+
+Preserve the manuscript palette, typography, English/Urdu parity, all three
+collections, source evidence, listening behavior, private data and old links.
+Life's locator remains schematic; add no invented routes or historical claims.
+Do not add sound effects, autoplay, fake waveforms or new narration.
+
+Use existing CSS/SVG and motion helpers, with no new dependencies, WebGL,
+video backgrounds or particle systems. Keep motion work bounded: no per-frame
+React renders; cancel pending work on unmount; stop when hidden, offscreen or
+behind a reader/dedication dialog. Paused and reduced-motion modes render a
+complete static alternative. Native scrolling and focus behavior stay intact.
+
+Implementation is direct, without additional agents. Use the existing motion
+and navigation tests, including interrupted/repeated transitions and mobile
+reading space. Perform one combined desktop/mobile visual review and, if
+needed, one correction/confirmation round; do not run open-ended polishing.
+Publish only the approved scope through the existing Pages workflow.
+
+### Narrated-story scope
+
+- Write original connected English and Urdu narration for Appearance,
+  Character and Life, retaining their existing 16, 8 and 12 chapter structures.
+  Appearance and Character remain thematic; only Life uses the reviewed
+  chronology. Use the audited corpus, with no invented dialogue, motives,
+  scenes, historical dates or reconstructed voices.
+- Present these as editorial stories, never as newly authenticated hadith or
+  full translations. Provide exact spoken transcripts and the supporting
+  sources; retain the existing Arabic report recordings separately.
+- Add a minimal listen-only view with continuous chapter playback, explicit
+  Play, pause/skip/seek, saved position and access to the current evidence.
+  No page-load autoplay; background/lock-screen behavior is platform-dependent.
+- New recordings are generated once and saved as MP3s. Existing source text,
+  report audio and personal data remain intact. Storage/backup compatibility
+  must be explicit; story scripts must not be disguised as narration records.
+
+### Urdu pronunciation gate and proposed audition
+
+Correct, natural pronunciation of the full salutation, "Sallallahu alayhi wa
+sallam", is a go/no-go criterion. Do not send the letters S.A.W.W. or an
+unexpanded symbol as the intended spoken wording. Use the full Arabic/Urdu
+phrase and only pronunciation controls supported by the chosen voice. Do not
+promise that spelling or SSML alone guarantees pronunciation quality.
+
+First seek separate approval for a small audition: at most three short Urdu
+samples using supported Azure voices/settings on the existing Speech resource,
+with the salutation in ordinary sentences and natural pauses. Label them
+synthetic. The user must approve pronunciation and voice quality before any
+full story recording. If no candidate meets the requirement, stop and discuss
+human narration or another separately approved approach; do not mass-produce
+unacceptable audio.
+
+Proposed audition-only allowance: a fresh **US$1 maximum before tax**, including
+all sample attempts and corrections. This does not reuse an older allowance
+or authorize bulk narration, new cloud resources or publication. The current
+standard S1 neural retail meter is US$15 per million characters; measure the
+actual sample inputs before sending them. Preserve a separate private ledger
+and all previous ledgers. Any different meter needs a new estimate.
+
+After the voice is selected, present the complete story scripts and the
+revised full-release scope/budget for approval before bulk generation. Motion
+itself requires no Azure calls. Normal Copilot usage is separate from the Azure
+allowance; the audition limit is not a cap on AI coding credits.
+
+The user has additionally asked about Voice Live or higher-quality Foundry
+audio models. Shortlist `gpt-4o-mini-tts` and Urdu-capable Azure Speech HD/Omni
+voices for an audition, subject to actual language support and regional
+availability. Do not assume that a voice's style or pronunciation controls
+work for Urdu merely because they work for English.
+
+Voice Live is a real-time voice interaction service, not a guarantee of better
+Urdu pronunciation. For these fixed, reviewed stories, prefer expressive
+text-to-speech generation followed by saved MP3 playback. Live per-visitor
+generation would change the approved static architecture and require separate
+authentication, hosting and usage-budget decisions. No such change is approved.
+
+The standard S1 character rate above must not be applied to GPT audio, HD or
+Voice Live without checking the specific meter. The audition allowance and
+full release remain unapproved; obtain model-specific pricing and explicit
+approval before deploying a model or making paid audio requests.
+
+### Selected existing Azure OpenAI audio model
+
+The user requested the latest Azure OpenAI audio model in the existing
+Foundry resource. Read-only account/catalog discovery confirmed an existing
+successful `gpt-realtime-2.1` deployment, version `2026-07-07`, on
+`GlobalStandard`. This is the newest native-audio generation option found in
+that resource; it supersedes the earlier candidate shortlist. No new model
+deployment is required or has been created.
+
+The catalog marks this model Preview and currently lists inference retirement
+on 15 October 2026. Generate and save approved audio rather than making the
+public site depend on live inference. Pin and recheck the model version for
+generation; do not silently substitute a later model or different voice.
+
+Verified Sweden Central Global retail rates, per million tokens: text input
+US$4, text output US$24, and audio output US$64. The audition will use text
+input only, with bounded output and conservative pre-request reservations.
+These rates replace the standard Speech character rate for this candidate.
+
+The next proposed action is a short saved Urdu pronunciation sample using this
+existing deployment, within a fresh US$1 before-tax audition allowance. The
+model choice is recorded; paid generation and the full release still await
+explicit approval. This selection does not authorize live per-visitor calls,
+bulk narration, new infrastructure, or spending from earlier release ledgers.
+
+The user subsequently approved one short Urdu pronunciation sample on this
+existing `gpt-realtime-2.1` deployment, with a fresh maximum of US$1 before tax.
+This is audition-only approval. Capture the generated audio and transcript,
+retain conservative per-request token reservations in a new private ledger,
+then stop for the user's voice/pronunciation review. No full recordings,
+application changes or release 2.3 publication are authorized by this step.
+
+### Approved voice and full-generation request
+
+The user approved the saved Urdu audition's voice and pronunciation, then
+requested generation for all collections and emphasized speed. The selected
+voice is `cedar` on the existing `gpt-realtime-2.1` deployment. Do not repeat
+voice selection or generate more auditions without a specific quality issue.
+
+The proposed complete Release 2.3 delivery is:
+
+1. Write connected, source-linked English and Urdu story scripts for all three
+   collections: Appearance (16 chapters), Character (8) and Life (12). Reuse the
+   audited material, retain attribution and uncertainty, and invent no scenes
+   or historical details. These are new editorial story tracks, not replacements
+   for the existing 111 report recordings.
+2. Generate up to 72 short chapter MP3s with the approved model/voice. Bound
+   each request, retain model output and usage before local encoding, check
+   transcript fidelity, and reuse completed assets rather than restart a batch.
+   Process independent work efficiently within the deployment's rate limits.
+3. Add continuous listen-only playback, chapter navigation, seek/resume,
+   transcripts and source access using the existing player foundations. Preserve
+   existing reading state, backups, individual report audio and all old links.
+4. Complete the four bounded motion enhancements above without redesigning the
+   application. Work directly, without additional agents or open-ended polish.
+5. Run the required source/audio, lifecycle and Pages gates, then publish the
+   complete approved release. Stop for material source/fidelity problems or
+   an insufficient remaining allowance, not for another routine voice audition.
+
+Approved new bulk allowance: **US$20 maximum before tax, Azure generation only**,
+including all retries and corrections. This is a ceiling, not a promised bill,
+and is separate from Copilot AI usage and the already-approved audition ledger.
+Do not draw from old release allowances.
+
+At the currently verified rates, reserving 8,192 input tokens and a conservative
+2,048 tokens at both output rates is US$0.212992 per request. Seventy-two such
+reservations total US$15.335424, leaving US$4.664576 of the proposed ceiling for
+bounded retries. Recheck actual model limits, pricing and input lengths before
+generation; never silently increase the ceiling, drop chapters or switch voices.
+
+The user explicitly approved this full-release plan and fresh bulk allowance.
+That approval authorizes composing and source-checking the scripts as part
+of delivery, without a separate mandatory script-by-script approval round.
+
+Implementation: 36 connected bilingual chapters and 72 transcript-matched MP3s,
+approximately 35.55 minutes across the six complete trails. The approved
+generation used 74 attempts, including one provider timeout and one transcript
+correction, with US$15.761408 conservatively reserved. Existing report audio,
+canonical source records and prior ledgers remain unchanged. The new stories
+use a separate audio manifest and explicit editorial entry type.

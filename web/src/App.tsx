@@ -17,6 +17,8 @@ import type { BookmarkWriteResult } from './lib/reading.ts'
 import { Reader } from './components/Reader'
 import { AudioPlayer } from './components/AudioPlayer'
 import { ListeningPlayer } from './components/ListeningPlayer'
+import { NarratedStories } from './components/NarratedStories'
+import { getStoryEpisode, storyEpisodes } from './lib/stories.ts'
 import { useListening } from './hooks/useListening'
 import type { ListeningSnapshot } from './lib/listening.ts'
 import { Button } from './components/ui/button'
@@ -36,6 +38,8 @@ import { getNarrationTopics } from './lib/life.ts'
 import type { Language, Narration, Shelf, Topic } from './lib/schema.ts'
 import { defaultFilters, filterNarrations } from './lib/search.ts'
 import { focusSection, scrollBehavior } from './lib/scroll.ts'
+
+const playbackEntries = [...narrations, ...storyEpisodes]
 
 function initialSettings(): ReturnType<typeof loadPreferences> {
   const loaded = loadPreferences(() => window.localStorage)
@@ -59,7 +63,7 @@ function App() {
   const [notice, setNotice] = useState<{ key: MessageKey; version: number } | null>(null)
   const [storyNavigation, setStoryNavigation] = useState({ revision: 0, focus: true })
   const language: Language = route.language ?? preferences.language
-  const listening = useListening(narrations, route.shelf, { initialLanguage: language })
+  const listening = useListening(playbackEntries, route.shelf, { initialLanguage: language })
   const { suspendFollow, subscribe: subscribeListening, getSnapshot: getListeningSnapshot } = listening
   const reading = useReading(narrations, listening)
   const { openEntry: trackOpenedEntry } = reading
@@ -92,12 +96,14 @@ function App() {
     ? filterNarrations(getShelfRows(selectedShelf), defaultFilters)
     : results
   const selectedIndex = readerResults.findIndex((row) => row.id === route.entry)
-  const listeningId = listening.currentNarration?.id
+  const listeningId = listening.currentEntry?.id
   const listeningShelf = listening.queue?.shelf
   const listeningTopic = listening.queue?.topic
   const following = listening.follow && !listening.followSuspended && listening.playing
-  const followingTarget = listeningShelf && listeningId
-    ? storyTargetForNarration(chaptersByShelf[listeningShelf], listeningTopic ?? 'all', listeningId) : null
+  const followingTarget = listening.currentStory
+    ? { topic: listening.currentStory.topic, beat: 0, matched: true }
+    : listeningShelf && listeningId
+      ? storyTargetForNarration(chaptersByShelf[listeningShelf], listeningTopic ?? 'all', listeningId) : null
   const dockVisible = Boolean(listening.queue || listening.error || listening.storageIssue)
 
   useEffect(() => {
@@ -122,14 +128,15 @@ function App() {
 
   const followPlayback = useEffectEvent((snapshot: ListeningSnapshot) => {
     const queue = snapshot.queue
-    const entryId = snapshot.currentNarration?.id
+    const entryId = snapshot.currentEntry?.id
     if (!snapshot.follow || snapshot.followSuspended || !snapshot.playing || overlayOpen || !queue || !entryId) {
       lastFollowed.current = null
       return
     }
     const identity = `${queue.shelf}:${queue.topic}:${entryId}`
     if (lastFollowed.current === identity) return
-    const target = storyTargetForNarration(chaptersByShelf[queue.shelf], queue.topic, entryId)
+    const target = snapshot.currentStory ? { topic: snapshot.currentStory.topic, beat: 0 }
+      : storyTargetForNarration(chaptersByShelf[queue.shelf], queue.topic, entryId)
     if (!target) return
     lastFollowed.current = identity
     updateRoute({ ...defaultFilters, view: 'story', shelf: queue.shelf,
@@ -182,7 +189,7 @@ function App() {
     document.documentElement.dir = language === 'ur' ? 'rtl' : 'ltr'
     document.documentElement.dataset.theme = theme
     document.documentElement.dataset.motion = preferences.motion
-    document.title = `${translate(language, 'name')} | ${route.view === 'journey' || route.view === 'story' ? shelfLabels[journeyShelf][language] : translate(language, route.view === 'saved' ? 'saved' : route.view === 'reading' ? 'reading' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
+    document.title = `${translate(language, 'name')} | ${route.view === 'journey' || route.view === 'story' || route.view === 'listen' ? shelfLabels[journeyShelf][language] : translate(language, route.view === 'saved' ? 'saved' : route.view === 'reading' ? 'reading' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
   }, [language, theme, route.view, journeyShelf, preferences.motion])
 
   useEffect(() => {
@@ -249,6 +256,8 @@ function App() {
   }
 
   function openListeningSource(id: string) {
+    const story = getStoryEpisode(id)
+    if (story) { navigate('listen', story.topic, story.shelf); return }
     const row = listening.getNarration(id)
     const shelf = listening.queue?.shelf ?? getNarrationShelf(id)
     if (!row || !shelf) throw new Error(`Cannot open an unknown listening source: ${id}`)
@@ -279,14 +288,14 @@ function App() {
     updateRoute({ language: next }, true)
   }
 
-  function navigate(view: View, topic?: Topic, shelf: Shelf | 'all' = view === 'journey' || view === 'story' ? 'appearance' : 'all') {
+  function navigate(view: View, topic?: Topic, shelf: Shelf | 'all' = view === 'journey' || view === 'story' || view === 'listen' ? 'appearance' : 'all') {
     suspendFollow()
     setStoryNavigation((current) => ({ revision: current.revision + 1, focus: true }))
     updateRoute({ ...defaultFilters, view, shelf, topic: topic ?? 'all', storyBeat: 0, grade: view === 'saved' || (view === 'collection' && topic) ? 'all' : 'established', entry: null })
     window.scrollTo({ top: 0 })
   }
 
-  function navHref(view: View, shelf: Shelf | 'all' = view === 'journey' || view === 'story' ? 'appearance' : 'all') {
+  function navHref(view: View, shelf: Shelf | 'all' = view === 'journey' || view === 'story' || view === 'listen' ? 'appearance' : 'all') {
     return routeUrl(new URL(window.location.href), { ...route, ...defaultFilters, view, shelf, storyBeat: 0, grade: view === 'saved' ? 'all' : 'established', entry: null }).href
   }
 
@@ -305,7 +314,7 @@ function App() {
           <span><strong>{t('name')}</strong><small>{t('strapline')}</small></span>
         </a>
         <nav className="primary-nav" aria-label={t('collection')}>
-          {(['home', 'collection', 'reading', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
+          {(['home', 'collection', 'listen', 'reading', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
             aria-current={route.view === view ? 'page' : undefined}
             onClick={(event) => { if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate(view) } }}>
             {t(view)}
@@ -344,8 +353,14 @@ function App() {
         {reading.issue && <div className="page-width"><ReadingIssueMessage issue={reading.issue} language={language} /></div>}
         <ProjectHome language={language} paused={preferences.motion === 'paused'} readerOpen={overlayOpen}
           readIds={readIds} lastOpened={lastOpened} onShelf={(shelf) => navigate('story', undefined, shelf)} onResume={openPersonalEntry}
+          onListen={(shelf) => navigate('listen', undefined, shelf)}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
       </>}
+      {route.view === 'listen' && <NarratedStories key={`listen-${journeyShelf}`} shelf={journeyShelf}
+        language={language} requestedTopic={route.topic} listening={listening}
+        onShelf={(shelf) => navigate('listen', undefined, shelf)}
+        onStory={(topic) => navigate('story', topic, journeyShelf)}
+        onRead={(row, button) => { lastReadButton.current = button; updateRoute({ entry: row.id }) }} />}
       {route.view === 'reading' && <ReadingPage language={language} allNarrations={narrations} reading={reading}
         bookmarks={preferences.bookmarks} onBookmarksChange={restoreBookmarks} onOpen={openPersonalEntry} getCollectionLabel={readingCollectionLabel}
         getCollectionLabels={(id, lang) => getNarrationShelves(id).map((shelf) => shelfLabels[shelf][lang])} />}
@@ -364,7 +379,8 @@ function App() {
       {route.view === 'story' && <StoryExperience key={`story-${journeyShelf}`} shelf={journeyShelf} language={language}
         chapters={activeChapters} requestedTopic={route.topic} requestedBeat={route.storyBeat}
         navigationRevision={storyNavigation.revision} focusNavigation={storyNavigation.focus}
-        onListen={playChapter} playingEntryId={listening.playing ? listeningId : undefined}
+        onListen={playChapter} playingEntryId={listening.playing ? listening.currentNarration?.id : undefined}
+        onNarratedStory={(topic) => navigate('listen', topic, journeyShelf)}
         followingSourceOnly={following && followingTarget?.matched === false}
         paused={preferences.motion === 'paused'} readerOpen={overlayOpen}
         savedIds={savedIds} readIds={readIds} onSave={toggleSaved}
@@ -495,8 +511,8 @@ function App() {
         suspendFollow()
         setDedicationRequested(true)
       }} />
-    <ListeningPlayer listening={listening} language={language} readerOpen={overlayOpen} onOpenSource={openListeningSource} />
-    <Dedication open={dedicationOpen} language={language} storageIssue={dedicationIssue} onClose={closeDedication}
+    <ListeningPlayer listening={listening} language={language} readerOpen={overlayOpen || route.view === 'listen'} onOpenSource={openListeningSource} />
+    <Dedication open={dedicationOpen} language={language} storageIssue={dedicationIssue} onClose={closeDedication} paused={preferences.motion === 'paused'}
       onLanguage={setLanguage} restoreFocus={() => {
         if (dedicationTrigger.current?.isConnected) dedicationTrigger.current.focus({ preventScroll: true })
         else document.getElementById('main-content')?.focus({ preventScroll: true })
