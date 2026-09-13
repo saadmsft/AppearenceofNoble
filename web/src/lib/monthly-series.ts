@@ -10,9 +10,10 @@ const sourceSchema = z.object({
   reference: z.string().trim().min(1),
   url: z.url().refine((value) => {
     const url = new URL(value)
-    return url.origin === 'https://sunnah.com' && !url.username && !url.password
+    return ['https://sunnah.com', 'https://quran.com'].includes(url.origin) && !url.username && !url.password
   }),
   note: localizedSchema,
+  languages: z.array(z.enum(['en', 'ur'])).min(1).optional(),
 }).strict()
 
 export const monthlyEpisodeSchema = z.object({
@@ -22,6 +23,7 @@ export const monthlyEpisodeSchema = z.object({
   title: localizedSchema,
   summary: localizedSchema,
   editorialNote: localizedSchema,
+  editionLabels: z.object({ en: localizedSchema, ur: localizedSchema }).strict().optional(),
   chapters: z.array(monthlyChapterSchema).min(1),
   sources: z.array(sourceSchema).min(1),
 }).strict().superRefine((episode, ctx) => {
@@ -29,7 +31,10 @@ export const monthlyEpisodeSchema = z.object({
   if (sourceIds.size !== episode.sources.length
     || new Set(episode.chapters.map((chapter) => chapter.id)).size !== episode.chapters.length
     || episode.chapters.some((chapter) => chapter.monthlyEpisodeId !== episode.id
-      || chapter.sourceIds.some((id) => !sourceIds.has(id)))) {
+      || chapter.sourceIds.some((id) => !sourceIds.has(id))
+      || (chapter.sections && Object.values(chapter.sections).some((sections) => sections.some((section, index) =>
+        section.sourceIds.some((id) => !chapter.sourceIds.includes(id))
+        || (index === 0 ? section.startSeconds !== 0 : section.startSeconds <= sections[index - 1].startSeconds)))))) {
     ctx.addIssue({ code: 'custom', message: 'Monthly chapter and source identities must match the published episode' })
   }
 })
@@ -48,12 +53,26 @@ export function createMonthlyCatalog(series: unknown, audio: unknown) {
     !tracks.has(`${chapter.id}:en`) || !tracks.has(`${chapter.id}:ur`))) {
     throw new Error('Every published monthly chapter requires English and Urdu recordings; orphan tracks are not allowed')
   }
+  for (const chapter of chapters) {
+    for (const language of ['en', 'ur'] as const) {
+      if (chapter.sections?.[language].some((section) => section.startSeconds >= tracks.get(`${chapter.id}:${language}`)!.durationSeconds)) {
+        throw new Error('Monthly chapter markers must fall within the recording')
+      }
+    }
+  }
   return { episodes: [...parsed.episodes].sort((a, b) => b.publishedOn.localeCompare(a.publishedOn)), chapters, manifest, tracks }
 }
 
 export const monthlyCatalog = createMonthlyCatalog(rawSeries, rawAudio)
 export const monthlyEpisodes = monthlyCatalog.episodes
 export const monthlyChapters = monthlyCatalog.chapters
+
+export function newMonthlyEpisodeId(episodes: readonly Pick<MonthlyEpisode, 'id' | 'publishedOn'>[], now = Date.now()) {
+  const latest = [...episodes].sort((a, b) => b.publishedOn.localeCompare(a.publishedOn))[0]
+  if (!latest) return undefined
+  const published = Date.parse(`${latest.publishedOn}T00:00:00Z`)
+  return now >= published && now < published + 30 * 24 * 60 * 60 * 1000 ? latest.id : undefined
+}
 
 export function monthlyBook(episode: MonthlyEpisode, language: Language, catalog = monthlyCatalog) {
   const chapters = episode.chapters.map((chapter) => {

@@ -514,6 +514,34 @@ Registration is with GoDaddy using its existing DomainControl nameservers.
 The user elected to add the DNS records personally; the assistant configures
 the application and GitHub Pages, then checks DNS and HTTPS readiness.
 
+## Release 2.5.1: First monthly episode and NEW badge
+
+The user explicitly approved publishing both saved editions and a 30-day NEW
+badge on 13 September 2026, after disclosure of the different coverage and
+actual runtimes. Publish Episode 1, "Before His Birth: Makkah and the Sacred
+House": abridged English at 598.464 seconds and full Urdu at 707.016 seconds.
+English omits the complete People of the Elephant section and has revised
+opening/closing transitions; Urdu retains it. Neither edition meets the
+earlier 15-minute planning target, and neither is padded or time-stretched.
+
+Reuse the two approved complete MP3s without re-encoding. Do not publish the
+incomplete original English attempt, intermediate clips, private receipts,
+credentials or budget ledgers. Original English/Urdu scripts, byte identities,
+provider transcripts and section timelines are checked against the generation
+packet. The public page includes matching transcripts, edition-specific
+sources/qualifications and explicit abridgement disclosure. The other session
+records the user's approval to add selected Qur'anic context alongside
+Sunnah.com; original exposition is used, not copied modern translations.
+
+Keep one shared player. Monthly-only long-file/checkpoint support allows the
+unchanged full recordings, with nine English and ten Urdu chapter markers.
+Existing report/short-story validation remains strict. The latest episode
+and Monthly Series navigation show NEW / نیا for 30 days from publication
+(UTC date boundary), including expiry in an open tab.
+
+No additional synthesis, Azure spending, model deployment, or recurring
+generation/publication authorization is granted by this release.
+
 ## Release 2.5: Monthly Series
 
 Approved explicitly by the user on 13 September 2026: build and publish the

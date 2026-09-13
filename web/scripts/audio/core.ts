@@ -166,9 +166,11 @@ export function mergeManifest(existing: AudioManifest, completed: AudioTrack[]):
   })
 }
 
-export function validateMp3(bytes: Uint8Array, bitrate: 48 | 128 = 48): number {
+export function validateMp3(bytes: Uint8Array, bitrate: 48 | 128 = 48, scope: 'standard' | 'monthly' = 'standard'): number {
   if (bitrate !== 48 && bitrate !== 128) throw new AudioToolError('unsupported-mp3-bitrate')
-  if (bytes.length < 288 || bytes.length > 4_000_000) throw new AudioToolError('invalid-mp3-length')
+  if (scope !== 'standard' && scope !== 'monthly') throw new AudioToolError('unsupported-mp3-scope')
+  if (scope === 'monthly' && bitrate !== 128) throw new AudioToolError('unsupported-mp3-bitrate')
+  if (bytes.length < 288 || bytes.length > (scope === 'monthly' ? 29_000_000 : 4_000_000)) throw new AudioToolError('invalid-mp3-length')
   let offset = 0
   if (Buffer.from(bytes.subarray(0, 3)).toString('ascii') === 'ID3') {
     if (bytes.length < 10 || ![3, 4].includes(bytes[3]) || bytes.slice(6, 10).some((byte) => byte > 127)) {
@@ -193,6 +195,6 @@ export function validateMp3(bytes: Uint8Array, bitrate: 48 | 128 = 48): number {
     frames++
   }
   const duration = frames * 576 / 24_000
-  if (frames < 2 || offset !== bytes.length || duration >= 590) throw new AudioToolError('invalid-or-truncated-mp3')
+  if (frames < 2 || offset !== bytes.length || (scope === 'monthly' ? duration > 1800 : duration >= 590)) throw new AudioToolError('invalid-or-truncated-mp3')
   return duration
 }

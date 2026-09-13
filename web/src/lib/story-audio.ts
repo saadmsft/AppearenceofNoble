@@ -6,6 +6,7 @@ import type { Narration } from './schema.ts'
 
 export const storyAudioProfile = 'gpt-realtime-2.1-2026-07-07-cedar-story-v1'
 export const storySalutation = 'صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ'
+export const monthlyMaxTrackSeconds = 1800
 export const storyEpisodeSchema = z.object({
   kind: z.literal('story'),
   id: z.string().regex(/^story-[a-z0-9-]+$/),
@@ -24,6 +25,10 @@ export const monthlyChapterSchema = z.object({
   title: localizedSchema,
   text: localizedSchema,
   sourceIds: z.array(z.string().regex(/^[a-z0-9-]+$/)).min(1),
+  sections: z.object({
+    en: z.array(z.object({ title: z.string().min(1), startSeconds: z.number().nonnegative(), text: z.string().min(1), sourceIds: z.array(z.string()).min(1) }).strict()).min(1),
+    ur: z.array(z.object({ title: z.string().min(1), startSeconds: z.number().nonnegative(), text: z.string().min(1), sourceIds: z.array(z.string()).min(1) }).strict()).min(1),
+  }).strict().optional(),
 }).strict()
 export type MonthlyChapter = z.infer<typeof monthlyChapterSchema>
 export type StoryEpisode = z.infer<typeof storyEpisodeSchema> | MonthlyChapter
@@ -67,7 +72,7 @@ export const monthlyAudioManifestSchema = z.object({
   version: z.literal(1),
   tracks: z.array(storyAudioTrackSchema.safeExtend({
     entryId: z.string().regex(/^story-monthly-[a-z0-9-]+$/),
-    durationSeconds: z.number().positive().max(590),
+    durationSeconds: z.number().positive().max(monthlyMaxTrackSeconds),
   })),
 }).strict().refine((manifest) => new Set(manifest.tracks.map((track) => `${track.entryId}:${track.language}`)).size === manifest.tracks.length)
 export type PlayableAudioTrack = AudioTrack | StoryAudioTrack

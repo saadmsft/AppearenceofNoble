@@ -11,6 +11,7 @@ import type { Language } from '../lib/schema.ts'
 import type { ListeningController } from '../lib/listening.ts'
 import { ListeningControls } from './ListeningPlayer'
 import { InkSeal } from './InkSeal'
+import { MonthlyNewBadge } from './MonthlyNewBadge'
 import { Button } from './ui/button'
 import '../monthly-series.css'
 
@@ -61,12 +62,13 @@ export function MonthlySeries({ language, episodeId, listening, paused, readerOp
         const book = monthlyBook(item, language)
         return <li key={item.id}>
           <div><time dateTime={item.publishedOn}>{publicationDate(item.publishedOn, language)}</time>
-            <h3>{item.title[language]}</h3><p>{item.summary[language]}</p>
-            <span>{audiobookTime(book.duration)} · {number(book.chapters.length, language)} {audiobookLabels[language].chapters}</span>
+            <h3>{item.title[language]} <MonthlyNewBadge language={language} episodeId={item.id} /></h3><p>{item.summary[language]}</p>
+            <span>{item.editionLabels?.[language][language]} · {audiobookTime(book.duration)}</span>
           </div>
           <Button variant="outline" onClick={() => onOpen(item.id)}>{t.open}<ArrowRight size={16} className="directional" aria-hidden="true" /></Button>
         </li>
       })}</ol> : <div className="monthly-empty"><BookOpen size={24} aria-hidden="true" /><h3>{t.empty}</h3><p>{t.emptyDetail}</p><Button variant="outline" onClick={onBooks}>{t.books}<ArrowRight size={16} className="directional" aria-hidden="true" /></Button></div>}
+      {monthlyEpisodes.length > 0 && <Button variant="outline" onClick={onBooks}>{t.books}<ArrowRight size={16} className="directional" aria-hidden="true" /></Button>}
     </section>
   </section>
 }
@@ -82,20 +84,28 @@ export function MonthlyEpisodePage({ episode, language, listening, onBack }: {
   const active = episode.chapters.some((chapter) => chapter.id === listening.currentStory?.id)
   const audioLanguage = active && listening.language !== 'ar' ? listening.language : chosenLanguage
   const book = monthlyBook(episode, audioLanguage)
+  const parts = book.chapters.flatMap(({ episode: chapter, duration }) => chapter.sections
+    ? chapter.sections[audioLanguage].map((section, index, sections) => ({
+      ...section, entryId: chapter.id, duration: (sections[index + 1]?.startSeconds ?? duration) - section.startSeconds,
+    }))
+    : [{ entryId: chapter.id, title: chapter.title[audioLanguage], text: chapter.text[audioLanguage],
+      sourceIds: chapter.sourceIds, startSeconds: 0, duration }])
+  const activePart = parts.findLastIndex((part) => part.entryId === listening.currentStory?.id && listening.currentTime >= part.startSeconds)
+  const sources = episode.sources.filter((source) => !source.languages || source.languages.includes(audioLanguage))
   const position = audiobookPosition(book, listening.data, listening)
   const t = monthlyLabels[language]
   const a = audiobookLabels[language]
   const continueActive = active && !position.atEnd
-  function start(id: string, resume: boolean) {
+  function start(id: string, resume: boolean, time = 0) {
     listening.suspendFollow()
     listening.startQueue({ shelf: 'life', topic: 'all', title: episode.title, entryIds: episode.chapters.map((chapter) => chapter.id), includeCautioned: false }, audioLanguage, id)
-    if (!resume) listening.seek(0)
+    if (!resume) listening.seek(time)
   }
   return <article className="monthly-series monthly-episode page-width">
     <button type="button" className="text-link" onClick={onBack}><ArrowLeft size={16} className="directional" aria-hidden="true" />{t.back}</button>
-    <header className="monthly-heading"><h1>{episode.title[language]}</h1><p>{episode.summary[language]}</p>
+    <header className="monthly-heading"><h1>{episode.title[language]}</h1><MonthlyNewBadge language={language} episodeId={episode.id} /><p>{episode.summary[language]}</p>
       <p>{t.released}: <time dateTime={episode.publishedOn}>{publicationDate(episode.publishedOn, language)}</time></p>
-      <div className="book-facts"><span>{a.duration}: <bdi>{audiobookTime(book.duration)}</bdi></span><span>{number(book.chapters.length, language)} {a.chapters}</span><span>{audioLanguage === 'ur' ? a.urdu : a.english}</span></div>
+      <div className="book-facts"><span>{a.duration}: <bdi>{audiobookTime(book.duration)}</bdi></span><span>{number(parts.length, language)} {a.chapters}</span><span>{episode.editionLabels?.[audioLanguage][language] ?? (audioLanguage === 'ur' ? a.urdu : a.english)}</span></div>
     </header>
     <div className="monthly-episode-layout">
       <div>
@@ -116,19 +126,17 @@ export function MonthlyEpisodePage({ episode, language, listening, onBack }: {
             <button type="button" disabled={!listening.duration} onClick={() => listening.seek(listening.currentTime + 15)} aria-label={a.forward15}><RotateCw size={16} aria-hidden="true" />15</button>
           </div>}
         </section>}
-        <section className="book-chapters"><h2>{a.chapterList}</h2><ol>{book.chapters.map(({ episode: chapter, duration }, index) =>
-          <li key={chapter.id}><button type="button" className="book-chapter" aria-current={listening.currentStory?.id === chapter.id ? 'step' : undefined} onClick={() => start(chapter.id, false)}>
-            <span>{number(index + 1, language)}</span><span>{chapter.title[language]}</span><bdi>{audiobookTime(duration)}</bdi><Play size={14} aria-hidden="true" />
+        <section className="book-chapters"><h2>{a.chapterList}</h2><ol>{parts.map((part, index) =>
+          <li key={`${part.entryId}:${index}`}><button type="button" className="book-chapter" data-section={index} aria-current={activePart === index ? 'step' : undefined} onClick={() => start(part.entryId, false, part.startSeconds)}>
+            <span>{number(index + 1, language)}</span><span lang={audioLanguage} dir={audioLanguage === 'ur' ? 'rtl' : 'ltr'}>{part.title}</span><bdi>{audiobookTime(part.duration)}</bdi><Play size={14} aria-hidden="true" />
           </button></li>)}</ol></section>
-        <section className="monthly-transcripts"><h2>{t.transcript}</h2>{episode.chapters.map((chapter) =>
-          <details key={chapter.id}><summary>{chapter.title[audioLanguage]}</summary><p lang={audioLanguage} dir={audioLanguage === 'ur' ? 'rtl' : 'ltr'}>{chapter.text[audioLanguage]}</p>
-            <ul>{chapter.sourceIds.map((id) => {
-              const source = episode.sources.find((item) => item.id === id)!
-              return <li key={id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.reference}</a></li>
-            })}</ul>
+        <section className="monthly-transcripts"><h2>{t.transcript}</h2>{parts.map((part, index) =>
+          <details key={`${part.entryId}:${index}`}><summary lang={audioLanguage} dir={audioLanguage === 'ur' ? 'rtl' : 'ltr'}>{part.title}</summary><p lang={audioLanguage} dir={audioLanguage === 'ur' ? 'rtl' : 'ltr'}>{part.text}</p>
+            <ul>{sources.filter((source) => part.sourceIds.includes(source.id)).map((source) =>
+              <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.reference}</a></li>)}</ul>
           </details>)}</section>
       </div>
-      <aside className="monthly-sources"><h2>{t.sources}</h2>{episode.sources.map((source) =>
+      <aside className="monthly-sources"><h2>{t.sources}</h2>{sources.map((source) =>
         <section key={source.id}><h3><a href={source.url} target="_blank" rel="noopener noreferrer">{source.reference}</a></h3><p>{source.note[language]}</p></section>)}</aside>
     </div>
   </article>

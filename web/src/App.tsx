@@ -20,6 +20,7 @@ import { ListeningPlayer } from './components/ListeningPlayer'
 import { NarratedStories } from './components/NarratedStories'
 import { AudiobookLibrary } from './components/AudiobookLibrary'
 import { MonthlySeries } from './components/MonthlySeries'
+import { MonthlyNewBadge } from './components/MonthlyNewBadge'
 import { monthlyChapters } from './lib/monthly-series.ts'
 import { isMonthlyChapter } from './lib/story-audio.ts'
 import { getStoryEpisode, storyEpisodes, storiesByShelf } from './lib/stories.ts'
@@ -330,7 +331,7 @@ function App() {
           {(['home', 'collection', 'audiobooks', 'monthly', 'reading', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
             aria-current={route.view === view || (view === 'audiobooks' && route.view === 'listen') ? 'page' : undefined}
             onClick={(event) => { if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate(view) } }}>
-            {t(view)}
+            {t(view)}{view === 'monthly' && <MonthlyNewBadge language={language} />}
           </a>)}
         </nav>
         <div className="header-actions">

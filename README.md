@@ -11,12 +11,14 @@ historical voice reconstructions, or impersonation.**
 
 ## What is included
 
-- **Monthly Series** (`?view=monthly`) introduces a separate, bilingual long-form
-  audio series. Its archive currently says "First episode in preparation";
-  no monthly episode, script, or recording is published yet. Homepage,
-  navigation and audiobook-library entries lead to the same section.
-  Approved episodes can use the existing single player, chapter navigation,
-  language-specific durations, local resume, transcripts and source companion.
+- **Monthly Series** (`?view=monthly`) is a separate, bilingual long-form audio
+  series. Episode 1, **Before His Birth: Makkah and the Sacred House**, is published
+  in abridged English (9:58, nine sections) and full Urdu (11:47, ten sections).
+  The editions differ: English omits the People of the Elephant section.
+  Existing saved recordings are preserved byte-for-byte. Language-specific
+  chapter markers, transcripts, source notes and long listening resume use the
+  shared player. A **NEW / نیا** badge marks the latest release for 30 days from
+  its publication date (UTC), then disappears automatically.
 
 - **Audiobooks** is a clear homepage and navigation entry, with three original
   ornamental book covers, language-specific durations, chapter counts and
@@ -140,14 +142,20 @@ Only reviewed releases belong in `web/src/data/monthly-series.json`, with
 qualifications, ordered chapters and a Sunnah.com source companion. Each
 chapter has a `story-monthly-…` identity, its parent `monthlyEpisodeId`, `kind:
 "story"`, shelf `life`, topic `all`, bilingual original text and source IDs
-from that episode's companion. These are editorial stories, not canonical
+from that episode's companion. Approved Qur'anic context may use Quran.com
+alongside Sunnah.com; source language scopes distinguish different editions.
+Optional per-language section markers provide chapter seeking and transcripts
+within a continuous file. These are editorial stories, not canonical
 hadith records or additions to the original short-story collections.
 
 Recordings belong in `web/src/data/monthly-audio-manifest.json` and
 `web/public/audio/`, using the existing approved story profile. Each chapter
-requires both English and Urdu assets before publication. Split long episodes
-into meaningful chapters of at most 590 seconds each; the complete episode can
-span 15 minutes or more without changing the existing listening backup format.
+requires both English and Urdu assets before publication. Monthly files may
+run up to 30 minutes, with actual runtime measured from the saved audio.
+Monthly-only validation and checkpoint limits support the two complete pilot
+recordings without re-encoding them; older report and short-story limits remain
+unchanged. Existing listening backups remain readable without a version change;
+older application builds cannot import newer monthly identities.
 The catalog rejects draft status, duplicate identities, orphan tracks, missing
 languages and unresolved source references. Unit checks verify released MP3
 bytes, durations, script fingerprints and transcript fidelity. Approval is a
@@ -158,7 +166,7 @@ links show an explicit unavailable state. Publishing requires updating both
 catalogs, approving content/permissions and recordings, running the existing
 checks and deploying a reviewed release. Nothing discovers drafts or publishes
 them based on the calendar. Future model changes require a separately approved
-profile update; this release creates no audio or Azure resources.
+profile update; publication creates no audio or Azure resources.
 
 ## Research boundaries
 

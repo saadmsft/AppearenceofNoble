@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { audioLanguages, audioManifestSchema, resetAudio, resolveAudioAsset } from './audio.ts'
 import type { AudioLanguage } from './audio.ts'
-import { isMonthlyChapter, isStoryEpisode, monthlyAudioManifestSchema, storyAudioManifestSchema } from './story-audio.ts'
+import { isMonthlyChapter, isStoryEpisode, monthlyAudioManifestSchema, monthlyMaxTrackSeconds, storyAudioManifestSchema } from './story-audio.ts'
 import type { ListeningEntry, PlayableAudioTrack, StoryEpisode } from './story-audio.ts'
 import { isEstablished, shelves, topics, topicsByShelf } from './schema.ts'
 import type { Localized, Narration, Shelf, Topic } from './schema.ts'
@@ -32,7 +32,7 @@ const queueSchema = queueInputSchema.safeExtend({ currentEntryId: id, includeCau
   .refine((queue) => new Set(queue.entryIds).size === queue.entryIds.length && queue.entryIds.includes(queue.currentEntryId))
 const cursorSchema = z.object({
   entryId: id, language: z.enum(audioLanguages), cacheKey: digest, sha256: digest,
-  time: z.number().min(0).max(590), completed: z.boolean(),
+  time: z.number().min(0).max(monthlyMaxTrackSeconds), completed: z.boolean(),
 }).strict()
 /** Structural schema for backup envelopes. Use validateListeningData (or the
  * controller's validateData) as well to check current source/manifest identities.
@@ -146,6 +146,7 @@ export function validateListeningData(input: unknown, catalog: ListeningCatalog)
     if (!catalog.rows.has(cursor.entryId) || !track || track.cacheKey !== cursor.cacheKey || track.sha256 !== cursor.sha256) {
       return fail('unknown-identity')
     }
+    if (!isMonthlyChapter(catalog.rows.get(cursor.entryId)!) && cursor.time > 590) return fail('invalid-data')
   }
   if (data.queue) {
     const queue = buildListeningQueue(catalog, data.queue, data.language)
@@ -321,7 +322,7 @@ export function createListeningEngine(options: ListeningEngineOptions) {
     if (!entryId || !track || !Number.isFinite(time)) return
     const next: ListeningCursor = {
       entryId, language: data.language, cacheKey: track.cacheKey, sha256: track.sha256,
-      time: Math.max(0, Math.min(590, time)), completed,
+      time: Math.max(0, Math.min(snapshot.currentStory && isMonthlyChapter(snapshot.currentStory) ? monthlyMaxTrackSeconds : 590, time)), completed,
     }
     const positions = data.positions.filter((value) => cursorId(value) !== cursorId(next))
     positions.push(next)

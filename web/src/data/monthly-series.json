@@ -1,4 +1,332 @@
 {
   "version": 1,
-  "episodes": []
+  "episodes": [
+    {
+      "id": "monthly-life-001",
+      "status": "published",
+      "publishedOn": "2026-09-13",
+      "title": {
+        "en": "Before His Birth: Makkah and the Sacred House",
+        "ur": "ولادت سے پہلے: مکہ اور بیت اللہ"
+      },
+      "summary": {
+        "en": "The transmitted account of Isma’il and his mother, Zamzam, and the raising of the Sacred House, followed by prayers and selected family background. The Urdu edition also considers the People of the Elephant and a qualified birth-year report.",
+        "ur": "حضرت اسماعیل علیہ السلام اور ان کی والدہ، زمزم اور بیت اللہ کی تعمیر کے منقول بیان سے دعاؤں اور نسب کے ذکر تک۔ اردو ایڈیشن میں اصحابِ فیل اور ولادت سے منسوب سال کی روایت بھی ضروری وضاحتوں کے ساتھ شامل ہے۔"
+      },
+      "editorialNote": {
+        "en": "These editions differ. English is abridged (9:58), omitting the People of the Elephant section and adjusting its introduction and recap. Urdu retains that section (11:47). Neither recording reaches the original 15-minute target; no filler or time stretching was added. Original source-based exposition, not a verbatim hadith, Qur’an recitation, or copied modern translation. Selected Qur’anic context supplements Sunnah.com reports. No exact birth date, detailed expedition, invented dialogue or birth scene is supplied.",
+        "ur": "دونوں ایڈیشن مختلف ہیں۔ انگریزی مختصر ایڈیشن (9:58) میں اصحابِ فیل کا حصہ شامل نہیں، اور آغاز و اختتام بھی اسی کے مطابق ہیں۔ اردو ایڈیشن (11:47) میں یہ حصہ موجود ہے۔ کوئی ریکارڈنگ اصل پندرہ منٹ کے ہدف تک نہیں پہنچی؛ اضافی مواد یا رفتار میں مصنوعی تبدیلی نہیں کی گئی۔ یہ مآخذ پر مبنی اصل ادارتی بیانیہ ہے، حدیث کی لفظی قراءت، تلاوت یا کسی جدید ترجمے کی نقل نہیں۔ Sunnah.com کی روایات کے ساتھ منتخب قرآنی سیاق شامل ہے۔ ولادت کی متعین تاریخ، مہم کی غیر ثابت تفصیلات، گھڑا ہوا مکالمہ یا ولادت کا منظر بیان نہیں کیا گیا۔"
+      },
+      "editionLabels": {
+        "en": {
+          "en": "English · abridged edition",
+          "ur": "انگریزی · مختصر ایڈیشن"
+        },
+        "ur": {
+          "en": "Urdu · full edition",
+          "ur": "اردو · مکمل ایڈیشن"
+        }
+      },
+      "chapters": [
+        {
+          "kind": "story",
+          "id": "story-monthly-life-001-recording",
+          "monthlyEpisodeId": "monthly-life-001",
+          "shelf": "life",
+          "topic": "all",
+          "title": {
+            "en": "Episode recording",
+            "ur": "قسط کی ریکارڈنگ"
+          },
+          "text": {
+            "en": "Welcome to The Noble Life, a monthly journey through the life of Prophet Muhammad صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ.\n\nOur first episode begins before his birth. We will follow the earlier story of Makkah and the Sacred House, through an account preserved in Sahih al-Bukhari and passages of the Qur'an. A later report will bring us towards his family.\n\nThese sources do not give us an unbroken history of every generation. They preserve particular events, prayers and relationships. Our journey follows those points of light without inventing the spaces between them.\n\nWe begin with Ibrahim, peace be upon him, and with Isma'il and his mother. The long account comes through Ibn Abbas. It includes passages explicitly attributed to the Prophet, alongside the surrounding narration. We hear it as a transmitted account of earlier times, not as the personal memories of someone who witnessed those ancient events.\n\nIn that account, Ibrahim brings Isma'il and his mother to Makkah while the child is still nursing. He leaves dates and a container of water with them. The place is described as having neither other inhabitants nor water at that time.\n\nWhen Ibrahim departs, the child's mother follows and asks about leaving them there. She then asks whether this is Allah's command. When he confirms it, she expresses trust that Allah will not abandon them.\n\nIbrahim continues until they can no longer see him, then turns towards the House and prays. The report connects his prayer with words preserved in Surah Ibrahim: he has settled some of his descendants in a valley without cultivation, beside Allah's Sacred House, so that they may establish prayer. He asks for people to be drawn towards them and for fruits to be provided, with thankfulness as the hoped-for response.\n\nThe prayer joins their immediate needs to the purpose of their life there. Food matters, human company matters, and worship matters. These concerns stand together in the text. The valley's story begins not with a description of wealth or power, but with a family, limited provisions and a prayer.\n\nThe water runs out. Both mother and child become thirsty. The account describes the child moving in distress; it preserves alternative wording for that movement rather than one exact description.\n\nHis mother goes to Safa and looks out for someone. Finding no one, she descends, crosses the valley and goes up to Marwa, where she looks again. The account describes this movement between the two places seven times. Ibn Abbas explicitly introduces a statement of the Prophet connecting her journey with people's movement between Safa and Marwa.\n\nAt Marwa she hears a sound, listens again, and calls for help. The report then describes an angel at the place of Zamzam and the appearance of water. Here too, a detail is transmitted with an alternative: the angel's heel, or wing. We preserve that uncertainty rather than choose a more dramatic image.\n\nShe gathers water, makes a boundary around it and fills her container. She drinks and nurses her son. The account includes reassurance from the angel and a reference to the House that this child and his father will build.\n\nThe narrative has moved from dwindling provisions to water that can sustain them. The same mother who searched for help now tends to the water and her child.\n\nWater also changes what happens next. People from Jurhum pass through the area. The report describes them either as a travelling group or as a household from that tribe. They notice a bird circling in a way that suggests water, although they have known the valley as a place without it.\n\nThey send someone to investigate. The wording allows for one messenger or two. When the water is found, the others come to Isma'il's mother and ask whether they may settle beside her.\n\nShe agrees, with the condition that they will have no right of ownership over the water. They accept. More members of their families join them, and households become established there.\n\nIsma'il grows up among them and learns Arabic from them. The account carries us beyond the moment of thirst into a community taking shape: permission to stay, families arriving, a child growing and learning.\n\nThis is the settlement described in this particular report. It is not a modern survey of Makkah's population or a complete history of its tribes. For our story, it preserves something more intimate: the relationship between a source of water, a mother's agreement and the people who make their homes nearby.\n\nAs the account continues, Isma'il reaches adulthood and marries among Jurhum. His mother dies. Ibrahim later visits the household at different times. These are separate visits, with intervals that the report does not turn into a calendar.\n\nOn one visit, Isma'il is away seeking their livelihood. His wife describes their circumstances as difficult. Ibrahim leaves a message about changing the threshold of the home. When Isma'il hears the message, he identifies the visitor as his father and understands the message as an instruction to part from his wife. The account then records another marriage.\n\nDuring a later visit, Ibrahim again finds Isma'il away. This wife speaks of their circumstances with thankfulness. Ibrahim asks about their food and drink, prays for blessing, and leaves a message that the threshold should remain. Isma'il again explains the message when he returns.\n\nThese household events belong to this transmitted account. We do not turn them into a general rule for judging another family's marriage, or supply motives that the account does not state.\n\nAt a subsequent meeting, Ibrahim finds Isma'il near Zamzam, preparing arrows. Father and son greet one another. The next part of their story will be work they undertake together.\n\nIbrahim tells his son that Allah has commanded him to build a House there and asks for his help. Isma'il agrees. In the account, the work has a clear division: Isma'il brings stones, and Ibrahim builds.\n\nAs the building rises, Isma'il brings a stone for his father to stand on so that the work can continue. He keeps passing the building stones to him. Alongside this practical labour is their request that Allah accept what they are doing.\n\nSurah al-Baqarah also recalls Ibrahim and Isma'il raising the foundations of the House and asking for acceptance from Allah, who hears and knows.\n\nThe same Qur'anic passage speaks of the House as a place to which people return and a place of safety. Ibrahim and Isma'il are charged with keeping it pure for those who circle it, remain there in devotion, bow and prostrate.\n\nStonework and worship therefore belong together in this account. The House is not described only as a structure to be completed. Its care is connected with the people who will worship there. Our attention moves from the builders' hands to the purpose their work will serve.\n\nThe Qur'anic passage continues beyond the building. Ibrahim and Isma'il ask that they themselves submit to Allah, and that a community submitting to Him arise from their descendants. They ask to be shown their rites and for Allah to turn towards them in mercy.\n\nThen comes a prayer for a messenger from among those people: one who will recite Allah's revelations to them, teach them the Book and wisdom, and purify them. We are hearing the contents of a prayer, not a timetable naming the generations between its utterance and later events.\n\nElsewhere, Surah Ibrahim preserves his request for the city's safety and for himself and his children to be kept from idol worship. His concern extends beyond provisions and settlement to what his descendants will worship.\n\nThese prayers give the earlier story its direction. A place of habitation is also a place of devotion; concern for children reaches into concern for the generations after them.\n\nWe do not have to imagine Ibrahim seeing every future event. The text gives us the prayers themselves. Their requests are enough to carry our attention beyond the household beside the water, towards the people whose lives will become connected with the House.\n\nTo approach the family of Prophet Muhammad صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ, we turn to a different report, in Sahih Muslim. Wathila ibn al-Asqa says that he heard the Prophet describe Allah's selection within his lineage.\n\nThe report names Kinanah from the descendants of Isma'il, Quraysh from Kinanah, Banu Hashim from Quraysh, and the Prophet himself from Banu Hashim.\n\nThis is a sequence of named relationships, not a list of every father and son between Isma'il and the Prophet. It connects our earlier account with the family to which the later life belongs, while leaving many intervening generations unnamed.\n\nThe change of source matters. We have left the long account of Isma'il's household and are listening to a later statement about ancestry. We are not claiming that all the events we have described followed one another within a single lifetime.\n\nFor this opening episode, those named relationships give us a careful approach to the family. We leave detailed accounts of parents, grandparents and their circumstances for material that can be separately established, rather than filling the gap with familiar but unchecked stories.\n\nOur first journey ends here, before a birth scene begins. We have followed the account of a family in the valley, the water at Zamzam, the growth of a household, and the building of the Sacred House. We have heard prayers reaching towards descendants and a report naming a lineage.\n\nThese are the foundations of this episode, not a claim to have described the whole world before the Prophet's birth. What comes next must be approached with the same care: a life told through its evidence, with neither reverence nor storytelling used as a reason to invent.\n\nThis has been The Noble Life: Before His Birth, Makkah and the Sacred House.",
+            "ur": "دی نوبل لائف میں خوش آمدید۔ یہ نبی کریم محمد صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ کی سیرت کے مطالعے کا ایک ماہانہ سفر ہے۔\n\nپہلی قسط آپ کی ولادت سے پہلے کے زمانے کے بارے میں ہے۔ صحیح بخاری کے ایک بیان اور قرآن کی آیات سے مکہ اور بیت اللہ کا ابتدائی پس منظر سمجھیں گے۔ پھر دوسری روایتوں سے آپ کے نسب اور ولادت سے منسوب سال کا ذکر آئے گا۔\n\nان ماخذ میں ہر نسل کی مسلسل تاریخ نہیں، مخصوص واقعات، دعائیں اور رشتے محفوظ ہیں۔ ہمارا سفر انہی کے ساتھ آگے بڑھے گا، درمیانی خلا میں نئے واقعات شامل کیے بغیر۔\n\nآغاز حضرت ابراہیم علیہ السلام، حضرت اسماعیل علیہ السلام اور ان کی والدہ سے ہے۔ یہ مفصل بیان حضرت ابن عباس رضی اللہ عنہما سے منقول ہے، جس میں بعض باتیں الگ سے نبی کریم کی طرف منسوب ہیں۔ یہ قدیم واقعات کی خبر ہے، ابن عباس کے اپنے مشاہدے کی یادداشت نہیں۔\n\nروایت میں حضرت ابراہیم علیہ السلام اپنے دودھ پیتے بیٹے اور ان کی والدہ کو مکہ لاتے ہیں۔ ان کے پاس کھجوریں اور پانی کی مشک رکھتے ہیں۔ اس وقت وہاں نہ دوسرے باشندے ہیں، نہ پانی۔\n\nوہ روانہ ہوتے ہیں تو بچے کی والدہ پیچھے آکر انہیں وہاں چھوڑنے کے بارے میں پوچھتی ہیں۔ پھر دریافت کرتی ہیں کہ کیا یہ اللہ کا حکم ہے۔ تصدیق ہونے پر وہ اعتماد ظاہر کرتی ہیں کہ اللہ انہیں بے سہارا نہیں چھوڑے گا۔\n\nحضرت ابراہیم علیہ السلام نگاہوں سے اوجھل ہوکر بیت اللہ کی طرف رخ کرتے اور دعا مانگتے ہیں۔ روایت اسے سورۂ ابراہیم کے بیان سے جوڑتی ہے: انہوں نے اپنی اولاد میں سے بعض کو اللہ کے محترم گھر کے پاس، کھیتی سے خالی وادی میں بسایا ہے تاکہ وہ نماز قائم کریں۔ وہ لوگوں کے دل ان کی طرف مائل ہونے، پھلوں سے رزق ملنے اور ان کے شکر گزار بننے کی دعا کرتے ہیں۔\n\nدعا میں خوراک، لوگوں کا ساتھ اور عبادت، تینوں جمع ہیں۔ وادی کا یہ بیان دولت یا اقتدار سے نہیں، ایک گھرانے، محدود سامان اور دعا سے شروع ہوتا ہے۔\n\nپانی ختم ہوتا ہے تو ماں اور بچہ دونوں پیاسے ہیں۔ بچے کی بے چینی اور حرکت کے لیے روایت دو متبادل الفاظ محفوظ رکھتی ہے، کوئی ایک قطعی منظر نہیں۔\n\nوالدہ صفا پر چڑھ کر کسی شخص کو تلاش کرتی ہیں۔ کوئی نظر نہیں آتا تو نیچے اترتی، وادی پار کرتی اور مروہ پر جاکر پھر دیکھتی ہیں۔ ان دونوں جگہوں کے درمیان سات مرتبہ آنے جانے کا ذکر ہے۔ حضرت ابن عباس رضی اللہ عنہما یہاں نبی کریم کا فرمان الگ نسبت سے بیان کرتے ہیں، جو لوگوں کی صفا اور مروہ کے درمیان سعی کو اس واقعے سے جوڑتا ہے۔\n\nمروہ پر آواز سن کر وہ دوبارہ توجہ دیتی اور مدد طلب کرتی ہیں۔ پھر زمزم کے مقام پر ایک فرشتے اور پانی ظاہر ہونے کا بیان ہے۔ یہاں بھی دو صورتیں منقول ہیں: فرشتے کی ایڑی، یا اس کا پر۔ یہ فرق برقرار رہنا چاہیے۔\n\nوہ پانی کے گرد حد بناتی، مشک بھرتی، خود پیتی اور بچے کو دودھ پلاتی ہیں۔ فرشتہ تسلی دیتا ہے اور اس گھر کا ذکر کرتا ہے جسے یہ بچہ اور اس کے والد تعمیر کریں گے۔\n\nیوں ختم ہوتے پانی کے بعد زندگی کا سہارا ملتا ہے۔ مدد کی تلاش میں آنے جانے والی ماں اب پانی سنبھالتی اور بچے کی دیکھ بھال کرتی ہے۔ انہی منقول اعمال سے قصہ آگے بڑھتا ہے۔\n\nپانی اگلے واقعات سے بھی جڑا ہے۔ جرہم کے لوگ وہاں سے گزرتے ہیں؛ روایت میں مسافر گروہ یا گھرانہ، دونوں صورتیں ہیں۔ ایک پرندے کی گردش سے انہیں پانی کی موجودگی کا اندازہ ہوتا ہے، حالاں کہ وہ وادی کو بے آب جانتے تھے۔\n\nوہ ایک شخص، یا دو اشخاص، خبر لینے بھیجتے ہیں۔ پانی کی خبر ملنے پر حضرت اسماعیل علیہ السلام کی والدہ سے قریب ٹھہرنے کی اجازت مانگتے ہیں۔\n\nوہ اجازت دیتی ہیں، مگر پانی پر حقِ ملکیت نہیں دیتیں۔ لوگ شرط قبول کرتے ہیں۔ پھر ان کے اہلِ خانہ آتے ہیں اور گھرانے آباد ہونے لگتے ہیں۔\n\nحضرت اسماعیل علیہ السلام ان کے درمیان بڑے ہوتے اور عربی سیکھتے ہیں۔ پیاس کے لمحے سے بیان آبادی تک آگیا ہے: رہنے کی اجازت، خاندانوں کی آمد، بچے کی پرورش اور زبان سیکھنا۔\n\nیہ اس خاص روایت کی آبادی ہے، مکہ کی مردم شماری یا تمام قبائل کی تاریخ نہیں۔ یہاں پانی، ایک ماں کی اجازت اور قریب گھر بسانے والوں کا تعلق سامنے آتا ہے۔\n\nحضرت اسماعیل علیہ السلام بالغ ہوکر جرہم میں شادی کرتے ہیں۔ ان کی والدہ وفات پا جاتی ہیں۔ بعد میں حضرت ابراہیم علیہ السلام مختلف اوقات میں آتے ہیں۔ ان الگ ملاقاتوں کے وقفوں کی تقویمی تاریخیں روایت میں نہیں۔\n\nایک بار بیٹا روزی کی تلاش میں باہر ہوتا ہے۔ اہلیہ زندگی کی تنگی بیان کرتی ہیں۔ حضرت ابراہیم علیہ السلام چوکھٹ بدلنے کا پیغام چھوڑتے ہیں۔ واپسی پر بیٹا آنے والے کو اپنا والد پہچانتا ہے اور پیغام کا مطلب اہلیہ سے جدا ہونے کی ہدایت بتاتا ہے۔ پھر دوسری شادی کا ذکر ہے۔\n\nبعد کی ملاقات میں بھی بیٹا باہر ہوتا ہے۔ اس بار اہلیہ شکر کے ساتھ حالات بیان کرتی ہیں۔ والد کھانے پینے کے بارے میں پوچھتے، برکت کی دعا کرتے اور چوکھٹ قائم رکھنے کا پیغام دیتے ہیں۔ بیٹا واپسی پر اس کی وضاحت کرتا ہے۔\n\nیہ مخصوص گھرانے کے واقعات ہیں، دوسروں کی شادیوں پر فیصلے کا عمومی اصول نہیں۔ غیر منقول نیتیں بھی ان میں شامل نہیں کرنی چاہییں۔\n\nپھر والد بیٹے کو زمزم کے قریب تیر تیار کرتے پاتے ہیں۔ باپ اور بیٹا ملتے ہیں۔ اب دونوں کے مشترک کام کا ذکر آئے گا۔\n\nحضرت ابراہیم علیہ السلام بیٹے کو یہاں گھر بنانے کا الٰہی حکم بتاتے اور مدد مانگتے ہیں۔ حضرت اسماعیل علیہ السلام آمادہ ہوتے ہیں۔ کام تقسیم ہے: بیٹا پتھر لاتا ہے، والد تعمیر کرتے ہیں۔\n\nعمارت بلند ہوتی ہے تو بیٹا والد کے کھڑے ہونے کے لیے پتھر لاتا ہے، تاکہ کام جاری رہے۔ وہ تعمیر کے پتھر بھی دیتے رہتے ہیں۔ محنت کے ساتھ دونوں اللہ سے قبولیت مانگتے ہیں۔\n\nسورۂ بقرہ بھی دونوں کے بیت اللہ کی بنیادیں اٹھانے اور سننے، جاننے والے اللہ سے قبولیت مانگنے کو یاد کرتی ہے۔\n\nاسی مقام پر بیت اللہ لوگوں کے بار بار آنے اور امن کی جگہ ہے۔ دونوں کو اسے طواف کرنے والوں، عبادت کے لیے ٹھہرنے والوں اور رکوع و سجدہ کرنے والوں کے لیے پاک رکھنے کی ذمہ داری دی گئی۔\n\nتعمیر اور عبادت یہاں ساتھ ہیں۔ گھر صرف مکمل کی جانے والی عمارت نہیں؛ اس کی دیکھ بھال عبادت گزاروں سے متعلق ہے۔ معماروں کی محنت کے ساتھ اس کا مقصد بھی سامنے آتا ہے۔\n\nقرآن کا بیان آگے بڑھتا ہے۔ دونوں اپنے لیے فرمانبرداری اور اولاد میں اللہ کی فرمانبردار جماعت کی دعا کرتے ہیں۔ عبادت کے طریقے سکھائے جانے اور توبہ کی قبولیت کی درخواست بھی ہے۔\n\nپھر انہی میں سے ایک رسول کی دعا ہے، جو اللہ کی آیات سنائے، کتاب اور حکمت سکھائے اور ان کا تزکیہ کرے۔ یہ دعا کا مضمون ہے، درمیانی نسلوں اور زمانوں کی فہرست نہیں۔\n\nسورۂ ابراہیم میں شہر کے امن اور اپنے لیے اور اولاد کے لیے بت پرستی سے حفاظت کی دعا ہے۔ فکر صرف خوراک اور رہائش کی نہیں؛ اولاد کس کی عبادت کرے گی، اس کی بھی ہے۔\n\nان دعاؤں سے بیان کا رخ واضح ہے۔ رہائش کی جگہ عبادت کی جگہ بھی ہے، اور بچوں کی فکر آنے والی نسلوں تک پہنچتی ہے۔\n\nیہ تصور ضروری نہیں کہ حضرت ابراہیم علیہ السلام ہر مستقبل کے واقعے کو دیکھ رہے تھے۔ متن کی دعائیں ہی ہمیں اس گھرانے سے آگے، بیت اللہ سے وابستہ ہونے والوں کی طرف لے جاتی ہیں۔\n\nاب نبی کریم محمد صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ کے خاندان کے لیے صحیح مسلم کی الگ روایت دیکھتے ہیں۔ حضرت واثلہ بن اسقع رضی اللہ عنہ نے آپ سے نسب میں اللہ کے انتخاب کا ذکر سنا۔\n\nبیان میں حضرت اسماعیل علیہ السلام کی اولاد سے کنانہ، کنانہ سے قریش، قریش سے بنو ہاشم اور بنو ہاشم سے نبی کریم کے انتخاب کا ذکر ہے۔\n\nیہ نسبتوں کی ترتیب ہے، ہر باپ اور بیٹے کی مکمل فہرست نہیں۔ ابتدائی بیان کا اس خاندان سے تعلق واضح ہوتا ہے، مگر درمیان کی بہت سی نسلیں اس مختصر روایت میں نام بہ نام نہیں آتیں۔\n\nماخذ بدل گیا ہے: پہلے گھرانے کا مفصل بیان تھا، اب نسب کے متعلق بعد کا ارشاد ہے۔ تمام واقعات کسی ایک زندگی کے مسلسل واقعات نہیں۔\n\nیہ نسبتیں خاندان تک محتاط رسائی دیتی ہیں۔ والدین اور بزرگوں کے حالات الگ تحقیق کے لیے رہیں گے، غیر جانچی مشہور باتوں سے یہ جگہ نہیں بھری جائے گی۔\n\nسورۂ فیل کی پانچ آیات اصحابِ فیل اور ان کی تدبیر کی ناکامی یاد دلاتی ہیں۔ ان پر پرندے بھیجے گئے، پتھروں سے انہیں نشانہ بنایا گیا اور ان کی حالت کھائی ہوئی کھیتی کے باقیات جیسی ہوگئی۔\n\nیہ قرآنی بیان ہے، جسے نہ دوسری توجیہ میں بدلیں گے، نہ جنگ کا گھڑا ہوا منظر بنائیں گے۔ آیات میں قائد کا نام، جانوروں کی تعداد یا پورا راستہ نہیں۔\n\nصحیح مسلم میں حضرت ابو ہریرہ رضی اللہ عنہ فتح مکہ کے بعد کے خطاب کا ذکر کرتے ہیں۔ نبی کریم نے اس میں اللہ کے مکہ سے ہاتھی کو روک دینے کو یاد فرمایا۔ یہ بہت بعد کا خطاب، پہلے واقعے کی خبر دیتا ہے۔\n\nحضرت قیس بن مخرمہ رضی اللہ عنہ کی خاندانی واسطے سے منقول روایت اپنی اور نبی کریم کی ولادت کو عام الفیل سے منسوب کرتی ہے۔ امام ترمذی اسے حسن غریب کہتے اور واضح کرتے ہیں کہ وہ اسے صرف محمد بن اسحاق کے طریق سے جانتے ہیں۔ الگ درج شدہ دارالسلام کی درجہ بندی میں اسے صحیح کہا گیا ہے۔\n\nیہاں قسط اپنی آخری حد پر آتی ہے۔ ان حوالوں سے واقعۂ فیل اور ولادت کا متعین درمیانی وقفہ نہیں ملتا؛ ہم اسے خود مقرر نہیں کریں گے۔\n\nپہلا سفر یہیں مکمل ہوتا ہے، ولادت کا منظر شروع ہونے سے پہلے۔ ہم نے وادی میں ایک گھرانے، زمزم کے پانی، خاندان کے بڑھنے اور بیت اللہ کی تعمیر کا بیان پڑھا۔ اولاد کے لیے دعائیں، نسب کے نام، اور واقعۂ فیل کی یاد دلانے والے ماخذ بھی سامنے آئے۔\n\nیہ اس قسط کی بنیادیں ہیں، ولادت سے پہلے کی پوری دنیا بیان کردینے کا دعویٰ نہیں۔ آگے بھی یہی احتیاط ضروری ہے: سیرت کا بیان اس کے ثبوت کے ساتھ ہو، اور نہ عقیدت کو، نہ قصہ گوئی کو نئی بات گھڑنے کا جواز بنایا جائے۔\n\nآپ سن رہے تھے دی نوبل لائف کی پہلی قسط: ولادت سے پہلے، مکہ اور بیت اللہ۔"
+          },
+          "sourceIds": [
+            "s1",
+            "s2",
+            "q1",
+            "q2",
+            "s3",
+            "s6",
+            "q3"
+          ],
+          "sections": {
+            "en": [
+              {
+                "title": "Before the beginning",
+                "startSeconds": 0,
+                "text": "Welcome to The Noble Life, a monthly journey through the life of Prophet Muhammad صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ.\n\nOur first episode begins before his birth. We will follow the earlier story of Makkah and the Sacred House, through an account preserved in Sahih al-Bukhari and passages of the Qur'an. A later report will bring us towards his family.\n\nThese sources do not give us an unbroken history of every generation. They preserve particular events, prayers and relationships. Our journey follows those points of light without inventing the spaces between them.\n\nWe begin with Ibrahim, peace be upon him, and with Isma'il and his mother. The long account comes through Ibn Abbas. It includes passages explicitly attributed to the Prophet, alongside the surrounding narration. We hear it as a transmitted account of earlier times, not as the personal memories of someone who witnessed those ancient events.",
+                "sourceIds": [
+                  "s1",
+                  "s2",
+                  "q1",
+                  "q2"
+                ]
+              },
+              {
+                "title": "A family in the valley",
+                "startSeconds": 58.45,
+                "text": "In that account, Ibrahim brings Isma'il and his mother to Makkah while the child is still nursing. He leaves dates and a container of water with them. The place is described as having neither other inhabitants nor water at that time.\n\nWhen Ibrahim departs, the child's mother follows and asks about leaving them there. She then asks whether this is Allah's command. When he confirms it, she expresses trust that Allah will not abandon them.\n\nIbrahim continues until they can no longer see him, then turns towards the House and prays. The report connects his prayer with words preserved in Surah Ibrahim: he has settled some of his descendants in a valley without cultivation, beside Allah's Sacred House, so that they may establish prayer. He asks for people to be drawn towards them and for fruits to be provided, with thankfulness as the hoped-for response.\n\nThe prayer joins their immediate needs to the purpose of their life there. Food matters, human company matters, and worship matters. These concerns stand together in the text. The valley's story begins not with a description of wealth or power, but with a family, limited provisions and a prayer.",
+                "sourceIds": [
+                  "s1",
+                  "q1"
+                ]
+              },
+              {
+                "title": "The search for help",
+                "startSeconds": 130.3,
+                "text": "The water runs out. Both mother and child become thirsty. The account describes the child moving in distress; it preserves alternative wording for that movement rather than one exact description.\n\nHis mother goes to Safa and looks out for someone. Finding no one, she descends, crosses the valley and goes up to Marwa, where she looks again. The account describes this movement between the two places seven times. Ibn Abbas explicitly introduces a statement of the Prophet connecting her journey with people's movement between Safa and Marwa.\n\nAt Marwa she hears a sound, listens again, and calls for help. The report then describes an angel at the place of Zamzam and the appearance of water. Here too, a detail is transmitted with an alternative: the angel's heel, or wing. We preserve that uncertainty rather than choose a more dramatic image.\n\nShe gathers water, makes a boundary around it and fills her container. She drinks and nurses her son. The account includes reassurance from the angel and a reference to the House that this child and his father will build.\n\nThe narrative has moved from dwindling provisions to water that can sustain them. The same mother who searched for help now tends to the water and her child.",
+                "sourceIds": [
+                  "s1"
+                ]
+              },
+              {
+                "title": "People gather near Zamzam",
+                "startSeconds": 202.65,
+                "text": "Water also changes what happens next. People from Jurhum pass through the area. The report describes them either as a travelling group or as a household from that tribe. They notice a bird circling in a way that suggests water, although they have known the valley as a place without it.\n\nThey send someone to investigate. The wording allows for one messenger or two. When the water is found, the others come to Isma'il's mother and ask whether they may settle beside her.\n\nShe agrees, with the condition that they will have no right of ownership over the water. They accept. More members of their families join them, and households become established there.\n\nIsma'il grows up among them and learns Arabic from them. The account carries us beyond the moment of thirst into a community taking shape: permission to stay, families arriving, a child growing and learning.\n\nThis is the settlement described in this particular report. It is not a modern survey of Makkah's population or a complete history of its tribes. For our story, it preserves something more intimate: the relationship between a source of water, a mother's agreement and the people who make their homes nearby.",
+                "sourceIds": [
+                  "s1"
+                ]
+              },
+              {
+                "title": "The son grows, and the father returns",
+                "startSeconds": 273.6,
+                "text": "As the account continues, Isma'il reaches adulthood and marries among Jurhum. His mother dies. Ibrahim later visits the household at different times. These are separate visits, with intervals that the report does not turn into a calendar.\n\nOn one visit, Isma'il is away seeking their livelihood. His wife describes their circumstances as difficult. Ibrahim leaves a message about changing the threshold of the home. When Isma'il hears the message, he identifies the visitor as his father and understands the message as an instruction to part from his wife. The account then records another marriage.\n\nDuring a later visit, Ibrahim again finds Isma'il away. This wife speaks of their circumstances with thankfulness. Ibrahim asks about their food and drink, prays for blessing, and leaves a message that the threshold should remain. Isma'il again explains the message when he returns.\n\nThese household events belong to this transmitted account. We do not turn them into a general rule for judging another family's marriage, or supply motives that the account does not state.\n\nAt a subsequent meeting, Ibrahim finds Isma'il near Zamzam, preparing arrows. Father and son greet one another. The next part of their story will be work they undertake together.",
+                "sourceIds": [
+                  "s1"
+                ]
+              },
+              {
+                "title": "Raising the House",
+                "startSeconds": 350.9,
+                "text": "Ibrahim tells his son that Allah has commanded him to build a House there and asks for his help. Isma'il agrees. In the account, the work has a clear division: Isma'il brings stones, and Ibrahim builds.\n\nAs the building rises, Isma'il brings a stone for his father to stand on so that the work can continue. He keeps passing the building stones to him. Alongside this practical labour is their request that Allah accept what they are doing.\n\nSurah al-Baqarah also recalls Ibrahim and Isma'il raising the foundations of the House and asking for acceptance from Allah, who hears and knows.\n\nThe same Qur'anic passage speaks of the House as a place to which people return and a place of safety. Ibrahim and Isma'il are charged with keeping it pure for those who circle it, remain there in devotion, bow and prostrate.\n\nStonework and worship therefore belong together in this account. The House is not described only as a structure to be completed. Its care is connected with the people who will worship there. Our attention moves from the builders' hands to the purpose their work will serve.",
+                "sourceIds": [
+                  "s1",
+                  "q2"
+                ]
+              },
+              {
+                "title": "A prayer reaching beyond one household",
+                "startSeconds": 415.45,
+                "text": "The Qur'anic passage continues beyond the building. Ibrahim and Isma'il ask that they themselves submit to Allah, and that a community submitting to Him arise from their descendants. They ask to be shown their rites and for Allah to turn towards them in mercy.\n\nThen comes a prayer for a messenger from among those people: one who will recite Allah's revelations to them, teach them the Book and wisdom, and purify them. We are hearing the contents of a prayer, not a timetable naming the generations between its utterance and later events.\n\nElsewhere, Surah Ibrahim preserves his request for the city's safety and for himself and his children to be kept from idol worship. His concern extends beyond provisions and settlement to what his descendants will worship.\n\nThese prayers give the earlier story its direction. A place of habitation is also a place of devotion; concern for children reaches into concern for the generations after them.\n\nWe do not have to imagine Ibrahim seeing every future event. The text gives us the prayers themselves. Their requests are enough to carry our attention beyond the household beside the water, towards the people whose lives will become connected with the House.",
+                "sourceIds": [
+                  "q1",
+                  "q2"
+                ]
+              },
+              {
+                "title": "From Isma'il to the named lineage",
+                "startSeconds": 485.7,
+                "text": "To approach the family of Prophet Muhammad صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ, we turn to a different report, in Sahih Muslim. Wathila ibn al-Asqa says that he heard the Prophet describe Allah's selection within his lineage.\n\nThe report names Kinanah from the descendants of Isma'il, Quraysh from Kinanah, Banu Hashim from Quraysh, and the Prophet himself from Banu Hashim.\n\nThis is a sequence of named relationships, not a list of every father and son between Isma'il and the Prophet. It connects our earlier account with the family to which the later life belongs, while leaving many intervening generations unnamed.\n\nThe change of source matters. We have left the long account of Isma'il's household and are listening to a later statement about ancestry. We are not claiming that all the events we have described followed one another within a single lifetime.\n\nFor this opening episode, those named relationships give us a careful approach to the family. We leave detailed accounts of parents, grandparents and their circumstances for material that can be separately established, rather than filling the gap with familiar but unchecked stories.",
+                "sourceIds": [
+                  "s2"
+                ]
+              },
+              {
+                "title": "At the threshold",
+                "startSeconds": 559.75,
+                "text": "Our first journey ends here, before a birth scene begins. We have followed the account of a family in the valley, the water at Zamzam, the growth of a household, and the building of the Sacred House. We have heard prayers reaching towards descendants and a report naming a lineage.\n\nThese are the foundations of this episode, not a claim to have described the whole world before the Prophet's birth. What comes next must be approached with the same care: a life told through its evidence, with neither reverence nor storytelling used as a reason to invent.\n\nThis has been The Noble Life: Before His Birth, Makkah and the Sacred House.",
+                "sourceIds": [
+                  "s1",
+                  "s2",
+                  "q1",
+                  "q2"
+                ]
+              }
+            ],
+            "ur": [
+              {
+                "title": "آغاز سے پہلے",
+                "startSeconds": 0,
+                "text": "دی نوبل لائف میں خوش آمدید۔ یہ نبی کریم محمد صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ کی سیرت کے مطالعے کا ایک ماہانہ سفر ہے۔\n\nپہلی قسط آپ کی ولادت سے پہلے کے زمانے کے بارے میں ہے۔ صحیح بخاری کے ایک بیان اور قرآن کی آیات سے مکہ اور بیت اللہ کا ابتدائی پس منظر سمجھیں گے۔ پھر دوسری روایتوں سے آپ کے نسب اور ولادت سے منسوب سال کا ذکر آئے گا۔\n\nان ماخذ میں ہر نسل کی مسلسل تاریخ نہیں، مخصوص واقعات، دعائیں اور رشتے محفوظ ہیں۔ ہمارا سفر انہی کے ساتھ آگے بڑھے گا، درمیانی خلا میں نئے واقعات شامل کیے بغیر۔\n\nآغاز حضرت ابراہیم علیہ السلام، حضرت اسماعیل علیہ السلام اور ان کی والدہ سے ہے۔ یہ مفصل بیان حضرت ابن عباس رضی اللہ عنہما سے منقول ہے، جس میں بعض باتیں الگ سے نبی کریم کی طرف منسوب ہیں۔ یہ قدیم واقعات کی خبر ہے، ابن عباس کے اپنے مشاہدے کی یادداشت نہیں۔",
+                "sourceIds": [
+                  "s1",
+                  "s2",
+                  "q1",
+                  "q2",
+                  "s3",
+                  "s6",
+                  "q3"
+                ]
+              },
+              {
+                "title": "وادی میں ایک گھرانہ",
+                "startSeconds": 65.2,
+                "text": "روایت میں حضرت ابراہیم علیہ السلام اپنے دودھ پیتے بیٹے اور ان کی والدہ کو مکہ لاتے ہیں۔ ان کے پاس کھجوریں اور پانی کی مشک رکھتے ہیں۔ اس وقت وہاں نہ دوسرے باشندے ہیں، نہ پانی۔\n\nوہ روانہ ہوتے ہیں تو بچے کی والدہ پیچھے آکر انہیں وہاں چھوڑنے کے بارے میں پوچھتی ہیں۔ پھر دریافت کرتی ہیں کہ کیا یہ اللہ کا حکم ہے۔ تصدیق ہونے پر وہ اعتماد ظاہر کرتی ہیں کہ اللہ انہیں بے سہارا نہیں چھوڑے گا۔\n\nحضرت ابراہیم علیہ السلام نگاہوں سے اوجھل ہوکر بیت اللہ کی طرف رخ کرتے اور دعا مانگتے ہیں۔ روایت اسے سورۂ ابراہیم کے بیان سے جوڑتی ہے: انہوں نے اپنی اولاد میں سے بعض کو اللہ کے محترم گھر کے پاس، کھیتی سے خالی وادی میں بسایا ہے تاکہ وہ نماز قائم کریں۔ وہ لوگوں کے دل ان کی طرف مائل ہونے، پھلوں سے رزق ملنے اور ان کے شکر گزار بننے کی دعا کرتے ہیں۔\n\nدعا میں خوراک، لوگوں کا ساتھ اور عبادت، تینوں جمع ہیں۔ وادی کا یہ بیان دولت یا اقتدار سے نہیں، ایک گھرانے، محدود سامان اور دعا سے شروع ہوتا ہے۔",
+                "sourceIds": [
+                  "s1",
+                  "q1"
+                ]
+              },
+              {
+                "title": "مدد کی تلاش",
+                "startSeconds": 137.65,
+                "text": "پانی ختم ہوتا ہے تو ماں اور بچہ دونوں پیاسے ہیں۔ بچے کی بے چینی اور حرکت کے لیے روایت دو متبادل الفاظ محفوظ رکھتی ہے، کوئی ایک قطعی منظر نہیں۔\n\nوالدہ صفا پر چڑھ کر کسی شخص کو تلاش کرتی ہیں۔ کوئی نظر نہیں آتا تو نیچے اترتی، وادی پار کرتی اور مروہ پر جاکر پھر دیکھتی ہیں۔ ان دونوں جگہوں کے درمیان سات مرتبہ آنے جانے کا ذکر ہے۔ حضرت ابن عباس رضی اللہ عنہما یہاں نبی کریم کا فرمان الگ نسبت سے بیان کرتے ہیں، جو لوگوں کی صفا اور مروہ کے درمیان سعی کو اس واقعے سے جوڑتا ہے۔\n\nمروہ پر آواز سن کر وہ دوبارہ توجہ دیتی اور مدد طلب کرتی ہیں۔ پھر زمزم کے مقام پر ایک فرشتے اور پانی ظاہر ہونے کا بیان ہے۔ یہاں بھی دو صورتیں منقول ہیں: فرشتے کی ایڑی، یا اس کا پر۔ یہ فرق برقرار رہنا چاہیے۔\n\nوہ پانی کے گرد حد بناتی، مشک بھرتی، خود پیتی اور بچے کو دودھ پلاتی ہیں۔ فرشتہ تسلی دیتا ہے اور اس گھر کا ذکر کرتا ہے جسے یہ بچہ اور اس کے والد تعمیر کریں گے۔\n\nیوں ختم ہوتے پانی کے بعد زندگی کا سہارا ملتا ہے۔ مدد کی تلاش میں آنے جانے والی ماں اب پانی سنبھالتی اور بچے کی دیکھ بھال کرتی ہے۔ انہی منقول اعمال سے قصہ آگے بڑھتا ہے۔",
+                "sourceIds": [
+                  "s1"
+                ]
+              },
+              {
+                "title": "زمزم کے پاس آبادی",
+                "startSeconds": 227.35,
+                "text": "پانی اگلے واقعات سے بھی جڑا ہے۔ جرہم کے لوگ وہاں سے گزرتے ہیں؛ روایت میں مسافر گروہ یا گھرانہ، دونوں صورتیں ہیں۔ ایک پرندے کی گردش سے انہیں پانی کی موجودگی کا اندازہ ہوتا ہے، حالاں کہ وہ وادی کو بے آب جانتے تھے۔\n\nوہ ایک شخص، یا دو اشخاص، خبر لینے بھیجتے ہیں۔ پانی کی خبر ملنے پر حضرت اسماعیل علیہ السلام کی والدہ سے قریب ٹھہرنے کی اجازت مانگتے ہیں۔\n\nوہ اجازت دیتی ہیں، مگر پانی پر حقِ ملکیت نہیں دیتیں۔ لوگ شرط قبول کرتے ہیں۔ پھر ان کے اہلِ خانہ آتے ہیں اور گھرانے آباد ہونے لگتے ہیں۔\n\nحضرت اسماعیل علیہ السلام ان کے درمیان بڑے ہوتے اور عربی سیکھتے ہیں۔ پیاس کے لمحے سے بیان آبادی تک آگیا ہے: رہنے کی اجازت، خاندانوں کی آمد، بچے کی پرورش اور زبان سیکھنا۔\n\nیہ اس خاص روایت کی آبادی ہے، مکہ کی مردم شماری یا تمام قبائل کی تاریخ نہیں۔ یہاں پانی، ایک ماں کی اجازت اور قریب گھر بسانے والوں کا تعلق سامنے آتا ہے۔",
+                "sourceIds": [
+                  "s1"
+                ]
+              },
+              {
+                "title": "بیٹا بڑا ہوتا ہے، والد آتے ہیں",
+                "startSeconds": 297.45,
+                "text": "حضرت اسماعیل علیہ السلام بالغ ہوکر جرہم میں شادی کرتے ہیں۔ ان کی والدہ وفات پا جاتی ہیں۔ بعد میں حضرت ابراہیم علیہ السلام مختلف اوقات میں آتے ہیں۔ ان الگ ملاقاتوں کے وقفوں کی تقویمی تاریخیں روایت میں نہیں۔\n\nایک بار بیٹا روزی کی تلاش میں باہر ہوتا ہے۔ اہلیہ زندگی کی تنگی بیان کرتی ہیں۔ حضرت ابراہیم علیہ السلام چوکھٹ بدلنے کا پیغام چھوڑتے ہیں۔ واپسی پر بیٹا آنے والے کو اپنا والد پہچانتا ہے اور پیغام کا مطلب اہلیہ سے جدا ہونے کی ہدایت بتاتا ہے۔ پھر دوسری شادی کا ذکر ہے۔\n\nبعد کی ملاقات میں بھی بیٹا باہر ہوتا ہے۔ اس بار اہلیہ شکر کے ساتھ حالات بیان کرتی ہیں۔ والد کھانے پینے کے بارے میں پوچھتے، برکت کی دعا کرتے اور چوکھٹ قائم رکھنے کا پیغام دیتے ہیں۔ بیٹا واپسی پر اس کی وضاحت کرتا ہے۔\n\nیہ مخصوص گھرانے کے واقعات ہیں، دوسروں کی شادیوں پر فیصلے کا عمومی اصول نہیں۔ غیر منقول نیتیں بھی ان میں شامل نہیں کرنی چاہییں۔\n\nپھر والد بیٹے کو زمزم کے قریب تیر تیار کرتے پاتے ہیں۔ باپ اور بیٹا ملتے ہیں۔ اب دونوں کے مشترک کام کا ذکر آئے گا۔",
+                "sourceIds": [
+                  "s1"
+                ]
+              },
+              {
+                "title": "بیت اللہ کی تعمیر",
+                "startSeconds": 373.95,
+                "text": "حضرت ابراہیم علیہ السلام بیٹے کو یہاں گھر بنانے کا الٰہی حکم بتاتے اور مدد مانگتے ہیں۔ حضرت اسماعیل علیہ السلام آمادہ ہوتے ہیں۔ کام تقسیم ہے: بیٹا پتھر لاتا ہے، والد تعمیر کرتے ہیں۔\n\nعمارت بلند ہوتی ہے تو بیٹا والد کے کھڑے ہونے کے لیے پتھر لاتا ہے، تاکہ کام جاری رہے۔ وہ تعمیر کے پتھر بھی دیتے رہتے ہیں۔ محنت کے ساتھ دونوں اللہ سے قبولیت مانگتے ہیں۔\n\nسورۂ بقرہ بھی دونوں کے بیت اللہ کی بنیادیں اٹھانے اور سننے، جاننے والے اللہ سے قبولیت مانگنے کو یاد کرتی ہے۔\n\nاسی مقام پر بیت اللہ لوگوں کے بار بار آنے اور امن کی جگہ ہے۔ دونوں کو اسے طواف کرنے والوں، عبادت کے لیے ٹھہرنے والوں اور رکوع و سجدہ کرنے والوں کے لیے پاک رکھنے کی ذمہ داری دی گئی۔\n\nتعمیر اور عبادت یہاں ساتھ ہیں۔ گھر صرف مکمل کی جانے والی عمارت نہیں؛ اس کی دیکھ بھال عبادت گزاروں سے متعلق ہے۔ معماروں کی محنت کے ساتھ اس کا مقصد بھی سامنے آتا ہے۔",
+                "sourceIds": [
+                  "s1",
+                  "q2"
+                ]
+              },
+              {
+                "title": "ایک گھرانے سے آگے کی دعا",
+                "startSeconds": 446.35,
+                "text": "قرآن کا بیان آگے بڑھتا ہے۔ دونوں اپنے لیے فرمانبرداری اور اولاد میں اللہ کی فرمانبردار جماعت کی دعا کرتے ہیں۔ عبادت کے طریقے سکھائے جانے اور توبہ کی قبولیت کی درخواست بھی ہے۔\n\nپھر انہی میں سے ایک رسول کی دعا ہے، جو اللہ کی آیات سنائے، کتاب اور حکمت سکھائے اور ان کا تزکیہ کرے۔ یہ دعا کا مضمون ہے، درمیانی نسلوں اور زمانوں کی فہرست نہیں۔\n\nسورۂ ابراہیم میں شہر کے امن اور اپنے لیے اور اولاد کے لیے بت پرستی سے حفاظت کی دعا ہے۔ فکر صرف خوراک اور رہائش کی نہیں؛ اولاد کس کی عبادت کرے گی، اس کی بھی ہے۔\n\nان دعاؤں سے بیان کا رخ واضح ہے۔ رہائش کی جگہ عبادت کی جگہ بھی ہے، اور بچوں کی فکر آنے والی نسلوں تک پہنچتی ہے۔\n\nیہ تصور ضروری نہیں کہ حضرت ابراہیم علیہ السلام ہر مستقبل کے واقعے کو دیکھ رہے تھے۔ متن کی دعائیں ہی ہمیں اس گھرانے سے آگے، بیت اللہ سے وابستہ ہونے والوں کی طرف لے جاتی ہیں۔",
+                "sourceIds": [
+                  "q1",
+                  "q2"
+                ]
+              },
+              {
+                "title": "حضرت اسماعیل سے نسب کے ذکر تک",
+                "startSeconds": 513.7,
+                "text": "اب نبی کریم محمد صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ کے خاندان کے لیے صحیح مسلم کی الگ روایت دیکھتے ہیں۔ حضرت واثلہ بن اسقع رضی اللہ عنہ نے آپ سے نسب میں اللہ کے انتخاب کا ذکر سنا۔\n\nبیان میں حضرت اسماعیل علیہ السلام کی اولاد سے کنانہ، کنانہ سے قریش، قریش سے بنو ہاشم اور بنو ہاشم سے نبی کریم کے انتخاب کا ذکر ہے۔\n\nیہ نسبتوں کی ترتیب ہے، ہر باپ اور بیٹے کی مکمل فہرست نہیں۔ ابتدائی بیان کا اس خاندان سے تعلق واضح ہوتا ہے، مگر درمیان کی بہت سی نسلیں اس مختصر روایت میں نام بہ نام نہیں آتیں۔\n\nماخذ بدل گیا ہے: پہلے گھرانے کا مفصل بیان تھا، اب نسب کے متعلق بعد کا ارشاد ہے۔ تمام واقعات کسی ایک زندگی کے مسلسل واقعات نہیں۔\n\nیہ نسبتیں خاندان تک محتاط رسائی دیتی ہیں۔ والدین اور بزرگوں کے حالات الگ تحقیق کے لیے رہیں گے، غیر جانچی مشہور باتوں سے یہ جگہ نہیں بھری جائے گی۔",
+                "sourceIds": [
+                  "s2"
+                ]
+              },
+              {
+                "title": "اصحابِ فیل",
+                "startSeconds": 576.85,
+                "text": "سورۂ فیل کی پانچ آیات اصحابِ فیل اور ان کی تدبیر کی ناکامی یاد دلاتی ہیں۔ ان پر پرندے بھیجے گئے، پتھروں سے انہیں نشانہ بنایا گیا اور ان کی حالت کھائی ہوئی کھیتی کے باقیات جیسی ہوگئی۔\n\nیہ قرآنی بیان ہے، جسے نہ دوسری توجیہ میں بدلیں گے، نہ جنگ کا گھڑا ہوا منظر بنائیں گے۔ آیات میں قائد کا نام، جانوروں کی تعداد یا پورا راستہ نہیں۔\n\nصحیح مسلم میں حضرت ابو ہریرہ رضی اللہ عنہ فتح مکہ کے بعد کے خطاب کا ذکر کرتے ہیں۔ نبی کریم نے اس میں اللہ کے مکہ سے ہاتھی کو روک دینے کو یاد فرمایا۔ یہ بہت بعد کا خطاب، پہلے واقعے کی خبر دیتا ہے۔\n\nحضرت قیس بن مخرمہ رضی اللہ عنہ کی خاندانی واسطے سے منقول روایت اپنی اور نبی کریم کی ولادت کو عام الفیل سے منسوب کرتی ہے۔ امام ترمذی اسے حسن غریب کہتے اور واضح کرتے ہیں کہ وہ اسے صرف محمد بن اسحاق کے طریق سے جانتے ہیں۔ الگ درج شدہ دارالسلام کی درجہ بندی میں اسے صحیح کہا گیا ہے۔\n\nیہاں قسط اپنی آخری حد پر آتی ہے۔ ان حوالوں سے واقعۂ فیل اور ولادت کا متعین درمیانی وقفہ نہیں ملتا؛ ہم اسے خود مقرر نہیں کریں گے۔",
+                "sourceIds": [
+                  "q3",
+                  "s6",
+                  "s3"
+                ]
+              },
+              {
+                "title": "اگلے باب کی دہلیز",
+                "startSeconds": 658.85,
+                "text": "پہلا سفر یہیں مکمل ہوتا ہے، ولادت کا منظر شروع ہونے سے پہلے۔ ہم نے وادی میں ایک گھرانے، زمزم کے پانی، خاندان کے بڑھنے اور بیت اللہ کی تعمیر کا بیان پڑھا۔ اولاد کے لیے دعائیں، نسب کے نام، اور واقعۂ فیل کی یاد دلانے والے ماخذ بھی سامنے آئے۔\n\nیہ اس قسط کی بنیادیں ہیں، ولادت سے پہلے کی پوری دنیا بیان کردینے کا دعویٰ نہیں۔ آگے بھی یہی احتیاط ضروری ہے: سیرت کا بیان اس کے ثبوت کے ساتھ ہو، اور نہ عقیدت کو، نہ قصہ گوئی کو نئی بات گھڑنے کا جواز بنایا جائے۔\n\nآپ سن رہے تھے دی نوبل لائف کی پہلی قسط: ولادت سے پہلے، مکہ اور بیت اللہ۔",
+                "sourceIds": [
+                  "s1",
+                  "s2",
+                  "q1",
+                  "q2",
+                  "s3",
+                  "s6",
+                  "q3"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "s1",
+          "reference": "Sahih al-Bukhari 3364",
+          "url": "https://sunnah.com/bukhari:3364",
+          "languages": [
+            "en",
+            "ur"
+          ],
+          "note": {
+            "en": "Ibn Abbas’s transmitted account of Isma’il’s household and the Sacred House; it includes surrounding narration and statements explicitly attributed to the Prophet. It is not all uninterrupted Prophetic speech or an eyewitness account by Ibn Abbas. Transmitter alternatives about the child’s movement, heel or wing, and Jurhum’s group and messengers are retained. The household visits are not presented as general marital guidance. No independent modern assessor is invented.",
+            "ur": "حضرت ابن عباس رضی اللہ عنہما سے گھرانے اور بیت اللہ کا منقول بیان، جس میں نبی کریم سے الگ منسوب باتیں بھی ہیں۔ پورا متن ایک مسلسل فرمان یا ابن عباس کا ذاتی مشاہدہ نہیں۔ بچے کی حرکت، ایڑی یا پر، جرہم کے گروہ اور قاصدوں سے متعلق متبادل الفاظ برقرار ہیں۔ گھرانے کی ملاقاتوں کو شادی کے عمومی احکام نہیں بنایا گیا۔ کسی نئے محقق کی درجہ بندی منسوب نہیں کی گئی۔"
+          }
+        },
+        {
+          "id": "s2",
+          "reference": "Sahih Muslim 2276",
+          "url": "https://sunnah.com/muslim:2276",
+          "languages": [
+            "en",
+            "ur"
+          ],
+          "note": {
+            "en": "Wathila ibn al-Asqa’s report names the selection of Kinanah, Quraysh, Banu Hashim and the Prophet. This is selected lineage, not a complete genealogy, chronology or biography of his parents. Its chapter heading is not additional evidence for this episode.",
+            "ur": "حضرت واثلہ بن اسقع رضی اللہ عنہ کی روایت میں کنانہ، قریش، بنو ہاشم اور نبی کریم کے انتخاب کا ذکر ہے۔ یہ منتخب نسبی نسبتیں ہیں، مکمل شجرہ، تاریخ یا والدین کی سوانح نہیں۔ باب کے عنوان کو اس قسط کے لیے اضافی ثبوت نہیں بنایا گیا۔"
+          }
+        },
+        {
+          "id": "q1",
+          "reference": "Qur’an 14:35–38",
+          "url": "https://quran.com/14/35-38",
+          "languages": [
+            "en",
+            "ur"
+          ],
+          "note": {
+            "en": "The script draws specifically on verses 35 and 37: Ibrahim’s prayers for safety, protection from idol worship, prayer, provision and thankfulness. This is Qur’anic context, not a hadith grading. The family identification and sequence come from Bukhari 3364. No modern translation passage is reproduced.",
+            "ur": "خصوصاً آیات 35 اور 37 کی دعائیں: امن، بت پرستی سے حفاظت، نماز، رزق اور شکر۔ یہ قرآنی سیاق ہے، حدیث کی درجہ بندی نہیں۔ گھرانے کی شناخت اور ترتیب بخاری 3364 سے ہے۔ کسی جدید ترجمے کا اقتباس نقل نہیں کیا گیا۔"
+          }
+        },
+        {
+          "id": "q2",
+          "reference": "Qur’an 2:125–129",
+          "url": "https://quran.com/2/125-129",
+          "languages": [
+            "en",
+            "ur"
+          ],
+          "note": {
+            "en": "Verses 125 and 127–129 support the House’s purpose, raising its foundations, and prayers for acceptance, submission and a messenger. The prayer is not presented as a dated timetable or a vision of every future event. No verse or modern translation is recited verbatim.",
+            "ur": "آیات 125 اور 127 تا 129 میں بیت اللہ کا مقصد، بنیادیں اٹھانا، قبولیت، فرمانبرداری اور رسول کی دعا ہے۔ دعا کو تاریخ وار پیش گوئی یا ہر آئندہ واقعے کا مشاہدہ نہیں کہا گیا۔ آیات یا جدید ترجمے کی لفظی قراءت شامل نہیں۔"
+          }
+        },
+        {
+          "id": "q3",
+          "reference": "Qur’an 105:1–5",
+          "url": "https://quran.com/105",
+          "languages": [
+            "ur"
+          ],
+          "note": {
+            "en": "Urdu edition only. A brief original synopsis of the People of the Elephant, not a detailed expedition reconstruction. The verses do not supply the leader’s name, route, animal count or an interval before birth.",
+            "ur": "صرف اردو ایڈیشن میں۔ اصحابِ فیل کا مختصر اصل خلاصہ ہے، مہم کی مکمل منظرکشی نہیں۔ آیات قائد کا نام، راستہ، جانوروں کی تعداد یا ولادت سے پہلے کا متعین وقفہ نہیں بتاتیں۔"
+          }
+        },
+        {
+          "id": "s6",
+          "reference": "Sahih Muslim 1355a",
+          "url": "https://sunnah.com/muslim:1355a",
+          "languages": [
+            "ur"
+          ],
+          "note": {
+            "en": "Urdu edition only. Abu Hurayra reports a much later address after the conquest of Makkah recalling Allah holding the elephant back from Makkah. It is retrospective testimony, not a pre-birth eyewitness scene or a full expedition history.",
+            "ur": "صرف اردو ایڈیشن میں۔ حضرت ابو ہریرہ رضی اللہ عنہ فتح مکہ کے بعد کے خطاب میں مکہ سے ہاتھی روکے جانے کا ذکر نقل کرتے ہیں۔ یہ پہلے واقعے کی بعد کی خبر ہے، ولادت سے پہلے کا عینی منظر یا مہم کی مکمل تاریخ نہیں۔"
+          }
+        },
+        {
+          "id": "s3",
+          "reference": "Jami’ at-Tirmidhi 3619",
+          "url": "https://sunnah.com/tirmidhi:3619",
+          "languages": [
+            "ur"
+          ],
+          "note": {
+            "en": "Urdu edition only. Qays ibn Makhramah’s family-transmitted birth-year statement is not direct Prophetic speech. Al-Tirmidhi calls it hasan gharib and says he knows it only through Muhammad ibn Ishaq; the separately displayed assessment is Sahih (Darussalam). The disputed descriptive clause is excluded. No Gregorian birth date or precise interval is inferred.",
+            "ur": "صرف اردو ایڈیشن میں۔ حضرت قیس بن مخرمہ رضی اللہ عنہ کا خاندانی واسطے سے ولادت کے سال کا بیان ہے، براہِ راست فرمانِ نبوی نہیں۔ امام ترمذی حسن غریب کہتے اور صرف محمد بن اسحاق کے طریق سے جاننے کی وضاحت کرتے ہیں؛ الگ درج دارالسلام کی درجہ بندی صحیح ہے۔ اختلافی وصف شامل نہیں۔ عیسوی تاریخِ ولادت یا متعین درمیانی وقفہ اخذ نہیں کیا گیا۔"
+          }
+        }
+      ]
+    }
+  ]
 }
