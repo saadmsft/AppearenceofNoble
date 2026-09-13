@@ -161,12 +161,13 @@ language, stock voice, full-report/summary kind, synthetic flag, exact transcrip
 transcript hash/counts, cache key, format/rendering profile, asset path,
 byte length, SHA-256 and duration. Only `audio/<64-lowercase-hex>.mp3` paths
 are accepted. Playback resolves to the fixed approved public URL
-`https://saadmsft.github.io/AppearenceofNoble/audio/<cacheKey>.mp3`.
+`https://thenobleproject.org/audio/<cacheKey>.mp3`.
 Changing the hosting origin requires an explicit source change/review.
-For local previews only, the player resolves the same asset path on the current
-loopback origin (`localhost`, `127.0.0.1`, or `[::1]`). This permits listening to
-samples before publishing. Downloaded `file:` HTML and all non-loopback origins
-use the fixed public URL; arbitrary external asset paths remain rejected.
+For local previews, the player resolves assets relative to the current page on
+the loopback origin (`localhost`, `127.0.0.1`, or `[::1]`). The explicitly allowed
+legacy GitHub Pages host/path retains its own asset base during migration.
+Downloaded `file:` HTML and other origins use the fixed custom-domain URL;
+arbitrary external asset paths remain rejected.
 
 MP3s remain separate public downloads, never imported/embedded as the entire
 library in the single-file offline HTML. Deploy `web/public/audio/` with the

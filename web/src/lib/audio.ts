@@ -9,7 +9,8 @@ export const audioVoices = {
 } as const
 export const audioFormat = 'audio-24khz-48kbitrate-mono-mp3'
 export const audioRenderingProfile = 'stock-neural-speak-voice-only-v1'
-export const publicAudioBase = 'https://saadmsft.github.io/AppearenceofNoble/'
+export const publicAudioBase = 'https://thenobleproject.org/'
+export const legacyAudioBase = 'https://saadmsft.github.io/AppearenceofNoble/'
 
 const digest = z.string().regex(/^[a-f0-9]{64}$/)
 export const audioAssetSchema = z.string().regex(/^audio\/[a-f0-9]{64}\.mp3$/)
@@ -66,7 +67,10 @@ export function resolveAudioAsset(asset: string, pageHref?: string): string | nu
     const page = new URL(pageHref)
     const local = ['localhost', '127.0.0.1', '[::1]'].includes(page.hostname)
     if (local && (page.protocol === 'http:' || page.protocol === 'https:')) {
-      return new URL(`/AppearenceofNoble/${parsed.data}`, page.origin).href
+      return new URL(parsed.data, new URL(page.pathname, page.origin)).href
+    }
+    if (page.origin === 'https://saadmsft.github.io' && page.pathname.startsWith('/AppearenceofNoble/')) {
+      return `${legacyAudioBase}${parsed.data}`
     }
   }
   return `${publicAudioBase}${parsed.data}`

@@ -480,3 +480,36 @@ generation used 74 attempts, including one provider timeout and one transcript
 correction, with US$15.761408 conservatively reserved. Existing report audio,
 canonical source records and prior ledgers remain unchanged. The new stories
 use a separate audio manifest and explicit editorial entry type.
+
+## Release 2.3.1: Custom domain
+
+The user confirmed purchasing `thenobleproject.org`. Proposed connection plan:
+
+- Use `thenobleproject.org` as the primary GitHub Pages domain, with
+  `www.thenobleproject.org` directed to the same site.
+- Prepare the static build and audio/link resolution for a domain-root
+  deployment while retaining compatibility with the old GitHub Pages address.
+  Update canonical public URLs, not the repository name or source records.
+- Configure the GitHub Pages custom-domain setting before pointing web DNS at
+  GitHub. Use the registrar's existing authoritative DNS service; replace only
+  conflicting apex/www parking or web records. Preserve mail and unrelated
+  TXT/DNS records. Do not add wildcard records.
+- Check domain verification and DNS, then enable enforced HTTPS once GitHub's
+  certificate is available. Registration, DNS propagation and certificate
+  issuance can introduce a wait outside the application's control.
+- No purchases, Azure operations, audio regeneration or new hosting services.
+  Verify the home page, deep links, saved audio and private-backup restoration
+  behavior on the new origin.
+
+Privacy/migration gate: browser-local data belongs to its original origin.
+Notes, bookmarks and listening state do not transfer automatically to the new
+domain. Before activating the domain/redirect, the user must have exported a
+private backup from the old site's My reading page or confirmed no migration
+is needed. Import that backup on the new site; source text and audio are not
+part of the private backup. Appearance preferences may need to be selected
+again. Never publish a private backup in the repository or site assets.
+
+Approved by the user, who confirmed the private backup is saved or not needed.
+Registration is with GoDaddy using its existing DomainControl nameservers.
+The user elected to add the DNS records personally; the assistant configures
+the application and GitHub Pages, then checks DNS and HTTPS readiness.

@@ -47,7 +47,7 @@ test('independent native control completes valid PCM clips without the listening
           contentType: 'text/html',
           body: `<button>Play native control</button><audio controls ${hidden ? 'hidden' : ''}></audio>`,
         })
-        if (url.pathname.startsWith('/AppearenceofNoble/audio/')) return route.fulfill({ contentType: 'audio/wav', body: clip })
+        if (url.pathname.startsWith('/audio/')) return route.fulfill({ contentType: 'audio/wav', body: clip })
         return route.fulfill({ status: 404, body: '' })
       })
       await page.goto(`${origin}/native-control`)
@@ -66,7 +66,7 @@ test('independent native control completes valid PCM clips without the listening
         }
         media.src = src
         document.querySelector('button')!.addEventListener('click', () => { void media.play() })
-      }, `${origin}/AppearenceofNoble/audio/first.mp3`)
+      }, `${origin}/audio/first.mp3`)
       await page.getByRole('button', { name: 'Play native control' }).click()
       await page.waitForFunction(() => !document.querySelector('audio')!.paused && document.querySelector('audio')!.readyState === 4)
       // Match the shared test's interrupted first → second → first sequence.
@@ -77,7 +77,7 @@ test('independent native control completes valid PCM clips without the listening
           media.src = src
           media.load()
           await media.play()
-        }, `${origin}/AppearenceofNoble/audio/${entry}.mp3`)
+        }, `${origin}/audio/${entry}.mp3`)
       }
       await page.waitForFunction(() => document.querySelector('audio')!.ended, undefined, { timeout: 5000 }).catch(async (error: unknown) => {
         console.info(`Independent native ${sampleRate}Hz ${hidden ? 'hidden' : 'visible'} control:`, await page.evaluate(() => {
@@ -250,7 +250,7 @@ test('shared player keeps one StrictMode media element, accessible reader contro
     await page.locator('.listening-player .audio-transcript summary').click()
     assert.equal(await page.locator('.audio-transcript em').count(), 0)
     assert.equal(await page.locator('.audio-transcript p').getAttribute('dir'), 'rtl')
-    assert.ok((await page.locator('.audio-download').getAttribute('href'))?.startsWith(`${origin}/AppearenceofNoble/audio/`))
+    assert.ok((await page.locator('.audio-download').getAttribute('href'))?.startsWith(`${origin}/audio/`))
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true)
     await page.evaluate(() => {
       const control = Reflect.get(window, 'listening')
@@ -381,7 +381,7 @@ test('shared player keeps one StrictMode media element, accessible reader contro
     assert.equal(ended.length, 2, 'both chapter clips reach native EOF, not just controller state changes')
     assert.deepEqual(ended.map((event) => new URL(event.src).pathname), fixture.manifest.tracks
       .filter((track) => track.language === 'en' && ['first', 'second'].includes(track.entryId))
-      .map((track) => `/AppearenceofNoble/${track.asset}`))
+      .map((track) => `/${track.asset}`))
     assert.ok(ended.every((event) => event.trusted && event.time === event.duration && event.time > 0.0512),
       'completion comes from trusted browser ended events after real media-clock progression')
     assert.equal(await native.evaluate(() => Reflect.get(window, 'listening').playing), false)

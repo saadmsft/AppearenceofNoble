@@ -9,6 +9,7 @@ import { isEstablished } from '../lib/search.ts'
 import { Button } from './ui/button'
 import { SourceName } from './NarrationCard'
 import { ShelfSelector } from './ShelfSelector'
+import { publicAudioBase } from '../lib/audio.ts'
 import { getNarrationTopics, lifeMilestones } from '../lib/life.ts'
 import { LifeContext } from './LifeContext'
 
@@ -147,6 +148,6 @@ export function SourcesPage({ language, shelf, onShelf, onTopic }: { language: L
     </section>
     <EditorialNote language={language} />
     <p className="acknowledgments">{t('acknowledgments')}</p>
-    <a className="text-link" href="https://saadmsft.github.io/AppearenceofNoble/THIRD-PARTY-NOTICES.txt" target="_blank" rel="noopener noreferrer">{t('licenses')}<ExternalLink size={14} aria-hidden="true" /></a>
+    <a className="text-link" href={`${publicAudioBase}THIRD-PARTY-NOTICES.txt`} target="_blank" rel="noopener noreferrer">{t('licenses')}<ExternalLink size={14} aria-hidden="true" /></a>
   </div>
 }

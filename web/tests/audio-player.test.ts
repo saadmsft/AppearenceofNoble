@@ -13,6 +13,10 @@ import { resolveAudioAsset } from '../src/lib/audio.ts'
 test('audio asset URLs support local review without allowing arbitrary remote hosts', () => {
   const asset = `audio/${'a'.repeat(64)}.mp3`
   assert.equal(resolveAudioAsset(asset, 'http://127.0.0.1:5178/AppearenceofNoble/?view=home'), `http://127.0.0.1:5178/AppearenceofNoble/${asset}`)
+  assert.equal(resolveAudioAsset(asset, 'http://127.0.0.1:5178/?view=listen'), `http://127.0.0.1:5178/${asset}`)
+  assert.equal(resolveAudioAsset(asset, 'https://thenobleproject.org/?view=listen'), `https://thenobleproject.org/${asset}`)
+  assert.equal(resolveAudioAsset(asset, 'https://www.thenobleproject.org/'), `https://thenobleproject.org/${asset}`)
+  assert.equal(resolveAudioAsset(asset, 'https://saadmsft.github.io/AppearenceofNoble/?lang=ur'), `https://saadmsft.github.io/AppearenceofNoble/${asset}`)
   assert.equal(resolveAudioAsset(asset, 'file:///tmp/noble-project.html'), resolveAudioAsset(asset))
   assert.equal(resolveAudioAsset(asset, 'https://example.invalid/'), resolveAudioAsset(asset))
   assert.equal(resolveAudioAsset('../secret.mp3', 'http://localhost:5178/'), null)

@@ -128,7 +128,7 @@ test('manifest rejects nonstatic paths, swapped voices, unknown fields and dupli
     assert.equal(resolveAudioAsset(asset), null)
     assert.equal(audioManifestSchema.safeParse({ version: 1, tracks: [{ ...track, asset }] }).success, false)
   }
-  assert.equal(resolveAudioAsset(track.asset), `https://saadmsft.github.io/AppearenceofNoble/${track.asset}`)
+  assert.equal(resolveAudioAsset(track.asset), `https://thenobleproject.org/${track.asset}`)
   assert.equal(audioManifestSchema.safeParse({ version: 1, tracks: [track, track] }).success, false)
   assert.equal(audioManifestSchema.safeParse({ version: 1, tracks: [{ ...track, voice: audioVoices.en }] }).success, false)
   assert.equal(audioManifestSchema.safeParse({ version: 1, tracks: [{ ...track, key: 'private' }] }).success, false)

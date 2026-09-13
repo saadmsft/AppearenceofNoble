@@ -4,10 +4,10 @@ A respectful, source-first English and Urdu library about the reported
 appearance, character and life of Prophet Muhammad ﷺ. **No depictions, portraits,
 historical voice reconstructions, or impersonation.**
 
-**Read online:** [English](https://saadmsft.github.io/AppearenceofNoble/?lang=en)
-· [اردو](https://saadmsft.github.io/AppearenceofNoble/?lang=ur)
-· [Search all narrations](https://saadmsft.github.io/AppearenceofNoble/?view=collection&shelf=all&lang=en)
-· [The Noble Life](https://saadmsft.github.io/AppearenceofNoble/?view=story&shelf=life&lang=en)
+**Read online:** [English](https://thenobleproject.org/?lang=en)
+· [اردو](https://thenobleproject.org/?lang=ur)
+· [Search all narrations](https://thenobleproject.org/?view=collection&shelf=all&lang=en)
+· [The Noble Life](https://thenobleproject.org/?view=story&shelf=life&lang=en)
 
 ## What is included
 
@@ -167,8 +167,8 @@ pnpm --dir web install --frozen-lockfile
 pnpm --dir web dev
 ```
 
-Open the `/AppearenceofNoble/` path on the URL printed by Vite. The base path is
-intentional: it matches this repository's GitHub Pages address.
+Open the root URL printed by Vite. Build assets use relative URLs so the same
+static output supports the custom-domain root and the legacy repository path.
 
 ```sh
 pnpm --dir web exec playwright install chromium
@@ -190,7 +190,7 @@ To run the same browser suite against the deployed site:
 
 ```sh
 cd web
-SITE_URL=https://saadmsft.github.io/AppearenceofNoble/ pnpm test:e2e
+SITE_URL=https://thenobleproject.org/ pnpm test:e2e
 ```
 
 ## Repository structure
@@ -219,6 +219,16 @@ When adding a content file, add its import to `library.ts`. A test fails if a
 JSON file is present in `content/` but absent from the shipped app.
 
 ## Publishing
+
+The primary custom domain is `thenobleproject.org`, with `www` directed to the
+same GitHub Pages site. It is configured in GitHub Pages settings; this Actions
+publishing workflow does not use a source-branch CNAME file. DNS and certificate
+issuance must be complete before the domain is considered live.
+
+Browser storage does not automatically move between origins. Before changing
+from the legacy `saadmsft.github.io` address, export a private backup from
+My reading, then import it on the custom domain. Re-select appearance
+preferences if needed. Never commit or publish a personal backup.
 
 GitHub Pages uses **GitHub Actions** as its publishing source. A push to `main`
 runs the pinned workflow: frozen dependency installation, lint, content and unit
