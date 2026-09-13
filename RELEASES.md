@@ -11,6 +11,25 @@ Every release follows this sequence:
 5. Publish the approved scope and confirm the live deployment.
 6. Stop. The next release needs a new plan and approval.
 
+## Standing monthly production authorization (13 September 2026)
+
+The user approved automatic monthly research, bilingual scripts and audio
+generation within **US$25 before tax per calendar month**, shared across both
+languages, retries and paid checks. Copilot credits are separate. Starting with
+the next scheduled run on 1 October 2026, no separate script/generation-budget
+approval is required for work within this scope. **Audio acceptance and a written
+release plan still require explicit approval before publication.**
+
+The user also authorized multiple sources beyond Sunnah.com: relevant Qur'anic
+passages, hadith collections, critically assessed sirah/biographical works and
+identified scholarly commentary. Source verification and reuse limits remain
+mandatory. The twelve-month roadmap and shared-ledger safeguards are in
+[the monthly production plan](plans/2026-09-13-monthly-series.md).
+
+This supersedes older *research-only* instructions for the monthly automation,
+not historical ledgers or episode-specific records. Episode 1 is already
+published; the next episode is Episode 2, not another pre-birth pilot.
+
 ## Release 2.0: The Noble Project
 
 Approved by the user on 11 September 2026.
