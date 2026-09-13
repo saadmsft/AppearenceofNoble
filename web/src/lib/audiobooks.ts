@@ -16,7 +16,13 @@ export function audiobook(shelf: Shelf, language: Language) {
   return { shelf, language, chapters, duration: chapters.reduce((sum, chapter) => sum + chapter.duration, 0) }
 }
 
-export function audiobookPosition(book: ReturnType<typeof audiobook>, data: ListeningData, live?: ListeningSnapshot) {
+type PositionedBook = {
+  shelf: Shelf; language: Language; duration: number
+  chapters: readonly { episode: { id: string }; track: { cacheKey: string; sha256: string }; duration: number }[]
+}
+
+export function audiobookPosition(book: PositionedBook, data: ListeningData, live?: ListeningSnapshot) {
+  if (!book.chapters.length || book.duration <= 0) throw new Error('Listening position requires a nonempty recorded book')
   const valid = data.positions.filter((cursor) => book.chapters.some(({ episode, track }) =>
     episode.id === cursor.entryId && cursor.language === book.language
       && cursor.cacheKey === track.cacheKey && cursor.sha256 === track.sha256))

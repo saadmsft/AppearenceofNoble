@@ -36,7 +36,8 @@
 .journey-collection-switch > p { font-size: 11px; color: var(--cp-text-soft); }
 .journey-collection-switch .shelf-selector { margin-block: 0; }
 .reader-collection-name { color: var(--cp-accent); font-size: 11px; padding-bottom: 16px; }
-.primary-nav { gap: 24px; }
+.primary-nav { gap: 20px; }
+.primary-nav a { white-space: nowrap; }
 [lang="ur"] .project-welcome h1 { font-size: 49px; line-height: 2; letter-spacing: 0; font-weight: 400; max-width: 20ch; }
 [lang="ur"] .project-welcome-copy > p { line-height: 2.8; }
 [lang="ur"] .project-collection h2 { font-size: 30px; line-height: 2.2; letter-spacing: 0; font-weight: 400; }
@@ -46,6 +47,10 @@
 [lang="ur"] .reader-collection-name { line-height: 2.4; }
 @media(max-width:1100px) {
   .primary-nav { gap: 16px; font-size: 12px; }
+  .header-inner { flex-wrap: wrap; padding-block: 12px 0; }
+  .primary-nav, [lang="ur"] .primary-nav { order: 3; width: 100%; min-height: 44px; justify-content: center; flex-wrap: wrap; gap: 0 24px; }
+  .primary-nav a { min-height: 44px; padding-block: 8px; }
+  .primary-nav a::after { bottom: 0; }
   .project-welcome { gap: 40px; }
   .project-welcome h1 { font-size: 48px; }
   .project-rosette .name-calligraphy > span { font-size: 80px; }
@@ -64,7 +69,7 @@
   .project-collection + .project-collection { border-top: 1px solid var(--cp-rule); }
 }
 @media(max-width:600px) {
-  .primary-nav, [lang="ur"] .primary-nav { gap: 14px; font-size: 10px; }
+  .primary-nav, [lang="ur"] .primary-nav { gap: 0 16px; font-size: 11px; }
   .brand strong { font-size: 13px; }
   [lang="ur"] .brand strong { font-size: 16px; }
   .project-home { padding-top: 34px; }

@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import { audioLanguages, audioManifestSchema, resetAudio, resolveAudioAsset } from './audio.ts'
 import type { AudioLanguage } from './audio.ts'
-import { isStoryEpisode, storyAudioManifestSchema } from './story-audio.ts'
+import { isMonthlyChapter, isStoryEpisode, monthlyAudioManifestSchema, storyAudioManifestSchema } from './story-audio.ts'
 import type { ListeningEntry, PlayableAudioTrack, StoryEpisode } from './story-audio.ts'
 import { isEstablished, shelves, topics, topicsByShelf } from './schema.ts'
 import type { Localized, Narration, Shelf, Topic } from './schema.ts'
@@ -70,12 +70,14 @@ function cursorId(cursor: Pick<ListeningCursor, 'entryId' | 'language'>) {
   return mappingId(cursor.entryId, cursor.language)
 }
 
-export function createListeningCatalog(rows: readonly ListeningEntry[], manifest: unknown, storyManifest: unknown = { version: 1, tracks: [] }): ListeningCatalog {
+export function createListeningCatalog(rows: readonly ListeningEntry[], manifest: unknown, storyManifest: unknown = { version: 1, tracks: [] }, monthlyManifest: unknown = { version: 1, tracks: [] }): ListeningCatalog {
   const parsed = audioManifestSchema.safeParse(manifest)
   const stories = storyAudioManifestSchema.safeParse(storyManifest)
+  const monthly = monthlyAudioManifestSchema.safeParse(monthlyManifest)
   const tracks: PlayableAudioTrack[] = [
     ...(parsed.success ? parsed.data.tracks : []),
     ...(stories.success ? stories.data.tracks : []),
+    ...(monthly.success ? monthly.data.tracks : []),
   ]
   const mappings = new Map(tracks.map((track) => [mappingId(track.entryId, track.language), track]))
   const byId = new Map(rows.map((row) => [row.id, row]))
@@ -85,7 +87,7 @@ export function createListeningCatalog(rows: readonly ListeningEntry[], manifest
   })
   return {
     rows: byId, tracks: mappings,
-    issue: parsed.success && stories.success && mappings.size === tracks.length && !invalidKind ? null : { code: 'invalid-metadata' },
+    issue: parsed.success && stories.success && monthly.success && mappings.size === tracks.length && !invalidKind ? null : { code: 'invalid-metadata' },
   }
 }
 
@@ -104,10 +106,13 @@ export function buildListeningQueue(
   if (catalog.issue) return { ok: false, issue: catalog.issue }
   if (parsed.data.entryIds.some((entryId) => !catalog.rows.has(entryId))) return fail('unknown-identity')
   const storyQueue = isStoryEpisode(catalog.rows.get(parsed.data.entryIds[0])!)
+  const first = catalog.rows.get(parsed.data.entryIds[0])!
+  const monthlyId = isMonthlyChapter(first) ? first.monthlyEpisodeId : null
   if (parsed.data.entryIds.some((entryId) => {
     const entry = catalog.rows.get(entryId)!
     return isStoryEpisode(entry) !== storyQueue || (isStoryEpisode(entry) && entry.shelf !== parsed.data.shelf)
-  }) || (storyQueue && language === 'ar')) return fail('invalid-data')
+      || (isMonthlyChapter(entry) ? entry.monthlyEpisodeId : null) !== monthlyId
+  }) || (storyQueue && language === 'ar') || (monthlyId && parsed.data.topic !== 'all')) return fail('invalid-data')
   const entryIds = [...new Set(parsed.data.entryIds)].filter((entryId) => {
     const entry = catalog.rows.get(entryId)!
     return parsed.data.includeCautioned || isStoryEpisode(entry) || isEstablished(entry)
@@ -248,7 +253,7 @@ export type ListeningRestorePreview = {
 }
 export type ListeningApplyRestoreOptions = { confirmed: boolean; expectedBaseline: string }
 export type ListeningEngineOptions = {
-  rows: readonly ListeningEntry[]; manifest: unknown; storyManifest?: unknown; storage: ListeningStorage; pageHref?: string; now?: () => number
+  rows: readonly ListeningEntry[]; manifest: unknown; storyManifest?: unknown; monthlyManifest?: unknown; storage: ListeningStorage; pageHref?: string; now?: () => number
   initialLanguage?: AudioLanguage
 }
 
@@ -256,7 +261,7 @@ export type ListeningEngineOptions = {
  * Media is exclusively supplied by a stable root ref; no detached Audio objects.
  */
 export function createListeningEngine(options: ListeningEngineOptions) {
-  let catalog = createListeningCatalog(options.rows, options.manifest, options.storyManifest)
+  let catalog = createListeningCatalog(options.rows, options.manifest, options.storyManifest, options.monthlyManifest)
   const loaded = loadListening(options.storage, catalog)
   let raw = loaded.raw
   let data = loaded.raw === null && options.initialLanguage
@@ -640,7 +645,7 @@ export function createListeningEngine(options: ListeningEngineOptions) {
     serialize: () => serializeListeningData(data, catalog),
     setRows: (rows: readonly ListeningEntry[]) => {
       if (rows.length === catalog.rows.size && rows.every((row) => catalog.rows.get(row.id) === row)) return
-      catalog = createListeningCatalog(rows, options.manifest, options.storyManifest)
+      catalog = createListeningCatalog(rows, options.manifest, options.storyManifest, options.monthlyManifest)
       const valid = validateListeningData(data, catalog)
       if (!valid.ok) { stop(false); emit({ storageIssue: valid.issue, writable: false, error: valid.issue }) }
       else {

@@ -7,6 +7,7 @@ import { audiobook, audiobookPosition, audiobookTime } from '../lib/audiobooks.t
 import { audiobookLabels } from '../lib/audiobook-labels.ts'
 import type { Language, Narration, Shelf, Topic } from '../lib/schema.ts'
 import type { ListeningController } from '../lib/listening.ts'
+import { isMonthlyChapter } from '../lib/story-audio.ts'
 import { ListeningControls } from './ListeningPlayer'
 import { AudiobookCover } from './AudiobookLibrary'
 import { SourceName } from './NarrationCard'
@@ -24,7 +25,7 @@ export function NarratedStories({ shelf, language, requestedTopic, listening, on
   onStory: (topic: Topic) => void
 }) {
   const [chosenLanguage, setChosenLanguage] = useState<Language>(() => listening.language === 'ar' ? language : listening.language)
-  const active = listening.currentStory?.shelf === shelf ? listening.currentStory : null
+  const active = listening.currentStory?.shelf === shelf && !isMonthlyChapter(listening.currentStory) ? listening.currentStory : null
   const audioLanguage = active && listening.language !== 'ar' ? listening.language : chosenLanguage
   const book = audiobook(shelf, audioLanguage)
   const position = audiobookPosition(book, listening.data, listening)
@@ -78,7 +79,7 @@ export function NarratedStories({ shelf, language, requestedTopic, listening, on
           <span>{t.position}: <bdi>{audiobookTime(position.seconds)} / {audiobookTime(book.duration)}</bdi></span>
           <progress value={position.seconds} max={book.duration} aria-label={t.position} />
         </div>
-        {listening.queue && <div className="audio-player narrated-player">
+        {listening.queue && !(listening.currentStory && isMonthlyChapter(listening.currentStory)) && <div className="audio-player narrated-player">
           <ListeningControls listening={listening} language={language} allowFollow={false} />
           <div className="book-skip-controls">
             <button type="button" disabled={!listening.duration} onClick={() => listening.seek(listening.currentTime - 15)} aria-label={t.back15}><RotateCcw size={16} aria-hidden="true" /> 15</button>

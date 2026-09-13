@@ -8,6 +8,7 @@ import { number } from '../lib/i18n.ts'
 import type { Language, Shelf } from '../lib/schema.ts'
 import type { ListeningController } from '../lib/listening.ts'
 import { Button } from './ui/button'
+import { MonthlySeriesInvitation } from './MonthlySeries'
 import '../audiobooks.css'
 
 export function AudiobookCover({ shelf, language }: { shelf: Shelf; language: Language }) {
@@ -30,10 +31,11 @@ export function AudiobookCover({ shelf, language }: { shelf: Shelf; language: La
   </div>
 }
 
-export function AudiobookLibrary({ language, listening, onOpen, onStart }: {
+export function AudiobookLibrary({ language, listening, onOpen, onStart, onMonthly }: {
   language: Language
   listening: ListeningController
   onOpen: (shelf: Shelf) => void
+  onMonthly: () => void
   onStart: (shelf: Shelf, audioLanguage: Language, entryId: string, resume: boolean) => void
 }) {
   const [audioLanguage, setAudioLanguage] = useState<Language>(() => listening.language === 'ar' ? language : listening.language)
@@ -73,5 +75,6 @@ export function AudiobookLibrary({ language, listening, onOpen, onStart }: {
       </article>
     })}</div>
     <p className="audiobook-library-note">{t.notice}</p>
+    <MonthlySeriesInvitation language={language} onOpen={onMonthly} />
   </section>
 }

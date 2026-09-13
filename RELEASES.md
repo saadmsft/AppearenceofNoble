@@ -514,6 +514,27 @@ Registration is with GoDaddy using its existing DomainControl nameservers.
 The user elected to add the DNS records personally; the assistant configures
 the application and GitHub Pages, then checks DNS and HTTPS readiness.
 
+## Release 2.5: Monthly Series
+
+Approved explicitly by the user on 13 September 2026: build and publish the
+Monthly Series section, initially showing "First episode in preparation".
+Add bilingual navigation, homepage and audiobook-library entrances, a separate
+series landing/archive and support for approved episode pages with English/Urdu
+audio, transcripts, source references, chapter controls and saved position.
+Preserve the existing manuscript identity, bounded motion and shared player.
+
+This release publishes the section and infrastructure only. It does not publish
+the monthly automation's drafts, invent a release date or duration, generate
+audio, call external APIs, or authorize Azure spending. The first planned
+subject is the period before the Prophet's birth, subject to source review.
+Monthly scripts and audio budgets/releases require separate explicit approval.
+
+Monthly publications have a dedicated, initially empty strict catalog and
+audio manifest. Only published entries with complete bilingual recordings
+are admitted. Chapters reuse the existing editorial-story engine and private
+backup format, remain separate from canonical narrations and the 36 existing
+short story chapters, and cannot be mixed across monthly episodes in a queue.
+
 ## Release 2.4: Audiobook entrance
 
 Approved by the user for the full audiobook entrance and player experience.

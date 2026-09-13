@@ -10,8 +10,9 @@ import { useInkEntrance } from '../hooks/useOrnamentMotion'
 import { Rosette } from './ManuscriptHero'
 import { Button } from './ui/button'
 import { audiobookLabels } from '../lib/audiobook-labels.ts'
+import { MonthlySeriesInvitation } from './MonthlySeries'
 
-export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened, onPause, onShelf, onResume, onListen, onExplore, onAudiobooks }: {
+export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened, onPause, onShelf, onResume, onListen, onExplore, onAudiobooks, onMonthly }: {
   language: Language
   paused: boolean
   readerOpen: boolean
@@ -22,6 +23,7 @@ export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened,
   onListen: (shelf: Shelf) => void
   onExplore: () => void
   onAudiobooks: () => void
+  onMonthly: () => void
   onResume: (row: Narration, button: HTMLButtonElement) => void
 }) {
   const art = useRef<HTMLDivElement>(null)
@@ -52,6 +54,7 @@ export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened,
         </button>
       </div>
     </section>
+    <MonthlySeriesInvitation language={language} onOpen={onMonthly} />
     <section className="project-collections" aria-label={t('projectCollections')}>
       {shelves.map((shelf) => {
         const rows = getShelfRows(shelf)

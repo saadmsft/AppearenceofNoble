@@ -3,6 +3,7 @@ import { listeningRates } from '../lib/listening.ts'
 import type { ListeningContext, ListeningController, ListeningIssue, ListeningIssueCode } from '../lib/listening.ts'
 import { getTopicShelf, isEstablished } from '../lib/schema.ts'
 import type { Language } from '../lib/schema.ts'
+import { isMonthlyChapter } from '../lib/story-audio.ts'
 import '../audio.css'
 
 const listeningLabels = {
@@ -146,6 +147,7 @@ export function ListeningControls({ listening, language, onOpenSource, allowFoll
   const t = listeningLabels[language]
   const row = listening.currentEntry
   const story = listening.currentStory !== null
+  const canFollow = allowFollow && !(row && isMonthlyChapter(row))
   const track = listening.currentTrack
   const src = track ? resolveAudioAsset(track.asset, typeof window === 'undefined' ? undefined : window.location.href) : null
   const aliases = listening.items[listening.position]?.entryIds.filter((id) => id !== row?.id) ?? []
@@ -193,10 +195,10 @@ export function ListeningControls({ listening, language, onOpenSource, allowFoll
             {listeningRates.map((rate) => <option key={rate} value={rate}>{rate}×</option>)}
           </select>
         </label>
-        {allowFollow && <label className="listening-follow"><input type="checkbox" checked={listening.follow}
+        {canFollow && <label className="listening-follow"><input type="checkbox" checked={listening.follow}
           onChange={(event) => listening.setFollow(event.target.checked)} />{t.follow}</label>}
       </div>
-      {allowFollow && listening.follow && listening.followSuspended && <p className="audio-notice">{t.suspended}{' '}
+      {canFollow && listening.follow && listening.followSuspended && <p className="audio-notice">{t.suspended}{' '}
         <button type="button" onClick={() => listening.setFollow(true)}>{t.restoreFollow}</button>
       </p>}
       {(listening.loading || listening.ended) && <p role="status" className="audio-notice">{listening.loading ? t.loading : t.ended}</p>}

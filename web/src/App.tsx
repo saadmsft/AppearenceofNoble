@@ -19,6 +19,9 @@ import { AudioPlayer } from './components/AudioPlayer'
 import { ListeningPlayer } from './components/ListeningPlayer'
 import { NarratedStories } from './components/NarratedStories'
 import { AudiobookLibrary } from './components/AudiobookLibrary'
+import { MonthlySeries } from './components/MonthlySeries'
+import { monthlyChapters } from './lib/monthly-series.ts'
+import { isMonthlyChapter } from './lib/story-audio.ts'
 import { getStoryEpisode, storyEpisodes, storiesByShelf } from './lib/stories.ts'
 import { useListening } from './hooks/useListening'
 import type { ListeningSnapshot } from './lib/listening.ts'
@@ -40,7 +43,7 @@ import type { Language, Narration, Shelf, Topic } from './lib/schema.ts'
 import { defaultFilters, filterNarrations } from './lib/search.ts'
 import { focusSection, scrollBehavior } from './lib/scroll.ts'
 
-const playbackEntries = [...narrations, ...storyEpisodes]
+const playbackEntries = [...narrations, ...storyEpisodes, ...monthlyChapters]
 
 function initialSettings(): ReturnType<typeof loadPreferences> {
   const loaded = loadPreferences(() => window.localStorage)
@@ -101,7 +104,7 @@ function App() {
   const listeningShelf = listening.queue?.shelf
   const listeningTopic = listening.queue?.topic
   const following = listening.follow && !listening.followSuspended && listening.playing
-  const followingTarget = listening.currentStory
+  const followingTarget = listening.currentStory && !isMonthlyChapter(listening.currentStory)
     ? { topic: listening.currentStory.topic, beat: 0, matched: true }
     : listeningShelf && listeningId
       ? storyTargetForNarration(chaptersByShelf[listeningShelf], listeningTopic ?? 'all', listeningId) : null
@@ -130,6 +133,7 @@ function App() {
   const followPlayback = useEffectEvent((snapshot: ListeningSnapshot) => {
     const queue = snapshot.queue
     const entryId = snapshot.currentEntry?.id
+    if (snapshot.currentStory && isMonthlyChapter(snapshot.currentStory)) return
     if (!snapshot.follow || snapshot.followSuspended || !snapshot.playing || overlayOpen || !queue || !entryId) {
       lastFollowed.current = null
       return
@@ -190,7 +194,7 @@ function App() {
     document.documentElement.dir = language === 'ur' ? 'rtl' : 'ltr'
     document.documentElement.dataset.theme = theme
     document.documentElement.dataset.motion = preferences.motion
-    document.title = `${translate(language, 'name')} | ${route.view === 'journey' || route.view === 'story' || route.view === 'listen' ? shelfLabels[journeyShelf][language] : translate(language, route.view === 'audiobooks' ? 'audiobooks' : route.view === 'saved' ? 'saved' : route.view === 'reading' ? 'reading' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
+    document.title = `${translate(language, 'name')} | ${route.view === 'journey' || route.view === 'story' || route.view === 'listen' ? shelfLabels[journeyShelf][language] : translate(language, route.view === 'monthly' ? 'monthly' : route.view === 'audiobooks' ? 'audiobooks' : route.view === 'saved' ? 'saved' : route.view === 'reading' ? 'reading' : route.view === 'guide' ? 'guide' : route.view === 'sources' ? 'sources' : 'strapline')}`
   }, [language, theme, route.view, journeyShelf, preferences.motion])
 
   useEffect(() => {
@@ -257,6 +261,8 @@ function App() {
   }
 
   function openListeningSource(id: string) {
+    const monthly = monthlyChapters.find((chapter) => chapter.id === id)
+    if (monthly) { openMonthly(monthly.monthlyEpisodeId); return }
     const story = getStoryEpisode(id)
     if (story) { navigate('listen', story.topic, story.shelf); return }
     const row = listening.getNarration(id)
@@ -292,12 +298,18 @@ function App() {
   function navigate(view: View, topic?: Topic, shelf: Shelf | 'all' = view === 'journey' || view === 'story' || view === 'listen' ? 'appearance' : 'all') {
     suspendFollow()
     setStoryNavigation((current) => ({ revision: current.revision + 1, focus: true }))
-    updateRoute({ ...defaultFilters, view, shelf, topic: topic ?? 'all', storyBeat: 0, grade: view === 'saved' || (view === 'collection' && topic) ? 'all' : 'established', entry: null })
+    updateRoute({ ...defaultFilters, view, shelf, topic: topic ?? 'all', storyBeat: 0, episode: undefined, grade: view === 'saved' || (view === 'collection' && topic) ? 'all' : 'established', entry: null })
+    window.scrollTo({ top: 0 })
+  }
+
+  function openMonthly(episode?: string) {
+    suspendFollow()
+    updateRoute({ ...defaultFilters, view: 'monthly', shelf: 'all', storyBeat: 0, episode, entry: null })
     window.scrollTo({ top: 0 })
   }
 
   function navHref(view: View, shelf: Shelf | 'all' = view === 'journey' || view === 'story' || view === 'listen' ? 'appearance' : 'all') {
-    return routeUrl(new URL(window.location.href), { ...route, ...defaultFilters, view, shelf, storyBeat: 0, grade: view === 'saved' ? 'all' : 'established', entry: null }).href
+    return routeUrl(new URL(window.location.href), { ...route, ...defaultFilters, view, shelf, storyBeat: 0, episode: undefined, grade: view === 'saved' ? 'all' : 'established', entry: null }).href
   }
 
   function resetFilters() {
@@ -315,7 +327,7 @@ function App() {
           <span><strong>{t('name')}</strong><small>{t('strapline')}</small></span>
         </a>
         <nav className="primary-nav" aria-label={t('collection')}>
-          {(['home', 'collection', 'audiobooks', 'reading', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
+          {(['home', 'collection', 'audiobooks', 'monthly', 'reading', 'guide', 'sources'] as const).map((view) => <a key={view} href={navHref(view)}
             aria-current={route.view === view || (view === 'audiobooks' && route.view === 'listen') ? 'page' : undefined}
             onClick={(event) => { if (!event.metaKey && !event.ctrlKey) { event.preventDefault(); navigate(view) } }}>
             {t(view)}
@@ -356,9 +368,11 @@ function App() {
           readIds={readIds} lastOpened={lastOpened} onShelf={(shelf) => navigate('story', undefined, shelf)} onResume={openPersonalEntry}
           onListen={(shelf) => navigate('listen', undefined, shelf)}
           onAudiobooks={() => navigate('audiobooks')} onExplore={() => navigate('collection')}
+          onMonthly={() => openMonthly()}
           onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })} />
       </>}
       {route.view === 'audiobooks' && <AudiobookLibrary language={language} listening={listening}
+        onMonthly={() => openMonthly()}
         onOpen={(shelf) => navigate('listen', undefined, shelf)}
         onStart={(shelf, audioLanguage, entryId, resume) => {
           navigate('listen', undefined, shelf)
@@ -366,6 +380,10 @@ function App() {
             entryIds: storiesByShelf(shelf).map((episode) => episode.id), includeCautioned: false }, audioLanguage, entryId)
           if (!resume) listening.seek(0)
         }} />}
+      {route.view === 'monthly' && <MonthlySeries key={route.episode ?? 'archive'} language={language} episodeId={route.episode}
+        listening={listening} paused={preferences.motion === 'paused'} readerOpen={overlayOpen}
+        onPause={() => updatePreferences({ motion: preferences.motion === 'paused' ? 'auto' : 'paused' })}
+        onOpen={openMonthly} onBooks={() => navigate('audiobooks')} />}
       {route.view === 'listen' && <NarratedStories key={`listen-${journeyShelf}`} shelf={journeyShelf}
         language={language} requestedTopic={route.topic} listening={listening}
         onLibrary={() => navigate('audiobooks')}
@@ -521,7 +539,9 @@ function App() {
         suspendFollow()
         setDedicationRequested(true)
       }} />
-    <ListeningPlayer listening={listening} language={language} readerOpen={overlayOpen || route.view === 'listen'} onOpenSource={openListeningSource} />
+    <ListeningPlayer listening={listening} language={language} readerOpen={overlayOpen
+      || (route.view === 'listen' && !(listening.currentStory && isMonthlyChapter(listening.currentStory)))
+      || (route.view === 'monthly' && Boolean(route.episode) && monthlyChapters.some((chapter) => chapter.monthlyEpisodeId === route.episode && chapter.id === listening.currentStory?.id))} onOpenSource={openListeningSource} />
     <Dedication open={dedicationOpen} language={language} storageIssue={dedicationIssue} onClose={closeDedication} paused={preferences.motion === 'paused'}
       onLanguage={setLanguage} restoreFocus={() => {
         if (dedicationTrigger.current?.isConnected) dedicationTrigger.current.focus({ preventScroll: true })
