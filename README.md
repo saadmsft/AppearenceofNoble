@@ -11,6 +11,11 @@ historical voice reconstructions, or impersonation.**
 
 ## What is included
 
+- **Audiobooks** is a clear homepage and navigation entry, with three original
+  ornamental book covers, language-specific durations, chapter counts and
+  Start/Continue listening. Book pages show the saved listening position,
+  chapter durations and 15-second back/forward controls, while keeping source
+  evidence available. All recordings are reused; no additional generation.
 - **Narrated stories / listen-only mode** adds six connected editorial trails:
   Appearance, Character and Life in English and Urdu. Their 36 chapter scripts
   have **72 saved recordings** using the approved Cedar voice on Azure OpenAI
@@ -261,6 +266,10 @@ topic selects a starting chapter without autoplay. Story playback does not
 mark source reports read or turn editorial chapters into bookmark/note records.
 Version-2 personal backups can retain story listening positions through the
 validated playback catalog, while older backups remain importable.
+
+`?view=audiobooks` opens the three-book library. Existing `view=listen` links
+remain valid book-detail links. Listening position is not a claim that every
+earlier chapter was heard, and it never changes explicit read/unread marks.
 
 Appearance and Character retain their thematic Story trails. Life uses a
 separately reviewed chronological sequence, not historical reenactments.

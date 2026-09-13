@@ -3,7 +3,7 @@ import type { Language, Shelf } from './schema.ts'
 import { defaultFilters } from './search.ts'
 import type { Filters } from './search.ts'
 
-export const views = ['home', 'story', 'journey', 'collection', 'listen', 'reading', 'guide', 'sources', 'saved'] as const
+export const views = ['home', 'story', 'journey', 'collection', 'audiobooks', 'listen', 'reading', 'guide', 'sources', 'saved'] as const
 export type View = typeof views[number]
 export type Route = Filters & { view: View; shelf: Shelf | 'all'; language?: Language; entry: string | null; storyBeat: number }
 
@@ -24,7 +24,7 @@ export function parseRoute(url: URL): Route {
   const match = /^#narration\/([a-z0-9-]+)$/.exec(url.hash)
   const resolvedView = allowed(view, views) ? view : hasLibraryFilters ? 'collection' : 'home'
   const topicShelf = allowed(topic, topics) ? getTopicShelf(topic) : undefined
-  const inferredShelf = topicShelf && topicShelf !== 'appearance' ? topicShelf : resolvedView === 'home' || resolvedView === 'reading' || resolvedView === 'saved' ? 'all' : 'appearance'
+  const inferredShelf = topicShelf && topicShelf !== 'appearance' ? topicShelf : resolvedView === 'home' || resolvedView === 'reading' || resolvedView === 'saved' || resolvedView === 'audiobooks' ? 'all' : 'appearance'
   return {
     view: resolvedView,
     shelf: allowed(shelf, [...shelves, 'all'] as const) ? shelf : inferredShelf,

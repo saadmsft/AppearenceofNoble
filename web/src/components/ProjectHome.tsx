@@ -9,8 +9,9 @@ import { useAmbientMotion } from '../hooks/useAmbientMotion'
 import { useInkEntrance } from '../hooks/useOrnamentMotion'
 import { Rosette } from './ManuscriptHero'
 import { Button } from './ui/button'
+import { audiobookLabels } from '../lib/audiobook-labels.ts'
 
-export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened, onPause, onShelf, onResume, onListen }: {
+export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened, onPause, onShelf, onResume, onListen, onExplore, onAudiobooks }: {
   language: Language
   paused: boolean
   readerOpen: boolean
@@ -19,6 +20,8 @@ export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened,
   onPause: () => void
   onShelf: (shelf: Shelf) => void
   onListen: (shelf: Shelf) => void
+  onExplore: () => void
+  onAudiobooks: () => void
   onResume: (row: Narration, button: HTMLButtonElement) => void
 }) {
   const art = useRef<HTMLDivElement>(null)
@@ -30,6 +33,10 @@ export function ProjectHome({ language, paused, readerOpen, readIds, lastOpened,
       <div className="project-welcome-copy">
         <h1>{t('projectHeadline')}</h1>
         <p>{t('projectDescription')}</p>
+        <div className="home-experience-actions">
+          <Button onClick={onAudiobooks}><Headphones size={17} aria-hidden="true" />{audiobookLabels[language].homeListen}</Button>
+          <Button variant="outline" onClick={onExplore}><BookOpen size={17} aria-hidden="true" />{audiobookLabels[language].readExplore}</Button>
+        </div>
         {lastOpened && <button type="button" className="resume-reading" onClick={(event) => onResume(lastOpened, event.currentTarget)}>
           <BookOpen size={20} aria-hidden="true" /><span><small>{t('continueReading')}</small><strong>{lastOpened.title[language]}</strong></span><ArrowUpRight size={18} className="directional" aria-hidden="true" />
         </button>}

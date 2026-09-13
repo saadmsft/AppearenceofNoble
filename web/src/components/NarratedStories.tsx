@@ -1,88 +1,99 @@
 import { useState } from 'react'
-import { BookOpen, Headphones, Play } from 'lucide-react'
-import { storiesByShelf } from '../lib/stories.ts'
+import { ArrowLeft, BookOpen, Pause, Play, RotateCcw, RotateCw } from 'lucide-react'
 import { shelfLabels } from '../lib/catalog.ts'
 import { narrations } from '../lib/library.ts'
+import { number } from '../lib/i18n.ts'
+import { audiobook, audiobookPosition, audiobookTime } from '../lib/audiobooks.ts'
+import { audiobookLabels } from '../lib/audiobook-labels.ts'
 import type { Language, Narration, Shelf, Topic } from '../lib/schema.ts'
 import type { ListeningController } from '../lib/listening.ts'
 import { ListeningControls } from './ListeningPlayer'
-import { ShelfSelector } from './ShelfSelector'
+import { AudiobookCover } from './AudiobookLibrary'
 import { SourceName } from './NarrationCard'
 import { LifeContext } from './LifeContext'
 import { Button } from './ui/button'
 import '../narrated-stories.css'
 
-const labels = {
-  en: {
-    title: 'Let the story unfold in words.',
-    intro: 'Three source-linked journeys, written for listening. Choose a collection and a starting chapter, then settle into the story.',
-    start: 'Start at chapter', play: 'Play narrated story', language: 'Story language',
-    english: 'English', urdu: 'Urdu', script: 'Read the story script', evidence: 'The sources behind this chapter',
-    notice: 'Original editorial narration, spoken by an AI voice—not a hadith quotation, full translation or reconstruction of a historical voice.',
-    source: 'Read source', visual: 'Open Story view', offline: 'Generated once and saved as MP3s. Listening makes no AI requests. Background playback depends on your browser and device.',
-    now: 'Current story chapter', selected: 'Selected starting chapter',
-  },
-  ur: {
-    title: 'الفاظ کے ساتھ سیرت کا سفر سنیے۔',
-    intro: 'اصل مآخذ سے جڑے تین سفر، سماعت کے لیے تحریر کیے گئے۔ مجموعہ اور ابتدائی باب منتخب کریں، پھر بیانیے کے ساتھ آگے بڑھیں۔',
-    start: 'اس باب سے شروع کریں', play: 'بیانیہ سنیں', language: 'بیانیے کی زبان',
-    english: 'انگریزی', urdu: 'اردو', script: 'بیانیے کا متن پڑھیں', evidence: 'اس باب کے اصل مآخذ',
-    notice: 'یہ اصل ادارتی بیانیہ ہے جسے مصنوعی آواز میں پڑھا گیا ہے؛ حدیث کا اقتباس، مکمل ترجمہ یا کسی تاریخی آواز کی نقل نہیں۔',
-    source: 'ماخذ پڑھیں', visual: 'بیانیہ منظر کھولیں', offline: 'آڈیو ایک بار تیار ہو کر MP3 میں محفوظ ہے۔ سننے پر مصنوعی ذہانت کو نئی درخواست نہیں بھیجی جاتی۔ پس منظر کی سماعت براؤزر اور آلے پر منحصر ہے۔',
-    now: 'بیانیے کا موجودہ باب', selected: 'منتخب ابتدائی باب',
-  },
-} as const
-
-export function NarratedStories({ shelf, language, requestedTopic, listening, onShelf, onRead, onStory }: {
+export function NarratedStories({ shelf, language, requestedTopic, listening, onLibrary, onRead, onStory }: {
   shelf: Shelf
   language: Language
   requestedTopic: Topic | 'all'
   listening: ListeningController
-  onShelf: (shelf: Shelf) => void
+  onLibrary: () => void
   onRead: (row: Narration, button: HTMLButtonElement) => void
   onStory: (topic: Topic) => void
 }) {
-  const episodes = storiesByShelf(shelf)
-  const [startId, setStartId] = useState(() => episodes.find((episode) => episode.topic === requestedTopic)?.id ?? episodes[0].id)
+  const [chosenLanguage, setChosenLanguage] = useState<Language>(() => listening.language === 'ar' ? language : listening.language)
   const active = listening.currentStory?.shelf === shelf ? listening.currentStory : null
-  const selected = episodes.find((episode) => episode.id === startId) ?? episodes[0]
-  const chapter = active ?? selected
-  const audioLanguage = listening.language === 'ar' ? language : listening.language
-  const t = labels[language]
+  const audioLanguage = active && listening.language !== 'ar' ? listening.language : chosenLanguage
+  const book = audiobook(shelf, audioLanguage)
+  const position = audiobookPosition(book, listening.data, listening)
+  const continueActive = active && !position.atEnd
+  const requested = book.chapters.find(({ episode }) => episode.topic === requestedTopic)?.episode
+  const chapter = active ?? requested ?? book.chapters[position.chapterIndex].episode
+  const t = audiobookLabels[language]
+  function start(entryId: string, resume: boolean) {
+    listening.startQueue({
+      shelf, topic: 'all', title: shelfLabels[shelf],
+      entryIds: book.chapters.map(({ episode }) => episode.id), includeCautioned: false,
+    }, audioLanguage, entryId)
+    if (!resume) listening.seek(0)
+  }
   const sources = chapter.sourceIds.map((id) => {
     const source = narrations.find((row) => row.id === id)
     if (!source) throw new Error(`Missing narrated-story evidence: ${id}`)
     return source
   })
   return <section className="narrated-stories page-width">
-    <header className="narrated-heading">
-      <Headphones size={28} aria-hidden="true" />
-      <h1>{t.title}</h1>
-      <p>{t.intro}</p>
+    <button type="button" className="text-link" onClick={onLibrary}><ArrowLeft size={16} className="directional" aria-hidden="true" />{t.back}</button>
+    <header className="book-detail-header">
+      <AudiobookCover shelf={shelf} language={language} />
+      <div>
+        <h1>{shelfLabels[shelf][language]}</h1>
+        <div className="book-facts">
+          <span>{number(book.chapters.length, language)} {t.chapters}</span>
+          <span>{t.duration}: <bdi>{audiobookTime(book.duration)}</bdi></span>
+          <span>{audioLanguage === 'ur' ? t.urdu : t.english}</span>
+        </div>
+        <p className="book-narrator">{t.narrator}</p>
+        <div className="book-detail-actions narrated-start">
+          {!active && <label><span>{t.language}</span><select value={audioLanguage} onChange={(event) => {
+            if (event.target.value === 'en' || event.target.value === 'ur') setChosenLanguage(event.target.value)
+          }}><option value="en">{t.english}</option><option value="ur">{t.urdu}</option></select></label>}
+          <Button onClick={() => {
+            if (continueActive) { if (listening.playing || listening.loading) listening.pause(); else listening.play() }
+            else start(requested?.id ?? position.entryId, !requested && position.hasResume)
+          }}>
+            {continueActive && (listening.playing || listening.loading) ? <Pause size={16} aria-hidden="true" /> : <Play size={16} aria-hidden="true" />}
+            {continueActive ? (listening.playing || listening.loading ? t.pause : t.continue)
+              : requested ? t.playChapter : position.hasResume ? t.continue : t.start}
+          </Button>
+        </div>
+      </div>
     </header>
-    <ShelfSelector value={shelf} language={language} allowAll={false} onChange={(next) => {
-      if (next !== 'all') onShelf(next)
-    }} />
     <div className="narrated-layout">
       <div className="narrated-main">
-        <h2>{shelfLabels[shelf][language]}</h2>
         <p className="narrated-notice">{t.notice}</p>
-        <div className="narrated-start">
-          <label><span>{t.start}</span><select value={startId} onChange={(event) => setStartId(event.target.value)}>
-            {episodes.map((episode, index) => <option key={episode.id} value={episode.id}>{index + 1}. {episode.title[language]}</option>)}
-          </select></label>
-          {!active && <label><span>{t.language}</span><select value={audioLanguage} onChange={(event) => {
-            const next = event.target.value
-            if (next === 'en' || next === 'ur') listening.setLanguage(next)
-          }}><option value="en">{t.english}</option><option value="ur">{t.urdu}</option></select></label>}
-          <Button onClick={() => listening.startQueue({
-            shelf, topic: 'all', title: shelfLabels[shelf],
-            entryIds: episodes.map((episode) => episode.id), includeCautioned: false,
-          }, audioLanguage, selected.id)}><Play size={16} aria-hidden="true" />{t.play}</Button>
+        <div className="book-position">
+          <span>{t.position}: <bdi>{audiobookTime(position.seconds)} / {audiobookTime(book.duration)}</bdi></span>
+          <progress value={position.seconds} max={book.duration} aria-label={t.position} />
         </div>
         {listening.queue && <div className="audio-player narrated-player">
           <ListeningControls listening={listening} language={language} allowFollow={false} />
+          <div className="book-skip-controls">
+            <button type="button" disabled={!listening.duration} onClick={() => listening.seek(listening.currentTime - 15)} aria-label={t.back15}><RotateCcw size={16} aria-hidden="true" /> 15</button>
+            <button type="button" disabled={!listening.duration} onClick={() => listening.seek(listening.currentTime + 15)} aria-label={t.forward15}><RotateCw size={16} aria-hidden="true" /> 15</button>
+          </div>
         </div>}
+        <section className="book-chapters"><h2>{t.chapterList}</h2><ol>
+          {book.chapters.map(({ episode, duration }, index) => <li key={episode.id}>
+            <button type="button" className="book-chapter" data-entry={episode.id}
+              aria-current={active?.id === episode.id ? 'step' : undefined} onClick={() => start(episode.id, false)}>
+              <span>{number(index + 1, language)}</span><span>{episode.title[language]}</span>
+              <bdi>{audiobookTime(duration)}</bdi><Play size={14} aria-hidden="true" />
+            </button>
+          </li>)}
+        </ol></section>
         <p className="narrated-notice">{t.offline}</p>
       </div>
       <aside className="narrated-evidence">
@@ -95,7 +106,7 @@ export function NarratedStories({ shelf, language, requestedTopic, listening, on
         </details>
         <h3>{t.evidence}</h3>
         {sources.map((row) => <button type="button" key={row.id} className="story-source-button"
-          aria-label={`${t.source}: ${row.title[language]}`} onClick={(event) => onRead(row, event.currentTarget)}>
+          aria-label={`${t.readSource}: ${row.title[language]}`} onClick={(event) => onRead(row, event.currentTarget)}>
           <span><SourceName source={row.source} language={language} /><small>{row.title[language]}</small></span>
           <BookOpen size={15} aria-hidden="true" />
         </button>)}

@@ -10,7 +10,7 @@ for (const language of ['en', 'ur'] as const) {
     await expect(audio).toHaveCount(1)
     expect(await audio.evaluate((element) => element.paused)).toBe(true)
     await audio.evaluate((element) => { element.muted = true })
-    await page.getByRole('button', { name: language === 'en' ? 'Play narrated story' : 'بیانیہ سنیں', exact: true }).click()
+    await page.getByRole('button', { name: language === 'en' ? 'Start listening' : 'سننا شروع کریں', exact: true }).click()
     await expect.poll(() => audio.evaluate((element) => element.currentTime)).toBeGreaterThan(.2)
     await expect(page.locator('.narrated-player')).toBeVisible()
     await expect(page.locator('.listening-player')).not.toBeVisible()

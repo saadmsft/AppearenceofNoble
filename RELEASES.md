@@ -513,3 +513,33 @@ Approved by the user, who confirmed the private backup is saved or not needed.
 Registration is with GoDaddy using its existing DomainControl nameservers.
 The user elected to add the DNS records personally; the assistant configures
 the application and GitHub Pages, then checks DNS and HTTPS readiness.
+
+## Release 2.4: Audiobook entrance
+
+Approved by the user for the full audiobook entrance and player experience.
+Make the existing narrated stories feel like a
+deliberate audiobook experience, rather than build another audio system.
+
+- Give the home page two clear entry actions: Read and explore, and Listen as
+  an audiobook. Keep the dedication unchanged; do not add another welcome popup.
+- Present Appearance, Character and Life as three audiobook titles with
+  original ornamental cover designs, English/Urdu selection, actual total
+  duration, chapter count and Start/Continue listening actions.
+- Refine the existing listening view into a book-focused player: clear current
+  title/chapter, chapter list with durations, saved position, playback speed,
+  and 15-second back/forward controls. Reuse the same media engine and MP3s.
+  Do not invent listening completion or automatically mark reports read.
+- Keep transcripts and evidence available without dominating the listening
+  screen. Preserve Story/Reading alternatives and existing listen URLs.
+
+Use the established manuscript design, not Audible branding or copied artwork.
+No subscriptions, checkout, accounts, new recordings, Azure calls, external
+assets, additional agents or new frontend dependencies. Normal Copilot usage
+still applies. Existing sources, audio identities and private-backup formats
+remain unchanged.
+
+Check accurate durations for the selected audio language, chapter/time resume,
+one-stream playback, keyboard/RTL/mobile layouts and reduced motion. Use one
+bounded visual review, then the existing Pages release gates. Work on this
+frontend independently of certificate provisioning, but do not claim secure
+custom-domain audio is ready until HTTPS is actually available.
